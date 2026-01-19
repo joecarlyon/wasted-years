@@ -501,9 +501,22 @@ function renderRecipes(filter = 'all') {
     const container = document.getElementById('recipes-container');
     if (!container) return;
 
-    const filteredRecipes = filter === 'all'
-        ? recipes
-        : recipes.filter(r => r.category === filter);
+    let filteredRecipes;
+    if (filter === 'all') {
+        filteredRecipes = recipes;
+    } else if (filter === 'ipa') {
+        filteredRecipes = recipes.filter(r => r.style.toLowerCase().includes('ipa'));
+    } else if (filter === 'wheat') {
+        filteredRecipes = recipes.filter(r => r.style.toLowerCase().includes('weissbier') || r.style.toLowerCase().includes('wheat'));
+    } else if (filter === 'lager') {
+        filteredRecipes = recipes.filter(r => r.category === 'lager');
+    } else if (filter === 'stout') {
+        filteredRecipes = recipes.filter(r => r.style.toLowerCase().includes('stout'));
+    } else if (filter === 'spirit') {
+        filteredRecipes = recipes.filter(r => r.category === 'spirit');
+    } else {
+        filteredRecipes = recipes.filter(r => r.category === filter);
+    }
 
     container.innerHTML = filteredRecipes.map(recipe => `
         <div class="recipe-card" data-category="${recipe.category}">
