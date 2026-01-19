@@ -546,3 +546,20 @@ footer .iron-maiden {
     background-color: var(--border);
     color: var(--text-secondary);
 }
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--text-secondary);
+    border: 1px dashed var(--border);
+}
+
+.empty-state p {
+    margin: 0.5rem 0;
+}
+
+.empty-state .hint {
+    font-size: 0.8rem;
+    font-style: italic;
+}

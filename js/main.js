@@ -1,185 +1,131 @@
 // Wasted Years - Homebrewing Website
 // Data and rendering logic
 
-// Sample recipe data - edit this to add your own recipes
+// Recipe data imported from Brewfather
 const recipes = [
     {
         id: 1,
-        name: "Number of the Yeast",
-        style: "Belgian Tripel",
+        name: "4PyRyeO Pale Ale",
+        style: "American Pale Ale",
         category: "ale",
-        description: "A strong, golden Belgian-style ale with fruity esters and spicy phenolics. Deceptively drinkable for its strength.",
-        og: 1.080,
-        fg: 1.012,
-        abv: 8.9,
-        ibu: 25,
+        description: "A hop-forward pale ale with rye spice and a solid malt backbone. Columbus provides the bitter punch while Mosaic brings tropical fruit on the dry hop.",
+        og: 1.056,
+        fg: 1.013,
+        abv: 5.64,
+        ibu: 33.7,
         grains: [
-            "12 lb Pilsner Malt",
-            "2 lb Belgian Candi Sugar (Clear)"
+            "8 lb Golden Promise Pale Ale",
+            "2 lb BEST Red X",
+            "2 lb Flaked Rye",
+            "1 lb Melanoidin Malt",
+            "1 lb Wheat Malt",
+            "0.5 lb Munich II"
         ],
         hops: [
-            "1.5 oz Styrian Goldings (60 min)",
-            "0.5 oz Saaz (15 min)"
+            "0.4 oz Columbus (First Wort, 60 min)",
+            "0.7 oz Columbus (5 min)",
+            "0.5 oz Cascade (5 min)",
+            "3 oz Mosaic (Dry Hop)"
         ],
-        yeast: "Belgian Abbaye Yeast"
+        yeast: "Omega West Coast Ale I (OYL-004)"
     },
     {
         id: 2,
-        name: "Hallowed Be Thy Grain",
-        style: "Oatmeal Stout",
-        category: "stout",
-        description: "A smooth, roasty stout with silky mouthfeel from flaked oats. Notes of coffee and dark chocolate.",
-        og: 1.054,
-        fg: 1.014,
-        abv: 5.2,
-        ibu: 30,
+        name: "Extra Special Bitter",
+        style: "ESB",
+        category: "ale",
+        description: "Classic English ESB from David Heath's recipe. Rich malt character with earthy, floral UK hops. Fermented fast and hot with Voss Kveik.",
+        og: 1.051,
+        fg: 1.011,
+        abv: 5.25,
+        ibu: 34.3,
         grains: [
-            "9 lb Maris Otter",
-            "1 lb Flaked Oats",
-            "0.75 lb Chocolate Malt",
-            "0.5 lb Roasted Barley"
+            "8.4 lb Pale Ale Malt",
+            "0.6 lb Chateau Crystal",
+            "0.5 lb Lyle's Golden Syrup",
+            "0.3 lb Chateau Wheat Blanc",
+            "0.2 lb Carafa Special III"
         ],
         hops: [
-            "1.5 oz East Kent Goldings (60 min)",
-            "0.5 oz Fuggle (15 min)"
+            "0.95 oz Northdown (60 min)",
+            "0.6 oz Fuggle (10 min)",
+            "0.5 oz Fuggle (Aroma)"
         ],
-        yeast: "English Ale Yeast"
+        yeast: "Lallemand Voss Kveik"
     },
     {
         id: 3,
-        name: "Run to the Pills",
-        style: "Czech Pilsner",
-        category: "lager",
-        description: "A crisp, golden lager with a firm bitterness and floral hop aroma. Lagered for 6 weeks.",
-        og: 1.048,
-        fg: 1.010,
-        abv: 5.0,
-        ibu: 40,
+        name: "Pumpkin Ale",
+        style: "Pumpkin Spice Beer",
+        category: "ale",
+        description: "Fall seasonal with roasted butternut squash in the boil. Warm spices of cinnamon, allspice, ginger, and nutmeg with vanilla in secondary.",
+        og: 1.058,
+        fg: 1.011,
+        abv: 6.17,
+        ibu: 14.5,
         grains: [
-            "10 lb Bohemian Pilsner Malt"
+            "8.3 lb Pale Malt 2-Row",
+            "1.3 lb Wheat Malt",
+            "0.9 lb Dark Brown Sugar",
+            "0.7 lb Crystal Malt",
+            "0.7 lb Flaked Oats",
+            "0.7 lb Victory Malt",
+            "0.4 lb Acid Malt",
+            "0.4 lb Carapils"
         ],
         hops: [
-            "2 oz Saaz (60 min)",
-            "1 oz Saaz (15 min)",
-            "1 oz Saaz (Dry hop)"
+            "0.2 oz Magnum (60 min)",
+            "0.5 oz Mount Hood (15 min)",
+            "0.9 oz Mount Hood (Aroma)"
         ],
-        yeast: "Czech Lager Yeast"
+        yeast: "Fermentis SafAle S-04",
+        extras: "2 Roasted Butternut Squash, Cinnamon, Allspice, Ginger, Nutmeg, Vanilla Extract"
     },
     {
         id: 4,
-        name: "Fear of the Hop",
-        style: "West Coast IPA",
-        category: "ipa",
-        description: "An aggressively hopped IPA with pine and citrus notes. Dry, bitter, and unapologetically hoppy.",
-        og: 1.068,
-        fg: 1.012,
-        abv: 7.3,
-        ibu: 70,
-        grains: [
-            "12 lb Pale Ale Malt",
-            "1 lb Munich Malt",
-            "0.5 lb Crystal 40L"
-        ],
-        hops: [
-            "2 oz Centennial (60 min)",
-            "1 oz Simcoe (15 min)",
-            "1 oz Citra (5 min)",
-            "2 oz Citra (Dry hop)",
-            "1 oz Simcoe (Dry hop)"
-        ],
-        yeast: "American Ale Yeast"
-    },
-    {
-        id: 5,
-        name: "The Trooper Ale",
-        style: "English Bitter",
+        name: "Sample Blonde Ale",
+        style: "Blonde Ale",
         category: "ale",
-        description: "A sessionable English bitter with biscuity malt and earthy hops. Perfect for a long night.",
-        og: 1.042,
-        fg: 1.010,
-        abv: 4.2,
-        ibu: 32,
+        description: "A clean, approachable blonde ale. Light body with subtle malt sweetness and a pleasant hop character from Saaz and Amarillo.",
+        og: 1.044,
+        fg: 1.008,
+        abv: 4.73,
+        ibu: 19.8,
         grains: [
-            "8 lb Maris Otter",
-            "0.5 lb Crystal 60L",
-            "0.25 lb Victory Malt"
+            "4.4 lb BestMalz Pale Ale",
+            "4.4 lb BestMalz Pilsen",
+            "1.3 lb Caramel Pils",
+            "0.2 lb Pale Crystal Malt"
         ],
         hops: [
-            "1 oz East Kent Goldings (60 min)",
-            "0.5 oz Fuggle (30 min)",
-            "0.5 oz East Kent Goldings (5 min)"
+            "0.2 oz Summit (60 min)",
+            "0.7 oz Saaz (15 min)",
+            "0.2 oz Amarillo (15 min)",
+            "0.7 oz Saaz (Aroma)",
+            "0.2 oz Amarillo (Aroma)",
+            "0.7 oz Amarillo (Dry Hop)"
         ],
-        yeast: "English Ale Yeast"
+        yeast: "Fermentis Safale US-05"
     }
 ];
 
-// Sample brew log data - edit this to add your brew history
+// Brew log data - add your brew history here
+// Each entry tracks a specific batch you've brewed
 const brewLog = [
-    {
-        batchNumber: 12,
-        recipeId: 4,
-        name: "Fear of the Hop",
-        style: "West Coast IPA",
-        brewDate: "2024-11-15",
-        status: "conditioning",
-        og: 1.070,
-        fg: 1.013,
-        abv: 7.5,
-        notes: "Pushed the OG a bit higher than target. Fermentation was vigorous. Dry hopped for 5 days with an extra ounce of Citra.",
-        rating: null
-    },
-    {
-        batchNumber: 11,
-        recipeId: 2,
-        name: "Hallowed Be Thy Grain",
-        style: "Oatmeal Stout",
-        brewDate: "2024-10-20",
-        status: "ready",
-        og: 1.055,
-        fg: 1.015,
-        abv: 5.3,
-        notes: "Hit all targets. Really smooth mouthfeel from the oats. Chocolate notes are prominent. Will definitely brew again.",
-        rating: 4
-    },
-    {
-        batchNumber: 10,
-        recipeId: 5,
-        name: "The Trooper Ale",
-        style: "English Bitter",
-        brewDate: "2024-09-28",
-        status: "ready",
-        og: 1.044,
-        fg: 1.011,
-        abv: 4.3,
-        notes: "Classic session beer. Great balance of malt and hops. Carbed a bit high but still drinks well.",
-        rating: 4
-    },
-    {
-        batchNumber: 9,
-        recipeId: 1,
-        name: "Number of the Yeast",
-        style: "Belgian Tripel",
-        brewDate: "2024-08-10",
-        status: "ready",
-        og: 1.078,
-        fg: 1.010,
-        abv: 8.9,
-        notes: "Slightly under target OG but finished dry. Fermented at 68F for clean esters. Getting better with age.",
-        rating: 5
-    },
-    {
-        batchNumber: 8,
-        recipeId: 3,
-        name: "Run to the Pills",
-        style: "Czech Pilsner",
-        brewDate: "2024-06-15",
-        status: "archived",
-        og: 1.049,
-        fg: 1.011,
-        abv: 5.0,
-        notes: "First lager attempt. Fermentation temp control was tricky but managed to keep it at 50F. Lagered for 6 weeks. Clean and crisp.",
-        rating: 4
-    }
+    // Example entry format:
+    // {
+    //     batchNumber: 1,
+    //     recipeId: 1,
+    //     name: "4PyRyeO Pale Ale",
+    //     style: "American Pale Ale",
+    //     brewDate: "2024-01-15",
+    //     status: "ready", // fermenting, conditioning, ready, archived
+    //     og: 1.056,
+    //     fg: 1.013,
+    //     abv: 5.64,
+    //     notes: "Your notes about this batch...",
+    //     rating: 4 // 1-5 stars, or null if not rated
+    // }
 ];
 
 // Utility functions
@@ -248,6 +194,12 @@ function renderRecipes(filter = 'all') {
                 <ul>
                     <li>${recipe.yeast}</li>
                 </ul>
+                ${recipe.extras ? `
+                <h5 style="margin-top: 0.75rem;">Extras</h5>
+                <ul>
+                    <li>${recipe.extras}</li>
+                </ul>
+                ` : ''}
             </div>
         </div>
     `).join('');
@@ -257,6 +209,16 @@ function renderRecipes(filter = 'all') {
 function renderBrewLog() {
     const container = document.getElementById('brew-log');
     if (!container) return;
+
+    if (brewLog.length === 0) {
+        container.innerHTML = `
+            <div class="empty-state">
+                <p>No brews logged yet. Time to fire up the kettle.</p>
+                <p class="hint">Add your brew history in js/main.js</p>
+            </div>
+        `;
+        return;
+    }
 
     container.innerHTML = brewLog.map(brew => `
         <div class="brew-entry">
@@ -297,6 +259,15 @@ function renderBrewLog() {
 function renderRecentBrews() {
     const container = document.getElementById('recent-brews');
     if (!container) return;
+
+    if (brewLog.length === 0) {
+        container.innerHTML = `
+            <div class="empty-state">
+                <p>No brews logged yet.</p>
+            </div>
+        `;
+        return;
+    }
 
     const recentBrews = brewLog.slice(0, 3);
 
