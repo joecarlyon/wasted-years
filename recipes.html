@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Wasted Years</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Wasted Years</h1>
+                <span class="tagline">Homebrewing</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html" class="active">Recipes</a></li>
+                <li><a href="brews.html">Brew Log</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Recipes</h2>
+            <p>The recipes I brew, from tried-and-true classics to experimental batches.</p>
+        </section>
+
+        <section class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ale">Ales</button>
+            <button class="filter-btn" data-filter="lager">Lagers</button>
+            <button class="filter-btn" data-filter="stout">Stouts</button>
+            <button class="filter-btn" data-filter="ipa">IPAs</button>
+        </section>
+
+        <section class="recipes-grid" id="recipes-container">
+            <!-- Populated by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wasted Years Homebrewing</p>
+        <p class="iron-maiden">Running free since batch #1</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

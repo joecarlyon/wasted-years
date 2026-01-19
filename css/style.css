@@ -1,0 +1,548 @@
+/* Wasted Years - Homebrewing Website
+   A subtle metal aesthetic meets craft brewing */
+
+:root {
+    --bg-dark: #0d0d0d;
+    --bg-card: #1a1a1a;
+    --bg-hover: #252525;
+    --text-primary: #e8e8e8;
+    --text-secondary: #a0a0a0;
+    --accent: #d4a03c;
+    --accent-dark: #b8860b;
+    --border: #333;
+    --success: #4a7c4e;
+    --warning: #8b6914;
+    --error: #8b3a3a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--bg-card);
+    border-bottom: 2px solid var(--accent);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-primary);
+}
+
+.logo .tagline {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Page Headers */
+.page-header {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-header h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: var(--text-secondary);
+}
+
+/* Sections */
+section {
+    margin-bottom: 3rem;
+}
+
+section h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--accent);
+}
+
+.intro p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+/* Cards */
+.brew-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.card .style {
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.card .date {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.card .stats {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+}
+
+.card .stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .stat-label {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+
+.card .stat-value {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Recipe Cards */
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.recipe-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.recipe-card:hover {
+    border-color: var(--accent);
+}
+
+.recipe-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.recipe-card .style {
+    color: var(--accent);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.recipe-card .description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.recipe-card .specs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1rem;
+}
+
+.recipe-card .spec {
+    text-align: center;
+}
+
+.recipe-card .spec-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.recipe-card .spec-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+}
+
+.recipe-card .ingredients h5 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.recipe-card .ingredients ul {
+    list-style: none;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.recipe-card .ingredients li {
+    padding: 0.25rem 0;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.recipe-card .ingredients li::before {
+    content: "//";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 0.7rem;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent);
+    color: var(--text-primary);
+}
+
+.filter-btn.active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg-dark);
+}
+
+/* Brew Log */
+.brew-log {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.brew-entry {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1.5rem;
+}
+
+.brew-entry .batch-info {
+    border-right: 1px solid var(--border);
+    padding-right: 1.5rem;
+}
+
+.brew-entry .batch-number {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+}
+
+.brew-entry .batch-num {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.brew-entry .brew-date {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}
+
+.brew-entry .brew-details h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.brew-entry .brew-style {
+    color: var(--accent);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.brew-entry .brew-notes {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.brew-entry .brew-stats {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.85rem;
+}
+
+.brew-entry .brew-stat span:first-child {
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.brew-entry .brew-stat span:last-child {
+    color: var(--text-primary);
+}
+
+.brew-entry .rating {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.brew-entry .rating-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.brew-entry .rating-stars {
+    color: var(--accent);
+    letter-spacing: 2px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+footer p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+footer .iron-maiden {
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: var(--accent);
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .brew-entry {
+        grid-template-columns: 1fr;
+    }
+
+    .brew-entry .batch-info {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding-right: 0;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .recipe-card .specs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Status badges */
+.status {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.status-fermenting {
+    background-color: var(--warning);
+    color: var(--bg-dark);
+}
+
+.status-conditioning {
+    background-color: var(--accent-dark);
+    color: var(--bg-dark);
+}
+
+.status-ready {
+    background-color: var(--success);
+    color: var(--text-primary);
+}
+
+.status-archived {
+    background-color: var(--border);
+    color: var(--text-secondary);
+}
