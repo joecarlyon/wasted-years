@@ -1,24 +1,8 @@
 // Wasted Years - Homebrewing Website
 // Rendering logic (recipe data loaded from recipes.js)
 
-// Brew log data - add your brew history here
-// Each entry tracks a specific batch you've brewed
-const brewLog = [
-    // Example entry format:
-    // {
-    //     batchNumber: 1,
-    //     recipeId: 1,
-    //     name: "4PyRyeO Pale Ale",
-    //     style: "American Pale Ale",
-    //     brewDate: "2024-01-15",
-    //     status: "ready", // fermenting, conditioning, ready, archived
-    //     og: 1.056,
-    //     fg: 1.013,
-    //     abv: 5.64,
-    //     notes: "Your notes about this batch...",
-    //     rating: 4 // 1-5 stars, or null if not rated
-    // }
-];
+// Brew log data - loaded from batches.js
+let brewLog = typeof batches !== 'undefined' ? batches : [];
 
 // Utility functions
 function formatDate(dateString) {
@@ -119,42 +103,59 @@ function renderBrewLog() {
         container.innerHTML = `
             <div class="empty-state">
                 <p>No brews logged yet. Time to fire up the kettle.</p>
-                <p class="hint">Add your brew history in js/main.js</p>
             </div>
         `;
         return;
     }
 
-    container.innerHTML = brewLog.map(brew => `
+    // Sort by batch number descending (most recent first)
+    const sortedBrews = [...brewLog].sort((a, b) => b.batchNo - a.batchNo);
+
+    container.innerHTML = sortedBrews.map(brew => `
         <div class="brew-entry">
             <div class="batch-info">
                 <div class="batch-number">Batch</div>
-                <div class="batch-num">#${brew.batchNumber}</div>
+                <div class="batch-num">#${brew.batchNo}</div>
                 <div class="brew-date">${formatDate(brew.brewDate)}</div>
             </div>
             <div class="brew-details">
                 <h4>${brew.name}</h4>
-                <div class="brew-style">${brew.style}</div>
-                <span class="${getStatusClass(brew.status)}">${brew.status}</span>
-                <p class="brew-notes">${brew.notes}</p>
+                <div class="brew-style">${brew.style}${brew.style !== 'Unknown' && brew.category !== 'Unknown' ? ` (${brew.category})` : ''}</div>
+                <span class="${getStatusClass(brew.status.toLowerCase())}">${brew.status}</span>
                 <div class="brew-stats">
                     <div class="brew-stat">
                         <span>OG:</span>
-                        <span>${brew.og.toFixed(3)}</span>
+                        <span>${brew.og ? brew.og.toFixed(3) : 'N/A'}</span>
                     </div>
                     <div class="brew-stat">
                         <span>FG:</span>
-                        <span>${brew.fg.toFixed(3)}</span>
+                        <span>${brew.fg ? brew.fg.toFixed(3) : 'N/A'}</span>
                     </div>
                     <div class="brew-stat">
                         <span>ABV:</span>
-                        <span>${brew.abv}%</span>
+                        <span>${brew.abv ? brew.abv + '%' : 'N/A'}</span>
+                    </div>
+                    <div class="brew-stat">
+                        <span>IBU:</span>
+                        <span>${brew.ibu || 'N/A'}</span>
+                    </div>
+                    <div class="brew-stat">
+                        <span>Eff:</span>
+                        <span>${brew.efficiency ? brew.efficiency.toFixed(1) + '%' : 'N/A'}</span>
                     </div>
                 </div>
-                <div class="rating">
-                    <span class="rating-label">Rating:</span>
-                    ${renderStars(brew.rating)}
+                ${brew.yeast && brew.yeast.length > 0 ? `
+                <div class="brew-yeast">
+                    <span class="yeast-label">Yeast:</span>
+                    <span>${brew.yeast.map(y => y.name).join(', ')}</span>
                 </div>
+                ` : ''}
+                ${brew.bottlingDate ? `
+                <div class="brew-bottled">
+                    <span class="bottled-label">Bottled:</span>
+                    <span>${formatDate(brew.bottlingDate)}</span>
+                </div>
+                ` : ''}
             </div>
         </div>
     `).join('');
@@ -174,22 +175,25 @@ function renderRecentBrews() {
         return;
     }
 
-    const recentBrews = brewLog.slice(0, 3);
+    // Sort by batch number descending and take top 3
+    const recentBrews = [...brewLog]
+        .sort((a, b) => b.batchNo - a.batchNo)
+        .slice(0, 3);
 
     container.innerHTML = recentBrews.map(brew => `
         <div class="card">
             <h4>${brew.name}</h4>
             <div class="style">${brew.style}</div>
             <div class="date">${formatDate(brew.brewDate)}</div>
-            <span class="${getStatusClass(brew.status)}">${brew.status}</span>
+            <span class="${getStatusClass(brew.status.toLowerCase())}">${brew.status}</span>
             <div class="stats">
                 <div class="stat">
                     <span class="stat-label">ABV</span>
-                    <span class="stat-value">${brew.abv}%</span>
+                    <span class="stat-value">${brew.abv ? brew.abv + '%' : 'N/A'}</span>
                 </div>
                 <div class="stat">
                     <span class="stat-label">Batch</span>
-                    <span class="stat-value">#${brew.batchNumber}</span>
+                    <span class="stat-value">#${brew.batchNo}</span>
                 </div>
             </div>
         </div>

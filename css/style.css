@@ -547,6 +547,35 @@ footer .iron-maiden {
     color: var(--text-secondary);
 }
 
+.status-completed {
+    background-color: var(--success);
+    color: var(--text-primary);
+}
+
+.status-planning {
+    background-color: var(--warning);
+    color: var(--bg-dark);
+}
+
+/* Brew entry additional info */
+.brew-entry .brew-yeast,
+.brew-entry .brew-bottled {
+    font-size: 0.85rem;
+    margin-top: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.brew-entry .yeast-label,
+.brew-entry .bottled-label {
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.brew-entry .brew-stats {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
 /* Empty state */
 .empty-state {
     text-align: center;
