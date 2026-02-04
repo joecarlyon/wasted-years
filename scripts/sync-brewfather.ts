@@ -35,9 +35,19 @@ loadEnv()
 const USER_ID = process.env.BREWFATHER_USER_ID
 const API_KEY = process.env.BREWFATHER_API_KEY
 
+// Debug: show if env vars are present (not their values)
+if (process.env.CI) {
+  console.log(
+    `Environment check: USER_ID=${USER_ID ? 'set' : 'missing'}, API_KEY=${API_KEY ? 'set' : 'missing'}`
+  )
+}
+
 if (!USER_ID || !API_KEY) {
   console.error(
-    'Missing BREWFATHER_USER_ID or BREWFATHER_API_KEY in .env.local'
+    'Missing BREWFATHER_USER_ID or BREWFATHER_API_KEY environment variables.'
+  )
+  console.error(
+    'Set them in .env.local for local development, or as GitHub secrets for CI.'
   )
   process.exit(1)
 }
