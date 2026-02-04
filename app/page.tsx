@@ -15,8 +15,8 @@ export default function Home() {
           <span className="text-lavender">Heavy Metal.</span>
         </h2>
         <p className="mx-auto max-w-xl text-lg text-text-secondary">
-          Welcome to Wasted Years Brewing. Recipes born in fire, beers consumed
-          with passion, and occasionally new ways to screw up.
+          Wasted Years Brewing. Recipes born in fire, beers consumed with
+          passion, and I occasionally find new ways to screw it up.
         </p>
       </section>
 

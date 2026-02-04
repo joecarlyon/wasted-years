@@ -9,7 +9,7 @@ export function formatDate(dateString: string): string {
 
 export function getStatusClasses(status: string): string {
   const baseClasses =
-    'inline-block px-2 py-1 text-xs uppercase tracking-wide rounded-sm'
+    'inline-block px-3 py-1 text-xs font-medium uppercase tracking-wide rounded-full'
 
   switch (status.toLowerCase()) {
     case 'completed':
