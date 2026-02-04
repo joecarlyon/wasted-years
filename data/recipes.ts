@@ -4,7 +4,7 @@ export const recipes: Recipe[] = [
   {
     id: 1,
     name: 'Wizard fight',
-    style: 'American IPA',
+    style: 'Unknown',
     category: 'ale',
     description: '',
     og: 1.056,
@@ -66,7 +66,7 @@ export const recipes: Recipe[] = [
   {
     id: 4,
     name: 'Spicy Sprinkles',
-    style: 'Belgian Rye Ale',
+    style: 'Unknown',
     category: 'ale',
     description: '',
     og: 1.069,
