@@ -180,7 +180,7 @@ function mapHopUsage(use: string): 'Bittering' | 'Aroma' | 'Both' {
 
 // Infer style from recipe name when style is "Unknown"
 function inferStyle(style: string, name: string): string {
-  if (style !== 'Unknown') return style
+  if (style.toLowerCase() !== 'unknown') return style
 
   const lowerName = name.toLowerCase()
   if (lowerName.includes('rum')) return 'Rum'
@@ -193,49 +193,30 @@ function inferStyle(style: string, name: string): string {
 }
 
 // Load existing data to preserve manual edits
-function loadExistingBatches(): Map<number, Record<string, unknown>> {
-  const batchesPath = path.join(process.cwd(), 'data/batches.ts')
-  if (!fs.existsSync(batchesPath)) return new Map()
-
-  const content = fs.readFileSync(batchesPath, 'utf-8')
-  // Extract the JSON array from the TypeScript file
-  const match = content.match(/export const batches: Batch\[\] = (\[[\s\S]*\])/)
-  if (!match) return new Map()
-
+async function loadExistingBatches(): Promise<Map<number, Record<string, unknown>>> {
   try {
-    const batches = JSON.parse(match[1]) as Record<string, unknown>[]
+    const { batches } = await import('../data/batches.js')
     const map = new Map<number, Record<string, unknown>>()
     for (const batch of batches) {
-      if (typeof batch.batchNo === 'number') {
-        map.set(batch.batchNo, batch)
-      }
+      map.set(batch.batchNo, batch as unknown as Record<string, unknown>)
     }
     return map
-  } catch {
+  } catch (e) {
+    console.log('Could not load existing batches:', e)
     return new Map()
   }
 }
 
-function loadExistingRecipes(): Map<string, Record<string, unknown>> {
-  const recipesPath = path.join(process.cwd(), 'data/recipes.ts')
-  if (!fs.existsSync(recipesPath)) return new Map()
-
-  const content = fs.readFileSync(recipesPath, 'utf-8')
-  const match = content.match(
-    /export const recipes: Recipe\[\] = (\[[\s\S]*\])/
-  )
-  if (!match) return new Map()
-
+async function loadExistingRecipes(): Promise<Map<string, Record<string, unknown>>> {
   try {
-    const recipes = JSON.parse(match[1]) as Record<string, unknown>[]
+    const { recipes } = await import('../data/recipes.js')
     const map = new Map<string, Record<string, unknown>>()
     for (const recipe of recipes) {
-      if (typeof recipe.name === 'string') {
-        map.set(recipe.name, recipe)
-      }
+      map.set(recipe.name, recipe as unknown as Record<string, unknown>)
     }
     return map
-  } catch {
+  } catch (e) {
+    console.log('Could not load existing recipes:', e)
     return new Map()
   }
 }
@@ -354,7 +335,7 @@ async function syncBatches() {
   const batches = await fetchAll<BrewfatherBatch>('batches')
   console.log(`Found ${batches.length} batches`)
 
-  const existingBatches = loadExistingBatches()
+  const existingBatches = await loadExistingBatches()
   console.log(`Loaded ${existingBatches.size} existing batches for merging`)
 
   const transformed = batches.map((b) => {
@@ -421,7 +402,7 @@ async function syncRecipes() {
   const recipes = await fetchAll<BrewfatherRecipe>('recipes')
   console.log(`Found ${recipes.length} recipes`)
 
-  const existingRecipes = loadExistingRecipes()
+  const existingRecipes = await loadExistingRecipes()
   console.log(`Loaded ${existingRecipes.size} existing recipes for merging`)
 
   const transformed = recipes.map((r, idx) => {
