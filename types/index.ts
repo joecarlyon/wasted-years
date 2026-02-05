@@ -11,6 +11,8 @@ export interface Recipe {
   grains: string[]
   hops: string[]
   yeast: string
+  source?: 'brewfather' | 'beersmith'
+  brewDate?: string
 }
 
 export interface Fermentable {

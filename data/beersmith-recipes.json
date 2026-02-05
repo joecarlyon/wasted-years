@@ -1,0 +1,1601 @@
+{
+  "generatedAt": "2026-02-05T02:20:33.063Z",
+  "totalRecipes": 65,
+  "recipes": [
+    {
+      "name": "Bourbon Vanilla Porter",
+      "style": "Robust Porter",
+      "date": "2007-05-22",
+      "og": "1.078",
+      "fg": "1.020",
+      "abv": "7.6",
+      "ibu": 28,
+      "grains": [
+        "13.00 lb Brewers Malt 2-Row (Briess)",
+        "2.50 lb Munich Malt",
+        "2.00 lb Caramel/Crystal Malt - 60L",
+        "1.00 lb Caramel/Crystal Malt - 40L",
+        "1.00 lb Caramel/Crystal Malt -120L",
+        "1.00 lb Chocolate Malt"
+      ],
+      "hops": [
+        "0.8 oz Magnum (Dry Hop)",
+        "1.0 oz Goldings, East Kent (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "bourbon-vanilla-porter.bsmx"
+    },
+    {
+      "name": "Daedric Prince RIS batch #2",
+      "style": "Russian Imperial Stout",
+      "date": "2012-11-18",
+      "og": "1.104",
+      "fg": "1.011",
+      "abv": "12.2",
+      "ibu": 86,
+      "grains": [
+        "18.00 lb Pale Malt - 2 Row (Cargill)",
+        "1.50 lb Black (Patent) Malt",
+        "1.00 lb Rye, Flaked",
+        "1.00 lb Special B Malt",
+        "0.50 lb Caramunich Malt",
+        "0.50 lb Chocolate Malt"
+      ],
+      "hops": [
+        "1.0 oz Chinook (Boil 60 min)",
+        "1.0 oz Warrior (Boil 48 min)",
+        "1.0 oz Chinook (Flavor 15 min)"
+      ],
+      "yeast": "Wyeast Labs 1028 London Ale Yeast",
+      "fileName": "daedric-prince-ris-batch-2.bsmx"
+    },
+    {
+      "name": "Grollo Stout",
+      "style": "Russian Imperial Stout",
+      "date": "2012-11-18",
+      "og": "1.104",
+      "fg": "1.011",
+      "abv": "12.2",
+      "ibu": 79,
+      "grains": [
+        "14.00 lb Pale Malt - 2 Row (Cargill)",
+        "3.00 lb Chocolate Malt",
+        "2.00 lb Black (Patent) Malt",
+        "1.00 lb Rye, Flaked",
+        "1.00 lb Special B Malt"
+      ],
+      "hops": [
+        "1.0 oz Chinook (Boil 50 min)",
+        "1.0 oz Warrior (Boil 48 min)",
+        "1.0 oz Chinook (Flavor 15 min)"
+      ],
+      "yeast": "Wyeast Labs 1028 London Ale Yeast",
+      "fileName": "grollo-stout.bsmx"
+    },
+    {
+      "name": "Sanity's Demise",
+      "style": "Imperial IPA",
+      "date": "2013-03-30",
+      "og": "1.076",
+      "fg": null,
+      "abv": null,
+      "ibu": 80,
+      "grains": [
+        "14.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Rye Malt",
+        "1.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Caramel/Crystal Malt - 80L",
+        "1.00 lb Roasted Barley",
+        "0.50 lb Chocolate Malt",
+        "0.50 lb Wheat, Roasted"
+      ],
+      "hops": [
+        "0.5 oz Chinook (Boil 60 min)",
+        "0.5 oz Galaxy (Boil 60 min)",
+        "0.5 oz Galaxy (Boil 50 min)",
+        "0.5 oz Galaxy (Boil 30 min)",
+        "0.5 oz Warrior (Flavor 15 min)",
+        "0.5 oz Chinook (Flavor 10 min)",
+        "1.0 oz Galaxy (Dry Hop)",
+        "1.0 oz Willamette (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1028 London Ale Yeast",
+      "fileName": "sanitys-demise.bsmx"
+    },
+    {
+      "name": "Laufeyson",
+      "style": "Imperial IPA",
+      "date": "2013-10-07",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 105,
+      "grains": [
+        "16.00 lb Pale Malt - 2 Row (Cargill)",
+        "2.30 lb Rye Malt",
+        "2.20 lb Caramel Malt - 40L (Cargill)",
+        "1.00 lb Honey Malt",
+        "1.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Oats, Flaked"
+      ],
+      "hops": [
+        "2.0 oz Falconer&#39;s Flight 7C&#39;s Blend (Boil 30 min)",
+        "2.0 oz Simcoe (Boil 20 min)",
+        "1.0 oz Citra (Boil 20 min)",
+        "2.0 oz Mosaic (HBC 369) (Aroma 5 min)",
+        "0.5 oz Amarillo (Aroma 5 min)",
+        "3.0 oz Mosaic (HBC 369) (Dry Hop)",
+        "1.0 oz Amarillo (Dry Hop)"
+      ],
+      "yeast": "White Labs WLP013 London Ale",
+      "fileName": "laufeyson.bsmx"
+    },
+    {
+      "name": "Loki's Ryse#2",
+      "style": "American IPA",
+      "date": "2013-10-07",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 71,
+      "grains": [
+        "10.00 lb Pale Malt - 2 Row (Cargill)",
+        "3.00 lb Rye Malt",
+        "1.00 lb Caramel Malt - 40L (Cargill)"
+      ],
+      "hops": [
+        "1.0 oz Falconer&#39;s Flight 7C&#39;s Blend (Boil 30 min)",
+        "1.0 oz Citra (Boil 20 min)",
+        "2.0 oz Mosaic (HBC 369) (Aroma 5 min)",
+        "1.0 oz Amarillo (Aroma 5 min)",
+        "1.5 oz Mosaic (HBC 369) (Dry Hop)",
+        "0.5 oz Amarillo (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1318 London Ale III",
+      "fileName": "lokis-ryse2.bsmx"
+    },
+    {
+      "name": "Confirmed Kill IPA 2",
+      "style": "American IPA",
+      "date": "2013-10-13",
+      "og": "1.050",
+      "fg": "1.010",
+      "abv": "5.3",
+      "ibu": 61,
+      "grains": [
+        "22.00 lb Pale Malt - 2 Row (Cargill)",
+        "2.00 lb Caramel/Crystal Malt - 40L",
+        "2.00 lb Victory Malt",
+        "1.00 lb Vienna Malt"
+      ],
+      "hops": [
+        "2.0 oz Equinox (Boil 20 min)",
+        "2.0 oz German Hull Melon (Aroma 5 min)",
+        "2.0 oz Mandarina Bavaria (Aroma 5 min)",
+        "2.0 oz Mosaic (Dry Hop)",
+        "2.0 oz Galena (Boil 50 min)",
+        "2.0 oz German Blanc (Flavor 10 min)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "confirmed-kill-ipa-2.bsmx"
+    },
+    {
+      "name": "Confirmed Kill IPA",
+      "style": "American IPA",
+      "date": "2013-10-13",
+      "og": "1.050",
+      "fg": "1.010",
+      "abv": "5.3",
+      "ibu": 50,
+      "grains": [
+        "22.00 lb Pale Malt - 2 Row (Cargill)",
+        "2.00 lb Caramel/Crystal Malt - 40L",
+        "2.00 lb Victory Malt",
+        "1.00 lb Vienna Malt"
+      ],
+      "hops": [
+        "0.5 oz El Dorado (Boil 60 min)",
+        "2.0 oz Equinox (Boil 20 min)",
+        "2.5 oz El Dorado (Flavor 10 min)",
+        "2.0 oz German Hull Melon (Aroma 5 min)",
+        "2.0 oz Mandarina Bavaria (Aroma 5 min)",
+        "4.0 oz El Dorado (Dry Hop)",
+        "2.0 oz Mosaic (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "confirmed-kill-ipa.bsmx"
+    },
+    {
+      "name": "Loki's Demise",
+      "style": "Imperial Stout",
+      "date": "2013-10-13",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 81,
+      "grains": [
+        "18.00 lb Pale Malt - 2 Row (Cargill)",
+        "2.00 lb Caramel/Crystal Malt -120L",
+        "2.00 lb Rye Malt",
+        "1.00 lb Chocolate Malt",
+        "1.00 lb Chocolate Rye Malt",
+        "1.00 lb Oats, Flaked",
+        "0.75 lb Black (Patent) Malt"
+      ],
+      "hops": [
+        "0.5 oz Warrior (Boil 60 min)",
+        "1.0 oz Chinook (Boil 30 min)",
+        "1.0 oz Simcoe (Boil 30 min)",
+        "1.0 oz Green Bullet (Flavor 15 min)",
+        "1.0 oz Chinook (Dry Hop)",
+        "1.0 oz Simcoe (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "lokis-demise.bsmx"
+    },
+    {
+      "name": "The Hero IPA",
+      "style": "American IPA",
+      "date": "2013-10-13",
+      "og": "1.050",
+      "fg": "1.010",
+      "abv": "5.3",
+      "ibu": 52,
+      "grains": [
+        "11.00 lb Pale Malt - 2 Row (Cargill)",
+        "1.00 lb Caramel/Crystal Malt - 40L",
+        "1.00 lb Victory Malt",
+        "1.00 lb Vienna Malt"
+      ],
+      "hops": [
+        "0.5 oz El Dorado (Boil 60 min)",
+        "1.0 oz Equinox (Boil 20 min)",
+        "1.3 oz El Dorado (Flavor 10 min)",
+        "1.0 oz German Hull Melon (Aroma 5 min)",
+        "1.0 oz Mandarina Bavaria (Aroma 5 min)",
+        "2.0 oz El Dorado (Dry Hop)",
+        "1.0 oz Mosaic (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "the-hero-ipa.bsmx"
+    },
+    {
+      "name": "Here Goes Nothing (Hankies Leipzig Gose)",
+      "style": "Leipzig-Style Gose",
+      "date": "2013-11-03",
+      "og": "1.046",
+      "fg": "1.007",
+      "abv": "5.1",
+      "ibu": 10,
+      "grains": [
+        "10.00 lb Wheat Malt, Pale (Weyermann)",
+        "7.00 lb Pilsner (2 Row) Bel",
+        "4.00 lb Acidulated (Weyermann)",
+        "1.00 lb Rice Hulls"
+      ],
+      "hops": [
+        "1.0 oz Santiam (Boil 60 min)"
+      ],
+      "yeast": "Wyeast Labs 1007 German Ale",
+      "fileName": "here-goes-nothing-hankies-leipzig-gose.bsmx"
+    },
+    {
+      "name": "Milk of the Poppy",
+      "style": "American-Style Imperial Stout",
+      "date": "2014-06-12",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 68,
+      "grains": [
+        "13.78 lb Pale Malt (2 Row) US",
+        "1.92 lb Black (Patent) Malt",
+        "1.90 lb Milk Sugar (Lactose)",
+        "1.44 lb Caramel/Crystal Malt - 80L",
+        "1.00 lb Oats, Flaked",
+        "0.96 lb Chocolate Malt"
+      ],
+      "hops": [
+        "2.0 oz Warrior (Boil 60 min)"
+      ],
+      "yeast": "Wyeast Labs 1318 London Ale III",
+      "fileName": "milk-of-the-poppy.bsmx"
+    },
+    {
+      "name": "Rye Porter",
+      "style": "Porter",
+      "date": "2014-08-04",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 37,
+      "grains": [
+        "10.00 lb Pilsen Malt 2-Row (Briess)",
+        "2.00 lb Rye, Flaked (Briess)",
+        "1.00 lb Caramel/Crystal Malt - 80L",
+        "0.75 lb Chocolate (Briess)",
+        "0.50 lb Black (Patent) Malt"
+      ],
+      "hops": [
+        "0.3 oz Warrior (Boil 60 min)",
+        "1.0 oz Chinook (Flavor 15 min)",
+        "1.0 oz Columbus (Tomahawk) (Aroma 5 min)",
+        "2.0 oz Chinook (Dry Hop)",
+        "1.0 oz Columbus (Tomahawk) (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1187 Ringwood Ale",
+      "fileName": "rye-porter.bsmx"
+    },
+    {
+      "name": "Hermaeus Mora",
+      "style": "American-Style Imperial Stout",
+      "date": "2014-08-13",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 64,
+      "grains": [
+        "20.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Rye, Flaked",
+        "1.70 lb Black (Patent) Malt",
+        "1.50 lb Corn Sugar (Dextrose)",
+        "1.10 lb Chocolate Malt",
+        "0.55 lb Caramel/Crystal Malt -120L",
+        "0.55 lb Caramunich Malt"
+      ],
+      "hops": [
+        "1.8 oz Warrior (Boil 60 min)",
+        "0.6 oz Northern Brewer (Boil 30 min)"
+      ],
+      "yeast": "Wyeast Labs 1187 Ringwood Ale",
+      "fileName": "hermaeus-mora.bsmx"
+    },
+    {
+      "name": "Pumpkin Brew 2014",
+      "style": "Spice, Herb, or Vegetable Beer",
+      "date": "2014-09-18",
+      "og": "1.075",
+      "fg": "1.011",
+      "abv": "8.4",
+      "ibu": 24,
+      "grains": [
+        "16.00 lb Pilsen Malt 2-Row (Briess)",
+        "1.00 lb Caramel Malt - 60L (Briess)",
+        "1.00 lb Oats, Flaked",
+        "1.00 lb Vienna Malt",
+        "1.00 lb Wheat, Torrified",
+        "1.00 lb Wheat, White (Cargill)"
+      ],
+      "hops": [
+        "1.0 oz Cluster (Boil 60 min)",
+        "1.0 oz East Kent Goldings (EKG) (Boil 30 min)"
+      ],
+      "yeast": "Wyeast Labs 1187 Ringwood Ale",
+      "fileName": "pumpkin-brew-2014.bsmx"
+    },
+    {
+      "name": "Gungnir",
+      "style": "American Barley Wine",
+      "date": "2014-10-13",
+      "og": "1.100",
+      "fg": "1.010",
+      "abv": "11.8",
+      "ibu": 101,
+      "grains": [
+        "23.80 lb Pilsen Malt 2-Row (Briess)",
+        "2.80 lb Caramel Malt - 60L (Briess)",
+        "1.40 lb Rye Malt"
+      ],
+      "hops": [
+        "1.0 oz Warrior (Boil 60 min)",
+        "1.0 oz Simcoe (Boil 30 min)",
+        "1.0 oz Chinook (Flavor 15 min)",
+        "1.0 oz Columbus (Tomahawk) (Flavor 10 min)",
+        "0.5 oz Chinook (Flavor 10 min)",
+        "0.5 oz Columbus (Tomahawk) (Flavor 10 min)",
+        "0.5 oz Simcoe (Flavor 10 min)",
+        "0.5 oz Chinook (Aroma 5 min)",
+        "0.5 oz Columbus (Tomahawk) (Aroma 5 min)",
+        "0.5 oz Simcoe (Aroma 5 min)",
+        "2.0 oz Chinook (Dry Hop)",
+        "1.0 oz Columbus (Tomahawk) (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1272 American Ale II",
+      "fileName": "gungnir.bsmx"
+    },
+    {
+      "name": "#TonyCantHang",
+      "style": "American Barley Wine",
+      "date": "2014-10-13",
+      "og": "1.100",
+      "fg": "1.010",
+      "abv": "11.8",
+      "ibu": 58,
+      "grains": [
+        "23.00 lb Pilsen Malt 2-Row (Briess)",
+        "3.00 lb Caramel Malt - 60L (Briess)",
+        "2.00 lb Rye Malt"
+      ],
+      "hops": [
+        "1.0 oz Simcoe (Boil 30 min)",
+        "1.0 oz Chinook (Flavor 15 min)",
+        "0.5 oz Chinook (Flavor 10 min)",
+        "0.5 oz Columbus (Tomahawk) (Flavor 10 min)",
+        "0.5 oz Simcoe (Flavor 10 min)",
+        "0.5 oz Chinook (Aroma 5 min)",
+        "0.5 oz Columbus (Tomahawk) (Aroma 5 min)",
+        "0.5 oz Simcoe (Aroma 5 min)",
+        "2.0 oz Chinook (Dry Hop)",
+        "1.0 oz Simcoe (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1272 American Ale II",
+      "fileName": "tonycanthang.bsmx"
+    },
+    {
+      "name": "Mischevious Bastard",
+      "style": "Old Ale",
+      "date": "2015-01-04",
+      "og": null,
+      "fg": null,
+      "abv": null,
+      "ibu": 59,
+      "grains": [
+        "15.00 lb Pale Malt, Maris Otter",
+        "2.00 lb Special B Malt"
+      ],
+      "hops": [
+        "0.5 oz Chinook (Boil 90 min)",
+        "0.5 oz Chinook (Boil 45 min)",
+        "1.0 oz Chinook (Flavor 15 min)",
+        "1.0 oz Chinook (Aroma 5 min)"
+      ],
+      "yeast": "Danstar - Nottingham",
+      "fileName": "mischevious-bastard.bsmx"
+    },
+    {
+      "name": "Bitches Always be Weizen",
+      "style": "Weizen/Weissbier",
+      "date": "2015-01-10",
+      "og": "1.038",
+      "fg": "1.010",
+      "abv": "3.7",
+      "ibu": 12,
+      "grains": [
+        "8.00 lb Pale Malt (2 Row) US",
+        "8.00 lb Wheat Malt, Pale (Weyermann)",
+        "1.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Caramel Malt - 20L (Briess)",
+        "1.00 lb Wheat Malt, Ger"
+      ],
+      "hops": [
+        "1.0 oz Hallertau (Boil 60 min)",
+        "1.0 oz Tettnang (Boil 30 min)"
+      ],
+      "yeast": "Wyeast Labs 3068 Weihenstephan Weizen",
+      "fileName": "bitches-always-be-weizen.bsmx"
+    },
+    {
+      "name": "Lemon Lime Hefe",
+      "style": "Weizen/Weissbier",
+      "date": "2015-01-26",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 19,
+      "grains": [
+        "12.00 lb Pale Malt (2 Row) US",
+        "8.00 lb White Wheat Malt",
+        "2.00 lb Vienna Malt"
+      ],
+      "hops": [
+        "0.5 oz Motueka (Boil 60 min)",
+        "0.5 oz Motueka (Boil 20 min)",
+        "0.5 oz Sorachi Ace (Boil 20 min)",
+        "0.5 oz Sorachi Ace (Flavor 7 min)"
+      ],
+      "yeast": "White Labs WLP380 Hefeweizen IV Ale",
+      "fileName": "lemon-lime-hefe.bsmx"
+    },
+    {
+      "name": "White Knight Wit",
+      "style": "Witbier",
+      "date": "2015-02-02",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 21,
+      "grains": [
+        "7.00 lb Pale Malt (2 Row) Bel",
+        "2.00 lb White Wheat Malt",
+        "1.00 lb Wheat Malt, Bel"
+      ],
+      "hops": [
+        "1.0 oz Motueka (Boil 25 min)",
+        "1.0 oz Ahtanum (Aroma 5 min)"
+      ],
+      "yeast": null,
+      "fileName": "white-knight-wit.bsmx"
+    },
+    {
+      "name": "Basic Blonde",
+      "style": "Belgian Blond Ale",
+      "date": "2015-02-26",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 29,
+      "grains": [
+        "15.00 lb Pale Malt (2 Row) US",
+        "8.00 lb Wheat Malt, Bel",
+        "1.50 lb Wheat, Flaked",
+        "1.50 lb Honey Malt",
+        "1.00 lb Carafoam",
+        "1.00 lb Candi Sugar, Clear"
+      ],
+      "hops": [
+        "2.0 oz Hallertauer (Boil 60 min)",
+        "2.0 oz East Kent Goldings (EKG) (Boil 60 min)"
+      ],
+      "yeast": "Wyeast Labs 1084 Irish Ale",
+      "fileName": "basic-blonde.bsmx",
+      "tonyNotes": "Delicious"
+    },
+    {
+      "name": "Dumb Blonde 10",
+      "style": "Blonde Ale",
+      "date": "2015-02-26",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 27,
+      "grains": [
+        "15.00 lb Pale Malt (2 Row) US",
+        "9.00 lb Wheat Malt, Bel",
+        "2.00 lb Aromatic Malt",
+        "2.00 lb Carafoam",
+        "2.00 lb Honey Malt",
+        "1.50 lb Wheat, Flaked"
+      ],
+      "hops": [
+        "2.0 oz East Kent Goldings (EKG) (Boil 60 min)",
+        "2.0 oz Hallertauer (Boil 60 min)"
+      ],
+      "yeast": "Wyeast Labs 1084 Irish Ale",
+      "fileName": "dumb-blonde-10.bsmx",
+      "tonyNotes": "Delicious"
+    },
+    {
+      "name": "GaribaldiHead 2",
+      "style": "American Wheat Beer",
+      "date": "2015-03-06",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 37,
+      "grains": [
+        "11.00 lb Wheat Malt, Bel",
+        "10.00 lb Pale Malt (2 Row) US",
+        "1.50 lb Aromatic Malt"
+      ],
+      "hops": [
+        "1.0 oz Amarillo (Boil 60 min)",
+        "1.0 oz Amarillo (Boil 30 min)",
+        "1.0 oz Amarillo (Flavor 15 min)",
+        "2.5 oz Amarillo (Aroma 5 min)",
+        "2.0 oz Amarillo (Aroma 1 min)",
+        "3.0 oz Amarillo (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1968 London ESB Ale",
+      "fileName": "garibaldihead-2.bsmx",
+      "tonyNotes": "Delicious"
+    },
+    {
+      "name": "GaribaldiHead",
+      "style": "American Amber Ale",
+      "date": "2015-03-06",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 20,
+      "grains": [
+        "12.00 lb Wheat Malt, Bel",
+        "10.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Caravienne Malt"
+      ],
+      "hops": [
+        "0.5 oz Amarillo (Boil 60 min)",
+        "1.0 oz Amarillo (Flavor 15 min)",
+        "2.5 oz Amarillo (Aroma 5 min)",
+        "2.0 oz Amarillo (Aroma 1 min)",
+        "3.0 oz Amarillo (Dry Hop)"
+      ],
+      "yeast": "White Labs WLP002 English Ale",
+      "fileName": "garibaldihead.bsmx",
+      "tonyNotes": "Delicious"
+    },
+    {
+      "name": "Hoppy Session Wheat Beer - 4/6/19",
+      "style": "American Wheat Beer",
+      "date": "2015-03-06",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 21,
+      "grains": [
+        "9.00 lb Pale Malt (2 Row) US",
+        "9.00 lb White Wheat Malt",
+        "1.50 lb Oats, Flaked",
+        "1.50 lb Barley, Flaked",
+        "1.00 lb Cara-Pils/Dextrine"
+      ],
+      "hops": [
+        "2.0 oz Centennial (Boil 30 min)",
+        "4.0 oz Citra (Aroma 0 min)",
+        "4.0 oz Mosaic (HBC 369) (Aroma 0 min)",
+        "2.0 oz Citra (Dry Hop)",
+        "2.0 oz Mosaic (HBC 369) (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "hoppy-session-wheat-beer-4-6-19.bsmx"
+    },
+    {
+      "name": "Go Fuck Yourself IPA",
+      "style": "American IPA",
+      "date": "2015-03-16",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 85,
+      "grains": [
+        "22.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Cara-Pils/Dextrine",
+        "2.00 lb Caramel/Crystal Malt - 20L",
+        "1.00 lb Rye, Flaked",
+        "1.00 lb Caramel/Crystal Malt - 40L"
+      ],
+      "hops": [
+        "4.0 oz Cascade (Boil 60 min)",
+        "1.0 oz Green Bullet (Boil 45 min)",
+        "1.0 oz Calypso (Flavor 10 min)",
+        "1.0 oz Calypso (Aroma 5 min)",
+        "3.0 oz Azacca (Dry Hop)",
+        "4.0 oz Cascade (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "go-fuck-yourself-ipa.bsmx"
+    },
+    {
+      "name": "Mosiac Dust",
+      "style": "American IPA",
+      "date": "2015-03-16",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 62,
+      "grains": [
+        "22.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Caramunich Malt",
+        "1.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Caramel/Crystal Malt - 60L",
+        "1.00 lb Melanoiden Malt"
+      ],
+      "hops": [
+        "1.0 oz Mosaic (HBC 369) (Boil 60 min)",
+        "2.0 oz Mosaic (HBC 369) (Flavor 10 min)",
+        "2.0 oz Mosaic (HBC 369) (Flavor 15 min)",
+        "3.0 oz Mosaic (HBC 369) (Aroma 5 min)",
+        "4.0 oz Mosaic (HBC 369) (Dry Hop)",
+        "1.0 oz Mosaic (HBC 369) (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1272 American Ale II",
+      "fileName": "mosiac-dust.bsmx"
+    },
+    {
+      "name": "Overlord",
+      "style": "American IPA",
+      "date": "2015-03-16",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 97,
+      "grains": [
+        "22.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Cara-Pils/Dextrine",
+        "2.00 lb Caramel/Crystal Malt - 20L",
+        "1.00 lb Rye, Flaked"
+      ],
+      "hops": [
+        "1.0 oz Citra (Boil 60 min)",
+        "2.0 oz Citra (Boil 30 min)",
+        "2.0 oz Citra (Flavor 15 min)",
+        "2.0 oz Citra (Flavor 10 min)",
+        "3.0 oz Citra (Aroma 5 min)",
+        "2.0 oz Citra (Aroma 0 min)",
+        "4.0 oz Citra (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "overlord.bsmx"
+    },
+    {
+      "name": "Zombie Dust",
+      "style": "American Pale Ale",
+      "date": "2015-03-16",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 60,
+      "grains": [
+        "22.00 lb Pale Malt (2 Row) US",
+        "2.50 lb Caramunich Malt",
+        "1.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Caramel/Crystal Malt - 60L",
+        "1.00 lb Melanoiden Malt"
+      ],
+      "hops": [
+        "1.0 oz Citra (Boil 60 min)",
+        "2.0 oz Citra (Flavor 15 min)",
+        "2.0 oz Citra (Flavor 10 min)",
+        "3.0 oz Citra (Aroma 5 min)",
+        "4.0 oz Citra (Dry Hop)",
+        "4.0 oz Citra (Dry Hop)"
+      ],
+      "yeast": "White Labs WLP002 English Ale",
+      "fileName": "zombie-dust.bsmx",
+      "tonyNotes": "Was okay"
+    },
+    {
+      "name": "Milk Stout-OG",
+      "style": "Sweet Stout",
+      "date": "2015-03-25",
+      "og": null,
+      "fg": "1.010",
+      "abv": null,
+      "ibu": 17,
+      "grains": [
+        "15.46 lb Pale Malt (2 Row) US",
+        "2.21 lb Milk Sugar (Lactose)",
+        "2.15 lb Roasted Barley",
+        "1.66 lb Munich 10L (Briess)",
+        "1.66 lb Barley, Flaked (Briess)",
+        "1.62 lb Caramel Malt - 60L (Briess)",
+        "1.62 lb Chocolate Malt",
+        "1.10 lb Oats, Flaked"
+      ],
+      "hops": [
+        "0.8 oz Magnum (Boil 60 min)",
+        "2.2 oz Goldings, East Kent (Flavor 10 min)"
+      ],
+      "yeast": "DCL/Fermentis US-05 Safale American",
+      "fileName": "milk-stout-og.bsmx",
+      "tonyNotes": "Delicious! FUCKING DELICIOUS"
+    },
+    {
+      "name": "Moo Moo Canoe",
+      "style": "Sweet Stout",
+      "date": "2015-03-25",
+      "og": null,
+      "fg": "1.010",
+      "abv": null,
+      "ibu": 24,
+      "grains": [
+        "15.00 lb Pale Malt (2 Row) US",
+        "3.00 lb Milk Sugar (Lactose)",
+        "2.00 lb Barley, Flaked (Briess)",
+        "2.00 lb Caramel Malt - 60L (Briess)",
+        "2.00 lb Chocolate Malt",
+        "2.00 lb Munich 10L (Briess)",
+        "2.00 lb Roasted Barley",
+        "1.00 lb Oats, Flaked"
+      ],
+      "hops": [
+        "1.0 oz Magnum (Boil 60 min)",
+        "2.0 oz Goldings, East Kent (Flavor 10 min)"
+      ],
+      "yeast": "DCL/Fermentis US-05 Safale American",
+      "fileName": "moo-moo-canoe.bsmx"
+    },
+    {
+      "name": "Raging Red Head (updated malt)",
+      "style": "Irish Red Ale",
+      "date": "2015-04-09",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 23,
+      "grains": [
+        "18.00 lb Pale Malt (2 Row) US",
+        "1.00 lb Special B Malt",
+        "1.00 lb Aromatic Malt",
+        "1.00 lb Munich Malt",
+        "1.00 lb Cara-Pils/Dextrine"
+      ],
+      "hops": [
+        "2.0 oz Crystal (Boil 60 min)",
+        "2.0 oz Cascade (Boil 30 min)"
+      ],
+      "yeast": null,
+      "fileName": "raging-red-head-updated-malt-.bsmx",
+      "tonyNotes": "Good, faded after time"
+    },
+    {
+      "name": "Redheads are the best",
+      "style": "Red IPA",
+      "date": "2015-04-09",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 51,
+      "grains": [
+        "19.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Carared",
+        "1.00 lb Caramel Rye (Weyermann)",
+        "1.00 lb Special B Malt"
+      ],
+      "hops": [
+        "2.0 oz Columbus (Tomahawk) (Boil 60 min)",
+        "1.0 oz Cascade (Flavor 15 min)",
+        "1.0 oz Pacific Jade (Aroma 5 min)",
+        "1.0 oz Pacific Jade (Flavor 10 min)",
+        "2.0 oz Pacific Jade (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "redheads-are-the-best.bsmx"
+    },
+    {
+      "name": "Rasberry Saurus-Rex",
+      "style": "American Pale Ale",
+      "date": "2015-04-18",
+      "og": null,
+      "fg": "1.010",
+      "abv": null,
+      "ibu": 39,
+      "grains": [
+        "16.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Cara-Pils/Dextrine",
+        "2.00 lb Caramel Malt - 20L (Briess)",
+        "2.00 lb Vienna Malt",
+        "2.00 lb Wheat Malt, Bel",
+        "1.00 lb Caramel Malt - 40L (Briess)"
+      ],
+      "hops": [
+        "1.0 oz Citra (Boil 60 min)",
+        "1.0 oz Citra (Boil 30 min)",
+        "1.0 oz Amarillo (Flavor 15 min)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "rasberry-saurus-rex.bsmx"
+    },
+    {
+      "name": "Strawberry Saurus-Rex",
+      "style": "American Pale Ale",
+      "date": "2015-04-18",
+      "og": null,
+      "fg": "1.010",
+      "abv": null,
+      "ibu": 39,
+      "grains": [
+        "16.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Carafoam",
+        "2.00 lb Caramel Malt - 20L (Briess)",
+        "2.00 lb Vienna Malt",
+        "2.00 lb Wheat Malt, Bel",
+        "1.00 lb Caramel Malt - 40L (Briess)"
+      ],
+      "hops": [
+        "1.0 oz Citra (Boil 60 min)",
+        "1.0 oz Citra (Boil 30 min)",
+        "1.0 oz Amarillo (Flavor 15 min)"
+      ],
+      "yeast": "Wyeast Labs 1272 American Ale II",
+      "fileName": "strawberry-saurus-rex.bsmx",
+      "tonyNotes": "Delicious"
+    },
+    {
+      "name": "Little Sumpin Sumpin",
+      "style": "American Pale Ale",
+      "date": "2015-04-20",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 26,
+      "grains": [
+        "18.03 lb Pale Malt (2 Row) US",
+        "13.57 lb Wheat Malt, Bel",
+        "4.07 lb Wheat, Torrified",
+        "0.04 lb Toasted Malt"
+      ],
+      "hops": [
+        "0.7 oz Nugget (Boil 90 min)",
+        "0.1 oz Horizon (Boil 90 min)",
+        "0.1 oz Summit (Boil 90 min)",
+        "0.5 oz Willamette (Boil 45 min)",
+        "1.8 oz Santiam (Flavor 15 min)",
+        "0.6 oz Willamette (Flavor 15 min)",
+        "1.9 oz Cascade (Dry Hop)",
+        "1.9 oz Centennial (Dry Hop)",
+        "1.9 oz Chinook (Dry Hop)",
+        "1.9 oz Simcoe (Dry Hop)",
+        "1.4 oz Amarillo (Dry Hop)",
+        "1.2 oz Columbus (Tomahawk) (Dry Hop)"
+      ],
+      "yeast": "White Labs WLP002 English Ale",
+      "fileName": "little-sumpin-sumpin.bsmx"
+    },
+    {
+      "name": "Oberon",
+      "style": "American Wheat or Rye Beer",
+      "date": "2015-04-26",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 15,
+      "grains": [
+        "13.00 lb Pale Malt (2 Row) US",
+        "9.00 lb White Wheat Malt",
+        "1.00 lb Cara-Pils/Dextrine"
+      ],
+      "hops": [
+        "2.0 oz Saaz (Boil 30 min)",
+        "2.0 oz Saaz (Flavor 15 min)",
+        "2.0 oz Cascade (Dry Hop)",
+        "1.0 oz Saaz (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1010 American Wheat Ale",
+      "fileName": "oberon.bsmx",
+      "tonyNotes": "This was okay"
+    },
+    {
+      "name": "Invade Canada Redux",
+      "style": "American Pale Ale",
+      "date": "2015-05-31",
+      "og": "1.052",
+      "fg": "1.010",
+      "abv": "5.5",
+      "ibu": 53,
+      "grains": [
+        "19.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Caramel/Crystal Malt - 40L",
+        "1.00 lb Toasted Malt",
+        "1.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Rye Malt"
+      ],
+      "hops": [
+        "1.0 oz Warrior (Boil 60 min)",
+        "2.0 oz Motueka (Flavor 15 min)",
+        "1.0 oz Nelson Sauvin (Flavor 10 min)",
+        "1.0 oz Motueka (Flavor 10 min)",
+        "3.0 oz Motueka (Aroma 5 min)"
+      ],
+      "yeast": "Wyeast Labs 1272 American Ale II",
+      "fileName": "invade-canada-redux.bsmx",
+      "tonyNotes": "DUMPED",
+      "csvOg": "1.052"
+    },
+    {
+      "name": "Invade Canada",
+      "style": "American Pale Ale",
+      "date": "2015-05-31",
+      "og": "1.052",
+      "fg": "1.010",
+      "abv": "5.5",
+      "ibu": 36,
+      "grains": [
+        "19.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Caramel/Crystal Malt - 40L",
+        "1.00 lb Cara-Pils/Dextrine"
+      ],
+      "hops": [
+        "2.0 oz Cascade (Boil 60 min)",
+        "1.0 oz Cascade (Boil 30 min)",
+        "1.0 oz Simcoe (Flavor 15 min)",
+        "2.0 oz Nelson Sauvin (Dry Hop)",
+        "4.0 oz Amarillo (Dry Hop)",
+        "2.0 oz Galaxy (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1272 American Ale II",
+      "fileName": "invade-canada.bsmx",
+      "tonyNotes": "DUMPED",
+      "csvOg": "1.052"
+    },
+    {
+      "name": "Withered Imperial Stout 3",
+      "style": "Imperial Stout",
+      "date": "2015-06-07",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 46,
+      "grains": [
+        "19.00 lb Pale Malt (2 Row) US",
+        "3.00 lb Light Dry Extract",
+        "2.00 lb Chocolate Malt",
+        "1.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Roasted Barley",
+        "1.00 lb Rye Malt",
+        "1.00 lb Special B Malt",
+        "0.50 lb Black (Patent) Malt"
+      ],
+      "hops": [
+        "2.0 oz Challenger (Boil 60 min)",
+        "2.0 oz Goldings, B.C. (Boil 30 min)"
+      ],
+      "yeast": "Wyeast Labs 1028 London Ale Yeast",
+      "fileName": "withered-imperial-stout-3.bsmx",
+      "tonyNotes": "GOOD"
+    },
+    {
+      "name": "Withered Imperial Stout - Mashmallow",
+      "style": "Imperial Stout",
+      "date": "2015-06-07",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 47,
+      "grains": [
+        "19.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Chocolate Malt",
+        "1.00 lb Black (Patent) Malt",
+        "1.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Roasted Barley",
+        "1.00 lb Special B Malt"
+      ],
+      "hops": [
+        "2.0 oz Challenger (Boil 60 min)",
+        "2.0 oz Goldings, B.C. (Boil 30 min)"
+      ],
+      "yeast": "Wyeast Labs 1028 London Ale Yeast",
+      "fileName": "withered-imperial-stout-mashmallow.bsmx",
+      "tonyNotes": "GOOD"
+    },
+    {
+      "name": "Withered Imperial Stout OG",
+      "style": "Imperial Stout",
+      "date": "2015-06-07",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 47,
+      "grains": [
+        "19.00 lb Pale Malt (2 Row) US",
+        "2.00 lb Chocolate Malt",
+        "1.00 lb Black (Patent) Malt",
+        "1.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Roasted Barley",
+        "1.00 lb Special B Malt"
+      ],
+      "hops": [
+        "2.0 oz Challenger (Boil 60 min)",
+        "2.0 oz Goldings, B.C. (Boil 30 min)"
+      ],
+      "yeast": "Wyeast Labs 1028 London Ale Yeast",
+      "fileName": "withered-imperial-stout-og.bsmx",
+      "tonyNotes": "GOOD"
+    },
+    {
+      "name": "Little Heffer 2",
+      "style": "Weizen/Weissbier",
+      "date": "2015-06-14",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 14,
+      "grains": [
+        "15.50 lb Wheat Malt, Ger",
+        "8.00 lb Pilsner (2 Row) Ger"
+      ],
+      "hops": [
+        "0.5 oz Mandarina Bavaria (Boil 60 min)",
+        "1.5 oz Mandarina Bavaria (Flavor 10 min)"
+      ],
+      "yeast": "Wyeast Labs 3068 Weihenstephan Weizen",
+      "fileName": "little-heffer-2.bsmx",
+      "tonyNotes": "Very good, bananay"
+    },
+    {
+      "name": "Little Heffer",
+      "style": "Weizen/Weissbier",
+      "date": "2015-06-14",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 12,
+      "grains": [
+        "14.00 lb Wheat Malt, Ger",
+        "8.00 lb Pilsner (2 Row) Ger"
+      ],
+      "hops": [
+        "1.5 oz Hallertau (Boil 45 min)",
+        "0.5 oz Hallertau (Flavor 15 min)"
+      ],
+      "yeast": "Wyeast Labs 3068 Weihenstephan Weizen",
+      "fileName": "little-heffer.bsmx",
+      "tonyNotes": "Very good, bananay"
+    },
+    {
+      "name": "Madelyns Razzy",
+      "style": "American Pale Ale",
+      "date": "2015-06-18",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": null,
+      "grains": [
+        "15.00 lb Pale Malt (2 Row) Bel"
+      ],
+      "hops": [],
+      "yeast": null,
+      "fileName": "madelyns-razzy.bsmx"
+    },
+    {
+      "name": "Usurper",
+      "style": "American Wheat or Rye Beer",
+      "date": "2015-06-28",
+      "og": null,
+      "fg": null,
+      "abv": null,
+      "ibu": 76,
+      "grains": [
+        "17.00 lb Pale Malt (2 Row) US",
+        "6.00 lb Rye Malt",
+        "1.00 lb Aromatic Malt",
+        "1.00 lb Caramel/Crystal Malt - 20L",
+        "1.00 lb Caramel/Crystal Malt - 40L",
+        "1.00 lb Caramel/Crystal Malt - 80L",
+        "1.00 lb Caramel/Crystal Malt -120L",
+        "1.00 lb Carapils (Briess)"
+      ],
+      "hops": [
+        "2.0 oz Summit (Boil 60 min)",
+        "1.0 oz Amarillo (Boil 30 min)",
+        "1.0 oz Amarillo (Boil 20 min)",
+        "2.0 oz Amarillo (Flavor 10 min)",
+        "1.0 oz Amarillo Gold (Aroma 0 min)",
+        "4.0 oz Amarillo (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1272 American Ale II",
+      "fileName": "usurper.bsmx",
+      "tonyNotes": "Very good!"
+    },
+    {
+      "name": "Blue Balls",
+      "style": "Witbier",
+      "date": "2015-07-03",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 17,
+      "grains": [
+        "10.00 lb Pale Malt (2 Row) US",
+        "5.00 lb Wheat, Flaked",
+        "5.00 lb Wheat, Torrified"
+      ],
+      "hops": [
+        "2.0 oz East Kent Goldings (EKG) (Boil 60 min)"
+      ],
+      "yeast": "Wyeast Labs 3944 Belgian Witbier",
+      "fileName": "blue-balls.bsmx",
+      "tonyNotes": "Good, needs more orange"
+    },
+    {
+      "name": "World's Best Oktoberfest",
+      "style": "Oktoberfest/Marzen",
+      "date": "2015-07-26",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 27,
+      "grains": [
+        "10.00 lb Vienna Malt",
+        "6.00 lb Munich Malt",
+        "6.00 lb Pale Malt (2 Row) US"
+      ],
+      "hops": [
+        "4.0 oz Hallertauer Hersbrucker (Boil 60 min)"
+      ],
+      "yeast": "Wyeast Labs 2124 Bohemian Lager",
+      "fileName": "worlds-best-oktoberfest.bsmx",
+      "tonyNotes": "Very good for first Lager"
+    },
+    {
+      "name": "Hop Stoopid",
+      "style": "American IPA",
+      "date": "2015-08-01",
+      "og": "1.080",
+      "fg": "1.010",
+      "abv": "9.2",
+      "ibu": 197,
+      "grains": [
+        "18.00 lb Pale Malt (2 Row) US",
+        "1.00 lb Victory Malt"
+      ],
+      "hops": [
+        "1.0 oz Nugget (Boil 90 min)",
+        "4.0 oz Columbus (Tomahawk) (Boil 60 min)",
+        "1.0 oz Cascade (Flavor 12 min)",
+        "1.0 oz Chinook (Flavor 12 min)",
+        "1.3 oz Simcoe (Aroma 0 min)",
+        "3.0 oz Columbus (Tomahawk) (Dry Hop)",
+        "1.5 oz Simcoe (Dry Hop)",
+        "0.8 oz Chinook (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1028 London Ale Yeast",
+      "fileName": "hop-stoopid.bsmx"
+    },
+    {
+      "name": "Pumkin Beer OG",
+      "style": "American Amber Ale",
+      "date": "2015-08-21",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 22,
+      "grains": [
+        "16.00 lb Pale Malt (2 Row) US",
+        "1.00 lb Caramel/Crystal Malt - 60L",
+        "1.00 lb Oats, Flaked",
+        "1.00 lb Vienna Malt",
+        "1.00 lb Wheat, Torrified",
+        "1.00 lb White Wheat Malt"
+      ],
+      "hops": [
+        "1.0 oz Cluster (Boil 60 min)",
+        "1.0 oz Goldings, East Kent (Boil 30 min)"
+      ],
+      "yeast": "Wyeast Labs 1187 Ringwood Ale",
+      "fileName": "pumkin-beer-og.bsmx"
+    },
+    {
+      "name": "Smore Punkin",
+      "style": "American Amber Ale",
+      "date": "2015-08-30",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 31,
+      "grains": [
+        "18.00 lb Pale Malt (2 Row) US",
+        "3.00 lb Caramel/Crystal Malt - 60L",
+        "2.60 lb Oats, Flaked",
+        "2.00 lb Victory Malt",
+        "2.00 lb Vienna Malt"
+      ],
+      "hops": [
+        "2.0 oz Cluster (Boil 60 min)",
+        "2.0 oz Goldings, East Kent (Boil 30 min)"
+      ],
+      "yeast": "Wyeast Labs 1187 Ringwood Ale",
+      "fileName": "smore-punkin.bsmx",
+      "tonyNotes": "Very good"
+    },
+    {
+      "name": "Devil's Wheat 2",
+      "style": "American Pale Ale",
+      "date": "2015-09-06",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 59,
+      "grains": [
+        "10.00 lb Pale Malt (2 Row) US",
+        "10.00 lb Wheat Malt, Ger",
+        "1.00 lb Chocolate Rye Malt",
+        "1.00 lb Vienna Malt",
+        "1.00 lb Caramel/Crystal Malt - 20L",
+        "0.25 lb Roasted Barley"
+      ],
+      "hops": [
+        "1.0 oz Columbus (Tomahawk) (Boil 60 min)",
+        "1.0 oz Amarillo Gold (Boil 60 min)",
+        "2.0 oz Columbus (Tomahawk) (Flavor 10 min)",
+        "2.0 oz Amarillo Gold (Flavor 10 min)",
+        "3.0 oz Amarillo Gold (Aroma 0 min)",
+        "1.0 oz Columbus (Tomahawk) (Aroma 0 min)"
+      ],
+      "yeast": "Wyeast Labs 1010 American Wheat Ale",
+      "fileName": "devils-wheat-2.bsmx",
+      "tonyNotes": "Pretty good, more hops next time"
+    },
+    {
+      "name": "Devil's Wheat",
+      "style": "American Pale Ale",
+      "date": "2015-09-06",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 56,
+      "grains": [
+        "10.00 lb Pale Malt (2 Row) US",
+        "10.00 lb Wheat Malt, Ger",
+        "2.00 lb Carared",
+        "2.00 lb Rye Malt",
+        "1.00 lb Caraaroma",
+        "1.00 lb Carafoam",
+        "1.00 lb Caramel/Crystal Malt - 30L"
+      ],
+      "hops": [
+        "1.0 oz Amarillo Gold (Boil 60 min)",
+        "1.0 oz Columbus (Tomahawk) (Boil 60 min)",
+        "2.0 oz Amarillo Gold (Flavor 10 min)",
+        "2.0 oz Columbus (Tomahawk) (Flavor 10 min)",
+        "3.0 oz Amarillo Gold (Aroma 0 min)",
+        "1.0 oz Columbus (Tomahawk) (Aroma 0 min)"
+      ],
+      "yeast": "Wyeast Labs 1010 American Wheat Ale",
+      "fileName": "devils-wheat.bsmx",
+      "tonyNotes": "Pretty good, more hops next time"
+    },
+    {
+      "name": "Saison du Frank!",
+      "style": "Saison",
+      "date": "2015-10-11",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 29,
+      "grains": [
+        "9.00 lb Pale Malt (2 Row) Bel",
+        "2.00 lb Wheat Malt, Bel",
+        "1.00 lb Caramel Malt - 40L (Briess)",
+        "0.50 lb Munich Malt"
+      ],
+      "hops": [
+        "0.5 oz Sorachi Ace (Boil 30 min)",
+        "1.5 oz Crystal (Flavor 15 min)",
+        "0.5 oz Cascade (Flavor 10 min)",
+        "0.5 oz Amarillo (Aroma 5 min)"
+      ],
+      "yeast": "Wyeast Labs 3711 French Saison",
+      "fileName": "saison-du-frank.bsmx",
+      "tonyNotes": "Good"
+    },
+    {
+      "name": "Saison",
+      "style": "Saison",
+      "date": "2015-10-11",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 38,
+      "grains": [
+        "17.00 lb Pale Malt (2 Row) US",
+        "3.00 lb White Wheat Malt",
+        "1.00 lb Caramunich Malt",
+        "1.00 lb Oats, Flaked"
+      ],
+      "hops": [
+        "1.0 oz Fuggles (Boil 60 min)",
+        "1.0 oz Sorachi Ace (Boil 60 min)",
+        "1.0 oz Fuggles (Boil 30 min)",
+        "2.0 oz Fuggles (Flavor 15 min)"
+      ],
+      "yeast": "Wyeast Labs 3711 French Saison",
+      "fileName": "saison.bsmx",
+      "tonyNotes": "Good"
+    },
+    {
+      "name": "Lacto",
+      "style": "Berliner Weiss",
+      "date": "2015-10-15",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": null,
+      "grains": [
+        "5.00 lb White Wheat Malt",
+        "3.00 lb Pilsner (2 Row) Bel"
+      ],
+      "hops": [],
+      "yeast": null,
+      "fileName": "lacto.bsmx"
+    },
+    {
+      "name": "Flanders Red",
+      "style": "Flanders Red Ale",
+      "date": "2015-10-29",
+      "og": "1.054",
+      "fg": "1.010",
+      "abv": "5.8",
+      "ibu": 16,
+      "grains": [
+        "110.00 lb Munich I (Weyermann)",
+        "110.00 lb Pale Malt (Weyermann)",
+        "110.00 lb Vienna Malt",
+        "30.00 lb White Wheat Malt",
+        "25.00 lb Caramunich I (Weyermann)",
+        "15.00 lb Chateau Special B",
+        "10.00 lb Aromatic Malt"
+      ],
+      "hops": [
+        "44.0 oz Hallertau (Boil 60 min)"
+      ],
+      "yeast": "White Labs WLP655 Belgian Sour Mix 1",
+      "fileName": "flanders-red.bsmx"
+    },
+    {
+      "name": "Big Ass Barleywine",
+      "style": "English Barleywine",
+      "date": "2015-12-02",
+      "og": null,
+      "fg": "1.010",
+      "abv": null,
+      "ibu": 56,
+      "grains": [
+        "23.00 lb Pale Malt (2 Row) US",
+        "3.00 lb Caramel Malt - 60L (Briess)",
+        "1.00 lb Carapils (Briess)"
+      ],
+      "hops": [
+        "0.5 oz Cascade (Boil 120 min)",
+        "0.5 oz Centennial (Boil 120 min)",
+        "1.0 oz Cascade (Boil 90 min)",
+        "1.0 oz Chinook (Boil 45 min)",
+        "1.0 oz Chinook (Aroma 0 min)",
+        "0.5 oz Cascade (Dry Hop)",
+        "0.3 oz Centennial (Dry Hop)",
+        "0.3 oz Chinook (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "big-ass-barleywine.bsmx"
+    },
+    {
+      "name": "Kyle beer",
+      "style": "Saison",
+      "date": "2016-01-17",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 55,
+      "grains": [
+        "16.00 lb Pilsner (2 Row) Ger",
+        "3.00 lb White Wheat Malt",
+        "1.00 lb Munich Malt",
+        "0.75 lb Acid Malt"
+      ],
+      "hops": [
+        "2.0 oz East Kent Goldings (EKG) (Boil 60 min)",
+        "2.0 oz Admiral (Boil 30 min)"
+      ],
+      "yeast": null,
+      "fileName": "kyle-beer.bsmx"
+    },
+    {
+      "name": "Bitch Mittens Session IPA",
+      "style": "Session Beer",
+      "date": "2016-07-29",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 42,
+      "grains": [
+        "7.00 lb Pale Malt, 2-Row (Rahr)",
+        "0.75 lb Munich 10L (Briess)",
+        "0.75 lb Victory Malt",
+        "0.25 lb Acidulated (Weyermann)"
+      ],
+      "hops": [
+        "0.2 oz Amarillo (Boil 30 min)",
+        "0.2 oz Mosaic (HBC 369) (Flavor 15 min)",
+        "1.7 oz Mosaic (HBC 369) (Boil 20 min)",
+        "1.3 oz Amarillo (Boil 20 min)",
+        "1.6 oz Mosaic (HBC 369) (Dry Hop)",
+        "1.2 oz Amarillo (Dry Hop)",
+        "1.0 oz Cascade (Dry Hop)",
+        "1.0 oz Simcoe (Dry Hop)",
+        "0.8 oz Centennial (Dry Hop)"
+      ],
+      "yeast": "White Labs WLP001 California Ale",
+      "fileName": "bitch-mittens-session-ipa.bsmx"
+    },
+    {
+      "name": "Riggity Wrecked",
+      "style": "Imperial Stout",
+      "date": "2017-01-13",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 62,
+      "grains": [
+        "17.00 lb Pale Malt (2 Row) US",
+        "3.00 lb Roasted Barley",
+        "3.00 lb Chocolate Malt",
+        "2.00 lb Black (Patent) Malt",
+        "2.00 lb Oats, Flaked",
+        "1.00 lb Cara-Pils/Dextrine"
+      ],
+      "hops": [
+        "1.0 oz Chinook (Boil 60 min)",
+        "1.0 oz Chinook (Boil 40 min)",
+        "1.0 oz Northern Brewer (Flavor 15 min)",
+        "2.0 oz Willamette (Aroma 5 min)"
+      ],
+      "yeast": "Wyeast Labs 1056 American Ale",
+      "fileName": "riggity-wrecked.bsmx"
+    },
+    {
+      "name": "#NoFilter",
+      "style": "American Pale Ale",
+      "date": "2017-11-26",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 77,
+      "grains": [
+        "22.00 lb Pale Malt (2 Row) US",
+        "3.00 lb Wheat Malt, Bel",
+        "3.00 lb Oats, Flaked",
+        "1.00 lb Honey Malt"
+      ],
+      "hops": [
+        "1.0 oz Chinook (Boil 60 min)",
+        "2.0 oz Citra (Flavor 10 min)",
+        "2.0 oz Amarillo (Flavor 10 min)",
+        "3.0 oz Amarillo (Flavor 15 min)",
+        "3.0 oz Mosaic (HBC 369) (Flavor 15 min)",
+        "3.0 oz Citra (Flavor 15 min)",
+        "4.0 oz Citra (Dry Hop)",
+        "4.0 oz Mosaic (HBC 369) (Dry Hop)",
+        "4.0 oz Amarillo (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1318 London Ale III",
+      "fileName": "nofilter.bsmx"
+    },
+    {
+      "name": "The Devil's Narwhal NEIPA - 5/29/2019",
+      "style": "American IPA",
+      "date": "2017-11-26",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 85,
+      "grains": [
+        "22.00 lb Pale Malt (2 Row) US",
+        "3.00 lb Oats, Flaked",
+        "3.00 lb Wheat Malt, Bel",
+        "2.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Rye Malt"
+      ],
+      "hops": [
+        "1.0 oz Chinook (Boil 60 min)",
+        "2.0 oz Citra (Flavor 10 min)",
+        "2.0 oz Galaxy (Flavor 10 min)",
+        "3.0 oz Citra (Flavor 15 min)",
+        "3.0 oz Galaxy (Flavor 15 min)",
+        "3.0 oz Mosaic (HBC 369) (Flavor 15 min)",
+        "4.0 oz Citra (Dry Hop)",
+        "4.0 oz Galaxy (Dry Hop)",
+        "4.0 oz Mosaic (HBC 369) (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1318 London Ale III",
+      "fileName": "the-devils-narwhal-neipa-5-29-2019.bsmx"
+    },
+    {
+      "name": "The Devil's Narwhal NEIPA",
+      "style": "American Pale Ale",
+      "date": "2017-11-26",
+      "og": "1.046",
+      "fg": "1.010",
+      "abv": "4.7",
+      "ibu": 85,
+      "grains": [
+        "22.00 lb Pale Malt (2 Row) US",
+        "3.00 lb Oats, Flaked",
+        "3.00 lb Wheat Malt, Bel",
+        "2.00 lb Cara-Pils/Dextrine",
+        "1.00 lb Honey Malt"
+      ],
+      "hops": [
+        "1.0 oz Chinook (Boil 60 min)",
+        "2.0 oz Citra (Flavor 10 min)",
+        "2.0 oz Galaxy (Flavor 10 min)",
+        "3.0 oz Citra (Flavor 15 min)",
+        "3.0 oz Mosaic (HBC 369) (Flavor 15 min)",
+        "3.0 oz Galaxy (Flavor 15 min)",
+        "4.0 oz Citra (Dry Hop)",
+        "4.0 oz Galaxy (Dry Hop)",
+        "4.0 oz Mosaic (HBC 369) (Dry Hop)"
+      ],
+      "yeast": "Wyeast Labs 1318 London Ale III",
+      "fileName": "the-devils-narwhal-neipa.bsmx"
+    }
+  ]
+}
