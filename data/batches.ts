@@ -131,7 +131,9 @@ export const batches: Batch[] = [
         "laboratory": "Omega",
         "productId": "OYL-050"
       }
-    ]
+    ],
+    "brewingNotes": "Hop stand was at 140, not 170. | Decided to use a pump and a filter to filter out the grain | Spilled some grain into the kettle when I started the mash. The bucket was too full",
+    "tastingNotes": "It's very smooth. It doesn't have the bitter hop flavor that it normally does. I'd undo those hop timing changes. Too balanced."
   },
   {
     "batchNo": 7,
@@ -204,7 +206,8 @@ export const batches: Batch[] = [
         "laboratory": "Omega Yeast",
         "productId": "OYL-404"
       }
-    ]
+    ],
+    "brewingNotes": "I screwed up and put 8.3g in the kettle to start - basically included the sparge water.\nI forgot to turn down the temp, so the first 20 minutes of mash were close to 160 instead of 153. Hopefully it's not totally unfermentable🤞 I will try to compensate by adding an extra 30 minutes onto the boil."
   },
   {
     "batchNo": 9,
@@ -310,7 +313,8 @@ export const batches: Batch[] = [
         "laboratory": "Omega",
         "productId": "OYL-021"
       }
-    ]
+    ],
+    "brewingNotes": "I forgot to pull the grain basket up to the 2nd set of hooks before adding sparge water, kinda undoing some of the value it adds."
   },
   {
     "batchNo": 13,
@@ -446,7 +450,8 @@ export const batches: Batch[] = [
         "laboratory": "Omega",
         "productId": "OYL-006"
       }
-    ]
+    ],
+    "tastingNotes": "Rich and creamy with notes of chocolate and coffee. The lactose adds a smooth sweetness that balances the roasted malt character."
   },
   {
     "batchNo": 3,
@@ -889,7 +894,8 @@ export const batches: Batch[] = [
         "laboratory": "Omega",
         "productId": "OYL-043"
       }
-    ]
+    ],
+    "brewingNotes": "I somehow wildly missed the volume target and ended up with too much wort before the boil. | I completely forgot to mash out. I just yanked the grains out and then raised temp. D'oh!"
   },
   {
     "batchNo": 1,
@@ -1264,7 +1270,8 @@ export const batches: Batch[] = [
         "laboratory": "Omega",
         "productId": "OYL-050"
       }
-    ]
+    ],
+    "brewingNotes": "Probably need a more rigorous boil bc I'm not hitting my boil off rate"
   },
   {
     "batchNo": 22,
@@ -1333,7 +1340,8 @@ export const batches: Batch[] = [
         "laboratory": "Omega",
         "productId": "OYL-050"
       }
-    ]
+    ],
+    "brewingNotes": "Added 16oz of corn sugar to the boil | What's up with this mash efficiency?? Ughhh | Recirculation was at 167 not 176"
   },
   {
     "batchNo": 1,
@@ -1466,7 +1474,9 @@ export const batches: Batch[] = [
         "laboratory": "Omega",
         "productId": "OYL-006"
       }
-    ]
+    ],
+    "brewingNotes": "Ewelina said the uncarbonated beer \"had girth\"",
+    "tastingNotes": "It's a little bit thinner than I remember. The added roasted malt came through pretty strong - keep that."
   },
   {
     "batchNo": 23,
@@ -1533,7 +1543,8 @@ export const batches: Batch[] = [
         "laboratory": "Omega",
         "productId": "OYL-004"
       }
-    ]
+    ],
+    "brewingNotes": "Didn't have enough Columbus. Subbing half ounce for Cascade."
   },
   {
     "batchNo": 27,
@@ -1681,7 +1692,8 @@ export const batches: Batch[] = [
         "laboratory": "Omega",
         "productId": "OYL-061"
       }
-    ]
+    ],
+    "brewingNotes": "I couldn't get the last half gallon out of the fermenter. Idk why. Possibly bad seal on top of the lid now? So the pressure isn't pushing downward. \n\nSo I'm missing a half gallon of beer in the keg. | Added dry hops on day 7 | I think it fermented in like 2 days. | I added the lactic acid 30 minutes into the mash. Whoops"
   },
   {
     "batchNo": 10,

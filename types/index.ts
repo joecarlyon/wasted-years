@@ -51,4 +51,6 @@ export interface Batch {
   fermentables: Fermentable[]
   hops: Hop[]
   yeast: Yeast[]
+  brewingNotes?: string
+  tastingNotes?: string
 }

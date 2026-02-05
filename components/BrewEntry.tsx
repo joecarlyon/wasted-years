@@ -67,6 +67,31 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
             {formatDate(batch.bottlingDate)}
           </span>
         </div>
+
+        {(batch.brewingNotes || batch.tastingNotes) && (
+          <div className="mt-4 border-t border-border pt-4 space-y-3">
+            {batch.brewingNotes && (
+              <div>
+                <div className="text-xs uppercase tracking-wide text-lavender-dark mb-1">
+                  Brewing Notes
+                </div>
+                <p className="text-sm text-text-secondary">
+                  {batch.brewingNotes}
+                </p>
+              </div>
+            )}
+            {batch.tastingNotes && (
+              <div>
+                <div className="text-xs uppercase tracking-wide text-lavender-dark mb-1">
+                  Tasting Notes
+                </div>
+                <p className="text-sm text-text-secondary italic">
+                  &ldquo;{batch.tastingNotes}&rdquo;
+                </p>
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   )
