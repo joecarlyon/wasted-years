@@ -284,9 +284,7 @@
         "4.00 lb Acidulated (Weyermann)",
         "1.00 lb Rice Hulls"
       ],
-      "hops": [
-        "1.0 oz Santiam (Boil 60 min)"
-      ],
+      "hops": ["1.0 oz Santiam (Boil 60 min)"],
       "yeast": "Wyeast Labs 1007 German Ale",
       "fileName": "here-goes-nothing-hankies-leipzig-gose.bsmx"
     },
@@ -307,9 +305,7 @@
         "1.00 lb Oats, Flaked",
         "0.96 lb Chocolate Malt"
       ],
-      "hops": [
-        "2.0 oz Warrior (Boil 60 min)"
-      ],
+      "hops": ["2.0 oz Warrior (Boil 60 min)"],
       "yeast": "Wyeast Labs 1318 London Ale III",
       "fileName": "milk-of-the-poppy.bsmx"
     },
@@ -457,10 +453,7 @@
       "abv": null,
       "ibu": 59,
       "batchSize": 5,
-      "grains": [
-        "15.00 lb Pale Malt, Maris Otter",
-        "2.00 lb Special B Malt"
-      ],
+      "grains": ["15.00 lb Pale Malt, Maris Otter", "2.00 lb Special B Malt"],
       "hops": [
         "0.5 oz Chinook (Boil 90 min)",
         "0.5 oz Chinook (Boil 45 min)",
@@ -530,10 +523,7 @@
         "2.00 lb White Wheat Malt",
         "1.00 lb Wheat Malt, Bel"
       ],
-      "hops": [
-        "1.0 oz Motueka (Boil 25 min)",
-        "1.0 oz Ahtanum (Aroma 5 min)"
-      ],
+      "hops": ["1.0 oz Motueka (Boil 25 min)", "1.0 oz Ahtanum (Aroma 5 min)"],
       "yeast": null,
       "fileName": "white-knight-wit.bsmx"
     },
@@ -842,10 +832,7 @@
         "1.00 lb Munich Malt",
         "1.00 lb Cara-Pils/Dextrine"
       ],
-      "hops": [
-        "2.0 oz Crystal (Boil 60 min)",
-        "2.0 oz Cascade (Boil 30 min)"
-      ],
+      "hops": ["2.0 oz Crystal (Boil 60 min)", "2.0 oz Cascade (Boil 30 min)"],
       "yeast": null,
       "fileName": "raging-red-head-updated-malt-.bsmx",
       "tonyNotes": "Good, faded after time"
@@ -1123,10 +1110,7 @@
       "abv": "4.7",
       "ibu": 14,
       "batchSize": 11,
-      "grains": [
-        "15.50 lb Wheat Malt, Ger",
-        "8.00 lb Pilsner (2 Row) Ger"
-      ],
+      "grains": ["15.50 lb Wheat Malt, Ger", "8.00 lb Pilsner (2 Row) Ger"],
       "hops": [
         "0.5 oz Mandarina Bavaria (Boil 60 min)",
         "1.5 oz Mandarina Bavaria (Flavor 10 min)"
@@ -1144,10 +1128,7 @@
       "abv": "4.7",
       "ibu": 12,
       "batchSize": 11,
-      "grains": [
-        "14.00 lb Wheat Malt, Ger",
-        "8.00 lb Pilsner (2 Row) Ger"
-      ],
+      "grains": ["14.00 lb Wheat Malt, Ger", "8.00 lb Pilsner (2 Row) Ger"],
       "hops": [
         "1.5 oz Hallertau (Boil 45 min)",
         "0.5 oz Hallertau (Flavor 15 min)"
@@ -1165,9 +1146,7 @@
       "abv": "4.7",
       "ibu": null,
       "batchSize": 11,
-      "grains": [
-        "15.00 lb Pale Malt (2 Row) Bel"
-      ],
+      "grains": ["15.00 lb Pale Malt (2 Row) Bel"],
       "hops": [],
       "yeast": null,
       "fileName": "madelyns-razzy.bsmx"
@@ -1217,9 +1196,7 @@
         "5.00 lb Wheat, Flaked",
         "5.00 lb Wheat, Torrified"
       ],
-      "hops": [
-        "2.0 oz East Kent Goldings (EKG) (Boil 60 min)"
-      ],
+      "hops": ["2.0 oz East Kent Goldings (EKG) (Boil 60 min)"],
       "yeast": "Wyeast Labs 3944 Belgian Witbier",
       "fileName": "blue-balls.bsmx",
       "tonyNotes": "Good, needs more orange"
@@ -1238,9 +1215,7 @@
         "6.00 lb Munich Malt",
         "6.00 lb Pale Malt (2 Row) US"
       ],
-      "hops": [
-        "4.0 oz Hallertauer Hersbrucker (Boil 60 min)"
-      ],
+      "hops": ["4.0 oz Hallertauer Hersbrucker (Boil 60 min)"],
       "yeast": "Wyeast Labs 2124 Bohemian Lager",
       "fileName": "worlds-best-oktoberfest.bsmx",
       "tonyNotes": "Very good for first Lager"
@@ -1254,10 +1229,7 @@
       "abv": "9.2",
       "ibu": 197,
       "batchSize": 5.5,
-      "grains": [
-        "18.00 lb Pale Malt (2 Row) US",
-        "1.00 lb Victory Malt"
-      ],
+      "grains": ["18.00 lb Pale Malt (2 Row) US", "1.00 lb Victory Malt"],
       "hops": [
         "1.0 oz Nugget (Boil 90 min)",
         "4.0 oz Columbus (Tomahawk) (Boil 60 min)",
@@ -1437,10 +1409,7 @@
       "abv": "4.7",
       "ibu": null,
       "batchSize": 5,
-      "grains": [
-        "5.00 lb White Wheat Malt",
-        "3.00 lb Pilsner (2 Row) Bel"
-      ],
+      "grains": ["5.00 lb White Wheat Malt", "3.00 lb Pilsner (2 Row) Bel"],
       "hops": [],
       "yeast": null,
       "fileName": "lacto.bsmx"
@@ -1463,9 +1432,7 @@
         "15.00 lb Chateau Special B",
         "10.00 lb Aromatic Malt"
       ],
-      "hops": [
-        "44.0 oz Hallertau (Boil 60 min)"
-      ],
+      "hops": ["44.0 oz Hallertau (Boil 60 min)"],
       "yeast": "White Labs WLP655 Belgian Sour Mix 1",
       "fileName": "flanders-red.bsmx"
     },
