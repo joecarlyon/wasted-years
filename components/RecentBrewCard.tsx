@@ -1,12 +1,17 @@
+import Link from 'next/link'
 import { Batch } from '@/types'
 import { formatDate } from '@/lib/utils'
 
 interface RecentBrewCardProps {
   batch: Batch
+  recipeUuid?: string
 }
 
-export default function RecentBrewCard({ batch }: RecentBrewCardProps) {
-  return (
+export default function RecentBrewCard({
+  batch,
+  recipeUuid,
+}: RecentBrewCardProps) {
+  const cardContent = (
     <div className="border border-border bg-bg-card p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent">
       <h4 className="mb-1 text-lg">{batch.name}</h4>
       <p className="mb-3 text-sm uppercase tracking-wide text-accent">
@@ -38,4 +43,10 @@ export default function RecentBrewCard({ batch }: RecentBrewCardProps) {
       </div>
     </div>
   )
+
+  if (recipeUuid) {
+    return <Link href={`/recipes/${recipeUuid}`}>{cardContent}</Link>
+  }
+
+  return cardContent
 }

@@ -1,11 +1,19 @@
 import Link from 'next/link'
 import { batches } from '@/data/batches'
+import { recipes } from '@/data/recipes'
 import RecentBrewCard from '@/components/RecentBrewCard'
 
 export default function Home() {
   const recentBrews = [...batches]
     .sort((a, b) => b.batchNo - a.batchNo)
     .slice(0, 3)
+    .map((batch) => {
+      // Find matching recipe by name (case-insensitive)
+      const recipe = recipes.find(
+        (r) => r.name.toLowerCase() === batch.name.toLowerCase()
+      )
+      return { batch, recipeUuid: recipe?.uuid }
+    })
 
   return (
     <main className="mx-auto max-w-6xl px-8 py-8">
@@ -25,8 +33,12 @@ export default function Home() {
           Recent Brews
         </h3>
         <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {recentBrews.map((batch) => (
-            <RecentBrewCard key={batch.batchNo} batch={batch} />
+          {recentBrews.map(({ batch, recipeUuid }) => (
+            <RecentBrewCard
+              key={batch.batchNo}
+              batch={batch}
+              recipeUuid={recipeUuid}
+            />
           ))}
         </div>
         <div className="text-center">
