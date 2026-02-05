@@ -1666,6 +1666,7 @@ export const recipes: Recipe[] = [
         use: 'Dry Hop',
       },
     ],
+    artwork: '/images/recipes/overlord.jpg',
   },
   {
     id: 30,
@@ -1812,6 +1813,7 @@ export const recipes: Recipe[] = [
         time: 10,
       },
     ],
+    artwork: '/images/recipes/moomooCanoe.jpg',
   },
   {
     id: 33,
@@ -4941,6 +4943,7 @@ export const recipes: Recipe[] = [
       boilTime: 60,
       efficiency: 67,
     },
+    artwork: '/images/recipes/overlord.jpg',
   },
   {
     id: 77,
@@ -5238,6 +5241,7 @@ export const recipes: Recipe[] = [
       boilTime: 60,
       efficiency: 67,
     },
+    artwork: '/images/recipes/moomooCanoe.jpg',
   },
   {
     id: 80,
@@ -5514,6 +5518,7 @@ export const recipes: Recipe[] = [
       boilTime: 60,
       efficiency: 55,
     },
+    artwork: '/images/recipes/overlord.jpg',
   },
   {
     id: 82,
@@ -5778,6 +5783,7 @@ export const recipes: Recipe[] = [
       boilTime: 60,
       efficiency: 69,
     },
+    artwork: '/images/recipes/overlord.jpg',
   },
   {
     id: 84,

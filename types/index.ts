@@ -73,6 +73,7 @@ export interface Recipe {
   batchSize?: number
   color?: number
   notes?: string
+  artwork?: string // Path to recipe artwork image
 }
 
 export interface Fermentable {
