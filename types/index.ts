@@ -53,4 +53,5 @@ export interface Batch {
   yeast: Yeast[]
   brewingNotes?: string
   tastingNotes?: string
+  source?: 'brewfather' | 'beersmith'
 }
