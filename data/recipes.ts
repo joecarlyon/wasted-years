@@ -3,7 +3,7 @@ import { Recipe } from '@/types'
 export const recipes: Recipe[] = [
   {
     id: 1,
-    uuid: '42af8104-42af-42af-42af-42af810442af',
+    uuid: '46ff5357-46ff-46ff-46ff-46ff535746ff',
     name: 'Bourbon Vanilla Porter',
     style: 'Robust Porter',
     category: 'ale',
@@ -39,7 +39,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 2,
-    uuid: '4fa6e080-4fa6-4fa6-4fa6-4fa6e0804fa6',
+    uuid: '0731e6b9-0731-4731-0731-0731e6b90731',
     name: 'Daedric Prince RIS batch #2',
     style: 'Russian Imperial Stout',
     category: 'ale',
@@ -87,7 +87,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 3,
-    uuid: '18f6eb88-18f6-48f6-18f6-18f6eb8818f6',
+    uuid: '7c1b9e21-7c1b-4c1b-7c1b-7c1b9e217c1b',
     name: 'Grollo Stout',
     style: 'Russian Imperial Stout',
     category: 'ale',
@@ -134,7 +134,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 4,
-    uuid: '5f2aa2ab-5f2a-4f2a-5f2a-5f2aa2ab5f2a',
+    uuid: '29ff9486-29ff-49ff-29ff-29ff948629ff',
     name: "Sanity's Demise",
     style: 'Imperial IPA',
     category: 'ale',
@@ -216,7 +216,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 5,
-    uuid: '41b25d38-41b2-41b2-41b2-41b25d3841b2',
+    uuid: '02009bef-0200-4200-0200-02009bef0200',
     name: 'Laufeyson',
     style: 'Imperial IPA',
     category: 'ale',
@@ -290,7 +290,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 6,
-    uuid: '02ca7d7b-02ca-42ca-02ca-02ca7d7b02ca',
+    uuid: '12d8906e-12d8-42d8-12d8-12d8906e12d8',
     name: "Loki's Ryse#2",
     style: 'American IPA',
     category: 'ale',
@@ -354,7 +354,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 7,
-    uuid: '6d478215-6d47-4d47-6d47-6d4782156d47',
+    uuid: '25e4c355-25e4-45e4-25e4-25e4c35525e4',
     name: 'Confirmed Kill IPA 2',
     style: 'American IPA',
     category: 'ale',
@@ -420,7 +420,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 8,
-    uuid: '25f0e3e7-25f0-45f0-25f0-25f0e3e725f0',
+    uuid: '3035a803-3035-4035-3035-3035a8033035',
     name: 'Confirmed Kill IPA',
     style: 'American IPA',
     category: 'ale',
@@ -492,7 +492,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 9,
-    uuid: '1635d29e-1635-4635-1635-1635d29e1635',
+    uuid: '782e45be-782e-482e-782e-782e45be782e',
     name: "Loki's Demise",
     style: 'Imperial Stout',
     category: 'ale',
@@ -560,7 +560,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 10,
-    uuid: '34674e1d-3467-4467-3467-34674e1d3467',
+    uuid: '2942394d-2942-4942-2942-2942394d2942',
     name: 'The Hero IPA',
     style: 'American IPA',
     category: 'ale',
@@ -632,7 +632,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 11,
-    uuid: '3fbba093-3fbb-4fbb-3fbb-3fbba0933fbb',
+    uuid: '653383a9-6533-4533-6533-653383a96533',
     name: 'Here Goes Nothing (Hankies Leipzig Gose)',
     style: 'Leipzig-Style Gose',
     category: 'ale',
@@ -662,7 +662,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 12,
-    uuid: '6892c3b9-6892-4892-6892-6892c3b96892',
+    uuid: '14ce7cb6-14ce-44ce-14ce-14ce7cb614ce',
     name: 'Milk of the Poppy',
     style: 'American-Style Imperial Stout',
     category: 'ale',
@@ -694,7 +694,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 13,
-    uuid: '7b524490-7b52-4b52-7b52-7b5244907b52',
+    uuid: '50938140-5093-4093-5093-509381405093',
     name: 'Rye Porter',
     style: 'Porter',
     category: 'ale',
@@ -753,7 +753,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 14,
-    uuid: '73d06209-73d0-43d0-73d0-73d0620973d0',
+    uuid: '4be75145-4be7-4be7-4be7-4be751454be7',
     name: 'Hermaeus Mora',
     style: 'American-Style Imperial Stout',
     category: 'ale',
@@ -792,7 +792,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 15,
-    uuid: '1c0d35b9-1c0d-4c0d-1c0d-1c0d35b91c0d',
+    uuid: '431a7427-431a-431a-431a-431a7427431a',
     name: 'Pumpkin Brew 2014',
     style: 'Spice, Herb, or Vegetable Beer',
     category: 'ale',
@@ -830,7 +830,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 16,
-    uuid: '79c00570-79c0-49c0-79c0-79c0057079c0',
+    uuid: '46cab60b-46ca-46ca-46ca-46cab60b46ca',
     name: 'Gungnir',
     style: 'American Barley Wine',
     category: 'ale',
@@ -936,7 +936,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 17,
-    uuid: '45562361-4556-4556-4556-455623614556',
+    uuid: '3fd94e26-3fd9-4fd9-3fd9-3fd94e263fd9',
     name: '#TonyCantHang',
     style: 'American Barley Wine',
     category: 'ale',
@@ -1028,7 +1028,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 18,
-    uuid: '3b43fb7c-3b43-4b43-3b43-3b43fb7c3b43',
+    uuid: '48351be2-4835-4835-4835-48351be24835',
     name: 'Mischevious Bastard',
     style: 'Old Ale',
     category: 'ale',
@@ -1076,7 +1076,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 19,
-    uuid: '6b7b3134-6b7b-4b7b-6b7b-6b7b31346b7b',
+    uuid: '1662d09f-1662-4662-1662-1662d09f1662',
     name: 'Bitches Always be Weizen',
     style: 'Weizen/Weissbier',
     category: 'ale',
@@ -1113,7 +1113,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 20,
-    uuid: '04d9c2da-04d9-44d9-04d9-04d9c2da04d9',
+    uuid: '5ad0878c-5ad0-4ad0-5ad0-5ad0878c5ad0',
     name: 'Lemon Lime Hefe',
     style: 'Weizen/Weissbier',
     category: 'ale',
@@ -1165,7 +1165,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 21,
-    uuid: '698c6846-698c-498c-698c-698c6846698c',
+    uuid: '022cc871-022c-422c-022c-022cc871022c',
     name: 'White Knight Wit',
     style: 'Witbier',
     category: 'ale',
@@ -1200,7 +1200,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 22,
-    uuid: '33255a5c-3325-4325-3325-33255a5c3325',
+    uuid: '20ee907b-20ee-40ee-20ee-20ee907b20ee',
     name: 'Basic Blonde',
     style: 'Belgian Blond Ale',
     category: 'ale',
@@ -1241,7 +1241,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 23,
-    uuid: '71fa95a5-71fa-41fa-71fa-71fa95a571fa',
+    uuid: '29649724-2964-4964-2964-296497242964',
     name: 'Dumb Blonde 10',
     style: 'Blonde Ale',
     category: 'ale',
@@ -1282,7 +1282,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 24,
-    uuid: '3da9af6d-3da9-4da9-3da9-3da9af6d3da9',
+    uuid: '00b4bb4d-00b4-40b4-00b4-00b4bb4d00b4',
     name: 'GaribaldiHead 2',
     style: 'American Wheat Beer',
     category: 'ale',
@@ -1347,7 +1347,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 25,
-    uuid: '4f2e873f-4f2e-4f2e-4f2e-4f2e873f4f2e',
+    uuid: '3689a985-3689-4689-3689-3689a9853689',
     name: 'GaribaldiHead',
     style: 'American Amber Ale',
     category: 'ale',
@@ -1405,7 +1405,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 26,
-    uuid: '5a4fe74e-5a4f-4a4f-5a4f-5a4fe74e5a4f',
+    uuid: '0547e758-0547-4547-0547-0547e7580547',
     name: 'Hoppy Session Wheat Beer - 4/6/19',
     style: 'American Wheat Beer',
     category: 'ale',
@@ -1464,7 +1464,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 27,
-    uuid: '49f5754a-49f5-49f5-49f5-49f5754a49f5',
+    uuid: '309a000d-309a-409a-309a-309a000d309a',
     name: 'Go Fuck Yourself IPA',
     style: 'American IPA',
     category: 'ale',
@@ -1530,7 +1530,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 28,
-    uuid: '5f351288-5f35-4f35-5f35-5f3512885f35',
+    uuid: '3411cdb3-3411-4411-3411-3411cdb33411',
     name: 'Mosiac Dust',
     style: 'American IPA',
     category: 'ale',
@@ -1596,7 +1596,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 29,
-    uuid: '236edde9-236e-436e-236e-236edde9236e',
+    uuid: '4688b472-4688-4688-4688-4688b4724688',
     name: 'Overlord',
     style: 'American IPA',
     category: 'ale',
@@ -1670,7 +1670,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 30,
-    uuid: '75bf4794-75bf-45bf-75bf-75bf479475bf',
+    uuid: '5927c6d9-5927-4927-5927-5927c6d95927',
     name: 'Zombie Dust',
     style: 'American Pale Ale',
     category: 'ale',
@@ -1736,7 +1736,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 31,
-    uuid: '3c9a2743-3c9a-4c9a-3c9a-3c9a27433c9a',
+    uuid: '014d4bba-014d-414d-014d-014d4bba014d',
     name: 'Milk Stout-OG',
     style: 'Sweet Stout',
     category: 'ale',
@@ -1776,7 +1776,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 32,
-    uuid: '06b42ae0-06b4-46b4-06b4-06b42ae006b4',
+    uuid: '702a2c03-702a-402a-702a-702a2c03702a',
     name: 'Moo Moo Canoe',
     style: 'Sweet Stout',
     category: 'ale',
@@ -1817,7 +1817,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 33,
-    uuid: '39cc9d7b-39cc-49cc-39cc-39cc9d7b39cc',
+    uuid: '04d0983f-04d0-44d0-04d0-04d0983f04d0',
     name: 'Raging Red Head (updated malt)',
     style: 'Irish Red Ale',
     category: 'ale',
@@ -1854,7 +1854,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 34,
-    uuid: '56ca88e3-56ca-46ca-56ca-56ca88e356ca',
+    uuid: '4d61e8f5-4d61-4d61-4d61-4d61e8f54d61',
     name: 'Redheads are the best',
     style: 'Red IPA',
     category: 'ale',
@@ -1913,7 +1913,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 35,
-    uuid: '57865691-5786-4786-5786-578656915786',
+    uuid: '7a5d2357-7a5d-4a5d-7a5d-7a5d23577a5d',
     name: 'Rasberry Saurus-Rex',
     style: 'American Pale Ale',
     category: 'ale',
@@ -1961,7 +1961,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 36,
-    uuid: '54a5ea8e-54a5-44a5-54a5-54a5ea8e54a5',
+    uuid: '1bf95e4c-1bf9-4bf9-1bf9-1bf95e4c1bf9',
     name: 'Strawberry Saurus-Rex',
     style: 'American Pale Ale',
     category: 'ale',
@@ -2009,7 +2009,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 37,
-    uuid: '58e23d56-58e2-48e2-58e2-58e23d5658e2',
+    uuid: '044b9307-044b-444b-044b-044b9307044b',
     name: 'Little Sumpin Sumpin',
     style: 'American Pale Ale',
     category: 'ale',
@@ -2112,7 +2112,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 38,
-    uuid: '739c8441-739c-439c-739c-739c8441739c',
+    uuid: '411962b6-4119-4119-4119-411962b64119',
     name: 'Oberon',
     style: 'American Wheat or Rye Beer',
     category: 'ale',
@@ -2162,7 +2162,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 39,
-    uuid: '378fffb1-378f-478f-378f-378fffb1378f',
+    uuid: '6ae2246b-6ae2-4ae2-6ae2-6ae2246b6ae2',
     name: 'Invade Canada Redux',
     style: 'American Pale Ale',
     category: 'ale',
@@ -2223,7 +2223,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 40,
-    uuid: '7e28b6bd-7e28-4e28-7e28-7e28b6bd7e28',
+    uuid: '6419ff1f-6419-4419-6419-6419ff1f6419',
     name: 'Invade Canada',
     style: 'American Pale Ale',
     category: 'ale',
@@ -2286,7 +2286,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 41,
-    uuid: '46e00057-46e0-46e0-46e0-46e0005746e0',
+    uuid: '195a2c3b-195a-495a-195a-195a2c3b195a',
     name: 'Withered Imperial Stout 3',
     style: 'Imperial Stout',
     category: 'ale',
@@ -2326,7 +2326,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 42,
-    uuid: '4cd48c1e-4cd4-4cd4-4cd4-4cd48c1e4cd4',
+    uuid: '0f4efd74-0f4e-4f4e-0f4e-0f4efd740f4e',
     name: 'Withered Imperial Stout - Mashmallow',
     style: 'Imperial Stout',
     category: 'ale',
@@ -2364,7 +2364,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 43,
-    uuid: '6adff922-6adf-4adf-6adf-6adff9226adf',
+    uuid: '7608648c-7608-4608-7608-7608648c7608',
     name: 'Withered Imperial Stout OG',
     style: 'Imperial Stout',
     category: 'ale',
@@ -2402,7 +2402,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 44,
-    uuid: '65014f66-6501-4501-6501-65014f666501',
+    uuid: '781dcec6-781d-481d-781d-781dcec6781d',
     name: 'Little Heffer 2',
     style: 'Weizen/Weissbier',
     category: 'ale',
@@ -2436,7 +2436,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 45,
-    uuid: '3a3befac-3a3b-4a3b-3a3b-3a3befac3a3b',
+    uuid: '29e6054c-29e6-49e6-29e6-29e6054c29e6',
     name: 'Little Heffer',
     style: 'Weizen/Weissbier',
     category: 'ale',
@@ -2467,7 +2467,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 46,
-    uuid: '2c37220f-2c37-4c37-2c37-2c37220f2c37',
+    uuid: '47a5331b-47a5-47a5-47a5-47a5331b47a5',
     name: 'Madelyns Razzy',
     style: 'American Pale Ale',
     category: 'ale',
@@ -2485,7 +2485,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 47,
-    uuid: '5b553d62-5b55-4b55-5b55-5b553d625b55',
+    uuid: '1dd0e4e1-1dd0-4dd0-1dd0-1dd0e4e11dd0',
     name: 'Usurper',
     style: 'American Wheat or Rye Beer',
     category: 'ale',
@@ -2555,7 +2555,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 48,
-    uuid: '1af7bf0e-1af7-4af7-1af7-1af7bf0e1af7',
+    uuid: '12340f9d-1234-4234-1234-12340f9d1234',
     name: 'Blue Balls',
     style: 'Witbier',
     category: 'ale',
@@ -2584,7 +2584,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 49,
-    uuid: '6fb35542-6fb3-4fb3-6fb3-6fb355426fb3',
+    uuid: '6e1e68cc-6e1e-4e1e-6e1e-6e1e68cc6e1e',
     name: "World's Best Oktoberfest",
     style: 'Oktoberfest/Marzen',
     category: 'lager',
@@ -2613,7 +2613,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 50,
-    uuid: '66d7cb2d-66d7-46d7-66d7-66d7cb2d66d7',
+    uuid: '17896637-1789-4789-1789-178966371789',
     name: 'Hop Stoopid',
     style: 'American IPA',
     category: 'ale',
@@ -2686,7 +2686,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 51,
-    uuid: '52902670-5290-4290-5290-529026705290',
+    uuid: '31278824-3127-4127-3127-312788243127',
     name: 'Pumkin Beer OG',
     style: 'American Amber Ale',
     category: 'ale',
@@ -2724,7 +2724,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 52,
-    uuid: '01ef9fc1-01ef-41ef-01ef-01ef9fc101ef',
+    uuid: '2fe6c90b-2fe6-4fe6-2fe6-2fe6c90b2fe6',
     name: 'Smore Punkin',
     style: 'American Amber Ale',
     category: 'ale',
@@ -2761,7 +2761,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 53,
-    uuid: '630ceffd-630c-430c-630c-630ceffd630c',
+    uuid: '761c7943-761c-461c-761c-761c7943761c',
     name: "Devil's Wheat 2",
     style: 'American Pale Ale',
     category: 'ale',
@@ -2830,7 +2830,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 54,
-    uuid: '69631555-6963-4963-6963-696315556963',
+    uuid: '39be846b-39be-49be-39be-39be846b39be',
     name: "Devil's Wheat",
     style: 'American Pale Ale',
     category: 'ale',
@@ -2900,7 +2900,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 55,
-    uuid: '500f3275-500f-400f-500f-500f3275500f',
+    uuid: '17c7471f-17c7-47c7-17c7-17c7471f17c7',
     name: 'Saison du Frank!',
     style: 'Saison',
     category: 'ale',
@@ -2953,7 +2953,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 56,
-    uuid: '6cd56409-6cd5-4cd5-6cd5-6cd564096cd5',
+    uuid: '14794aa1-1479-4479-1479-14794aa11479',
     name: 'Saison',
     style: 'Saison',
     category: 'ale',
@@ -3006,7 +3006,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 57,
-    uuid: '045c9469-045c-445c-045c-045c9469045c',
+    uuid: '639359a1-6393-4393-6393-639359a16393',
     name: 'Lacto',
     style: 'Berliner Weiss',
     category: 'ale',
@@ -3024,7 +3024,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 58,
-    uuid: '6c01ea66-6c01-4c01-6c01-6c01ea666c01',
+    uuid: '4095a4f7-4095-4095-4095-4095a4f74095',
     name: 'Flanders Red',
     style: 'Flanders Red Ale',
     category: 'ale',
@@ -3057,7 +3057,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 59,
-    uuid: '408be2cb-408b-408b-408b-408be2cb408b',
+    uuid: '03d9d37f-03d9-43d9-03d9-03d9d37f03d9',
     name: 'Big Ass Barleywine',
     style: 'English Barleywine',
     category: 'ale',
@@ -3134,7 +3134,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 60,
-    uuid: '7719cad7-7719-4719-7719-7719cad77719',
+    uuid: '57b0ea40-57b0-47b0-57b0-57b0ea4057b0',
     name: 'Kyle beer',
     style: 'Saison',
     category: 'ale',
@@ -3170,7 +3170,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 61,
-    uuid: '64b59d50-64b5-44b5-64b5-64b59d5064b5',
+    uuid: '0525ffec-0525-4525-0525-0525ffec0525',
     name: 'Bitch Mittens Session IPA',
     style: 'Session Beer',
     category: 'ale',
@@ -3253,7 +3253,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 62,
-    uuid: '11880788-1188-4188-1188-118807881188',
+    uuid: '09daa07e-09da-49da-09da-09daa07e09da',
     name: 'Riggity Wrecked',
     style: 'Imperial Stout',
     category: 'ale',
@@ -3308,7 +3308,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 63,
-    uuid: '593841dc-5938-4938-5938-593841dc5938',
+    uuid: '6a0a528d-6a0a-4a0a-6a0a-6a0a528d6a0a',
     name: '#NoFilter',
     style: 'American Pale Ale',
     category: 'ale',
@@ -3393,7 +3393,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 64,
-    uuid: '15d0c4ec-15d0-45d0-15d0-15d0c4ec15d0',
+    uuid: '74f83a2b-74f8-44f8-74f8-74f83a2b74f8',
     name: "The Devil's Narwhal NEIPA - 5/29/2019",
     style: 'American IPA',
     category: 'ale',
@@ -3479,7 +3479,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 65,
-    uuid: '6cb847ed-6cb8-4cb8-6cb8-6cb847ed6cb8',
+    uuid: '791635f6-7916-4916-7916-791635f67916',
     name: "The Devil's Narwhal NEIPA",
     style: 'American Pale Ale',
     category: 'ale',
@@ -4943,7 +4943,6 @@ export const recipes: Recipe[] = [
       boilTime: 60,
       efficiency: 67,
     },
-    artwork: '/images/recipes/overlord.jpg',
   },
   {
     id: 77,
@@ -5241,7 +5240,6 @@ export const recipes: Recipe[] = [
       boilTime: 60,
       efficiency: 67,
     },
-    artwork: '/images/recipes/moomooCanoe.jpg',
   },
   {
     id: 80,
@@ -5518,7 +5516,6 @@ export const recipes: Recipe[] = [
       boilTime: 60,
       efficiency: 55,
     },
-    artwork: '/images/recipes/overlord.jpg',
   },
   {
     id: 82,
@@ -5783,7 +5780,6 @@ export const recipes: Recipe[] = [
       boilTime: 60,
       efficiency: 69,
     },
-    artwork: '/images/recipes/overlord.jpg',
   },
   {
     id: 84,

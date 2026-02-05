@@ -1,5 +1,5 @@
 import { batches } from '@/data/batches'
-import BrewEntry from '@/components/BrewEntry'
+import BatchSearch from '@/components/BatchSearch'
 
 export default function BrewsPage() {
   const sortedBatches = [...batches].sort((a, b) => {
@@ -19,18 +19,7 @@ export default function BrewsPage() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-6">
-        {sortedBatches.map((batch) => (
-          <BrewEntry key={batch.batchNo} batch={batch} />
-        ))}
-      </div>
-
-      {sortedBatches.length === 0 && (
-        <div className="border border-dashed border-border py-12 text-center text-text-secondary">
-          <p>No brews recorded yet.</p>
-          <p className="mt-2 text-sm italic">Check back soon!</p>
-        </div>
-      )}
+      <BatchSearch batches={sortedBatches} />
     </main>
   )
 }

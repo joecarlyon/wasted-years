@@ -94,7 +94,9 @@ export default function RecipePage({ params }: { params: { id: string } }) {
           </div>
 
           {/* Main content grid - single column when artwork present */}
-          <div className={`grid gap-8 ${recipe.artwork ? '' : 'lg:grid-cols-2'}`}>
+          <div
+            className={`grid gap-8 ${recipe.artwork ? '' : 'lg:grid-cols-2'}`}
+          >
             {/* Fermentables */}
             <Section title="Fermentables">
               {recipe.fermentablesDetail &&
@@ -333,7 +335,7 @@ export default function RecipePage({ params }: { params: { id: string } }) {
 
         {/* Artwork sidebar */}
         {recipe.artwork && (
-          <div className="hidden shrink-0 lg:block lg:sticky lg:top-24 lg:self-start">
+          <div className="hidden shrink-0 lg:sticky lg:top-24 lg:block lg:self-start">
             <ImageLightbox
               src={recipe.artwork}
               alt={`${recipe.name} artwork`}

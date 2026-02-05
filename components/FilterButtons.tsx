@@ -12,6 +12,7 @@ type FilterType = 'all' | 'ale' | 'lager' | 'spirit'
 
 export default function FilterButtons({ recipes }: FilterButtonsProps) {
   const [activeFilter, setActiveFilter] = useState<FilterType>('all')
+  const [searchQuery, setSearchQuery] = useState('')
 
   const filters: { label: string; value: FilterType }[] = [
     { label: 'All', value: 'all' },
@@ -20,10 +21,24 @@ export default function FilterButtons({ recipes }: FilterButtonsProps) {
     { label: 'Spirits', value: 'spirit' },
   ]
 
-  const filteredRecipes =
-    activeFilter === 'all'
-      ? recipes
-      : recipes.filter((recipe) => recipe.category === activeFilter)
+  const filteredRecipes = recipes.filter((recipe) => {
+    // Category filter
+    if (activeFilter !== 'all' && recipe.category !== activeFilter) {
+      return false
+    }
+    // Search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase()
+      return (
+        recipe.name.toLowerCase().includes(query) ||
+        recipe.style.toLowerCase().includes(query) ||
+        recipe.yeast.toLowerCase().includes(query) ||
+        recipe.grains.some((g) => g.toLowerCase().includes(query)) ||
+        recipe.hops.some((h) => h.toLowerCase().includes(query))
+      )
+    }
+    return true
+  })
 
   const buttonClasses = (isActive: boolean) => {
     const base =
@@ -35,16 +50,25 @@ export default function FilterButtons({ recipes }: FilterButtonsProps) {
 
   return (
     <>
-      <div className="mb-8 flex flex-wrap gap-2">
-        {filters.map((filter) => (
-          <button
-            key={filter.value}
-            onClick={() => setActiveFilter(filter.value)}
-            className={buttonClasses(activeFilter === filter.value)}
-          >
-            {filter.label}
-          </button>
-        ))}
+      <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-wrap gap-2">
+          {filters.map((filter) => (
+            <button
+              key={filter.value}
+              onClick={() => setActiveFilter(filter.value)}
+              className={buttonClasses(activeFilter === filter.value)}
+            >
+              {filter.label}
+            </button>
+          ))}
+        </div>
+        <input
+          type="text"
+          placeholder="Search recipes..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full border border-border bg-bg-card px-4 py-2 text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none sm:w-64"
+        />
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">

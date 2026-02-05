@@ -314,18 +314,35 @@ function mergeBatch(
   }
 }
 
-// Generate a stable UUID from name (deterministic for consistent IDs)
-function generateUUID(name: string): string {
-  // Create a simple hash-based UUID from the recipe name
+// Generate a stable UUID from a seed string (deterministic for consistent IDs)
+function generateUUID(seed: string): string {
+  // Create a simple hash-based UUID from the seed
   let hash = 0
-  for (let i = 0; i < name.length; i++) {
-    const char = name.charCodeAt(i)
+  for (let i = 0; i < seed.length; i++) {
+    const char = seed.charCodeAt(i)
     hash = (hash << 5) - hash + char
     hash = hash & hash // Convert to 32-bit integer
   }
   // Convert to hex and format as UUID-like string
   const hex = Math.abs(hash).toString(16).padStart(8, '0')
   return `${hex.slice(0, 8)}-${hex.slice(0, 4)}-4${hex.slice(1, 4)}-${hex.slice(0, 4)}-${hex.slice(0, 8)}${hex.slice(0, 4)}`
+}
+
+// Generate UUID for a Brewfather recipe using its unique _id
+function generateBrewfatherUUID(brewfatherId: string): string {
+  return generateUUID(`brewfather:${brewfatherId}`)
+}
+
+// Generate UUID for a Beersmith recipe using name + style + source
+function generateBeersmithUUID(
+  name: string,
+  style: string,
+  brewDate?: string
+): string {
+  const seed = brewDate
+    ? `beersmith:${name}:${brewDate}`
+    : `beersmith:${name}:${style}`
+  return generateUUID(seed)
 }
 
 function mergeRecipe(
@@ -509,7 +526,7 @@ async function syncRecipes() {
 
     const newRecipe: Record<string, unknown> = {
       id: idx + 1,
-      uuid: generateUUID(name),
+      uuid: generateBrewfatherUUID(r._id),
       name,
       style: styleName,
       category: categorizeRecipe(styleName, name),
@@ -626,12 +643,23 @@ async function syncRecipes() {
   // Combine Beersmith recipes (first) with Brewfather recipes (after)
   // Beersmith recipes keep their existing IDs, Brewfather get renumbered after
   const beersmithCount = existingRecipes.beersmith.length
+
+  // Regenerate UUIDs for Beersmith recipes to ensure uniqueness
+  const beersmithWithNewUUIDs = existingRecipes.beersmith.map((r) => ({
+    ...r,
+    uuid: generateBeersmithUUID(
+      r.name as string,
+      r.style as string,
+      r.brewDate as string | undefined
+    ),
+  }))
+
   const renumberedBrewfather = transformed.map((r, idx) => ({
     ...r,
     id: beersmithCount + idx + 1,
   }))
 
-  const allRecipes = [...existingRecipes.beersmith, ...renumberedBrewfather]
+  const allRecipes = [...beersmithWithNewUUIDs, ...renumberedBrewfather]
   console.log(
     `Combined: ${beersmithCount} Beersmith + ${renumberedBrewfather.length} Brewfather = ${allRecipes.length} total`
   )
