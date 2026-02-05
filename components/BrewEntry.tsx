@@ -69,13 +69,13 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
         </div>
 
         {(batch.brewingNotes || batch.tastingNotes) && (
-          <div className="mt-4 border-t border-border pt-4 space-y-3">
+          <div className="mt-4 space-y-3 border-t border-border pt-4">
             {batch.brewingNotes && (
               <div>
-                <div className="text-xs uppercase tracking-wide text-lavender-dark mb-1">
+                <div className="mb-1 text-xs uppercase tracking-wide text-lavender-dark">
                   Brewing Notes
                 </div>
-                <div className="text-sm text-text-secondary space-y-2">
+                <div className="space-y-2 text-sm text-text-secondary">
                   {batch.brewingNotes.split(' | ').map((note, i) => (
                     <p key={i}>{note}</p>
                   ))}
@@ -84,10 +84,10 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
             )}
             {batch.tastingNotes && (
               <div>
-                <div className="text-xs uppercase tracking-wide text-lavender-dark mb-1">
+                <div className="mb-1 text-xs uppercase tracking-wide text-lavender-dark">
                   Tasting Notes
                 </div>
-                <p className="text-sm text-text-secondary italic">
+                <p className="text-sm italic text-text-secondary">
                   &ldquo;{batch.tastingNotes}&rdquo;
                 </p>
               </div>
