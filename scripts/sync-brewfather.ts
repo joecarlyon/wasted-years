@@ -126,6 +126,7 @@ interface BrewfatherBatch {
 
 interface BrewfatherRecipe {
   _id: string
+  _created?: { _seconds: number; _nanoseconds?: number } // Firestore timestamp
   name: string
   style?: { name: string; category?: string }
   og: number
@@ -345,6 +346,21 @@ function generateBeersmithUUID(
   return generateUUID(seed)
 }
 
+// Artwork mapping based on recipe name patterns
+const ARTWORK_PATTERNS: { pattern: RegExp; artwork: string }[] = [
+  { pattern: /overlord/i, artwork: '/images/recipes/overlord.jpg' },
+  { pattern: /moo\s*moo\s*canoe/i, artwork: '/images/recipes/moomooCanoe.jpg' },
+]
+
+function getArtworkForRecipe(name: string): string | undefined {
+  for (const { pattern, artwork } of ARTWORK_PATTERNS) {
+    if (pattern.test(name)) {
+      return artwork
+    }
+  }
+  return undefined
+}
+
 function mergeRecipe(
   newRecipe: Record<string, unknown>,
   existing: Record<string, unknown> | undefined
@@ -479,7 +495,15 @@ async function syncBatches() {
   // Combine Beersmith batches (first) with Brewfather batches (after)
   // Beersmith batches keep their existing batch numbers, Brewfather get renumbered
   const beersmithCount = existingBatches.beersmith.length
-  const renumberedBrewfather = transformed.map((b, idx) => ({
+
+  // Sort Brewfather batches by brew date (oldest first) before renumbering
+  const sortedBrewfather = [...transformed].sort((a, b) => {
+    const dateA = a.brewDate ? new Date(a.brewDate as string).getTime() : 0
+    const dateB = b.brewDate ? new Date(b.brewDate as string).getTime() : 0
+    return dateA - dateB // Oldest first = lowest batch number
+  })
+
+  const renumberedBrewfather = sortedBrewfather.map((b, idx) => ({
     ...b,
     batchNo: beersmithCount + idx + 1,
     source: 'brewfather',
@@ -545,6 +569,14 @@ async function syncRecipes() {
         ? `${yeast.name}${yeast.productId ? ` (${yeast.productId})` : ''}`
         : 'Not specified',
       source: 'brewfather',
+      // Creation date from Brewfather
+      ...(r._created?._seconds && {
+        brewDate: new Date(r._created._seconds * 1000)
+          .toISOString()
+          .split('T')[0],
+      }),
+      // Artwork based on recipe name
+      ...(getArtworkForRecipe(name) && { artwork: getArtworkForRecipe(name) }),
       // Detailed fields
       ...(r.color !== undefined && { color: roundTo(r.color, 1) }),
       ...(r.batchSize !== undefined && {
@@ -644,15 +676,19 @@ async function syncRecipes() {
   // Beersmith recipes keep their existing IDs, Brewfather get renumbered after
   const beersmithCount = existingRecipes.beersmith.length
 
-  // Regenerate UUIDs for Beersmith recipes to ensure uniqueness
-  const beersmithWithNewUUIDs = existingRecipes.beersmith.map((r) => ({
-    ...r,
-    uuid: generateBeersmithUUID(
-      r.name as string,
-      r.style as string,
-      r.brewDate as string | undefined
-    ),
-  }))
+  // Regenerate UUIDs for Beersmith recipes and ensure artwork is assigned
+  const beersmithWithNewUUIDs = existingRecipes.beersmith.map((r) => {
+    const artwork = getArtworkForRecipe(r.name as string)
+    return {
+      ...r,
+      uuid: generateBeersmithUUID(
+        r.name as string,
+        r.style as string,
+        r.brewDate as string | undefined
+      ),
+      ...(artwork && { artwork }),
+    }
+  })
 
   const renumberedBrewfather = transformed.map((r, idx) => ({
     ...r,
