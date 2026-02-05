@@ -44,6 +44,16 @@ export default function RecipePage({ params }: { params: { id: string } }) {
             <p className="text-lg uppercase tracking-wide text-accent">
               {recipe.style}
             </p>
+            {recipe.brewDate && (
+              <p className="mt-1 text-sm text-text-secondary">
+                Created{' '}
+                {new Date(recipe.brewDate).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </p>
+            )}
           </div>
           {recipe.source && (
             <span className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary">
