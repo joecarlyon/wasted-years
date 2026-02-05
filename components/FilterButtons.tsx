@@ -26,15 +26,21 @@ export default function FilterButtons({ recipes }: FilterButtonsProps) {
     if (activeFilter !== 'all' && recipe.category !== activeFilter) {
       return false
     }
-    // Search filter
+    // Search filter - searches all fields shown on recipe card
     if (searchQuery) {
       const query = searchQuery.toLowerCase()
       return (
         recipe.name.toLowerCase().includes(query) ||
         recipe.style.toLowerCase().includes(query) ||
+        recipe.description.toLowerCase().includes(query) ||
         recipe.yeast.toLowerCase().includes(query) ||
         recipe.grains.some((g) => g.toLowerCase().includes(query)) ||
-        recipe.hops.some((h) => h.toLowerCase().includes(query))
+        recipe.hops.some((h) => h.toLowerCase().includes(query)) ||
+        recipe.og.toFixed(3).includes(query) ||
+        recipe.fg.toFixed(3).includes(query) ||
+        recipe.abv.toFixed(1).includes(query) ||
+        String(recipe.ibu).includes(query) ||
+        (recipe.batchSize && `${recipe.batchSize}g`.includes(query))
       )
     }
     return true
