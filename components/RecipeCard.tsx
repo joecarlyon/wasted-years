@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Recipe } from '@/types'
 
 interface RecipeCardProps {
@@ -6,7 +7,10 @@ interface RecipeCardProps {
 
 export default function RecipeCard({ recipe }: RecipeCardProps) {
   return (
-    <div className="border border-border bg-bg-card p-6 transition-all duration-300 hover:border-accent">
+    <Link
+      href={`/recipes/${recipe.uuid}`}
+      className="block border border-border bg-bg-card p-6 transition-all duration-300 hover:border-accent hover:bg-bg-hover"
+    >
       <h4 className="mb-1 text-xl text-text-primary">{recipe.name}</h4>
       <p className="mb-4 text-sm uppercase tracking-wide text-accent">
         {recipe.style}
@@ -102,6 +106,6 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }

@@ -57,18 +57,48 @@ const AUTH = Buffer.from(`${USER_ID}:${API_KEY}`).toString('base64')
 interface BrewfatherFermentable {
   name: string
   amount: number
+  percentage?: number
+  color?: number
 }
 
 interface BrewfatherHop {
   name: string
   amount: number
   use: string
+  time?: number
+  alpha?: number
 }
 
 interface BrewfatherYeast {
   name: string
   laboratory: string
   productId: string
+  attenuation?: number
+  minTemp?: number
+  maxTemp?: number
+}
+
+interface BrewfatherMashStep {
+  name: string
+  type: string
+  stepTemp: number
+  stepTime: number
+}
+
+interface BrewfatherWater {
+  calcium?: number
+  magnesium?: number
+  sodium?: number
+  chloride?: number
+  sulfate?: number
+  bicarbonate?: number
+}
+
+interface BrewfatherEquipment {
+  name?: string
+  batchSize?: number
+  boilTime?: number
+  efficiency?: number
 }
 
 interface BrewfatherBatch {
@@ -102,9 +132,15 @@ interface BrewfatherRecipe {
   fg: number
   abv: number
   ibu: number
+  color?: number
+  batchSize?: number
+  boilTime?: number
   fermentables?: BrewfatherFermentable[]
   hops?: BrewfatherHop[]
   yeasts?: BrewfatherYeast[]
+  mash?: { name?: string; steps?: BrewfatherMashStep[] }
+  water?: { total?: BrewfatherWater }
+  equipment?: BrewfatherEquipment
   notes?: string
 }
 
@@ -193,31 +229,49 @@ function inferStyle(style: string, name: string): string {
 }
 
 // Load existing data to preserve manual edits
-async function loadExistingBatches(): Promise<Map<number, Record<string, unknown>>> {
+interface ExistingBatches {
+  byBatchNo: Map<number, Record<string, unknown>>
+  beersmith: Record<string, unknown>[]
+}
+
+async function loadExistingBatches(): Promise<ExistingBatches> {
   try {
     const { batches } = await import('../data/batches.js')
-    const map = new Map<number, Record<string, unknown>>()
+    const byBatchNo = new Map<number, Record<string, unknown>>()
+    const beersmith: Record<string, unknown>[] = []
     for (const batch of batches) {
-      map.set(batch.batchNo, batch as unknown as Record<string, unknown>)
+      byBatchNo.set(batch.batchNo, batch as unknown as Record<string, unknown>)
+      if (batch.source === 'beersmith') {
+        beersmith.push(batch as unknown as Record<string, unknown>)
+      }
     }
-    return map
+    return { byBatchNo, beersmith }
   } catch (e) {
     console.log('Could not load existing batches:', e)
-    return new Map()
+    return { byBatchNo: new Map(), beersmith: [] }
   }
 }
 
-async function loadExistingRecipes(): Promise<Map<string, Record<string, unknown>>> {
+interface ExistingRecipes {
+  byName: Map<string, Record<string, unknown>>
+  beersmith: Record<string, unknown>[]
+}
+
+async function loadExistingRecipes(): Promise<ExistingRecipes> {
   try {
     const { recipes } = await import('../data/recipes.js')
-    const map = new Map<string, Record<string, unknown>>()
+    const byName = new Map<string, Record<string, unknown>>()
+    const beersmith: Record<string, unknown>[] = []
     for (const recipe of recipes) {
-      map.set(recipe.name, recipe as unknown as Record<string, unknown>)
+      byName.set(recipe.name, recipe as unknown as Record<string, unknown>)
+      if (recipe.source === 'beersmith') {
+        beersmith.push(recipe as unknown as Record<string, unknown>)
+      }
     }
-    return map
+    return { byName, beersmith }
   } catch (e) {
     console.log('Could not load existing recipes:', e)
-    return new Map()
+    return { byName: new Map(), beersmith: [] }
   }
 }
 
@@ -260,6 +314,20 @@ function mergeBatch(
   }
 }
 
+// Generate a stable UUID from name (deterministic for consistent IDs)
+function generateUUID(name: string): string {
+  // Create a simple hash-based UUID from the recipe name
+  let hash = 0
+  for (let i = 0; i < name.length; i++) {
+    const char = name.charCodeAt(i)
+    hash = (hash << 5) - hash + char
+    hash = hash & hash // Convert to 32-bit integer
+  }
+  // Convert to hex and format as UUID-like string
+  const hex = Math.abs(hash).toString(16).padStart(8, '0')
+  return `${hex.slice(0, 8)}-${hex.slice(0, 4)}-4${hex.slice(1, 4)}-${hex.slice(0, 4)}-${hex.slice(0, 8)}${hex.slice(0, 4)}`
+}
+
 function mergeRecipe(
   newRecipe: Record<string, unknown>,
   existing: Record<string, unknown> | undefined
@@ -269,6 +337,7 @@ function mergeRecipe(
   return {
     ...newRecipe,
     id: existing.id, // Preserve existing ID
+    uuid: existing.uuid || newRecipe.uuid, // Preserve existing UUID
     style: newRecipe.style !== 'Unknown' ? newRecipe.style : existing.style,
     category:
       newRecipe.category !== 'ale' || existing.category === 'ale'
@@ -336,7 +405,9 @@ async function syncBatches() {
   console.log(`Found ${batches.length} batches`)
 
   const existingBatches = await loadExistingBatches()
-  console.log(`Loaded ${existingBatches.size} existing batches for merging`)
+  console.log(
+    `Loaded ${existingBatches.byBatchNo.size} existing batches (${existingBatches.beersmith.length} Beersmith)`
+  )
 
   const transformed = batches.map((b) => {
     // Use recipe name if batch name is just "Batch"
@@ -385,16 +456,40 @@ async function syncBatches() {
     }
 
     // Merge with existing data to preserve manual edits
-    return mergeBatch(newBatch, existingBatches.get(b.batchNo))
+    return mergeBatch(newBatch, existingBatches.byBatchNo.get(b.batchNo))
   })
+
+  // Combine Beersmith batches (first) with Brewfather batches (after)
+  // Beersmith batches keep their existing batch numbers, Brewfather get renumbered
+  const beersmithCount = existingBatches.beersmith.length
+  const renumberedBrewfather = transformed.map((b, idx) => ({
+    ...b,
+    batchNo: beersmithCount + idx + 1,
+    source: 'brewfather',
+  }))
+
+  const allBatches = [...existingBatches.beersmith, ...renumberedBrewfather]
+  console.log(
+    `Combined: ${beersmithCount} Beersmith + ${renumberedBrewfather.length} Brewfather = ${allBatches.length} total`
+  )
 
   const content = `import { Batch } from '@/types'
 
-export const batches: Batch[] = ${JSON.stringify(transformed, null, 2)}
+export const batches: Batch[] = ${JSON.stringify(allBatches, null, 2)}
 `
 
   fs.writeFileSync(path.join(process.cwd(), 'data/batches.ts'), content)
-  console.log(`Wrote ${transformed.length} batches to data/batches.ts`)
+  console.log(`Wrote ${allBatches.length} batches to data/batches.ts`)
+}
+
+// Convert Celsius to Fahrenheit
+function celsiusToFahrenheit(c: number): number {
+  return Math.round((c * 9) / 5 + 32)
+}
+
+// Convert liters to gallons
+function litersToGallons(l: number): number {
+  return roundTo(l * 0.264172, 1)
 }
 
 async function syncRecipes() {
@@ -403,14 +498,18 @@ async function syncRecipes() {
   console.log(`Found ${recipes.length} recipes`)
 
   const existingRecipes = await loadExistingRecipes()
-  console.log(`Loaded ${existingRecipes.size} existing recipes for merging`)
+  console.log(
+    `Loaded ${existingRecipes.byName.size} existing recipes (${existingRecipes.beersmith.length} Beersmith)`
+  )
 
   const transformed = recipes.map((r, idx) => {
     const name = r.name.trim()
     const styleName = inferStyle(r.style?.name || 'Unknown', name)
+    const yeast = r.yeasts && r.yeasts.length > 0 ? r.yeasts[0] : null
 
-    const newRecipe = {
+    const newRecipe: Record<string, unknown> = {
       id: idx + 1,
+      uuid: generateUUID(name),
       name,
       style: styleName,
       category: categorizeRecipe(styleName, name),
@@ -425,22 +524,125 @@ async function syncRecipes() {
       hops: (r.hops || []).map(
         (h) => `${gramsToOz(h.amount)} oz ${h.name} (${h.use || 'Boil'})`
       ),
-      yeast:
-        r.yeasts && r.yeasts.length > 0
-          ? `${r.yeasts[0].name}${r.yeasts[0].productId ? ` (${r.yeasts[0].productId})` : ''}`
-          : 'Not specified',
+      yeast: yeast
+        ? `${yeast.name}${yeast.productId ? ` (${yeast.productId})` : ''}`
+        : 'Not specified',
+      source: 'brewfather',
+      // Detailed fields
+      ...(r.color !== undefined && { color: roundTo(r.color, 1) }),
+      ...(r.batchSize !== undefined && {
+        batchSize: litersToGallons(r.batchSize),
+      }),
+      ...(r.boilTime !== undefined && { boilTime: r.boilTime }),
+      // Detailed fermentables
+      fermentablesDetail: (r.fermentables || []).map((f) => ({
+        name: f.name,
+        amount: roundTo(f.amount, 2),
+        ...(f.percentage !== undefined && {
+          percentage: roundTo(f.percentage, 1),
+        }),
+        ...(f.color !== undefined && { color: roundTo(f.color, 1) }),
+      })),
+      // Detailed hops
+      hopsDetail: (r.hops || []).map((h) => ({
+        name: h.name,
+        amount: gramsToOz(h.amount),
+        use: h.use || 'Boil',
+        ...(h.time !== undefined && { time: h.time }),
+        ...(h.alpha !== undefined && { alpha: roundTo(h.alpha, 1) }),
+      })),
+      // Detailed yeast
+      ...(yeast && {
+        yeastDetail: {
+          name: yeast.name,
+          ...(yeast.laboratory && { lab: yeast.laboratory }),
+          ...(yeast.attenuation !== undefined && {
+            attenuation: roundTo(yeast.attenuation, 0),
+          }),
+          ...(yeast.minTemp !== undefined && {
+            minTemp: celsiusToFahrenheit(yeast.minTemp),
+          }),
+          ...(yeast.maxTemp !== undefined && {
+            maxTemp: celsiusToFahrenheit(yeast.maxTemp),
+          }),
+        },
+      }),
+      // Mash profile
+      ...(r.mash?.steps &&
+        r.mash.steps.length > 0 && {
+          mashProfile: {
+            ...(r.mash.name && { name: r.mash.name }),
+            steps: r.mash.steps.map((s) => ({
+              name: s.name,
+              type: s.type,
+              stepTemp: celsiusToFahrenheit(s.stepTemp),
+              stepTime: s.stepTime,
+            })),
+          },
+        }),
+      // Water profile
+      ...(r.water?.total && {
+        waterProfile: {
+          ...(r.water.total.calcium !== undefined && {
+            calcium: roundTo(r.water.total.calcium, 0),
+          }),
+          ...(r.water.total.magnesium !== undefined && {
+            magnesium: roundTo(r.water.total.magnesium, 0),
+          }),
+          ...(r.water.total.sodium !== undefined && {
+            sodium: roundTo(r.water.total.sodium, 0),
+          }),
+          ...(r.water.total.chloride !== undefined && {
+            chloride: roundTo(r.water.total.chloride, 0),
+          }),
+          ...(r.water.total.sulfate !== undefined && {
+            sulfate: roundTo(r.water.total.sulfate, 0),
+          }),
+          ...(r.water.total.bicarbonate !== undefined && {
+            bicarbonate: roundTo(r.water.total.bicarbonate, 0),
+          }),
+        },
+      }),
+      // Equipment profile
+      ...(r.equipment && {
+        equipmentProfile: {
+          ...(r.equipment.name && { name: r.equipment.name }),
+          ...(r.equipment.batchSize !== undefined && {
+            batchSize: litersToGallons(r.equipment.batchSize),
+          }),
+          ...(r.equipment.boilTime !== undefined && {
+            boilTime: r.equipment.boilTime,
+          }),
+          ...(r.equipment.efficiency !== undefined && {
+            efficiency: roundTo(r.equipment.efficiency, 0),
+          }),
+        },
+      }),
     }
 
-    return mergeRecipe(newRecipe, existingRecipes.get(name))
+    return mergeRecipe(newRecipe, existingRecipes.byName.get(name))
   })
+
+  // Combine Beersmith recipes (first) with Brewfather recipes (after)
+  // Beersmith recipes keep their existing IDs, Brewfather get renumbered after
+  const beersmithCount = existingRecipes.beersmith.length
+  const renumberedBrewfather = transformed.map((r, idx) => ({
+    ...r,
+    id: beersmithCount + idx + 1,
+  }))
+
+  const allRecipes = [...existingRecipes.beersmith, ...renumberedBrewfather]
+  console.log(
+    `Combined: ${beersmithCount} Beersmith + ${renumberedBrewfather.length} Brewfather = ${allRecipes.length} total`
+  )
 
   const content = `import { Recipe } from '@/types'
 
-export const recipes: Recipe[] = ${JSON.stringify(transformed, null, 2)}
+export const recipes: Recipe[] = ${JSON.stringify(allRecipes, null, 2)}
 `
 
   fs.writeFileSync(path.join(process.cwd(), 'data/recipes.ts'), content)
-  console.log(`Wrote ${transformed.length} recipes to data/recipes.ts`)
+  console.log(`Wrote ${allRecipes.length} recipes to data/recipes.ts`)
 }
 
 async function main() {

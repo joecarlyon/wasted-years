@@ -1,5 +1,45 @@
+// Detailed ingredient types for recipe detail pages
+export interface RecipeHop {
+  name: string
+  amount: number
+  time?: number
+  use: string
+  alpha?: number
+}
+
+export interface RecipeFermentable {
+  name: string
+  amount: number
+  color?: number
+  percentage?: number
+}
+
+export interface MashStep {
+  name: string
+  type: string
+  stepTemp: number
+  stepTime: number
+}
+
+export interface WaterProfile {
+  calcium?: number
+  magnesium?: number
+  sodium?: number
+  chloride?: number
+  sulfate?: number
+  bicarbonate?: number
+}
+
+export interface EquipmentProfile {
+  name?: string
+  batchSize?: number
+  boilTime?: number
+  efficiency?: number
+}
+
 export interface Recipe {
   id: number
+  uuid: string // Stable identifier that won't change if recipes are renumbered
   name: string
   style: string
   category: 'ale' | 'lager' | 'spirit'
@@ -13,6 +53,26 @@ export interface Recipe {
   yeast: string
   source?: 'brewfather' | 'beersmith'
   brewDate?: string
+  // Detail fields (optional - available for Brewfather recipes)
+  fermentablesDetail?: RecipeFermentable[]
+  hopsDetail?: RecipeHop[]
+  yeastDetail?: {
+    name: string
+    lab?: string
+    attenuation?: number
+    minTemp?: number
+    maxTemp?: number
+  }
+  mashProfile?: {
+    name?: string
+    steps: MashStep[]
+  }
+  waterProfile?: WaterProfile
+  equipmentProfile?: EquipmentProfile
+  boilTime?: number
+  batchSize?: number
+  color?: number
+  notes?: string
 }
 
 export interface Fermentable {

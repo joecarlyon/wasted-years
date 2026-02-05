@@ -2,3958 +2,3972 @@ import { Batch } from '@/types'
 
 export const batches: Batch[] = [
   {
-    "batchNo": 1,
-    "name": "Zombie Dust London",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-16",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [
+    batchNo: 1,
+    name: 'Oatmeal Stout',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Nothing Special',
+  },
+  {
+    batchNo: 2,
+    name: 'Hefe Blueberries',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Blueberry flavor, where did it go?',
+  },
+  {
+    batchNo: 3,
+    name: 'Hefe Grapefruit',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Very Tart',
+  },
+  {
+    batchNo: 4,
+    name: 'Belgian White',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Sucked, added apricot and was better',
+  },
+  {
+    batchNo: 5,
+    name: 'Black IIPA',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Good',
+  },
+  {
+    batchNo: 6,
+    name: 'Black IPA (session)',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Very Good',
+  },
+  {
+    batchNo: 7,
+    name: 'Vanilla RIS',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Infected :/',
+  },
+  {
+    batchNo: 8,
+    name: 'CarPA',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '2015-03-19',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Very meh',
+  },
+  {
+    batchNo: 9,
+    name: 'Shandy',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Delicious, madelyn says more lemon next time',
+  },
+  {
+    batchNo: 10,
+    name: 'Gumballhead',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Delicious',
+  },
+  {
+    batchNo: 11,
+    name: 'Wanna be blonde',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'First batch was better',
+  },
+  {
+    batchNo: 12,
+    name: 'Brown Ale',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+  },
+  {
+    batchNo: 13,
+    name: 'Hefe 1/2 Lemon',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+  },
+  {
+    batchNo: 14,
+    name: 'Gumballhead',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+  },
+  {
+    batchNo: 15,
+    name: 'Elara',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+  },
+  {
+    batchNo: 16,
+    name: 'BA Withered 2',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+  },
+  {
+    batchNo: 17,
+    name: 'Smoked porter',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-02-15',
+    bottlingDate: '2015-03-19',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Smokey, better with age',
+  },
+  {
+    batchNo: 18,
+    name: 'Blonde',
+    style: 'Belgian Blond Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-02-26',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 29,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 15,
+      },
+      {
+        name: 'Wheat Malt, Bel',
+        amount: 8,
+      },
+      {
+        name: 'Wheat, Flaked',
+        amount: 1.5,
+      },
+      {
+        name: 'Honey Malt',
+        amount: 1.5,
+      },
+      {
+        name: 'Carafoam',
+        amount: 1,
+      },
+      {
+        name: 'Candi Sugar, Clear',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Hallertauer',
+        amount: 2,
+        usage: 'Bittering',
+      },
+      {
+        name: 'East Kent Goldings (EKG)',
+        amount: 2,
+        usage: 'Bittering',
+      },
+    ],
+    yeast: [
+      {
+        name: 'Irish Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1084',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Delicious',
+  },
+  {
+    batchNo: 19,
+    name: 'Zombie Dust London',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-16',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Was okay',
+  },
+  {
+    batchNo: 20,
+    name: 'Zombie Dust British',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-16',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Was okay',
+  },
+  {
+    batchNo: 21,
+    name: 'Zombie Dust',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-16',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Was okay',
+  },
+  {
+    batchNo: 22,
+    name: 'Zombie Dust',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-16',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Was okay',
+  },
+  {
+    batchNo: 23,
+    name: 'Zombie Dust (Omega)',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-21',
+    bottlingDate: '',
+    og: 1.055,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
       },
       {
-        "name": "Caramunich Malt",
-        "amount": 2.5
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
       },
       {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
       },
       {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
       },
+    ],
+    yeast: [
       {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
     ],
-    "hops": [
+    source: 'beersmith',
+    tastingNotes: 'Okay, too dark.. too much cara 45 | Was okay',
+  },
+  {
+    batchNo: 24,
+    name: 'Milk stout',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-25',
+    bottlingDate: '',
+    og: 0,
+    fg: 1.01,
+    abv: 0,
+    ibu: 17,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 15.46,
+      },
+      {
+        name: 'Milk Sugar (Lactose)',
+        amount: 2.21,
+      },
+      {
+        name: 'Roasted Barley',
+        amount: 2.15,
+      },
+      {
+        name: 'Munich 10L (Briess)',
+        amount: 1.66,
+      },
       {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Barley, Flaked (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
+        name: 'Caramel Malt - 60L (Briess)',
+        amount: 1.62,
       },
       {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
+        name: 'Chocolate Malt',
+        amount: 1.62,
       },
       {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
+        name: 'Oats, Flaked',
+        amount: 1.1,
       },
+    ],
+    hops: [
       {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
+        name: 'Magnum',
+        amount: 0.8,
+        usage: 'Bittering',
       },
       {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
+        name: 'Goldings, East Kent',
+        amount: 2.2,
+        usage: 'Both',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
+        name: 'US-05 Safale American',
+        laboratory: 'Fermentis',
+        productId: '',
+      },
     ],
-    "source": "beersmith",
-    "tastingNotes": "Was okay"
+    source: 'beersmith',
+    tastingNotes: 'Delicious! FUCKING DELICIOUS',
   },
   {
-    "batchNo": 2,
-    "name": "Zombie Dust British",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-16",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [
+    batchNo: 25,
+    name: 'Milk Stout',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-25',
+    bottlingDate: '',
+    og: 0,
+    fg: 1.01,
+    abv: 0,
+    ibu: 17,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
+        name: 'Pale Malt (2 Row) US',
+        amount: 15.46,
       },
       {
-        "name": "Caramunich Malt",
-        "amount": 2.5
+        name: 'Milk Sugar (Lactose)',
+        amount: 2.21,
       },
       {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
+        name: 'Roasted Barley',
+        amount: 2.15,
       },
       {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
+        name: 'Munich 10L (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Was okay"
-  },
-  {
-    "batchNo": 3,
-    "name": "Oatmeal Stout",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Nothing Special"
-  },
-  {
-    "batchNo": 4,
-    "name": "Hefe Blueberries",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Blueberry flavor, where did it go?"
-  },
-  {
-    "batchNo": 5,
-    "name": "Hefe Grapefruit",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Very Tart"
-  },
-  {
-    "batchNo": 6,
-    "name": "Belgian White",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Sucked, added apricot and was better"
-  },
-  {
-    "batchNo": 7,
-    "name": "Black IIPA",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Good"
-  },
-  {
-    "batchNo": 8,
-    "name": "Black IPA (session)",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Very Good"
-  },
-  {
-    "batchNo": 9,
-    "name": "Vanilla RIS",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Infected :/"
-  },
-  {
-    "batchNo": 10,
-    "name": "CarPA",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "2015-03-19",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Very meh"
-  },
-  {
-    "batchNo": 11,
-    "name": "Blonde",
-    "style": "Belgian Blond Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-02-26",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 29,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15
-      },
-      {
-        "name": "Wheat Malt, Bel",
-        "amount": 8
-      },
-      {
-        "name": "Wheat, Flaked",
-        "amount": 1.5
-      },
-      {
-        "name": "Honey Malt",
-        "amount": 1.5
-      },
-      {
-        "name": "Carafoam",
-        "amount": 1
-      },
-      {
-        "name": "Candi Sugar, Clear",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Hallertauer",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "East Kent Goldings (EKG)",
-        "amount": 2,
-        "usage": "Bittering"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "Irish Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1084"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Delicious"
-  },
-  {
-    "batchNo": 12,
-    "name": "Smoked porter",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-02-15",
-    "bottlingDate": "2015-03-19",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Smokey, better with age"
-  },
-  {
-    "batchNo": 13,
-    "name": "Shandy",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Delicious, madelyn says more lemon next time"
-  },
-  {
-    "batchNo": 14,
-    "name": "Gumballhead",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Delicious"
-  },
-  {
-    "batchNo": 15,
-    "name": "Zombie Dust (Omega)",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-21",
-    "bottlingDate": "",
-    "og": 1.055,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Okay, too dark.. too much cara 45 | Was okay"
-  },
-  {
-    "batchNo": 16,
-    "name": "Milk stout",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-25",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 17,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15.46
-      },
-      {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 2.21
-      },
-      {
-        "name": "Roasted Barley",
-        "amount": 2.15
-      },
-      {
-        "name": "Munich 10L (Briess)",
-        "amount": 1.66
-      },
-      {
-        "name": "Barley, Flaked (Briess)",
-        "amount": 1.66
-      },
-      {
-        "name": "Caramel Malt - 60L (Briess)",
-        "amount": 1.62
-      },
-      {
-        "name": "Chocolate Malt",
-        "amount": 1.62
-      },
-      {
-        "name": "Oats, Flaked",
-        "amount": 1.1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Magnum",
-        "amount": 0.8,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2.2,
-        "usage": "Both"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "US-05 Safale American",
-        "laboratory": "Fermentis",
-        "productId": ""
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Delicious! FUCKING DELICIOUS"
-  },
-  {
-    "batchNo": 17,
-    "name": "Wanna be blonde",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "First batch was better"
-  },
-  {
-    "batchNo": 18,
-    "name": "Raging Redhead",
-    "style": "Irish Red Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-04-09",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 23,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 18
-      },
-      {
-        "name": "Special B Malt",
-        "amount": 1
-      },
-      {
-        "name": "Aromatic Malt",
-        "amount": 1
-      },
-      {
-        "name": "Munich Malt",
-        "amount": 1
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Crystal",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Cascade",
-        "amount": 2,
-        "usage": "Bittering"
-      }
-    ],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Good, faded after time"
-  },
-  {
-    "batchNo": 19,
-    "name": "Strawberrysaurus Rex",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-04-18",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 39,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 16
-      },
-      {
-        "name": "Carafoam",
-        "amount": 2
-      },
-      {
-        "name": "Caramel Malt - 20L (Briess)",
-        "amount": 2
-      },
-      {
-        "name": "Vienna Malt",
-        "amount": 2
-      },
-      {
-        "name": "Wheat Malt, Bel",
-        "amount": 2
-      },
-      {
-        "name": "Caramel Malt - 40L (Briess)",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Both"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Ale II",
-        "laboratory": "Wyeast Labs",
-        "productId": "1272"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Delicious"
-  },
-  {
-    "batchNo": 20,
-    "name": "Oberon Clone",
-    "style": "American Wheat or Rye Beer",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-04-26",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 15,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 13
-      },
-      {
-        "name": "White Wheat Malt",
-        "amount": 9
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Saaz",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Saaz",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Cascade",
-        "amount": 2,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Saaz",
-        "amount": 1,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Wheat Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1010"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "This was okay"
-  },
-  {
-    "batchNo": 21,
-    "name": "Mosaic Dust",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-05-04",
-    "bottlingDate": "",
-    "og": 1.065,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Delicious! Too dark"
-  },
-  {
-    "batchNo": 22,
-    "name": "Invade Canada",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-05-31",
-    "bottlingDate": "",
-    "og": 1.052,
-    "fg": 1.01,
-    "abv": 5.5,
-    "ibu": 36,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 19
-      },
-      {
-        "name": "Caramel/Crystal Malt - 40L",
-        "amount": 2
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Cascade",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Cascade",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1,
-        "usage": "Both"
-      },
-      {
-        "name": "Nelson Sauvin",
-        "amount": 2,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Galaxy",
-        "amount": 2,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Ale II",
-        "laboratory": "Wyeast Labs",
-        "productId": "1272"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "DUMPED"
-  },
-  {
-    "batchNo": 23,
-    "name": "Little Hefer",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-06-14",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Very good, bananay"
-  },
-  {
-    "batchNo": 24,
-    "name": "Withered Stout",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-06-07",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "GOOD"
-  },
-  {
-    "batchNo": 25,
-    "name": "Withered Stout Partygle",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-06-07",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Dumped"
-  },
-  {
-    "batchNo": 26,
-    "name": "Cider",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-06-07",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Very sweet"
-  },
-  {
-    "batchNo": 27,
-    "name": "Blue Moon Clone",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-07-03",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Good, needs more orange"
-  },
-  {
-    "batchNo": 28,
-    "name": "Usurper Rye IPA",
-    "style": "American Wheat or Rye Beer",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-06-28",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": 76,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 17
-      },
-      {
-        "name": "Rye Malt",
-        "amount": 6
-      },
-      {
-        "name": "Aromatic Malt",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 20L",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 40L",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 80L",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt -120L",
-        "amount": 1
-      },
-      {
-        "name": "Carapils (Briess)",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Summit",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Ale II",
-        "laboratory": "Wyeast Labs",
-        "productId": "1272"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Very good!"
-  },
-  {
-    "batchNo": 29,
-    "name": "GarabaldiHead 2",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-07-12",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "First Batch was better"
-  },
-  {
-    "batchNo": 30,
-    "name": "Worlds Best OktoberFest",
-    "style": "Oktoberfest/Marzen",
-    "category": "lager",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-07-26",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 27,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Vienna Malt",
-        "amount": 10
-      },
-      {
-        "name": "Munich Malt",
-        "amount": 6
-      },
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 6
-      }
-    ],
-    "hops": [
-      {
-        "name": "Hallertauer Hersbrucker",
-        "amount": 4,
-        "usage": "Bittering"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "Bohemian Lager",
-        "laboratory": "Wyeast Labs",
-        "productId": "2124"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Very good for first Lager"
-  },
-  {
-    "batchNo": 31,
-    "name": "Hop Tarted",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-08-02",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Delicious! | Paul didn't show up :("
-  },
-  {
-    "batchNo": 32,
-    "name": "Withered Stout",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-08-23",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 33,
-    "name": "Smore Punkin",
-    "style": "American Amber Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-08-30",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 31,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 18
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 3
-      },
-      {
-        "name": "Oats, Flaked",
-        "amount": 2.6
-      },
-      {
-        "name": "Victory Malt",
-        "amount": 2
-      },
-      {
-        "name": "Vienna Malt",
-        "amount": 2
-      }
-    ],
-    "hops": [
-      {
-        "name": "Cluster",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2,
-        "usage": "Bittering"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "Ringwood Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1187"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Very good"
-  },
-  {
-    "batchNo": 34,
-    "name": "Devils Wheat",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-09-06",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 59,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 10
-      },
-      {
-        "name": "Wheat Malt, Ger",
-        "amount": 10
-      },
-      {
-        "name": "Chocolate Rye Malt",
-        "amount": 1
-      },
-      {
-        "name": "Vienna Malt",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 20L",
-        "amount": 1
-      },
-      {
-        "name": "Roasted Barley",
-        "amount": 0.25
-      }
-    ],
-    "hops": [
-      {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Columbus (Tomahawk)",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Wheat Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1010"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Pretty good, more hops next time"
-  },
-  {
-    "batchNo": 35,
-    "name": "Milk Stout",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-09-20",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 17,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15.46
-      },
-      {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 2.21
-      },
-      {
-        "name": "Roasted Barley",
-        "amount": 2.15
-      },
-      {
-        "name": "Munich 10L (Briess)",
-        "amount": 1.66
-      },
-      {
-        "name": "Barley, Flaked (Briess)",
-        "amount": 1.66
-      },
-      {
-        "name": "Caramel Malt - 60L (Briess)",
-        "amount": 1.62
-      },
-      {
-        "name": "Chocolate Malt",
-        "amount": 1.62
-      },
-      {
-        "name": "Oats, Flaked",
-        "amount": 1.1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Magnum",
-        "amount": 0.8,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2.2,
-        "usage": "Both"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "US-05 Safale American",
-        "laboratory": "Fermentis",
-        "productId": ""
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Delicious! FUCKING DELICIOUS"
-  },
-  {
-    "batchNo": 36,
-    "name": "Vince's Hef",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-10-04",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Good, maybe ferment at higher temp"
-  },
-  {
-    "batchNo": 37,
-    "name": "Vince's Hoppy Wheat",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-10-04",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "very good"
-  },
-  {
-    "batchNo": 38,
-    "name": "All The Grain",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-10-04",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 39,
-    "name": "Saison",
-    "style": "Saison",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-10-11",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 38,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 17
-      },
-      {
-        "name": "White Wheat Malt",
-        "amount": 3
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 1
-      },
-      {
-        "name": "Oats, Flaked",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Fuggles",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Sorachi Ace",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Fuggles",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Fuggles",
-        "amount": 2,
-        "usage": "Both"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "French Saison",
-        "laboratory": "Wyeast Labs",
-        "productId": "3711"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Good"
-  },
-  {
-    "batchNo": 40,
-    "name": "Blonde",
-    "style": "Belgian Blond Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-11-01",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 29,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15
-      },
-      {
-        "name": "Wheat Malt, Bel",
-        "amount": 8
-      },
-      {
-        "name": "Wheat, Flaked",
-        "amount": 1.5
-      },
-      {
-        "name": "Honey Malt",
-        "amount": 1.5
-      },
-      {
-        "name": "Carafoam",
-        "amount": 1
-      },
-      {
-        "name": "Candi Sugar, Clear",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Hallertauer",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "East Kent Goldings (EKG)",
-        "amount": 2,
-        "usage": "Bittering"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "Irish Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1084"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Tastes like a hef, but thats okay | Delicious"
-  },
-  {
-    "batchNo": 41,
-    "name": "Rye Usurper",
-    "style": "American Wheat or Rye Beer",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-12-20",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": 76,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 17
-      },
-      {
-        "name": "Rye Malt",
-        "amount": 6
-      },
-      {
-        "name": "Aromatic Malt",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 20L",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 40L",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 80L",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt -120L",
-        "amount": 1
-      },
-      {
-        "name": "Carapils (Briess)",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Summit",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Ale II",
-        "laboratory": "Wyeast Labs",
-        "productId": "1272"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Very good!"
-  },
-  {
-    "batchNo": 42,
-    "name": "BA Porter",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-12-27",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 43,
-    "name": "BA Withered",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-12-28",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 44,
-    "name": "Brown Ale",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 45,
-    "name": "Hefe 1/2 Lemon",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 46,
-    "name": "Zombie Dust",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-16",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Was okay"
-  },
-  {
-    "batchNo": 47,
-    "name": "Zombie Dust",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-16",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Was okay"
-  },
-  {
-    "batchNo": 48,
-    "name": "Gumballhead",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 49,
-    "name": "Milk Stout",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-25",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 17,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15.46
-      },
-      {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 2.21
-      },
-      {
-        "name": "Roasted Barley",
-        "amount": 2.15
-      },
-      {
-        "name": "Munich 10L (Briess)",
-        "amount": 1.66
-      },
-      {
-        "name": "Barley, Flaked (Briess)",
-        "amount": 1.66
-      },
-      {
-        "name": "Caramel Malt - 60L (Briess)",
-        "amount": 1.62
-      },
-      {
-        "name": "Chocolate Malt",
-        "amount": 1.62
-      },
-      {
-        "name": "Oats, Flaked",
-        "amount": 1.1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Magnum",
-        "amount": 0.8,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2.2,
-        "usage": "Both"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "US-05 Safale American",
-        "laboratory": "Fermentis",
-        "productId": ""
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Delicious! FUCKING DELICIOUS"
-  },
-  {
-    "batchNo": 50,
-    "name": "Elara",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 51,
-    "name": "BA Withered 2",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 52,
-    "name": "Devils Wheat",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-09-06",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 59,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 10
-      },
-      {
-        "name": "Wheat Malt, Ger",
-        "amount": 10
+        name: 'Barley, Flaked (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "Chocolate Rye Malt",
-        "amount": 1
+        name: 'Caramel Malt - 60L (Briess)',
+        amount: 1.62,
       },
       {
-        "name": "Vienna Malt",
-        "amount": 1
+        name: 'Chocolate Malt',
+        amount: 1.62,
       },
       {
-        "name": "Caramel/Crystal Malt - 20L",
-        "amount": 1
+        name: 'Oats, Flaked',
+        amount: 1.1,
       },
+    ],
+    hops: [
+      {
+        name: 'Magnum',
+        amount: 0.8,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Goldings, East Kent',
+        amount: 2.2,
+        usage: 'Both',
+      },
+    ],
+    yeast: [
       {
-        "name": "Roasted Barley",
-        "amount": 0.25
-      }
+        name: 'US-05 Safale American',
+        laboratory: 'Fermentis',
+        productId: '',
+      },
     ],
-    "hops": [
+    source: 'beersmith',
+    tastingNotes: 'Delicious! FUCKING DELICIOUS',
+  },
+  {
+    batchNo: 26,
+    name: 'Raging Redhead',
+    style: 'Irish Red Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-04-09',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 23,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 18,
+      },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Special B Malt',
+        amount: 1,
       },
       {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Aromatic Malt',
+        amount: 1,
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 2,
-        "usage": "Both"
+        name: 'Munich Malt',
+        amount: 1,
       },
       {
-        "name": "Amarillo Gold",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
     ],
-    "yeast": [
+    hops: [
       {
-        "name": "American Wheat Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1010"
-      }
+        name: 'Crystal',
+        amount: 2,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Cascade',
+        amount: 2,
+        usage: 'Bittering',
+      },
     ],
-    "source": "beersmith",
-    "tastingNotes": "Pretty good, more hops next time"
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Good, faded after time',
   },
   {
-    "batchNo": 64,
-    "name": "Czech It Out",
-    "style": "Czech Amber Lager",
-    "category": "Czech Lager",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-08-08",
-    "bottlingDate": "2023-08-22",
-    "og": 1.035,
-    "fg": 1.005,
-    "abv": 3.9,
-    "ibu": 16,
-    "color": 21.1,
-    "efficiency": 52.2,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 27,
+    name: 'Strawberrysaurus Rex',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-04-18',
+    bottlingDate: '',
+    og: 0,
+    fg: 1.01,
+    abv: 0,
+    ibu: 39,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 16,
+      },
       {
-        "name": "Vienna Malt",
-        "amount": 2.72
+        name: 'Carafoam',
+        amount: 2,
       },
       {
-        "name": "Munich",
-        "amount": 0.91
+        name: 'Caramel Malt - 20L (Briess)',
+        amount: 2,
       },
       {
-        "name": "Caramunich II",
-        "amount": 0.45
+        name: 'Vienna Malt',
+        amount: 2,
       },
       {
-        "name": "Carafa Special I",
-        "amount": 0.23
+        name: 'Wheat Malt, Bel',
+        amount: 2,
       },
       {
-        "name": "Dark Munich Malt 30L",
-        "amount": 0.23
-      }
+        name: 'Caramel Malt - 40L (Briess)',
+        amount: 1,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Saaz",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Saaz",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Saaz",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Both',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "Lutra Kveik",
-        "laboratory": "Omega",
-        "productId": "OYL-071"
-      }
-    ]
+        name: 'American Ale II',
+        laboratory: 'Wyeast Labs',
+        productId: '1272',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Delicious',
   },
   {
-    "batchNo": 70,
-    "name": "Overlord v3",
-    "style": "American IPA",
-    "category": "IPA",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-04-28",
-    "bottlingDate": "2024-05-17",
-    "og": 1.056,
-    "fg": 0,
-    "abv": 5.6,
-    "ibu": 82,
-    "color": 9,
-    "efficiency": 62.5,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 28,
+    name: 'Oberon Clone',
+    style: 'American Wheat or Rye Beer',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-04-26',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 15,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 13,
+      },
+      {
+        name: 'White Wheat Malt',
+        amount: 9,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Saaz',
+        amount: 2,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Saaz',
+        amount: 2,
+        usage: 'Both',
+      },
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 9.98
+        name: 'Cascade',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Caramel Malt 20L",
-        "amount": 0.91
+        name: 'Saaz',
+        amount: 1,
+        usage: 'Aroma',
       },
+    ],
+    yeast: [
+      {
+        name: 'American Wheat Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1010',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'This was okay',
+  },
+  {
+    batchNo: 29,
+    name: 'Mosaic Dust',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-05-04',
+    bottlingDate: '',
+    og: 1.065,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Delicious! Too dark',
+  },
+  {
+    batchNo: 30,
+    name: 'Invade Canada',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-05-31',
+    bottlingDate: '',
+    og: 1.052,
+    fg: 1.01,
+    abv: 5.5,
+    ibu: 36,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Carapils",
-        "amount": 0.91
+        name: 'Pale Malt (2 Row) US',
+        amount: 19,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.45
-      }
+        name: 'Caramel/Crystal Malt - 40L',
+        amount: 2,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
     ],
-    "hops": [
+    hops: [
+      {
+        name: 'Cascade',
+        amount: 2,
+        usage: 'Bittering',
+      },
       {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Cascade',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Simcoe',
+        amount: 1,
+        usage: 'Both',
       },
       {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Nelson Sauvin',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Citra",
-        "amount": 5,
-        "usage": "Aroma"
+        name: 'Amarillo',
+        amount: 4,
+        usage: 'Aroma',
       },
       {
-        "name": "Citra",
-        "amount": 6,
-        "usage": "Aroma"
-      }
+        name: 'Galaxy',
+        amount: 2,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "West Coast IV",
-        "laboratory": "Omega",
-        "productId": "OYL-050"
-      }
+        name: 'American Ale II',
+        laboratory: 'Wyeast Labs',
+        productId: '1272',
+      },
     ],
-    "brewingNotes": "Hop stand was at 140, not 170. | Decided to use a pump and a filter to filter out the grain | Spilled some grain into the kettle when I started the mash. The bucket was too full",
-    "tastingNotes": "It's very smooth. It doesn't have the bitter hop flavor that it normally does. I'd undo those hop timing changes. Too balanced."
+    source: 'beersmith',
+    tastingNotes: 'DUMPED',
+  },
+  {
+    batchNo: 31,
+    name: 'Withered Stout',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-06-07',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'GOOD',
+  },
+  {
+    batchNo: 32,
+    name: 'Withered Stout Partygle',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-06-07',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Dumped',
+  },
+  {
+    batchNo: 33,
+    name: 'Cider',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-06-07',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Very sweet',
+  },
+  {
+    batchNo: 34,
+    name: 'Little Hefer',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-06-14',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Very good, bananay',
   },
   {
-    "batchNo": 59,
-    "name": "Spicy Sprinkles",
-    "style": "Belgian Rye Ale",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-03-18",
-    "bottlingDate": "2023-04-01",
-    "og": 1.069,
-    "fg": 1.018,
-    "abv": 6.7,
-    "ibu": 39,
-    "color": 22.8,
-    "efficiency": 60,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 35,
+    name: 'Usurper Rye IPA',
+    style: 'American Wheat or Rye Beer',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-06-28',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: 76,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 17,
+      },
+      {
+        name: 'Rye Malt',
+        amount: 6,
+      },
+      {
+        name: 'Aromatic Malt',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 20L',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 40L',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 80L',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt -120L',
+        amount: 1,
+      },
+      {
+        name: 'Carapils (Briess)',
+        amount: 1,
+      },
+    ],
+    hops: [
       {
-        "name": "Pilsner Malt 2-Row",
-        "amount": 5.44
+        name: 'Summit',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Caramel Rye",
-        "amount": 1.36
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Carared",
-        "amount": 0.91
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Carapils",
-        "amount": 0.45
+        name: 'Amarillo',
+        amount: 2,
+        usage: 'Both',
       },
       {
-        "name": "Special B",
-        "amount": 0.45
-      }
+        name: 'Amarillo Gold',
+        amount: 1,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Amarillo',
+        amount: 4,
+        usage: 'Aroma',
+      },
     ],
-    "hops": [
+    yeast: [
       {
-        "name": "Pacific Jade",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'American Ale II',
+        laboratory: 'Wyeast Labs',
+        productId: '1272',
       },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Very good!',
+  },
+  {
+    batchNo: 36,
+    name: 'Blue Moon Clone',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-07-03',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Good, needs more orange',
+  },
+  {
+    batchNo: 37,
+    name: 'GarabaldiHead 2',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-07-12',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'First Batch was better',
+  },
+  {
+    batchNo: 38,
+    name: 'Worlds Best OktoberFest',
+    style: 'Oktoberfest/Marzen',
+    category: 'lager',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-07-26',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 27,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Cascade",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Vienna Malt',
+        amount: 10,
       },
       {
-        "name": "Pacific Jade",
-        "amount": 2.5,
-        "usage": "Aroma"
+        name: 'Munich Malt',
+        amount: 6,
       },
       {
-        "name": "Cascade",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Pale Malt (2 Row) US',
+        amount: 6,
       },
+    ],
+    hops: [
       {
-        "name": "Pacific Jade",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Hallertauer Hersbrucker',
+        amount: 4,
+        usage: 'Bittering',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "Star Party",
-        "laboratory": "Omega Yeast",
-        "productId": "OYL-404"
-      }
+        name: 'Bohemian Lager',
+        laboratory: 'Wyeast Labs',
+        productId: '2124',
+      },
     ],
-    "brewingNotes": "I screwed up and put 8.3g in the kettle to start - basically included the sparge water.\nI forgot to turn down the temp, so the first 20 minutes of mash were close to 160 instead of 153. Hopefully it's not totally unfermentable🤞 I will try to compensate by adding an extra 30 minutes onto the boil."
+    source: 'beersmith',
+    tastingNotes: 'Very good for first Lager',
+  },
+  {
+    batchNo: 39,
+    name: 'Hop Tarted',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-08-02',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: "Delicious! | Paul didn't show up :(",
+  },
+  {
+    batchNo: 40,
+    name: 'Withered Stout',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-08-23',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
   },
   {
-    "batchNo": 61,
-    "name": "Beginning Bourbon",
-    "style": "Whiskey",
-    "category": "spirit",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-04-29",
-    "bottlingDate": "2023-05-13",
-    "og": 0,
-    "fg": 0,
-    "abv": 6.4,
-    "ibu": null,
-    "color": 4.1,
-    "efficiency": 63.6,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 41,
+    name: 'Smore Punkin',
+    style: 'American Amber Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-08-30',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 31,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 18,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 3,
+      },
+      {
+        name: 'Oats, Flaked',
+        amount: 2.6,
+      },
       {
-        "name": "Corn Yellow, Flaked",
-        "amount": 2.95
+        name: 'Victory Malt',
+        amount: 2,
       },
       {
-        "name": "Organic 2row Pale Malt",
-        "amount": 1.36
+        name: 'Vienna Malt',
+        amount: 2,
       },
+    ],
+    hops: [
       {
-        "name": "Rye Malt",
-        "amount": 0.68
+        name: 'Cluster',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Wheat Malt",
-        "amount": 0.45
-      }
+        name: 'Goldings, East Kent',
+        amount: 2,
+        usage: 'Bittering',
+      },
     ],
-    "hops": [],
-    "yeast": [
+    yeast: [
       {
-        "name": "HotHead Ale",
-        "laboratory": "Omega",
-        "productId": "OYL-057"
-      }
-    ]
+        name: 'Ringwood Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1187',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Very good',
   },
   {
-    "batchNo": 71,
-    "name": "Bavarian hefeweizen",
-    "style": "Weissbier",
-    "category": "German Wheat Beer",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-05-24",
-    "bottlingDate": "2024-06-07",
-    "og": 1.039,
-    "fg": 0,
-    "abv": 3.8,
-    "ibu": 17,
-    "color": 3.9,
-    "efficiency": 56.5,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 42,
+    name: 'Devils Wheat',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-09-06',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 59,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 10,
+      },
       {
-        "name": "Pale Malt 2-Row",
-        "amount": 4.08
+        name: 'Wheat Malt, Ger',
+        amount: 10,
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 3.18
+        name: 'Chocolate Rye Malt',
+        amount: 1,
       },
       {
-        "name": "Wheat Flaked",
-        "amount": 0.91
+        name: 'Vienna Malt',
+        amount: 1,
       },
       {
-        "name": "Carapils",
-        "amount": 0.45
+        name: 'Caramel/Crystal Malt - 20L',
+        amount: 1,
       },
       {
-        "name": "Munich I",
-        "amount": 0.45
-      }
+        name: 'Roasted Barley',
+        amount: 0.25,
+      },
     ],
-    "hops": [
+    hops: [
+      {
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Bittering',
+      },
       {
-        "name": "Cascade",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Amarillo Gold',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Mandarina Bavaria",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Columbus (Tomahawk)',
+        amount: 2,
+        usage: 'Both',
       },
       {
-        "name": "Cascade",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Amarillo Gold',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "Hefeweizen Ale",
-        "laboratory": "Omega",
-        "productId": "OYL-021"
-      }
+        name: 'American Wheat Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1010',
+      },
     ],
-    "brewingNotes": "I forgot to pull the grain basket up to the 2nd set of hooks before adding sparge water, kinda undoing some of the value it adds."
+    source: 'beersmith',
+    tastingNotes: 'Pretty good, more hops next time',
   },
   {
-    "batchNo": 65,
-    "name": "Wheat vodka",
-    "style": "Vodka",
-    "category": "spirit",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-08-19",
-    "bottlingDate": "2023-09-02",
-    "og": 0,
-    "fg": 0,
-    "abv": 4.1,
-    "ibu": null,
-    "color": 5,
-    "efficiency": 63.6,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 43,
+    name: 'Devils Wheat',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-09-06',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 59,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 10,
+      },
+      {
+        name: 'Wheat Malt, Ger',
+        amount: 10,
+      },
+      {
+        name: 'Chocolate Rye Malt',
+        amount: 1,
+      },
+      {
+        name: 'Vienna Malt',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 20L',
+        amount: 1,
+      },
+      {
+        name: 'Roasted Barley',
+        amount: 0.25,
+      },
+    ],
+    hops: [
+      {
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Columbus (Tomahawk)',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 3,
+        usage: 'Aroma',
+      },
       {
-        "name": "Wheat White Malt",
-        "amount": 5.98
-      }
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Aroma',
+      },
     ],
-    "hops": [],
-    "yeast": [
+    yeast: [
       {
-        "name": "Pinnacle Distillers (S)",
-        "laboratory": "White Labs",
-        "productId": "WLDPINNACLE S"
-      }
-    ]
+        name: 'American Wheat Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1010',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Pretty good, more hops next time',
   },
   {
-    "batchNo": 83,
-    "name": "Rum Wash",
-    "style": "Rum",
-    "category": "spirit",
-    "brewer": "Joe",
-    "status": "Planning",
-    "brewDate": "2025-07-29",
-    "bottlingDate": "2025-08-11",
-    "og": 1.155,
-    "fg": 1.032,
-    "abv": 16.1,
-    "ibu": null,
-    "color": 79.3,
-    "efficiency": 124.2,
-    "batchSize": 20.8,
-    "fermentables": [
+    batchNo: 44,
+    name: 'Milk Stout',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-09-20',
+    bottlingDate: '',
+    og: 0,
+    fg: 1.01,
+    abv: 0,
+    ibu: 17,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 15.46,
+      },
+      {
+        name: 'Milk Sugar (Lactose)',
+        amount: 2.21,
+      },
+      {
+        name: 'Roasted Barley',
+        amount: 2.15,
+      },
+      {
+        name: 'Munich 10L (Briess)',
+        amount: 1.66,
+      },
       {
-        "name": "Blackstrap Molasses",
-        "amount": 3.63
+        name: 'Barley, Flaked (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "Cane (Beet) Sugar",
-        "amount": 2.72
-      }
+        name: 'Caramel Malt - 60L (Briess)',
+        amount: 1.62,
+      },
+      {
+        name: 'Chocolate Malt',
+        amount: 1.62,
+      },
+      {
+        name: 'Oats, Flaked',
+        amount: 1.1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Magnum',
+        amount: 0.8,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Goldings, East Kent',
+        amount: 2.2,
+        usage: 'Both',
+      },
     ],
-    "hops": [],
-    "yeast": [
+    yeast: [
       {
-        "name": "Red Star Ale",
-        "laboratory": "Red Star",
-        "productId": ""
-      }
-    ]
+        name: 'US-05 Safale American',
+        laboratory: 'Fermentis',
+        productId: '',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Delicious! FUCKING DELICIOUS',
+  },
+  {
+    batchNo: 45,
+    name: "Vince's Hef",
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-10-04',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Good, maybe ferment at higher temp',
+  },
+  {
+    batchNo: 46,
+    name: "Vince's Hoppy Wheat",
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-10-04',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'very good',
   },
   {
-    "batchNo": 68,
-    "name": "Moo Moo Canoe",
-    "style": "American Stout",
-    "category": "American Porter and Stout",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-11-22",
-    "bottlingDate": "2023-12-06",
-    "og": 1.072,
-    "fg": 1.024,
-    "abv": 6.3,
-    "ibu": 43,
-    "color": 45.4,
-    "efficiency": 68.9,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 47,
+    name: 'All The Grain',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-10-04',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+  },
+  {
+    batchNo: 48,
+    name: 'Saison',
+    style: 'Saison',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-10-11',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 38,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 17,
+      },
+      {
+        name: 'White Wheat Malt',
+        amount: 3,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 1,
+      },
+      {
+        name: 'Oats, Flaked',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Fuggles',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Sorachi Ace',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Fuggles',
+        amount: 1,
+        usage: 'Bittering',
+      },
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 7.26
+        name: 'Fuggles',
+        amount: 2,
+        usage: 'Both',
       },
+    ],
+    yeast: [
       {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 1.36
+        name: 'French Saison',
+        laboratory: 'Wyeast Labs',
+        productId: '3711',
       },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Good',
+  },
+  {
+    batchNo: 49,
+    name: 'Blonde',
+    style: 'Belgian Blond Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-11-01',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 29,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Chocolate",
-        "amount": 1.13
+        name: 'Pale Malt (2 Row) US',
+        amount: 15,
       },
       {
-        "name": "Barley, Flaked",
-        "amount": 0.91
+        name: 'Wheat Malt, Bel',
+        amount: 8,
       },
       {
-        "name": "Caramel Malt 60L",
-        "amount": 0.91
+        name: 'Wheat, Flaked',
+        amount: 1.5,
       },
       {
-        "name": "Munich II",
-        "amount": 0.91
+        name: 'Honey Malt',
+        amount: 1.5,
       },
       {
-        "name": "Roasted Barley",
-        "amount": 0.91
+        name: 'Carafoam',
+        amount: 1,
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 0.45
-      }
+        name: 'Candi Sugar, Clear',
+        amount: 1,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Magnum",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Hallertauer',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Goldings, East Kent",
-        "amount": 2,
-        "usage": "Bittering"
-      }
+        name: 'East Kent Goldings (EKG)',
+        amount: 2,
+        usage: 'Bittering',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "British Ale I",
-        "laboratory": "Omega",
-        "productId": "OYL-006"
-      }
+        name: 'Irish Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1084',
+      },
     ],
-    "tastingNotes": "Rich and creamy with notes of chocolate and coffee. The lactose adds a smooth sweetness that balances the roasted malt character."
+    source: 'beersmith',
+    tastingNotes: 'Tastes like a hef, but thats okay | Delicious',
   },
   {
-    "batchNo": 55,
-    "name": "Wry Smile Rye IPA",
-    "style": "Rye IPA",
-    "category": "IPA",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2022-07-24",
-    "bottlingDate": "2022-08-07",
-    "og": 1.064,
-    "fg": 0,
-    "abv": 6.4,
-    "ibu": 83,
-    "color": 9.9,
-    "efficiency": 60.7,
-    "batchSize": 20.8,
-    "fermentables": [
+    batchNo: 50,
+    name: 'Rye Usurper',
+    style: 'American Wheat or Rye Beer',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-12-20',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: 76,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Pale Malt 2-Row",
-        "amount": 4.99
+        name: 'Pale Malt (2 Row) US',
+        amount: 17,
       },
       {
-        "name": "Rye Malt",
-        "amount": 1.36
+        name: 'Rye Malt',
+        amount: 6,
       },
       {
-        "name": "Crystal 60L",
-        "amount": 0.45
+        name: 'Aromatic Malt',
+        amount: 1,
       },
       {
-        "name": "Carapils",
-        "amount": 0.23
+        name: 'Caramel/Crystal Malt - 20L',
+        amount: 1,
       },
       {
-        "name": "Wheat White",
-        "amount": 0.23
-      }
+        name: 'Caramel/Crystal Malt - 40L',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 80L',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt -120L',
+        amount: 1,
+      },
+      {
+        name: 'Carapils (Briess)',
+        amount: 1,
+      },
     ],
-    "hops": [
+    hops: [
+      {
+        name: 'Summit',
+        amount: 2,
+        usage: 'Bittering',
+      },
       {
-        "name": "Mount Hood",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Mount Hood",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Amarillo',
+        amount: 2,
+        usage: 'Both',
       },
       {
-        "name": "Mount Hood",
-        "amount": 1,
-        "usage": "Aroma"
+        name: 'Amarillo Gold',
+        amount: 1,
+        usage: 'Aroma',
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Amarillo',
+        amount: 4,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "Denny's Favorite",
-        "laboratory": "Wyeast Labs",
-        "productId": "1450"
-      }
-    ]
+        name: 'American Ale II',
+        laboratory: 'Wyeast Labs',
+        productId: '1272',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Very good!',
+  },
+  {
+    batchNo: 51,
+    name: 'BA Porter',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-12-27',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+  },
+  {
+    batchNo: 52,
+    name: 'BA Withered',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-12-28',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
   },
   {
-    "batchNo": 66,
-    "name": "Imperial Hefe",
-    "style": "Weissbier",
-    "category": "German Wheat Beer",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-09-17",
-    "bottlingDate": "2023-09-27",
-    "og": 1.056,
-    "fg": 0,
-    "abv": 5.5,
-    "ibu": 33,
-    "color": 6.2,
-    "efficiency": 43.7,
-    "batchSize": 19.9,
-    "fermentables": [
+    batchNo: 53,
+    name: 'Bavarian hefeweizen',
+    style: 'Weissbier',
+    category: 'German Wheat Beer',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2022-03-15',
+    bottlingDate: '2022-03-29',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.9,
+    ibu: 21,
+    color: 4.1,
+    efficiency: 72,
+    batchSize: 5,
+    fermentables: [
       {
-        "name": "Pale Malt 2-Row",
-        "amount": 3.18
+        name: 'Pale Malt 2-Row',
+        amount: 4.08,
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 3.18
+        name: 'Wheat White Malt',
+        amount: 3.18,
       },
       {
-        "name": "Wheat Flaked",
-        "amount": 0.91
+        name: 'Wheat Flaked',
+        amount: 0.91,
       },
       {
-        "name": "Carapils",
-        "amount": 0.45
+        name: 'Carapils',
+        amount: 0.45,
       },
       {
-        "name": "Munich",
-        "amount": 0.45
-      }
+        name: 'Munich',
+        amount: 0.45,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Hallertau Blanc",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Hallertau Blanc',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Hallertau Blanc",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Hallertau Blanc',
+        amount: 1,
+        usage: 'Aroma',
       },
       {
-        "name": "Lemondrop",
-        "amount": 1,
-        "usage": "Bittering"
-      }
+        name: 'Lemondrop',
+        amount: 1,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "Hefeweizen Ale",
-        "laboratory": "Omega",
-        "productId": "OYL-021"
-      }
-    ]
+        name: 'Hefeweizen Ale',
+        laboratory: 'Omega',
+        productId: 'OYL-021',
+      },
+    ],
+    source: 'brewfather',
   },
   {
-    "batchNo": 73,
-    "name": "The Devil's Narwhal",
-    "style": "Hazy IPA (New England / NEIPA)",
-    "category": "IPA",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-05-24",
-    "bottlingDate": "2024-06-14",
-    "og": 0,
-    "fg": 0,
-    "abv": 6,
-    "ibu": 61,
-    "color": 6.1,
-    "efficiency": 63.2,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 54,
+    name: 'Bavarian hefeweizen',
+    style: 'Weissbier',
+    category: 'German Wheat Beer',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2022-03-20',
+    bottlingDate: '2022-04-03',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.9,
+    ibu: 21,
+    color: 4.1,
+    efficiency: 72,
+    batchSize: 5,
+    fermentables: [
+      {
+        name: 'Pale Malt 2-Row',
+        amount: 4.08,
+      },
+      {
+        name: 'Wheat White Malt',
+        amount: 3.18,
+      },
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 9.98
+        name: 'Wheat Flaked',
+        amount: 0.91,
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 1.36
+        name: 'Carapils',
+        amount: 0.45,
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 1.36
+        name: 'Munich',
+        amount: 0.45,
       },
+    ],
+    hops: [
+      {
+        name: 'Hallertau Blanc',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Hallertau Blanc',
+        amount: 1,
+        usage: 'Aroma',
+      },
       {
-        "name": "Carapils",
-        "amount": 0.91
+        name: 'Lemondrop',
+        amount: 1,
+        usage: 'Aroma',
       },
+    ],
+    yeast: [
       {
-        "name": "Rye Malt",
-        "amount": 0.45
-      }
+        name: 'Hefeweizen Ale',
+        laboratory: 'Omega',
+        productId: 'OYL-021',
+      },
     ],
-    "hops": [
+    source: 'brewfather',
+  },
+  {
+    batchNo: 55,
+    name: 'Wry Smile Rye IPA',
+    style: 'Rye IPA',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2022-07-24',
+    bottlingDate: '2022-08-07',
+    og: 1.064,
+    fg: 0,
+    abv: 6.4,
+    ibu: 83,
+    color: 9.9,
+    efficiency: 60.7,
+    batchSize: 20.8,
+    fermentables: [
+      {
+        name: 'Pale Malt 2-Row',
+        amount: 4.99,
+      },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Rye Malt',
+        amount: 1.36,
       },
       {
-        "name": "Centennial",
-        "amount": 3,
-        "usage": "Bittering"
+        name: 'Crystal 60L',
+        amount: 0.45,
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Carapils',
+        amount: 0.23,
       },
       {
-        "name": "Cascade",
-        "amount": 4,
-        "usage": "Aroma"
+        name: 'Wheat White',
+        amount: 0.23,
       },
+    ],
+    hops: [
       {
-        "name": "Centennial",
-        "amount": 4,
-        "usage": "Aroma"
+        name: 'Mount Hood',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Centennial",
-        "amount": 3,
-        "usage": "Aroma"
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Motueka",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Mount Hood',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Saaz",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Mount Hood',
+        amount: 1,
+        usage: 'Aroma',
       },
       {
-        "name": "Nelson Sauvin",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "British Ale V",
-        "laboratory": "Omega",
-        "productId": "OYL-011"
-      }
-    ]
+        name: "Denny's Favorite",
+        laboratory: 'Wyeast Labs',
+        productId: '1450',
+      },
+    ],
+    source: 'brewfather',
   },
   {
-    "batchNo": 63,
-    "name": "The Devil's Wheat 3",
-    "style": "American Wheat Beer",
-    "category": "Standard American Beer",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-06-23",
-    "bottlingDate": "2023-07-07",
-    "og": 0,
-    "fg": 1.012,
-    "abv": 4.1,
-    "ibu": 26,
-    "color": 5.3,
-    "efficiency": 62.2,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 56,
+    name: 'Star Maker Imperial Stout',
+    style: 'Imperial Stout',
+    category: 'American Porter and Stout',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2022-09-21',
+    bottlingDate: '2022-10-05',
+    og: 1.046,
+    fg: 1.032,
+    abv: 13,
+    ibu: 98,
+    color: 86.5,
+    efficiency: 59.6,
+    batchSize: 20.8,
+    fermentables: [
+      {
+        name: 'Pale Ale Malt 2-Row',
+        amount: 8.16,
+      },
+      {
+        name: 'Dark Chocolate Malt',
+        amount: 1.02,
+      },
+      {
+        name: 'Finest Maris Otter® Ale Malt',
+        amount: 1.02,
+      },
+      {
+        name: 'Oats, Flaked',
+        amount: 1.02,
+      },
+      {
+        name: 'Wheat White Malt',
+        amount: 0.79,
+      },
+      {
+        name: 'Crystal Medium',
+        amount: 0.79,
+      },
+      {
+        name: 'Special Roast',
+        amount: 0.79,
+      },
+      {
+        name: 'Roasted Barley',
+        amount: 0.68,
+      },
+      {
+        name: 'Carafa II',
+        amount: 0.34,
+      },
+      {
+        name: 'Crystal 120L',
+        amount: 0.34,
+      },
+      {
+        name: 'Brown Malt',
+        amount: 0.23,
+      },
+    ],
+    hops: [
+      {
+        name: 'Chinook',
+        amount: 2,
+        usage: 'Bittering',
+      },
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 4.99
+        name: 'Perle',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 4.99
+        name: 'Chinook',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Vienna Malt",
-        "amount": 0.59
+        name: 'Perle',
+        amount: 1,
+        usage: 'Bittering',
       },
+      {
+        name: 'Chinook',
+        amount: 1,
+        usage: 'Bittering',
+      },
+    ],
+    yeast: [
+      {
+        name: 'Irish Ale',
+        laboratory: 'Omega',
+        productId: 'OYL-005',
+      },
+    ],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 57,
+    name: 'Twin Pines Piney IPA',
+    style: 'American IPA',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2022-11-09',
+    bottlingDate: '2022-11-23',
+    og: 1.048,
+    fg: 0,
+    abv: 4.9,
+    ibu: 115,
+    color: 6,
+    efficiency: 52.6,
+    batchSize: 19.9,
+    fermentables: [
       {
-        "name": "Carapils",
-        "amount": 0.45
+        name: 'Pale Ale Malt 2-Row',
+        amount: 5.45,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.45
-      }
+        name: 'Vienna Malt',
+        amount: 0.45,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Chinook',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Chinook',
+        amount: 0.5,
+        usage: 'Bittering',
       },
       {
-        "name": "Amarillo",
-        "amount": 4,
-        "usage": "Aroma"
+        name: 'Nelson Sauvin',
+        amount: 0.5,
+        usage: 'Bittering',
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 0.5,
-        "usage": "Aroma"
+        name: 'Chinook',
+        amount: 0.5,
+        usage: 'Bittering',
       },
       {
-        "name": "Amarillo",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Nelson Sauvin',
+        amount: 0.5,
+        usage: 'Bittering',
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 2,
-        "usage": "Aroma"
-      }
+        name: 'Nelson Sauvin',
+        amount: 2,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "American Wheat",
-        "laboratory": "Omega",
-        "productId": "OYL-002"
-      }
-    ]
+        name: 'West Coast Ale I',
+        laboratory: 'Omega',
+        productId: 'OYL-004',
+      },
+    ],
+    source: 'brewfather',
   },
   {
-    "batchNo": 54,
-    "name": "Bavarian hefeweizen",
-    "style": "Weissbier",
-    "category": "German Wheat Beer",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2022-03-20",
-    "bottlingDate": "2022-04-03",
-    "og": 0,
-    "fg": 0,
-    "abv": 4.9,
-    "ibu": 21,
-    "color": 4.1,
-    "efficiency": 72,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 58,
+    name: 'Spicy Sprinkles',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-03-18',
+    bottlingDate: '2023-04-01',
+    og: 0,
+    fg: 0,
+    abv: 6.7,
+    ibu: 39,
+    color: 22.8,
+    efficiency: 60,
+    batchSize: 5,
+    fermentables: [
       {
-        "name": "Pale Malt 2-Row",
-        "amount": 4.08
+        name: 'Pilsner Malt 2-Row',
+        amount: 5.44,
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 3.18
+        name: 'Caramel Rye',
+        amount: 1.36,
       },
       {
-        "name": "Wheat Flaked",
-        "amount": 0.91
+        name: 'Carared',
+        amount: 0.91,
       },
       {
-        "name": "Carapils",
-        "amount": 0.45
+        name: 'Carapils',
+        amount: 0.45,
       },
       {
-        "name": "Munich",
-        "amount": 0.45
-      }
+        name: 'Special B',
+        amount: 0.45,
+      },
     ],
-    "hops": [
+    hops: [
+      {
+        name: 'Pacific Jade',
+        amount: 0.5,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Cascade',
+        amount: 2,
+        usage: 'Bittering',
+      },
       {
-        "name": "Hallertau Blanc",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Pacific Jade',
+        amount: 2.5,
+        usage: 'Aroma',
       },
       {
-        "name": "Hallertau Blanc",
-        "amount": 1,
-        "usage": "Aroma"
+        name: 'Cascade',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Lemondrop",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Pacific Jade',
+        amount: 1,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "Hefeweizen Ale",
-        "laboratory": "Omega",
-        "productId": "OYL-021"
-      }
-    ]
+        name: 'Star Party',
+        laboratory: 'Omega Yeast',
+        productId: 'OYL-404',
+      },
+    ],
+    source: 'brewfather',
   },
   {
-    "batchNo": 69,
-    "name": "Second City Session IPA",
-    "style": "Specialty IPA",
-    "category": "IPA",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-03-10",
-    "bottlingDate": "2024-03-24",
-    "og": 1.036,
-    "fg": 0,
-    "abv": 3.8,
-    "ibu": 48,
-    "color": 6,
-    "efficiency": 56,
-    "batchSize": 20.8,
-    "fermentables": [
+    batchNo: 59,
+    name: 'Beginning Bourbon',
+    style: 'Whiskey',
+    category: 'spirit',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-04-29',
+    bottlingDate: '2023-05-13',
+    og: 0,
+    fg: 0,
+    abv: 6.4,
+    ibu: null,
+    color: 4.1,
+    efficiency: 63.6,
+    batchSize: 5,
+    fermentables: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 3.18
+        name: 'Corn Yellow, Flaked',
+        amount: 2.95,
       },
       {
-        "name": "Caramel Malt 10L",
-        "amount": 0.45
+        name: 'Organic 2row Pale Malt',
+        amount: 1.36,
       },
       {
-        "name": "Carapils",
-        "amount": 0.34
+        name: 'Rye Malt',
+        amount: 0.68,
       },
       {
-        "name": "Caramel Malt 20L",
-        "amount": 0.23
+        name: 'Wheat Malt',
+        amount: 0.45,
       },
+    ],
+    hops: [],
+    yeast: [
       {
-        "name": "Munich",
-        "amount": 0.23
-      }
+        name: 'HotHead Ale',
+        laboratory: 'Omega',
+        productId: 'OYL-057',
+      },
     ],
-    "hops": [
+    source: 'brewfather',
+  },
+  {
+    batchNo: 60,
+    name: 'Hellez Yeah',
+    style: 'German Helles Exportbier',
+    category: 'Pale Bitter European Beer',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-04-29',
+    bottlingDate: '2023-05-13',
+    og: 0,
+    fg: 0,
+    abv: 4.5,
+    ibu: 25,
+    color: 5.3,
+    efficiency: 64.2,
+    batchSize: 5,
+    fermentables: [
       {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Bohemian Pilsner',
+        amount: 2.27,
       },
       {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Aroma"
+        name: 'Pilsner Malt',
+        amount: 1.81,
       },
       {
-        "name": "Simcoe",
-        "amount": 1,
-        "usage": "Aroma"
+        name: 'Vienna Malt',
+        amount: 0.57,
       },
       {
-        "name": "Chinook",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Munich Malt, Germany',
+        amount: 0.45,
       },
       {
-        "name": "Simcoe",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Carapils',
+        amount: 0.29,
+      },
+      {
+        name: 'Carahell',
+        amount: 0.18,
+      },
+    ],
+    hops: [
+      {
+        name: 'Hallertau',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Hallertau',
+        amount: 1,
+        usage: 'Bittering',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "West Coast III",
-        "laboratory": "Omega",
-        "productId": "OYL-043"
-      }
+        name: 'Voss Kveik',
+        laboratory: 'Omega',
+        productId: 'OYL-061',
+      },
     ],
-    "brewingNotes": "I somehow wildly missed the volume target and ended up with too much wort before the boil. | I completely forgot to mash out. I just yanked the grains out and then raised temp. D'oh!"
+    source: 'brewfather',
   },
   {
-    "batchNo": 53,
-    "name": "Star Maker Imperial Stout",
-    "style": "Imperial Stout",
-    "category": "American Porter and Stout",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2022-09-21",
-    "bottlingDate": "2022-10-05",
-    "og": 0,
-    "fg": 1.032,
-    "abv": 13,
-    "ibu": 98,
-    "color": 86.5,
-    "efficiency": 59.6,
-    "batchSize": 20.8,
-    "fermentables": [
+    batchNo: 61,
+    name: "The Devil's Wheat 3",
+    style: 'American Wheat Beer',
+    category: 'Standard American Beer',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-06-23',
+    bottlingDate: '2023-07-07',
+    og: 1.046,
+    fg: 1.012,
+    abv: 4.1,
+    ibu: 26,
+    color: 5.3,
+    efficiency: 62.2,
+    batchSize: 5,
+    fermentables: [
+      {
+        name: 'Pale Ale Malt 2-Row',
+        amount: 4.99,
+      },
+      {
+        name: 'Wheat White Malt',
+        amount: 4.99,
+      },
+      {
+        name: 'Vienna Malt',
+        amount: 0.59,
+      },
+      {
+        name: 'Carapils',
+        amount: 0.45,
+      },
+      {
+        name: 'Rye, Flaked',
+        amount: 0.45,
+      },
+    ],
+    hops: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 8.16
+        name: 'Columbus (Tomahawk)',
+        amount: 0.5,
+        usage: 'Bittering',
       },
       {
-        "name": "Dark Chocolate Malt",
-        "amount": 1.02
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Finest Maris Otter® Ale Malt",
-        "amount": 1.02
+        name: 'Amarillo',
+        amount: 4,
+        usage: 'Aroma',
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 1.02
+        name: 'Columbus (Tomahawk)',
+        amount: 0.5,
+        usage: 'Aroma',
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 0.79
+        name: 'Amarillo',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Crystal Medium",
-        "amount": 0.79
+        name: 'Columbus (Tomahawk)',
+        amount: 2,
+        usage: 'Aroma',
       },
+    ],
+    yeast: [
+      {
+        name: 'American Wheat',
+        laboratory: 'Omega',
+        productId: 'OYL-002',
+      },
+    ],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 62,
+    name: 'Czech It Out',
+    style: 'Czech Amber Lager',
+    category: 'Czech Lager',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-08-08',
+    bottlingDate: '2023-08-22',
+    og: 1.035,
+    fg: 1.005,
+    abv: 3.9,
+    ibu: 16,
+    color: 21.1,
+    efficiency: 52.2,
+    batchSize: 5,
+    fermentables: [
       {
-        "name": "Special Roast",
-        "amount": 0.79
+        name: 'Vienna Malt',
+        amount: 2.72,
       },
       {
-        "name": "Roasted Barley",
-        "amount": 0.68
+        name: 'Munich',
+        amount: 0.91,
       },
       {
-        "name": "Carafa II",
-        "amount": 0.34
+        name: 'Caramunich II',
+        amount: 0.45,
       },
       {
-        "name": "Crystal 120L",
-        "amount": 0.34
+        name: 'Carafa Special I',
+        amount: 0.23,
       },
       {
-        "name": "Brown Malt",
-        "amount": 0.23
-      }
+        name: 'Dark Munich Malt 30L',
+        amount: 0.23,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Chinook",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Saaz',
+        amount: 0.5,
+        usage: 'Bittering',
       },
       {
-        "name": "Perle",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Saaz',
+        amount: 0.5,
+        usage: 'Bittering',
       },
       {
-        "name": "Chinook",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Saaz',
+        amount: 1,
+        usage: 'Aroma',
       },
+    ],
+    yeast: [
       {
-        "name": "Perle",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Lutra Kveik',
+        laboratory: 'Omega',
+        productId: 'OYL-071',
       },
+    ],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 63,
+    name: 'Wheat vodka',
+    style: 'Vodka',
+    category: 'spirit',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-08-19',
+    bottlingDate: '2023-09-02',
+    og: 0,
+    fg: 0,
+    abv: 4.1,
+    ibu: null,
+    color: 5,
+    efficiency: 63.6,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Chinook",
-        "amount": 1,
-        "usage": "Bittering"
-      }
+        name: 'Wheat White Malt',
+        amount: 5.98,
+      },
     ],
-    "yeast": [
+    hops: [],
+    yeast: [
       {
-        "name": "Irish Ale",
-        "laboratory": "Omega",
-        "productId": "OYL-005"
-      }
-    ]
+        name: 'Pinnacle Distillers (S)',
+        laboratory: 'White Labs',
+        productId: 'WLDPINNACLE S',
+      },
+    ],
+    source: 'brewfather',
   },
   {
-    "batchNo": 58,
-    "name": "Twin Pines Piney IPA",
-    "style": "American IPA",
-    "category": "IPA",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2022-11-09",
-    "bottlingDate": "2022-11-23",
-    "og": 1.048,
-    "fg": 0,
-    "abv": 4.9,
-    "ibu": 115,
-    "color": 6,
-    "efficiency": 52.6,
-    "batchSize": 19.9,
-    "fermentables": [
+    batchNo: 64,
+    name: 'Imperial Hefe',
+    style: 'Weissbier',
+    category: 'German Wheat Beer',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-09-17',
+    bottlingDate: '2023-09-27',
+    og: 1.056,
+    fg: 0,
+    abv: 5.5,
+    ibu: 33,
+    color: 6.2,
+    efficiency: 43.7,
+    batchSize: 19.9,
+    fermentables: [
+      {
+        name: 'Pale Malt 2-Row',
+        amount: 3.18,
+      },
+      {
+        name: 'Wheat White Malt',
+        amount: 3.18,
+      },
+      {
+        name: 'Wheat Flaked',
+        amount: 0.91,
+      },
+      {
+        name: 'Carapils',
+        amount: 0.45,
+      },
+      {
+        name: 'Munich',
+        amount: 0.45,
+      },
+    ],
+    hops: [
+      {
+        name: 'Hallertau Blanc',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Hallertau Blanc',
+        amount: 1,
+        usage: 'Bittering',
+      },
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 5.45
+        name: 'Lemondrop',
+        amount: 1,
+        usage: 'Bittering',
       },
+    ],
+    yeast: [
       {
-        "name": "Vienna Malt",
-        "amount": 0.45
-      }
+        name: 'Hefeweizen Ale',
+        laboratory: 'Omega',
+        productId: 'OYL-021',
+      },
     ],
-    "hops": [
+    source: 'brewfather',
+  },
+  {
+    batchNo: 65,
+    name: 'Moo Moo Canoe',
+    style: 'American Stout',
+    category: 'American Porter and Stout',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-11-22',
+    bottlingDate: '2023-12-06',
+    og: 1.072,
+    fg: 1.024,
+    abv: 6.3,
+    ibu: 43,
+    color: 45.4,
+    efficiency: 68.9,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Ale Malt 2-Row',
+        amount: 7.26,
+      },
+      {
+        name: 'Milk Sugar (Lactose)',
+        amount: 1.36,
+      },
+      {
+        name: 'Chocolate',
+        amount: 1.13,
+      },
+      {
+        name: 'Barley, Flaked',
+        amount: 0.91,
+      },
       {
-        "name": "Chinook",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Caramel Malt 60L',
+        amount: 0.91,
       },
       {
-        "name": "Chinook",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Munich II',
+        amount: 0.91,
       },
       {
-        "name": "Nelson Sauvin",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Roasted Barley',
+        amount: 0.91,
       },
       {
-        "name": "Chinook",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Oats, Flaked',
+        amount: 0.45,
       },
+    ],
+    hops: [
       {
-        "name": "Nelson Sauvin",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Magnum',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Nelson Sauvin",
-        "amount": 2,
-        "usage": "Aroma"
-      }
+        name: 'Goldings, East Kent',
+        amount: 2,
+        usage: 'Bittering',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "West Coast Ale I",
-        "laboratory": "Omega",
-        "productId": "OYL-004"
-      }
-    ]
+        name: 'British Ale I',
+        laboratory: 'Omega',
+        productId: 'OYL-006',
+      },
+    ],
+    source: 'brewfather',
   },
   {
-    "batchNo": 81,
-    "name": "Overlord 3.1 5g",
-    "style": "American IPA",
-    "category": "IPA",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2025-05-11",
-    "bottlingDate": "2025-05-25",
-    "og": 1.069,
-    "fg": 0,
-    "abv": 7,
-    "ibu": 65,
-    "color": 7.7,
-    "efficiency": 71.7,
-    "batchSize": 20.8,
-    "fermentables": [
+    batchNo: 66,
+    name: 'Second City Session IPA',
+    style: 'Specialty IPA',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-03-10',
+    bottlingDate: '2024-03-24',
+    og: 1.036,
+    fg: 0,
+    abv: 3.8,
+    ibu: 48,
+    color: 6,
+    efficiency: 56,
+    batchSize: 20.8,
+    fermentables: [
+      {
+        name: 'Pale Ale Malt 2-Row',
+        amount: 3.18,
+      },
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 5.44
+        name: 'Caramel Malt 10L',
+        amount: 0.45,
       },
       {
-        "name": "Caramel Malt 20L",
-        "amount": 0.45
+        name: 'Carapils',
+        amount: 0.34,
       },
       {
-        "name": "Carapils",
-        "amount": 0.45
+        name: 'Caramel Malt 20L',
+        amount: 0.23,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.23
-      }
+        name: 'Munich',
+        amount: 0.23,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Citra",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Aroma',
       },
       {
-        "name": "Citra",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Simcoe',
+        amount: 1,
+        usage: 'Aroma',
       },
       {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
+        name: 'Chinook',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      }
+        name: 'Simcoe',
+        amount: 1,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "West Coast IV",
-        "laboratory": "Omega",
-        "productId": "OYL-050"
-      }
-    ]
+        name: 'West Coast III',
+        laboratory: 'Omega',
+        productId: 'OYL-043',
+      },
+    ],
+    source: 'brewfather',
   },
   {
-    "batchNo": 77,
-    "name": "Joeoverlord",
-    "style": "American IPA",
-    "category": "IPA",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-12-30",
-    "bottlingDate": "2025-02-03",
-    "og": 1.063,
-    "fg": 1.01,
-    "abv": 7,
-    "ibu": 44,
-    "color": 8.6,
-    "efficiency": 57.7,
-    "batchSize": 20.8,
-    "fermentables": [
+    batchNo: 67,
+    name: 'Overlord v3',
+    style: 'American IPA',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-04-28',
+    bottlingDate: '2024-05-17',
+    og: 1.056,
+    fg: 1.01,
+    abv: 5.6,
+    ibu: 82,
+    color: 9,
+    efficiency: 62.5,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Ale Malt 2-Row',
+        amount: 9.98,
+      },
+      {
+        name: 'Caramel Malt 20L',
+        amount: 0.91,
+      },
+      {
+        name: 'Carapils',
+        amount: 0.91,
+      },
+      {
+        name: 'Rye, Flaked',
+        amount: 0.45,
+      },
+    ],
+    hops: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 5.9
+        name: 'Citra',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Caramel Malt 20L",
-        "amount": 0.57
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Carapils",
-        "amount": 0.57
+        name: 'Citra',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.45
-      }
+        name: 'Citra',
+        amount: 5,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 6,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'West Coast IV',
+        laboratory: 'Omega',
+        productId: 'OYL-050',
+      },
     ],
-    "hops": [
+    source: 'brewfather',
+  },
+  {
+    batchNo: 68,
+    name: 'Bavarian hefeweizen',
+    style: 'Weissbier',
+    category: 'German Wheat Beer',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-05-24',
+    bottlingDate: '2024-06-07',
+    og: 1.039,
+    fg: 1.01,
+    abv: 3.8,
+    ibu: 17,
+    color: 3.9,
+    efficiency: 56.5,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Cascade",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Pale Malt 2-Row',
+        amount: 4.08,
       },
       {
-        "name": "Cascade",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Wheat White Malt',
+        amount: 3.18,
       },
       {
-        "name": "Cascade",
-        "amount": 3,
-        "usage": "Aroma"
+        name: 'Wheat Flaked',
+        amount: 0.91,
       },
       {
-        "name": "Motueka",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Carapils',
+        amount: 0.45,
       },
       {
-        "name": "Cascade",
-        "amount": 3,
-        "usage": "Aroma"
+        name: 'Munich I',
+        amount: 0.45,
       },
+    ],
+    hops: [
+      {
+        name: 'Cascade',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Mandarina Bavaria',
+        amount: 2,
+        usage: 'Aroma',
+      },
       {
-        "name": "Nelson Sauvin",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Cascade',
+        amount: 1,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "West Coast IV",
-        "laboratory": "Omega",
-        "productId": "OYL-050"
-      }
-    ]
+        name: 'Hefeweizen Ale',
+        laboratory: 'Omega',
+        productId: 'OYL-021',
+      },
+    ],
+    source: 'brewfather',
   },
   {
-    "batchNo": 80,
-    "name": "Overlord 3.1 5g",
-    "style": "American IPA",
-    "category": "IPA",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2025-02-23",
-    "bottlingDate": "2025-03-08",
-    "og": 1.064,
-    "fg": 1.011,
-    "abv": 7,
-    "ibu": 67,
-    "color": 7.7,
-    "efficiency": 66.5,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 69,
+    name: "The Devil's Narwhal",
+    style: 'Hazy IPA (New England / NEIPA)',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-05-24',
+    bottlingDate: '2024-06-14',
+    og: 1.065,
+    fg: 0,
+    abv: 6,
+    ibu: 61,
+    color: 6.1,
+    efficiency: 63.2,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 5.44
+        name: 'Pale Ale Malt 2-Row',
+        amount: 9.98,
       },
       {
-        "name": "Caramel Malt 20L",
-        "amount": 0.45
+        name: 'Oats, Flaked',
+        amount: 1.36,
       },
       {
-        "name": "Carapils",
-        "amount": 0.45
+        name: 'Wheat White Malt',
+        amount: 1.36,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.23
-      }
+        name: 'Carapils',
+        amount: 0.91,
+      },
+      {
+        name: 'Rye Malt',
+        amount: 0.45,
+      },
     ],
-    "hops": [
+    hops: [
+      {
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Centennial',
+        amount: 3,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Cascade',
+        amount: 4,
+        usage: 'Aroma',
+      },
       {
-        "name": "Citra",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Centennial',
+        amount: 4,
+        usage: 'Aroma',
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Centennial',
+        amount: 3,
+        usage: 'Aroma',
       },
       {
-        "name": "Citra",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Motueka',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
+        name: 'Saaz',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      }
+        name: 'Nelson Sauvin',
+        amount: 1,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "West Coast IV",
-        "laboratory": "Omega",
-        "productId": "OYL-050"
-      }
+        name: 'British Ale V',
+        laboratory: 'Omega',
+        productId: 'OYL-011',
+      },
     ],
-    "brewingNotes": "Probably need a more rigorous boil bc I'm not hitting my boil off rate"
+    source: 'brewfather',
   },
   {
-    "batchNo": 74,
-    "name": "Overlord v3.1",
-    "style": "American IPA",
-    "category": "IPA",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-06-30",
-    "bottlingDate": "2024-07-14",
-    "og": 1.055,
-    "fg": 0,
-    "abv": 5.5,
-    "ibu": 71,
-    "color": 7.9,
-    "efficiency": 55.8,
-    "batchSize": 37.9,
-    "fermentables": [
+    batchNo: 70,
+    name: 'Overlord v3.1',
+    style: 'American IPA',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-06-30',
+    bottlingDate: '2024-07-14',
+    og: 1.055,
+    fg: 1.01,
+    abv: 5.5,
+    ibu: 71,
+    color: 7.9,
+    efficiency: 55.8,
+    batchSize: 37.9,
+    fermentables: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 9.98
+        name: 'Pale Ale Malt 2-Row',
+        amount: 9.98,
       },
       {
-        "name": "Caramel Malt 20L",
-        "amount": 0.91
+        name: 'Caramel Malt 20L',
+        amount: 0.91,
       },
       {
-        "name": "Carapils",
-        "amount": 0.91
+        name: 'Carapils',
+        amount: 0.91,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.45
-      }
+        name: 'Rye, Flaked',
+        amount: 0.45,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Citra',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Citra",
-        "amount": 6,
-        "usage": "Aroma"
+        name: 'Citra',
+        amount: 6,
+        usage: 'Aroma',
       },
       {
-        "name": "Citra",
-        "amount": 6,
-        "usage": "Aroma"
-      }
+        name: 'Citra',
+        amount: 6,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "West Coast IV",
-        "laboratory": "Omega",
-        "productId": "OYL-050"
-      }
+        name: 'West Coast IV',
+        laboratory: 'Omega',
+        productId: 'OYL-050',
+      },
     ],
-    "brewingNotes": "Added 16oz of corn sugar to the boil | What's up with this mash efficiency?? Ughhh | Recirculation was at 167 not 176"
+    source: 'brewfather',
   },
   {
-    "batchNo": 53,
-    "name": "Bavarian hefeweizen",
-    "style": "Weissbier",
-    "category": "German Wheat Beer",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2022-03-15",
-    "bottlingDate": "2022-03-29",
-    "og": 0,
-    "fg": 0,
-    "abv": 4.9,
-    "ibu": 21,
-    "color": 4.1,
-    "efficiency": 72,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 71,
+    name: '4PyRyeO Pale Ale',
+    style: 'American Pale Ale',
+    category: 'Pale American Ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-09-30',
+    bottlingDate: '2024-10-10',
+    og: 1.05,
+    fg: 0,
+    abv: 5,
+    ibu: 38,
+    color: 10,
+    efficiency: 53.4,
+    batchSize: 20.8,
+    fermentables: [
       {
-        "name": "Pale Malt 2-Row",
-        "amount": 4.08
+        name: 'Pale Ale Golden Promise',
+        amount: 3.63,
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 3.18
+        name: 'BEST Red X®',
+        amount: 0.91,
       },
       {
-        "name": "Wheat Flaked",
-        "amount": 0.91
+        name: 'Rye, Flaked',
+        amount: 0.91,
       },
       {
-        "name": "Carapils",
-        "amount": 0.45
+        name: 'Melanoidin',
+        amount: 0.45,
       },
       {
-        "name": "Munich",
-        "amount": 0.45
-      }
+        name: 'Wheat Malt, Pale',
+        amount: 0.45,
+      },
+      {
+        name: 'Munich II',
+        amount: 0.23,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Hallertau Blanc",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Columbus (Tomahawk)',
+        amount: 0.4,
+        usage: 'Bittering',
       },
       {
-        "name": "Hallertau Blanc",
-        "amount": 1,
-        "usage": "Aroma"
+        name: 'Columbus (Tomahawk)',
+        amount: 1.1,
+        usage: 'Bittering',
       },
       {
-        "name": "Lemondrop",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Mosaic',
+        amount: 3,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "Hefeweizen Ale",
-        "laboratory": "Omega",
-        "productId": "OYL-021"
-      }
-    ]
+        name: 'West Coast Ale I',
+        laboratory: 'Omega',
+        productId: 'OYL-004',
+      },
+    ],
+    source: 'brewfather',
   },
   {
-    "batchNo": 76,
-    "name": "Moo Moo Canoe",
-    "style": "American Stout",
-    "category": "American Porter and Stout",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-12-27",
-    "bottlingDate": "2025-01-18",
-    "og": 1.067,
-    "fg": 1.029,
-    "abv": 5,
-    "ibu": 43,
-    "color": 45.4,
-    "efficiency": 64.1,
-    "batchSize": 41.6,
-    "fermentables": [
+    batchNo: 72,
+    name: 'Moo Moo Canoe',
+    style: 'American Stout',
+    category: 'American Porter and Stout',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-12-27',
+    bottlingDate: '2025-01-18',
+    og: 1.067,
+    fg: 1.029,
+    abv: 5,
+    ibu: 43,
+    color: 45.4,
+    efficiency: 64.1,
+    batchSize: 41.6,
+    fermentables: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 7.26
+        name: 'Pale Ale Malt 2-Row',
+        amount: 7.26,
       },
       {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 1.36
+        name: 'Milk Sugar (Lactose)',
+        amount: 1.36,
       },
       {
-        "name": "Chocolate",
-        "amount": 1.13
+        name: 'Chocolate',
+        amount: 1.13,
       },
       {
-        "name": "Barley, Flaked",
-        "amount": 0.91
+        name: 'Barley, Flaked',
+        amount: 0.91,
       },
       {
-        "name": "Caramel Malt 60L",
-        "amount": 0.91
+        name: 'Caramel Malt 60L',
+        amount: 0.91,
       },
       {
-        "name": "Munich II",
-        "amount": 0.91
+        name: 'Munich II',
+        amount: 0.91,
       },
       {
-        "name": "Roasted Barley",
-        "amount": 0.91
+        name: 'Roasted Barley',
+        amount: 0.91,
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 0.45
-      }
+        name: 'Oats, Flaked',
+        amount: 0.45,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Magnum",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Magnum',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Goldings, East Kent",
-        "amount": 2,
-        "usage": "Bittering"
-      }
+        name: 'Goldings, East Kent',
+        amount: 2,
+        usage: 'Bittering',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "British Ale I",
-        "laboratory": "Omega",
-        "productId": "OYL-006"
-      }
+        name: 'British Ale I',
+        laboratory: 'Omega',
+        productId: 'OYL-006',
+      },
     ],
-    "brewingNotes": "Ewelina said the uncarbonated beer \"had girth\"",
-    "tastingNotes": "It's a little bit thinner than I remember. The added roasted malt came through pretty strong - keep that."
+    source: 'brewfather',
   },
   {
-    "batchNo": 75,
-    "name": "4PyRyeO Pale Ale",
-    "style": "American Pale Ale",
-    "category": "Pale American Ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-09-30",
-    "bottlingDate": "2024-10-10",
-    "og": 1.05,
-    "fg": 0,
-    "abv": 5,
-    "ibu": 38,
-    "color": 10,
-    "efficiency": 53.4,
-    "batchSize": 20.8,
-    "fermentables": [
+    batchNo: 73,
+    name: 'Joeoverlord',
+    style: 'American IPA',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-12-30',
+    bottlingDate: '2025-02-03',
+    og: 1.063,
+    fg: 1.01,
+    abv: 7,
+    ibu: 44,
+    color: 8.6,
+    efficiency: 57.7,
+    batchSize: 20.8,
+    fermentables: [
       {
-        "name": "Pale Ale Golden Promise",
-        "amount": 3.63
+        name: 'Pale Ale Malt 2-Row',
+        amount: 5.9,
       },
       {
-        "name": "BEST Red X®",
-        "amount": 0.91
+        name: 'Caramel Malt 20L',
+        amount: 0.57,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.91
+        name: 'Carapils',
+        amount: 0.57,
       },
       {
-        "name": "Melanoidin",
-        "amount": 0.45
+        name: 'Rye, Flaked',
+        amount: 0.45,
       },
+    ],
+    hops: [
       {
-        "name": "Wheat Malt, Pale",
-        "amount": 0.45
+        name: 'Cascade',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Munich II",
-        "amount": 0.23
-      }
-    ],
-    "hops": [
+        name: 'Cascade',
+        amount: 1,
+        usage: 'Bittering',
+      },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 0.4,
-        "usage": "Bittering"
+        name: 'Cascade',
+        amount: 3,
+        usage: 'Aroma',
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1.1,
-        "usage": "Bittering"
+        name: 'Motueka',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Mosaic",
-        "amount": 3,
-        "usage": "Aroma"
-      }
+        name: 'Cascade',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Nelson Sauvin',
+        amount: 1,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "West Coast Ale I",
-        "laboratory": "Omega",
-        "productId": "OYL-004"
-      }
+        name: 'West Coast IV',
+        laboratory: 'Omega',
+        productId: 'OYL-050',
+      },
     ],
-    "brewingNotes": "Didn't have enough Columbus. Subbing half ounce for Cascade."
+    source: 'brewfather',
   },
   {
-    "batchNo": 79,
-    "name": "The Vienna",
-    "style": "Vienna Lager",
-    "category": "Amber Bitter European Beer",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2025-01-05",
-    "bottlingDate": "2025-02-06",
-    "og": 1.056,
-    "fg": 1.01,
-    "abv": 6,
-    "ibu": 27,
-    "color": 12.5,
-    "efficiency": 70.1,
-    "batchSize": 21.8,
-    "fermentables": [
+    batchNo: 74,
+    name: 'The Vienna',
+    style: 'Vienna Lager',
+    category: 'Amber Bitter European Beer',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2025-01-05',
+    bottlingDate: '2025-02-06',
+    og: 1.056,
+    fg: 1.01,
+    abv: 6,
+    ibu: 27,
+    color: 12.5,
+    efficiency: 70.1,
+    batchSize: 21.8,
+    fermentables: [
       {
-        "name": "Munich I",
-        "amount": 2.27
+        name: 'Munich I',
+        amount: 2.27,
       },
       {
-        "name": "Pale Ale Finest Maris Otter",
-        "amount": 1.59
+        name: 'Pale Ale Finest Maris Otter',
+        amount: 1.59,
       },
       {
-        "name": "Vienna Malt",
-        "amount": 1.59
+        name: 'Vienna Malt',
+        amount: 1.59,
       },
       {
-        "name": "Chocolate",
-        "amount": 0.11
-      }
+        name: 'Chocolate',
+        amount: 0.11,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Nugget",
-        "amount": 0.8,
-        "usage": "Bittering"
+        name: 'Nugget',
+        amount: 0.8,
+        usage: 'Bittering',
       },
       {
-        "name": "Hallertau",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Hallertau',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Nugget",
-        "amount": 0.2,
-        "usage": "Bittering"
-      }
+        name: 'Nugget',
+        amount: 0.2,
+        usage: 'Bittering',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "German Lager I PLUS Series (DKO)",
-        "laboratory": "Omega",
-        "productId": "OYL-437"
-      }
-    ]
+        name: 'German Lager I PLUS Series (DKO)',
+        laboratory: 'Omega',
+        productId: 'OYL-437',
+      },
+    ],
+    source: 'brewfather',
   },
   {
-    "batchNo": 82,
-    "name": "Anklebiter",
-    "style": "American IPA",
-    "category": "IPA",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2025-06-20",
-    "bottlingDate": "2025-06-29",
-    "og": 1.066,
-    "fg": 1.012,
-    "abv": 7.1,
-    "ibu": 51,
-    "color": 7.8,
-    "efficiency": 70,
-    "batchSize": 20.8,
-    "fermentables": [
+    batchNo: 75,
+    name: 'Overlord 3.1 5g',
+    style: 'American IPA',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2025-02-23',
+    bottlingDate: '2025-03-08',
+    og: 1.064,
+    fg: 1.011,
+    abv: 7,
+    ibu: 67,
+    color: 7.7,
+    efficiency: 66.5,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Ale Malt 2-Row',
+        amount: 5.44,
+      },
+      {
+        name: 'Caramel Malt 20L',
+        amount: 0.45,
+      },
+      {
+        name: 'Carapils',
+        amount: 0.45,
+      },
+      {
+        name: 'Rye, Flaked',
+        amount: 0.23,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 0.5,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 4.76
+        name: 'Citra',
+        amount: 0.5,
+        usage: 'Bittering',
       },
       {
-        "name": "Vienna Malt",
-        "amount": 0.68
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
       },
       {
-        "name": "Honey Malt",
-        "amount": 0.45
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
       },
+    ],
+    yeast: [
       {
-        "name": "Wheat Flaked",
-        "amount": 0.45
-      }
+        name: 'West Coast IV',
+        laboratory: 'Omega',
+        productId: 'OYL-050',
+      },
     ],
-    "hops": [
+    source: 'brewfather',
+  },
+  {
+    batchNo: 76,
+    name: 'Overlord 3.1 5g',
+    style: 'American IPA',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2025-05-11',
+    bottlingDate: '2025-05-25',
+    og: 1.069,
+    fg: 0,
+    abv: 7,
+    ibu: 65,
+    color: 7.7,
+    efficiency: 71.7,
+    batchSize: 20.8,
+    fermentables: [
       {
-        "name": "Eukanot",
-        "amount": 0.5,
-        "usage": "Bittering"
+        name: 'Pale Ale Malt 2-Row',
+        amount: 5.44,
       },
       {
-        "name": "Cashmere",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Caramel Malt 20L',
+        amount: 0.45,
       },
       {
-        "name": "Mandarina Bavaria",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Carapils',
+        amount: 0.45,
       },
       {
-        "name": "Cashmere",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Rye, Flaked',
+        amount: 0.23,
       },
+    ],
+    hops: [
       {
-        "name": "Hallertau Blanc",
-        "amount": 1,
-        "usage": "Aroma"
+        name: 'Citra',
+        amount: 0.5,
+        usage: 'Bittering',
       },
       {
-        "name": "Mandarina Bavaria",
-        "amount": 1,
-        "usage": "Aroma"
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Cashmere",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Citra',
+        amount: 0.5,
+        usage: 'Bittering',
       },
       {
-        "name": "Mosaic",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
       },
       {
-        "name": "Hallertau Blanc",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "Voss Kveik",
-        "laboratory": "Omega",
-        "productId": "OYL-061"
-      }
+        name: 'West Coast IV',
+        laboratory: 'Omega',
+        productId: 'OYL-050',
+      },
     ],
-    "brewingNotes": "I couldn't get the last half gallon out of the fermenter. Idk why. Possibly bad seal on top of the lid now? So the pressure isn't pushing downward. \n\nSo I'm missing a half gallon of beer in the keg. | Added dry hops on day 7 | I think it fermented in like 2 days. | I added the lactic acid 30 minutes into the mash. Whoops"
+    source: 'brewfather',
   },
   {
-    "batchNo": 62,
-    "name": "Hellez Yeah",
-    "style": "German Helles Exportbier",
-    "category": "Pale Bitter European Beer",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-04-29",
-    "bottlingDate": "2023-05-13",
-    "og": 0,
-    "fg": 0,
-    "abv": 4.5,
-    "ibu": 25,
-    "color": 5.3,
-    "efficiency": 64.2,
-    "batchSize": 0,
-    "fermentables": [
+    batchNo: 77,
+    name: 'Anklebiter',
+    style: 'American IPA',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2025-06-20',
+    bottlingDate: '2025-06-29',
+    og: 1.066,
+    fg: 1.012,
+    abv: 7.1,
+    ibu: 51,
+    color: 7.8,
+    efficiency: 70,
+    batchSize: 20.8,
+    fermentables: [
+      {
+        name: 'Pale Ale Malt 2-Row',
+        amount: 4.76,
+      },
+      {
+        name: 'Vienna Malt',
+        amount: 0.68,
+      },
+      {
+        name: 'Honey Malt',
+        amount: 0.45,
+      },
+      {
+        name: 'Wheat Flaked',
+        amount: 0.45,
+      },
+    ],
+    hops: [
+      {
+        name: 'Eukanot',
+        amount: 0.5,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Cashmere',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Mandarina Bavaria',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Cashmere',
+        amount: 2,
+        usage: 'Aroma',
+      },
       {
-        "name": "Bohemian Pilsner",
-        "amount": 2.27
+        name: 'Hallertau Blanc',
+        amount: 1,
+        usage: 'Aroma',
       },
       {
-        "name": "Pilsner Malt",
-        "amount": 1.81
+        name: 'Mandarina Bavaria',
+        amount: 1,
+        usage: 'Aroma',
       },
       {
-        "name": "Vienna Malt",
-        "amount": 0.57
+        name: 'Cashmere',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Munich Malt, Germany",
-        "amount": 0.45
+        name: 'Mosaic',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Carapils",
-        "amount": 0.29
+        name: 'Hallertau Blanc',
+        amount: 1,
+        usage: 'Aroma',
       },
+    ],
+    yeast: [
       {
-        "name": "Carahell",
-        "amount": 0.18
-      }
+        name: 'Voss Kveik',
+        laboratory: 'Omega',
+        productId: 'OYL-061',
+      },
     ],
-    "hops": [
+    source: 'brewfather',
+  },
+  {
+    batchNo: 78,
+    name: 'Rum Wash',
+    style: 'Rum',
+    category: 'spirit',
+    brewer: 'Joe',
+    status: 'Planning',
+    brewDate: '2025-07-29',
+    bottlingDate: '2025-08-11',
+    og: 1.155,
+    fg: 1.032,
+    abv: 16.1,
+    ibu: null,
+    color: 79.3,
+    efficiency: 124.2,
+    batchSize: 20.8,
+    fermentables: [
       {
-        "name": "Hallertau",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Blackstrap Molasses',
+        amount: 3.63,
       },
       {
-        "name": "Hallertau",
-        "amount": 1,
-        "usage": "Bittering"
-      }
+        name: 'Cane (Beet) Sugar',
+        amount: 2.72,
+      },
     ],
-    "yeast": [
+    hops: [],
+    yeast: [
       {
-        "name": "Voss Kveik",
-        "laboratory": "Omega",
-        "productId": "OYL-061"
-      }
-    ]
-  }
+        name: 'Red Star Ale',
+        laboratory: 'Red Star',
+        productId: '',
+      },
+    ],
+    source: 'brewfather',
+  },
 ]

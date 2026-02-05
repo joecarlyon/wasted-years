@@ -2,7 +2,13 @@ import { batches } from '@/data/batches'
 import BrewEntry from '@/components/BrewEntry'
 
 export default function BrewsPage() {
-  const sortedBatches = [...batches].sort((a, b) => b.batchNo - a.batchNo)
+  const sortedBatches = [...batches].sort((a, b) => {
+    // Sort by brew date, newest first; then by batch number as tiebreaker
+    const dateA = a.brewDate ? new Date(a.brewDate).getTime() : 0
+    const dateB = b.brewDate ? new Date(b.brewDate).getTime() : 0
+    if (dateA !== dateB) return dateB - dateA
+    return b.batchNo - a.batchNo // Higher batch number = newer
+  })
 
   return (
     <main className="mx-auto max-w-6xl px-8 py-8">
