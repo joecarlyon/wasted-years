@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-05T02:20:33.063Z",
+  "generatedAt": "2026-02-05T04:06:50.196Z",
   "totalRecipes": 65,
   "recipes": [
     {
@@ -10,6 +10,7 @@
       "fg": "1.020",
       "abv": "7.6",
       "ibu": 28,
+      "batchSize": 5.5,
       "grains": [
         "13.00 lb Brewers Malt 2-Row (Briess)",
         "2.50 lb Munich Malt",
@@ -33,6 +34,7 @@
       "fg": "1.011",
       "abv": "12.2",
       "ibu": 86,
+      "batchSize": 5,
       "grains": [
         "18.00 lb Pale Malt - 2 Row (Cargill)",
         "1.50 lb Black (Patent) Malt",
@@ -57,6 +59,7 @@
       "fg": "1.011",
       "abv": "12.2",
       "ibu": 79,
+      "batchSize": 5,
       "grains": [
         "14.00 lb Pale Malt - 2 Row (Cargill)",
         "3.00 lb Chocolate Malt",
@@ -80,6 +83,7 @@
       "fg": null,
       "abv": null,
       "ibu": 80,
+      "batchSize": 5,
       "grains": [
         "14.00 lb Pale Malt (2 Row) US",
         "2.00 lb Rye Malt",
@@ -110,6 +114,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 105,
+      "batchSize": 6.1,
       "grains": [
         "16.00 lb Pale Malt - 2 Row (Cargill)",
         "2.30 lb Rye Malt",
@@ -138,6 +143,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 71,
+      "batchSize": 5,
       "grains": [
         "10.00 lb Pale Malt - 2 Row (Cargill)",
         "3.00 lb Rye Malt",
@@ -162,6 +168,7 @@
       "fg": "1.010",
       "abv": "5.3",
       "ibu": 61,
+      "batchSize": 11,
       "grains": [
         "22.00 lb Pale Malt - 2 Row (Cargill)",
         "2.00 lb Caramel/Crystal Malt - 40L",
@@ -187,6 +194,7 @@
       "fg": "1.010",
       "abv": "5.3",
       "ibu": 50,
+      "batchSize": 11,
       "grains": [
         "22.00 lb Pale Malt - 2 Row (Cargill)",
         "2.00 lb Caramel/Crystal Malt - 40L",
@@ -213,6 +221,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 81,
+      "batchSize": 5,
       "grains": [
         "18.00 lb Pale Malt - 2 Row (Cargill)",
         "2.00 lb Caramel/Crystal Malt -120L",
@@ -241,6 +250,7 @@
       "fg": "1.010",
       "abv": "5.3",
       "ibu": 52,
+      "batchSize": 5,
       "grains": [
         "11.00 lb Pale Malt - 2 Row (Cargill)",
         "1.00 lb Caramel/Crystal Malt - 40L",
@@ -267,6 +277,7 @@
       "fg": "1.007",
       "abv": "5.1",
       "ibu": 10,
+      "batchSize": 11,
       "grains": [
         "10.00 lb Wheat Malt, Pale (Weyermann)",
         "7.00 lb Pilsner (2 Row) Bel",
@@ -287,6 +298,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 68,
+      "batchSize": 5,
       "grains": [
         "13.78 lb Pale Malt (2 Row) US",
         "1.92 lb Black (Patent) Malt",
@@ -309,6 +321,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 37,
+      "batchSize": 5.8,
       "grains": [
         "10.00 lb Pilsen Malt 2-Row (Briess)",
         "2.00 lb Rye, Flaked (Briess)",
@@ -334,6 +347,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 64,
+      "batchSize": 5,
       "grains": [
         "20.00 lb Pale Malt (2 Row) US",
         "2.00 lb Rye, Flaked",
@@ -358,6 +372,7 @@
       "fg": "1.011",
       "abv": "8.4",
       "ibu": 24,
+      "batchSize": 5,
       "grains": [
         "16.00 lb Pilsen Malt 2-Row (Briess)",
         "1.00 lb Caramel Malt - 60L (Briess)",
@@ -381,6 +396,7 @@
       "fg": "1.010",
       "abv": "11.8",
       "ibu": 101,
+      "batchSize": 5,
       "grains": [
         "23.80 lb Pilsen Malt 2-Row (Briess)",
         "2.80 lb Caramel Malt - 60L (Briess)",
@@ -411,6 +427,7 @@
       "fg": "1.010",
       "abv": "11.8",
       "ibu": 58,
+      "batchSize": 5.5,
       "grains": [
         "23.00 lb Pilsen Malt 2-Row (Briess)",
         "3.00 lb Caramel Malt - 60L (Briess)",
@@ -439,6 +456,7 @@
       "fg": null,
       "abv": null,
       "ibu": 59,
+      "batchSize": 5,
       "grains": [
         "15.00 lb Pale Malt, Maris Otter",
         "2.00 lb Special B Malt"
@@ -460,6 +478,7 @@
       "fg": "1.010",
       "abv": "3.7",
       "ibu": 12,
+      "batchSize": 10,
       "grains": [
         "8.00 lb Pale Malt (2 Row) US",
         "8.00 lb Wheat Malt, Pale (Weyermann)",
@@ -482,6 +501,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 19,
+      "batchSize": 10,
       "grains": [
         "12.00 lb Pale Malt (2 Row) US",
         "8.00 lb White Wheat Malt",
@@ -504,6 +524,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 21,
+      "batchSize": 5,
       "grains": [
         "7.00 lb Pale Malt (2 Row) Bel",
         "2.00 lb White Wheat Malt",
@@ -524,6 +545,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 29,
+      "batchSize": 11,
       "grains": [
         "15.00 lb Pale Malt (2 Row) US",
         "8.00 lb Wheat Malt, Bel",
@@ -548,6 +570,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 27,
+      "batchSize": 11,
       "grains": [
         "15.00 lb Pale Malt (2 Row) US",
         "9.00 lb Wheat Malt, Bel",
@@ -572,6 +595,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 37,
+      "batchSize": 10,
       "grains": [
         "11.00 lb Wheat Malt, Bel",
         "10.00 lb Pale Malt (2 Row) US",
@@ -597,6 +621,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 20,
+      "batchSize": 10,
       "grains": [
         "12.00 lb Wheat Malt, Bel",
         "10.00 lb Pale Malt (2 Row) US",
@@ -621,6 +646,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 21,
+      "batchSize": 11.5,
       "grains": [
         "9.00 lb Pale Malt (2 Row) US",
         "9.00 lb White Wheat Malt",
@@ -646,6 +672,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 85,
+      "batchSize": 11,
       "grains": [
         "22.00 lb Pale Malt (2 Row) US",
         "2.00 lb Cara-Pils/Dextrine",
@@ -672,6 +699,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 62,
+      "batchSize": 11,
       "grains": [
         "22.00 lb Pale Malt (2 Row) US",
         "2.00 lb Caramunich Malt",
@@ -698,6 +726,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 97,
+      "batchSize": 10.3,
       "grains": [
         "22.00 lb Pale Malt (2 Row) US",
         "2.00 lb Cara-Pils/Dextrine",
@@ -724,6 +753,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 60,
+      "batchSize": 11,
       "grains": [
         "22.00 lb Pale Malt (2 Row) US",
         "2.50 lb Caramunich Malt",
@@ -751,6 +781,7 @@
       "fg": "1.010",
       "abv": null,
       "ibu": 17,
+      "batchSize": 11,
       "grains": [
         "15.46 lb Pale Malt (2 Row) US",
         "2.21 lb Milk Sugar (Lactose)",
@@ -777,6 +808,7 @@
       "fg": "1.010",
       "abv": null,
       "ibu": 24,
+      "batchSize": 11,
       "grains": [
         "15.00 lb Pale Malt (2 Row) US",
         "3.00 lb Milk Sugar (Lactose)",
@@ -802,6 +834,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 23,
+      "batchSize": 10,
       "grains": [
         "18.00 lb Pale Malt (2 Row) US",
         "1.00 lb Special B Malt",
@@ -825,6 +858,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 51,
+      "batchSize": 10,
       "grains": [
         "19.00 lb Pale Malt (2 Row) US",
         "2.00 lb Carared",
@@ -849,6 +883,7 @@
       "fg": "1.010",
       "abv": null,
       "ibu": 39,
+      "batchSize": 11,
       "grains": [
         "16.00 lb Pale Malt (2 Row) US",
         "2.00 lb Cara-Pils/Dextrine",
@@ -873,6 +908,7 @@
       "fg": "1.010",
       "abv": null,
       "ibu": 39,
+      "batchSize": 11,
       "grains": [
         "16.00 lb Pale Malt (2 Row) US",
         "2.00 lb Carafoam",
@@ -898,6 +934,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 26,
+      "batchSize": 11,
       "grains": [
         "18.03 lb Pale Malt (2 Row) US",
         "13.57 lb Wheat Malt, Bel",
@@ -929,6 +966,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 15,
+      "batchSize": 11,
       "grains": [
         "13.00 lb Pale Malt (2 Row) US",
         "9.00 lb White Wheat Malt",
@@ -952,6 +990,7 @@
       "fg": "1.010",
       "abv": "5.5",
       "ibu": 53,
+      "batchSize": 11,
       "grains": [
         "19.00 lb Pale Malt (2 Row) US",
         "2.00 lb Caramel/Crystal Malt - 40L",
@@ -979,6 +1018,7 @@
       "fg": "1.010",
       "abv": "5.5",
       "ibu": 36,
+      "batchSize": 11,
       "grains": [
         "19.00 lb Pale Malt (2 Row) US",
         "2.00 lb Caramel/Crystal Malt - 40L",
@@ -1005,6 +1045,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 46,
+      "batchSize": 5.5,
       "grains": [
         "19.00 lb Pale Malt (2 Row) US",
         "3.00 lb Light Dry Extract",
@@ -1031,6 +1072,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 47,
+      "batchSize": 5.5,
       "grains": [
         "19.00 lb Pale Malt (2 Row) US",
         "2.00 lb Chocolate Malt",
@@ -1055,6 +1097,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 47,
+      "batchSize": 5.5,
       "grains": [
         "19.00 lb Pale Malt (2 Row) US",
         "2.00 lb Chocolate Malt",
@@ -1079,6 +1122,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 14,
+      "batchSize": 11,
       "grains": [
         "15.50 lb Wheat Malt, Ger",
         "8.00 lb Pilsner (2 Row) Ger"
@@ -1099,6 +1143,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 12,
+      "batchSize": 11,
       "grains": [
         "14.00 lb Wheat Malt, Ger",
         "8.00 lb Pilsner (2 Row) Ger"
@@ -1119,6 +1164,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": null,
+      "batchSize": 11,
       "grains": [
         "15.00 lb Pale Malt (2 Row) Bel"
       ],
@@ -1134,6 +1180,7 @@
       "fg": null,
       "abv": null,
       "ibu": 76,
+      "batchSize": 11,
       "grains": [
         "17.00 lb Pale Malt (2 Row) US",
         "6.00 lb Rye Malt",
@@ -1164,6 +1211,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 17,
+      "batchSize": 11,
       "grains": [
         "10.00 lb Pale Malt (2 Row) US",
         "5.00 lb Wheat, Flaked",
@@ -1184,6 +1232,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 27,
+      "batchSize": 11,
       "grains": [
         "10.00 lb Vienna Malt",
         "6.00 lb Munich Malt",
@@ -1204,6 +1253,7 @@
       "fg": "1.010",
       "abv": "9.2",
       "ibu": 197,
+      "batchSize": 5.5,
       "grains": [
         "18.00 lb Pale Malt (2 Row) US",
         "1.00 lb Victory Malt"
@@ -1229,6 +1279,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 22,
+      "batchSize": 5.5,
       "grains": [
         "16.00 lb Pale Malt (2 Row) US",
         "1.00 lb Caramel/Crystal Malt - 60L",
@@ -1252,6 +1303,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 31,
+      "batchSize": 11,
       "grains": [
         "18.00 lb Pale Malt (2 Row) US",
         "3.00 lb Caramel/Crystal Malt - 60L",
@@ -1275,6 +1327,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 59,
+      "batchSize": 11,
       "grains": [
         "10.00 lb Pale Malt (2 Row) US",
         "10.00 lb Wheat Malt, Ger",
@@ -1303,6 +1356,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 56,
+      "batchSize": 11,
       "grains": [
         "10.00 lb Pale Malt (2 Row) US",
         "10.00 lb Wheat Malt, Ger",
@@ -1332,6 +1386,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 29,
+      "batchSize": 5,
       "grains": [
         "9.00 lb Pale Malt (2 Row) Bel",
         "2.00 lb Wheat Malt, Bel",
@@ -1356,6 +1411,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 38,
+      "batchSize": 11,
       "grains": [
         "17.00 lb Pale Malt (2 Row) US",
         "3.00 lb White Wheat Malt",
@@ -1380,6 +1436,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": null,
+      "batchSize": 5,
       "grains": [
         "5.00 lb White Wheat Malt",
         "3.00 lb Pilsner (2 Row) Bel"
@@ -1396,6 +1453,7 @@
       "fg": "1.010",
       "abv": "5.8",
       "ibu": 16,
+      "batchSize": 225,
       "grains": [
         "110.00 lb Munich I (Weyermann)",
         "110.00 lb Pale Malt (Weyermann)",
@@ -1419,6 +1477,7 @@
       "fg": "1.010",
       "abv": null,
       "ibu": 56,
+      "batchSize": 5,
       "grains": [
         "23.00 lb Pale Malt (2 Row) US",
         "3.00 lb Caramel Malt - 60L (Briess)",
@@ -1445,6 +1504,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 55,
+      "batchSize": 11,
       "grains": [
         "16.00 lb Pilsner (2 Row) Ger",
         "3.00 lb White Wheat Malt",
@@ -1466,6 +1526,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 42,
+      "batchSize": 5.5,
       "grains": [
         "7.00 lb Pale Malt, 2-Row (Rahr)",
         "0.75 lb Munich 10L (Briess)",
@@ -1494,6 +1555,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 62,
+      "batchSize": 5.5,
       "grains": [
         "17.00 lb Pale Malt (2 Row) US",
         "3.00 lb Roasted Barley",
@@ -1519,6 +1581,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 77,
+      "batchSize": 11,
       "grains": [
         "22.00 lb Pale Malt (2 Row) US",
         "3.00 lb Wheat Malt, Bel",
@@ -1547,6 +1610,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 85,
+      "batchSize": 11,
       "grains": [
         "22.00 lb Pale Malt (2 Row) US",
         "3.00 lb Oats, Flaked",
@@ -1576,6 +1640,7 @@
       "fg": "1.010",
       "abv": "4.7",
       "ibu": 85,
+      "batchSize": 11,
       "grains": [
         "22.00 lb Pale Malt (2 Row) US",
         "3.00 lb Oats, Flaked",

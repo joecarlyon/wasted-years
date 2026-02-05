@@ -186,6 +186,7 @@ function main() {
       brewDate: r.date || undefined,
       // Detailed hop info with timing
       hopsDetail: parseHopsDetail(r.hops || []),
+      ...(r.batchSize && { batchSize: r.batchSize }),
     }
   })
 

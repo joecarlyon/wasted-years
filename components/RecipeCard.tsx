@@ -17,7 +17,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
       </p>
       <p className="mb-4 text-sm text-text-secondary">{recipe.description}</p>
 
-      <div className="mb-4 grid grid-cols-4 gap-2 border-b border-t border-border py-4">
+      <div className="mb-4 grid grid-cols-5 gap-2 border-b border-t border-border py-4">
         <div className="text-center">
           <div className="text-lg font-semibold text-lavender">
             {recipe.og.toFixed(3)}
@@ -46,6 +46,14 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
           <div className="text-lg font-semibold text-accent">{recipe.ibu}</div>
           <div className="text-xs uppercase tracking-wide text-text-secondary">
             IBU
+          </div>
+        </div>
+        <div className="text-center">
+          <div className="text-lg font-semibold text-text-primary">
+            {recipe.batchSize ? `${recipe.batchSize}g` : '—'}
+          </div>
+          <div className="text-xs uppercase tracking-wide text-text-secondary">
+            Size
           </div>
         </div>
       </div>
