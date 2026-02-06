@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Batch } from '@/types'
 import { formatDate } from '@/lib/utils'
 import StatusBadge from './StatusBadge'
@@ -13,7 +14,10 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
       : 'Not specified'
 
   return (
-    <div className="grid grid-cols-[120px_1fr] gap-6 border border-border bg-bg-card p-6 max-md:grid-cols-1">
+    <Link
+      href={`/brews/${batch.batchNo}`}
+      className="block grid grid-cols-[120px_1fr] gap-6 border border-border bg-bg-card p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent max-md:grid-cols-1"
+    >
       <div className="border-r border-border pr-6 max-md:flex max-md:items-center max-md:gap-4 max-md:border-b max-md:border-r-0 max-md:pb-4 max-md:pr-0">
         <div className="text-xs uppercase tracking-wide text-lavender-dark">
           Batch
@@ -68,33 +72,7 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
           </span>
         </div>
 
-        {(batch.brewingNotes || batch.tastingNotes) && (
-          <div className="mt-4 space-y-3 border-t border-border pt-4">
-            {batch.brewingNotes && (
-              <div>
-                <div className="mb-1 text-xs uppercase tracking-wide text-lavender-dark">
-                  Brewing Notes
-                </div>
-                <div className="space-y-2 text-sm text-text-secondary">
-                  {batch.brewingNotes.split(' | ').map((note, i) => (
-                    <p key={i}>{note}</p>
-                  ))}
-                </div>
-              </div>
-            )}
-            {batch.tastingNotes && (
-              <div>
-                <div className="mb-1 text-xs uppercase tracking-wide text-lavender-dark">
-                  Tasting Notes
-                </div>
-                <p className="text-sm italic text-text-secondary">
-                  &ldquo;{batch.tastingNotes}&rdquo;
-                </p>
-              </div>
-            )}
-          </div>
-        )}
       </div>
-    </div>
+    </Link>
   )
 }
