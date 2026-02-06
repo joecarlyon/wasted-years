@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Batch } from '@/types'
 import { formatDate } from '@/lib/utils'
+import { competitions } from '@/data/competitions'
 import StatusBadge from './StatusBadge'
 
 interface BrewEntryProps {
@@ -12,6 +13,10 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
     batch.yeast.length > 0
       ? batch.yeast.map((y) => `${y.name} (${y.laboratory})`).join(', ')
       : 'Not specified'
+
+  const compEntry = competitions.find(
+    (c) => c.batchNo === batch.batchNo && c.placement
+  )
 
   return (
     <Link
@@ -36,7 +41,42 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
               {batch.style}
             </p>
           </div>
-          <StatusBadge status={batch.status} />
+          <div className="flex items-center gap-2">
+            {compEntry && (
+              <div
+                className="flex items-center gap-1.5 rounded-full px-3 py-1"
+                style={{
+                  backgroundColor: compEntry.placement?.includes('Silver')
+                    ? 'rgba(192,192,192,0.15)'
+                    : 'rgba(205,127,50,0.15)',
+                }}
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-4 w-4"
+                  style={{
+                    color: compEntry.placement?.includes('Silver')
+                      ? '#C0C0C0'
+                      : '#CD7F32',
+                  }}
+                >
+                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                </svg>
+                <span
+                  className="text-[10px] font-bold uppercase tracking-wider"
+                  style={{
+                    color: compEntry.placement?.includes('Silver')
+                      ? '#C0C0C0'
+                      : '#CD7F32',
+                  }}
+                >
+                  {compEntry.placement?.includes('Silver') ? '2nd' : '3rd'}
+                </span>
+              </div>
+            )}
+            <StatusBadge status={batch.status} />
+          </div>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-6 text-sm">

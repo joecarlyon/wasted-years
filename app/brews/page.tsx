@@ -13,7 +13,7 @@ export default function BrewsPage() {
   return (
     <main className="mx-auto max-w-6xl px-8 py-8">
       <div className="mb-8 border-b border-border py-8 text-center">
-        <h2 className="mb-2 text-3xl uppercase tracking-widest">Brew Log</h2>
+        <h2 className="mb-2 text-3xl uppercase tracking-widest text-accent">Brew Log</h2>
         <p className="text-text-secondary">
           Complete history of all batches brewed
         </p>

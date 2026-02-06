@@ -2,8 +2,10 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { batches } from '@/data/batches'
 import { recipes } from '@/data/recipes'
+import { competitions } from '@/data/competitions'
 import { formatDate } from '@/lib/utils'
 import StatusBadge from '@/components/StatusBadge'
+import { JudgeScore } from '@/types'
 
 export function generateStaticParams() {
   return batches.map((b) => ({ id: b.batchNo.toString() }))
@@ -39,6 +41,8 @@ export default function BrewDetailPage({
   const matchingRecipe = recipes.find(
     (r) => r.name.toLowerCase() === batch.name.toLowerCase()
   )
+
+  const compEntries = competitions.filter((c) => c.batchNo === batch.batchNo)
 
   return (
     <main className="mx-auto max-w-4xl px-8 py-8">
@@ -203,6 +207,66 @@ export default function BrewDetailPage({
         </div>
       )}
 
+      {/* Competition Results */}
+      {compEntries.length > 0 && (
+        <div className="mb-8 space-y-8 border-b border-border pb-8">
+          <h3 className="text-xs uppercase tracking-widest text-lavender">
+            Competition Results
+          </h3>
+          {compEntries.map((entry, idx) => (
+            <div key={idx} className="space-y-6">
+              {/* Competition header */}
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-sm font-medium text-text-primary">
+                    {entry.competition}
+                  </p>
+                  <p className="text-sm text-text-secondary">
+                    Entered as &ldquo;{entry.entryName}&rdquo; &middot;{' '}
+                    {entry.style}
+                  </p>
+                </div>
+                <div className="flex flex-col items-end gap-1">
+                  <div className="text-2xl font-bold text-accent">
+                    {entry.score}
+                    <span className="text-sm font-normal text-text-secondary">
+                      /50
+                    </span>
+                  </div>
+                  <span className="text-xs text-text-secondary">
+                    {entry.scoreDescription} &middot; Avg:{' '}
+                    {entry.categoryAverage}
+                  </span>
+                </div>
+              </div>
+
+              {/* Placement badge */}
+              {entry.placement && (
+                <div className="inline-flex items-center gap-2 rounded border border-accent/30 bg-accent/10 px-4 py-2">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-5 w-5 text-accent"
+                  >
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                  </svg>
+                  <span className="text-sm font-medium text-accent">
+                    {entry.placement}
+                  </span>
+                </div>
+              )}
+
+              {/* Judge scoresheets */}
+              <div className="grid gap-6 lg:grid-cols-2">
+                {entry.judges.map((judge, jIdx) => (
+                  <JudgeCard key={jIdx} judge={judge} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
       {/* Recipe link */}
       {matchingRecipe && (
         <div className="mb-8">
@@ -263,6 +327,63 @@ function Section({
         {title}
       </h3>
       {children}
+    </div>
+  )
+}
+
+function JudgeCard({ judge }: { judge: JudgeScore }) {
+  return (
+    <div className="border border-border bg-bg-card p-5">
+      {/* Judge header */}
+      <div className="mb-4 flex items-start justify-between">
+        <div>
+          <p className="font-medium text-text-primary">{judge.name}</p>
+          <p className="text-xs text-text-secondary">{judge.location}</p>
+          <p className="text-xs text-lavender-dark">
+            BJCP {judge.bjcpRank}
+            {judge.certifications && ` · ${judge.certifications}`}
+          </p>
+        </div>
+        <div className="text-xl font-bold text-accent">
+          {judge.score}
+          <span className="text-xs font-normal text-text-secondary">/50</span>
+        </div>
+      </div>
+
+      {/* Sub-scores */}
+      <div className="mb-4 grid grid-cols-5 gap-2">
+        {(
+          ['aroma', 'appearance', 'flavor', 'mouthfeel', 'overall'] as const
+        ).map((category) => (
+          <div key={category} className="text-center">
+            <div className="text-sm font-semibold text-lavender">
+              {judge.scores[category][0]}
+              <span className="text-xs font-normal text-text-secondary">
+                /{judge.scores[category][1]}
+              </span>
+            </div>
+            <div className="text-[10px] uppercase tracking-wide text-text-secondary">
+              {category === 'appearance'
+                ? 'App'
+                : category === 'mouthfeel'
+                  ? 'MF'
+                  : category.charAt(0).toUpperCase() + category.slice(1)}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Flaws */}
+      {judge.flaws && (
+        <p className="mb-3 text-xs text-status-error">
+          Flaws: {judge.flaws}
+        </p>
+      )}
+
+      {/* Feedback */}
+      <p className="text-sm italic text-text-secondary">
+        &ldquo;{judge.feedback}&rdquo;
+      </p>
     </div>
   )
 }

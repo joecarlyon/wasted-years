@@ -1,21 +1,66 @@
 import Link from 'next/link'
 import { Recipe } from '@/types'
+import { awardWinningRecipes } from '@/data/competitions'
 
 interface RecipeCardProps {
   recipe: Recipe
 }
 
 export default function RecipeCard({ recipe }: RecipeCardProps) {
+  const awards = awardWinningRecipes[recipe.name]
+
   return (
     <Link
       href={`/recipes/${recipe.uuid}`}
-      className="block border border-border bg-bg-card p-6 transition-all duration-300 hover:border-accent hover:bg-bg-hover"
+      className={`block border bg-bg-card p-6 transition-all duration-300 hover:border-accent hover:bg-bg-hover ${awards ? 'border-accent/40' : 'border-border'}`}
     >
-      <h4 className="mb-1 text-xl text-text-primary">{recipe.name}</h4>
-      <p className="mb-4 text-sm uppercase tracking-wide text-accent">
-        {recipe.style}
-      </p>
-      <p className="mb-4 text-sm text-text-secondary">{recipe.description}</p>
+      <div className="flex items-start justify-between gap-2">
+        <div>
+          <h4 className="mb-1 text-xl text-text-primary">{recipe.name}</h4>
+          <p className="mb-4 text-sm uppercase tracking-wide text-accent">
+            {recipe.style}
+          </p>
+        </div>
+        {awards && (
+          <div className="flex gap-3">
+            {awards.map((award, idx) => (
+              <div key={idx} className="flex flex-col items-center gap-1">
+                <div
+                  className="rounded-full p-2"
+                  style={{
+                    backgroundColor:
+                      award.medal === 'silver'
+                        ? 'rgba(192,192,192,0.15)'
+                        : 'rgba(205,127,50,0.15)',
+                  }}
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-6 w-6"
+                    style={{
+                      color:
+                        award.medal === 'silver' ? '#C0C0C0' : '#CD7F32',
+                    }}
+                  >
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                  </svg>
+                </div>
+                <span
+                  className="text-[10px] font-bold uppercase tracking-wider"
+                  style={{
+                    color:
+                      award.medal === 'silver' ? '#C0C0C0' : '#CD7F32',
+                  }}
+                >
+                  {award.placement}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+      <p className="mb-1 text-sm text-text-secondary">{recipe.description}</p>
 
       <div className="mb-4 grid grid-cols-5 gap-2 border-b border-t border-border py-4">
         <div className="text-center">

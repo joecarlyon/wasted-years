@@ -7,7 +7,7 @@ export default function RecipesPage() {
   return (
     <main className="mx-auto max-w-6xl px-8 py-8">
       <div className="mb-8 border-b border-border py-8 text-center">
-        <h2 className="mb-2 text-3xl uppercase tracking-widest">Recipes</h2>
+        <h2 className="mb-2 text-3xl uppercase tracking-widest text-accent">Recipes</h2>
         <p className="text-text-secondary">
           {recipes.length} recipes &middot; {Math.round(totalGallons)} gallons
         </p>

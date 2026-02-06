@@ -93,6 +93,36 @@ export interface Yeast {
   productId: string
 }
 
+// Competition judging types
+export interface JudgeScore {
+  name: string
+  location: string
+  bjcpRank: string
+  certifications?: string
+  score: number
+  scores: {
+    aroma: [number, number]
+    appearance: [number, number]
+    flavor: [number, number]
+    mouthfeel: [number, number]
+    overall: [number, number]
+  }
+  feedback: string
+  flaws?: string
+}
+
+export interface CompetitionEntry {
+  batchNo: number
+  competition: string
+  entryName: string
+  style: string
+  score: number
+  scoreDescription: string
+  categoryAverage: number
+  placement?: string
+  judges: JudgeScore[]
+}
+
 export interface Batch {
   batchNo: number
   name: string
