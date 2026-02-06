@@ -8,8 +8,22 @@
       "WebFetch(domain:web.brewfather.app)",
       "Bash(brew install:*)",
       "Bash(gh auth status:*)",
-      "Bash(git rebase:*)",
-      "Bash(GIT_EDITOR=true git rebase:*)"
+      "Bash(git checkout:*)",
+      "Bash(git -C /Users/joecarlyon/dev/wasted-years log --oneline)",
+      "Bash(git log:*)",
+      "WebFetch(domain:docs.brewfather.app)",
+      "Bash(npx tsx:*)",
+      "Bash(pkill:*)",
+      "Bash(sips:*)",
+      "Bash(git diff:*)",
+      "Bash(node scripts/parse-beersmith.js:*)",
+      "Bash(node -e:*)",
+      "Bash(node scripts/import-beersmith.js:*)",
+      "Bash(npm run build:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }

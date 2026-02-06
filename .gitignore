@@ -26,5 +26,8 @@ yarn-error.log*
 # Local env files
 .env*.local
 
+# Claude Code
+.claude/settings.local.json
+
 # TypeScript
 *.tsbuildinfo
