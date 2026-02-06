@@ -1884,6 +1884,7 @@ export const recipes: Recipe[] = [
       },
     ],
     batchSize: 10,
+    artwork: "/images/recipes/red_strawberry.jpg",
   },
   {
     id: 34,
@@ -2042,6 +2043,7 @@ export const recipes: Recipe[] = [
       },
     ],
     batchSize: 11,
+    artwork: "/images/recipes/red_strawberry.jpg",
   },
   {
     id: 37,
