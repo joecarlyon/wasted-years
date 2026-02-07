@@ -15,7 +15,7 @@ const originPhotos = [
 
 export default function About() {
     return (
-        <main className="mx-auto max-w-6xl px-8 py-8">
+        <main className="mx-auto max-w-6xl px-4 py-8 md:px-8">
             <section className="mb-12">
                 <h2 className="mb-6 border-b border-border pb-2 text-xl uppercase tracking-widest text-lavender">
                     About

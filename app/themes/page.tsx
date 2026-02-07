@@ -306,7 +306,7 @@ export default function ThemesPage() {
   const theme = themes[activeIdx]
 
   return (
-    <main className="mx-auto max-w-6xl px-8 py-8">
+    <main className="mx-auto max-w-6xl px-4 py-8 md:px-8">
       <Link
         href="/brews"
         className="mb-6 inline-flex items-center text-sm text-text-secondary transition-colors hover:text-accent"

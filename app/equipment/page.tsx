@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function EquipmentPage() {
   return (
-    <main className="mx-auto max-w-6xl px-8 py-8">
+    <main className="mx-auto max-w-6xl px-4 py-8 md:px-8">
       <div className="mb-8 border-b border-border py-8 text-center">
         <h2 className="mb-2 text-3xl uppercase tracking-widest text-accent">
           Equipment
@@ -38,7 +38,7 @@ function SetupCard({ setup }: { setup: BrewingSetup }) {
   return (
     <div
       id={setup.id}
-      className="scroll-mt-24 border border-border bg-bg-card p-8"
+      className="scroll-mt-24 border border-border bg-bg-card p-4 md:p-8"
     >
       {/* Header */}
       <div className="mb-6 border-b border-border pb-6">

@@ -62,7 +62,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
       </div>
       <p className="mb-1 text-sm text-text-secondary">{recipe.description}</p>
 
-      <div className="mb-4 grid grid-cols-5 gap-2 border-b border-t border-border py-4">
+      <div className="mb-4 grid grid-cols-3 gap-2 border-b border-t border-border py-4 sm:grid-cols-5">
         <div className="text-center">
           <div className="text-lg font-semibold text-lavender">
             {recipe.og.toFixed(3)}

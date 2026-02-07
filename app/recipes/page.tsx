@@ -5,7 +5,7 @@ export default function RecipesPage() {
   const totalGallons = recipes.reduce((sum, r) => sum + (r.batchSize || 0), 0)
 
   return (
-    <main className="mx-auto max-w-6xl px-8 py-8">
+    <main className="mx-auto max-w-6xl px-4 py-8 md:px-8">
       <div className="mb-8 border-b border-border py-8 text-center">
         <h2 className="mb-2 text-3xl uppercase tracking-widest text-accent">Recipes</h2>
         <p className="text-text-secondary">

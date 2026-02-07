@@ -61,7 +61,7 @@ export default function BrewDetailPage({
   }
 
   return (
-    <main className="mx-auto max-w-4xl px-8 py-8">
+    <main className="mx-auto max-w-4xl px-4 py-8 md:px-8">
       {/* Back link */}
       <Link
         href="/brews"
@@ -400,7 +400,7 @@ function JudgeCard({ judge }: { judge: JudgeScore }) {
       </div>
 
       {/* Sub-scores */}
-      <div className="mb-4 grid grid-cols-5 gap-2">
+      <div className="mb-4 grid grid-cols-3 gap-2 sm:grid-cols-5">
         {(
           ['aroma', 'appearance', 'flavor', 'mouthfeel', 'overall'] as const
         ).map((category) => (

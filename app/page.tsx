@@ -8,7 +8,7 @@ export default function Home() {
         .slice(0, 3)
 
     return (
-        <main className="mx-auto max-w-6xl px-8 py-8">
+        <main className="mx-auto max-w-6xl px-4 py-8 md:px-8">
             <section className="mb-12 border-b border-border py-16 text-center">
                 <h2 className="mb-4 text-4xl font-bold tracking-wide">
                     <span className="text-accent">Craft Beer.</span>{' '}
