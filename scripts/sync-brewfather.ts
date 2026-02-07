@@ -115,6 +115,8 @@ interface BrewfatherBatch {
   estimatedColor: number
   measuredEfficiency: number
   measuredBatchSize: number
+  measuredPreBoilGravity?: number
+  measuredBoilSize?: number
   recipe: {
     name?: string
     style?: { name: string; category?: string }
@@ -298,6 +300,10 @@ function mergeBatch(
       (newBatch.efficiency as number) > 0
         ? newBatch.efficiency
         : existing.efficiency,
+    mashEfficiency:
+      newBatch.mashEfficiency !== undefined
+        ? newBatch.mashEfficiency
+        : existing.mashEfficiency,
     batchSize:
       (newBatch.batchSize as number) > 0
         ? newBatch.batchSize
@@ -471,6 +477,15 @@ async function syncBatches() {
       ibu: b.estimatedIbu ? roundTo(b.estimatedIbu, 0) : null,
       color: roundTo(b.estimatedColor || 0, 1),
       efficiency: roundTo(b.measuredEfficiency || 0, 1),
+      mashEfficiency:
+        b.measuredPreBoilGravity && b.measuredBoilSize && b.measuredOg && b.measuredBatchSize
+          ? roundTo(
+              b.measuredEfficiency *
+                ((b.measuredPreBoilGravity - 1) * b.measuredBoilSize) /
+                ((b.measuredOg - 1) * b.measuredBatchSize),
+              1
+            )
+          : undefined,
       batchSize: roundTo(b.measuredBatchSize || 0, 1),
       fermentables: (b.recipe?.fermentables || []).map((f) => ({
         name: f.name,

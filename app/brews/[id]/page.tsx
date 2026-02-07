@@ -3,8 +3,10 @@ import Link from 'next/link'
 import { batches } from '@/data/batches'
 import { recipes } from '@/data/recipes'
 import { competitions } from '@/data/competitions'
+import { brewingSetups } from '@/data/equipment'
 import { formatDate } from '@/lib/utils'
 import StatusBadge from '@/components/StatusBadge'
+import LinkifyText from '@/components/LinkifyText'
 import { JudgeScore } from '@/types'
 
 export function generateStaticParams() {
@@ -108,11 +110,21 @@ export default function BrewDetailPage({
           </div>
           <div className="flex flex-col items-end gap-2">
             <StatusBadge status={batch.status} />
-            {batch.source && (
-              <span className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary">
-                {batch.source}
-              </span>
-            )}
+            {batch.source && (() => {
+              const setup = brewingSetups.find((s) => s.batchSource === batch.source)
+              return setup ? (
+                <Link
+                  href={`/equipment#${setup.id}`}
+                  className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary transition-colors hover:border-accent hover:text-accent"
+                >
+                  {setup.name}
+                </Link>
+              ) : (
+                <span className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary">
+                  {batch.source}
+                </span>
+              )
+            })()}
           </div>
         </div>
         <div className="mt-4 flex flex-wrap gap-6 text-sm text-text-secondary">
@@ -229,7 +241,7 @@ export default function BrewDetailPage({
             <Section title="Brewing Notes">
               <div className="space-y-2 text-sm text-text-secondary">
                 {batch.brewingNotes.split(' | ').map((note, i) => (
-                  <p key={i}>{note}</p>
+                  <p key={i}><LinkifyText text={note} /></p>
                 ))}
               </div>
             </Section>
@@ -237,7 +249,7 @@ export default function BrewDetailPage({
           {batch.tastingNotes && (
             <Section title="Tasting Notes">
               <p className="text-sm italic text-text-secondary">
-                &ldquo;{batch.tastingNotes}&rdquo;
+                &ldquo;<LinkifyText text={batch.tastingNotes} />&rdquo;
               </p>
             </Section>
           )}

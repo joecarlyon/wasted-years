@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { batches } from '@/data/batches'
 import BatchSearch from '@/components/BatchSearch'
 
@@ -19,7 +20,9 @@ export default function BrewsPage() {
         </p>
       </div>
 
-      <BatchSearch batches={sortedBatches} />
+      <Suspense>
+        <BatchSearch batches={sortedBatches} />
+      </Suspense>
     </main>
   )
 }

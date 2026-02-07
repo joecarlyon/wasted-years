@@ -37,6 +37,31 @@ export interface EquipmentProfile {
   efficiency?: number
 }
 
+export interface EquipmentItem {
+  name: string
+  role: string
+  description?: string
+}
+
+export interface BrewingSetup {
+  id: string
+  name: string
+  tagline: string
+  description: string
+  method: string
+  era: string
+  batchSource: 'brewfather' | 'beersmith'
+  equipment: EquipmentItem[]
+  specs: {
+    batchSize: string
+    boilTime: string
+    brewEfficiency: string
+    mashEfficiency: string
+    heatSource: string
+    mashMethod: string
+  }
+}
+
 export interface Recipe {
   id: number
   uuid: string // Stable identifier that won't change if recipes are renumbered
@@ -138,6 +163,7 @@ export interface Batch {
   ibu: number | null
   color: number
   efficiency: number
+  mashEfficiency?: number
   batchSize: number
   fermentables: Fermentable[]
   hops: Hop[]

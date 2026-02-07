@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { Batch } from '@/types'
 import BrewEntry from './BrewEntry'
 
@@ -9,9 +10,13 @@ interface BatchSearchProps {
 }
 
 export default function BatchSearch({ batches }: BatchSearchProps) {
+  const searchParams = useSearchParams()
+  const sourceFilter = searchParams.get('source')
   const [searchQuery, setSearchQuery] = useState('')
 
   const filteredBatches = batches.filter((batch) => {
+    if (sourceFilter && batch.source !== sourceFilter) return false
+
     if (!searchQuery) return true
 
     const query = searchQuery.toLowerCase()

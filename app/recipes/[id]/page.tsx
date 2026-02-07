@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { recipes } from '@/data/recipes'
 import { batches } from '@/data/batches'
 import ImageLightbox from '@/components/ImageLightbox'
+import LinkifyText from '@/components/LinkifyText'
 
 export function generateStaticParams() {
   return recipes.map((r) => ({ id: r.uuid }))
@@ -75,7 +76,7 @@ export default function RecipePage({ params }: { params: { id: string } }) {
             </div>
             {recipe.description && (
               <p className="mt-4 whitespace-pre-line text-text-secondary">
-                {recipe.description}
+                <LinkifyText text={recipe.description} linkPrefix={<span className="text-lavender-dark">Original Recipe: </span>} />
               </p>
             )}
           </div>

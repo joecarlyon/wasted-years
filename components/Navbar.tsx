@@ -36,6 +36,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link href="/equipment" className={linkClasses('/equipment')}>
+              Equipment
+            </Link>
+          </li>
+          <li>
             <Link href="/brews" className={linkClasses('/brews')}>
               Brew Log
             </Link>
