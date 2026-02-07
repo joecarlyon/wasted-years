@@ -2,8 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-bg-dark: 10 10 15;
+  --color-bg-card: 20 20 28;
+  --color-bg-hover: 30 30 42;
+  --color-text-primary: 232 232 242;
+  --color-text-secondary: 200 208 232;
+  --color-accent: 208 165 46;
+  --color-accent-dark: 171 136 37;
+  --color-accent-light: 232 187 56;
+  --color-lavender: 162 172 224;
+  --color-lavender-dark: 130 140 192;
+  --color-lavender-light: 192 200 238;
+  --color-border: 42 42 58;
+  --color-status-success: 74 140 94;
+  --color-status-warning: 208 165 46;
+  --color-status-error: 168 68 68;
+}
+
 body {
-  background-color: #0a0a0f;
-  color: #e8e8f0;
+  background-color: rgb(var(--color-bg-dark));
+  color: rgb(var(--color-text-primary));
   min-height: 100vh;
 }
