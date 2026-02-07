@@ -9,6 +9,7 @@ interface ImageLightboxProps {
   alt: string
   thumbnailWidth?: number
   thumbnailHeight?: number
+  thumbnailClassName?: string
 }
 
 export default function ImageLightbox({
@@ -16,6 +17,7 @@ export default function ImageLightbox({
   alt,
   thumbnailWidth = 250,
   thumbnailHeight = 320,
+  thumbnailClassName,
 }: ImageLightboxProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
@@ -36,7 +38,7 @@ export default function ImageLightbox({
           alt={alt}
           width={thumbnailWidth}
           height={thumbnailHeight}
-          className="rounded border border-border"
+          className={`rounded border border-border ${thumbnailClassName ?? ''}`}
         />
       </button>
 
