@@ -41,6 +41,7 @@ export interface EquipmentItem {
   name: string
   role: string
   description?: string
+  url?: string
 }
 
 export interface BrewingSetup {

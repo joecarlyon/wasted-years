@@ -83,7 +83,15 @@ function SetupCard({ setup }: { setup: BrewingSetup }) {
         <div className="grid gap-4 sm:grid-cols-2">
           {setup.equipment.map((item, idx) => (
             <div key={idx} className="border border-border p-4">
-              <p className="font-medium text-text-primary">{item.name}</p>
+              <p className="font-medium text-text-primary">
+                {item.url ? (
+                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-text-primary hover:text-accent transition-colors">
+                    {item.name} &rarr;
+                  </a>
+                ) : (
+                  item.name
+                )}
+              </p>
               <p className="text-xs uppercase tracking-wide text-accent">
                 {item.role}
               </p>
