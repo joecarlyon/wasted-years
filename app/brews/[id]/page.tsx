@@ -43,6 +43,20 @@ export default function BrewDetailPage({
   )
 
   const compEntries = competitions.filter((c) => c.batchNo === batch.batchNo)
+  const placedEntry = compEntries.find((c) => c.placement)
+  const medal = placedEntry?.placement?.toLowerCase().includes('gold')
+    ? 'gold'
+    : placedEntry?.placement?.toLowerCase().includes('silver')
+      ? 'silver'
+      : placedEntry?.placement?.toLowerCase().includes('bronze')
+        ? 'bronze'
+        : null
+
+  const medalColors = {
+    gold: { color: '#FFD700', bg: 'rgba(255,215,0,0.15)' },
+    silver: { color: '#C0C0C0', bg: 'rgba(192,192,192,0.15)' },
+    bronze: { color: '#CD7F32', bg: 'rgba(205,127,50,0.15)' },
+  }
 
   return (
     <main className="mx-auto max-w-4xl px-8 py-8">
@@ -68,6 +82,29 @@ export default function BrewDetailPage({
             <p className="text-lg uppercase tracking-wide text-accent">
               {batch.style}
             </p>
+            {medal && placedEntry && (
+              <div className="mt-3 inline-flex items-center gap-2">
+                <div
+                  className="rounded-full p-1.5"
+                  style={{ backgroundColor: medalColors[medal].bg }}
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-5 w-5"
+                    style={{ color: medalColors[medal].color }}
+                  >
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                  </svg>
+                </div>
+                <span
+                  className="text-xs font-bold uppercase tracking-wider"
+                  style={{ color: medalColors[medal].color }}
+                >
+                  {placedEntry.placement}
+                </span>
+              </div>
+            )}
           </div>
           <div className="flex flex-col items-end gap-2">
             <StatusBadge status={batch.status} />

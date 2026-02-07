@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { recipes } from '@/data/recipes'
+import { batches } from '@/data/batches'
 import ImageLightbox from '@/components/ImageLightbox'
 
 export function generateStaticParams() {
@@ -26,6 +27,10 @@ export default function RecipePage({ params }: { params: { id: string } }) {
   const isLegacy = recipe.source === 'beersmith'
   const hasDetailedData =
     recipe.mashProfile || recipe.waterProfile || recipe.equipmentProfile
+
+  const matchingBatches = batches
+    .filter((b) => b.name.toLowerCase() === recipe.name.toLowerCase())
+    .sort((a, b) => a.batchNo - b.batchNo)
 
   return (
     <main className="mx-auto max-w-4xl px-8 py-8">
@@ -329,6 +334,37 @@ export default function RecipePage({ params }: { params: { id: string } }) {
                   ` from ${new Date(recipe.brewDate).getFullYear()}`}
                 . Mash, water, and equipment profiles are not available.
               </p>
+            </div>
+          )}
+
+          {/* Brew History */}
+          {matchingBatches.length > 0 && (
+            <div className="mt-8">
+              <h3 className="mb-3 text-xs uppercase tracking-widest text-lavender">
+                Brew History
+              </h3>
+              <ul className="space-y-2">
+                {matchingBatches.map((batch) => (
+                  <li key={batch.batchNo}>
+                    <Link
+                      href={`/brews/${batch.batchNo}`}
+                      className="text-sm text-text-secondary transition-colors hover:text-accent"
+                    >
+                      {batch.brewDate
+                        ? new Date(batch.brewDate).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'short',
+                            day: 'numeric',
+                          })
+                        : 'Unknown date'}
+                      {' — '}
+                      <span className="text-text-primary">
+                        Batch #{batch.batchNo}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
         </div>
