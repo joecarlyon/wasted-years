@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Batch } from '@/types'
+import { competitions } from '@/data/competitions'
 import BrewEntry from './BrewEntry'
 
 interface BatchSearchProps {
@@ -12,10 +13,14 @@ interface BatchSearchProps {
 export default function BatchSearch({ batches }: BatchSearchProps) {
   const searchParams = useSearchParams()
   const sourceFilter = searchParams.get('source')
+  const competitionFilter = searchParams.get('filter') === 'competition'
   const [searchQuery, setSearchQuery] = useState('')
+
+  const competitionBatchNos = new Set(competitions.map((c) => c.batchNo))
 
   const filteredBatches = batches.filter((batch) => {
     if (sourceFilter && batch.source !== sourceFilter) return false
+    if (competitionFilter && !competitionBatchNos.has(batch.batchNo)) return false
 
     if (!searchQuery) return true
 

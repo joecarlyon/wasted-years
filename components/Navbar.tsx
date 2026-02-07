@@ -20,7 +20,7 @@ export default function Navbar() {
             Wasted Years
           </h1>
           <span className="block text-xs uppercase tracking-widest text-lavender">
-            Records and Beers
+            Spirits, Records, and Beers
           </span>
         </Link>
 
@@ -43,6 +43,11 @@ export default function Navbar() {
           <li>
             <Link href="/brews" className={linkClasses('/brews')}>
               Brew Log
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className={linkClasses('/about')}>
+              About
             </Link>
           </li>
         </ul>
