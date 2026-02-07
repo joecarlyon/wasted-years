@@ -30,9 +30,11 @@ app/
 ├── recipes/
 │   ├── page.tsx            # Recipes list with category filtering
 │   └── [id]/page.tsx       # Recipe detail (routed by UUID)
-└── brews/
-    ├── page.tsx            # Brew log list
-    └── [id]/page.tsx       # Batch detail (routed by batchNo)
+├── brews/
+│   ├── page.tsx            # Brew log list (supports ?source= filtering)
+│   └── [id]/page.tsx       # Batch detail (routed by batchNo)
+└── equipment/
+    └── page.tsx            # Equipment setups with specs and gear
 
 components/
 ├── Navbar.tsx              # Navigation with active state
@@ -43,12 +45,14 @@ components/
 ├── FilterButtons.tsx       # Client component with filter state
 ├── StatusBadge.tsx         # Colored status indicator
 ├── ImageLightbox.tsx       # Clickable image with fullscreen lightbox
-└── BatchSearch.tsx         # Batch search component
+├── BatchSearch.tsx         # Batch search with ?source= filter support
+└── LinkifyText.tsx         # Converts URLs in text to clickable links with readable labels
 
 data/
 ├── recipes.ts              # Recipe data (Brewfather + BeerSmith)
-├── batches.ts              # Batch data with brew dates/measurements
+├── batches.ts              # Batch data with brew dates/measurements (includes mashEfficiency)
 ├── competitions.ts         # Competition entries, judge scores, awards
+├── equipment.ts            # Brewing setup profiles (BrewingSetup[]) with specs and gear
 ├── beersmith-recipes.json  # Raw BeerSmith export
 └── brewfather-notes.json   # Brewfather brewing/tasting notes
 
@@ -64,7 +68,7 @@ lib/
 └── utils.ts                # formatDate, getStatusClasses
 
 types/
-└── index.ts                # Recipe, Batch, CompetitionEntry, JudgeScore interfaces
+└── index.ts                # Recipe, Batch, BrewingSetup, CompetitionEntry, JudgeScore interfaces
 
 public/images/recipes/      # Recipe artwork (JPG)
 ```
@@ -72,7 +76,8 @@ public/images/recipes/      # Recipe artwork (JPG)
 ### Key Files
 
 - **`data/recipes.ts`** - Recipe objects with name, style, category, OG/FG/ABV/IBU, ingredients, artwork paths
-- **`data/batches.ts`** - Batch objects from Brewfather and BeerSmith with brew dates and measurements
+- **`data/batches.ts`** - Batch objects from Brewfather and BeerSmith with brew dates, measurements, and optional `mashEfficiency`
+- **`data/equipment.ts`** - Brewing setup profiles with equipment lists and specs (brew/mash efficiency, batch size, etc.)
 - **`data/competitions.ts`** - Competition entries with BJCP judge scoresheets, scores, and placements. Also exports `awardWinningRecipes` map for recipe card badges.
 - **`tailwind.config.ts`** - Custom colors (dark bg #0d0d0d, accent gold #d4a03c)
 
@@ -86,11 +91,12 @@ Recipe, batch, and competition data are stored as typed TypeScript arrays in the
 
 ### Data Sources
 
-- **Brewfather** - Primary source for recent recipes/batches. Synced via `scripts/sync-brewfather.ts` and a GitHub Actions workflow (`.github/workflows/sync-brewfather.yml`). Requires `BREWFATHER_API_USER_ID` and `BREWFATHER_API_KEY` in `.env.local`.
-- **BeerSmith** - Legacy recipes/batches imported via scripts in `scripts/`.
+- **Brewfather** - Primary source for recipes/batches from 2020 onward (Electric Brewing / Anvil setup). Synced via `scripts/sync-brewfather.ts` and a GitHub Actions workflow (`.github/workflows/sync-brewfather.yml`). Requires `BREWFATHER_API_USER_ID` and `BREWFATHER_API_KEY` in `.env.local`. Sync calculates `mashEfficiency` from pre-boil gravity/volume data when available.
+- **BeerSmith** - Legacy recipes/batches from pre-2020 (Caveman Fire setup). Imported via scripts in `scripts/`.
 
 ### Linking
 
 - **Recipe ↔ Batch**: Linked by case-insensitive name matching (no foreign key). A recipe detail page shows "Brew History" with all matching batches.
 - **Batch ↔ Competition**: Linked by `batchNo` field in competition entries. Batch detail pages show competition medals and judge scoresheets.
 - **Recipe ↔ Awards**: `awardWinningRecipes` in `competitions.ts` maps recipe names to award badges shown on `RecipeCard`.
+- **Batch ↔ Equipment**: Linked by `source` field (`brewfather` → Electric Brewing, `beersmith` → Caveman Fire). Equipment page links to `/brews?source=` for filtered brew log views.
