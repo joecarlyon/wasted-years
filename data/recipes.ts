@@ -3150,42 +3150,6 @@ export const recipes: Recipe[] = [
   },
   {
     "id": 58,
-    "uuid": "4095a4f7-4095-4095-4095-4095a4f74095",
-    "name": "Flanders Red",
-    "style": "Flanders Red Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.054,
-    "fg": 1.01,
-    "abv": 5.8,
-    "ibu": 16,
-    "grains": [
-      "110.00 lb Munich I (Weyermann)",
-      "110.00 lb Pale Malt (Weyermann)",
-      "110.00 lb Vienna Malt",
-      "30.00 lb White Wheat Malt",
-      "25.00 lb Caramunich I (Weyermann)",
-      "15.00 lb Chateau Special B",
-      "10.00 lb Aromatic Malt"
-    ],
-    "hops": [
-      "44.0 oz Hallertau (Boil)"
-    ],
-    "yeast": "White Labs WLP655 Belgian Sour Mix 1",
-    "source": "beersmith",
-    "brewDate": "2015-10-29",
-    "hopsDetail": [
-      {
-        "name": "Hallertau",
-        "amount": 44,
-        "use": "Boil",
-        "time": 60
-      }
-    ],
-    "batchSize": 225
-  },
-  {
-    "id": 59,
     "uuid": "03d9d37f-03d9-43d9-03d9-03d9d37f03d9",
     "name": "Big Ass Barleywine",
     "style": "English Barleywine",
@@ -3263,7 +3227,7 @@ export const recipes: Recipe[] = [
     "batchSize": 5
   },
   {
-    "id": 60,
+    "id": 59,
     "uuid": "57b0ea40-57b0-47b0-57b0-57b0ea4057b0",
     "name": "Kyle beer",
     "style": "Saison",
@@ -3303,7 +3267,7 @@ export const recipes: Recipe[] = [
     "batchSize": 11
   },
   {
-    "id": 61,
+    "id": 60,
     "uuid": "0525ffec-0525-4525-0525-0525ffec0525",
     "name": "Bitch Mittens Session IPA",
     "style": "Session Beer",
@@ -3387,7 +3351,7 @@ export const recipes: Recipe[] = [
     "batchSize": 5.5
   },
   {
-    "id": 62,
+    "id": 61,
     "uuid": "09daa07e-09da-49da-09da-09daa07e09da",
     "name": "Riggity Wrecked",
     "style": "Imperial Stout",
@@ -3443,7 +3407,7 @@ export const recipes: Recipe[] = [
     "batchSize": 5.5
   },
   {
-    "id": 63,
+    "id": 62,
     "uuid": "6a0a528d-6a0a-4a0a-6a0a-6a0a528d6a0a",
     "name": "#NoFilter",
     "style": "American Pale Ale",
@@ -3529,7 +3493,7 @@ export const recipes: Recipe[] = [
     "batchSize": 11
   },
   {
-    "id": 64,
+    "id": 63,
     "uuid": "74f83a2b-74f8-44f8-74f8-74f83a2b74f8",
     "name": "The Devil's Narwhal NEIPA - 5/29/2019",
     "style": "American IPA",
@@ -3616,7 +3580,7 @@ export const recipes: Recipe[] = [
     "batchSize": 11
   },
   {
-    "id": 65,
+    "id": 64,
     "uuid": "791635f6-7916-4916-7916-791635f67916",
     "name": "The Devil's Narwhal NEIPA",
     "style": "American Pale Ale",
@@ -3703,7 +3667,341 @@ export const recipes: Recipe[] = [
     "batchSize": 11
   },
   {
+    "id": 65,
+    "uuid": "bb00010d-0001-4001-0001-bb00010d0001",
+    "name": "ESB",
+    "style": "Strong Bitter",
+    "category": "ale",
+    "description": "",
+    "og": 1.05,
+    "fg": 1.013,
+    "abv": 4.9,
+    "ibu": 39,
+    "grains": [
+      "7.11 lb Extra Pale Maris Otter Malt (Crisp)",
+      "0.89 lb Caramel/Crystal Malt - 20L",
+      "0.71 lb Crystal, DRC (Simpsons)",
+      "0.36 lb Victory Malt (biscuit) (Briess)"
+    ],
+    "hops": [
+      "1.4 oz Goldings, East Kent (Boil)",
+      "0.9 oz Goldings, East Kent (Aroma)",
+      "1.1 oz East Kent Goldings (EKG) (Aroma)",
+      "2.3 oz Goldings, East Kent (Dry Hop)"
+    ],
+    "yeast": "Inland Island INIS-316 English Ale VI",
+    "source": "beersmith",
+    "brewDate": "2021-08-10",
+    "hopsDetail": [
+      {
+        "name": "Goldings, East Kent",
+        "amount": 1.4,
+        "use": "Boil",
+        "time": 60
+      },
+      {
+        "name": "Goldings, East Kent",
+        "amount": 0.9,
+        "use": "Aroma",
+        "time": 15
+      },
+      {
+        "name": "East Kent Goldings (EKG)",
+        "amount": 1.1,
+        "use": "Aroma",
+        "time": 15
+      },
+      {
+        "name": "Goldings, East Kent",
+        "amount": 2.3,
+        "use": "Dry Hop"
+      }
+    ],
+    "batchSize": 5
+  },
+  {
     "id": 66,
+    "uuid": "bb4ee36e-4ee3-4ee3-4ee3-bb4ee36e4ee3",
+    "name": "Flanders Red",
+    "style": "Flanders Red Ale",
+    "category": "ale",
+    "description": "",
+    "og": 1.05,
+    "fg": 1.013,
+    "abv": 4.9,
+    "ibu": 0,
+    "grains": [
+      "2.67 lb Munich I (Weyermann)",
+      "2.67 lb Pale Malt (2 Row) US",
+      "2.67 lb Vienna Malt",
+      "0.89 lb Wheat - White Malt (Briess)",
+      "0.37 lb Special B Malt",
+      "0.25 lb Aromatic Malt"
+    ],
+    "hops": [],
+    "yeast": "White Labs WLP665 Flemish Ale Blend",
+    "source": "beersmith",
+    "brewDate": "2020-02-18",
+    "hopsDetail": [],
+    "batchSize": 5
+  },
+  {
+    "id": 67,
+    "uuid": "bb65fd83-65fd-45fd-65fd-bb65fd8365fd",
+    "name": "Fluffernutter Cream Ale",
+    "style": "American-Style Cream Ale",
+    "category": "ale",
+    "description": "",
+    "og": 1.05,
+    "fg": 1.013,
+    "abv": 4.9,
+    "ibu": 15,
+    "grains": [
+      "6.00 lb Pale Malt, 2-Row (Rahr)",
+      "1.50 lb Corn - Yellow, Flaked (Briess)",
+      "0.50 lb Victory Malt (biscuit) (Briess)",
+      "0.50 lb Milk Sugar (Lactose)"
+    ],
+    "hops": [
+      "0.5 oz Tettnang (Boil)",
+      "0.8 oz Tettnang (Aroma)"
+    ],
+    "yeast": "Wyeast Labs 1007 German Ale",
+    "source": "beersmith",
+    "brewDate": "2022-01-03",
+    "hopsDetail": [
+      {
+        "name": "Tettnang",
+        "amount": 0.5,
+        "use": "Boil",
+        "time": 60
+      },
+      {
+        "name": "Tettnang",
+        "amount": 0.8,
+        "use": "Aroma",
+        "time": 15
+      }
+    ],
+    "batchSize": 5
+  },
+  {
+    "id": 68,
+    "uuid": "bb002236-0022-4022-0022-bb0022360022",
+    "name": "Hazy",
+    "style": "American-Style India Pale Ale",
+    "category": "ale",
+    "description": "",
+    "og": 1.05,
+    "fg": 1.013,
+    "abv": 4.9,
+    "ibu": 47,
+    "grains": [
+      "5.07 lb Pale Ale Malt (Rahr)",
+      "2.30 lb Oats, Flaked",
+      "1.27 lb Pale Ale, Golden Promise (Simpsons)",
+      "1.27 lb White Wheat Malt"
+    ],
+    "hops": [
+      "1.7 oz Cashmere (Aroma)",
+      "1.7 oz Vic Secret (Aroma)",
+      "0.8 oz Huell Melon (Aroma)",
+      "1.7 oz Vic Secret (Dry Hop)",
+      "1.3 oz Cashmere (Dry Hop)",
+      "1.3 oz Huell Melon (Dry Hop)",
+      "2.6 oz Vic Secret (Dry Hop)",
+      "1.9 oz Cashmere (Dry Hop)",
+      "1.9 oz Huell Melon (Dry Hop)"
+    ],
+    "yeast": "Wyeast Labs 1318 London Ale III",
+    "source": "beersmith",
+    "brewDate": "2022-01-05",
+    "hopsDetail": [
+      {
+        "name": "Cashmere",
+        "amount": 1.7,
+        "use": "Aroma",
+        "time": 20
+      },
+      {
+        "name": "Vic Secret",
+        "amount": 1.7,
+        "use": "Aroma",
+        "time": 20
+      },
+      {
+        "name": "Huell Melon",
+        "amount": 0.8,
+        "use": "Aroma",
+        "time": 20
+      },
+      {
+        "name": "Vic Secret",
+        "amount": 1.7,
+        "use": "Dry Hop"
+      },
+      {
+        "name": "Cashmere",
+        "amount": 1.3,
+        "use": "Dry Hop"
+      },
+      {
+        "name": "Huell Melon",
+        "amount": 1.3,
+        "use": "Dry Hop"
+      },
+      {
+        "name": "Vic Secret",
+        "amount": 2.6,
+        "use": "Dry Hop"
+      },
+      {
+        "name": "Cashmere",
+        "amount": 1.9,
+        "use": "Dry Hop"
+      },
+      {
+        "name": "Huell Melon",
+        "amount": 1.9,
+        "use": "Dry Hop"
+      }
+    ],
+    "batchSize": 5
+  },
+  {
+    "id": 69,
+    "uuid": "bb6c807c-6c80-4c80-6c80-bb6c807c6c80",
+    "name": "Mexican Lager",
+    "style": "American-Style Lager",
+    "category": "lager",
+    "description": "",
+    "og": 1.05,
+    "fg": 1.013,
+    "abv": 4.9,
+    "ibu": 15,
+    "grains": [
+      "5.88 lb Pilsner (Weyermann)",
+      "1.15 lb Corn - Yellow, Flaked (Briess)",
+      "0.63 lb Munich I (Weyermann)",
+      "0.16 lb Fruit - Lime"
+    ],
+    "hops": [
+      "0.4 oz Hallertauer (Boil)",
+      "0.3 oz Hallertauer (Aroma)",
+      "0.8 oz Hallertauer (Aroma)"
+    ],
+    "yeast": "Omega OYL-113 Mexican Lager",
+    "source": "beersmith",
+    "brewDate": "2022-01-13",
+    "hopsDetail": [
+      {
+        "name": "Hallertauer",
+        "amount": 0.4,
+        "use": "Boil",
+        "time": 75
+      },
+      {
+        "name": "Hallertauer",
+        "amount": 0.3,
+        "use": "Aroma",
+        "time": 15
+      },
+      {
+        "name": "Hallertauer",
+        "amount": 0.8,
+        "use": "Aroma",
+        "time": 30
+      }
+    ],
+    "batchSize": 5
+  },
+  {
+    "id": 70,
+    "uuid": "bb18afe8-18af-48af-18af-bb18afe818af",
+    "name": "Schwarzbier",
+    "style": "German-Style Schwarzbier",
+    "category": "lager",
+    "description": "",
+    "og": 1.05,
+    "fg": 1.013,
+    "abv": 4.9,
+    "ibu": 28,
+    "grains": [
+      "5.88 lb Pilsner (Weyermann)",
+      "0.63 lb Blackprinz",
+      "0.63 lb Carafoam",
+      "0.63 lb Munich II (Weyermann)",
+      "0.23 lb Chocolate Rye Malt"
+    ],
+    "hops": [
+      "0.8 oz German Tradition (Boil)",
+      "0.5 oz German Tradition (Aroma)",
+      "1.0 oz German Tradition (Aroma)"
+    ],
+    "yeast": "Inland Island INIS-711 German Monk Lager",
+    "source": "beersmith",
+    "brewDate": "2021-12-31",
+    "hopsDetail": [
+      {
+        "name": "German Tradition",
+        "amount": 0.8,
+        "use": "Boil",
+        "time": 60
+      },
+      {
+        "name": "German Tradition",
+        "amount": 0.5,
+        "use": "Aroma",
+        "time": 15
+      },
+      {
+        "name": "German Tradition",
+        "amount": 1,
+        "use": "Aroma",
+        "time": 15
+      }
+    ],
+    "batchSize": 5
+  },
+  {
+    "id": 71,
+    "uuid": "bb67d0ae-67d0-47d0-67d0-bb67d0ae67d0",
+    "name": "White Russian Stout",
+    "style": "American-Style Imperial Stout",
+    "category": "ale",
+    "description": "",
+    "og": 1.05,
+    "fg": 1.013,
+    "abv": 4.9,
+    "ibu": 55,
+    "grains": [
+      "8.87 lb Pale Malt (2 Row) US",
+      "1.27 lb Milk Sugar (Lactose)",
+      "1.27 lb Turbinado",
+      "1.15 lb Black Barley (Briess)",
+      "1.15 lb Oats, Flaked",
+      "0.63 lb Crystal, DRC (Simpsons)",
+      "0.52 lb Chocolate Wheat Malt (Proximity)",
+      "0.35 lb Victory Malt (biscuit) (Briess)"
+    ],
+    "hops": [
+      "1.7 oz Magnum (Boil)"
+    ],
+    "yeast": "Wyeast Labs 1056 American Ale",
+    "source": "beersmith",
+    "brewDate": "2021-12-30",
+    "hopsDetail": [
+      {
+        "name": "Magnum",
+        "amount": 1.7,
+        "use": "Boil",
+        "time": 75
+      }
+    ],
+    "batchSize": 5
+  },
+  {
+    "id": 72,
     "uuid": "70b9593b-70b9-40b9-70b9-70b9593b70b9",
     "name": "Wizard fight",
     "style": "American IPA",
@@ -3780,7 +4078,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 67,
+    "id": 73,
     "uuid": "2a3c1d23-2a3c-4a3c-2a3c-2a3c1d232a3c",
     "name": "Anklebiter",
     "style": "American IPA",
@@ -3938,7 +4236,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 68,
+    "id": 74,
     "uuid": "177ec338-177e-477e-177e-177ec338177e",
     "name": "Wheat vodka",
     "style": "Vodka",
@@ -4001,7 +4299,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 69,
+    "id": 75,
     "uuid": "768a22ab-768a-468a-768a-768a22ab768a",
     "name": "Spicy Sprinkles",
     "style": "Belgian Rye Ale",
@@ -4134,7 +4432,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 70,
+    "id": 76,
     "uuid": "71fd1142-71fd-41fd-71fd-71fd114271fd",
     "name": "Wry Smile Rye IPA",
     "style": "Rye IPA",
@@ -4267,7 +4565,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 71,
+    "id": 77,
     "uuid": "0331d806-0331-4331-0331-0331d8060331",
     "name": "Czech It Out",
     "style": "Czech Amber Lager",
@@ -4384,7 +4682,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 72,
+    "id": 78,
     "uuid": "7b086b92-7b08-4b08-7b08-7b086b927b08",
     "name": "Star Maker Imperial Stout",
     "style": "Imperial Stout",
@@ -4559,7 +4857,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 73,
+    "id": 79,
     "uuid": "29ab6e03-29ab-49ab-29ab-29ab6e0329ab",
     "name": "Drunkle",
     "style": "Dunkles Weissbier",
@@ -4660,7 +4958,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 74,
+    "id": 80,
     "uuid": "029f5db9-029f-429f-029f-029f5db9029f",
     "name": "Second City Session IPA",
     "style": "Specialty IPA",
@@ -4799,7 +5097,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 75,
+    "id": 81,
     "uuid": "27cfc2b0-27cf-47cf-27cf-27cfc2b027cf",
     "name": "The Devil's Narwhal",
     "style": "Hazy IPA (New England / NEIPA)",
@@ -4970,7 +5268,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 76,
+    "id": 82,
     "uuid": "7fe5c4d7-7fe5-4fe5-7fe5-7fe5c4d77fe5",
     "name": "Overlord v3.1",
     "style": "American IPA",
@@ -5103,7 +5401,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 77,
+    "id": 83,
     "uuid": "2f45a6b5-2f45-4f45-2f45-2f45a6b52f45",
     "name": "Rum Wash",
     "style": "Rum",
@@ -5173,7 +5471,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 78,
+    "id": 84,
     "uuid": "3649f941-3649-4649-3649-3649f9413649",
     "name": "Imperial Hefe",
     "style": "Weissbier",
@@ -5282,7 +5580,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 79,
+    "id": 85,
     "uuid": "06b42ae0-06b4-46b4-06b4-06b42ae006b4",
     "name": "Moo Moo Canoe",
     "style": "American Stout",
@@ -5412,7 +5710,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 80,
+    "id": 86,
     "uuid": "6613308a-6613-4613-6613-6613308a6613",
     "name": "4PyRyeO Pale Ale",
     "style": "American Pale Ale",
@@ -5550,7 +5848,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 81,
+    "id": 87,
     "uuid": "6b780297-6b78-4b78-6b78-6b7802976b78",
     "name": "Joeoverlord",
     "style": "American IPA",
@@ -5691,7 +5989,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 82,
+    "id": 88,
     "uuid": "0a9ed186-0a9e-4a9e-0a9e-0a9ed1860a9e",
     "name": "Sample Blonde Ale",
     "style": "Blonde Ale",
@@ -5824,7 +6122,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 83,
+    "id": 89,
     "uuid": "551217ed-5512-4512-5512-551217ed5512",
     "name": "Overlord 3.1 5g",
     "style": "American IPA",
@@ -5957,7 +6255,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 84,
+    "id": 90,
     "uuid": "15c84caa-15c8-45c8-15c8-15c84caa15c8",
     "name": "Bavarian hefeweizen",
     "style": "Weissbier",
@@ -6080,7 +6378,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 85,
+    "id": 91,
     "uuid": "6ac3afe2-6ac3-4ac3-6ac3-6ac3afe26ac3",
     "name": "The Vienna",
     "style": "Vienna Lager",
@@ -6190,7 +6488,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 86,
+    "id": 92,
     "uuid": "1ef0d02e-1ef0-4ef0-1ef0-1ef0d02e1ef0",
     "name": "Twin Pines Piney IPA",
     "style": "American IPA",
@@ -6310,7 +6608,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 87,
+    "id": 93,
     "uuid": "4086cdd1-4086-4086-4086-4086cdd14086",
     "name": "The Devil's Wheat 3",
     "style": "American Wheat Beer",
@@ -6451,7 +6749,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 88,
+    "id": 94,
     "uuid": "7c508064-7c50-4c50-7c50-7c5080647c50",
     "name": "Extra Special Bitter - David Heath",
     "style": "Extra Special Bitter",
@@ -6574,7 +6872,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 89,
+    "id": 95,
     "uuid": "74ae8554-74ae-44ae-74ae-74ae855474ae",
     "name": "Beginning Bourbon",
     "style": "Whiskey",
@@ -6658,7 +6956,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 90,
+    "id": 96,
     "uuid": "69cb475e-69cb-49cb-69cb-69cb475e69cb",
     "name": "Pumpkin Ale",
     "style": "Pumpkin Spice Beer",
@@ -6802,7 +7100,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    "id": 91,
+    "id": 97,
     "uuid": "46294688-4629-4629-4629-462946884629",
     "name": "Helles Yeah",
     "style": "German Helles Exportbier",
