@@ -138,7 +138,7 @@ export const competitions: CompetitionEntry[] = [
           overall: [7, 10],
         },
         feedback:
-          "Well made, seems like it might be nearing the end of its really good age. If this goes on you should brew a fresh batch.",
+          'Well made, seems like it might be nearing the end of its really good age. If this goes on you should brew a fresh batch.',
       },
     ],
   },
@@ -192,7 +192,11 @@ export const competitions: CompetitionEntry[] = [
 // Recipe names that have won competition awards (for recipe card badges)
 export const awardWinningRecipes: Record<
   string,
-  { competition: string; placement: string; medal: 'gold' | 'silver' | 'bronze' }[]
+  {
+    competition: string
+    placement: string
+    medal: 'gold' | 'silver' | 'bronze'
+  }[]
 > = {
   Overlord: [
     {

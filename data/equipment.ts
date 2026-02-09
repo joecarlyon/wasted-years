@@ -14,13 +14,15 @@ export const brewingSetups: BrewingSetup[] = [
       {
         name: 'Anvil Foundry 18 Gallon',
         role: 'All-In-One Brew System',
-        description: '1600W electric element with built-in controller and grain basket',
+        description:
+          '1600W electric element with built-in controller and grain basket',
         url: 'https://anvilbrewing.com/product/anvil-foundry-18-gallon/',
       },
       {
         name: 'Blichmann RipTide Pump',
         role: 'Mash Recirculation',
-        description: 'Magnetic drive brewing pump for continuous wort recirculation',
+        description:
+          'Magnetic drive brewing pump for continuous wort recirculation',
         url: 'https://www.blichmannengineering.com/product/riptide-brewing-pump/',
       },
       {
@@ -38,7 +40,8 @@ export const brewingSetups: BrewingSetup[] = [
       {
         name: 'SS Brewtech Brew Bucket 2.0',
         role: 'Fermentation',
-        description: 'Stainless steel conical fermenter with rotating racking arm',
+        description:
+          'Stainless steel conical fermenter with rotating racking arm',
         url: 'https://www.ssbrewtech.com/products/brew-bucket-2-0',
       },
       {
