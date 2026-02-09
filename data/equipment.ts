@@ -61,10 +61,11 @@ export const brewingSetups: BrewingSetup[] = [
     id: 'caveman-fire',
     name: 'Caveman Fire',
     tagline: 'Old school propane and steel',
+    retired: true,
     description:
       'The original setup. Two 15-gallon keggles converted from Sankey kegs serve as the brew kettle and hot liquor tank. Paired with a cooler mash tun and two propane burners for all-grain brewing the old-fashioned way.',
     method: 'Traditional All-Grain',
-    era: 'Pre-2020',
+    era: 'Pre-2022',
     batchSource: 'beersmith',
     equipment: [
       {

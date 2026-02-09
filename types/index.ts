@@ -51,6 +51,7 @@ export interface BrewingSetup {
   description: string
   method: string
   era: string
+  retired?: boolean
   batchSource: 'brewfather' | 'beersmith'
   equipment: EquipmentItem[]
   specs: {
