@@ -110,6 +110,7 @@ interface BrewfatherBatch {
   bottlingDate?: number
   measuredOg: number
   measuredFg: number
+  estimatedFg?: number
   measuredAbv: number
   estimatedIbu: number
   estimatedColor: number
@@ -120,6 +121,7 @@ interface BrewfatherBatch {
   recipe: {
     name?: string
     style?: { name: string; category?: string }
+    fg?: number
     fermentables?: BrewfatherFermentable[]
     hops?: BrewfatherHop[]
     yeasts?: BrewfatherYeast[]
@@ -472,21 +474,24 @@ async function syncBatches() {
         ? new Date(b.bottlingDate).toISOString().split('T')[0]
         : '',
       og: roundTo(b.measuredOg || 0, 3),
-      fg: roundTo(b.measuredFg || 0, 3),
+      fg: roundTo(b.measuredFg || b.estimatedFg || b.recipe?.fg || 0, 3),
       abv: roundTo(b.measuredAbv || 0, 1),
       ibu: b.estimatedIbu ? roundTo(b.estimatedIbu, 0) : null,
       color: roundTo(b.estimatedColor || 0, 1),
       efficiency: roundTo(b.measuredEfficiency || 0, 1),
       mashEfficiency:
-        b.measuredPreBoilGravity && b.measuredBoilSize && b.measuredOg && b.measuredBatchSize
+        b.measuredPreBoilGravity &&
+        b.measuredBoilSize &&
+        b.measuredOg &&
+        b.measuredBatchSize
           ? roundTo(
-              b.measuredEfficiency *
-                ((b.measuredPreBoilGravity - 1) * b.measuredBoilSize) /
+              (b.measuredEfficiency *
+                ((b.measuredPreBoilGravity - 1) * b.measuredBoilSize)) /
                 ((b.measuredOg - 1) * b.measuredBatchSize),
               1
             )
           : undefined,
-      batchSize: roundTo(b.measuredBatchSize || 0, 1),
+      batchSize: litersToGallons(b.measuredBatchSize || 0),
       fermentables: (b.recipe?.fermentables || []).map((f) => ({
         name: f.name,
         amount: roundTo(f.amount, 2),

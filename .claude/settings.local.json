@@ -23,7 +23,12 @@
       "Bash(git push:*)",
       "Bash(git pull:*)",
       "Bash(git stash:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(git -C /Users/joecarlyon/dev/wasted-years checkout --theirs data/batches.ts)",
+      "Bash(git -C /Users/joecarlyon/dev/wasted-years rebase --continue)",
+      "Bash(git -C /Users/joecarlyon/dev/wasted-years diff --name-only --diff-filter=U)",
+      "Bash(GIT_EDITOR=true git:*)",
+      "Bash(git -C /Users/joecarlyon/dev/wasted-years diff --check)"
     ]
   }
 }
