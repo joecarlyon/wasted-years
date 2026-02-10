@@ -109,6 +109,8 @@ interface BrewfatherBatch {
   brewDate: number
   bottlingDate?: number
   measuredOg: number
+  measuredPostBoilGravity?: number
+  estimatedOg?: number
   measuredFg: number
   estimatedFg?: number
   measuredAbv: number
@@ -121,6 +123,7 @@ interface BrewfatherBatch {
   recipe: {
     name?: string
     style?: { name: string; category?: string }
+    og?: number
     fg?: number
     fermentables?: BrewfatherFermentable[]
     hops?: BrewfatherHop[]
@@ -473,7 +476,7 @@ async function syncBatches() {
       bottlingDate: b.bottlingDate
         ? new Date(b.bottlingDate).toISOString().split('T')[0]
         : '',
-      og: roundTo(b.measuredOg || 0, 3),
+      og: roundTo(b.measuredOg || b.measuredPostBoilGravity || b.estimatedOg || b.recipe?.og || 0, 3),
       fg: roundTo(b.measuredFg || b.estimatedFg || b.recipe?.fg || 0, 3),
       abv: roundTo(b.measuredAbv || 0, 1),
       ibu: b.estimatedIbu ? roundTo(b.estimatedIbu, 0) : null,

@@ -32,7 +32,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -43,7 +43,8 @@ export const batches: Batch[] = [
     "hops": [],
     "yeast": [],
     "source": "beersmith",
-    "tastingNotes": "Blueberry flavor, where did it go?"
+    "tastingNotes": "Blueberry flavor, where did it go?",
+    "brewingNotes": "Estimated OG from Lemon Lime Hefe recipe"
   },
   {
     "batchNo": 3,
@@ -54,7 +55,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -65,7 +66,8 @@ export const batches: Batch[] = [
     "hops": [],
     "yeast": [],
     "source": "beersmith",
-    "tastingNotes": "Very Tart"
+    "tastingNotes": "Very Tart",
+    "brewingNotes": "Estimated OG from Lemon Lime Hefe recipe"
   },
   {
     "batchNo": 4,
@@ -76,7 +78,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -87,7 +89,8 @@ export const batches: Batch[] = [
     "hops": [],
     "yeast": [],
     "source": "beersmith",
-    "tastingNotes": "Sucked, added apricot and was better"
+    "tastingNotes": "Sucked, added apricot and was better",
+    "brewingNotes": "Estimated OG from White Knight Wit recipe"
   },
   {
     "batchNo": 5,
@@ -230,7 +233,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -241,7 +244,8 @@ export const batches: Batch[] = [
     "hops": [],
     "yeast": [],
     "source": "beersmith",
-    "tastingNotes": "First batch was better"
+    "tastingNotes": "First batch was better",
+    "brewingNotes": "Estimated OG from Basic Blonde recipe"
   },
   {
     "batchNo": 12,
@@ -273,7 +277,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -283,7 +287,8 @@ export const batches: Batch[] = [
     "fermentables": [],
     "hops": [],
     "yeast": [],
-    "source": "beersmith"
+    "source": "beersmith",
+    "brewingNotes": "Estimated OG from Lemon Lime Hefe recipe"
   },
   {
     "batchNo": 14,
@@ -336,7 +341,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -346,7 +351,8 @@ export const batches: Batch[] = [
     "fermentables": [],
     "hops": [],
     "yeast": [],
-    "source": "beersmith"
+    "source": "beersmith",
+    "brewingNotes": "Estimated OG from Withered Imperial Stout recipe"
   },
   {
     "batchNo": 17,
@@ -843,7 +849,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2015-03-25",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.05,
     "fg": 1.01,
     "abv": 0,
     "ibu": 17,
@@ -904,7 +910,8 @@ export const batches: Batch[] = [
       }
     ],
     "source": "beersmith",
-    "tastingNotes": "Delicious! FUCKING DELICIOUS"
+    "tastingNotes": "Delicious! FUCKING DELICIOUS",
+    "brewingNotes": "Estimated OG from Moo Moo Canoe recipe"
   },
   {
     "batchNo": 25,
@@ -915,7 +922,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2015-03-25",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.05,
     "fg": 1.01,
     "abv": 0,
     "ibu": 17,
@@ -976,7 +983,8 @@ export const batches: Batch[] = [
       }
     ],
     "source": "beersmith",
-    "tastingNotes": "Delicious! FUCKING DELICIOUS"
+    "tastingNotes": "Delicious! FUCKING DELICIOUS",
+    "brewingNotes": "Estimated OG from Moo Moo Canoe recipe"
   },
   {
     "batchNo": 26,
@@ -1042,7 +1050,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2015-04-18",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.05,
     "fg": 1.01,
     "abv": 0,
     "ibu": 39,
@@ -1100,7 +1108,8 @@ export const batches: Batch[] = [
       }
     ],
     "source": "beersmith",
-    "tastingNotes": "Delicious"
+    "tastingNotes": "Delicious",
+    "brewingNotes": "Estimated OG from Strawberry Saurus-Rex recipe"
   },
   {
     "batchNo": 28,
@@ -1270,7 +1279,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2015-06-07",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -1281,7 +1290,7 @@ export const batches: Batch[] = [
     "hops": [],
     "yeast": [],
     "source": "beersmith",
-    "brewingNotes": "All measurements N/A on whiteboard. Notes: Starting Drunk.",
+    "brewingNotes": "All measurements N/A on whiteboard. Notes: Starting Drunk. | Estimated OG from Withered Imperial Stout recipe",
     "tastingNotes": "GOOD"
   },
   {
@@ -1293,7 +1302,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2015-06-07",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -1304,7 +1313,7 @@ export const batches: Batch[] = [
     "hops": [],
     "yeast": [],
     "source": "beersmith",
-    "brewingNotes": "Partigyle Notes: There's no party like a Tony party cause a Tony party don't stop!!!",
+    "brewingNotes": "Partigyle Notes: There's no party like a Tony party cause a Tony party don't stop!!! | Estimated OG from Withered Imperial Stout recipe",
     "tastingNotes": "Dumped"
   },
   {
@@ -1338,7 +1347,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2015-06-14",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -1349,7 +1358,8 @@ export const batches: Batch[] = [
     "hops": [],
     "yeast": [],
     "source": "beersmith",
-    "tastingNotes": "Very good, bananay"
+    "tastingNotes": "Very good, bananay",
+    "brewingNotes": "Estimated OG from Little Heffer recipe"
   },
   {
     "batchNo": 35,
@@ -1360,7 +1370,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2015-06-28",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.05,
     "fg": 0,
     "abv": 0,
     "ibu": 76,
@@ -1441,7 +1451,8 @@ export const batches: Batch[] = [
       }
     ],
     "source": "beersmith",
-    "tastingNotes": "Very good!"
+    "tastingNotes": "Very good!",
+    "brewingNotes": "Estimated OG from Usurper recipe"
   },
   {
     "batchNo": 36,
@@ -1894,7 +1905,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2015-10-04",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -1905,7 +1916,8 @@ export const batches: Batch[] = [
     "hops": [],
     "yeast": [],
     "source": "beersmith",
-    "tastingNotes": "Good, maybe ferment at higher temp"
+    "tastingNotes": "Good, maybe ferment at higher temp",
+    "brewingNotes": "Estimated OG from Lemon Lime Hefe recipe"
   },
   {
     "batchNo": 46,
@@ -2207,7 +2219,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2015-12-28",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -2217,7 +2229,8 @@ export const batches: Batch[] = [
     "fermentables": [],
     "hops": [],
     "yeast": [],
-    "source": "beersmith"
+    "source": "beersmith",
+    "brewingNotes": "Estimated OG from Withered Imperial Stout recipe"
   },
   {
     "batchNo": 53,
@@ -2690,7 +2703,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2017-09-20",
     "bottlingDate": "",
-    "og": 0,
+    "og": 1.046,
     "fg": 0,
     "abv": 0,
     "ibu": null,
@@ -2701,7 +2714,7 @@ export const batches: Batch[] = [
     "hops": [],
     "yeast": [],
     "source": "beersmith",
-    "brewingNotes": "Est pre-boil gravity 1.057. Est pre-boil volume 13.75g. Est post-boil gravity 1.066. Est post-boil volume 12.25g. Est fermenter volume 11g. Est mash temp 156F. No actual measurements recorded."
+    "brewingNotes": "Est pre-boil gravity 1.057. Est pre-boil volume 13.75g. Est post-boil gravity 1.066. Est post-boil volume 12.25g. Est fermenter volume 11g. Est mash temp 156F. No actual measurements recorded. | Estimated OG from Overlord recipe"
   },
   {
     "batchNo": 75,
@@ -2756,7 +2769,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2022-03-15",
     "bottlingDate": "2022-03-29",
-    "og": 0,
+    "og": 1.049,
     "fg": 1.012,
     "abv": 4.9,
     "ibu": 21,
@@ -2820,7 +2833,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2022-03-20",
     "bottlingDate": "2022-04-03",
-    "og": 0,
+    "og": 1.049,
     "fg": 1.012,
     "abv": 4.9,
     "ibu": 21,
@@ -2958,7 +2971,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2022-09-21",
     "bottlingDate": "2022-10-05",
-    "og": 0,
+    "og": 1.105,
     "fg": 1.032,
     "abv": 13,
     "ibu": 98,
@@ -3123,7 +3136,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2023-03-18",
     "bottlingDate": "2023-04-01",
-    "og": 0,
+    "og": 1.068,
     "fg": 1.017,
     "abv": 6.7,
     "ibu": 39,
@@ -3197,7 +3210,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2023-04-29",
     "bottlingDate": "2023-05-13",
-    "og": 0,
+    "og": 1.058,
     "fg": 1.009,
     "abv": 6.4,
     "ibu": null,
@@ -3241,7 +3254,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2023-04-29",
     "bottlingDate": "2023-05-13",
-    "og": 0,
+    "og": 1.043,
     "fg": 1.007,
     "abv": 4.5,
     "ibu": 25,
@@ -3304,7 +3317,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2023-06-23",
     "bottlingDate": "2023-07-07",
-    "og": 0,
+    "og": 1.043,
     "fg": 1.012,
     "abv": 4.1,
     "ibu": 26,
@@ -3447,7 +3460,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2023-08-19",
     "bottlingDate": "2023-09-02",
-    "og": 0,
+    "og": 1.04,
     "fg": 1.009,
     "abv": 4.1,
     "ibu": null,
@@ -3824,7 +3837,7 @@ export const batches: Batch[] = [
     "status": "Completed",
     "brewDate": "2024-05-24",
     "bottlingDate": "2024-06-14",
-    "og": 1.046,
+    "og": 1.059,
     "fg": 1.017,
     "abv": 6,
     "ibu": 61,
