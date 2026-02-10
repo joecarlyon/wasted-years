@@ -29,8 +29,12 @@ export default function RecipePage({ params }: { params: { id: string } }) {
   const hasDetailedData =
     recipe.mashProfile || recipe.waterProfile || recipe.equipmentProfile
 
+  const recipeLower = recipe.name.toLowerCase()
   const matchingBatches = batches
-    .filter((b) => b.name.toLowerCase() === recipe.name.toLowerCase())
+    .filter((b) => {
+      const batchLower = b.name.toLowerCase()
+      return batchLower === recipeLower || batchLower.startsWith(recipeLower) || recipeLower.startsWith(batchLower)
+    })
     .sort((a, b) => a.batchNo - b.batchNo)
 
   return (
@@ -76,7 +80,14 @@ export default function RecipePage({ params }: { params: { id: string } }) {
             </div>
             {recipe.description && (
               <p className="mt-4 whitespace-pre-line text-text-secondary">
-                <LinkifyText text={recipe.description} linkPrefix={<span className="text-lavender-dark">Original Recipe: </span>} />
+                <LinkifyText
+                  text={recipe.description}
+                  linkPrefix={
+                    <span className="text-lavender-dark">
+                      Original Recipe:{' '}
+                    </span>
+                  }
+                />
               </p>
             )}
           </div>

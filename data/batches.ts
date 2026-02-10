@@ -1340,7 +1340,7 @@ export const batches: Batch[] = [
   },
   {
     "batchNo": 34,
-    "name": "Little Hefer",
+    "name": "Little Heffer",
     "style": "Unknown",
     "category": "ale",
     "brewer": "Joe & Tony",

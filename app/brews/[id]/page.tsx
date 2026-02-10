@@ -22,11 +22,7 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   }
 }
 
-export default function BrewDetailPage({
-  params,
-}: {
-  params: { id: string }
-}) {
+export default function BrewDetailPage({ params }: { params: { id: string } }) {
   const batch = batches.find((b) => b.batchNo.toString() === params.id)
 
   if (!batch) {
@@ -40,9 +36,17 @@ export default function BrewDetailPage({
     batch.yeast.length > 0 ||
     batch.og > 0
 
-  const matchingRecipe = recipes.find(
-    (r) => r.name.toLowerCase() === batch.name.toLowerCase()
-  )
+  const matchingRecipe = (() => {
+    const batchLower = batch.name.toLowerCase()
+    // Exact match
+    const exact = recipes.find((r) => r.name.toLowerCase() === batchLower)
+    if (exact) return exact
+    // Prefix match: batch name starts with recipe name or vice versa
+    return recipes.find((r) => {
+      const recipeLower = r.name.toLowerCase()
+      return batchLower.startsWith(recipeLower) || recipeLower.startsWith(batchLower)
+    })
+  })()
 
   const compEntries = competitions.filter((c) => c.batchNo === batch.batchNo)
   const placedEntry = compEntries.find((c) => c.placement)
@@ -84,6 +88,15 @@ export default function BrewDetailPage({
             <p className="text-lg uppercase tracking-wide text-accent">
               {batch.style}
             </p>
+            {matchingRecipe && (
+              <Link
+                href={`/recipes/${matchingRecipe.uuid}`}
+                className="mt-1 inline-flex items-center text-sm text-text-secondary transition-colors hover:text-accent"
+              >
+                Recipe: {matchingRecipe.name}{' '}
+                <span className="ml-1">&rarr;</span>
+              </Link>
+            )}
             {medal && placedEntry && (
               <div className="mt-3 inline-flex items-center gap-2">
                 <div
@@ -110,21 +123,24 @@ export default function BrewDetailPage({
           </div>
           <div className="flex flex-col items-end gap-2">
             <StatusBadge status={batch.status} />
-            {batch.source && (() => {
-              const setup = brewingSetups.find((s) => s.batchSource === batch.source)
-              return setup ? (
-                <Link
-                  href={`/equipment#${setup.id}`}
-                  className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary transition-colors hover:border-accent hover:text-accent"
-                >
-                  {setup.name}
-                </Link>
-              ) : (
-                <span className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary">
-                  {batch.source}
-                </span>
-              )
-            })()}
+            {batch.source &&
+              (() => {
+                const setup = brewingSetups.find(
+                  (s) => s.batchSource === batch.source
+                )
+                return setup ? (
+                  <Link
+                    href={`/equipment#${setup.id}`}
+                    className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary transition-colors hover:border-accent hover:text-accent"
+                  >
+                    {setup.name}
+                  </Link>
+                ) : (
+                  <span className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary">
+                    {batch.source}
+                  </span>
+                )
+              })()}
           </div>
         </div>
         <div className="mt-4 flex flex-wrap gap-6 text-sm text-text-secondary">
@@ -241,7 +257,9 @@ export default function BrewDetailPage({
             <Section title="Brewing Notes">
               <div className="space-y-2 text-sm text-text-secondary">
                 {batch.brewingNotes.split(' | ').map((note, i) => (
-                  <p key={i}><LinkifyText text={note} /></p>
+                  <p key={i}>
+                    <LinkifyText text={note} />
+                  </p>
                 ))}
               </div>
             </Section>
@@ -249,7 +267,9 @@ export default function BrewDetailPage({
           {batch.tastingNotes && (
             <Section title="Tasting Notes">
               <p className="text-sm italic text-text-secondary">
-                &ldquo;<LinkifyText text={batch.tastingNotes} />&rdquo;
+                &ldquo;
+                <LinkifyText text={batch.tastingNotes} />
+                &rdquo;
               </p>
             </Section>
           )}
@@ -313,18 +333,6 @@ export default function BrewDetailPage({
               </div>
             </div>
           ))}
-        </div>
-      )}
-
-      {/* Recipe link */}
-      {matchingRecipe && (
-        <div className="mb-8">
-          <Link
-            href={`/recipes/${matchingRecipe.uuid}`}
-            className="inline-flex items-center text-sm text-accent transition-colors hover:text-lavender"
-          >
-            View Recipe: {matchingRecipe.name} <span className="ml-2">&rarr;</span>
-          </Link>
         </div>
       )}
 
@@ -424,9 +432,7 @@ function JudgeCard({ judge }: { judge: JudgeScore }) {
 
       {/* Flaws */}
       {judge.flaws && (
-        <p className="mb-3 text-xs text-status-error">
-          Flaws: {judge.flaws}
-        </p>
+        <p className="mb-3 text-xs text-status-error">Flaws: {judge.flaws}</p>
       )}
 
       {/* Feedback */}
