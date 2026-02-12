@@ -2,7217 +2,7122 @@ import { Recipe } from '@/types'
 
 export const recipes: Recipe[] = [
   {
-    "id": 1,
-    "uuid": "46ff5357-46ff-46ff-46ff-46ff535746ff",
-    "name": "Bourbon Vanilla Porter",
-    "style": "Robust Porter",
-    "category": "ale",
-    "description": "",
-    "og": 1.078,
-    "fg": 1.02,
-    "abv": 7.6,
-    "ibu": 28,
-    "grains": [
-      "13.00 lb Brewers Malt 2-Row (Briess)",
-      "2.50 lb Munich Malt",
-      "2.00 lb Caramel/Crystal Malt - 60L",
-      "1.00 lb Caramel/Crystal Malt - 40L",
-      "1.00 lb Caramel/Crystal Malt -120L",
-      "1.00 lb Chocolate Malt"
+    id: 1,
+    uuid: '46ff5357-46ff-46ff-46ff-46ff535746ff',
+    name: 'Bourbon Vanilla Porter',
+    style: 'Robust Porter',
+    category: 'ale',
+    description: '',
+    og: 1.078,
+    fg: 1.02,
+    abv: 7.6,
+    ibu: 28,
+    grains: [
+      '13.00 lb Brewers Malt 2-Row (Briess)',
+      '2.50 lb Munich Malt',
+      '2.00 lb Caramel/Crystal Malt - 60L',
+      '1.00 lb Caramel/Crystal Malt - 40L',
+      '1.00 lb Caramel/Crystal Malt -120L',
+      '1.00 lb Chocolate Malt',
     ],
-    "hops": [
-      "0.8 oz Magnum (Dry Hop)",
-      "1.0 oz Goldings, East Kent (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2007-05-22",
-    "hopsDetail": [
+    hops: ['0.8 oz Magnum (Dry Hop)', '1.0 oz Goldings, East Kent (Dry Hop)'],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2007-05-22',
+    hopsDetail: [
       {
-        "name": "Magnum",
-        "amount": 0.8,
-        "use": "Dry Hop"
+        name: 'Magnum',
+        amount: 0.8,
+        use: 'Dry Hop',
       },
       {
-        "name": "Goldings, East Kent",
-        "amount": 1,
-        "use": "Dry Hop"
-      }
+        name: 'Goldings, East Kent',
+        amount: 1,
+        use: 'Dry Hop',
+      },
     ],
-    "batchSize": 5.5
+    batchSize: 5.5,
   },
   {
-    "id": 2,
-    "uuid": "0731e6b9-0731-4731-0731-0731e6b90731",
-    "name": "Daedric Prince RIS batch #2",
-    "style": "Russian Imperial Stout",
-    "category": "ale",
-    "description": "",
-    "og": 1.104,
-    "fg": 1.011,
-    "abv": 12.2,
-    "ibu": 86,
-    "grains": [
-      "18.00 lb Pale Malt - 2 Row (Cargill)",
-      "1.50 lb Black (Patent) Malt",
-      "1.00 lb Rye, Flaked",
-      "1.00 lb Special B Malt",
-      "0.50 lb Caramunich Malt",
-      "0.50 lb Chocolate Malt"
+    id: 2,
+    uuid: '0731e6b9-0731-4731-0731-0731e6b90731',
+    name: 'Daedric Prince RIS batch #2',
+    style: 'Russian Imperial Stout',
+    category: 'ale',
+    description: '',
+    og: 1.104,
+    fg: 1.011,
+    abv: 12.2,
+    ibu: 86,
+    grains: [
+      '18.00 lb Pale Malt - 2 Row (Cargill)',
+      '1.50 lb Black (Patent) Malt',
+      '1.00 lb Rye, Flaked',
+      '1.00 lb Special B Malt',
+      '0.50 lb Caramunich Malt',
+      '0.50 lb Chocolate Malt',
     ],
-    "hops": [
-      "1.0 oz Chinook (Boil)",
-      "1.0 oz Warrior (Boil)",
-      "1.0 oz Chinook (Boil)"
+    hops: [
+      '1.0 oz Chinook (Boil)',
+      '1.0 oz Warrior (Boil)',
+      '1.0 oz Chinook (Boil)',
     ],
-    "yeast": "Wyeast Labs 1028 London Ale Yeast",
-    "source": "beersmith",
-    "brewDate": "2012-11-18",
-    "hopsDetail": [
+    yeast: 'Wyeast Labs 1028 London Ale Yeast',
+    source: 'beersmith',
+    brewDate: '2012-11-18',
+    hopsDetail: [
       {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
       },
       {
-        "name": "Warrior",
-        "amount": 1,
-        "use": "Boil",
-        "time": 48
+        name: 'Warrior',
+        amount: 1,
+        use: 'Boil',
+        time: 48,
       },
       {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      }
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
     ],
-    "batchSize": 5
+    batchSize: 5,
   },
   {
-    "id": 3,
-    "uuid": "7c1b9e21-7c1b-4c1b-7c1b-7c1b9e217c1b",
-    "name": "Grollo Stout",
-    "style": "Russian Imperial Stout",
-    "category": "ale",
-    "description": "",
-    "og": 1.104,
-    "fg": 1.011,
-    "abv": 12.2,
-    "ibu": 79,
-    "grains": [
-      "14.00 lb Pale Malt - 2 Row (Cargill)",
-      "3.00 lb Chocolate Malt",
-      "2.00 lb Black (Patent) Malt",
-      "1.00 lb Rye, Flaked",
-      "1.00 lb Special B Malt"
+    id: 3,
+    uuid: '7c1b9e21-7c1b-4c1b-7c1b-7c1b9e217c1b',
+    name: 'Grollo Stout',
+    style: 'Russian Imperial Stout',
+    category: 'ale',
+    description: '',
+    og: 1.104,
+    fg: 1.011,
+    abv: 12.2,
+    ibu: 79,
+    grains: [
+      '14.00 lb Pale Malt - 2 Row (Cargill)',
+      '3.00 lb Chocolate Malt',
+      '2.00 lb Black (Patent) Malt',
+      '1.00 lb Rye, Flaked',
+      '1.00 lb Special B Malt',
     ],
-    "hops": [
-      "1.0 oz Chinook (Boil)",
-      "1.0 oz Warrior (Boil)",
-      "1.0 oz Chinook (Boil)"
+    hops: [
+      '1.0 oz Chinook (Boil)',
+      '1.0 oz Warrior (Boil)',
+      '1.0 oz Chinook (Boil)',
     ],
-    "yeast": "Wyeast Labs 1028 London Ale Yeast",
-    "source": "beersmith",
-    "brewDate": "2012-11-18",
-    "hopsDetail": [
+    yeast: 'Wyeast Labs 1028 London Ale Yeast',
+    source: 'beersmith',
+    brewDate: '2012-11-18',
+    hopsDetail: [
       {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 50
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 50,
       },
       {
-        "name": "Warrior",
-        "amount": 1,
-        "use": "Boil",
-        "time": 48
+        name: 'Warrior',
+        amount: 1,
+        use: 'Boil',
+        time: 48,
       },
       {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      }
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
     ],
-    "batchSize": 5
+    batchSize: 5,
   },
   {
-    "id": 4,
-    "uuid": "29ff9486-29ff-49ff-29ff-29ff948629ff",
-    "name": "Sanity's Demise",
-    "style": "Imperial IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.076,
-    "fg": 1.012,
-    "abv": 8.4,
-    "ibu": 80,
-    "grains": [
-      "14.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Rye Malt",
-      "1.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Caramel/Crystal Malt - 80L",
-      "1.00 lb Roasted Barley",
-      "0.50 lb Chocolate Malt",
-      "0.50 lb Wheat, Roasted"
+    id: 4,
+    uuid: '29ff9486-29ff-49ff-29ff-29ff948629ff',
+    name: "Sanity's Demise",
+    style: 'Imperial IPA',
+    category: 'ale',
+    description: '',
+    og: 1.076,
+    fg: 1.012,
+    abv: 8.4,
+    ibu: 80,
+    grains: [
+      '14.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Rye Malt',
+      '1.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Caramel/Crystal Malt - 80L',
+      '1.00 lb Roasted Barley',
+      '0.50 lb Chocolate Malt',
+      '0.50 lb Wheat, Roasted',
     ],
-    "hops": [
-      "0.5 oz Chinook (Boil)",
-      "0.5 oz Galaxy (Boil)",
-      "0.5 oz Galaxy (Boil)",
-      "0.5 oz Galaxy (Boil)",
-      "0.5 oz Warrior (Boil)",
-      "0.5 oz Chinook (Boil)",
-      "1.0 oz Galaxy (Dry Hop)",
-      "1.0 oz Willamette (Dry Hop)"
+    hops: [
+      '0.5 oz Chinook (Boil)',
+      '0.5 oz Galaxy (Boil)',
+      '0.5 oz Galaxy (Boil)',
+      '0.5 oz Galaxy (Boil)',
+      '0.5 oz Warrior (Boil)',
+      '0.5 oz Chinook (Boil)',
+      '1.0 oz Galaxy (Dry Hop)',
+      '1.0 oz Willamette (Dry Hop)',
     ],
-    "yeast": "Wyeast Labs 1028 London Ale Yeast",
-    "source": "beersmith",
-    "brewDate": "2013-03-30",
-    "hopsDetail": [
+    yeast: 'Wyeast Labs 1028 London Ale Yeast',
+    source: 'beersmith',
+    brewDate: '2013-03-30',
+    hopsDetail: [
       {
-        "name": "Chinook",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60
+        name: 'Chinook',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
       },
       {
-        "name": "Galaxy",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60
+        name: 'Galaxy',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
       },
       {
-        "name": "Galaxy",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 50
+        name: 'Galaxy',
+        amount: 0.5,
+        use: 'Boil',
+        time: 50,
       },
       {
-        "name": "Galaxy",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 30
+        name: 'Galaxy',
+        amount: 0.5,
+        use: 'Boil',
+        time: 30,
       },
       {
-        "name": "Warrior",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 15
+        name: 'Warrior',
+        amount: 0.5,
+        use: 'Boil',
+        time: 15,
       },
       {
-        "name": "Chinook",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 10
+        name: 'Chinook',
+        amount: 0.5,
+        use: 'Boil',
+        time: 10,
       },
       {
-        "name": "Galaxy",
-        "amount": 1,
-        "use": "Dry Hop"
+        name: 'Galaxy',
+        amount: 1,
+        use: 'Dry Hop',
       },
       {
-        "name": "Willamette",
-        "amount": 1,
-        "use": "Dry Hop"
-      }
+        name: 'Willamette',
+        amount: 1,
+        use: 'Dry Hop',
+      },
     ],
-    "batchSize": 5
+    batchSize: 5,
   },
   {
-    "id": 5,
-    "uuid": "02009bef-0200-4200-0200-02009bef0200",
-    "name": "Laufeyson",
-    "style": "Imperial IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 105,
-    "grains": [
-      "16.00 lb Pale Malt - 2 Row (Cargill)",
-      "2.30 lb Rye Malt",
-      "2.20 lb Caramel Malt - 40L (Cargill)",
-      "1.00 lb Honey Malt",
-      "1.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Oats, Flaked"
+    id: 5,
+    uuid: '02009bef-0200-4200-0200-02009bef0200',
+    name: 'Laufeyson',
+    style: 'Imperial IPA',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 105,
+    grains: [
+      '16.00 lb Pale Malt - 2 Row (Cargill)',
+      '2.30 lb Rye Malt',
+      '2.20 lb Caramel Malt - 40L (Cargill)',
+      '1.00 lb Honey Malt',
+      '1.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Oats, Flaked',
     ],
-    "hops": [
+    hops: [
       "2.0 oz Falconer's Flight 7C's Blend (Boil)",
-      "2.0 oz Simcoe (Boil)",
-      "1.0 oz Citra (Boil)",
-      "2.0 oz Mosaic (HBC 369) (Aroma)",
-      "0.5 oz Amarillo (Aroma)",
-      "3.0 oz Mosaic (HBC 369) (Dry Hop)",
-      "1.0 oz Amarillo (Dry Hop)"
+      '2.0 oz Simcoe (Boil)',
+      '1.0 oz Citra (Boil)',
+      '2.0 oz Mosaic (HBC 369) (Aroma)',
+      '0.5 oz Amarillo (Aroma)',
+      '3.0 oz Mosaic (HBC 369) (Dry Hop)',
+      '1.0 oz Amarillo (Dry Hop)',
     ],
-    "yeast": "White Labs WLP013 London Ale",
-    "source": "beersmith",
-    "brewDate": "2013-10-07",
-    "hopsDetail": [
+    yeast: 'White Labs WLP013 London Ale',
+    source: 'beersmith',
+    brewDate: '2013-10-07',
+    hopsDetail: [
       {
-        "name": "Falconer's Flight 7C's Blend",
-        "amount": 2,
-        "use": "Boil",
-        "time": 30
+        name: "Falconer's Flight 7C's Blend",
+        amount: 2,
+        use: 'Boil',
+        time: 30,
       },
       {
-        "name": "Simcoe",
-        "amount": 2,
-        "use": "Boil",
-        "time": 20
+        name: 'Simcoe',
+        amount: 2,
+        use: 'Boil',
+        time: 20,
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 20
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 20,
       },
       {
-        "name": "Mosaic",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 5
+        name: 'Mosaic',
+        amount: 2,
+        use: 'Aroma',
+        time: 5,
       },
       {
-        "name": "Amarillo",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 5
+        name: 'Amarillo',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 5,
       },
       {
-        "name": "Mosaic",
-        "amount": 3,
-        "use": "Dry Hop"
+        name: 'Mosaic',
+        amount: 3,
+        use: 'Dry Hop',
       },
       {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Dry Hop"
-      }
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Dry Hop',
+      },
     ],
-    "batchSize": 6.1
+    batchSize: 6.1,
   },
   {
-    "id": 6,
-    "uuid": "12d8906e-12d8-42d8-12d8-12d8906e12d8",
-    "name": "Loki's Ryse#2",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 71,
-    "grains": [
-      "10.00 lb Pale Malt - 2 Row (Cargill)",
-      "3.00 lb Rye Malt",
-      "1.00 lb Caramel Malt - 40L (Cargill)"
+    id: 6,
+    uuid: '12d8906e-12d8-42d8-12d8-12d8906e12d8',
+    name: "Loki's Ryse#2",
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 71,
+    grains: [
+      '10.00 lb Pale Malt - 2 Row (Cargill)',
+      '3.00 lb Rye Malt',
+      '1.00 lb Caramel Malt - 40L (Cargill)',
     ],
-    "hops": [
+    hops: [
       "1.0 oz Falconer's Flight 7C's Blend (Boil)",
-      "1.0 oz Citra (Boil)",
-      "2.0 oz Mosaic (HBC 369) (Aroma)",
-      "1.0 oz Amarillo (Aroma)",
-      "1.5 oz Mosaic (HBC 369) (Dry Hop)",
-      "0.5 oz Amarillo (Dry Hop)"
+      '1.0 oz Citra (Boil)',
+      '2.0 oz Mosaic (HBC 369) (Aroma)',
+      '1.0 oz Amarillo (Aroma)',
+      '1.5 oz Mosaic (HBC 369) (Dry Hop)',
+      '0.5 oz Amarillo (Dry Hop)',
     ],
-    "yeast": "Wyeast Labs 1318 London Ale III",
-    "source": "beersmith",
-    "brewDate": "2013-10-07",
-    "hopsDetail": [
+    yeast: 'Wyeast Labs 1318 London Ale III',
+    source: 'beersmith',
+    brewDate: '2013-10-07',
+    hopsDetail: [
       {
-        "name": "Falconer's Flight 7C's Blend",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
+        name: "Falconer's Flight 7C's Blend",
+        amount: 1,
+        use: 'Boil',
+        time: 30,
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 20
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 20,
       },
       {
-        "name": "Mosaic",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Mosaic",
-        "amount": 1.5,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 0.5,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 7,
-    "uuid": "25e4c355-25e4-45e4-25e4-25e4c35525e4",
-    "name": "Confirmed Kill IPA 2",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 5.3,
-    "ibu": 61,
-    "grains": [
-      "22.00 lb Pale Malt - 2 Row (Cargill)",
-      "2.00 lb Caramel/Crystal Malt - 40L",
-      "2.00 lb Victory Malt",
-      "1.00 lb Vienna Malt"
-    ],
-    "hops": [
-      "2.0 oz Equinox (Boil)",
-      "2.0 oz German Hull Melon (Aroma)",
-      "2.0 oz Mandarina Bavaria (Aroma)",
-      "2.0 oz Mosaic (Dry Hop)",
-      "2.0 oz Galena (Boil)",
-      "2.0 oz German Blanc (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2013-10-13",
-    "hopsDetail": [
+        name: 'Mosaic',
+        amount: 2,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Mosaic',
+        amount: 1.5,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Amarillo',
+        amount: 0.5,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 7,
+    uuid: '25e4c355-25e4-45e4-25e4-25e4c35525e4',
+    name: 'Confirmed Kill IPA 2',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 5.3,
+    ibu: 61,
+    grains: [
+      '22.00 lb Pale Malt - 2 Row (Cargill)',
+      '2.00 lb Caramel/Crystal Malt - 40L',
+      '2.00 lb Victory Malt',
+      '1.00 lb Vienna Malt',
+    ],
+    hops: [
+      '2.0 oz Equinox (Boil)',
+      '2.0 oz German Hull Melon (Aroma)',
+      '2.0 oz Mandarina Bavaria (Aroma)',
+      '2.0 oz Mosaic (Dry Hop)',
+      '2.0 oz Galena (Boil)',
+      '2.0 oz German Blanc (Boil)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2013-10-13',
+    hopsDetail: [
+      {
+        name: 'Equinox',
+        amount: 2,
+        use: 'Boil',
+        time: 20,
+      },
+      {
+        name: 'German Hull Melon',
+        amount: 2,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Mandarina Bavaria',
+        amount: 2,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Mosaic',
+        amount: 2,
+        use: 'Dry Hop',
+      },
       {
-        "name": "Equinox",
-        "amount": 2,
-        "use": "Boil",
-        "time": 20
+        name: 'Galena',
+        amount: 2,
+        use: 'Boil',
+        time: 50,
+      },
+      {
+        name: 'German Blanc',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 8,
+    uuid: '3035a803-3035-4035-3035-3035a8033035',
+    name: 'Confirmed Kill IPA',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 5.3,
+    ibu: 50,
+    grains: [
+      '22.00 lb Pale Malt - 2 Row (Cargill)',
+      '2.00 lb Caramel/Crystal Malt - 40L',
+      '2.00 lb Victory Malt',
+      '1.00 lb Vienna Malt',
+    ],
+    hops: [
+      '0.5 oz El Dorado (Boil)',
+      '2.0 oz Equinox (Boil)',
+      '2.5 oz El Dorado (Boil)',
+      '2.0 oz German Hull Melon (Aroma)',
+      '2.0 oz Mandarina Bavaria (Aroma)',
+      '4.0 oz El Dorado (Dry Hop)',
+      '2.0 oz Mosaic (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2013-10-13',
+    hopsDetail: [
+      {
+        name: 'El Dorado',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Equinox',
+        amount: 2,
+        use: 'Boil',
+        time: 20,
+      },
+      {
+        name: 'El Dorado',
+        amount: 2.5,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'German Hull Melon',
+        amount: 2,
+        use: 'Aroma',
+        time: 5,
       },
       {
-        "name": "German Hull Melon",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 5
+        name: 'Mandarina Bavaria',
+        amount: 2,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'El Dorado',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Mosaic',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 9,
+    uuid: '782e45be-782e-482e-782e-782e45be782e',
+    name: "Loki's Demise",
+    style: 'Imperial Stout',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 81,
+    grains: [
+      '18.00 lb Pale Malt - 2 Row (Cargill)',
+      '2.00 lb Caramel/Crystal Malt -120L',
+      '2.00 lb Rye Malt',
+      '1.00 lb Chocolate Malt',
+      '1.00 lb Chocolate Rye Malt',
+      '1.00 lb Oats, Flaked',
+      '0.75 lb Black (Patent) Malt',
+    ],
+    hops: [
+      '0.5 oz Warrior (Boil)',
+      '1.0 oz Chinook (Boil)',
+      '1.0 oz Simcoe (Boil)',
+      '1.0 oz Green Bullet (Boil)',
+      '1.0 oz Chinook (Dry Hop)',
+      '1.0 oz Simcoe (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2013-10-13',
+    hopsDetail: [
+      {
+        name: 'Warrior',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Simcoe',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Green Bullet',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
       },
       {
-        "name": "Mandarina Bavaria",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 5
+        name: 'Chinook',
+        amount: 1,
+        use: 'Dry Hop',
       },
       {
-        "name": "Mosaic",
-        "amount": 2,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Galena",
-        "amount": 2,
-        "use": "Boil",
-        "time": 50
-      },
-      {
-        "name": "German Blanc",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 8,
-    "uuid": "3035a803-3035-4035-3035-3035a8033035",
-    "name": "Confirmed Kill IPA",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 5.3,
-    "ibu": 50,
-    "grains": [
-      "22.00 lb Pale Malt - 2 Row (Cargill)",
-      "2.00 lb Caramel/Crystal Malt - 40L",
-      "2.00 lb Victory Malt",
-      "1.00 lb Vienna Malt"
-    ],
-    "hops": [
-      "0.5 oz El Dorado (Boil)",
-      "2.0 oz Equinox (Boil)",
-      "2.5 oz El Dorado (Boil)",
-      "2.0 oz German Hull Melon (Aroma)",
-      "2.0 oz Mandarina Bavaria (Aroma)",
-      "4.0 oz El Dorado (Dry Hop)",
-      "2.0 oz Mosaic (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2013-10-13",
-    "hopsDetail": [
-      {
-        "name": "El Dorado",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Equinox",
-        "amount": 2,
-        "use": "Boil",
-        "time": 20
-      },
-      {
-        "name": "El Dorado",
-        "amount": 2.5,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "German Hull Melon",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Mandarina Bavaria",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "El Dorado",
-        "amount": 4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Mosaic",
-        "amount": 2,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 9,
-    "uuid": "782e45be-782e-482e-782e-782e45be782e",
-    "name": "Loki's Demise",
-    "style": "Imperial Stout",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 81,
-    "grains": [
-      "18.00 lb Pale Malt - 2 Row (Cargill)",
-      "2.00 lb Caramel/Crystal Malt -120L",
-      "2.00 lb Rye Malt",
-      "1.00 lb Chocolate Malt",
-      "1.00 lb Chocolate Rye Malt",
-      "1.00 lb Oats, Flaked",
-      "0.75 lb Black (Patent) Malt"
-    ],
-    "hops": [
-      "0.5 oz Warrior (Boil)",
-      "1.0 oz Chinook (Boil)",
-      "1.0 oz Simcoe (Boil)",
-      "1.0 oz Green Bullet (Boil)",
-      "1.0 oz Chinook (Dry Hop)",
-      "1.0 oz Simcoe (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2013-10-13",
-    "hopsDetail": [
-      {
-        "name": "Warrior",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Green Bullet",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 10,
-    "uuid": "2942394d-2942-4942-2942-2942394d2942",
-    "name": "The Hero IPA",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 5.3,
-    "ibu": 52,
-    "grains": [
-      "11.00 lb Pale Malt - 2 Row (Cargill)",
-      "1.00 lb Caramel/Crystal Malt - 40L",
-      "1.00 lb Victory Malt",
-      "1.00 lb Vienna Malt"
-    ],
-    "hops": [
-      "0.5 oz El Dorado (Boil)",
-      "1.0 oz Equinox (Boil)",
-      "1.3 oz El Dorado (Boil)",
-      "1.0 oz German Hull Melon (Aroma)",
-      "1.0 oz Mandarina Bavaria (Aroma)",
-      "2.0 oz El Dorado (Dry Hop)",
-      "1.0 oz Mosaic (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2013-10-13",
-    "hopsDetail": [
-      {
-        "name": "El Dorado",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Equinox",
-        "amount": 1,
-        "use": "Boil",
-        "time": 20
-      },
-      {
-        "name": "El Dorado",
-        "amount": 1.3,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "German Hull Melon",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Mandarina Bavaria",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "El Dorado",
-        "amount": 2,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Mosaic",
-        "amount": 1,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 11,
-    "uuid": "653383a9-6533-4533-6533-653383a96533",
-    "name": "Here Goes Nothing (Hankies Leipzig Gose)",
-    "style": "Leipzig-Style Gose",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.007,
-    "abv": 5.1,
-    "ibu": 10,
-    "grains": [
-      "10.00 lb Wheat Malt, Pale (Weyermann)",
-      "7.00 lb Pilsner (2 Row) Bel",
-      "4.00 lb Acidulated (Weyermann)",
-      "1.00 lb Rice Hulls"
-    ],
-    "hops": [
-      "1.0 oz Santiam (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1007 German Ale",
-    "source": "beersmith",
-    "brewDate": "2013-11-03",
-    "hopsDetail": [
-      {
-        "name": "Santiam",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 12,
-    "uuid": "14ce7cb6-14ce-44ce-14ce-14ce7cb614ce",
-    "name": "Milk of the Poppy",
-    "style": "American-Style Imperial Stout",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 68,
-    "grains": [
-      "13.78 lb Pale Malt (2 Row) US",
-      "1.92 lb Black (Patent) Malt",
-      "1.90 lb Milk Sugar (Lactose)",
-      "1.44 lb Caramel/Crystal Malt - 80L",
-      "1.00 lb Oats, Flaked",
-      "0.96 lb Chocolate Malt"
-    ],
-    "hops": [
-      "2.0 oz Warrior (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1318 London Ale III",
-    "source": "beersmith",
-    "brewDate": "2014-06-12",
-    "hopsDetail": [
-      {
-        "name": "Warrior",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 13,
-    "uuid": "50938140-5093-4093-5093-509381405093",
-    "name": "Rye Porter",
-    "style": "Porter",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 37,
-    "grains": [
-      "10.00 lb Pilsen Malt 2-Row (Briess)",
-      "2.00 lb Rye, Flaked (Briess)",
-      "1.00 lb Caramel/Crystal Malt - 80L",
-      "0.75 lb Chocolate (Briess)",
-      "0.50 lb Black (Patent) Malt"
-    ],
-    "hops": [
-      "0.3 oz Warrior (Boil)",
-      "1.0 oz Chinook (Boil)",
-      "1.0 oz Columbus (Tomahawk) (Aroma)",
-      "2.0 oz Chinook (Dry Hop)",
-      "1.0 oz Columbus (Tomahawk) (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1187 Ringwood Ale",
-    "source": "beersmith",
-    "brewDate": "2014-08-04",
-    "hopsDetail": [
-      {
-        "name": "Warrior",
-        "amount": 0.3,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Columbus",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Chinook",
-        "amount": 2,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Columbus",
-        "amount": 1,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5.8
-  },
-  {
-    "id": 14,
-    "uuid": "4be75145-4be7-4be7-4be7-4be751454be7",
-    "name": "Hermaeus Mora",
-    "style": "American-Style Imperial Stout",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 64,
-    "grains": [
-      "20.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Rye, Flaked",
-      "1.70 lb Black (Patent) Malt",
-      "1.50 lb Corn Sugar (Dextrose)",
-      "1.10 lb Chocolate Malt",
-      "0.55 lb Caramel/Crystal Malt -120L",
-      "0.55 lb Caramunich Malt"
-    ],
-    "hops": [
-      "1.8 oz Warrior (Boil)",
-      "0.6 oz Northern Brewer (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1187 Ringwood Ale",
-    "source": "beersmith",
-    "brewDate": "2014-08-13",
-    "hopsDetail": [
-      {
-        "name": "Warrior",
-        "amount": 1.8,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Northern Brewer",
-        "amount": 0.6,
-        "use": "Boil",
-        "time": 30
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 15,
-    "uuid": "431a7427-431a-431a-431a-431a7427431a",
-    "name": "Pumpkin Brew 2014",
-    "style": "Spice, Herb, or Vegetable Beer",
-    "category": "ale",
-    "description": "",
-    "og": 1.075,
-    "fg": 1.011,
-    "abv": 8.4,
-    "ibu": 24,
-    "grains": [
-      "16.00 lb Pilsen Malt 2-Row (Briess)",
-      "1.00 lb Caramel Malt - 60L (Briess)",
-      "1.00 lb Oats, Flaked",
-      "1.00 lb Vienna Malt",
-      "1.00 lb Wheat, Torrified",
-      "1.00 lb Wheat, White (Cargill)"
-    ],
-    "hops": [
-      "1.0 oz Cluster (Boil)",
-      "1.0 oz East Kent Goldings (EKG) (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1187 Ringwood Ale",
-    "source": "beersmith",
-    "brewDate": "2014-09-18",
-    "hopsDetail": [
-      {
-        "name": "Cluster",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "East Kent Goldings",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 16,
-    "uuid": "46cab60b-46ca-46ca-46ca-46cab60b46ca",
-    "name": "Gungnir",
-    "style": "American Barley Wine",
-    "category": "ale",
-    "description": "",
-    "og": 1.1,
-    "fg": 1.01,
-    "abv": 11.8,
-    "ibu": 101,
-    "grains": [
-      "23.80 lb Pilsen Malt 2-Row (Briess)",
-      "2.80 lb Caramel Malt - 60L (Briess)",
-      "1.40 lb Rye Malt"
-    ],
-    "hops": [
-      "1.0 oz Warrior (Boil)",
-      "1.0 oz Simcoe (Boil)",
-      "1.0 oz Chinook (Boil)",
-      "1.0 oz Columbus (Tomahawk) (Boil)",
-      "0.5 oz Chinook (Boil)",
-      "0.5 oz Columbus (Tomahawk) (Boil)",
-      "0.5 oz Simcoe (Boil)",
-      "0.5 oz Chinook (Aroma)",
-      "0.5 oz Columbus (Tomahawk) (Aroma)",
-      "0.5 oz Simcoe (Aroma)",
-      "2.0 oz Chinook (Dry Hop)",
-      "1.0 oz Columbus (Tomahawk) (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1272 American Ale II",
-    "source": "beersmith",
-    "brewDate": "2014-10-13",
-    "hopsDetail": [
-      {
-        "name": "Warrior",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Columbus",
-        "amount": 1,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Chinook",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Columbus",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Simcoe",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Chinook",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Columbus",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Simcoe",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Chinook",
-        "amount": 2,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Columbus",
-        "amount": 1,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 17,
-    "uuid": "3fd94e26-3fd9-4fd9-3fd9-3fd94e263fd9",
-    "name": "#TonyCantHang",
-    "style": "American Barley Wine",
-    "category": "ale",
-    "description": "",
-    "og": 1.1,
-    "fg": 1.01,
-    "abv": 11.8,
-    "ibu": 58,
-    "grains": [
-      "23.00 lb Pilsen Malt 2-Row (Briess)",
-      "3.00 lb Caramel Malt - 60L (Briess)",
-      "2.00 lb Rye Malt"
-    ],
-    "hops": [
-      "1.0 oz Simcoe (Boil)",
-      "1.0 oz Chinook (Boil)",
-      "0.5 oz Chinook (Boil)",
-      "0.5 oz Columbus (Tomahawk) (Boil)",
-      "0.5 oz Simcoe (Boil)",
-      "0.5 oz Chinook (Aroma)",
-      "0.5 oz Columbus (Tomahawk) (Aroma)",
-      "0.5 oz Simcoe (Aroma)",
-      "2.0 oz Chinook (Dry Hop)",
-      "1.0 oz Simcoe (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1272 American Ale II",
-    "source": "beersmith",
-    "brewDate": "2014-10-13",
-    "hopsDetail": [
-      {
-        "name": "Simcoe",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Chinook",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Columbus",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Simcoe",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Chinook",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Columbus",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Simcoe",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Chinook",
-        "amount": 2,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5.5
-  },
-  {
-    "id": 18,
-    "uuid": "48351be2-4835-4835-4835-48351be24835",
-    "name": "Mischevious Bastard",
-    "style": "Old Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.012,
-    "abv": 5,
-    "ibu": 59,
-    "grains": [
-      "15.00 lb Pale Malt, Maris Otter",
-      "2.00 lb Special B Malt"
-    ],
-    "hops": [
-      "0.5 oz Chinook (Boil)",
-      "0.5 oz Chinook (Boil)",
-      "1.0 oz Chinook (Boil)",
-      "1.0 oz Chinook (Aroma)"
-    ],
-    "yeast": "Danstar - Nottingham",
-    "source": "beersmith",
-    "brewDate": "2015-01-04",
-    "hopsDetail": [
-      {
-        "name": "Chinook",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 90
-      },
-      {
-        "name": "Chinook",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 45
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 5
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 19,
-    "uuid": "1662d09f-1662-4662-1662-1662d09f1662",
-    "name": "Bitches Always be Weizen",
-    "style": "Weizen/Weissbier",
-    "category": "ale",
-    "description": "",
-    "og": 1.038,
-    "fg": 1.01,
-    "abv": 3.7,
-    "ibu": 12,
-    "grains": [
-      "8.00 lb Pale Malt (2 Row) US",
-      "8.00 lb Wheat Malt, Pale (Weyermann)",
-      "1.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Caramel Malt - 20L (Briess)",
-      "1.00 lb Wheat Malt, Ger"
-    ],
-    "hops": [
-      "1.0 oz Hallertau (Boil)",
-      "1.0 oz Tettnang (Boil)"
-    ],
-    "yeast": "Wyeast Labs 3068 Weihenstephan Weizen",
-    "source": "beersmith",
-    "brewDate": "2015-01-10",
-    "hopsDetail": [
-      {
-        "name": "Hallertau",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Tettnang",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      }
-    ],
-    "batchSize": 10
-  },
-  {
-    "id": 20,
-    "uuid": "5ad0878c-5ad0-4ad0-5ad0-5ad0878c5ad0",
-    "name": "Lemon Lime Hefe",
-    "style": "Weizen/Weissbier",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 19,
-    "grains": [
-      "12.00 lb Pale Malt (2 Row) US",
-      "8.00 lb White Wheat Malt",
-      "2.00 lb Vienna Malt"
-    ],
-    "hops": [
-      "0.5 oz Motueka (Boil)",
-      "0.5 oz Motueka (Boil)",
-      "0.5 oz Sorachi Ace (Boil)",
-      "0.5 oz Sorachi Ace (Boil)"
-    ],
-    "yeast": "White Labs WLP380 Hefeweizen IV Ale",
-    "source": "beersmith",
-    "brewDate": "2015-01-26",
-    "hopsDetail": [
-      {
-        "name": "Motueka",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Motueka",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 20
-      },
-      {
-        "name": "Sorachi Ace",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 20
-      },
-      {
-        "name": "Sorachi Ace",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 7
-      }
-    ],
-    "batchSize": 10
-  },
-  {
-    "id": 21,
-    "uuid": "022cc871-022c-422c-022c-022cc871022c",
-    "name": "White Knight Wit",
-    "style": "Witbier",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 21,
-    "grains": [
-      "7.00 lb Pale Malt (2 Row) Bel",
-      "2.00 lb White Wheat Malt",
-      "1.00 lb Wheat Malt, Bel"
-    ],
-    "hops": [
-      "1.0 oz Motueka (Boil)",
-      "1.0 oz Ahtanum (Aroma)"
-    ],
-    "yeast": "Not specified",
-    "source": "beersmith",
-    "brewDate": "2015-02-02",
-    "hopsDetail": [
-      {
-        "name": "Motueka",
-        "amount": 1,
-        "use": "Boil",
-        "time": 25
-      },
-      {
-        "name": "Ahtanum",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 5
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 22,
-    "uuid": "20ee907b-20ee-40ee-20ee-20ee907b20ee",
-    "name": "Basic Blonde",
-    "style": "Belgian Blond Ale",
-    "category": "ale",
-    "description": "Tony: Delicious",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 29,
-    "grains": [
-      "15.00 lb Pale Malt (2 Row) US",
-      "8.00 lb Wheat Malt, Bel",
-      "1.50 lb Wheat, Flaked",
-      "1.50 lb Honey Malt",
-      "1.00 lb Carafoam",
-      "1.00 lb Candi Sugar, Clear"
-    ],
-    "hops": [
-      "2.0 oz Hallertauer (Boil)",
-      "2.0 oz East Kent Goldings (EKG) (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1084 Irish Ale",
-    "source": "beersmith",
-    "brewDate": "2015-02-26",
-    "hopsDetail": [
-      {
-        "name": "Hallertauer",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "East Kent Goldings",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 23,
-    "uuid": "29649724-2964-4964-2964-296497242964",
-    "name": "Dumb Blonde 10",
-    "style": "Blonde Ale",
-    "category": "ale",
-    "description": "Tony: Delicious",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 27,
-    "grains": [
-      "15.00 lb Pale Malt (2 Row) US",
-      "9.00 lb Wheat Malt, Bel",
-      "2.00 lb Aromatic Malt",
-      "2.00 lb Carafoam",
-      "2.00 lb Honey Malt",
-      "1.50 lb Wheat, Flaked"
-    ],
-    "hops": [
-      "2.0 oz East Kent Goldings (EKG) (Boil)",
-      "2.0 oz Hallertauer (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1084 Irish Ale",
-    "source": "beersmith",
-    "brewDate": "2015-02-26",
-    "hopsDetail": [
-      {
-        "name": "East Kent Goldings",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Hallertauer",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 24,
-    "uuid": "00b4bb4d-00b4-40b4-00b4-00b4bb4d00b4",
-    "name": "GaribaldiHead 2",
-    "style": "American Wheat Beer",
-    "category": "ale",
-    "description": "Tony: Delicious",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 37,
-    "grains": [
-      "11.00 lb Wheat Malt, Bel",
-      "10.00 lb Pale Malt (2 Row) US",
-      "1.50 lb Aromatic Malt"
-    ],
-    "hops": [
-      "1.0 oz Amarillo (Boil)",
-      "1.0 oz Amarillo (Boil)",
-      "1.0 oz Amarillo (Boil)",
-      "2.5 oz Amarillo (Aroma)",
-      "2.0 oz Amarillo (Aroma)",
-      "3.0 oz Amarillo (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1968 London ESB Ale",
-    "source": "beersmith",
-    "brewDate": "2015-03-06",
-    "hopsDetail": [
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Amarillo",
-        "amount": 2.5,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Amarillo",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 1
-      },
-      {
-        "name": "Amarillo",
-        "amount": 3,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 10
-  },
-  {
-    "id": 25,
-    "uuid": "3689a985-3689-4689-3689-3689a9853689",
-    "name": "GaribaldiHead",
-    "style": "American Amber Ale",
-    "category": "ale",
-    "description": "Tony: Delicious",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 20,
-    "grains": [
-      "12.00 lb Wheat Malt, Bel",
-      "10.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Caravienne Malt"
-    ],
-    "hops": [
-      "0.5 oz Amarillo (Boil)",
-      "1.0 oz Amarillo (Boil)",
-      "2.5 oz Amarillo (Aroma)",
-      "2.0 oz Amarillo (Aroma)",
-      "3.0 oz Amarillo (Dry Hop)"
-    ],
-    "yeast": "White Labs WLP002 English Ale",
-    "source": "beersmith",
-    "brewDate": "2015-03-06",
-    "hopsDetail": [
-      {
-        "name": "Amarillo",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Amarillo",
-        "amount": 2.5,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Amarillo",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 1
-      },
-      {
-        "name": "Amarillo",
-        "amount": 3,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 10
-  },
-  {
-    "id": 26,
-    "uuid": "0547e758-0547-4547-0547-0547e7580547",
-    "name": "Hoppy Session Wheat Beer - 4/6/19",
-    "style": "American Wheat Beer",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 21,
-    "grains": [
-      "9.00 lb Pale Malt (2 Row) US",
-      "9.00 lb White Wheat Malt",
-      "1.50 lb Oats, Flaked",
-      "1.50 lb Barley, Flaked",
-      "1.00 lb Cara-Pils/Dextrine"
-    ],
-    "hops": [
-      "2.0 oz Centennial (Boil)",
-      "4.0 oz Citra (Aroma)",
-      "4.0 oz Mosaic (HBC 369) (Aroma)",
-      "2.0 oz Citra (Dry Hop)",
-      "2.0 oz Mosaic (HBC 369) (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2015-03-06",
-    "hopsDetail": [
-      {
-        "name": "Centennial",
-        "amount": 2,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "use": "Aroma",
-        "time": 0
-      },
-      {
-        "name": "Mosaic",
-        "amount": 4,
-        "use": "Aroma",
-        "time": 0
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Mosaic",
-        "amount": 2,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11.5
-  },
-  {
-    "id": 27,
-    "uuid": "309a000d-309a-409a-309a-309a000d309a",
-    "name": "Go Fuck Yourself IPA",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 85,
-    "grains": [
-      "22.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Cara-Pils/Dextrine",
-      "2.00 lb Caramel/Crystal Malt - 20L",
-      "1.00 lb Rye, Flaked",
-      "1.00 lb Caramel/Crystal Malt - 40L"
-    ],
-    "hops": [
-      "4.0 oz Cascade (Boil)",
-      "1.0 oz Green Bullet (Boil)",
-      "1.0 oz Calypso (Boil)",
-      "1.0 oz Calypso (Aroma)",
-      "3.0 oz Azacca (Dry Hop)",
-      "4.0 oz Cascade (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2015-03-16",
-    "hopsDetail": [
-      {
-        "name": "Cascade",
-        "amount": 4,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Green Bullet",
-        "amount": 1,
-        "use": "Boil",
-        "time": 45
-      },
-      {
-        "name": "Calypso",
-        "amount": 1,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Calypso",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Azacca",
-        "amount": 3,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Cascade",
-        "amount": 4,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 28,
-    "uuid": "3411cdb3-3411-4411-3411-3411cdb33411",
-    "name": "Mosiac Dust",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 62,
-    "grains": [
-      "22.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Caramunich Malt",
-      "1.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Caramel/Crystal Malt - 60L",
-      "1.00 lb Melanoiden Malt"
-    ],
-    "hops": [
-      "1.0 oz Mosaic (HBC 369) (Boil)",
-      "2.0 oz Mosaic (HBC 369) (Boil)",
-      "2.0 oz Mosaic (HBC 369) (Boil)",
-      "3.0 oz Mosaic (HBC 369) (Aroma)",
-      "4.0 oz Mosaic (HBC 369) (Dry Hop)",
-      "1.0 oz Mosaic (HBC 369) (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1272 American Ale II",
-    "source": "beersmith",
-    "brewDate": "2015-03-16",
-    "hopsDetail": [
-      {
-        "name": "Mosaic",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Mosaic",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Mosaic",
-        "amount": 2,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Mosaic",
-        "amount": 3,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Mosaic",
-        "amount": 4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Mosaic",
-        "amount": 1,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 29,
-    "uuid": "4688b472-4688-4688-4688-4688b4724688",
-    "name": "Overlord",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 97,
-    "grains": [
-      "22.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Cara-Pils/Dextrine",
-      "2.00 lb Caramel/Crystal Malt - 20L",
-      "1.00 lb Rye, Flaked"
-    ],
-    "hops": [
-      "1.0 oz Citra (Boil)",
-      "2.0 oz Citra (Boil)",
-      "2.0 oz Citra (Boil)",
-      "2.0 oz Citra (Boil)",
-      "3.0 oz Citra (Aroma)",
-      "2.0 oz Citra (Aroma)",
-      "4.0 oz Citra (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2015-03-16",
-    "hopsDetail": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 0
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 10.3,
-    "artwork": "/images/recipes/overlord.jpg"
-  },
-  {
-    "id": 30,
-    "uuid": "5927c6d9-5927-4927-5927-5927c6d95927",
-    "name": "Zombie Dust",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "Tony: Was okay",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "grains": [
-      "22.00 lb Pale Malt (2 Row) US",
-      "2.50 lb Caramunich Malt",
-      "1.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Caramel/Crystal Malt - 60L",
-      "1.00 lb Melanoiden Malt"
-    ],
-    "hops": [
-      "1.0 oz Citra (Boil)",
-      "2.0 oz Citra (Boil)",
-      "2.0 oz Citra (Boil)",
-      "3.0 oz Citra (Aroma)",
-      "4.0 oz Citra (Dry Hop)",
-      "4.0 oz Citra (Dry Hop)"
-    ],
-    "yeast": "White Labs WLP002 English Ale",
-    "source": "beersmith",
-    "brewDate": "2015-03-16",
-    "hopsDetail": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 31,
-    "uuid": "014d4bba-014d-414d-014d-014d4bba014d",
-    "name": "Milk Stout-OG",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "description": "Tony: Delicious! FUCKING DELICIOUS",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 5.3,
-    "ibu": 17,
-    "grains": [
-      "15.46 lb Pale Malt (2 Row) US",
-      "2.21 lb Milk Sugar (Lactose)",
-      "2.15 lb Roasted Barley",
-      "1.66 lb Munich 10L (Briess)",
-      "1.66 lb Barley, Flaked (Briess)",
-      "1.62 lb Caramel Malt - 60L (Briess)",
-      "1.62 lb Chocolate Malt",
-      "1.10 lb Oats, Flaked"
-    ],
-    "hops": [
-      "0.8 oz Magnum (Boil)",
-      "2.2 oz Goldings, East Kent (Boil)"
-    ],
-    "yeast": "DCL/Fermentis US-05 Safale American",
-    "source": "beersmith",
-    "brewDate": "2015-03-25",
-    "hopsDetail": [
-      {
-        "name": "Magnum",
-        "amount": 0.8,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2.2,
-        "use": "Boil",
-        "time": 10
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 32,
-    "uuid": "702a2c03-702a-402a-702a-702a2c03702a",
-    "name": "Moo Moo Canoe",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 5.3,
-    "ibu": 24,
-    "grains": [
-      "15.00 lb Pale Malt (2 Row) US",
-      "3.00 lb Milk Sugar (Lactose)",
-      "2.00 lb Barley, Flaked (Briess)",
-      "2.00 lb Caramel Malt - 60L (Briess)",
-      "2.00 lb Chocolate Malt",
-      "2.00 lb Munich 10L (Briess)",
-      "2.00 lb Roasted Barley",
-      "1.00 lb Oats, Flaked"
-    ],
-    "hops": [
-      "1.0 oz Magnum (Boil)",
-      "2.0 oz Goldings, East Kent (Boil)"
-    ],
-    "yeast": "DCL/Fermentis US-05 Safale American",
-    "source": "beersmith",
-    "brewDate": "2015-03-25",
-    "hopsDetail": [
-      {
-        "name": "Magnum",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      }
-    ],
-    "batchSize": 11,
-    "artwork": "/images/recipes/moomooCanoe.jpg"
-  },
-  {
-    "id": 33,
-    "uuid": "04d0983f-04d0-44d0-04d0-04d0983f04d0",
-    "name": "Raging Red Head (updated malt)",
-    "style": "Irish Red Ale",
-    "category": "ale",
-    "description": "Tony: Good, faded after time",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 23,
-    "grains": [
-      "18.00 lb Pale Malt (2 Row) US",
-      "1.00 lb Special B Malt",
-      "1.00 lb Aromatic Malt",
-      "1.00 lb Munich Malt",
-      "1.00 lb Cara-Pils/Dextrine"
-    ],
-    "hops": [
-      "2.0 oz Crystal (Boil)",
-      "2.0 oz Cascade (Boil)"
-    ],
-    "yeast": "Not specified",
-    "source": "beersmith",
-    "brewDate": "2015-04-09",
-    "hopsDetail": [
-      {
-        "name": "Crystal",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Cascade",
-        "amount": 2,
-        "use": "Boil",
-        "time": 30
-      }
-    ],
-    "batchSize": 10,
-    "artwork": "/images/recipes/red_strawberry.jpg"
-  },
-  {
-    "id": 34,
-    "uuid": "4d61e8f5-4d61-4d61-4d61-4d61e8f54d61",
-    "name": "Redheads are the best",
-    "style": "Red IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 51,
-    "grains": [
-      "19.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Carared",
-      "1.00 lb Caramel Rye (Weyermann)",
-      "1.00 lb Special B Malt"
-    ],
-    "hops": [
-      "2.0 oz Columbus (Tomahawk) (Boil)",
-      "1.0 oz Cascade (Boil)",
-      "1.0 oz Pacific Jade (Aroma)",
-      "1.0 oz Pacific Jade (Boil)",
-      "2.0 oz Pacific Jade (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2015-04-09",
-    "hopsDetail": [
-      {
-        "name": "Columbus",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Cascade",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Pacific Jade",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 5
-      },
-      {
-        "name": "Pacific Jade",
-        "amount": 1,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Pacific Jade",
-        "amount": 2,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 10
-  },
-  {
-    "id": 35,
-    "uuid": "7a5d2357-7a5d-4a5d-7a5d-7a5d23577a5d",
-    "name": "Rasberry Saurus-Rex",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 5.3,
-    "ibu": 39,
-    "grains": [
-      "16.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Cara-Pils/Dextrine",
-      "2.00 lb Caramel Malt - 20L (Briess)",
-      "2.00 lb Vienna Malt",
-      "2.00 lb Wheat Malt, Bel",
-      "1.00 lb Caramel Malt - 40L (Briess)"
-    ],
-    "hops": [
-      "1.0 oz Citra (Boil)",
-      "1.0 oz Citra (Boil)",
-      "1.0 oz Amarillo (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2015-04-18",
-    "hopsDetail": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 36,
-    "uuid": "1bf95e4c-1bf9-4bf9-1bf9-1bf95e4c1bf9",
-    "name": "Strawberry Saurus-Rex",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "Tony: Delicious",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 5.3,
-    "ibu": 39,
-    "grains": [
-      "16.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Carafoam",
-      "2.00 lb Caramel Malt - 20L (Briess)",
-      "2.00 lb Vienna Malt",
-      "2.00 lb Wheat Malt, Bel",
-      "1.00 lb Caramel Malt - 40L (Briess)"
-    ],
-    "hops": [
-      "1.0 oz Citra (Boil)",
-      "1.0 oz Citra (Boil)",
-      "1.0 oz Amarillo (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1272 American Ale II",
-    "source": "beersmith",
-    "brewDate": "2015-04-18",
-    "hopsDetail": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      }
-    ],
-    "batchSize": 11,
-    "artwork": "/images/recipes/red_strawberry.jpg"
-  },
-  {
-    "id": 37,
-    "uuid": "044b9307-044b-444b-044b-044b9307044b",
-    "name": "Little Sumpin Sumpin",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 26,
-    "grains": [
-      "18.03 lb Pale Malt (2 Row) US",
-      "13.57 lb Wheat Malt, Bel",
-      "4.07 lb Wheat, Torrified",
-      "0.04 lb Toasted Malt"
-    ],
-    "hops": [
-      "0.7 oz Nugget (Boil)",
-      "0.1 oz Horizon (Boil)",
-      "0.1 oz Summit (Boil)",
-      "0.5 oz Willamette (Boil)",
-      "1.8 oz Santiam (Boil)",
-      "0.6 oz Willamette (Boil)",
-      "1.9 oz Cascade (Dry Hop)",
-      "1.9 oz Centennial (Dry Hop)",
-      "1.9 oz Chinook (Dry Hop)",
-      "1.9 oz Simcoe (Dry Hop)",
-      "1.4 oz Amarillo (Dry Hop)",
-      "1.2 oz Columbus (Tomahawk) (Dry Hop)"
-    ],
-    "yeast": "White Labs WLP002 English Ale",
-    "source": "beersmith",
-    "brewDate": "2015-04-20",
-    "hopsDetail": [
-      {
-        "name": "Nugget",
-        "amount": 0.7,
-        "use": "Boil",
-        "time": 90
-      },
-      {
-        "name": "Horizon",
-        "amount": 0.1,
-        "use": "Boil",
-        "time": 90
-      },
-      {
-        "name": "Summit",
-        "amount": 0.1,
-        "use": "Boil",
-        "time": 90
-      },
-      {
-        "name": "Willamette",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 45
-      },
-      {
-        "name": "Santiam",
-        "amount": 1.8,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Willamette",
-        "amount": 0.6,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Cascade",
-        "amount": 1.9,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Centennial",
-        "amount": 1.9,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Chinook",
-        "amount": 1.9,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1.9,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1.4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Columbus",
-        "amount": 1.2,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 38,
-    "uuid": "411962b6-4119-4119-4119-411962b64119",
-    "name": "Oberon",
-    "style": "American Wheat or Rye Beer",
-    "category": "ale",
-    "description": "Tony: This was okay",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 15,
-    "grains": [
-      "13.00 lb Pale Malt (2 Row) US",
-      "9.00 lb White Wheat Malt",
-      "1.00 lb Cara-Pils/Dextrine"
-    ],
-    "hops": [
-      "2.0 oz Saaz (Boil)",
-      "2.0 oz Saaz (Boil)",
-      "2.0 oz Cascade (Dry Hop)",
-      "1.0 oz Saaz (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1010 American Wheat Ale",
-    "source": "beersmith",
-    "brewDate": "2015-04-26",
-    "hopsDetail": [
-      {
-        "name": "Saaz",
-        "amount": 2,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Saaz",
-        "amount": 2,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Cascade",
-        "amount": 2,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Saaz",
-        "amount": 1,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 39,
-    "uuid": "6ae2246b-6ae2-4ae2-6ae2-6ae2246b6ae2",
-    "name": "Invade Canada Redux",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "Tony: DUMPED",
-    "og": 1.052,
-    "fg": 1.01,
-    "abv": 5.5,
-    "ibu": 53,
-    "grains": [
-      "19.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Caramel/Crystal Malt - 40L",
-      "1.00 lb Toasted Malt",
-      "1.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Rye Malt"
-    ],
-    "hops": [
-      "1.0 oz Warrior (Boil)",
-      "2.0 oz Motueka (Boil)",
-      "1.0 oz Nelson Sauvin (Boil)",
-      "1.0 oz Motueka (Boil)",
-      "3.0 oz Motueka (Aroma)"
-    ],
-    "yeast": "Wyeast Labs 1272 American Ale II",
-    "source": "beersmith",
-    "brewDate": "2015-05-31",
-    "hopsDetail": [
-      {
-        "name": "Warrior",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Motueka",
-        "amount": 2,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Nelson Sauvin",
-        "amount": 1,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Motueka",
-        "amount": 1,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Motueka",
-        "amount": 3,
-        "use": "Aroma",
-        "time": 5
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 40,
-    "uuid": "6419ff1f-6419-4419-6419-6419ff1f6419",
-    "name": "Invade Canada",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "Tony: DUMPED",
-    "og": 1.052,
-    "fg": 1.01,
-    "abv": 5.5,
-    "ibu": 36,
-    "grains": [
-      "19.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Caramel/Crystal Malt - 40L",
-      "1.00 lb Cara-Pils/Dextrine"
-    ],
-    "hops": [
-      "2.0 oz Cascade (Boil)",
-      "1.0 oz Cascade (Boil)",
-      "1.0 oz Simcoe (Boil)",
-      "2.0 oz Nelson Sauvin (Dry Hop)",
-      "4.0 oz Amarillo (Dry Hop)",
-      "2.0 oz Galaxy (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1272 American Ale II",
-    "source": "beersmith",
-    "brewDate": "2015-05-31",
-    "hopsDetail": [
-      {
-        "name": "Cascade",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Cascade",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Nelson Sauvin",
-        "amount": 2,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Galaxy",
-        "amount": 2,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 41,
-    "uuid": "195a2c3b-195a-495a-195a-195a2c3b195a",
-    "name": "Withered Imperial Stout 3",
-    "style": "Imperial Stout",
-    "category": "ale",
-    "description": "Tony: GOOD",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 46,
-    "grains": [
-      "19.00 lb Pale Malt (2 Row) US",
-      "3.00 lb Light Dry Extract",
-      "2.00 lb Chocolate Malt",
-      "1.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Roasted Barley",
-      "1.00 lb Rye Malt",
-      "1.00 lb Special B Malt",
-      "0.50 lb Black (Patent) Malt"
-    ],
-    "hops": [
-      "2.0 oz Challenger (Boil)",
-      "2.0 oz Goldings, B.C. (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1028 London Ale Yeast",
-    "source": "beersmith",
-    "brewDate": "2015-06-07",
-    "hopsDetail": [
-      {
-        "name": "Challenger",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Goldings, B.C.",
-        "amount": 2,
-        "use": "Boil",
-        "time": 30
-      }
-    ],
-    "batchSize": 5.5
-  },
-  {
-    "id": 42,
-    "uuid": "0f4efd74-0f4e-4f4e-0f4e-0f4efd740f4e",
-    "name": "Withered Imperial Stout - Mashmallow",
-    "style": "Imperial Stout",
-    "category": "ale",
-    "description": "Tony: GOOD",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 47,
-    "grains": [
-      "19.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Chocolate Malt",
-      "1.00 lb Black (Patent) Malt",
-      "1.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Roasted Barley",
-      "1.00 lb Special B Malt"
-    ],
-    "hops": [
-      "2.0 oz Challenger (Boil)",
-      "2.0 oz Goldings, B.C. (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1028 London Ale Yeast",
-    "source": "beersmith",
-    "brewDate": "2015-06-07",
-    "hopsDetail": [
-      {
-        "name": "Challenger",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Goldings, B.C.",
-        "amount": 2,
-        "use": "Boil",
-        "time": 30
-      }
-    ],
-    "batchSize": 5.5
-  },
-  {
-    "id": 43,
-    "uuid": "7608648c-7608-4608-7608-7608648c7608",
-    "name": "Withered Imperial Stout OG",
-    "style": "Imperial Stout",
-    "category": "ale",
-    "description": "Tony: GOOD",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 47,
-    "grains": [
-      "19.00 lb Pale Malt (2 Row) US",
-      "2.00 lb Chocolate Malt",
-      "1.00 lb Black (Patent) Malt",
-      "1.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Roasted Barley",
-      "1.00 lb Special B Malt"
-    ],
-    "hops": [
-      "2.0 oz Challenger (Boil)",
-      "2.0 oz Goldings, B.C. (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1028 London Ale Yeast",
-    "source": "beersmith",
-    "brewDate": "2015-06-07",
-    "hopsDetail": [
-      {
-        "name": "Challenger",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Goldings, B.C.",
-        "amount": 2,
-        "use": "Boil",
-        "time": 30
-      }
-    ],
-    "batchSize": 5.5
-  },
-  {
-    "id": 44,
-    "uuid": "781dcec6-781d-481d-781d-781dcec6781d",
-    "name": "Little Heffer 2",
-    "style": "Weizen/Weissbier",
-    "category": "ale",
-    "description": "Tony: Very good, bananay",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 14,
-    "grains": [
-      "15.50 lb Wheat Malt, Ger",
-      "8.00 lb Pilsner (2 Row) Ger"
-    ],
-    "hops": [
-      "0.5 oz Mandarina Bavaria (Boil)",
-      "1.5 oz Mandarina Bavaria (Boil)"
-    ],
-    "yeast": "Wyeast Labs 3068 Weihenstephan Weizen",
-    "source": "beersmith",
-    "brewDate": "2015-06-14",
-    "hopsDetail": [
-      {
-        "name": "Mandarina Bavaria",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Mandarina Bavaria",
-        "amount": 1.5,
-        "use": "Boil",
-        "time": 10
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 45,
-    "uuid": "29e6054c-29e6-49e6-29e6-29e6054c29e6",
-    "name": "Little Heffer",
-    "style": "Weizen/Weissbier",
-    "category": "ale",
-    "description": "Tony: Very good, bananay",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 12,
-    "grains": [
-      "14.00 lb Wheat Malt, Ger",
-      "8.00 lb Pilsner (2 Row) Ger"
-    ],
-    "hops": [
-      "1.5 oz Hallertau (Boil)",
-      "0.5 oz Hallertau (Boil)"
-    ],
-    "yeast": "Wyeast Labs 3068 Weihenstephan Weizen",
-    "source": "beersmith",
-    "brewDate": "2015-06-14",
-    "hopsDetail": [
-      {
-        "name": "Hallertau",
-        "amount": 1.5,
-        "use": "Boil",
-        "time": 45
-      },
-      {
-        "name": "Hallertau",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 15
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 46,
-    "uuid": "47a5331b-47a5-47a5-47a5-47a5331b47a5",
-    "name": "Madelyns Razzy",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 0,
-    "grains": [
-      "15.00 lb Pale Malt (2 Row) Bel"
-    ],
-    "hops": [],
-    "yeast": "Not specified",
-    "source": "beersmith",
-    "brewDate": "2015-06-18",
-    "hopsDetail": [],
-    "batchSize": 11
-  },
-  {
-    "id": 47,
-    "uuid": "1dd0e4e1-1dd0-4dd0-1dd0-1dd0e4e11dd0",
-    "name": "Usurper",
-    "style": "American Wheat or Rye Beer",
-    "category": "ale",
-    "description": "Tony: Very good!",
-    "og": 1.05,
-    "fg": 1.012,
-    "abv": 5,
-    "ibu": 76,
-    "grains": [
-      "17.00 lb Pale Malt (2 Row) US",
-      "6.00 lb Rye Malt",
-      "1.00 lb Aromatic Malt",
-      "1.00 lb Caramel/Crystal Malt - 20L",
-      "1.00 lb Caramel/Crystal Malt - 40L",
-      "1.00 lb Caramel/Crystal Malt - 80L",
-      "1.00 lb Caramel/Crystal Malt -120L",
-      "1.00 lb Carapils (Briess)"
-    ],
-    "hops": [
-      "2.0 oz Summit (Boil)",
-      "1.0 oz Amarillo (Boil)",
-      "1.0 oz Amarillo (Boil)",
-      "2.0 oz Amarillo (Boil)",
-      "1.0 oz Amarillo Gold (Aroma)",
-      "4.0 oz Amarillo (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1272 American Ale II",
-    "source": "beersmith",
-    "brewDate": "2015-06-28",
-    "hopsDetail": [
-      {
-        "name": "Summit",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Boil",
-        "time": 20
-      },
-      {
-        "name": "Amarillo",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 0
-      },
-      {
-        "name": "Amarillo",
-        "amount": 4,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 48,
-    "uuid": "12340f9d-1234-4234-1234-12340f9d1234",
-    "name": "Blue Balls",
-    "style": "Witbier",
-    "category": "ale",
-    "description": "Tony: Good, needs more orange",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 17,
-    "grains": [
-      "10.00 lb Pale Malt (2 Row) US",
-      "5.00 lb Wheat, Flaked",
-      "5.00 lb Wheat, Torrified"
-    ],
-    "hops": [
-      "2.0 oz East Kent Goldings (EKG) (Boil)"
-    ],
-    "yeast": "Wyeast Labs 3944 Belgian Witbier",
-    "source": "beersmith",
-    "brewDate": "2015-07-03",
-    "hopsDetail": [
-      {
-        "name": "East Kent Goldings",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 49,
-    "uuid": "6e1e68cc-6e1e-4e1e-6e1e-6e1e68cc6e1e",
-    "name": "World's Best Oktoberfest",
-    "style": "Oktoberfest/Marzen",
-    "category": "lager",
-    "description": "Tony: Very good for first Lager",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 27,
-    "grains": [
-      "10.00 lb Vienna Malt",
-      "6.00 lb Munich Malt",
-      "6.00 lb Pale Malt (2 Row) US"
-    ],
-    "hops": [
-      "4.0 oz Hallertauer Hersbrucker (Boil)"
-    ],
-    "yeast": "Wyeast Labs 2124 Bohemian Lager",
-    "source": "beersmith",
-    "brewDate": "2015-07-26",
-    "hopsDetail": [
-      {
-        "name": "Hallertauer Hersbrucker",
-        "amount": 4,
-        "use": "Boil",
-        "time": 60
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 50,
-    "uuid": "17896637-1789-4789-1789-178966371789",
-    "name": "Hop Stoopid",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.08,
-    "fg": 1.01,
-    "abv": 9.2,
-    "ibu": 197,
-    "grains": [
-      "18.00 lb Pale Malt (2 Row) US",
-      "1.00 lb Victory Malt"
-    ],
-    "hops": [
-      "1.0 oz Nugget (Boil)",
-      "4.0 oz Columbus (Tomahawk) (Boil)",
-      "1.0 oz Cascade (Boil)",
-      "1.0 oz Chinook (Boil)",
-      "1.3 oz Simcoe (Aroma)",
-      "3.0 oz Columbus (Tomahawk) (Dry Hop)",
-      "1.5 oz Simcoe (Dry Hop)",
-      "0.8 oz Chinook (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1028 London Ale Yeast",
-    "source": "beersmith",
-    "brewDate": "2015-08-01",
-    "hopsDetail": [
-      {
-        "name": "Nugget",
-        "amount": 1,
-        "use": "Boil",
-        "time": 90
-      },
-      {
-        "name": "Columbus",
-        "amount": 4,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Cascade",
-        "amount": 1,
-        "use": "Boil",
-        "time": 12
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 12
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1.3,
-        "use": "Aroma",
-        "time": 0
-      },
-      {
-        "name": "Columbus",
-        "amount": 3,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1.5,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Chinook",
-        "amount": 0.8,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5.5
-  },
-  {
-    "id": 51,
-    "uuid": "31278824-3127-4127-3127-312788243127",
-    "name": "Pumkin Beer OG",
-    "style": "American Amber Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 22,
-    "grains": [
-      "16.00 lb Pale Malt (2 Row) US",
-      "1.00 lb Caramel/Crystal Malt - 60L",
-      "1.00 lb Oats, Flaked",
-      "1.00 lb Vienna Malt",
-      "1.00 lb Wheat, Torrified",
-      "1.00 lb White Wheat Malt"
-    ],
-    "hops": [
-      "1.0 oz Cluster (Boil)",
-      "1.0 oz Goldings, East Kent (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1187 Ringwood Ale",
-    "source": "beersmith",
-    "brewDate": "2015-08-21",
-    "hopsDetail": [
-      {
-        "name": "Cluster",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      }
-    ],
-    "batchSize": 5.5
-  },
-  {
-    "id": 52,
-    "uuid": "2fe6c90b-2fe6-4fe6-2fe6-2fe6c90b2fe6",
-    "name": "Smore Punkin",
-    "style": "American Amber Ale",
-    "category": "ale",
-    "description": "Tony: Very good",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 31,
-    "grains": [
-      "18.00 lb Pale Malt (2 Row) US",
-      "3.00 lb Caramel/Crystal Malt - 60L",
-      "2.60 lb Oats, Flaked",
-      "2.00 lb Victory Malt",
-      "2.00 lb Vienna Malt"
-    ],
-    "hops": [
-      "2.0 oz Cluster (Boil)",
-      "2.0 oz Goldings, East Kent (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1187 Ringwood Ale",
-    "source": "beersmith",
-    "brewDate": "2015-08-30",
-    "hopsDetail": [
-      {
-        "name": "Cluster",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2,
-        "use": "Boil",
-        "time": 30
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 53,
-    "uuid": "761c7943-761c-461c-761c-761c7943761c",
-    "name": "Devil's Wheat 2",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "Tony: Pretty good, more hops next time",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 59,
-    "grains": [
-      "10.00 lb Pale Malt (2 Row) US",
-      "10.00 lb Wheat Malt, Ger",
-      "1.00 lb Chocolate Rye Malt",
-      "1.00 lb Vienna Malt",
-      "1.00 lb Caramel/Crystal Malt - 20L",
-      "0.25 lb Roasted Barley"
-    ],
-    "hops": [
-      "1.0 oz Columbus (Tomahawk) (Boil)",
-      "1.0 oz Amarillo Gold (Boil)",
-      "2.0 oz Columbus (Tomahawk) (Boil)",
-      "2.0 oz Amarillo Gold (Boil)",
-      "3.0 oz Amarillo Gold (Aroma)",
-      "1.0 oz Columbus (Tomahawk) (Aroma)"
-    ],
-    "yeast": "Wyeast Labs 1010 American Wheat Ale",
-    "source": "beersmith",
-    "brewDate": "2015-09-06",
-    "hopsDetail": [
-      {
-        "name": "Columbus",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Columbus",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 3,
-        "use": "Aroma",
-        "time": 0
-      },
-      {
-        "name": "Columbus",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 0
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 54,
-    "uuid": "39be846b-39be-49be-39be-39be846b39be",
-    "name": "Devil's Wheat",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "Tony: Pretty good, more hops next time",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 56,
-    "grains": [
-      "10.00 lb Pale Malt (2 Row) US",
-      "10.00 lb Wheat Malt, Ger",
-      "2.00 lb Carared",
-      "2.00 lb Rye Malt",
-      "1.00 lb Caraaroma",
-      "1.00 lb Carafoam",
-      "1.00 lb Caramel/Crystal Malt - 30L"
-    ],
-    "hops": [
-      "1.0 oz Amarillo Gold (Boil)",
-      "1.0 oz Columbus (Tomahawk) (Boil)",
-      "2.0 oz Amarillo Gold (Boil)",
-      "2.0 oz Columbus (Tomahawk) (Boil)",
-      "3.0 oz Amarillo Gold (Aroma)",
-      "1.0 oz Columbus (Tomahawk) (Aroma)"
-    ],
-    "yeast": "Wyeast Labs 1010 American Wheat Ale",
-    "source": "beersmith",
-    "brewDate": "2015-09-06",
-    "hopsDetail": [
-      {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Columbus",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Columbus",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 3,
-        "use": "Aroma",
-        "time": 0
-      },
-      {
-        "name": "Columbus",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 0
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 55,
-    "uuid": "17c7471f-17c7-47c7-17c7-17c7471f17c7",
-    "name": "Saison du Frank!",
-    "style": "Saison",
-    "category": "ale",
-    "description": "Tony: Good",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 29,
-    "grains": [
-      "9.00 lb Pale Malt (2 Row) Bel",
-      "2.00 lb Wheat Malt, Bel",
-      "1.00 lb Caramel Malt - 40L (Briess)",
-      "0.50 lb Munich Malt"
-    ],
-    "hops": [
-      "0.5 oz Sorachi Ace (Boil)",
-      "1.5 oz Crystal (Boil)",
-      "0.5 oz Cascade (Boil)",
-      "0.5 oz Amarillo (Aroma)"
-    ],
-    "yeast": "Wyeast Labs 3711 French Saison",
-    "source": "beersmith",
-    "brewDate": "2015-10-11",
-    "hopsDetail": [
-      {
-        "name": "Sorachi Ace",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Crystal",
-        "amount": 1.5,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Cascade",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Amarillo",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 5
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 56,
-    "uuid": "14794aa1-1479-4479-1479-14794aa11479",
-    "name": "Saison",
-    "style": "Saison",
-    "category": "ale",
-    "description": "Tony: Good",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 38,
-    "grains": [
-      "17.00 lb Pale Malt (2 Row) US",
-      "3.00 lb White Wheat Malt",
-      "1.00 lb Caramunich Malt",
-      "1.00 lb Oats, Flaked"
-    ],
-    "hops": [
-      "1.0 oz Fuggles (Boil)",
-      "1.0 oz Sorachi Ace (Boil)",
-      "1.0 oz Fuggles (Boil)",
-      "2.0 oz Fuggles (Boil)"
-    ],
-    "yeast": "Wyeast Labs 3711 French Saison",
-    "source": "beersmith",
-    "brewDate": "2015-10-11",
-    "hopsDetail": [
-      {
-        "name": "Fuggles",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Sorachi Ace",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Fuggles",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Fuggles",
-        "amount": 2,
-        "use": "Boil",
-        "time": 15
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 57,
-    "uuid": "639359a1-6393-4393-6393-639359a16393",
-    "name": "Lacto",
-    "style": "Berliner Weiss",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 0,
-    "grains": [
-      "5.00 lb White Wheat Malt",
-      "3.00 lb Pilsner (2 Row) Bel"
-    ],
-    "hops": [],
-    "yeast": "Not specified",
-    "source": "beersmith",
-    "brewDate": "2015-10-15",
-    "hopsDetail": [],
-    "batchSize": 5
-  },
-  {
-    "id": 58,
-    "uuid": "03d9d37f-03d9-43d9-03d9-03d9d37f03d9",
-    "name": "Big Ass Barleywine",
-    "style": "English Barleywine",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 5.3,
-    "ibu": 56,
-    "grains": [
-      "23.00 lb Pale Malt (2 Row) US",
-      "3.00 lb Caramel Malt - 60L (Briess)",
-      "1.00 lb Carapils (Briess)"
-    ],
-    "hops": [
-      "0.5 oz Cascade (Boil)",
-      "0.5 oz Centennial (Boil)",
-      "1.0 oz Cascade (Boil)",
-      "1.0 oz Chinook (Boil)",
-      "1.0 oz Chinook (Aroma)",
-      "0.5 oz Cascade (Dry Hop)",
-      "0.3 oz Centennial (Dry Hop)",
-      "0.3 oz Chinook (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2015-12-02",
-    "hopsDetail": [
-      {
-        "name": "Cascade",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 120
-      },
-      {
-        "name": "Centennial",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 120
-      },
-      {
-        "name": "Cascade",
-        "amount": 1,
-        "use": "Boil",
-        "time": 90
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 45
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 0
-      },
-      {
-        "name": "Cascade",
-        "amount": 0.5,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Centennial",
-        "amount": 0.3,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Chinook",
-        "amount": 0.3,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 59,
-    "uuid": "57b0ea40-57b0-47b0-57b0-57b0ea4057b0",
-    "name": "Kyle beer",
-    "style": "Saison",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 55,
-    "grains": [
-      "16.00 lb Pilsner (2 Row) Ger",
-      "3.00 lb White Wheat Malt",
-      "1.00 lb Munich Malt",
-      "0.75 lb Acid Malt"
-    ],
-    "hops": [
-      "2.0 oz East Kent Goldings (EKG) (Boil)",
-      "2.0 oz Admiral (Boil)"
-    ],
-    "yeast": "Not specified",
-    "source": "beersmith",
-    "brewDate": "2016-01-17",
-    "hopsDetail": [
-      {
-        "name": "East Kent Goldings",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Admiral",
-        "amount": 2,
-        "use": "Boil",
-        "time": 30
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 60,
-    "uuid": "0525ffec-0525-4525-0525-0525ffec0525",
-    "name": "Bitch Mittens Session IPA",
-    "style": "Session Beer",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 42,
-    "grains": [
-      "7.00 lb Pale Malt, 2-Row (Rahr)",
-      "0.75 lb Munich 10L (Briess)",
-      "0.75 lb Victory Malt",
-      "0.25 lb Acidulated (Weyermann)"
-    ],
-    "hops": [
-      "0.2 oz Amarillo (Boil)",
-      "0.2 oz Mosaic (HBC 369) (Boil)",
-      "1.7 oz Mosaic (HBC 369) (Boil)",
-      "1.3 oz Amarillo (Boil)",
-      "1.6 oz Mosaic (HBC 369) (Dry Hop)",
-      "1.2 oz Amarillo (Dry Hop)",
-      "1.0 oz Cascade (Dry Hop)",
-      "1.0 oz Simcoe (Dry Hop)",
-      "0.8 oz Centennial (Dry Hop)"
-    ],
-    "yeast": "White Labs WLP001 California Ale",
-    "source": "beersmith",
-    "brewDate": "2016-07-29",
-    "hopsDetail": [
-      {
-        "name": "Amarillo",
-        "amount": 0.2,
-        "use": "Boil",
-        "time": 30
-      },
-      {
-        "name": "Mosaic",
-        "amount": 0.2,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Mosaic",
-        "amount": 1.7,
-        "use": "Boil",
-        "time": 20
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1.3,
-        "use": "Boil",
-        "time": 20
-      },
-      {
-        "name": "Mosaic",
-        "amount": 1.6,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1.2,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Cascade",
-        "amount": 1,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Centennial",
-        "amount": 0.8,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5.5
-  },
-  {
-    "id": 61,
-    "uuid": "09daa07e-09da-49da-09da-09daa07e09da",
-    "name": "Riggity Wrecked",
-    "style": "Imperial Stout",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 62,
-    "grains": [
-      "17.00 lb Pale Malt (2 Row) US",
-      "3.00 lb Roasted Barley",
-      "3.00 lb Chocolate Malt",
-      "2.00 lb Black (Patent) Malt",
-      "2.00 lb Oats, Flaked",
-      "1.00 lb Cara-Pils/Dextrine"
-    ],
-    "hops": [
-      "1.0 oz Chinook (Boil)",
-      "1.0 oz Chinook (Boil)",
-      "1.0 oz Northern Brewer (Boil)",
-      "2.0 oz Willamette (Aroma)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2017-01-13",
-    "hopsDetail": [
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 40
-      },
-      {
-        "name": "Northern Brewer",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Willamette",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 5
-      }
-    ],
-    "batchSize": 5.5
-  },
-  {
-    "id": 62,
-    "uuid": "6a0a528d-6a0a-4a0a-6a0a-6a0a528d6a0a",
-    "name": "#NoFilter",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 77,
-    "grains": [
-      "22.00 lb Pale Malt (2 Row) US",
-      "3.00 lb Wheat Malt, Bel",
-      "3.00 lb Oats, Flaked",
-      "1.00 lb Honey Malt"
-    ],
-    "hops": [
-      "1.0 oz Chinook (Boil)",
-      "2.0 oz Citra (Boil)",
-      "2.0 oz Amarillo (Boil)",
-      "3.0 oz Amarillo (Boil)",
-      "3.0 oz Mosaic (HBC 369) (Boil)",
-      "3.0 oz Citra (Boil)",
-      "4.0 oz Citra (Dry Hop)",
-      "4.0 oz Mosaic (HBC 369) (Dry Hop)",
-      "4.0 oz Amarillo (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1318 London Ale III",
-    "source": "beersmith",
-    "brewDate": "2017-11-26",
-    "hopsDetail": [
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Amarillo",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Amarillo",
-        "amount": 3,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Mosaic",
-        "amount": 3,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Mosaic",
-        "amount": 4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 4,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 63,
-    "uuid": "74f83a2b-74f8-44f8-74f8-74f83a2b74f8",
-    "name": "The Devil's Narwhal NEIPA - 5/29/2019",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 85,
-    "grains": [
-      "22.00 lb Pale Malt (2 Row) US",
-      "3.00 lb Oats, Flaked",
-      "3.00 lb Wheat Malt, Bel",
-      "2.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Rye Malt"
-    ],
-    "hops": [
-      "1.0 oz Chinook (Boil)",
-      "2.0 oz Citra (Boil)",
-      "2.0 oz Galaxy (Boil)",
-      "3.0 oz Citra (Boil)",
-      "3.0 oz Galaxy (Boil)",
-      "3.0 oz Mosaic (HBC 369) (Boil)",
-      "4.0 oz Citra (Dry Hop)",
-      "4.0 oz Galaxy (Dry Hop)",
-      "4.0 oz Mosaic (HBC 369) (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1318 London Ale III",
-    "source": "beersmith",
-    "brewDate": "2017-11-26",
-    "hopsDetail": [
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Galaxy",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Galaxy",
-        "amount": 3,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Mosaic",
-        "amount": 3,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Galaxy",
-        "amount": 4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Mosaic",
-        "amount": 4,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 64,
-    "uuid": "791635f6-7916-4916-7916-791635f67916",
-    "name": "The Devil's Narwhal NEIPA",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 85,
-    "grains": [
-      "22.00 lb Pale Malt (2 Row) US",
-      "3.00 lb Oats, Flaked",
-      "3.00 lb Wheat Malt, Bel",
-      "2.00 lb Cara-Pils/Dextrine",
-      "1.00 lb Honey Malt"
-    ],
-    "hops": [
-      "1.0 oz Chinook (Boil)",
-      "2.0 oz Citra (Boil)",
-      "2.0 oz Galaxy (Boil)",
-      "3.0 oz Citra (Boil)",
-      "3.0 oz Mosaic (HBC 369) (Boil)",
-      "3.0 oz Galaxy (Boil)",
-      "4.0 oz Citra (Dry Hop)",
-      "4.0 oz Galaxy (Dry Hop)",
-      "4.0 oz Mosaic (HBC 369) (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1318 London Ale III",
-    "source": "beersmith",
-    "brewDate": "2017-11-26",
-    "hopsDetail": [
-      {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Galaxy",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Mosaic",
-        "amount": 3,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Galaxy",
-        "amount": 3,
-        "use": "Boil",
-        "time": 15
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Galaxy",
-        "amount": 4,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Mosaic",
-        "amount": 4,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 11
-  },
-  {
-    "id": 65,
-    "uuid": "61b0cda1-61b0-41b0-61b0-61b0cda161b0",
-    "name": "ESB",
-    "style": "Strong Bitter",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.013,
-    "abv": 4.9,
-    "ibu": 39,
-    "grains": [
-      "7.11 lb Extra Pale Maris Otter Malt (Crisp)",
-      "0.89 lb Caramel/Crystal Malt - 20L",
-      "0.71 lb Crystal, DRC (Simpsons)",
-      "0.36 lb Victory Malt (biscuit) (Briess)"
-    ],
-    "hops": [
-      "1.4 oz Goldings, East Kent (Boil)",
-      "0.9 oz Goldings, East Kent (Aroma)",
-      "1.1 oz East Kent Goldings (EKG) (Aroma)",
-      "2.3 oz Goldings, East Kent (Dry Hop)"
-    ],
-    "yeast": "Inland Island INIS-316 English Ale VI",
-    "source": "beersmith",
-    "brewDate": "2021-08-10",
-    "hopsDetail": [
-      {
-        "name": "Goldings, East Kent",
-        "amount": 1.4,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 0.9,
-        "use": "Aroma",
-        "time": 15
-      },
-      {
-        "name": "East Kent Goldings (EKG)",
-        "amount": 1.1,
-        "use": "Aroma",
-        "time": 15
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2.3,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 66,
-    "uuid": "60158552-6015-4015-6015-601585526015",
-    "name": "Flanders Red",
-    "style": "Flanders Red Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.013,
-    "abv": 4.9,
-    "ibu": 0,
-    "grains": [
-      "2.67 lb Munich I (Weyermann)",
-      "2.67 lb Pale Malt (2 Row) US",
-      "2.67 lb Vienna Malt",
-      "0.89 lb Wheat - White Malt (Briess)",
-      "0.37 lb Special B Malt",
-      "0.25 lb Aromatic Malt"
-    ],
-    "hops": [],
-    "yeast": "White Labs WLP665 Flemish Ale Blend",
-    "source": "beersmith",
-    "brewDate": "2020-02-18",
-    "hopsDetail": [],
-    "batchSize": 5
-  },
-  {
-    "id": 67,
-    "uuid": "0b24104b-0b24-4b24-0b24-0b24104b0b24",
-    "name": "Fluffernutter Cream Ale",
-    "style": "American-Style Cream Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.013,
-    "abv": 4.9,
-    "ibu": 15,
-    "grains": [
-      "6.00 lb Pale Malt, 2-Row (Rahr)",
-      "1.50 lb Corn - Yellow, Flaked (Briess)",
-      "0.50 lb Victory Malt (biscuit) (Briess)",
-      "0.50 lb Milk Sugar (Lactose)"
-    ],
-    "hops": [
-      "0.5 oz Tettnang (Boil)",
-      "0.8 oz Tettnang (Aroma)"
-    ],
-    "yeast": "Wyeast Labs 1007 German Ale",
-    "source": "beersmith",
-    "brewDate": "2022-01-03",
-    "hopsDetail": [
-      {
-        "name": "Tettnang",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "Tettnang",
-        "amount": 0.8,
-        "use": "Aroma",
-        "time": 15
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 68,
-    "uuid": "1f7fb6bd-1f7f-4f7f-1f7f-1f7fb6bd1f7f",
-    "name": "Hazy",
-    "style": "American-Style India Pale Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.013,
-    "abv": 4.9,
-    "ibu": 47,
-    "grains": [
-      "5.07 lb Pale Ale Malt (Rahr)",
-      "2.30 lb Oats, Flaked",
-      "1.27 lb Pale Ale, Golden Promise (Simpsons)",
-      "1.27 lb White Wheat Malt"
-    ],
-    "hops": [
-      "1.7 oz Cashmere (Aroma)",
-      "1.7 oz Vic Secret (Aroma)",
-      "0.8 oz Huell Melon (Aroma)",
-      "1.7 oz Vic Secret (Dry Hop)",
-      "1.3 oz Cashmere (Dry Hop)",
-      "1.3 oz Huell Melon (Dry Hop)",
-      "2.6 oz Vic Secret (Dry Hop)",
-      "1.9 oz Cashmere (Dry Hop)",
-      "1.9 oz Huell Melon (Dry Hop)"
-    ],
-    "yeast": "Wyeast Labs 1318 London Ale III",
-    "source": "beersmith",
-    "brewDate": "2022-01-05",
-    "hopsDetail": [
-      {
-        "name": "Cashmere",
-        "amount": 1.7,
-        "use": "Aroma",
-        "time": 20
-      },
-      {
-        "name": "Vic Secret",
-        "amount": 1.7,
-        "use": "Aroma",
-        "time": 20
-      },
-      {
-        "name": "Huell Melon",
-        "amount": 0.8,
-        "use": "Aroma",
-        "time": 20
-      },
-      {
-        "name": "Vic Secret",
-        "amount": 1.7,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Cashmere",
-        "amount": 1.3,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Huell Melon",
-        "amount": 1.3,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Vic Secret",
-        "amount": 2.6,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Cashmere",
-        "amount": 1.9,
-        "use": "Dry Hop"
-      },
-      {
-        "name": "Huell Melon",
-        "amount": 1.9,
-        "use": "Dry Hop"
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 69,
-    "uuid": "5db5f2da-5db5-4db5-5db5-5db5f2da5db5",
-    "name": "Mexican Lager",
-    "style": "American-Style Lager",
-    "category": "lager",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.013,
-    "abv": 4.9,
-    "ibu": 15,
-    "grains": [
-      "5.88 lb Pilsner (Weyermann)",
-      "1.15 lb Corn - Yellow, Flaked (Briess)",
-      "0.63 lb Munich I (Weyermann)",
-      "0.16 lb Fruit - Lime"
-    ],
-    "hops": [
-      "0.4 oz Hallertauer (Boil)",
-      "0.3 oz Hallertauer (Aroma)",
-      "0.8 oz Hallertauer (Aroma)"
-    ],
-    "yeast": "Omega OYL-113 Mexican Lager",
-    "source": "beersmith",
-    "brewDate": "2022-01-13",
-    "hopsDetail": [
-      {
-        "name": "Hallertauer",
-        "amount": 0.4,
-        "use": "Boil",
-        "time": 75
-      },
-      {
-        "name": "Hallertauer",
-        "amount": 0.3,
-        "use": "Aroma",
-        "time": 15
-      },
-      {
-        "name": "Hallertauer",
-        "amount": 0.8,
-        "use": "Aroma",
-        "time": 30
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 70,
-    "uuid": "1997727d-1997-4997-1997-1997727d1997",
-    "name": "Schwarzbier",
-    "style": "German-Style Schwarzbier",
-    "category": "lager",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.013,
-    "abv": 4.9,
-    "ibu": 28,
-    "grains": [
-      "5.88 lb Pilsner (Weyermann)",
-      "0.63 lb Blackprinz",
-      "0.63 lb Carafoam",
-      "0.63 lb Munich II (Weyermann)",
-      "0.23 lb Chocolate Rye Malt"
-    ],
-    "hops": [
-      "0.8 oz German Tradition (Boil)",
-      "0.5 oz German Tradition (Aroma)",
-      "1.0 oz German Tradition (Aroma)"
-    ],
-    "yeast": "Inland Island INIS-711 German Monk Lager",
-    "source": "beersmith",
-    "brewDate": "2021-12-31",
-    "hopsDetail": [
-      {
-        "name": "German Tradition",
-        "amount": 0.8,
-        "use": "Boil",
-        "time": 60
-      },
-      {
-        "name": "German Tradition",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 15
-      },
-      {
-        "name": "German Tradition",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 15
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 71,
-    "uuid": "6d0c8cf1-6d0c-4d0c-6d0c-6d0c8cf16d0c",
-    "name": "White Russian Stout",
-    "style": "American-Style Imperial Stout",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.013,
-    "abv": 4.9,
-    "ibu": 55,
-    "grains": [
-      "8.87 lb Pale Malt (2 Row) US",
-      "1.27 lb Milk Sugar (Lactose)",
-      "1.27 lb Turbinado",
-      "1.15 lb Black Barley (Briess)",
-      "1.15 lb Oats, Flaked",
-      "0.63 lb Crystal, DRC (Simpsons)",
-      "0.52 lb Chocolate Wheat Malt (Proximity)",
-      "0.35 lb Victory Malt (biscuit) (Briess)"
-    ],
-    "hops": [
-      "1.7 oz Magnum (Boil)"
-    ],
-    "yeast": "Wyeast Labs 1056 American Ale",
-    "source": "beersmith",
-    "brewDate": "2021-12-30",
-    "hopsDetail": [
-      {
-        "name": "Magnum",
-        "amount": 1.7,
-        "use": "Boil",
-        "time": 75
-      }
-    ],
-    "batchSize": 5
-  },
-  {
-    "id": 72,
-    "uuid": "70b9593b-70b9-40b9-70b9-70b9593b70b9",
-    "name": "Wizard fight",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.056,
-    "fg": 1.013,
-    "abv": 5.6,
-    "ibu": 0,
-    "grains": [
-      "4.54 lb Organic 2row Pale Malt",
-      "0.45 lb Carapils Malt",
-      "0.45 lb Munich Malt, Germany",
-      "0.45 lb Oats, Flaked"
-    ],
-    "hops": [],
-    "yeast": "Not specified",
-    "source": "brewfather",
-    "brewDate": "2022-06-24",
-    "color": 5.6,
-    "batchSize": 5.5,
-    "boilTime": 90,
-    "fermentablesDetail": [
-      {
-        "name": "Organic 2row Pale Malt",
-        "amount": 4.54,
-        "percentage": 76.9,
-        "color": 2.8
-      },
-      {
-        "name": "Carapils Malt",
-        "amount": 0.45,
-        "percentage": 7.7,
-        "color": 2.8
-      },
-      {
-        "name": "Munich Malt, Germany",
-        "amount": 0.45,
-        "percentage": 7.7,
-        "color": 9.5
-      },
-      {
-        "name": "Oats, Flaked",
-        "amount": 0.45,
-        "percentage": 7.7,
-        "color": 1.4
-      }
-    ],
-    "hopsDetail": [],
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+        name: 'Simcoe',
+        amount: 1,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 10,
+    uuid: '2942394d-2942-4942-2942-2942394d2942',
+    name: 'The Hero IPA',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 5.3,
+    ibu: 52,
+    grains: [
+      '11.00 lb Pale Malt - 2 Row (Cargill)',
+      '1.00 lb Caramel/Crystal Malt - 40L',
+      '1.00 lb Victory Malt',
+      '1.00 lb Vienna Malt',
+    ],
+    hops: [
+      '0.5 oz El Dorado (Boil)',
+      '1.0 oz Equinox (Boil)',
+      '1.3 oz El Dorado (Boil)',
+      '1.0 oz German Hull Melon (Aroma)',
+      '1.0 oz Mandarina Bavaria (Aroma)',
+      '2.0 oz El Dorado (Dry Hop)',
+      '1.0 oz Mosaic (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2013-10-13',
+    hopsDetail: [
+      {
+        name: 'El Dorado',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Equinox',
+        amount: 1,
+        use: 'Boil',
+        time: 20,
+      },
+      {
+        name: 'El Dorado',
+        amount: 1.3,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'German Hull Melon',
+        amount: 1,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Mandarina Bavaria',
+        amount: 1,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'El Dorado',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Mosaic',
+        amount: 1,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 11,
+    uuid: '653383a9-6533-4533-6533-653383a96533',
+    name: 'Here Goes Nothing (Hankies Leipzig Gose)',
+    style: 'Leipzig-Style Gose',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.007,
+    abv: 5.1,
+    ibu: 10,
+    grains: [
+      '10.00 lb Wheat Malt, Pale (Weyermann)',
+      '7.00 lb Pilsner (2 Row) Bel',
+      '4.00 lb Acidulated (Weyermann)',
+      '1.00 lb Rice Hulls',
+    ],
+    hops: ['1.0 oz Santiam (Boil)'],
+    yeast: 'Wyeast Labs 1007 German Ale',
+    source: 'beersmith',
+    brewDate: '2013-11-03',
+    hopsDetail: [
+      {
+        name: 'Santiam',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 12,
+    uuid: '14ce7cb6-14ce-44ce-14ce-14ce7cb614ce',
+    name: 'Milk of the Poppy',
+    style: 'American-Style Imperial Stout',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 68,
+    grains: [
+      '13.78 lb Pale Malt (2 Row) US',
+      '1.92 lb Black (Patent) Malt',
+      '1.90 lb Milk Sugar (Lactose)',
+      '1.44 lb Caramel/Crystal Malt - 80L',
+      '1.00 lb Oats, Flaked',
+      '0.96 lb Chocolate Malt',
+    ],
+    hops: ['2.0 oz Warrior (Boil)'],
+    yeast: 'Wyeast Labs 1318 London Ale III',
+    source: 'beersmith',
+    brewDate: '2014-06-12',
+    hopsDetail: [
+      {
+        name: 'Warrior',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 13,
+    uuid: '50938140-5093-4093-5093-509381405093',
+    name: 'Rye Porter',
+    style: 'Porter',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 37,
+    grains: [
+      '10.00 lb Pilsen Malt 2-Row (Briess)',
+      '2.00 lb Rye, Flaked (Briess)',
+      '1.00 lb Caramel/Crystal Malt - 80L',
+      '0.75 lb Chocolate (Briess)',
+      '0.50 lb Black (Patent) Malt',
+    ],
+    hops: [
+      '0.3 oz Warrior (Boil)',
+      '1.0 oz Chinook (Boil)',
+      '1.0 oz Columbus (Tomahawk) (Aroma)',
+      '2.0 oz Chinook (Dry Hop)',
+      '1.0 oz Columbus (Tomahawk) (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1187 Ringwood Ale',
+    source: 'beersmith',
+    brewDate: '2014-08-04',
+    hopsDetail: [
+      {
+        name: 'Warrior',
+        amount: 0.3,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Columbus',
+        amount: 1,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Chinook',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Columbus',
+        amount: 1,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5.8,
+  },
+  {
+    id: 14,
+    uuid: '4be75145-4be7-4be7-4be7-4be751454be7',
+    name: 'Hermaeus Mora',
+    style: 'American-Style Imperial Stout',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 64,
+    grains: [
+      '20.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Rye, Flaked',
+      '1.70 lb Black (Patent) Malt',
+      '1.50 lb Corn Sugar (Dextrose)',
+      '1.10 lb Chocolate Malt',
+      '0.55 lb Caramel/Crystal Malt -120L',
+      '0.55 lb Caramunich Malt',
+    ],
+    hops: ['1.8 oz Warrior (Boil)', '0.6 oz Northern Brewer (Boil)'],
+    yeast: 'Wyeast Labs 1187 Ringwood Ale',
+    source: 'beersmith',
+    brewDate: '2014-08-13',
+    hopsDetail: [
+      {
+        name: 'Warrior',
+        amount: 1.8,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Northern Brewer',
+        amount: 0.6,
+        use: 'Boil',
+        time: 30,
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 15,
+    uuid: '431a7427-431a-431a-431a-431a7427431a',
+    name: 'Pumpkin Brew 2014',
+    style: 'Spice, Herb, or Vegetable Beer',
+    category: 'ale',
+    description: '',
+    og: 1.075,
+    fg: 1.011,
+    abv: 8.4,
+    ibu: 24,
+    grains: [
+      '16.00 lb Pilsen Malt 2-Row (Briess)',
+      '1.00 lb Caramel Malt - 60L (Briess)',
+      '1.00 lb Oats, Flaked',
+      '1.00 lb Vienna Malt',
+      '1.00 lb Wheat, Torrified',
+      '1.00 lb Wheat, White (Cargill)',
+    ],
+    hops: ['1.0 oz Cluster (Boil)', '1.0 oz East Kent Goldings (EKG) (Boil)'],
+    yeast: 'Wyeast Labs 1187 Ringwood Ale',
+    source: 'beersmith',
+    brewDate: '2014-09-18',
+    hopsDetail: [
+      {
+        name: 'Cluster',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'East Kent Goldings',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 16,
+    uuid: '46cab60b-46ca-46ca-46ca-46cab60b46ca',
+    name: 'Gungnir',
+    style: 'American Barley Wine',
+    category: 'ale',
+    description: '',
+    og: 1.1,
+    fg: 1.01,
+    abv: 11.8,
+    ibu: 101,
+    grains: [
+      '23.80 lb Pilsen Malt 2-Row (Briess)',
+      '2.80 lb Caramel Malt - 60L (Briess)',
+      '1.40 lb Rye Malt',
+    ],
+    hops: [
+      '1.0 oz Warrior (Boil)',
+      '1.0 oz Simcoe (Boil)',
+      '1.0 oz Chinook (Boil)',
+      '1.0 oz Columbus (Tomahawk) (Boil)',
+      '0.5 oz Chinook (Boil)',
+      '0.5 oz Columbus (Tomahawk) (Boil)',
+      '0.5 oz Simcoe (Boil)',
+      '0.5 oz Chinook (Aroma)',
+      '0.5 oz Columbus (Tomahawk) (Aroma)',
+      '0.5 oz Simcoe (Aroma)',
+      '2.0 oz Chinook (Dry Hop)',
+      '1.0 oz Columbus (Tomahawk) (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1272 American Ale II',
+    source: 'beersmith',
+    brewDate: '2014-10-13',
+    hopsDetail: [
+      {
+        name: 'Warrior',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Simcoe',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Columbus',
+        amount: 1,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Chinook',
+        amount: 0.5,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Columbus',
+        amount: 0.5,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Simcoe',
+        amount: 0.5,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Chinook',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Columbus',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Simcoe',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Chinook',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Columbus',
+        amount: 1,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 17,
+    uuid: '3fd94e26-3fd9-4fd9-3fd9-3fd94e263fd9',
+    name: '#TonyCantHang',
+    style: 'American Barley Wine',
+    category: 'ale',
+    description: '',
+    og: 1.1,
+    fg: 1.01,
+    abv: 11.8,
+    ibu: 58,
+    grains: [
+      '23.00 lb Pilsen Malt 2-Row (Briess)',
+      '3.00 lb Caramel Malt - 60L (Briess)',
+      '2.00 lb Rye Malt',
+    ],
+    hops: [
+      '1.0 oz Simcoe (Boil)',
+      '1.0 oz Chinook (Boil)',
+      '0.5 oz Chinook (Boil)',
+      '0.5 oz Columbus (Tomahawk) (Boil)',
+      '0.5 oz Simcoe (Boil)',
+      '0.5 oz Chinook (Aroma)',
+      '0.5 oz Columbus (Tomahawk) (Aroma)',
+      '0.5 oz Simcoe (Aroma)',
+      '2.0 oz Chinook (Dry Hop)',
+      '1.0 oz Simcoe (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1272 American Ale II',
+    source: 'beersmith',
+    brewDate: '2014-10-13',
+    hopsDetail: [
+      {
+        name: 'Simcoe',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Chinook',
+        amount: 0.5,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Columbus',
+        amount: 0.5,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Simcoe',
+        amount: 0.5,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Chinook',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Columbus',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Simcoe',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Chinook',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Simcoe',
+        amount: 1,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5.5,
+  },
+  {
+    id: 18,
+    uuid: '48351be2-4835-4835-4835-48351be24835',
+    name: 'Mischevious Bastard',
+    style: 'Old Ale',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.012,
+    abv: 5,
+    ibu: 59,
+    grains: ['15.00 lb Pale Malt, Maris Otter', '2.00 lb Special B Malt'],
+    hops: [
+      '0.5 oz Chinook (Boil)',
+      '0.5 oz Chinook (Boil)',
+      '1.0 oz Chinook (Boil)',
+      '1.0 oz Chinook (Aroma)',
+    ],
+    yeast: 'Danstar - Nottingham',
+    source: 'beersmith',
+    brewDate: '2015-01-04',
+    hopsDetail: [
+      {
+        name: 'Chinook',
+        amount: 0.5,
+        use: 'Boil',
+        time: 90,
+      },
+      {
+        name: 'Chinook',
+        amount: 0.5,
+        use: 'Boil',
+        time: 45,
+      },
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Aroma',
+        time: 5,
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 19,
+    uuid: '1662d09f-1662-4662-1662-1662d09f1662',
+    name: 'Bitches Always be Weizen',
+    style: 'Weizen/Weissbier',
+    category: 'ale',
+    description: '',
+    og: 1.038,
+    fg: 1.01,
+    abv: 3.7,
+    ibu: 12,
+    grains: [
+      '8.00 lb Pale Malt (2 Row) US',
+      '8.00 lb Wheat Malt, Pale (Weyermann)',
+      '1.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Caramel Malt - 20L (Briess)',
+      '1.00 lb Wheat Malt, Ger',
+    ],
+    hops: ['1.0 oz Hallertau (Boil)', '1.0 oz Tettnang (Boil)'],
+    yeast: 'Wyeast Labs 3068 Weihenstephan Weizen',
+    source: 'beersmith',
+    brewDate: '2015-01-10',
+    hopsDetail: [
+      {
+        name: 'Hallertau',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Tettnang',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+    ],
+    batchSize: 10,
+  },
+  {
+    id: 20,
+    uuid: '5ad0878c-5ad0-4ad0-5ad0-5ad0878c5ad0',
+    name: 'Lemon Lime Hefe',
+    style: 'Weizen/Weissbier',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 19,
+    grains: [
+      '12.00 lb Pale Malt (2 Row) US',
+      '8.00 lb White Wheat Malt',
+      '2.00 lb Vienna Malt',
+    ],
+    hops: [
+      '0.5 oz Motueka (Boil)',
+      '0.5 oz Motueka (Boil)',
+      '0.5 oz Sorachi Ace (Boil)',
+      '0.5 oz Sorachi Ace (Boil)',
+    ],
+    yeast: 'White Labs WLP380 Hefeweizen IV Ale',
+    source: 'beersmith',
+    brewDate: '2015-01-26',
+    hopsDetail: [
+      {
+        name: 'Motueka',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Motueka',
+        amount: 0.5,
+        use: 'Boil',
+        time: 20,
+      },
+      {
+        name: 'Sorachi Ace',
+        amount: 0.5,
+        use: 'Boil',
+        time: 20,
+      },
+      {
+        name: 'Sorachi Ace',
+        amount: 0.5,
+        use: 'Boil',
+        time: 7,
+      },
+    ],
+    batchSize: 10,
+  },
+  {
+    id: 21,
+    uuid: '022cc871-022c-422c-022c-022cc871022c',
+    name: 'White Knight Wit',
+    style: 'Witbier',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 21,
+    grains: [
+      '7.00 lb Pale Malt (2 Row) Bel',
+      '2.00 lb White Wheat Malt',
+      '1.00 lb Wheat Malt, Bel',
+    ],
+    hops: ['1.0 oz Motueka (Boil)', '1.0 oz Ahtanum (Aroma)'],
+    yeast: 'Not specified',
+    source: 'beersmith',
+    brewDate: '2015-02-02',
+    hopsDetail: [
+      {
+        name: 'Motueka',
+        amount: 1,
+        use: 'Boil',
+        time: 25,
+      },
+      {
+        name: 'Ahtanum',
+        amount: 1,
+        use: 'Aroma',
+        time: 5,
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 22,
+    uuid: '20ee907b-20ee-40ee-20ee-20ee907b20ee',
+    name: 'Basic Blonde',
+    style: 'Belgian Blond Ale',
+    category: 'ale',
+    description: 'Tony: Delicious',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 29,
+    grains: [
+      '15.00 lb Pale Malt (2 Row) US',
+      '8.00 lb Wheat Malt, Bel',
+      '1.50 lb Wheat, Flaked',
+      '1.50 lb Honey Malt',
+      '1.00 lb Carafoam',
+      '1.00 lb Candi Sugar, Clear',
+    ],
+    hops: [
+      '2.0 oz Hallertauer (Boil)',
+      '2.0 oz East Kent Goldings (EKG) (Boil)',
+    ],
+    yeast: 'Wyeast Labs 1084 Irish Ale',
+    source: 'beersmith',
+    brewDate: '2015-02-26',
+    hopsDetail: [
+      {
+        name: 'Hallertauer',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'East Kent Goldings',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 23,
+    uuid: '29649724-2964-4964-2964-296497242964',
+    name: 'Dumb Blonde 10',
+    style: 'Blonde Ale',
+    category: 'ale',
+    description: 'Tony: Delicious',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 27,
+    grains: [
+      '15.00 lb Pale Malt (2 Row) US',
+      '9.00 lb Wheat Malt, Bel',
+      '2.00 lb Aromatic Malt',
+      '2.00 lb Carafoam',
+      '2.00 lb Honey Malt',
+      '1.50 lb Wheat, Flaked',
+    ],
+    hops: [
+      '2.0 oz East Kent Goldings (EKG) (Boil)',
+      '2.0 oz Hallertauer (Boil)',
+    ],
+    yeast: 'Wyeast Labs 1084 Irish Ale',
+    source: 'beersmith',
+    brewDate: '2015-02-26',
+    hopsDetail: [
+      {
+        name: 'East Kent Goldings',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Hallertauer',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 24,
+    uuid: '00b4bb4d-00b4-40b4-00b4-00b4bb4d00b4',
+    name: 'GaribaldiHead 2',
+    style: 'American Wheat Beer',
+    category: 'ale',
+    description: 'Tony: Delicious',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 37,
+    grains: [
+      '11.00 lb Wheat Malt, Bel',
+      '10.00 lb Pale Malt (2 Row) US',
+      '1.50 lb Aromatic Malt',
+    ],
+    hops: [
+      '1.0 oz Amarillo (Boil)',
+      '1.0 oz Amarillo (Boil)',
+      '1.0 oz Amarillo (Boil)',
+      '2.5 oz Amarillo (Aroma)',
+      '2.0 oz Amarillo (Aroma)',
+      '3.0 oz Amarillo (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1968 London ESB Ale',
+    source: 'beersmith',
+    brewDate: '2015-03-06',
+    hopsDetail: [
+      {
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Amarillo',
+        amount: 2.5,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Amarillo',
+        amount: 2,
+        use: 'Aroma',
+        time: 1,
+      },
+      {
+        name: 'Amarillo',
+        amount: 3,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 10,
+  },
+  {
+    id: 25,
+    uuid: '3689a985-3689-4689-3689-3689a9853689',
+    name: 'GaribaldiHead',
+    style: 'American Amber Ale',
+    category: 'ale',
+    description: 'Tony: Delicious',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 20,
+    grains: [
+      '12.00 lb Wheat Malt, Bel',
+      '10.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Caravienne Malt',
+    ],
+    hops: [
+      '0.5 oz Amarillo (Boil)',
+      '1.0 oz Amarillo (Boil)',
+      '2.5 oz Amarillo (Aroma)',
+      '2.0 oz Amarillo (Aroma)',
+      '3.0 oz Amarillo (Dry Hop)',
+    ],
+    yeast: 'White Labs WLP002 English Ale',
+    source: 'beersmith',
+    brewDate: '2015-03-06',
+    hopsDetail: [
+      {
+        name: 'Amarillo',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Amarillo',
+        amount: 2.5,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Amarillo',
+        amount: 2,
+        use: 'Aroma',
+        time: 1,
+      },
+      {
+        name: 'Amarillo',
+        amount: 3,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 10,
+  },
+  {
+    id: 26,
+    uuid: '0547e758-0547-4547-0547-0547e7580547',
+    name: 'Hoppy Session Wheat Beer - 4/6/19',
+    style: 'American Wheat Beer',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 21,
+    grains: [
+      '9.00 lb Pale Malt (2 Row) US',
+      '9.00 lb White Wheat Malt',
+      '1.50 lb Oats, Flaked',
+      '1.50 lb Barley, Flaked',
+      '1.00 lb Cara-Pils/Dextrine',
+    ],
+    hops: [
+      '2.0 oz Centennial (Boil)',
+      '4.0 oz Citra (Aroma)',
+      '4.0 oz Mosaic (HBC 369) (Aroma)',
+      '2.0 oz Citra (Dry Hop)',
+      '2.0 oz Mosaic (HBC 369) (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2015-03-06',
+    hopsDetail: [
+      {
+        name: 'Centennial',
+        amount: 2,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        use: 'Aroma',
+        time: 0,
+      },
+      {
+        name: 'Mosaic',
+        amount: 4,
+        use: 'Aroma',
+        time: 0,
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Mosaic',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11.5,
+  },
+  {
+    id: 27,
+    uuid: '309a000d-309a-409a-309a-309a000d309a',
+    name: 'Go Fuck Yourself IPA',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 85,
+    grains: [
+      '22.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Cara-Pils/Dextrine',
+      '2.00 lb Caramel/Crystal Malt - 20L',
+      '1.00 lb Rye, Flaked',
+      '1.00 lb Caramel/Crystal Malt - 40L',
+    ],
+    hops: [
+      '4.0 oz Cascade (Boil)',
+      '1.0 oz Green Bullet (Boil)',
+      '1.0 oz Calypso (Boil)',
+      '1.0 oz Calypso (Aroma)',
+      '3.0 oz Azacca (Dry Hop)',
+      '4.0 oz Cascade (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2015-03-16',
+    hopsDetail: [
+      {
+        name: 'Cascade',
+        amount: 4,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Green Bullet',
+        amount: 1,
+        use: 'Boil',
+        time: 45,
+      },
+      {
+        name: 'Calypso',
+        amount: 1,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Calypso',
+        amount: 1,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Azacca',
+        amount: 3,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Cascade',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 28,
+    uuid: '3411cdb3-3411-4411-3411-3411cdb33411',
+    name: 'Mosiac Dust',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 62,
+    grains: [
+      '22.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Caramunich Malt',
+      '1.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Caramel/Crystal Malt - 60L',
+      '1.00 lb Melanoiden Malt',
+    ],
+    hops: [
+      '1.0 oz Mosaic (HBC 369) (Boil)',
+      '2.0 oz Mosaic (HBC 369) (Boil)',
+      '2.0 oz Mosaic (HBC 369) (Boil)',
+      '3.0 oz Mosaic (HBC 369) (Aroma)',
+      '4.0 oz Mosaic (HBC 369) (Dry Hop)',
+      '1.0 oz Mosaic (HBC 369) (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1272 American Ale II',
+    source: 'beersmith',
+    brewDate: '2015-03-16',
+    hopsDetail: [
+      {
+        name: 'Mosaic',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Mosaic',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Mosaic',
+        amount: 2,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Mosaic',
+        amount: 3,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Mosaic',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Mosaic',
+        amount: 1,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 29,
+    uuid: '4688b472-4688-4688-4688-4688b4724688',
+    name: 'Overlord',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 97,
+    grains: [
+      '22.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Cara-Pils/Dextrine',
+      '2.00 lb Caramel/Crystal Malt - 20L',
+      '1.00 lb Rye, Flaked',
+    ],
+    hops: [
+      '1.0 oz Citra (Boil)',
+      '2.0 oz Citra (Boil)',
+      '2.0 oz Citra (Boil)',
+      '2.0 oz Citra (Boil)',
+      '3.0 oz Citra (Aroma)',
+      '2.0 oz Citra (Aroma)',
+      '4.0 oz Citra (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2015-03-16',
+    hopsDetail: [
+      {
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        use: 'Aroma',
+        time: 0,
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 10.3,
+    artwork: '/images/recipes/overlord.jpg',
+  },
+  {
+    id: 30,
+    uuid: '5927c6d9-5927-4927-5927-5927c6d95927',
+    name: 'Zombie Dust',
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: 'Tony: Was okay',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    grains: [
+      '22.00 lb Pale Malt (2 Row) US',
+      '2.50 lb Caramunich Malt',
+      '1.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Caramel/Crystal Malt - 60L',
+      '1.00 lb Melanoiden Malt',
+    ],
+    hops: [
+      '1.0 oz Citra (Boil)',
+      '2.0 oz Citra (Boil)',
+      '2.0 oz Citra (Boil)',
+      '3.0 oz Citra (Aroma)',
+      '4.0 oz Citra (Dry Hop)',
+      '4.0 oz Citra (Dry Hop)',
+    ],
+    yeast: 'White Labs WLP002 English Ale',
+    source: 'beersmith',
+    brewDate: '2015-03-16',
+    hopsDetail: [
+      {
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 31,
+    uuid: '014d4bba-014d-414d-014d-014d4bba014d',
+    name: 'Milk Stout-OG',
+    style: 'Sweet Stout',
+    category: 'ale',
+    description: 'Tony: Delicious! FUCKING DELICIOUS',
+    og: 1.05,
+    fg: 1.01,
+    abv: 5.3,
+    ibu: 17,
+    grains: [
+      '15.46 lb Pale Malt (2 Row) US',
+      '2.21 lb Milk Sugar (Lactose)',
+      '2.15 lb Roasted Barley',
+      '1.66 lb Munich 10L (Briess)',
+      '1.66 lb Barley, Flaked (Briess)',
+      '1.62 lb Caramel Malt - 60L (Briess)',
+      '1.62 lb Chocolate Malt',
+      '1.10 lb Oats, Flaked',
+    ],
+    hops: ['0.8 oz Magnum (Boil)', '2.2 oz Goldings, East Kent (Boil)'],
+    yeast: 'DCL/Fermentis US-05 Safale American',
+    source: 'beersmith',
+    brewDate: '2015-03-25',
+    hopsDetail: [
+      {
+        name: 'Magnum',
+        amount: 0.8,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Goldings, East Kent',
+        amount: 2.2,
+        use: 'Boil',
+        time: 10,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 32,
+    uuid: '702a2c03-702a-402a-702a-702a2c03702a',
+    name: 'Moo Moo Canoe',
+    style: 'Sweet Stout',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 5.3,
+    ibu: 24,
+    grains: [
+      '15.00 lb Pale Malt (2 Row) US',
+      '3.00 lb Milk Sugar (Lactose)',
+      '2.00 lb Barley, Flaked (Briess)',
+      '2.00 lb Caramel Malt - 60L (Briess)',
+      '2.00 lb Chocolate Malt',
+      '2.00 lb Munich 10L (Briess)',
+      '2.00 lb Roasted Barley',
+      '1.00 lb Oats, Flaked',
+    ],
+    hops: ['1.0 oz Magnum (Boil)', '2.0 oz Goldings, East Kent (Boil)'],
+    yeast: 'DCL/Fermentis US-05 Safale American',
+    source: 'beersmith',
+    brewDate: '2015-03-25',
+    hopsDetail: [
+      {
+        name: 'Magnum',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Goldings, East Kent',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+    ],
+    batchSize: 11,
+    artwork: '/images/recipes/moomooCanoe.jpg',
+  },
+  {
+    id: 33,
+    uuid: '04d0983f-04d0-44d0-04d0-04d0983f04d0',
+    name: 'Raging Red Head (updated malt)',
+    style: 'Irish Red Ale',
+    category: 'ale',
+    description: 'Tony: Good, faded after time',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 23,
+    grains: [
+      '18.00 lb Pale Malt (2 Row) US',
+      '1.00 lb Special B Malt',
+      '1.00 lb Aromatic Malt',
+      '1.00 lb Munich Malt',
+      '1.00 lb Cara-Pils/Dextrine',
+    ],
+    hops: ['2.0 oz Crystal (Boil)', '2.0 oz Cascade (Boil)'],
+    yeast: 'Not specified',
+    source: 'beersmith',
+    brewDate: '2015-04-09',
+    hopsDetail: [
+      {
+        name: 'Crystal',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Cascade',
+        amount: 2,
+        use: 'Boil',
+        time: 30,
+      },
+    ],
+    batchSize: 10,
+    artwork: '/images/recipes/red_strawberry.jpg',
+  },
+  {
+    id: 34,
+    uuid: '4d61e8f5-4d61-4d61-4d61-4d61e8f54d61',
+    name: 'Redheads are the best',
+    style: 'Red IPA',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 51,
+    grains: [
+      '19.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Carared',
+      '1.00 lb Caramel Rye (Weyermann)',
+      '1.00 lb Special B Malt',
+    ],
+    hops: [
+      '2.0 oz Columbus (Tomahawk) (Boil)',
+      '1.0 oz Cascade (Boil)',
+      '1.0 oz Pacific Jade (Aroma)',
+      '1.0 oz Pacific Jade (Boil)',
+      '2.0 oz Pacific Jade (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2015-04-09',
+    hopsDetail: [
+      {
+        name: 'Columbus',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Cascade',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Pacific Jade',
+        amount: 1,
+        use: 'Aroma',
+        time: 5,
+      },
+      {
+        name: 'Pacific Jade',
+        amount: 1,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Pacific Jade',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 10,
+  },
+  {
+    id: 35,
+    uuid: '7a5d2357-7a5d-4a5d-7a5d-7a5d23577a5d',
+    name: 'Rasberry Saurus-Rex',
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 5.3,
+    ibu: 39,
+    grains: [
+      '16.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Cara-Pils/Dextrine',
+      '2.00 lb Caramel Malt - 20L (Briess)',
+      '2.00 lb Vienna Malt',
+      '2.00 lb Wheat Malt, Bel',
+      '1.00 lb Caramel Malt - 40L (Briess)',
+    ],
+    hops: [
+      '1.0 oz Citra (Boil)',
+      '1.0 oz Citra (Boil)',
+      '1.0 oz Amarillo (Boil)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2015-04-18',
+    hopsDetail: [
+      {
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 36,
+    uuid: '1bf95e4c-1bf9-4bf9-1bf9-1bf95e4c1bf9',
+    name: 'Strawberry Saurus-Rex',
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: 'Tony: Delicious',
+    og: 1.05,
+    fg: 1.01,
+    abv: 5.3,
+    ibu: 39,
+    grains: [
+      '16.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Carafoam',
+      '2.00 lb Caramel Malt - 20L (Briess)',
+      '2.00 lb Vienna Malt',
+      '2.00 lb Wheat Malt, Bel',
+      '1.00 lb Caramel Malt - 40L (Briess)',
+    ],
+    hops: [
+      '1.0 oz Citra (Boil)',
+      '1.0 oz Citra (Boil)',
+      '1.0 oz Amarillo (Boil)',
+    ],
+    yeast: 'Wyeast Labs 1272 American Ale II',
+    source: 'beersmith',
+    brewDate: '2015-04-18',
+    hopsDetail: [
+      {
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+    ],
+    batchSize: 11,
+    artwork: '/images/recipes/red_strawberry.jpg',
+  },
+  {
+    id: 37,
+    uuid: '044b9307-044b-444b-044b-044b9307044b',
+    name: 'Little Sumpin Sumpin',
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 26,
+    grains: [
+      '18.03 lb Pale Malt (2 Row) US',
+      '13.57 lb Wheat Malt, Bel',
+      '4.07 lb Wheat, Torrified',
+      '0.04 lb Toasted Malt',
+    ],
+    hops: [
+      '0.7 oz Nugget (Boil)',
+      '0.1 oz Horizon (Boil)',
+      '0.1 oz Summit (Boil)',
+      '0.5 oz Willamette (Boil)',
+      '1.8 oz Santiam (Boil)',
+      '0.6 oz Willamette (Boil)',
+      '1.9 oz Cascade (Dry Hop)',
+      '1.9 oz Centennial (Dry Hop)',
+      '1.9 oz Chinook (Dry Hop)',
+      '1.9 oz Simcoe (Dry Hop)',
+      '1.4 oz Amarillo (Dry Hop)',
+      '1.2 oz Columbus (Tomahawk) (Dry Hop)',
+    ],
+    yeast: 'White Labs WLP002 English Ale',
+    source: 'beersmith',
+    brewDate: '2015-04-20',
+    hopsDetail: [
+      {
+        name: 'Nugget',
+        amount: 0.7,
+        use: 'Boil',
+        time: 90,
+      },
+      {
+        name: 'Horizon',
+        amount: 0.1,
+        use: 'Boil',
+        time: 90,
+      },
+      {
+        name: 'Summit',
+        amount: 0.1,
+        use: 'Boil',
+        time: 90,
+      },
+      {
+        name: 'Willamette',
+        amount: 0.5,
+        use: 'Boil',
+        time: 45,
+      },
+      {
+        name: 'Santiam',
+        amount: 1.8,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Willamette',
+        amount: 0.6,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Cascade',
+        amount: 1.9,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Centennial',
+        amount: 1.9,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Chinook',
+        amount: 1.9,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Simcoe',
+        amount: 1.9,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Amarillo',
+        amount: 1.4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Columbus',
+        amount: 1.2,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 38,
+    uuid: '411962b6-4119-4119-4119-411962b64119',
+    name: 'Oberon',
+    style: 'American Wheat or Rye Beer',
+    category: 'ale',
+    description: 'Tony: This was okay',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 15,
+    grains: [
+      '13.00 lb Pale Malt (2 Row) US',
+      '9.00 lb White Wheat Malt',
+      '1.00 lb Cara-Pils/Dextrine',
+    ],
+    hops: [
+      '2.0 oz Saaz (Boil)',
+      '2.0 oz Saaz (Boil)',
+      '2.0 oz Cascade (Dry Hop)',
+      '1.0 oz Saaz (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1010 American Wheat Ale',
+    source: 'beersmith',
+    brewDate: '2015-04-26',
+    hopsDetail: [
+      {
+        name: 'Saaz',
+        amount: 2,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Saaz',
+        amount: 2,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Cascade',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Saaz',
+        amount: 1,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 39,
+    uuid: '6ae2246b-6ae2-4ae2-6ae2-6ae2246b6ae2',
+    name: 'Invade Canada Redux',
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: 'Tony: DUMPED',
+    og: 1.052,
+    fg: 1.01,
+    abv: 5.5,
+    ibu: 53,
+    grains: [
+      '19.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Caramel/Crystal Malt - 40L',
+      '1.00 lb Toasted Malt',
+      '1.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Rye Malt',
+    ],
+    hops: [
+      '1.0 oz Warrior (Boil)',
+      '2.0 oz Motueka (Boil)',
+      '1.0 oz Nelson Sauvin (Boil)',
+      '1.0 oz Motueka (Boil)',
+      '3.0 oz Motueka (Aroma)',
+    ],
+    yeast: 'Wyeast Labs 1272 American Ale II',
+    source: 'beersmith',
+    brewDate: '2015-05-31',
+    hopsDetail: [
+      {
+        name: 'Warrior',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Motueka',
+        amount: 2,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Nelson Sauvin',
+        amount: 1,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Motueka',
+        amount: 1,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Motueka',
+        amount: 3,
+        use: 'Aroma',
+        time: 5,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 40,
+    uuid: '6419ff1f-6419-4419-6419-6419ff1f6419',
+    name: 'Invade Canada',
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: 'Tony: DUMPED',
+    og: 1.052,
+    fg: 1.01,
+    abv: 5.5,
+    ibu: 36,
+    grains: [
+      '19.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Caramel/Crystal Malt - 40L',
+      '1.00 lb Cara-Pils/Dextrine',
+    ],
+    hops: [
+      '2.0 oz Cascade (Boil)',
+      '1.0 oz Cascade (Boil)',
+      '1.0 oz Simcoe (Boil)',
+      '2.0 oz Nelson Sauvin (Dry Hop)',
+      '4.0 oz Amarillo (Dry Hop)',
+      '2.0 oz Galaxy (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1272 American Ale II',
+    source: 'beersmith',
+    brewDate: '2015-05-31',
+    hopsDetail: [
+      {
+        name: 'Cascade',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Cascade',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Simcoe',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Nelson Sauvin',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Amarillo',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Galaxy',
+        amount: 2,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 41,
+    uuid: '195a2c3b-195a-495a-195a-195a2c3b195a',
+    name: 'Withered Imperial Stout 3',
+    style: 'Imperial Stout',
+    category: 'ale',
+    description: 'Tony: GOOD',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 46,
+    grains: [
+      '19.00 lb Pale Malt (2 Row) US',
+      '3.00 lb Light Dry Extract',
+      '2.00 lb Chocolate Malt',
+      '1.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Roasted Barley',
+      '1.00 lb Rye Malt',
+      '1.00 lb Special B Malt',
+      '0.50 lb Black (Patent) Malt',
+    ],
+    hops: ['2.0 oz Challenger (Boil)', '2.0 oz Goldings, B.C. (Boil)'],
+    yeast: 'Wyeast Labs 1028 London Ale Yeast',
+    source: 'beersmith',
+    brewDate: '2015-06-07',
+    hopsDetail: [
+      {
+        name: 'Challenger',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Goldings, B.C.',
+        amount: 2,
+        use: 'Boil',
+        time: 30,
+      },
+    ],
+    batchSize: 5.5,
+  },
+  {
+    id: 42,
+    uuid: '0f4efd74-0f4e-4f4e-0f4e-0f4efd740f4e',
+    name: 'Withered Imperial Stout - Mashmallow',
+    style: 'Imperial Stout',
+    category: 'ale',
+    description: 'Tony: GOOD',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 47,
+    grains: [
+      '19.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Chocolate Malt',
+      '1.00 lb Black (Patent) Malt',
+      '1.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Roasted Barley',
+      '1.00 lb Special B Malt',
+    ],
+    hops: ['2.0 oz Challenger (Boil)', '2.0 oz Goldings, B.C. (Boil)'],
+    yeast: 'Wyeast Labs 1028 London Ale Yeast',
+    source: 'beersmith',
+    brewDate: '2015-06-07',
+    hopsDetail: [
+      {
+        name: 'Challenger',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Goldings, B.C.',
+        amount: 2,
+        use: 'Boil',
+        time: 30,
+      },
+    ],
+    batchSize: 5.5,
+  },
+  {
+    id: 43,
+    uuid: '7608648c-7608-4608-7608-7608648c7608',
+    name: 'Withered Imperial Stout OG',
+    style: 'Imperial Stout',
+    category: 'ale',
+    description: 'Tony: GOOD',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 47,
+    grains: [
+      '19.00 lb Pale Malt (2 Row) US',
+      '2.00 lb Chocolate Malt',
+      '1.00 lb Black (Patent) Malt',
+      '1.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Roasted Barley',
+      '1.00 lb Special B Malt',
+    ],
+    hops: ['2.0 oz Challenger (Boil)', '2.0 oz Goldings, B.C. (Boil)'],
+    yeast: 'Wyeast Labs 1028 London Ale Yeast',
+    source: 'beersmith',
+    brewDate: '2015-06-07',
+    hopsDetail: [
+      {
+        name: 'Challenger',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Goldings, B.C.',
+        amount: 2,
+        use: 'Boil',
+        time: 30,
+      },
+    ],
+    batchSize: 5.5,
+  },
+  {
+    id: 44,
+    uuid: '781dcec6-781d-481d-781d-781dcec6781d',
+    name: 'Little Heffer 2',
+    style: 'Weizen/Weissbier',
+    category: 'ale',
+    description: 'Tony: Very good, bananay',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 14,
+    grains: ['15.50 lb Wheat Malt, Ger', '8.00 lb Pilsner (2 Row) Ger'],
+    hops: [
+      '0.5 oz Mandarina Bavaria (Boil)',
+      '1.5 oz Mandarina Bavaria (Boil)',
+    ],
+    yeast: 'Wyeast Labs 3068 Weihenstephan Weizen',
+    source: 'beersmith',
+    brewDate: '2015-06-14',
+    hopsDetail: [
+      {
+        name: 'Mandarina Bavaria',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Mandarina Bavaria',
+        amount: 1.5,
+        use: 'Boil',
+        time: 10,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 45,
+    uuid: '29e6054c-29e6-49e6-29e6-29e6054c29e6',
+    name: 'Little Heffer',
+    style: 'Weizen/Weissbier',
+    category: 'ale',
+    description: 'Tony: Very good, bananay',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 12,
+    grains: ['14.00 lb Wheat Malt, Ger', '8.00 lb Pilsner (2 Row) Ger'],
+    hops: ['1.5 oz Hallertau (Boil)', '0.5 oz Hallertau (Boil)'],
+    yeast: 'Wyeast Labs 3068 Weihenstephan Weizen',
+    source: 'beersmith',
+    brewDate: '2015-06-14',
+    hopsDetail: [
+      {
+        name: 'Hallertau',
+        amount: 1.5,
+        use: 'Boil',
+        time: 45,
+      },
+      {
+        name: 'Hallertau',
+        amount: 0.5,
+        use: 'Boil',
+        time: 15,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 46,
+    uuid: '47a5331b-47a5-47a5-47a5-47a5331b47a5',
+    name: 'Madelyns Razzy',
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 0,
+    grains: ['15.00 lb Pale Malt (2 Row) Bel'],
+    hops: [],
+    yeast: 'Not specified',
+    source: 'beersmith',
+    brewDate: '2015-06-18',
+    hopsDetail: [],
+    batchSize: 11,
+  },
+  {
+    id: 47,
+    uuid: '1dd0e4e1-1dd0-4dd0-1dd0-1dd0e4e11dd0',
+    name: 'Usurper',
+    style: 'American Wheat or Rye Beer',
+    category: 'ale',
+    description: 'Tony: Very good!',
+    og: 1.05,
+    fg: 1.012,
+    abv: 5,
+    ibu: 76,
+    grains: [
+      '17.00 lb Pale Malt (2 Row) US',
+      '6.00 lb Rye Malt',
+      '1.00 lb Aromatic Malt',
+      '1.00 lb Caramel/Crystal Malt - 20L',
+      '1.00 lb Caramel/Crystal Malt - 40L',
+      '1.00 lb Caramel/Crystal Malt - 80L',
+      '1.00 lb Caramel/Crystal Malt -120L',
+      '1.00 lb Carapils (Briess)',
+    ],
+    hops: [
+      '2.0 oz Summit (Boil)',
+      '1.0 oz Amarillo (Boil)',
+      '1.0 oz Amarillo (Boil)',
+      '2.0 oz Amarillo (Boil)',
+      '1.0 oz Amarillo Gold (Aroma)',
+      '4.0 oz Amarillo (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1272 American Ale II',
+    source: 'beersmith',
+    brewDate: '2015-06-28',
+    hopsDetail: [
+      {
+        name: 'Summit',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Boil',
+        time: 20,
+      },
+      {
+        name: 'Amarillo',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 1,
+        use: 'Aroma',
+        time: 0,
+      },
+      {
+        name: 'Amarillo',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 48,
+    uuid: '12340f9d-1234-4234-1234-12340f9d1234',
+    name: 'Blue Balls',
+    style: 'Witbier',
+    category: 'ale',
+    description: 'Tony: Good, needs more orange',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 17,
+    grains: [
+      '10.00 lb Pale Malt (2 Row) US',
+      '5.00 lb Wheat, Flaked',
+      '5.00 lb Wheat, Torrified',
+    ],
+    hops: ['2.0 oz East Kent Goldings (EKG) (Boil)'],
+    yeast: 'Wyeast Labs 3944 Belgian Witbier',
+    source: 'beersmith',
+    brewDate: '2015-07-03',
+    hopsDetail: [
+      {
+        name: 'East Kent Goldings',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 49,
+    uuid: '6e1e68cc-6e1e-4e1e-6e1e-6e1e68cc6e1e',
+    name: "World's Best Oktoberfest",
+    style: 'Oktoberfest/Marzen',
+    category: 'lager',
+    description: 'Tony: Very good for first Lager',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 27,
+    grains: [
+      '10.00 lb Vienna Malt',
+      '6.00 lb Munich Malt',
+      '6.00 lb Pale Malt (2 Row) US',
+    ],
+    hops: ['4.0 oz Hallertauer Hersbrucker (Boil)'],
+    yeast: 'Wyeast Labs 2124 Bohemian Lager',
+    source: 'beersmith',
+    brewDate: '2015-07-26',
+    hopsDetail: [
+      {
+        name: 'Hallertauer Hersbrucker',
+        amount: 4,
+        use: 'Boil',
+        time: 60,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 50,
+    uuid: '17896637-1789-4789-1789-178966371789',
+    name: 'Hop Stoopid',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.08,
+    fg: 1.01,
+    abv: 9.2,
+    ibu: 197,
+    grains: ['18.00 lb Pale Malt (2 Row) US', '1.00 lb Victory Malt'],
+    hops: [
+      '1.0 oz Nugget (Boil)',
+      '4.0 oz Columbus (Tomahawk) (Boil)',
+      '1.0 oz Cascade (Boil)',
+      '1.0 oz Chinook (Boil)',
+      '1.3 oz Simcoe (Aroma)',
+      '3.0 oz Columbus (Tomahawk) (Dry Hop)',
+      '1.5 oz Simcoe (Dry Hop)',
+      '0.8 oz Chinook (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1028 London Ale Yeast',
+    source: 'beersmith',
+    brewDate: '2015-08-01',
+    hopsDetail: [
+      {
+        name: 'Nugget',
+        amount: 1,
+        use: 'Boil',
+        time: 90,
+      },
+      {
+        name: 'Columbus',
+        amount: 4,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Cascade',
+        amount: 1,
+        use: 'Boil',
+        time: 12,
+      },
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 12,
+      },
+      {
+        name: 'Simcoe',
+        amount: 1.3,
+        use: 'Aroma',
+        time: 0,
+      },
+      {
+        name: 'Columbus',
+        amount: 3,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Simcoe',
+        amount: 1.5,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Chinook',
+        amount: 0.8,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5.5,
+  },
+  {
+    id: 51,
+    uuid: '31278824-3127-4127-3127-312788243127',
+    name: 'Pumkin Beer OG',
+    style: 'American Amber Ale',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 22,
+    grains: [
+      '16.00 lb Pale Malt (2 Row) US',
+      '1.00 lb Caramel/Crystal Malt - 60L',
+      '1.00 lb Oats, Flaked',
+      '1.00 lb Vienna Malt',
+      '1.00 lb Wheat, Torrified',
+      '1.00 lb White Wheat Malt',
+    ],
+    hops: ['1.0 oz Cluster (Boil)', '1.0 oz Goldings, East Kent (Boil)'],
+    yeast: 'Wyeast Labs 1187 Ringwood Ale',
+    source: 'beersmith',
+    brewDate: '2015-08-21',
+    hopsDetail: [
+      {
+        name: 'Cluster',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Goldings, East Kent',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+    ],
+    batchSize: 5.5,
+  },
+  {
+    id: 52,
+    uuid: '2fe6c90b-2fe6-4fe6-2fe6-2fe6c90b2fe6',
+    name: 'Smore Punkin',
+    style: 'American Amber Ale',
+    category: 'ale',
+    description: 'Tony: Very good',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 31,
+    grains: [
+      '18.00 lb Pale Malt (2 Row) US',
+      '3.00 lb Caramel/Crystal Malt - 60L',
+      '2.60 lb Oats, Flaked',
+      '2.00 lb Victory Malt',
+      '2.00 lb Vienna Malt',
+    ],
+    hops: ['2.0 oz Cluster (Boil)', '2.0 oz Goldings, East Kent (Boil)'],
+    yeast: 'Wyeast Labs 1187 Ringwood Ale',
+    source: 'beersmith',
+    brewDate: '2015-08-30',
+    hopsDetail: [
+      {
+        name: 'Cluster',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Goldings, East Kent',
+        amount: 2,
+        use: 'Boil',
+        time: 30,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 53,
+    uuid: '761c7943-761c-461c-761c-761c7943761c',
+    name: "Devil's Wheat 2",
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: 'Tony: Pretty good, more hops next time',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 59,
+    grains: [
+      '10.00 lb Pale Malt (2 Row) US',
+      '10.00 lb Wheat Malt, Ger',
+      '1.00 lb Chocolate Rye Malt',
+      '1.00 lb Vienna Malt',
+      '1.00 lb Caramel/Crystal Malt - 20L',
+      '0.25 lb Roasted Barley',
+    ],
+    hops: [
+      '1.0 oz Columbus (Tomahawk) (Boil)',
+      '1.0 oz Amarillo Gold (Boil)',
+      '2.0 oz Columbus (Tomahawk) (Boil)',
+      '2.0 oz Amarillo Gold (Boil)',
+      '3.0 oz Amarillo Gold (Aroma)',
+      '1.0 oz Columbus (Tomahawk) (Aroma)',
+    ],
+    yeast: 'Wyeast Labs 1010 American Wheat Ale',
+    source: 'beersmith',
+    brewDate: '2015-09-06',
+    hopsDetail: [
+      {
+        name: 'Columbus',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Columbus',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 3,
+        use: 'Aroma',
+        time: 0,
+      },
+      {
+        name: 'Columbus',
+        amount: 1,
+        use: 'Aroma',
+        time: 0,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 54,
+    uuid: '39be846b-39be-49be-39be-39be846b39be',
+    name: "Devil's Wheat",
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: 'Tony: Pretty good, more hops next time',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 56,
+    grains: [
+      '10.00 lb Pale Malt (2 Row) US',
+      '10.00 lb Wheat Malt, Ger',
+      '2.00 lb Carared',
+      '2.00 lb Rye Malt',
+      '1.00 lb Caraaroma',
+      '1.00 lb Carafoam',
+      '1.00 lb Caramel/Crystal Malt - 30L',
+    ],
+    hops: [
+      '1.0 oz Amarillo Gold (Boil)',
+      '1.0 oz Columbus (Tomahawk) (Boil)',
+      '2.0 oz Amarillo Gold (Boil)',
+      '2.0 oz Columbus (Tomahawk) (Boil)',
+      '3.0 oz Amarillo Gold (Aroma)',
+      '1.0 oz Columbus (Tomahawk) (Aroma)',
+    ],
+    yeast: 'Wyeast Labs 1010 American Wheat Ale',
+    source: 'beersmith',
+    brewDate: '2015-09-06',
+    hopsDetail: [
+      {
+        name: 'Amarillo Gold',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Columbus',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Columbus',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 3,
+        use: 'Aroma',
+        time: 0,
+      },
+      {
+        name: 'Columbus',
+        amount: 1,
+        use: 'Aroma',
+        time: 0,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 55,
+    uuid: '17c7471f-17c7-47c7-17c7-17c7471f17c7',
+    name: 'Saison du Frank!',
+    style: 'Saison',
+    category: 'ale',
+    description: 'Tony: Good',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 29,
+    grains: [
+      '9.00 lb Pale Malt (2 Row) Bel',
+      '2.00 lb Wheat Malt, Bel',
+      '1.00 lb Caramel Malt - 40L (Briess)',
+      '0.50 lb Munich Malt',
+    ],
+    hops: [
+      '0.5 oz Sorachi Ace (Boil)',
+      '1.5 oz Crystal (Boil)',
+      '0.5 oz Cascade (Boil)',
+      '0.5 oz Amarillo (Aroma)',
+    ],
+    yeast: 'Wyeast Labs 3711 French Saison',
+    source: 'beersmith',
+    brewDate: '2015-10-11',
+    hopsDetail: [
+      {
+        name: 'Sorachi Ace',
+        amount: 0.5,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Crystal',
+        amount: 1.5,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Cascade',
+        amount: 0.5,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Amarillo',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 5,
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 56,
+    uuid: '14794aa1-1479-4479-1479-14794aa11479',
+    name: 'Saison',
+    style: 'Saison',
+    category: 'ale',
+    description: 'Tony: Good',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 38,
+    grains: [
+      '17.00 lb Pale Malt (2 Row) US',
+      '3.00 lb White Wheat Malt',
+      '1.00 lb Caramunich Malt',
+      '1.00 lb Oats, Flaked',
+    ],
+    hops: [
+      '1.0 oz Fuggles (Boil)',
+      '1.0 oz Sorachi Ace (Boil)',
+      '1.0 oz Fuggles (Boil)',
+      '2.0 oz Fuggles (Boil)',
+    ],
+    yeast: 'Wyeast Labs 3711 French Saison',
+    source: 'beersmith',
+    brewDate: '2015-10-11',
+    hopsDetail: [
+      {
+        name: 'Fuggles',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Sorachi Ace',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Fuggles',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Fuggles',
+        amount: 2,
+        use: 'Boil',
+        time: 15,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 57,
+    uuid: '639359a1-6393-4393-6393-639359a16393',
+    name: 'Lacto',
+    style: 'Berliner Weiss',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 0,
+    grains: ['5.00 lb White Wheat Malt', '3.00 lb Pilsner (2 Row) Bel'],
+    hops: [],
+    yeast: 'Not specified',
+    source: 'beersmith',
+    brewDate: '2015-10-15',
+    hopsDetail: [],
+    batchSize: 5,
+  },
+  {
+    id: 58,
+    uuid: '03d9d37f-03d9-43d9-03d9-03d9d37f03d9',
+    name: 'Big Ass Barleywine',
+    style: 'English Barleywine',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 5.3,
+    ibu: 56,
+    grains: [
+      '23.00 lb Pale Malt (2 Row) US',
+      '3.00 lb Caramel Malt - 60L (Briess)',
+      '1.00 lb Carapils (Briess)',
+    ],
+    hops: [
+      '0.5 oz Cascade (Boil)',
+      '0.5 oz Centennial (Boil)',
+      '1.0 oz Cascade (Boil)',
+      '1.0 oz Chinook (Boil)',
+      '1.0 oz Chinook (Aroma)',
+      '0.5 oz Cascade (Dry Hop)',
+      '0.3 oz Centennial (Dry Hop)',
+      '0.3 oz Chinook (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2015-12-02',
+    hopsDetail: [
+      {
+        name: 'Cascade',
+        amount: 0.5,
+        use: 'Boil',
+        time: 120,
+      },
+      {
+        name: 'Centennial',
+        amount: 0.5,
+        use: 'Boil',
+        time: 120,
+      },
+      {
+        name: 'Cascade',
+        amount: 1,
+        use: 'Boil',
+        time: 90,
+      },
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 45,
+      },
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Aroma',
+        time: 0,
+      },
+      {
+        name: 'Cascade',
+        amount: 0.5,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Centennial',
+        amount: 0.3,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Chinook',
+        amount: 0.3,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 59,
+    uuid: '57b0ea40-57b0-47b0-57b0-57b0ea4057b0',
+    name: 'Kyle beer',
+    style: 'Saison',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 55,
+    grains: [
+      '16.00 lb Pilsner (2 Row) Ger',
+      '3.00 lb White Wheat Malt',
+      '1.00 lb Munich Malt',
+      '0.75 lb Acid Malt',
+    ],
+    hops: ['2.0 oz East Kent Goldings (EKG) (Boil)', '2.0 oz Admiral (Boil)'],
+    yeast: 'Not specified',
+    source: 'beersmith',
+    brewDate: '2016-01-17',
+    hopsDetail: [
+      {
+        name: 'East Kent Goldings',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Admiral',
+        amount: 2,
+        use: 'Boil',
+        time: 30,
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 60,
+    uuid: '0525ffec-0525-4525-0525-0525ffec0525',
+    name: 'Bitch Mittens Session IPA',
+    style: 'Session Beer',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 42,
+    grains: [
+      '7.00 lb Pale Malt, 2-Row (Rahr)',
+      '0.75 lb Munich 10L (Briess)',
+      '0.75 lb Victory Malt',
+      '0.25 lb Acidulated (Weyermann)',
+    ],
+    hops: [
+      '0.2 oz Amarillo (Boil)',
+      '0.2 oz Mosaic (HBC 369) (Boil)',
+      '1.7 oz Mosaic (HBC 369) (Boil)',
+      '1.3 oz Amarillo (Boil)',
+      '1.6 oz Mosaic (HBC 369) (Dry Hop)',
+      '1.2 oz Amarillo (Dry Hop)',
+      '1.0 oz Cascade (Dry Hop)',
+      '1.0 oz Simcoe (Dry Hop)',
+      '0.8 oz Centennial (Dry Hop)',
+    ],
+    yeast: 'White Labs WLP001 California Ale',
+    source: 'beersmith',
+    brewDate: '2016-07-29',
+    hopsDetail: [
+      {
+        name: 'Amarillo',
+        amount: 0.2,
+        use: 'Boil',
+        time: 30,
+      },
+      {
+        name: 'Mosaic',
+        amount: 0.2,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Mosaic',
+        amount: 1.7,
+        use: 'Boil',
+        time: 20,
+      },
+      {
+        name: 'Amarillo',
+        amount: 1.3,
+        use: 'Boil',
+        time: 20,
+      },
+      {
+        name: 'Mosaic',
+        amount: 1.6,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Amarillo',
+        amount: 1.2,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Cascade',
+        amount: 1,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Simcoe',
+        amount: 1,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Centennial',
+        amount: 0.8,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5.5,
+  },
+  {
+    id: 61,
+    uuid: '09daa07e-09da-49da-09da-09daa07e09da',
+    name: 'Riggity Wrecked',
+    style: 'Imperial Stout',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 62,
+    grains: [
+      '17.00 lb Pale Malt (2 Row) US',
+      '3.00 lb Roasted Barley',
+      '3.00 lb Chocolate Malt',
+      '2.00 lb Black (Patent) Malt',
+      '2.00 lb Oats, Flaked',
+      '1.00 lb Cara-Pils/Dextrine',
+    ],
+    hops: [
+      '1.0 oz Chinook (Boil)',
+      '1.0 oz Chinook (Boil)',
+      '1.0 oz Northern Brewer (Boil)',
+      '2.0 oz Willamette (Aroma)',
+    ],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2017-01-13',
+    hopsDetail: [
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 40,
+      },
+      {
+        name: 'Northern Brewer',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Willamette',
+        amount: 2,
+        use: 'Aroma',
+        time: 5,
+      },
+    ],
+    batchSize: 5.5,
+  },
+  {
+    id: 62,
+    uuid: '6a0a528d-6a0a-4a0a-6a0a-6a0a528d6a0a',
+    name: '#NoFilter',
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 77,
+    grains: [
+      '22.00 lb Pale Malt (2 Row) US',
+      '3.00 lb Wheat Malt, Bel',
+      '3.00 lb Oats, Flaked',
+      '1.00 lb Honey Malt',
+    ],
+    hops: [
+      '1.0 oz Chinook (Boil)',
+      '2.0 oz Citra (Boil)',
+      '2.0 oz Amarillo (Boil)',
+      '3.0 oz Amarillo (Boil)',
+      '3.0 oz Mosaic (HBC 369) (Boil)',
+      '3.0 oz Citra (Boil)',
+      '4.0 oz Citra (Dry Hop)',
+      '4.0 oz Mosaic (HBC 369) (Dry Hop)',
+      '4.0 oz Amarillo (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1318 London Ale III',
+    source: 'beersmith',
+    brewDate: '2017-11-26',
+    hopsDetail: [
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Amarillo',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Amarillo',
+        amount: 3,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Mosaic',
+        amount: 3,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Mosaic',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Amarillo',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 63,
+    uuid: '74f83a2b-74f8-44f8-74f8-74f83a2b74f8',
+    name: "The Devil's Narwhal NEIPA - 5/29/2019",
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 85,
+    grains: [
+      '22.00 lb Pale Malt (2 Row) US',
+      '3.00 lb Oats, Flaked',
+      '3.00 lb Wheat Malt, Bel',
+      '2.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Rye Malt',
+    ],
+    hops: [
+      '1.0 oz Chinook (Boil)',
+      '2.0 oz Citra (Boil)',
+      '2.0 oz Galaxy (Boil)',
+      '3.0 oz Citra (Boil)',
+      '3.0 oz Galaxy (Boil)',
+      '3.0 oz Mosaic (HBC 369) (Boil)',
+      '4.0 oz Citra (Dry Hop)',
+      '4.0 oz Galaxy (Dry Hop)',
+      '4.0 oz Mosaic (HBC 369) (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1318 London Ale III',
+    source: 'beersmith',
+    brewDate: '2017-11-26',
+    hopsDetail: [
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Galaxy',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Galaxy',
+        amount: 3,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Mosaic',
+        amount: 3,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Galaxy',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Mosaic',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 64,
+    uuid: '791635f6-7916-4916-7916-791635f67916',
+    name: "The Devil's Narwhal NEIPA",
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 85,
+    grains: [
+      '22.00 lb Pale Malt (2 Row) US',
+      '3.00 lb Oats, Flaked',
+      '3.00 lb Wheat Malt, Bel',
+      '2.00 lb Cara-Pils/Dextrine',
+      '1.00 lb Honey Malt',
+    ],
+    hops: [
+      '1.0 oz Chinook (Boil)',
+      '2.0 oz Citra (Boil)',
+      '2.0 oz Galaxy (Boil)',
+      '3.0 oz Citra (Boil)',
+      '3.0 oz Mosaic (HBC 369) (Boil)',
+      '3.0 oz Galaxy (Boil)',
+      '4.0 oz Citra (Dry Hop)',
+      '4.0 oz Galaxy (Dry Hop)',
+      '4.0 oz Mosaic (HBC 369) (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1318 London Ale III',
+    source: 'beersmith',
+    brewDate: '2017-11-26',
+    hopsDetail: [
+      {
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Galaxy',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Mosaic',
+        amount: 3,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Galaxy',
+        amount: 3,
+        use: 'Boil',
+        time: 15,
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Galaxy',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Mosaic',
+        amount: 4,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 11,
+  },
+  {
+    id: 65,
+    uuid: '61b0cda1-61b0-41b0-61b0-61b0cda161b0',
+    name: 'ESB',
+    style: 'Strong Bitter',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.013,
+    abv: 4.9,
+    ibu: 39,
+    grains: [
+      '7.11 lb Extra Pale Maris Otter Malt (Crisp)',
+      '0.89 lb Caramel/Crystal Malt - 20L',
+      '0.71 lb Crystal, DRC (Simpsons)',
+      '0.36 lb Victory Malt (biscuit) (Briess)',
+    ],
+    hops: [
+      '1.4 oz Goldings, East Kent (Boil)',
+      '0.9 oz Goldings, East Kent (Aroma)',
+      '1.1 oz East Kent Goldings (EKG) (Aroma)',
+      '2.3 oz Goldings, East Kent (Dry Hop)',
+    ],
+    yeast: 'Inland Island INIS-316 English Ale VI',
+    source: 'beersmith',
+    brewDate: '2021-08-10',
+    hopsDetail: [
+      {
+        name: 'Goldings, East Kent',
+        amount: 1.4,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Goldings, East Kent',
+        amount: 0.9,
+        use: 'Aroma',
+        time: 15,
+      },
+      {
+        name: 'East Kent Goldings (EKG)',
+        amount: 1.1,
+        use: 'Aroma',
+        time: 15,
+      },
+      {
+        name: 'Goldings, East Kent',
+        amount: 2.3,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 66,
+    uuid: '60158552-6015-4015-6015-601585526015',
+    name: 'Flanders Red',
+    style: 'Flanders Red Ale',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.013,
+    abv: 4.9,
+    ibu: 0,
+    grains: [
+      '2.67 lb Munich I (Weyermann)',
+      '2.67 lb Pale Malt (2 Row) US',
+      '2.67 lb Vienna Malt',
+      '0.89 lb Wheat - White Malt (Briess)',
+      '0.37 lb Special B Malt',
+      '0.25 lb Aromatic Malt',
+    ],
+    hops: [],
+    yeast: 'White Labs WLP665 Flemish Ale Blend',
+    source: 'beersmith',
+    brewDate: '2020-02-18',
+    hopsDetail: [],
+    batchSize: 5,
+  },
+  {
+    id: 67,
+    uuid: '0b24104b-0b24-4b24-0b24-0b24104b0b24',
+    name: 'Fluffernutter Cream Ale',
+    style: 'American-Style Cream Ale',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.013,
+    abv: 4.9,
+    ibu: 15,
+    grains: [
+      '6.00 lb Pale Malt, 2-Row (Rahr)',
+      '1.50 lb Corn - Yellow, Flaked (Briess)',
+      '0.50 lb Victory Malt (biscuit) (Briess)',
+      '0.50 lb Milk Sugar (Lactose)',
+    ],
+    hops: ['0.5 oz Tettnang (Boil)', '0.8 oz Tettnang (Aroma)'],
+    yeast: 'Wyeast Labs 1007 German Ale',
+    source: 'beersmith',
+    brewDate: '2022-01-03',
+    hopsDetail: [
+      {
+        name: 'Tettnang',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'Tettnang',
+        amount: 0.8,
+        use: 'Aroma',
+        time: 15,
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 68,
+    uuid: '1f7fb6bd-1f7f-4f7f-1f7f-1f7fb6bd1f7f',
+    name: 'Hazy',
+    style: 'American-Style India Pale Ale',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.013,
+    abv: 4.9,
+    ibu: 47,
+    grains: [
+      '5.07 lb Pale Ale Malt (Rahr)',
+      '2.30 lb Oats, Flaked',
+      '1.27 lb Pale Ale, Golden Promise (Simpsons)',
+      '1.27 lb White Wheat Malt',
+    ],
+    hops: [
+      '1.7 oz Cashmere (Aroma)',
+      '1.7 oz Vic Secret (Aroma)',
+      '0.8 oz Huell Melon (Aroma)',
+      '1.7 oz Vic Secret (Dry Hop)',
+      '1.3 oz Cashmere (Dry Hop)',
+      '1.3 oz Huell Melon (Dry Hop)',
+      '2.6 oz Vic Secret (Dry Hop)',
+      '1.9 oz Cashmere (Dry Hop)',
+      '1.9 oz Huell Melon (Dry Hop)',
+    ],
+    yeast: 'Wyeast Labs 1318 London Ale III',
+    source: 'beersmith',
+    brewDate: '2022-01-05',
+    hopsDetail: [
+      {
+        name: 'Cashmere',
+        amount: 1.7,
+        use: 'Aroma',
+        time: 20,
+      },
+      {
+        name: 'Vic Secret',
+        amount: 1.7,
+        use: 'Aroma',
+        time: 20,
+      },
+      {
+        name: 'Huell Melon',
+        amount: 0.8,
+        use: 'Aroma',
+        time: 20,
+      },
+      {
+        name: 'Vic Secret',
+        amount: 1.7,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Cashmere',
+        amount: 1.3,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Huell Melon',
+        amount: 1.3,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Vic Secret',
+        amount: 2.6,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Cashmere',
+        amount: 1.9,
+        use: 'Dry Hop',
+      },
+      {
+        name: 'Huell Melon',
+        amount: 1.9,
+        use: 'Dry Hop',
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 69,
+    uuid: '5db5f2da-5db5-4db5-5db5-5db5f2da5db5',
+    name: 'Mexican Lager',
+    style: 'American-Style Lager',
+    category: 'lager',
+    description: '',
+    og: 1.05,
+    fg: 1.013,
+    abv: 4.9,
+    ibu: 15,
+    grains: [
+      '5.88 lb Pilsner (Weyermann)',
+      '1.15 lb Corn - Yellow, Flaked (Briess)',
+      '0.63 lb Munich I (Weyermann)',
+      '0.16 lb Fruit - Lime',
+    ],
+    hops: [
+      '0.4 oz Hallertauer (Boil)',
+      '0.3 oz Hallertauer (Aroma)',
+      '0.8 oz Hallertauer (Aroma)',
+    ],
+    yeast: 'Omega OYL-113 Mexican Lager',
+    source: 'beersmith',
+    brewDate: '2022-01-13',
+    hopsDetail: [
+      {
+        name: 'Hallertauer',
+        amount: 0.4,
+        use: 'Boil',
+        time: 75,
+      },
+      {
+        name: 'Hallertauer',
+        amount: 0.3,
+        use: 'Aroma',
+        time: 15,
+      },
+      {
+        name: 'Hallertauer',
+        amount: 0.8,
+        use: 'Aroma',
+        time: 30,
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 70,
+    uuid: '1997727d-1997-4997-1997-1997727d1997',
+    name: 'Schwarzbier',
+    style: 'German-Style Schwarzbier',
+    category: 'lager',
+    description: '',
+    og: 1.05,
+    fg: 1.013,
+    abv: 4.9,
+    ibu: 28,
+    grains: [
+      '5.88 lb Pilsner (Weyermann)',
+      '0.63 lb Blackprinz',
+      '0.63 lb Carafoam',
+      '0.63 lb Munich II (Weyermann)',
+      '0.23 lb Chocolate Rye Malt',
+    ],
+    hops: [
+      '0.8 oz German Tradition (Boil)',
+      '0.5 oz German Tradition (Aroma)',
+      '1.0 oz German Tradition (Aroma)',
+    ],
+    yeast: 'Inland Island INIS-711 German Monk Lager',
+    source: 'beersmith',
+    brewDate: '2021-12-31',
+    hopsDetail: [
+      {
+        name: 'German Tradition',
+        amount: 0.8,
+        use: 'Boil',
+        time: 60,
+      },
+      {
+        name: 'German Tradition',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 15,
+      },
+      {
+        name: 'German Tradition',
+        amount: 1,
+        use: 'Aroma',
+        time: 15,
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 71,
+    uuid: '6d0c8cf1-6d0c-4d0c-6d0c-6d0c8cf16d0c',
+    name: 'White Russian Stout',
+    style: 'American-Style Imperial Stout',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.013,
+    abv: 4.9,
+    ibu: 55,
+    grains: [
+      '8.87 lb Pale Malt (2 Row) US',
+      '1.27 lb Milk Sugar (Lactose)',
+      '1.27 lb Turbinado',
+      '1.15 lb Black Barley (Briess)',
+      '1.15 lb Oats, Flaked',
+      '0.63 lb Crystal, DRC (Simpsons)',
+      '0.52 lb Chocolate Wheat Malt (Proximity)',
+      '0.35 lb Victory Malt (biscuit) (Briess)',
+    ],
+    hops: ['1.7 oz Magnum (Boil)'],
+    yeast: 'Wyeast Labs 1056 American Ale',
+    source: 'beersmith',
+    brewDate: '2021-12-30',
+    hopsDetail: [
+      {
+        name: 'Magnum',
+        amount: 1.7,
+        use: 'Boil',
+        time: 75,
+      },
+    ],
+    batchSize: 5,
+  },
+  {
+    id: 72,
+    uuid: '70b9593b-70b9-40b9-70b9-70b9593b70b9',
+    name: 'Wizard fight',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.056,
+    fg: 1.013,
+    abv: 5.6,
+    ibu: 0,
+    grains: [
+      '4.54 lb Organic 2row Pale Malt',
+      '0.45 lb Carapils Malt',
+      '0.45 lb Munich Malt, Germany',
+      '0.45 lb Oats, Flaked',
+    ],
+    hops: [],
+    yeast: 'Not specified',
+    source: 'brewfather',
+    brewDate: '2022-06-24',
+    color: 5.6,
+    batchSize: 5.5,
+    boilTime: 90,
+    fermentablesDetail: [
+      {
+        name: 'Organic 2row Pale Malt',
+        amount: 4.54,
+        percentage: 76.9,
+        color: 2.8,
+      },
+      {
+        name: 'Carapils Malt',
+        amount: 0.45,
+        percentage: 7.7,
+        color: 2.8,
+      },
+      {
+        name: 'Munich Malt, Germany',
+        amount: 0.45,
+        percentage: 7.7,
+        color: 9.5,
+      },
+      {
+        name: 'Oats, Flaked',
+        amount: 0.45,
+        percentage: 7.7,
+        color: 1.4,
+      },
+    ],
+    hopsDetail: [],
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5.5,
-      "boilTime": 90,
-      "efficiency": 64
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5.5,
+      boilTime: 90,
+      efficiency: 64,
+    },
   },
   {
-    "id": 73,
-    "uuid": "2a3c1d23-2a3c-4a3c-2a3c-2a3c1d232a3c",
-    "name": "Anklebiter",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.067,
-    "fg": 1.012,
-    "abv": 7.2,
-    "ibu": 49,
-    "grains": [
-      "4.76 lb Pale Ale Malt 2-Row",
-      "0.68 lb Vienna Malt",
-      "0.45 lb Honey Malt",
-      "0.45 lb Wheat Flaked"
+    id: 73,
+    uuid: '2a3c1d23-2a3c-4a3c-2a3c-2a3c1d232a3c',
+    name: 'Anklebiter',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.067,
+    fg: 1.012,
+    abv: 7.2,
+    ibu: 49,
+    grains: [
+      '4.76 lb Pale Ale Malt 2-Row',
+      '0.68 lb Vienna Malt',
+      '0.45 lb Honey Malt',
+      '0.45 lb Wheat Flaked',
     ],
-    "hops": [
-      "0.5 oz Eukanot (Boil)",
-      "1 oz Cashmere (Boil)",
-      "1 oz Mandarina Bavaria (Boil)",
-      "2 oz Cashmere (Aroma)",
-      "1 oz Hallertau Blanc (Aroma)",
-      "1 oz Mandarina Bavaria (Aroma)",
-      "2 oz Cashmere (Dry Hop)",
-      "2 oz Mosaic (Dry Hop)",
-      "1 oz Hallertau Blanc (Dry Hop)"
+    hops: [
+      '0.5 oz Eukanot (Boil)',
+      '1 oz Cashmere (Boil)',
+      '1 oz Mandarina Bavaria (Boil)',
+      '2 oz Cashmere (Aroma)',
+      '1 oz Hallertau Blanc (Aroma)',
+      '1 oz Mandarina Bavaria (Aroma)',
+      '2 oz Cashmere (Dry Hop)',
+      '2 oz Mosaic (Dry Hop)',
+      '1 oz Hallertau Blanc (Dry Hop)',
     ],
-    "yeast": "Voss Kveik (OYL-061)",
-    "source": "brewfather",
-    "brewDate": "2025-06-19",
-    "color": 7.9,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'Voss Kveik (OYL-061)',
+    source: 'brewfather',
+    brewDate: '2025-06-19',
+    color: 7.9,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 4.76,
-        "percentage": 75,
-        "color": 4
+        name: 'Pale Ale Malt 2-Row',
+        amount: 4.76,
+        percentage: 75,
+        color: 4,
       },
       {
-        "name": "Vienna Malt",
-        "amount": 0.68,
-        "percentage": 10.7,
-        "color": 3
+        name: 'Vienna Malt',
+        amount: 0.68,
+        percentage: 10.7,
+        color: 3,
       },
       {
-        "name": "Honey Malt",
-        "amount": 0.45,
-        "percentage": 7.1,
-        "color": 25
+        name: 'Honey Malt',
+        amount: 0.45,
+        percentage: 7.1,
+        color: 25,
       },
       {
-        "name": "Wheat Flaked",
-        "amount": 0.45,
-        "percentage": 7.1,
-        "color": 1.6
-      }
+        name: 'Wheat Flaked',
+        amount: 0.45,
+        percentage: 7.1,
+        color: 1.6,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Eukanot",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 13.6
+        name: 'Eukanot',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+        alpha: 13.6,
       },
       {
-        "name": "Cashmere",
-        "amount": 1,
-        "use": "Boil",
-        "time": 10,
-        "alpha": 7.4
+        name: 'Cashmere',
+        amount: 1,
+        use: 'Boil',
+        time: 10,
+        alpha: 7.4,
       },
       {
-        "name": "Mandarina Bavaria",
-        "amount": 1,
-        "use": "Boil",
-        "time": 10,
-        "alpha": 10.4
+        name: 'Mandarina Bavaria',
+        amount: 1,
+        use: 'Boil',
+        time: 10,
+        alpha: 10.4,
       },
       {
-        "name": "Cashmere",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 7.4
+        name: 'Cashmere',
+        amount: 2,
+        use: 'Aroma',
+        time: 10,
+        alpha: 7.4,
       },
       {
-        "name": "Hallertau Blanc",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 10.5
+        name: 'Hallertau Blanc',
+        amount: 1,
+        use: 'Aroma',
+        time: 10,
+        alpha: 10.5,
       },
       {
-        "name": "Mandarina Bavaria",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 10.4
+        name: 'Mandarina Bavaria',
+        amount: 1,
+        use: 'Aroma',
+        time: 10,
+        alpha: 10.4,
       },
       {
-        "name": "Cashmere",
-        "amount": 2,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 7.4
+        name: 'Cashmere',
+        amount: 2,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 7.4,
       },
       {
-        "name": "Mosaic",
-        "amount": 2,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 13.1
+        name: 'Mosaic',
+        amount: 2,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 13.1,
       },
       {
-        "name": "Hallertau Blanc",
-        "amount": 1,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 10.5
-      }
+        name: 'Hallertau Blanc',
+        amount: 1,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 10.5,
+      },
     ],
-    "yeastDetail": {
-      "name": "Voss Kveik",
-      "lab": "Omega",
-      "attenuation": 82,
-      "minTemp": 72,
-      "maxTemp": 98
+    yeastDetail: {
+      name: 'Voss Kveik',
+      lab: 'Omega',
+      attenuation: 82,
+      minTemp: 72,
+      maxTemp: 98,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 85,
-      "magnesium": 18,
-      "sodium": 11,
-      "chloride": 51,
-      "sulfate": 101,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 85,
+      magnesium: 18,
+      sodium: 11,
+      chloride: 51,
+      sulfate: 101,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 71
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 71,
+    },
   },
   {
-    "id": 74,
-    "uuid": "177ec338-177e-477e-177e-177ec338177e",
-    "name": "Wheat vodka",
-    "style": "Vodka",
-    "category": "spirit",
-    "description": "",
-    "og": 1.066,
-    "fg": 1.016,
-    "abv": 6.6,
-    "ibu": 0,
-    "grains": [
-      "5.98 lb Wheat White Malt"
-    ],
-    "hops": [],
-    "yeast": "Pinnacle Distillers (S) (WLDPINNACLE S)",
-    "source": "brewfather",
-    "brewDate": "2023-08-19",
-    "color": 4.8,
-    "batchSize": 5,
-    "boilTime": 1,
-    "fermentablesDetail": [
+    id: 74,
+    uuid: '177ec338-177e-477e-177e-177ec338177e',
+    name: 'Wheat vodka',
+    style: 'Vodka',
+    category: 'spirit',
+    description: '',
+    og: 1.066,
+    fg: 1.016,
+    abv: 6.6,
+    ibu: 0,
+    grains: ['5.98 lb Wheat White Malt'],
+    hops: [],
+    yeast: 'Pinnacle Distillers (S) (WLDPINNACLE S)',
+    source: 'brewfather',
+    brewDate: '2023-08-19',
+    color: 4.8,
+    batchSize: 5,
+    boilTime: 1,
+    fermentablesDetail: [
       {
-        "name": "Wheat White Malt",
-        "amount": 5.98,
-        "percentage": 100,
-        "color": 2.3
-      }
+        name: 'Wheat White Malt',
+        amount: 5.98,
+        percentage: 100,
+        color: 2.3,
+      },
     ],
-    "hopsDetail": [],
-    "yeastDetail": {
-      "name": "Pinnacle Distillers (S)",
-      "lab": "White Labs",
-      "attenuation": 76,
-      "minTemp": 92,
-      "maxTemp": 98
+    hopsDetail: [],
+    yeastDetail: {
+      name: 'Pinnacle Distillers (S)',
+      lab: 'White Labs',
+      attenuation: 76,
+      minTemp: 92,
+      maxTemp: 98,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5,
-      "boilTime": 1,
-      "efficiency": 64
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5,
+      boilTime: 1,
+      efficiency: 64,
+    },
   },
   {
-    "id": 75,
-    "uuid": "768a22ab-768a-468a-768a-768a22ab768a",
-    "name": "Spicy Sprinkles",
-    "style": "Belgian Rye Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.069,
-    "fg": 1.018,
-    "abv": 6.7,
-    "ibu": 39,
-    "grains": [
-      "5.44 lb Pilsner Malt 2-Row",
-      "1.36 lb Caramel Rye",
-      "0.91 lb Carared",
-      "0.45 lb Carapils",
-      "0.45 lb Special B"
+    id: 75,
+    uuid: '768a22ab-768a-468a-768a-768a22ab768a',
+    name: 'Spicy Sprinkles',
+    style: 'Belgian Rye Ale',
+    category: 'ale',
+    description: '',
+    og: 1.069,
+    fg: 1.018,
+    abv: 6.7,
+    ibu: 39,
+    grains: [
+      '5.44 lb Pilsner Malt 2-Row',
+      '1.36 lb Caramel Rye',
+      '0.91 lb Carared',
+      '0.45 lb Carapils',
+      '0.45 lb Special B',
     ],
-    "hops": [
-      "0.5 oz Pacific Jade (Boil)",
-      "2 oz Cascade (Boil)",
-      "2.5 oz Pacific Jade (Aroma)",
-      "2 oz Cascade (Dry Hop)",
-      "1 oz Pacific Jade (Dry Hop)"
+    hops: [
+      '0.5 oz Pacific Jade (Boil)',
+      '2 oz Cascade (Boil)',
+      '2.5 oz Pacific Jade (Aroma)',
+      '2 oz Cascade (Dry Hop)',
+      '1 oz Pacific Jade (Dry Hop)',
     ],
-    "yeast": "Star Party (OYL-404)",
-    "source": "brewfather",
-    "brewDate": "2023-03-16",
-    "color": 23.3,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'Star Party (OYL-404)',
+    source: 'brewfather',
+    brewDate: '2023-03-16',
+    color: 23.3,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pilsner Malt 2-Row",
-        "amount": 5.44,
-        "percentage": 63.2,
-        "color": 2.7
+        name: 'Pilsner Malt 2-Row',
+        amount: 5.44,
+        percentage: 63.2,
+        color: 2.7,
       },
       {
-        "name": "Caramel Rye",
-        "amount": 1.36,
-        "percentage": 15.8,
-        "color": 35
+        name: 'Caramel Rye',
+        amount: 1.36,
+        percentage: 15.8,
+        color: 35,
       },
       {
-        "name": "Carared",
-        "amount": 0.91,
-        "percentage": 10.5,
-        "color": 24
+        name: 'Carared',
+        amount: 0.91,
+        percentage: 10.5,
+        color: 24,
       },
       {
-        "name": "Carapils",
-        "amount": 0.45,
-        "percentage": 5.3,
-        "color": 1.3
+        name: 'Carapils',
+        amount: 0.45,
+        percentage: 5.3,
+        color: 1.3,
       },
       {
-        "name": "Special B",
-        "amount": 0.45,
-        "percentage": 5.3,
-        "color": 147.5
-      }
+        name: 'Special B',
+        amount: 0.45,
+        percentage: 5.3,
+        color: 147.5,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Pacific Jade",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 13
+        name: 'Pacific Jade',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+        alpha: 13,
       },
       {
-        "name": "Cascade",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10,
-        "alpha": 5.5
+        name: 'Cascade',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+        alpha: 5.5,
       },
       {
-        "name": "Pacific Jade",
-        "amount": 2.5,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 13
+        name: 'Pacific Jade',
+        amount: 2.5,
+        use: 'Aroma',
+        time: 10,
+        alpha: 13,
       },
       {
-        "name": "Cascade",
-        "amount": 2,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 5.5
+        name: 'Cascade',
+        amount: 2,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 5.5,
       },
       {
-        "name": "Pacific Jade",
-        "amount": 1,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 13
-      }
+        name: 'Pacific Jade',
+        amount: 1,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 13,
+      },
     ],
-    "yeastDetail": {
-      "name": "Star Party",
-      "lab": "Omega Yeast",
-      "attenuation": 75,
-      "minTemp": 60,
-      "maxTemp": 73
+    yeastDetail: {
+      name: 'Star Party',
+      lab: 'Omega Yeast',
+      attenuation: 75,
+      minTemp: 60,
+      maxTemp: 73,
     },
-    "mashProfile": {
-      "name": "Medium fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'Medium fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 153,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 153,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 10.5 240V",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 60
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 10.5 240V',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 60,
+    },
   },
   {
-    "id": 76,
-    "uuid": "71fd1142-71fd-41fd-71fd-71fd114271fd",
-    "name": "Wry Smile Rye IPA",
-    "style": "Rye IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.063,
-    "fg": 1.015,
-    "abv": 6.3,
-    "ibu": 77,
-    "grains": [
-      "4.99 lb Pale Malt 2-Row",
-      "1.36 lb Rye Malt",
-      "0.45 lb Crystal 60L",
-      "0.23 lb Carapils",
-      "0.23 lb Wheat White"
+    id: 76,
+    uuid: '71fd1142-71fd-41fd-71fd-71fd114271fd',
+    name: 'Wry Smile Rye IPA',
+    style: 'Rye IPA',
+    category: 'ale',
+    description: '',
+    og: 1.063,
+    fg: 1.015,
+    abv: 6.3,
+    ibu: 77,
+    grains: [
+      '4.99 lb Pale Malt 2-Row',
+      '1.36 lb Rye Malt',
+      '0.45 lb Crystal 60L',
+      '0.23 lb Carapils',
+      '0.23 lb Wheat White',
     ],
-    "hops": [
-      "1 oz Mount Hood (First Wort)",
-      "1 oz Columbus (Tomahawk) (Boil)",
-      "1 oz Mount Hood (Boil)",
-      "1 oz Mount Hood (Aroma)",
-      "1 oz Columbus (Tomahawk) (Dry Hop)"
+    hops: [
+      '1 oz Mount Hood (First Wort)',
+      '1 oz Columbus (Tomahawk) (Boil)',
+      '1 oz Mount Hood (Boil)',
+      '1 oz Mount Hood (Aroma)',
+      '1 oz Columbus (Tomahawk) (Dry Hop)',
     ],
-    "yeast": "Denny's Favorite (1450)",
-    "source": "brewfather",
-    "brewDate": "2022-07-24",
-    "color": 9.9,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: "Denny's Favorite (1450)",
+    source: 'brewfather',
+    brewDate: '2022-07-24',
+    color: 9.9,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Malt 2-Row",
-        "amount": 4.99,
-        "percentage": 68.8,
-        "color": 2
+        name: 'Pale Malt 2-Row',
+        amount: 4.99,
+        percentage: 68.8,
+        color: 2,
       },
       {
-        "name": "Rye Malt",
-        "amount": 1.36,
-        "percentage": 18.8,
-        "color": 4.3
+        name: 'Rye Malt',
+        amount: 1.36,
+        percentage: 18.8,
+        color: 4.3,
       },
       {
-        "name": "Crystal 60L",
-        "amount": 0.45,
-        "percentage": 6.3,
-        "color": 60
+        name: 'Crystal 60L',
+        amount: 0.45,
+        percentage: 6.3,
+        color: 60,
       },
       {
-        "name": "Carapils",
-        "amount": 0.23,
-        "percentage": 3.1,
-        "color": 1.3
+        name: 'Carapils',
+        amount: 0.23,
+        percentage: 3.1,
+        color: 1.3,
       },
       {
-        "name": "Wheat White",
-        "amount": 0.23,
-        "percentage": 3.1,
-        "color": 2.9
-      }
+        name: 'Wheat White',
+        amount: 0.23,
+        percentage: 3.1,
+        color: 2.9,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Mount Hood",
-        "amount": 1,
-        "use": "First Wort",
-        "time": 60,
-        "alpha": 6
+        name: 'Mount Hood',
+        amount: 1,
+        use: 'First Wort',
+        time: 60,
+        alpha: 6,
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 14
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+        alpha: 14,
       },
       {
-        "name": "Mount Hood",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30,
-        "alpha": 6
+        name: 'Mount Hood',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+        alpha: 6,
       },
       {
-        "name": "Mount Hood",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 6
+        name: 'Mount Hood',
+        amount: 1,
+        use: 'Aroma',
+        time: 10,
+        alpha: 6,
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "use": "Dry Hop",
-        "time": 60,
-        "alpha": 14
-      }
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        use: 'Dry Hop',
+        time: 60,
+        alpha: 14,
+      },
     ],
-    "yeastDetail": {
-      "name": "Denny's Favorite",
-      "lab": "Wyeast Labs",
-      "attenuation": 76,
-      "minTemp": 60,
-      "maxTemp": 70
+    yeastDetail: {
+      name: "Denny's Favorite",
+      lab: 'Wyeast Labs',
+      attenuation: 76,
+      minTemp: 60,
+      maxTemp: 70,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 10.5 240V",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 60
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 10.5 240V',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 60,
+    },
   },
   {
-    "id": 77,
-    "uuid": "0331d806-0331-4331-0331-0331d8060331",
-    "name": "Czech It Out",
-    "style": "Czech Amber Lager",
-    "category": "lager",
-    "description": "",
-    "og": 1.04,
-    "fg": 1.007,
-    "abv": 4.3,
-    "ibu": 15,
-    "grains": [
-      "2.72 lb Vienna Malt",
-      "0.91 lb Munich",
-      "0.45 lb Caramunich II",
-      "0.23 lb Carafa Special I",
-      "0.23 lb Dark Munich Malt 30L"
+    id: 77,
+    uuid: '0331d806-0331-4331-0331-0331d8060331',
+    name: 'Czech It Out',
+    style: 'Czech Amber Lager',
+    category: 'lager',
+    description: '',
+    og: 1.04,
+    fg: 1.007,
+    abv: 4.3,
+    ibu: 15,
+    grains: [
+      '2.72 lb Vienna Malt',
+      '0.91 lb Munich',
+      '0.45 lb Caramunich II',
+      '0.23 lb Carafa Special I',
+      '0.23 lb Dark Munich Malt 30L',
     ],
-    "hops": [
-      "0.5 oz Saaz (Boil)",
-      "0.5 oz Saaz (Boil)",
-      "1 oz Saaz (Aroma)"
+    hops: ['0.5 oz Saaz (Boil)', '0.5 oz Saaz (Boil)', '1 oz Saaz (Aroma)'],
+    yeast: 'Lutra Kveik (OYL-071)',
+    source: 'brewfather',
+    brewDate: '2023-08-05',
+    color: 21.1,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
+      {
+        name: 'Vienna Malt',
+        amount: 2.72,
+        percentage: 60,
+        color: 3,
+      },
+      {
+        name: 'Munich',
+        amount: 0.91,
+        percentage: 20,
+        color: 10,
+      },
+      {
+        name: 'Caramunich II',
+        amount: 0.45,
+        percentage: 10,
+        color: 63,
+      },
+      {
+        name: 'Carafa Special I',
+        amount: 0.23,
+        percentage: 5,
+        color: 456.9,
+      },
+      {
+        name: 'Dark Munich Malt 30L',
+        amount: 0.23,
+        percentage: 5,
+        color: 39.9,
+      },
     ],
-    "yeast": "Lutra Kveik (OYL-071)",
-    "source": "brewfather",
-    "brewDate": "2023-08-05",
-    "color": 21.1,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    hopsDetail: [
       {
-        "name": "Vienna Malt",
-        "amount": 2.72,
-        "percentage": 60,
-        "color": 3
+        name: 'Saaz',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+        alpha: 3.8,
       },
       {
-        "name": "Munich",
-        "amount": 0.91,
-        "percentage": 20,
-        "color": 10
+        name: 'Saaz',
+        amount: 0.5,
+        use: 'Boil',
+        time: 30,
+        alpha: 3.8,
       },
       {
-        "name": "Caramunich II",
-        "amount": 0.45,
-        "percentage": 10,
-        "color": 63
+        name: 'Saaz',
+        amount: 1,
+        use: 'Aroma',
+        time: 30,
+        alpha: 3.8,
       },
-      {
-        "name": "Carafa Special I",
-        "amount": 0.23,
-        "percentage": 5,
-        "color": 456.9
-      },
-      {
-        "name": "Dark Munich Malt 30L",
-        "amount": 0.23,
-        "percentage": 5,
-        "color": 39.9
-      }
     ],
-    "hopsDetail": [
-      {
-        "name": "Saaz",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 3.8
-      },
-      {
-        "name": "Saaz",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 30,
-        "alpha": 3.8
-      },
-      {
-        "name": "Saaz",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 30,
-        "alpha": 3.8
-      }
-    ],
-    "yeastDetail": {
-      "name": "Lutra Kveik",
-      "lab": "Omega",
-      "attenuation": 82,
-      "minTemp": 68,
-      "maxTemp": 95
+    yeastDetail: {
+      name: 'Lutra Kveik',
+      lab: 'Omega',
+      attenuation: 82,
+      minTemp: 68,
+      maxTemp: 95,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 60
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 60,
+    },
   },
   {
-    "id": 78,
-    "uuid": "7b086b92-7b08-4b08-7b08-7b086b927b08",
-    "name": "Star Maker Imperial Stout",
-    "style": "Imperial Stout",
-    "category": "ale",
-    "description": "https://www.homebrewersassociation.org/homebrew-recipe/star-maker-imperial-stout/",
-    "og": 1.131,
-    "fg": 1.036,
-    "abv": 12.5,
-    "ibu": 89,
-    "grains": [
-      "8.16 lb Pale Ale Malt 2-Row",
-      "1.02 lb Dark Chocolate Malt",
-      "1.02 lb Finest Maris Otter® Ale Malt",
-      "1.02 lb Oats, Flaked",
-      "0.79 lb Wheat White Malt",
-      "0.79 lb Crystal Medium",
-      "0.79 lb Special Roast",
-      "0.68 lb Roasted Barley",
-      "0.34 lb Carafa II",
-      "0.34 lb Crystal 120L",
-      "0.23 lb Brown Malt"
+    id: 78,
+    uuid: '7b086b92-7b08-4b08-7b08-7b086b927b08',
+    name: 'Star Maker Imperial Stout',
+    style: 'Imperial Stout',
+    category: 'ale',
+    description:
+      'https://www.homebrewersassociation.org/homebrew-recipe/star-maker-imperial-stout/',
+    og: 1.131,
+    fg: 1.036,
+    abv: 12.5,
+    ibu: 89,
+    grains: [
+      '8.16 lb Pale Ale Malt 2-Row',
+      '1.02 lb Dark Chocolate Malt',
+      '1.02 lb Finest Maris Otter® Ale Malt',
+      '1.02 lb Oats, Flaked',
+      '0.79 lb Wheat White Malt',
+      '0.79 lb Crystal Medium',
+      '0.79 lb Special Roast',
+      '0.68 lb Roasted Barley',
+      '0.34 lb Carafa II',
+      '0.34 lb Crystal 120L',
+      '0.23 lb Brown Malt',
     ],
-    "hops": [
-      "2 oz Chinook (Boil)",
-      "1 oz Perle (Boil)",
-      "1 oz Chinook (Boil)",
-      "1 oz Perle (Boil)",
-      "1 oz Chinook (Boil)"
+    hops: [
+      '2 oz Chinook (Boil)',
+      '1 oz Perle (Boil)',
+      '1 oz Chinook (Boil)',
+      '1 oz Perle (Boil)',
+      '1 oz Chinook (Boil)',
     ],
-    "yeast": "Irish Ale (OYL-005)",
-    "source": "brewfather",
-    "brewDate": "2022-09-17",
-    "color": 86.5,
-    "batchSize": 5.5,
-    "boilTime": 90,
-    "fermentablesDetail": [
+    yeast: 'Irish Ale (OYL-005)',
+    source: 'brewfather',
+    brewDate: '2022-09-17',
+    color: 86.5,
+    batchSize: 5.5,
+    boilTime: 90,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 8.16,
-        "percentage": 53.7,
-        "color": 4
+        name: 'Pale Ale Malt 2-Row',
+        amount: 8.16,
+        percentage: 53.7,
+        color: 4,
       },
       {
-        "name": "Dark Chocolate Malt",
-        "amount": 1.02,
-        "percentage": 6.7,
-        "color": 568.2
+        name: 'Dark Chocolate Malt',
+        amount: 1.02,
+        percentage: 6.7,
+        color: 568.2,
       },
       {
-        "name": "Finest Maris Otter® Ale Malt",
-        "amount": 1.02,
-        "percentage": 6.7,
-        "color": 3.3
+        name: 'Finest Maris Otter® Ale Malt',
+        amount: 1.02,
+        percentage: 6.7,
+        color: 3.3,
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 1.02,
-        "percentage": 6.7,
-        "color": 1.4
+        name: 'Oats, Flaked',
+        amount: 1.02,
+        percentage: 6.7,
+        color: 1.4,
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 0.79,
-        "percentage": 5.2,
-        "color": 2.3
+        name: 'Wheat White Malt',
+        amount: 0.79,
+        percentage: 5.2,
+        color: 2.3,
       },
       {
-        "name": "Crystal Medium",
-        "amount": 0.79,
-        "percentage": 5.2,
-        "color": 90.6
+        name: 'Crystal Medium',
+        amount: 0.79,
+        percentage: 5.2,
+        color: 90.6,
       },
       {
-        "name": "Special Roast",
-        "amount": 0.79,
-        "percentage": 5.2,
-        "color": 53.4
+        name: 'Special Roast',
+        amount: 0.79,
+        percentage: 5.2,
+        color: 53.4,
       },
       {
-        "name": "Roasted Barley",
-        "amount": 0.68,
-        "percentage": 4.5,
-        "color": 405.6
+        name: 'Roasted Barley',
+        amount: 0.68,
+        percentage: 4.5,
+        color: 405.6,
       },
       {
-        "name": "Carafa II",
-        "amount": 0.34,
-        "percentage": 2.2,
-        "color": 415
+        name: 'Carafa II',
+        amount: 0.34,
+        percentage: 2.2,
+        color: 415,
       },
       {
-        "name": "Crystal 120L",
-        "amount": 0.34,
-        "percentage": 2.2,
-        "color": 120
+        name: 'Crystal 120L',
+        amount: 0.34,
+        percentage: 2.2,
+        color: 120,
       },
       {
-        "name": "Brown Malt",
-        "amount": 0.23,
-        "percentage": 1.5,
-        "color": 261.4
-      }
+        name: 'Brown Malt',
+        amount: 0.23,
+        percentage: 1.5,
+        color: 261.4,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Chinook",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 13
+        name: 'Chinook',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+        alpha: 13,
       },
       {
-        "name": "Perle",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 8.3
+        name: 'Perle',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+        alpha: 8.3,
       },
       {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 30,
-        "alpha": 13
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 30,
+        alpha: 13,
       },
       {
-        "name": "Perle",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15,
-        "alpha": 8.3
+        name: 'Perle',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+        alpha: 8.3,
       },
       {
-        "name": "Chinook",
-        "amount": 1,
-        "use": "Boil",
-        "time": 5,
-        "alpha": 13
-      }
+        name: 'Chinook',
+        amount: 1,
+        use: 'Boil',
+        time: 5,
+        alpha: 13,
+      },
     ],
-    "yeastDetail": {
-      "name": "Irish Ale",
-      "lab": "Omega",
-      "attenuation": 72,
-      "minTemp": 62,
-      "maxTemp": 72
+    yeastDetail: {
+      name: 'Irish Ale',
+      lab: 'Omega',
+      attenuation: 72,
+      minTemp: 62,
+      maxTemp: 72,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5.5,
-      "boilTime": 90,
-      "efficiency": 60
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5.5,
+      boilTime: 90,
+      efficiency: 60,
+    },
   },
   {
-    "id": 79,
-    "uuid": "29ab6e03-29ab-49ab-29ab-29ab6e0329ab",
-    "name": "Drunkle",
-    "style": "Dunkles Weissbier",
-    "category": "ale",
-    "description": "",
-    "og": 1.053,
-    "fg": 1.013,
-    "abv": 5.3,
-    "ibu": 17,
-    "grains": [
-      "2.27 lb Wheat White Malt",
-      "1.36 lb Munich II",
-      "0.91 lb Vienna Malt",
-      "0.23 lb Caramunich II",
-      "0.23 lb Chocolate Wheat"
+    id: 79,
+    uuid: '29ab6e03-29ab-49ab-29ab-29ab6e0329ab',
+    name: 'Drunkle',
+    style: 'Dunkles Weissbier',
+    category: 'ale',
+    description: '',
+    og: 1.053,
+    fg: 1.013,
+    abv: 5.3,
+    ibu: 17,
+    grains: [
+      '2.27 lb Wheat White Malt',
+      '1.36 lb Munich II',
+      '0.91 lb Vienna Malt',
+      '0.23 lb Caramunich II',
+      '0.23 lb Chocolate Wheat',
     ],
-    "hops": [
-      "1 oz Tettnang (Boil)"
-    ],
-    "yeast": "Hefeweizen Ale (OYL-021)",
-    "source": "brewfather",
-    "brewDate": "2025-08-22",
-    "color": 20,
-    "batchSize": 5.5,
-    "boilTime": 90,
-    "fermentablesDetail": [
+    hops: ['1 oz Tettnang (Boil)'],
+    yeast: 'Hefeweizen Ale (OYL-021)',
+    source: 'brewfather',
+    brewDate: '2025-08-22',
+    color: 20,
+    batchSize: 5.5,
+    boilTime: 90,
+    fermentablesDetail: [
       {
-        "name": "Wheat White Malt",
-        "amount": 2.27,
-        "percentage": 45.5,
-        "color": 2.3
+        name: 'Wheat White Malt',
+        amount: 2.27,
+        percentage: 45.5,
+        color: 2.3,
       },
       {
-        "name": "Munich II",
-        "amount": 1.36,
-        "percentage": 27.3,
-        "color": 11.7
+        name: 'Munich II',
+        amount: 1.36,
+        percentage: 27.3,
+        color: 11.7,
       },
       {
-        "name": "Vienna Malt",
-        "amount": 0.91,
-        "percentage": 18.2,
-        "color": 3
+        name: 'Vienna Malt',
+        amount: 0.91,
+        percentage: 18.2,
+        color: 3,
       },
       {
-        "name": "Caramunich II",
-        "amount": 0.23,
-        "percentage": 4.6,
-        "color": 63
+        name: 'Caramunich II',
+        amount: 0.23,
+        percentage: 4.6,
+        color: 63,
       },
       {
-        "name": "Chocolate Wheat",
-        "amount": 0.23,
-        "percentage": 4.6,
-        "color": 507.6
-      }
+        name: 'Chocolate Wheat',
+        amount: 0.23,
+        percentage: 4.6,
+        color: 507.6,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Tettnang",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 5.2
-      }
+        name: 'Tettnang',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+        alpha: 5.2,
+      },
     ],
-    "yeastDetail": {
-      "name": "Hefeweizen Ale",
-      "lab": "Omega",
-      "attenuation": 75,
-      "minTemp": 64,
-      "maxTemp": 75
+    yeastDetail: {
+      name: 'Hefeweizen Ale',
+      lab: 'Omega',
+      attenuation: 75,
+      minTemp: 64,
+      maxTemp: 75,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 150,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 150,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 52,
-      "magnesium": 15,
-      "sodium": 11,
-      "chloride": 16,
-      "sulfate": 56,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 52,
+      magnesium: 15,
+      sodium: 11,
+      chloride: 16,
+      sulfate: 56,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5.5,
-      "boilTime": 90,
-      "efficiency": 69
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5.5,
+      boilTime: 90,
+      efficiency: 69,
+    },
   },
   {
-    "id": 80,
-    "uuid": "029f5db9-029f-429f-029f-029f5db9029f",
-    "name": "Second City Session IPA",
-    "style": "Specialty IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.041,
-    "fg": 1.008,
-    "abv": 4.3,
-    "ibu": 50,
-    "grains": [
-      "3.18 lb Pale Ale Malt 2-Row",
-      "0.45 lb Caramel Malt 10L",
-      "0.34 lb Carapils",
-      "0.23 lb Caramel Malt 20L",
-      "0.23 lb Munich"
+    id: 80,
+    uuid: '029f5db9-029f-429f-029f-029f5db9029f',
+    name: 'Second City Session IPA',
+    style: 'Specialty IPA',
+    category: 'ale',
+    description: '',
+    og: 1.041,
+    fg: 1.008,
+    abv: 4.3,
+    ibu: 50,
+    grains: [
+      '3.18 lb Pale Ale Malt 2-Row',
+      '0.45 lb Caramel Malt 10L',
+      '0.34 lb Carapils',
+      '0.23 lb Caramel Malt 20L',
+      '0.23 lb Munich',
     ],
-    "hops": [
-      "1 oz Citra (Boil)",
-      "1 oz Amarillo (Aroma)",
-      "1 oz Simcoe (Aroma)",
-      "2 oz Chinook (Dry Hop)",
-      "1 oz Simcoe (Dry Hop)"
+    hops: [
+      '1 oz Citra (Boil)',
+      '1 oz Amarillo (Aroma)',
+      '1 oz Simcoe (Aroma)',
+      '2 oz Chinook (Dry Hop)',
+      '1 oz Simcoe (Dry Hop)',
     ],
-    "yeast": "West Coast III (OYL-043)",
-    "source": "brewfather",
-    "brewDate": "2024-03-08",
-    "color": 6.4,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'West Coast III (OYL-043)',
+    source: 'brewfather',
+    brewDate: '2024-03-08',
+    color: 6.4,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 3.18,
-        "percentage": 71.8,
-        "color": 4
+        name: 'Pale Ale Malt 2-Row',
+        amount: 3.18,
+        percentage: 71.8,
+        color: 4,
       },
       {
-        "name": "Caramel Malt 10L",
-        "amount": 0.45,
-        "percentage": 10.3,
-        "color": 12.8
+        name: 'Caramel Malt 10L',
+        amount: 0.45,
+        percentage: 10.3,
+        color: 12.8,
       },
       {
-        "name": "Carapils",
-        "amount": 0.34,
-        "percentage": 7.7,
-        "color": 1.3
+        name: 'Carapils',
+        amount: 0.34,
+        percentage: 7.7,
+        color: 1.3,
       },
       {
-        "name": "Caramel Malt 20L",
-        "amount": 0.23,
-        "percentage": 5.1,
-        "color": 26.3
+        name: 'Caramel Malt 20L',
+        amount: 0.23,
+        percentage: 5.1,
+        color: 26.3,
       },
       {
-        "name": "Munich",
-        "amount": 0.23,
-        "percentage": 5.1,
-        "color": 10
-      }
+        name: 'Munich',
+        amount: 0.23,
+        percentage: 5.1,
+        color: 10,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 12
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+        alpha: 12,
       },
       {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 9.2
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Aroma',
+        time: 10,
+        alpha: 9.2,
       },
       {
-        "name": "Simcoe",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 13
+        name: 'Simcoe',
+        amount: 1,
+        use: 'Aroma',
+        time: 10,
+        alpha: 13,
       },
       {
-        "name": "Chinook",
-        "amount": 2,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 13
+        name: 'Chinook',
+        amount: 2,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 13,
       },
       {
-        "name": "Simcoe",
-        "amount": 1,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 13
-      }
+        name: 'Simcoe',
+        amount: 1,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 13,
+      },
     ],
-    "yeastDetail": {
-      "name": "West Coast III",
-      "lab": "Omega",
-      "attenuation": 80,
-      "minTemp": 65,
-      "maxTemp": 68
+    yeastDetail: {
+      name: 'West Coast III',
+      lab: 'Omega',
+      attenuation: 80,
+      minTemp: 65,
+      maxTemp: 68,
     },
-    "mashProfile": {
-      "name": "High fermentability plus mash out",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability plus mash out',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
         },
         {
-          "name": "Mash Out",
-          "type": "Temperature",
-          "stepTemp": 167,
-          "stepTime": 10
-        }
-      ]
+          name: 'Mash Out',
+          type: 'Temperature',
+          stepTemp: 167,
+          stepTime: 10,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 77,
-      "magnesium": 18,
-      "sodium": 9,
-      "chloride": 50,
-      "sulfate": 101,
-      "bicarbonate": 167
+    waterProfile: {
+      calcium: 77,
+      magnesium: 18,
+      sodium: 9,
+      chloride: 50,
+      sulfate: 101,
+      bicarbonate: 167,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 64
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 64,
+    },
   },
   {
-    "id": 81,
-    "uuid": "27cfc2b0-27cf-47cf-27cf-27cfc2b027cf",
-    "name": "The Devil's Narwhal",
-    "style": "Hazy IPA (New England / NEIPA)",
-    "category": "ale",
-    "description": "",
-    "og": 1.063,
-    "fg": 1.017,
-    "abv": 6,
-    "ibu": 61,
-    "grains": [
-      "9.98 lb Pale Ale Malt 2-Row",
-      "1.36 lb Oats, Flaked",
-      "1.36 lb Wheat White Malt",
-      "0.91 lb Carapils",
-      "0.45 lb Rye Malt"
+    id: 81,
+    uuid: '27cfc2b0-27cf-47cf-27cf-27cfc2b027cf',
+    name: "The Devil's Narwhal",
+    style: 'Hazy IPA (New England / NEIPA)',
+    category: 'ale',
+    description: '',
+    og: 1.063,
+    fg: 1.017,
+    abv: 6,
+    ibu: 61,
+    grains: [
+      '9.98 lb Pale Ale Malt 2-Row',
+      '1.36 lb Oats, Flaked',
+      '1.36 lb Wheat White Malt',
+      '0.91 lb Carapils',
+      '0.45 lb Rye Malt',
     ],
-    "hops": [
-      "1 oz Columbus (Tomahawk) (Boil)",
-      "3 oz Centennial (Boil)",
-      "1 oz Columbus (Tomahawk) (Boil)",
-      "4 oz Cascade (Aroma)",
-      "4 oz Centennial (Aroma)",
-      "3 oz Centennial (Dry Hop)",
-      "2 oz Motueka (Dry Hop)",
-      "2 oz Saaz (Dry Hop)",
-      "1 oz Nelson Sauvin (Dry Hop)"
+    hops: [
+      '1 oz Columbus (Tomahawk) (Boil)',
+      '3 oz Centennial (Boil)',
+      '1 oz Columbus (Tomahawk) (Boil)',
+      '4 oz Cascade (Aroma)',
+      '4 oz Centennial (Aroma)',
+      '3 oz Centennial (Dry Hop)',
+      '2 oz Motueka (Dry Hop)',
+      '2 oz Saaz (Dry Hop)',
+      '1 oz Nelson Sauvin (Dry Hop)',
     ],
-    "yeast": "British Ale V (OYL-011)",
-    "source": "brewfather",
-    "brewDate": "2024-05-22",
-    "color": 6.2,
-    "batchSize": 11.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'British Ale V (OYL-011)',
+    source: 'brewfather',
+    brewDate: '2024-05-22',
+    color: 6.2,
+    batchSize: 11.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 9.98,
-        "percentage": 71,
-        "color": 4
+        name: 'Pale Ale Malt 2-Row',
+        amount: 9.98,
+        percentage: 71,
+        color: 4,
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 1.36,
-        "percentage": 9.7,
-        "color": 1.4
+        name: 'Oats, Flaked',
+        amount: 1.36,
+        percentage: 9.7,
+        color: 1.4,
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 1.36,
-        "percentage": 9.7,
-        "color": 2.3
+        name: 'Wheat White Malt',
+        amount: 1.36,
+        percentage: 9.7,
+        color: 2.3,
       },
       {
-        "name": "Carapils",
-        "amount": 0.91,
-        "percentage": 6.5,
-        "color": 1.3
+        name: 'Carapils',
+        amount: 0.91,
+        percentage: 6.5,
+        color: 1.3,
       },
       {
-        "name": "Rye Malt",
-        "amount": 0.45,
-        "percentage": 3.2,
-        "color": 4.3
-      }
+        name: 'Rye Malt',
+        amount: 0.45,
+        percentage: 3.2,
+        color: 4.3,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 17.3
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+        alpha: 17.3,
       },
       {
-        "name": "Centennial",
-        "amount": 3,
-        "use": "Boil",
-        "time": 10,
-        "alpha": 10
+        name: 'Centennial',
+        amount: 3,
+        use: 'Boil',
+        time: 10,
+        alpha: 10,
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "use": "Boil",
-        "time": 10,
-        "alpha": 17.3
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        use: 'Boil',
+        time: 10,
+        alpha: 17.3,
       },
       {
-        "name": "Cascade",
-        "amount": 4,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 6.2
+        name: 'Cascade',
+        amount: 4,
+        use: 'Aroma',
+        time: 10,
+        alpha: 6.2,
       },
       {
-        "name": "Centennial",
-        "amount": 4,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 10
+        name: 'Centennial',
+        amount: 4,
+        use: 'Aroma',
+        time: 10,
+        alpha: 10,
       },
       {
-        "name": "Centennial",
-        "amount": 3,
-        "use": "Dry Hop",
-        "time": 5,
-        "alpha": 10
+        name: 'Centennial',
+        amount: 3,
+        use: 'Dry Hop',
+        time: 5,
+        alpha: 10,
       },
       {
-        "name": "Motueka",
-        "amount": 2,
-        "use": "Dry Hop",
-        "time": 5,
-        "alpha": 6.4
+        name: 'Motueka',
+        amount: 2,
+        use: 'Dry Hop',
+        time: 5,
+        alpha: 6.4,
       },
       {
-        "name": "Saaz",
-        "amount": 2,
-        "use": "Dry Hop",
-        "time": 5,
-        "alpha": 5.3
+        name: 'Saaz',
+        amount: 2,
+        use: 'Dry Hop',
+        time: 5,
+        alpha: 5.3,
       },
       {
-        "name": "Nelson Sauvin",
-        "amount": 1,
-        "use": "Dry Hop",
-        "time": 5,
-        "alpha": 10.8
-      }
+        name: 'Nelson Sauvin',
+        amount: 1,
+        use: 'Dry Hop',
+        time: 5,
+        alpha: 10.8,
+      },
     ],
-    "yeastDetail": {
-      "name": "British Ale V",
-      "lab": "Omega",
-      "attenuation": 73,
-      "minTemp": 64,
-      "maxTemp": 74
+    yeastDetail: {
+      name: 'British Ale V',
+      lab: 'Omega',
+      attenuation: 73,
+      minTemp: 64,
+      maxTemp: 74,
     },
-    "mashProfile": {
-      "name": "High fermentability plus mash out",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability plus mash out',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
         },
         {
-          "name": "Mash Out",
-          "type": "Temperature",
-          "stepTemp": 167,
-          "stepTime": 10
-        }
-      ]
+          name: 'Mash Out',
+          type: 'Temperature',
+          stepTemp: 167,
+          stepTime: 10,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 108,
-      "magnesium": 19,
-      "sodium": 11,
-      "chloride": 91,
-      "sulfate": 104,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 108,
+      magnesium: 19,
+      sodium: 11,
+      chloride: 91,
+      sulfate: 104,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 11.5,
-      "boilTime": 60,
-      "efficiency": 63
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 11.5,
+      boilTime: 60,
+      efficiency: 63,
+    },
   },
   {
-    "id": 82,
-    "uuid": "7fe5c4d7-7fe5-4fe5-7fe5-7fe5c4d77fe5",
-    "name": "Overlord v3.1",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.06,
-    "fg": 1.014,
-    "abv": 6,
-    "ibu": 61,
-    "grains": [
-      "9.98 lb Pale Ale Malt 2-Row",
-      "0.91 lb Caramel Malt 20L",
-      "0.91 lb Carapils",
-      "0.45 lb Rye, Flaked"
+    id: 82,
+    uuid: '7fe5c4d7-7fe5-4fe5-7fe5-7fe5c4d77fe5',
+    name: 'Overlord v3.1',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.06,
+    fg: 1.014,
+    abv: 6,
+    ibu: 61,
+    grains: [
+      '9.98 lb Pale Ale Malt 2-Row',
+      '0.91 lb Caramel Malt 20L',
+      '0.91 lb Carapils',
+      '0.45 lb Rye, Flaked',
     ],
-    "hops": [
-      "2 oz Citra (Boil)",
-      "1 oz Citra (Boil)",
-      "1 oz Citra (Boil)",
-      "6 oz Citra (Aroma)",
-      "6 oz Citra (Dry Hop)"
+    hops: [
+      '2 oz Citra (Boil)',
+      '1 oz Citra (Boil)',
+      '1 oz Citra (Boil)',
+      '6 oz Citra (Aroma)',
+      '6 oz Citra (Dry Hop)',
     ],
-    "yeast": "West Coast IV (OYL-050)",
-    "source": "brewfather",
-    "brewDate": "2024-04-27",
-    "artwork": "/images/recipes/overlord.jpg",
-    "color": 7.6,
-    "batchSize": 11,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'West Coast IV (OYL-050)',
+    source: 'brewfather',
+    brewDate: '2024-04-27',
+    artwork: '/images/recipes/overlord.jpg',
+    color: 7.6,
+    batchSize: 11,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 9.98,
-        "percentage": 81.5,
-        "color": 4
+        name: 'Pale Ale Malt 2-Row',
+        amount: 9.98,
+        percentage: 81.5,
+        color: 4,
       },
       {
-        "name": "Caramel Malt 20L",
-        "amount": 0.91,
-        "percentage": 7.4,
-        "color": 26.3
+        name: 'Caramel Malt 20L',
+        amount: 0.91,
+        percentage: 7.4,
+        color: 26.3,
       },
       {
-        "name": "Carapils",
-        "amount": 0.91,
-        "percentage": 7.4,
-        "color": 1.3
+        name: 'Carapils',
+        amount: 0.91,
+        percentage: 7.4,
+        color: 1.3,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.45,
-        "percentage": 3.7,
-        "color": 4.6
-      }
+        name: 'Rye, Flaked',
+        amount: 0.45,
+        percentage: 3.7,
+        color: 4.6,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Citra",
-        "amount": 2,
-        "use": "Boil",
-        "time": 45,
-        "alpha": 12
+        name: 'Citra',
+        amount: 2,
+        use: 'Boil',
+        time: 45,
+        alpha: 12,
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15,
-        "alpha": 12
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+        alpha: 12,
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 10,
-        "alpha": 12
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 10,
+        alpha: 12,
       },
       {
-        "name": "Citra",
-        "amount": 6,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 12
+        name: 'Citra',
+        amount: 6,
+        use: 'Aroma',
+        time: 10,
+        alpha: 12,
       },
       {
-        "name": "Citra",
-        "amount": 6,
-        "use": "Dry Hop",
-        "time": 10,
-        "alpha": 12
-      }
+        name: 'Citra',
+        amount: 6,
+        use: 'Dry Hop',
+        time: 10,
+        alpha: 12,
+      },
     ],
-    "yeastDetail": {
-      "name": "West Coast IV",
-      "lab": "Omega",
-      "attenuation": 77,
-      "minTemp": 62,
-      "maxTemp": 74
+    yeastDetail: {
+      name: 'West Coast IV',
+      lab: 'Omega',
+      attenuation: 77,
+      minTemp: 62,
+      maxTemp: 74,
     },
-    "mashProfile": {
-      "name": "High fermentability plus mash out",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability plus mash out',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
         },
         {
-          "name": "Mash Out",
-          "type": "Temperature",
-          "stepTemp": 167,
-          "stepTime": 10
-        }
-      ]
+          name: 'Mash Out',
+          type: 'Temperature',
+          stepTemp: 167,
+          stepTime: 10,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 107,
-      "magnesium": 18,
-      "sodium": 11,
-      "chloride": 49,
-      "sulfate": 157,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 107,
+      magnesium: 18,
+      sodium: 11,
+      chloride: 49,
+      sulfate: 157,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 11,
-      "boilTime": 60,
-      "efficiency": 67
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 11,
+      boilTime: 60,
+      efficiency: 67,
+    },
   },
   {
-    "id": 83,
-    "uuid": "2f45a6b5-2f45-4f45-2f45-2f45a6b52f45",
-    "name": "Rum Wash",
-    "style": "Rum",
-    "category": "spirit",
-    "description": "",
-    "og": 1.087,
-    "fg": 0.981,
-    "abv": 13.9,
-    "ibu": 0,
-    "grains": [
-      "3.63 lb Blackstrap Molasses",
-      "2.72 lb Cane (Beet) Sugar"
-    ],
-    "hops": [],
-    "yeast": "Red Star Ale",
-    "source": "brewfather",
-    "brewDate": "2025-07-29",
-    "color": 79.3,
-    "batchSize": 5,
-    "boilTime": 30,
-    "fermentablesDetail": [
+    id: 83,
+    uuid: '2f45a6b5-2f45-4f45-2f45-2f45a6b52f45',
+    name: 'Rum Wash',
+    style: 'Rum',
+    category: 'spirit',
+    description: '',
+    og: 1.087,
+    fg: 0.981,
+    abv: 13.9,
+    ibu: 0,
+    grains: ['3.63 lb Blackstrap Molasses', '2.72 lb Cane (Beet) Sugar'],
+    hops: [],
+    yeast: 'Red Star Ale',
+    source: 'brewfather',
+    brewDate: '2025-07-29',
+    color: 79.3,
+    batchSize: 5,
+    boilTime: 30,
+    fermentablesDetail: [
       {
-        "name": "Blackstrap Molasses",
-        "amount": 3.63,
-        "percentage": 57.1,
-        "color": 304.6
+        name: 'Blackstrap Molasses',
+        amount: 3.63,
+        percentage: 57.1,
+        color: 304.6,
       },
       {
-        "name": "Cane (Beet) Sugar",
-        "amount": 2.72,
-        "percentage": 42.9,
-        "color": 0
-      }
+        name: 'Cane (Beet) Sugar',
+        amount: 2.72,
+        percentage: 42.9,
+        color: 0,
+      },
     ],
-    "hopsDetail": [],
-    "yeastDetail": {
-      "name": "Red Star Ale",
-      "lab": "Red Star",
-      "attenuation": 77,
-      "minTemp": 62,
-      "maxTemp": 72
+    hopsDetail: [],
+    yeastDetail: {
+      name: 'Red Star Ale',
+      lab: 'Red Star',
+      attenuation: 77,
+      minTemp: 62,
+      maxTemp: 72,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 35,
-      "magnesium": 12,
-      "sodium": 11,
-      "chloride": 14,
-      "sulfate": 8,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 35,
+      magnesium: 12,
+      sodium: 11,
+      chloride: 14,
+      sulfate: 8,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5,
-      "boilTime": 30,
-      "efficiency": 64
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5,
+      boilTime: 30,
+      efficiency: 64,
+    },
   },
   {
-    "id": 84,
-    "uuid": "3649f941-3649-4649-3649-3649f9413649",
-    "name": "Imperial Hefe",
-    "style": "Weissbier",
-    "category": "ale",
-    "description": "",
-    "og": 1.076,
-    "fg": 1.019,
-    "abv": 7.5,
-    "ibu": 14,
-    "grains": [
-      "3.18 lb Pale Malt 2-Row",
-      "3.18 lb Wheat White Malt",
-      "0.91 lb Wheat Flaked",
-      "0.45 lb Carapils",
-      "0.45 lb Munich"
+    id: 84,
+    uuid: '3649f941-3649-4649-3649-3649f9413649',
+    name: 'Imperial Hefe',
+    style: 'Weissbier',
+    category: 'ale',
+    description: '',
+    og: 1.076,
+    fg: 1.019,
+    abv: 7.5,
+    ibu: 14,
+    grains: [
+      '3.18 lb Pale Malt 2-Row',
+      '3.18 lb Wheat White Malt',
+      '0.91 lb Wheat Flaked',
+      '0.45 lb Carapils',
+      '0.45 lb Munich',
     ],
-    "hops": [
-      "1 oz Comet (Boil)",
-      "1 oz Hallertauer Mittelfrueh (Boil)"
+    hops: ['1 oz Comet (Boil)', '1 oz Hallertauer Mittelfrueh (Boil)'],
+    yeast: 'Hefeweizen Ale (OYL-021)',
+    source: 'brewfather',
+    brewDate: '2023-09-17',
+    color: 5.9,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
+      {
+        name: 'Pale Malt 2-Row',
+        amount: 3.18,
+        percentage: 38.9,
+        color: 2,
+      },
+      {
+        name: 'Wheat White Malt',
+        amount: 3.18,
+        percentage: 38.9,
+        color: 2.3,
+      },
+      {
+        name: 'Wheat Flaked',
+        amount: 0.91,
+        percentage: 11.1,
+        color: 1.6,
+      },
+      {
+        name: 'Carapils',
+        amount: 0.45,
+        percentage: 5.6,
+        color: 1.3,
+      },
+      {
+        name: 'Munich',
+        amount: 0.45,
+        percentage: 5.6,
+        color: 10,
+      },
     ],
-    "yeast": "Hefeweizen Ale (OYL-021)",
-    "source": "brewfather",
-    "brewDate": "2023-09-17",
-    "color": 5.9,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    hopsDetail: [
       {
-        "name": "Pale Malt 2-Row",
-        "amount": 3.18,
-        "percentage": 38.9,
-        "color": 2
+        name: 'Comet',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+        alpha: 9,
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 3.18,
-        "percentage": 38.9,
-        "color": 2.3
+        name: 'Hallertauer Mittelfrueh',
+        amount: 1,
+        use: 'Boil',
+        time: 5,
+        alpha: 5.5,
       },
-      {
-        "name": "Wheat Flaked",
-        "amount": 0.91,
-        "percentage": 11.1,
-        "color": 1.6
-      },
-      {
-        "name": "Carapils",
-        "amount": 0.45,
-        "percentage": 5.6,
-        "color": 1.3
-      },
-      {
-        "name": "Munich",
-        "amount": 0.45,
-        "percentage": 5.6,
-        "color": 10
-      }
     ],
-    "hopsDetail": [
-      {
-        "name": "Comet",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15,
-        "alpha": 9
-      },
-      {
-        "name": "Hallertauer Mittelfrueh",
-        "amount": 1,
-        "use": "Boil",
-        "time": 5,
-        "alpha": 5.5
-      }
-    ],
-    "yeastDetail": {
-      "name": "Hefeweizen Ale",
-      "lab": "Omega",
-      "attenuation": 75,
-      "minTemp": 64,
-      "maxTemp": 75
+    yeastDetail: {
+      name: 'Hefeweizen Ale',
+      lab: 'Omega',
+      attenuation: 75,
+      minTemp: 64,
+      maxTemp: 75,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon (5g batch)",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 62
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon (5g batch)',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 62,
+    },
   },
   {
-    "id": 85,
-    "uuid": "06b42ae0-06b4-46b4-06b4-06b42ae006b4",
-    "name": "Moo Moo Canoe",
-    "style": "American Stout",
-    "category": "ale",
-    "description": "",
-    "og": 1.07,
-    "fg": 1.025,
-    "abv": 5.9,
-    "ibu": 43,
-    "grains": [
-      "7.26 lb Pale Ale Malt 2-Row",
-      "1.36 lb Milk Sugar (Lactose)",
-      "1.13 lb Chocolate",
-      "0.91 lb Barley, Flaked",
-      "0.91 lb Caramel Malt 60L",
-      "0.91 lb Munich II",
-      "0.91 lb Roasted Barley",
-      "0.45 lb Oats, Flaked"
+    id: 85,
+    uuid: '06b42ae0-06b4-46b4-06b4-06b42ae006b4',
+    name: 'Moo Moo Canoe',
+    style: 'American Stout',
+    category: 'ale',
+    description: '',
+    og: 1.07,
+    fg: 1.025,
+    abv: 5.9,
+    ibu: 43,
+    grains: [
+      '7.26 lb Pale Ale Malt 2-Row',
+      '1.36 lb Milk Sugar (Lactose)',
+      '1.13 lb Chocolate',
+      '0.91 lb Barley, Flaked',
+      '0.91 lb Caramel Malt 60L',
+      '0.91 lb Munich II',
+      '0.91 lb Roasted Barley',
+      '0.45 lb Oats, Flaked',
     ],
-    "hops": [
-      "2 oz Magnum (Boil)",
-      "2 oz Goldings, East Kent (Boil)"
+    hops: ['2 oz Magnum (Boil)', '2 oz Goldings, East Kent (Boil)'],
+    yeast: 'British Ale I (OYL-006)',
+    source: 'brewfather',
+    artwork: '/images/recipes/moomooCanoe.jpg',
+    color: 45.4,
+    batchSize: 11,
+    boilTime: 60,
+    fermentablesDetail: [
+      {
+        name: 'Pale Ale Malt 2-Row',
+        amount: 7.26,
+        percentage: 52.5,
+        color: 4,
+      },
+      {
+        name: 'Milk Sugar (Lactose)',
+        amount: 1.36,
+        percentage: 9.8,
+        color: 0,
+      },
+      {
+        name: 'Chocolate',
+        amount: 1.13,
+        percentage: 8.2,
+        color: 473.4,
+      },
+      {
+        name: 'Barley, Flaked',
+        amount: 0.91,
+        percentage: 6.6,
+        color: 1.7,
+      },
+      {
+        name: 'Caramel Malt 60L',
+        amount: 0.91,
+        percentage: 6.6,
+        color: 80.5,
+      },
+      {
+        name: 'Munich II',
+        amount: 0.91,
+        percentage: 6.6,
+        color: 11.7,
+      },
+      {
+        name: 'Roasted Barley',
+        amount: 0.91,
+        percentage: 6.6,
+        color: 405.6,
+      },
+      {
+        name: 'Oats, Flaked',
+        amount: 0.45,
+        percentage: 3.3,
+        color: 1.4,
+      },
     ],
-    "yeast": "British Ale I (OYL-006)",
-    "source": "brewfather",
-    "artwork": "/images/recipes/moomooCanoe.jpg",
-    "color": 45.4,
-    "batchSize": 11,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    hopsDetail: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 7.26,
-        "percentage": 52.5,
-        "color": 4
+        name: 'Magnum',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+        alpha: 12,
       },
       {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 1.36,
-        "percentage": 9.8,
-        "color": 0
+        name: 'Goldings, East Kent',
+        amount: 2,
+        use: 'Boil',
+        time: 10,
+        alpha: 5,
       },
-      {
-        "name": "Chocolate",
-        "amount": 1.13,
-        "percentage": 8.2,
-        "color": 473.4
-      },
-      {
-        "name": "Barley, Flaked",
-        "amount": 0.91,
-        "percentage": 6.6,
-        "color": 1.7
-      },
-      {
-        "name": "Caramel Malt 60L",
-        "amount": 0.91,
-        "percentage": 6.6,
-        "color": 80.5
-      },
-      {
-        "name": "Munich II",
-        "amount": 0.91,
-        "percentage": 6.6,
-        "color": 11.7
-      },
-      {
-        "name": "Roasted Barley",
-        "amount": 0.91,
-        "percentage": 6.6,
-        "color": 405.6
-      },
-      {
-        "name": "Oats, Flaked",
-        "amount": 0.45,
-        "percentage": 3.3,
-        "color": 1.4
-      }
     ],
-    "hopsDetail": [
-      {
-        "name": "Magnum",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 12
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2,
-        "use": "Boil",
-        "time": 10,
-        "alpha": 5
-      }
-    ],
-    "yeastDetail": {
-      "name": "British Ale I",
-      "lab": "Omega",
-      "attenuation": 75,
-      "minTemp": 64,
-      "maxTemp": 72
+    yeastDetail: {
+      name: 'British Ale I',
+      lab: 'Omega',
+      attenuation: 75,
+      minTemp: 64,
+      maxTemp: 72,
     },
-    "mashProfile": {
-      "name": "Medium fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'Medium fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 153,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 153,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 141,
-      "magnesium": 12,
-      "sodium": 11,
-      "chloride": 133,
-      "sulfate": 100,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 141,
+      magnesium: 12,
+      sodium: 11,
+      chloride: 133,
+      sulfate: 100,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 11,
-      "boilTime": 60,
-      "efficiency": 67
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 11,
+      boilTime: 60,
+      efficiency: 67,
+    },
   },
   {
-    "id": 86,
-    "uuid": "6613308a-6613-4613-6613-6613308a6613",
-    "name": "4PyRyeO Pale Ale",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "description": "",
-    "og": 1.056,
-    "fg": 1.013,
-    "abv": 5.6,
-    "ibu": 34,
-    "grains": [
-      "3.63 lb Pale Ale Golden Promise",
-      "0.91 lb BEST Red X®",
-      "0.91 lb Rye, Flaked",
-      "0.45 lb Melanoidin",
-      "0.45 lb Wheat Malt, Pale",
-      "0.23 lb Munich II"
+    id: 86,
+    uuid: '6613308a-6613-4613-6613-6613308a6613',
+    name: '4PyRyeO Pale Ale',
+    style: 'American Pale Ale',
+    category: 'ale',
+    description: '',
+    og: 1.056,
+    fg: 1.013,
+    abv: 5.6,
+    ibu: 34,
+    grains: [
+      '3.63 lb Pale Ale Golden Promise',
+      '0.91 lb BEST Red X®',
+      '0.91 lb Rye, Flaked',
+      '0.45 lb Melanoidin',
+      '0.45 lb Wheat Malt, Pale',
+      '0.23 lb Munich II',
     ],
-    "hops": [
-      "0.4 oz Columbus (Tomahawk) (First Wort)",
-      "0.7 oz Columbus (Tomahawk) (Boil)",
-      "0.5 oz Cascade (Boil)",
-      "3 oz Mosaic (Dry Hop)"
+    hops: [
+      '0.4 oz Columbus (Tomahawk) (First Wort)',
+      '0.7 oz Columbus (Tomahawk) (Boil)',
+      '0.5 oz Cascade (Boil)',
+      '3 oz Mosaic (Dry Hop)',
     ],
-    "yeast": "West Coast Ale I (OYL-004)",
-    "source": "brewfather",
-    "brewDate": "2024-09-28",
-    "color": 10,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'West Coast Ale I (OYL-004)',
+    source: 'brewfather',
+    brewDate: '2024-09-28',
+    color: 10,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale Golden Promise",
-        "amount": 3.63,
-        "percentage": 55.2,
-        "color": 2.5
+        name: 'Pale Ale Golden Promise',
+        amount: 3.63,
+        percentage: 55.2,
+        color: 2.5,
       },
       {
-        "name": "BEST Red X®",
-        "amount": 0.91,
-        "percentage": 13.8,
-        "color": 15.2
+        name: 'BEST Red X®',
+        amount: 0.91,
+        percentage: 13.8,
+        color: 15.2,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.91,
-        "percentage": 13.8,
-        "color": 4.6
+        name: 'Rye, Flaked',
+        amount: 0.91,
+        percentage: 13.8,
+        color: 4.6,
       },
       {
-        "name": "Melanoidin",
-        "amount": 0.45,
-        "percentage": 6.9,
-        "color": 30
+        name: 'Melanoidin',
+        amount: 0.45,
+        percentage: 6.9,
+        color: 30,
       },
       {
-        "name": "Wheat Malt, Pale",
-        "amount": 0.45,
-        "percentage": 6.9,
-        "color": 2
+        name: 'Wheat Malt, Pale',
+        amount: 0.45,
+        percentage: 6.9,
+        color: 2,
       },
       {
-        "name": "Munich II",
-        "amount": 0.23,
-        "percentage": 3.5,
-        "color": 11.7
-      }
+        name: 'Munich II',
+        amount: 0.23,
+        percentage: 3.5,
+        color: 11.7,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 0.4,
-        "use": "First Wort",
-        "time": 60,
-        "alpha": 17.3
+        name: 'Columbus (Tomahawk)',
+        amount: 0.4,
+        use: 'First Wort',
+        time: 60,
+        alpha: 17.3,
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 0.7,
-        "use": "Boil",
-        "time": 5,
-        "alpha": 17.3
+        name: 'Columbus (Tomahawk)',
+        amount: 0.7,
+        use: 'Boil',
+        time: 5,
+        alpha: 17.3,
       },
       {
-        "name": "Cascade",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 5,
-        "alpha": 6.2
+        name: 'Cascade',
+        amount: 0.5,
+        use: 'Boil',
+        time: 5,
+        alpha: 6.2,
       },
       {
-        "name": "Mosaic",
-        "amount": 3,
-        "use": "Dry Hop",
-        "time": 2,
-        "alpha": 12.3
-      }
+        name: 'Mosaic',
+        amount: 3,
+        use: 'Dry Hop',
+        time: 2,
+        alpha: 12.3,
+      },
     ],
-    "yeastDetail": {
-      "name": "West Coast Ale I",
-      "lab": "Omega",
-      "attenuation": 77,
-      "minTemp": 60,
-      "maxTemp": 73
+    yeastDetail: {
+      name: 'West Coast Ale I',
+      lab: 'Omega',
+      attenuation: 77,
+      minTemp: 60,
+      maxTemp: 73,
     },
-    "mashProfile": {
-      "name": "High fermentability plus mash out",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability plus mash out',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
         },
         {
-          "name": "Mash Out",
-          "type": "Temperature",
-          "stepTemp": 167,
-          "stepTime": 10
-        }
-      ]
+          name: 'Mash Out',
+          type: 'Temperature',
+          stepTemp: 167,
+          stepTime: 10,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 80,
-      "magnesium": 12,
-      "sodium": 11,
-      "chloride": 56,
-      "sulfate": 58,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 80,
+      magnesium: 12,
+      sodium: 11,
+      chloride: 56,
+      sulfate: 58,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon (5g batch)",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 60
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon (5g batch)',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 60,
+    },
   },
   {
-    "id": 87,
-    "uuid": "6b780297-6b78-4b78-6b78-6b7802976b78",
-    "name": "Joeoverlord",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.06,
-    "fg": 1.014,
-    "abv": 6,
-    "ibu": 45,
-    "grains": [
-      "5.9 lb Pale Ale Malt 2-Row",
-      "0.57 lb Caramel Malt 20L",
-      "0.57 lb Carapils",
-      "0.45 lb Rye, Flaked"
+    id: 87,
+    uuid: '6b780297-6b78-4b78-6b78-6b7802976b78',
+    name: 'Joeoverlord',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.06,
+    fg: 1.014,
+    abv: 6,
+    ibu: 45,
+    grains: [
+      '5.9 lb Pale Ale Malt 2-Row',
+      '0.57 lb Caramel Malt 20L',
+      '0.57 lb Carapils',
+      '0.45 lb Rye, Flaked',
     ],
-    "hops": [
-      "1 oz Cascade (Boil)",
-      "1 oz Cascade (Boil)",
-      "3 oz Cascade (Aroma)",
-      "2 oz Motueka (Aroma)",
-      "3 oz Cascade (Dry Hop)",
-      "1 oz Nelson Sauvin (Dry Hop)"
+    hops: [
+      '1 oz Cascade (Boil)',
+      '1 oz Cascade (Boil)',
+      '3 oz Cascade (Aroma)',
+      '2 oz Motueka (Aroma)',
+      '3 oz Cascade (Dry Hop)',
+      '1 oz Nelson Sauvin (Dry Hop)',
     ],
-    "yeast": "West Coast IV (OYL-050)",
-    "source": "brewfather",
-    "brewDate": "2024-11-18",
-    "artwork": "/images/recipes/overlord.jpg",
-    "color": 8.6,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'West Coast IV (OYL-050)',
+    source: 'brewfather',
+    brewDate: '2024-11-18',
+    artwork: '/images/recipes/overlord.jpg',
+    color: 8.6,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 5.9,
-        "percentage": 78.8,
-        "color": 4
+        name: 'Pale Ale Malt 2-Row',
+        amount: 5.9,
+        percentage: 78.8,
+        color: 4,
       },
       {
-        "name": "Caramel Malt 20L",
-        "amount": 0.57,
-        "percentage": 7.6,
-        "color": 26.3
+        name: 'Caramel Malt 20L',
+        amount: 0.57,
+        percentage: 7.6,
+        color: 26.3,
       },
       {
-        "name": "Carapils",
-        "amount": 0.57,
-        "percentage": 7.6,
-        "color": 1.3
+        name: 'Carapils',
+        amount: 0.57,
+        percentage: 7.6,
+        color: 1.3,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.45,
-        "percentage": 6.1,
-        "color": 4.6
-      }
+        name: 'Rye, Flaked',
+        amount: 0.45,
+        percentage: 6.1,
+        color: 4.6,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Cascade",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 6.2
+        name: 'Cascade',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+        alpha: 6.2,
       },
       {
-        "name": "Cascade",
-        "amount": 1,
-        "use": "Boil",
-        "time": 45,
-        "alpha": 6.2
+        name: 'Cascade',
+        amount: 1,
+        use: 'Boil',
+        time: 45,
+        alpha: 6.2,
       },
       {
-        "name": "Cascade",
-        "amount": 3,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 6.2
+        name: 'Cascade',
+        amount: 3,
+        use: 'Aroma',
+        time: 10,
+        alpha: 6.2,
       },
       {
-        "name": "Motueka",
-        "amount": 2,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 6.4
+        name: 'Motueka',
+        amount: 2,
+        use: 'Aroma',
+        time: 10,
+        alpha: 6.4,
       },
       {
-        "name": "Cascade",
-        "amount": 3,
-        "use": "Dry Hop",
-        "time": 10,
-        "alpha": 6.2
+        name: 'Cascade',
+        amount: 3,
+        use: 'Dry Hop',
+        time: 10,
+        alpha: 6.2,
       },
       {
-        "name": "Nelson Sauvin",
-        "amount": 1,
-        "use": "Dry Hop",
-        "time": 10,
-        "alpha": 10.8
-      }
+        name: 'Nelson Sauvin',
+        amount: 1,
+        use: 'Dry Hop',
+        time: 10,
+        alpha: 10.8,
+      },
     ],
-    "yeastDetail": {
-      "name": "West Coast IV",
-      "lab": "Omega",
-      "attenuation": 77,
-      "minTemp": 62,
-      "maxTemp": 74
+    yeastDetail: {
+      name: 'West Coast IV',
+      lab: 'Omega',
+      attenuation: 77,
+      minTemp: 62,
+      maxTemp: 74,
     },
-    "mashProfile": {
-      "name": "High fermentability plus mash out",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability plus mash out',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
         },
         {
-          "name": "Mash Out",
-          "type": "Temperature",
-          "stepTemp": 167,
-          "stepTime": 10
-        }
-      ]
+          name: 'Mash Out',
+          type: 'Temperature',
+          stepTemp: 167,
+          stepTime: 10,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 179,
-      "magnesium": 24,
-      "sodium": 11,
-      "chloride": 83,
-      "sulfate": 305,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 179,
+      magnesium: 24,
+      sodium: 11,
+      chloride: 83,
+      sulfate: 305,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 55
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 55,
+    },
   },
   {
-    "id": 88,
-    "uuid": "0a9ed186-0a9e-4a9e-0a9e-0a9ed1860a9e",
-    "name": "Sample Blonde Ale",
-    "style": "Blonde Ale",
-    "category": "ale",
-    "description": "This is a sample recipe from Brewfather",
-    "og": 1.044,
-    "fg": 1.008,
-    "abv": 4.7,
-    "ibu": 20,
-    "grains": [
-      "2 lb Pale Ale",
-      "2 lb Pilsen",
-      "0.57 lb Caramel Pils",
-      "0.1 lb Pale Crystal Malt"
+    id: 88,
+    uuid: '0a9ed186-0a9e-4a9e-0a9e-0a9ed1860a9e',
+    name: 'Sample Blonde Ale',
+    style: 'Blonde Ale',
+    category: 'ale',
+    description: 'This is a sample recipe from Brewfather',
+    og: 1.044,
+    fg: 1.008,
+    abv: 4.7,
+    ibu: 20,
+    grains: [
+      '2 lb Pale Ale',
+      '2 lb Pilsen',
+      '0.57 lb Caramel Pils',
+      '0.1 lb Pale Crystal Malt',
     ],
-    "hops": [
-      "0.18 oz Summit (Boil)",
-      "0.71 oz Saaz (Boil)",
-      "0.18 oz Amarillo (Boil)",
-      "0.71 oz Saaz (Aroma)",
-      "0.18 oz Amarillo (Aroma)",
-      "0.71 oz Amarillo (Dry Hop)"
+    hops: [
+      '0.18 oz Summit (Boil)',
+      '0.71 oz Saaz (Boil)',
+      '0.18 oz Amarillo (Boil)',
+      '0.71 oz Saaz (Aroma)',
+      '0.18 oz Amarillo (Aroma)',
+      '0.71 oz Amarillo (Dry Hop)',
     ],
-    "yeast": "Safale American (US-05)",
-    "source": "brewfather",
-    "color": 4.3,
-    "batchSize": 6.1,
-    "boilTime": 90,
-    "fermentablesDetail": [
+    yeast: 'Safale American (US-05)',
+    source: 'brewfather',
+    color: 4.3,
+    batchSize: 6.1,
+    boilTime: 90,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale",
-        "amount": 2,
-        "percentage": 42.8,
-        "color": 2.5
+        name: 'Pale Ale',
+        amount: 2,
+        percentage: 42.8,
+        color: 2.5,
       },
       {
-        "name": "Pilsen",
-        "amount": 2,
-        "percentage": 42.8,
-        "color": 1.5
+        name: 'Pilsen',
+        amount: 2,
+        percentage: 42.8,
+        color: 1.5,
       },
       {
-        "name": "Caramel Pils",
-        "amount": 0.57,
-        "percentage": 12.2,
-        "color": 2.5
+        name: 'Caramel Pils',
+        amount: 0.57,
+        percentage: 12.2,
+        color: 2.5,
       },
       {
-        "name": "Pale Crystal Malt",
-        "amount": 0.1,
-        "percentage": 2.1,
-        "color": 38.1
-      }
+        name: 'Pale Crystal Malt',
+        amount: 0.1,
+        percentage: 2.1,
+        color: 38.1,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Summit",
-        "amount": 0.18,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 17
+        name: 'Summit',
+        amount: 0.18,
+        use: 'Boil',
+        time: 60,
+        alpha: 17,
       },
       {
-        "name": "Saaz",
-        "amount": 0.71,
-        "use": "Boil",
-        "time": 15,
-        "alpha": 3.8
+        name: 'Saaz',
+        amount: 0.71,
+        use: 'Boil',
+        time: 15,
+        alpha: 3.8,
       },
       {
-        "name": "Amarillo",
-        "amount": 0.18,
-        "use": "Boil",
-        "time": 15,
-        "alpha": 9.2
+        name: 'Amarillo',
+        amount: 0.18,
+        use: 'Boil',
+        time: 15,
+        alpha: 9.2,
       },
       {
-        "name": "Saaz",
-        "amount": 0.71,
-        "use": "Aroma",
-        "time": 20,
-        "alpha": 3.8
+        name: 'Saaz',
+        amount: 0.71,
+        use: 'Aroma',
+        time: 20,
+        alpha: 3.8,
       },
       {
-        "name": "Amarillo",
-        "amount": 0.18,
-        "use": "Aroma",
-        "time": 20,
-        "alpha": 9.2
+        name: 'Amarillo',
+        amount: 0.18,
+        use: 'Aroma',
+        time: 20,
+        alpha: 9.2,
       },
       {
-        "name": "Amarillo",
-        "amount": 0.71,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 9.2
-      }
+        name: 'Amarillo',
+        amount: 0.71,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 9.2,
+      },
     ],
-    "yeastDetail": {
-      "name": "Safale American",
-      "lab": "Fermentis",
-      "attenuation": 81,
-      "minTemp": 61,
-      "maxTemp": 82
+    yeastDetail: {
+      name: 'Safale American',
+      lab: 'Fermentis',
+      attenuation: 81,
+      minTemp: 61,
+      maxTemp: 82,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Grainfather",
-      "batchSize": 6.1,
-      "boilTime": 90,
-      "efficiency": 72
-    }
+    equipmentProfile: {
+      name: 'Grainfather',
+      batchSize: 6.1,
+      boilTime: 90,
+      efficiency: 72,
+    },
   },
   {
-    "id": 89,
-    "uuid": "551217ed-5512-4512-5512-551217ed5512",
-    "name": "Overlord 3.1 5g",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.066,
-    "fg": 1.015,
-    "abv": 6.7,
-    "ibu": 66,
-    "grains": [
-      "5.44 lb Pale Ale Malt 2-Row",
-      "0.45 lb Caramel Malt 20L",
-      "0.45 lb Carapils",
-      "0.23 lb Rye, Flaked"
+    id: 89,
+    uuid: '551217ed-5512-4512-5512-551217ed5512',
+    name: 'Overlord 3.1 5g',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.066,
+    fg: 1.015,
+    abv: 6.7,
+    ibu: 66,
+    grains: [
+      '5.44 lb Pale Ale Malt 2-Row',
+      '0.45 lb Caramel Malt 20L',
+      '0.45 lb Carapils',
+      '0.23 lb Rye, Flaked',
     ],
-    "hops": [
-      "0.5 oz Citra (Boil)",
-      "1 oz Citra (Boil)",
-      "0.5 oz Citra (Boil)",
-      "3 oz Citra (Aroma)",
-      "3 oz Citra (Dry Hop)"
+    hops: [
+      '0.5 oz Citra (Boil)',
+      '1 oz Citra (Boil)',
+      '0.5 oz Citra (Boil)',
+      '3 oz Citra (Aroma)',
+      '3 oz Citra (Dry Hop)',
     ],
-    "yeast": "West Coast IV (OYL-050)",
-    "source": "brewfather",
-    "brewDate": "2025-02-21",
-    "artwork": "/images/recipes/overlord.jpg",
-    "color": 7.7,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'West Coast IV (OYL-050)',
+    source: 'brewfather',
+    brewDate: '2025-02-21',
+    artwork: '/images/recipes/overlord.jpg',
+    color: 7.7,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 5.44,
-        "percentage": 82.8,
-        "color": 4
+        name: 'Pale Ale Malt 2-Row',
+        amount: 5.44,
+        percentage: 82.8,
+        color: 4,
       },
       {
-        "name": "Caramel Malt 20L",
-        "amount": 0.45,
-        "percentage": 6.9,
-        "color": 26.3
+        name: 'Caramel Malt 20L',
+        amount: 0.45,
+        percentage: 6.9,
+        color: 26.3,
       },
       {
-        "name": "Carapils",
-        "amount": 0.45,
-        "percentage": 6.9,
-        "color": 1.3
+        name: 'Carapils',
+        amount: 0.45,
+        percentage: 6.9,
+        color: 1.3,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.23,
-        "percentage": 3.5,
-        "color": 4.6
-      }
+        name: 'Rye, Flaked',
+        amount: 0.23,
+        percentage: 3.5,
+        color: 4.6,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Citra",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 12
+        name: 'Citra',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+        alpha: 12,
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "use": "Boil",
-        "time": 45,
-        "alpha": 12
+        name: 'Citra',
+        amount: 1,
+        use: 'Boil',
+        time: 45,
+        alpha: 12,
       },
       {
-        "name": "Citra",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 10,
-        "alpha": 12
+        name: 'Citra',
+        amount: 0.5,
+        use: 'Boil',
+        time: 10,
+        alpha: 12,
       },
       {
-        "name": "Citra",
-        "amount": 3,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 12
+        name: 'Citra',
+        amount: 3,
+        use: 'Aroma',
+        time: 10,
+        alpha: 12,
       },
       {
-        "name": "Citra",
-        "amount": 3,
-        "use": "Dry Hop",
-        "time": 10,
-        "alpha": 12
-      }
+        name: 'Citra',
+        amount: 3,
+        use: 'Dry Hop',
+        time: 10,
+        alpha: 12,
+      },
     ],
-    "yeastDetail": {
-      "name": "West Coast IV",
-      "lab": "Omega",
-      "attenuation": 77,
-      "minTemp": 62,
-      "maxTemp": 74
+    yeastDetail: {
+      name: 'West Coast IV',
+      lab: 'Omega',
+      attenuation: 77,
+      minTemp: 62,
+      maxTemp: 74,
     },
-    "mashProfile": {
-      "name": "High fermentability plus mash out",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability plus mash out',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
         },
         {
-          "name": "Mash Out",
-          "type": "Temperature",
-          "stepTemp": 167,
-          "stepTime": 10
-        }
-      ]
+          name: 'Mash Out',
+          type: 'Temperature',
+          stepTemp: 167,
+          stepTime: 10,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 110,
-      "magnesium": 18,
-      "sodium": 11,
-      "chloride": 51,
-      "sulfate": 160,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 110,
+      magnesium: 18,
+      sodium: 11,
+      chloride: 51,
+      sulfate: 160,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 69
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 69,
+    },
   },
   {
-    "id": 90,
-    "uuid": "15c84caa-15c8-45c8-15c8-15c84caa15c8",
-    "name": "Bavarian hefeweizen",
-    "style": "Weissbier",
-    "category": "ale",
-    "description": "",
-    "og": 1.049,
-    "fg": 1.012,
-    "abv": 4.9,
-    "ibu": 15,
-    "grains": [
-      "2.04 lb Pale Malt 2-Row",
-      "1.59 lb Wheat White Malt",
-      "0.45 lb Wheat Flaked",
-      "0.23 lb Carapils",
-      "0.23 lb Munich I"
+    id: 90,
+    uuid: '15c84caa-15c8-45c8-15c8-15c84caa15c8',
+    name: 'Bavarian hefeweizen',
+    style: 'Weissbier',
+    category: 'ale',
+    description: '',
+    og: 1.049,
+    fg: 1.012,
+    abv: 4.9,
+    ibu: 15,
+    grains: [
+      '2.04 lb Pale Malt 2-Row',
+      '1.59 lb Wheat White Malt',
+      '0.45 lb Wheat Flaked',
+      '0.23 lb Carapils',
+      '0.23 lb Munich I',
     ],
-    "hops": [
-      "0.5 oz Cascade (Boil)",
-      "1 oz Mandarina Bavaria (Aroma)",
-      "0.5 oz Cascade (Aroma)"
+    hops: [
+      '0.5 oz Cascade (Boil)',
+      '1 oz Mandarina Bavaria (Aroma)',
+      '0.5 oz Cascade (Aroma)',
     ],
-    "yeast": "Hefeweizen Ale (OYL-021)",
-    "source": "brewfather",
-    "brewDate": "2022-03-16",
-    "color": 3.8,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'Hefeweizen Ale (OYL-021)',
+    source: 'brewfather',
+    brewDate: '2022-03-16',
+    color: 3.8,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Malt 2-Row",
-        "amount": 2.04,
-        "percentage": 44.9,
-        "color": 2
+        name: 'Pale Malt 2-Row',
+        amount: 2.04,
+        percentage: 44.9,
+        color: 2,
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 1.59,
-        "percentage": 35,
-        "color": 2.3
+        name: 'Wheat White Malt',
+        amount: 1.59,
+        percentage: 35,
+        color: 2.3,
       },
       {
-        "name": "Wheat Flaked",
-        "amount": 0.45,
-        "percentage": 9.9,
-        "color": 1.6
+        name: 'Wheat Flaked',
+        amount: 0.45,
+        percentage: 9.9,
+        color: 1.6,
       },
       {
-        "name": "Carapils",
-        "amount": 0.23,
-        "percentage": 5.1,
-        "color": 1.3
+        name: 'Carapils',
+        amount: 0.23,
+        percentage: 5.1,
+        color: 1.3,
       },
       {
-        "name": "Munich I",
-        "amount": 0.23,
-        "percentage": 5.1,
-        "color": 7.6
-      }
+        name: 'Munich I',
+        amount: 0.23,
+        percentage: 5.1,
+        color: 7.6,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Cascade",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 6.2
+        name: 'Cascade',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+        alpha: 6.2,
       },
       {
-        "name": "Mandarina Bavaria",
-        "amount": 1,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 10.4
+        name: 'Mandarina Bavaria',
+        amount: 1,
+        use: 'Aroma',
+        time: 10,
+        alpha: 10.4,
       },
       {
-        "name": "Cascade",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 6.2
-      }
+        name: 'Cascade',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 10,
+        alpha: 6.2,
+      },
     ],
-    "yeastDetail": {
-      "name": "Hefeweizen Ale",
-      "lab": "Omega",
-      "attenuation": 75,
-      "minTemp": 64,
-      "maxTemp": 75
+    yeastDetail: {
+      name: 'Hefeweizen Ale',
+      lab: 'Omega',
+      attenuation: 75,
+      minTemp: 64,
+      maxTemp: 75,
     },
-    "mashProfile": {
-      "name": "High fermentability plus mash out",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability plus mash out',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
         },
         {
-          "name": "Mash Out",
-          "type": "Temperature",
-          "stepTemp": 167,
-          "stepTime": 10
-        }
-      ]
+          name: 'Mash Out',
+          type: 'Temperature',
+          stepTemp: 167,
+          stepTime: 10,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 35,
-      "magnesium": 12,
-      "sodium": 11,
-      "chloride": 14,
-      "sulfate": 8,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 35,
+      magnesium: 12,
+      sodium: 11,
+      chloride: 14,
+      sulfate: 8,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Default",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 72
-    }
+    equipmentProfile: {
+      name: 'Default',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 72,
+    },
   },
   {
-    "id": 91,
-    "uuid": "6ac3afe2-6ac3-4ac3-6ac3-6ac3afe26ac3",
-    "name": "The Vienna",
-    "style": "Vienna Lager",
-    "category": "lager",
-    "description": "",
-    "og": 1.052,
-    "fg": 1.013,
-    "abv": 5.1,
-    "ibu": 28,
-    "grains": [
-      "2.27 lb Munich I",
-      "1.59 lb Pale Ale Finest Maris Otter",
-      "1.59 lb Vienna Malt",
-      "0.11 lb Chocolate"
+    id: 91,
+    uuid: '6ac3afe2-6ac3-4ac3-6ac3-6ac3afe26ac3',
+    name: 'The Vienna',
+    style: 'Vienna Lager',
+    category: 'lager',
+    description: '',
+    og: 1.052,
+    fg: 1.013,
+    abv: 5.1,
+    ibu: 28,
+    grains: [
+      '2.27 lb Munich I',
+      '1.59 lb Pale Ale Finest Maris Otter',
+      '1.59 lb Vienna Malt',
+      '0.11 lb Chocolate',
     ],
-    "hops": [
-      "0.8 oz Nugget (Boil)",
-      "1 oz Hallertau (Boil)",
-      "0.2 oz Nugget (Boil)"
+    hops: [
+      '0.8 oz Nugget (Boil)',
+      '1 oz Hallertau (Boil)',
+      '0.2 oz Nugget (Boil)',
     ],
-    "yeast": "German Lager I PLUS Series (DKO) (OYL-437)",
-    "source": "brewfather",
-    "brewDate": "2024-12-24",
-    "color": 12.8,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'German Lager I PLUS Series (DKO) (OYL-437)',
+    source: 'brewfather',
+    brewDate: '2024-12-24',
+    color: 12.8,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Munich I",
-        "amount": 2.27,
-        "percentage": 40.8,
-        "color": 7.6
+        name: 'Munich I',
+        amount: 2.27,
+        percentage: 40.8,
+        color: 7.6,
       },
       {
-        "name": "Pale Ale Finest Maris Otter",
-        "amount": 1.59,
-        "percentage": 28.6,
-        "color": 2.5
+        name: 'Pale Ale Finest Maris Otter',
+        amount: 1.59,
+        percentage: 28.6,
+        color: 2.5,
       },
       {
-        "name": "Vienna Malt",
-        "amount": 1.59,
-        "percentage": 28.6,
-        "color": 3
+        name: 'Vienna Malt',
+        amount: 1.59,
+        percentage: 28.6,
+        color: 3,
       },
       {
-        "name": "Chocolate",
-        "amount": 0.11,
-        "percentage": 2,
-        "color": 473.4
-      }
+        name: 'Chocolate',
+        amount: 0.11,
+        percentage: 2,
+        color: 473.4,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Nugget",
-        "amount": 0.8,
-        "use": "Boil",
-        "time": 25,
-        "alpha": 13.1
+        name: 'Nugget',
+        amount: 0.8,
+        use: 'Boil',
+        time: 25,
+        alpha: 13.1,
       },
       {
-        "name": "Hallertau",
-        "amount": 1,
-        "use": "Boil",
-        "time": 5,
-        "alpha": 4.5
+        name: 'Hallertau',
+        amount: 1,
+        use: 'Boil',
+        time: 5,
+        alpha: 4.5,
       },
       {
-        "name": "Nugget",
-        "amount": 0.2,
-        "use": "Boil",
-        "time": 5,
-        "alpha": 13.1
-      }
+        name: 'Nugget',
+        amount: 0.2,
+        use: 'Boil',
+        time: 5,
+        alpha: 13.1,
+      },
     ],
-    "yeastDetail": {
-      "name": "German Lager I PLUS Series (DKO)",
-      "lab": "Omega",
-      "attenuation": 75,
-      "minTemp": 45,
-      "maxTemp": 68
+    yeastDetail: {
+      name: 'German Lager I PLUS Series (DKO)',
+      lab: 'Omega',
+      attenuation: 75,
+      minTemp: 45,
+      maxTemp: 68,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 35,
-      "magnesium": 12,
-      "sodium": 11,
-      "chloride": 14,
-      "sulfate": 8,
-      "bicarbonate": 123
+    waterProfile: {
+      calcium: 35,
+      magnesium: 12,
+      sodium: 11,
+      chloride: 14,
+      sulfate: 8,
+      bicarbonate: 123,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon (10g batch) (copy)",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 62
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon (10g batch) (copy)',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 62,
+    },
   },
   {
-    "id": 92,
-    "uuid": "1ef0d02e-1ef0-4ef0-1ef0-1ef0d02e1ef0",
-    "name": "Twin Pines Piney IPA",
-    "style": "American IPA",
-    "category": "ale",
-    "description": "",
-    "og": 1.056,
-    "fg": 1.013,
-    "abv": 5.6,
-    "ibu": 113,
-    "grains": [
-      "5.45 lb Pale Ale Malt 2-Row",
-      "0.45 lb Vienna Malt"
+    id: 92,
+    uuid: '1ef0d02e-1ef0-4ef0-1ef0-1ef0d02e1ef0',
+    name: 'Twin Pines Piney IPA',
+    style: 'American IPA',
+    category: 'ale',
+    description: '',
+    og: 1.056,
+    fg: 1.013,
+    abv: 5.6,
+    ibu: 113,
+    grains: ['5.45 lb Pale Ale Malt 2-Row', '0.45 lb Vienna Malt'],
+    hops: [
+      '2 oz Chinook (Boil)',
+      '0.5 oz Chinook (Boil)',
+      '0.5 oz Nelson Sauvin (Boil)',
+      '0.5 oz Chinook (Boil)',
+      '0.5 oz Nelson Sauvin (Boil)',
+      '2 oz Nelson Sauvin (Dry Hop)',
     ],
-    "hops": [
-      "2 oz Chinook (Boil)",
-      "0.5 oz Chinook (Boil)",
-      "0.5 oz Nelson Sauvin (Boil)",
-      "0.5 oz Chinook (Boil)",
-      "0.5 oz Nelson Sauvin (Boil)",
-      "2 oz Nelson Sauvin (Dry Hop)"
+    yeast: 'West Coast Ale I (OYL-004)',
+    source: 'brewfather',
+    brewDate: '2022-09-17',
+    color: 6,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
+      {
+        name: 'Pale Ale Malt 2-Row',
+        amount: 5.45,
+        percentage: 92.4,
+        color: 4,
+      },
+      {
+        name: 'Vienna Malt',
+        amount: 0.45,
+        percentage: 7.6,
+        color: 4,
+      },
     ],
-    "yeast": "West Coast Ale I (OYL-004)",
-    "source": "brewfather",
-    "brewDate": "2022-09-17",
-    "color": 6,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    hopsDetail: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 5.45,
-        "percentage": 92.4,
-        "color": 4
+        name: 'Chinook',
+        amount: 2,
+        use: 'Boil',
+        time: 60,
+        alpha: 13,
       },
       {
-        "name": "Vienna Malt",
-        "amount": 0.45,
-        "percentage": 7.6,
-        "color": 4
-      }
+        name: 'Chinook',
+        amount: 0.5,
+        use: 'Boil',
+        time: 20,
+        alpha: 13,
+      },
+      {
+        name: 'Nelson Sauvin',
+        amount: 0.5,
+        use: 'Boil',
+        time: 20,
+        alpha: 10.8,
+      },
+      {
+        name: 'Chinook',
+        amount: 0.5,
+        use: 'Boil',
+        time: 5,
+        alpha: 13,
+      },
+      {
+        name: 'Nelson Sauvin',
+        amount: 0.5,
+        use: 'Boil',
+        time: 5,
+        alpha: 10.8,
+      },
+      {
+        name: 'Nelson Sauvin',
+        amount: 2,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 10.8,
+      },
     ],
-    "hopsDetail": [
-      {
-        "name": "Chinook",
-        "amount": 2,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 13
-      },
-      {
-        "name": "Chinook",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 20,
-        "alpha": 13
-      },
-      {
-        "name": "Nelson Sauvin",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 20,
-        "alpha": 10.8
-      },
-      {
-        "name": "Chinook",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 5,
-        "alpha": 13
-      },
-      {
-        "name": "Nelson Sauvin",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 5,
-        "alpha": 10.8
-      },
-      {
-        "name": "Nelson Sauvin",
-        "amount": 2,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 10.8
-      }
-    ],
-    "yeastDetail": {
-      "name": "West Coast Ale I",
-      "lab": "Omega",
-      "attenuation": 77,
-      "minTemp": 60,
-      "maxTemp": 73
+    yeastDetail: {
+      name: 'West Coast Ale I',
+      lab: 'Omega',
+      attenuation: 77,
+      minTemp: 60,
+      maxTemp: 73,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 64
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 64,
+    },
   },
   {
-    "id": 93,
-    "uuid": "4086cdd1-4086-4086-4086-4086cdd14086",
-    "name": "The Devil's Wheat 3",
-    "style": "American Wheat Beer",
-    "category": "ale",
-    "description": "",
-    "og": 1.05,
-    "fg": 1.012,
-    "abv": 5,
-    "ibu": 25,
-    "grains": [
-      "4.99 lb Pale Ale Malt 2-Row",
-      "4.99 lb Wheat White Malt",
-      "0.59 lb Vienna Malt",
-      "0.45 lb Carapils",
-      "0.45 lb Rye, Flaked"
+    id: 93,
+    uuid: '4086cdd1-4086-4086-4086-4086cdd14086',
+    name: "The Devil's Wheat 3",
+    style: 'American Wheat Beer',
+    category: 'ale',
+    description: '',
+    og: 1.05,
+    fg: 1.012,
+    abv: 5,
+    ibu: 25,
+    grains: [
+      '4.99 lb Pale Ale Malt 2-Row',
+      '4.99 lb Wheat White Malt',
+      '0.59 lb Vienna Malt',
+      '0.45 lb Carapils',
+      '0.45 lb Rye, Flaked',
     ],
-    "hops": [
-      "0.5 oz Columbus (Tomahawk) (Boil)",
-      "1 oz Amarillo (Boil)",
-      "4 oz Amarillo (Aroma)",
-      "0.5 oz Columbus (Tomahawk) (Aroma)",
-      "2 oz Amarillo (Dry Hop)",
-      "2 oz Columbus (Tomahawk) (Dry Hop)"
+    hops: [
+      '0.5 oz Columbus (Tomahawk) (Boil)',
+      '1 oz Amarillo (Boil)',
+      '4 oz Amarillo (Aroma)',
+      '0.5 oz Columbus (Tomahawk) (Aroma)',
+      '2 oz Amarillo (Dry Hop)',
+      '2 oz Columbus (Tomahawk) (Dry Hop)',
     ],
-    "yeast": "American Wheat (OYL-002)",
-    "source": "brewfather",
-    "brewDate": "2023-06-21",
-    "color": 5.3,
-    "batchSize": 11,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'American Wheat (OYL-002)',
+    source: 'brewfather',
+    brewDate: '2023-06-21',
+    color: 5.3,
+    batchSize: 11,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale Malt 2-Row",
-        "amount": 4.99,
-        "percentage": 43.5,
-        "color": 4
+        name: 'Pale Ale Malt 2-Row',
+        amount: 4.99,
+        percentage: 43.5,
+        color: 4,
       },
       {
-        "name": "Wheat White Malt",
-        "amount": 4.99,
-        "percentage": 43.5,
-        "color": 2.3
+        name: 'Wheat White Malt',
+        amount: 4.99,
+        percentage: 43.5,
+        color: 2.3,
       },
       {
-        "name": "Vienna Malt",
-        "amount": 0.59,
-        "percentage": 5.1,
-        "color": 3
+        name: 'Vienna Malt',
+        amount: 0.59,
+        percentage: 5.1,
+        color: 3,
       },
       {
-        "name": "Carapils",
-        "amount": 0.45,
-        "percentage": 4,
-        "color": 1.3
+        name: 'Carapils',
+        amount: 0.45,
+        percentage: 4,
+        color: 1.3,
       },
       {
-        "name": "Rye, Flaked",
-        "amount": 0.45,
-        "percentage": 4,
-        "color": 4.6
-      }
+        name: 'Rye, Flaked',
+        amount: 0.45,
+        percentage: 4,
+        color: 4.6,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 0.5,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 14
+        name: 'Columbus (Tomahawk)',
+        amount: 0.5,
+        use: 'Boil',
+        time: 60,
+        alpha: 14,
       },
       {
-        "name": "Amarillo",
-        "amount": 1,
-        "use": "Boil",
-        "time": 10,
-        "alpha": 9.2
+        name: 'Amarillo',
+        amount: 1,
+        use: 'Boil',
+        time: 10,
+        alpha: 9.2,
       },
       {
-        "name": "Amarillo",
-        "amount": 4,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 9.2
+        name: 'Amarillo',
+        amount: 4,
+        use: 'Aroma',
+        time: 10,
+        alpha: 9.2,
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 0.5,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 14
+        name: 'Columbus (Tomahawk)',
+        amount: 0.5,
+        use: 'Aroma',
+        time: 10,
+        alpha: 14,
       },
       {
-        "name": "Amarillo",
-        "amount": 2,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 9.2
+        name: 'Amarillo',
+        amount: 2,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 9.2,
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 2,
-        "use": "Dry Hop",
-        "time": 7,
-        "alpha": 14
-      }
+        name: 'Columbus (Tomahawk)',
+        amount: 2,
+        use: 'Dry Hop',
+        time: 7,
+        alpha: 14,
+      },
     ],
-    "yeastDetail": {
-      "name": "American Wheat",
-      "lab": "Omega",
-      "attenuation": 76,
-      "minTemp": 58,
-      "maxTemp": 74
+    yeastDetail: {
+      name: 'American Wheat',
+      lab: 'Omega',
+      attenuation: 76,
+      minTemp: 58,
+      maxTemp: 74,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 11,
-      "boilTime": 60,
-      "efficiency": 57
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 11,
+      boilTime: 60,
+      efficiency: 57,
+    },
   },
   {
-    "id": 94,
-    "uuid": "7c508064-7c50-4c50-7c50-7c5080647c50",
-    "name": "Extra Special Bitter - David Heath",
-    "style": "Extra Special Bitter",
-    "category": "ale",
-    "description": "This is the recipe from the \"ESB Beer Brewing Recipe Writing & Style Guide\" found on the Youtube Channel David Heath Homebrew",
-    "og": 1.051,
-    "fg": 1.011,
-    "abv": 5.3,
-    "ibu": 34,
-    "grains": [
-      "3.79 lb Pale Ale",
-      "0.27 lb Chateau Crystal",
-      "0.23 lb Golden Syrup",
-      "0.14 lb Chateau Wheat Blanc",
-      "0.09 lb Carafa Special III"
+    id: 94,
+    uuid: '7c508064-7c50-4c50-7c50-7c5080647c50',
+    name: 'Extra Special Bitter - David Heath',
+    style: 'Extra Special Bitter',
+    category: 'ale',
+    description:
+      'This is the recipe from the "ESB Beer Brewing Recipe Writing & Style Guide" found on the Youtube Channel David Heath Homebrew',
+    og: 1.051,
+    fg: 1.011,
+    abv: 5.3,
+    ibu: 34,
+    grains: [
+      '3.79 lb Pale Ale',
+      '0.27 lb Chateau Crystal',
+      '0.23 lb Golden Syrup',
+      '0.14 lb Chateau Wheat Blanc',
+      '0.09 lb Carafa Special III',
     ],
-    "hops": [
-      "0.95 oz Northdown (Boil)",
-      "0.62 oz Fuggle (Boil)",
-      "0.53 oz Fuggle (Aroma)"
+    hops: [
+      '0.95 oz Northdown (Boil)',
+      '0.62 oz Fuggle (Boil)',
+      '0.53 oz Fuggle (Aroma)',
     ],
-    "yeast": "Voss Kveik",
-    "source": "brewfather",
-    "brewDate": "2020-07-24",
-    "color": 15.8,
-    "batchSize": 5.3,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'Voss Kveik',
+    source: 'brewfather',
+    brewDate: '2020-07-24',
+    color: 15.8,
+    batchSize: 5.3,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Ale",
-        "amount": 3.79,
-        "percentage": 84,
-        "color": 4.1
+        name: 'Pale Ale',
+        amount: 3.79,
+        percentage: 84,
+        color: 4.1,
       },
       {
-        "name": "Chateau Crystal",
-        "amount": 0.27,
-        "percentage": 6,
-        "color": 76.1
+        name: 'Chateau Crystal',
+        amount: 0.27,
+        percentage: 6,
+        color: 76.1,
       },
       {
-        "name": "Golden Syrup",
-        "amount": 0.23,
-        "percentage": 5,
-        "color": 0
+        name: 'Golden Syrup',
+        amount: 0.23,
+        percentage: 5,
+        color: 0,
       },
       {
-        "name": "Chateau Wheat Blanc",
-        "amount": 0.14,
-        "percentage": 3,
-        "color": 2.3
+        name: 'Chateau Wheat Blanc',
+        amount: 0.14,
+        percentage: 3,
+        color: 2.3,
       },
       {
-        "name": "Carafa Special III",
-        "amount": 0.09,
-        "percentage": 2,
-        "color": 469.5
-      }
+        name: 'Carafa Special III',
+        amount: 0.09,
+        percentage: 2,
+        color: 469.5,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Northdown",
-        "amount": 0.95,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 8.2
+        name: 'Northdown',
+        amount: 0.95,
+        use: 'Boil',
+        time: 60,
+        alpha: 8.2,
       },
       {
-        "name": "Fuggle",
-        "amount": 0.62,
-        "use": "Boil",
-        "time": 10,
-        "alpha": 5.2
+        name: 'Fuggle',
+        amount: 0.62,
+        use: 'Boil',
+        time: 10,
+        alpha: 5.2,
       },
       {
-        "name": "Fuggle",
-        "amount": 0.53,
-        "use": "Aroma",
-        "time": 10,
-        "alpha": 5.2
-      }
+        name: 'Fuggle',
+        amount: 0.53,
+        use: 'Aroma',
+        time: 10,
+        alpha: 5.2,
+      },
     ],
-    "yeastDetail": {
-      "name": "Voss Kveik",
-      "lab": "Lallemand",
-      "attenuation": 75,
-      "minTemp": 32,
-      "maxTemp": 32
+    yeastDetail: {
+      name: 'Voss Kveik',
+      lab: 'Lallemand',
+      attenuation: 75,
+      minTemp: 32,
+      maxTemp: 32,
     },
-    "mashProfile": {
-      "name": "High fermentability plus mash out",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability plus mash out',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
         },
         {
-          "name": "Mash Out",
-          "type": "Temperature",
-          "stepTemp": 167,
-          "stepTime": 10
-        }
-      ]
+          name: 'Mash Out',
+          type: 'Temperature',
+          stepTemp: 167,
+          stepTime: 10,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "BrewZilla / RoboBrew 35L",
-      "batchSize": 5.3,
-      "boilTime": 60,
-      "efficiency": 75
-    }
+    equipmentProfile: {
+      name: 'BrewZilla / RoboBrew 35L',
+      batchSize: 5.3,
+      boilTime: 60,
+      efficiency: 75,
+    },
   },
   {
-    "id": 95,
-    "uuid": "74ae8554-74ae-44ae-74ae-74ae855474ae",
-    "name": "Beginning Bourbon",
-    "style": "Whiskey",
-    "category": "spirit",
-    "description": "",
-    "og": 1.058,
-    "fg": 1.009,
-    "abv": 6.4,
-    "ibu": 0,
-    "grains": [
-      "2.95 lb Corn Yellow, Flaked",
-      "1.36 lb Organic 2row Pale Malt",
-      "0.68 lb Rye Malt",
-      "0.45 lb Wheat Malt"
+    id: 95,
+    uuid: '74ae8554-74ae-44ae-74ae-74ae855474ae',
+    name: 'Beginning Bourbon',
+    style: 'Whiskey',
+    category: 'spirit',
+    description: '',
+    og: 1.058,
+    fg: 1.009,
+    abv: 6.4,
+    ibu: 0,
+    grains: [
+      '2.95 lb Corn Yellow, Flaked',
+      '1.36 lb Organic 2row Pale Malt',
+      '0.68 lb Rye Malt',
+      '0.45 lb Wheat Malt',
     ],
-    "hops": [],
-    "yeast": "HotHead Ale (OYL-057)",
-    "source": "brewfather",
-    "brewDate": "2023-04-29",
-    "color": 4.1,
-    "batchSize": 5,
-    "boilTime": 0,
-    "fermentablesDetail": [
+    hops: [],
+    yeast: 'HotHead Ale (OYL-057)',
+    source: 'brewfather',
+    brewDate: '2023-04-29',
+    color: 4.1,
+    batchSize: 5,
+    boilTime: 0,
+    fermentablesDetail: [
       {
-        "name": "Corn Yellow, Flaked",
-        "amount": 2.95,
-        "percentage": 54.2,
-        "color": 1.3
+        name: 'Corn Yellow, Flaked',
+        amount: 2.95,
+        percentage: 54.2,
+        color: 1.3,
       },
       {
-        "name": "Organic 2row Pale Malt",
-        "amount": 1.36,
-        "percentage": 25,
-        "color": 2.8
+        name: 'Organic 2row Pale Malt',
+        amount: 1.36,
+        percentage: 25,
+        color: 2.8,
       },
       {
-        "name": "Rye Malt",
-        "amount": 0.68,
-        "percentage": 12.5,
-        "color": 4.3
+        name: 'Rye Malt',
+        amount: 0.68,
+        percentage: 12.5,
+        color: 4.3,
       },
       {
-        "name": "Wheat Malt",
-        "amount": 0.45,
-        "percentage": 8.3,
-        "color": 2
-      }
+        name: 'Wheat Malt',
+        amount: 0.45,
+        percentage: 8.3,
+        color: 2,
+      },
     ],
-    "hopsDetail": [],
-    "yeastDetail": {
-      "name": "HotHead Ale",
-      "lab": "Omega",
-      "attenuation": 85,
-      "minTemp": 72,
-      "maxTemp": 99
+    hopsDetail: [],
+    yeastDetail: {
+      name: 'HotHead Ale',
+      lab: 'Omega',
+      attenuation: 85,
+      minTemp: 72,
+      maxTemp: 99,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 149,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 149,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5,
-      "boilTime": 0,
-      "efficiency": 64
-    }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5,
+      boilTime: 0,
+      efficiency: 64,
+    },
   },
   {
-    "id": 96,
-    "uuid": "69cb475e-69cb-49cb-69cb-69cb475e69cb",
-    "name": "Pumpkin Ale",
-    "style": "Pumpkin Spice Beer",
-    "category": "ale",
-    "description": "\nUse 2 typical size butternut squash\nDeseed and chop into big chunks. Roast at 180 for 45 min WITH NO ADDED FAT / OIL or seasoning. Last batch had poor head retention, suspect this is why. \n\nPut squash into large cheesecloth bag, add to boil for duration.\n\nThird version of this recipe.",
-    "og": 1.058,
-    "fg": 1.011,
-    "abv": 6.2,
-    "ibu": 15,
-    "grains": [
-      "3.79 lb Pale Malt 2-Row",
-      "0.61 lb Wheat Malt",
-      "0.43 lb Brown Sugar, Dark",
-      "0.31 lb Caramel/Crystal Malt",
-      "0.31 lb Oats, Flaked",
-      "0.31 lb Victory Malt",
-      "0.18 lb Acid Malt",
-      "0.18 lb Carapils - Dextrine Malt - US"
+    id: 96,
+    uuid: '69cb475e-69cb-49cb-69cb-69cb475e69cb',
+    name: 'Pumpkin Ale',
+    style: 'Pumpkin Spice Beer',
+    category: 'ale',
+    description:
+      '\nUse 2 typical size butternut squash\nDeseed and chop into big chunks. Roast at 180 for 45 min WITH NO ADDED FAT / OIL or seasoning. Last batch had poor head retention, suspect this is why. \n\nPut squash into large cheesecloth bag, add to boil for duration.\n\nThird version of this recipe.',
+    og: 1.058,
+    fg: 1.011,
+    abv: 6.2,
+    ibu: 15,
+    grains: [
+      '3.79 lb Pale Malt 2-Row',
+      '0.61 lb Wheat Malt',
+      '0.43 lb Brown Sugar, Dark',
+      '0.31 lb Caramel/Crystal Malt',
+      '0.31 lb Oats, Flaked',
+      '0.31 lb Victory Malt',
+      '0.18 lb Acid Malt',
+      '0.18 lb Carapils - Dextrine Malt - US',
     ],
-    "hops": [
-      "0.2 oz Magnum (Boil)",
-      "0.53 oz Mount Hood (Boil)",
-      "0.88 oz Mount Hood (Aroma)"
+    hops: [
+      '0.2 oz Magnum (Boil)',
+      '0.53 oz Mount Hood (Boil)',
+      '0.88 oz Mount Hood (Aroma)',
     ],
-    "yeast": "SafAle English Ale (S-04)",
-    "source": "brewfather",
-    "brewDate": "2020-11-10",
-    "color": 11.9,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    yeast: 'SafAle English Ale (S-04)',
+    source: 'brewfather',
+    brewDate: '2020-11-10',
+    color: 11.9,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
       {
-        "name": "Pale Malt 2-Row",
-        "amount": 3.79,
-        "percentage": 62,
-        "color": 3
+        name: 'Pale Malt 2-Row',
+        amount: 3.79,
+        percentage: 62,
+        color: 3,
       },
       {
-        "name": "Wheat Malt",
-        "amount": 0.61,
-        "percentage": 10,
-        "color": 2
+        name: 'Wheat Malt',
+        amount: 0.61,
+        percentage: 10,
+        color: 2,
       },
       {
-        "name": "Brown Sugar, Dark",
-        "amount": 0.43,
-        "percentage": 7,
-        "color": 50
+        name: 'Brown Sugar, Dark',
+        amount: 0.43,
+        percentage: 7,
+        color: 50,
       },
       {
-        "name": "Caramel/Crystal Malt",
-        "amount": 0.31,
-        "percentage": 5,
-        "color": 68.5
+        name: 'Caramel/Crystal Malt',
+        amount: 0.31,
+        percentage: 5,
+        color: 68.5,
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 0.31,
-        "percentage": 5,
-        "color": 1.4
+        name: 'Oats, Flaked',
+        amount: 0.31,
+        percentage: 5,
+        color: 1.4,
       },
       {
-        "name": "Victory Malt",
-        "amount": 0.31,
-        "percentage": 5,
-        "color": 25.1
+        name: 'Victory Malt',
+        amount: 0.31,
+        percentage: 5,
+        color: 25.1,
       },
       {
-        "name": "Acid Malt",
-        "amount": 0.18,
-        "percentage": 3,
-        "color": 1.5
+        name: 'Acid Malt',
+        amount: 0.18,
+        percentage: 3,
+        color: 1.5,
       },
       {
-        "name": "Carapils - Dextrine Malt - US",
-        "amount": 0.18,
-        "percentage": 3,
-        "color": 1
-      }
+        name: 'Carapils - Dextrine Malt - US',
+        amount: 0.18,
+        percentage: 3,
+        color: 1,
+      },
     ],
-    "hopsDetail": [
+    hopsDetail: [
       {
-        "name": "Magnum",
-        "amount": 0.2,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 12
+        name: 'Magnum',
+        amount: 0.2,
+        use: 'Boil',
+        time: 60,
+        alpha: 12,
       },
       {
-        "name": "Mount Hood",
-        "amount": 0.53,
-        "use": "Boil",
-        "time": 15,
-        "alpha": 6
+        name: 'Mount Hood',
+        amount: 0.53,
+        use: 'Boil',
+        time: 15,
+        alpha: 6,
       },
       {
-        "name": "Mount Hood",
-        "amount": 0.88,
-        "use": "Aroma",
-        "time": 20,
-        "alpha": 6
-      }
+        name: 'Mount Hood',
+        amount: 0.88,
+        use: 'Aroma',
+        time: 20,
+        alpha: 6,
+      },
     ],
-    "yeastDetail": {
-      "name": "SafAle English Ale",
-      "lab": "Fermentis",
-      "attenuation": 75,
-      "minTemp": 59,
-      "maxTemp": 68
+    yeastDetail: {
+      name: 'SafAle English Ale',
+      lab: 'Fermentis',
+      attenuation: 75,
+      minTemp: 59,
+      maxTemp: 68,
     },
-    "mashProfile": {
-      "name": "Medium fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'Medium fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 153,
-          "stepTime": 60
+          name: '',
+          type: 'Temperature',
+          stepTemp: 153,
+          stepTime: 60,
         },
         {
-          "name": "mash out",
-          "type": "Temperature",
-          "stepTemp": 167,
-          "stepTime": 10
-        }
-      ]
+          name: 'mash out',
+          type: 'Temperature',
+          stepTemp: 167,
+          stepTime: 10,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 101,
-      "magnesium": 5,
-      "sodium": 38,
-      "chloride": 57,
-      "sulfate": 56,
-      "bicarbonate": 238
+    waterProfile: {
+      calcium: 101,
+      magnesium: 5,
+      sodium: 38,
+      chloride: 57,
+      sulfate: 56,
+      bicarbonate: 238,
     },
-    "equipmentProfile": {
-      "name": "ACM - V4 - GF",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 63
-    }
+    equipmentProfile: {
+      name: 'ACM - V4 - GF',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 63,
+    },
   },
   {
-    "id": 97,
-    "uuid": "46294688-4629-4629-4629-462946884629",
-    "name": "Helles Yeah",
-    "style": "German Helles Exportbier",
-    "category": "lager",
-    "description": "",
-    "og": 1.051,
-    "fg": 1.009,
-    "abv": 5.5,
-    "ibu": 22,
-    "grains": [
-      "2.27 lb Bohemian Pilsner",
-      "1.81 lb Pilsner Malt",
-      "0.57 lb Vienna Malt",
-      "0.45 lb Munich Malt, Germany",
-      "0.29 lb Carapils",
-      "0.18 lb Carahell"
+    id: 97,
+    uuid: '46294688-4629-4629-4629-462946884629',
+    name: 'Helles Yeah',
+    style: 'German Helles Exportbier',
+    category: 'lager',
+    description: '',
+    og: 1.051,
+    fg: 1.009,
+    abv: 5.5,
+    ibu: 22,
+    grains: [
+      '2.27 lb Bohemian Pilsner',
+      '1.81 lb Pilsner Malt',
+      '0.57 lb Vienna Malt',
+      '0.45 lb Munich Malt, Germany',
+      '0.29 lb Carapils',
+      '0.18 lb Carahell',
     ],
-    "hops": [
-      "1 oz Hallertau (Boil)",
-      "1 oz Hallertau (Boil)"
+    hops: ['1 oz Hallertau (Boil)', '1 oz Hallertau (Boil)'],
+    yeast: 'Voss Kveik (OYL-061)',
+    source: 'brewfather',
+    brewDate: '2023-04-29',
+    color: 5.2,
+    batchSize: 5.5,
+    boilTime: 60,
+    fermentablesDetail: [
+      {
+        name: 'Bohemian Pilsner',
+        amount: 2.27,
+        percentage: 40.7,
+        color: 1.9,
+      },
+      {
+        name: 'Pilsner Malt',
+        amount: 1.81,
+        percentage: 32.5,
+        color: 1.7,
+      },
+      {
+        name: 'Vienna Malt',
+        amount: 0.57,
+        percentage: 10.2,
+        color: 4,
+      },
+      {
+        name: 'Munich Malt, Germany',
+        amount: 0.45,
+        percentage: 8.1,
+        color: 9.5,
+      },
+      {
+        name: 'Carapils',
+        amount: 0.29,
+        percentage: 5.3,
+        color: 1.3,
+      },
+      {
+        name: 'Carahell',
+        amount: 0.18,
+        percentage: 3.3,
+        color: 13,
+      },
     ],
-    "yeast": "Voss Kveik (OYL-061)",
-    "source": "brewfather",
-    "brewDate": "2023-04-29",
-    "color": 5.2,
-    "batchSize": 5.5,
-    "boilTime": 60,
-    "fermentablesDetail": [
+    hopsDetail: [
       {
-        "name": "Bohemian Pilsner",
-        "amount": 2.27,
-        "percentage": 40.7,
-        "color": 1.9
+        name: 'Hallertau',
+        amount: 1,
+        use: 'Boil',
+        time: 60,
+        alpha: 4.5,
       },
       {
-        "name": "Pilsner Malt",
-        "amount": 1.81,
-        "percentage": 32.5,
-        "color": 1.7
+        name: 'Hallertau',
+        amount: 1,
+        use: 'Boil',
+        time: 15,
+        alpha: 4.5,
       },
-      {
-        "name": "Vienna Malt",
-        "amount": 0.57,
-        "percentage": 10.2,
-        "color": 4
-      },
-      {
-        "name": "Munich Malt, Germany",
-        "amount": 0.45,
-        "percentage": 8.1,
-        "color": 9.5
-      },
-      {
-        "name": "Carapils",
-        "amount": 0.29,
-        "percentage": 5.3,
-        "color": 1.3
-      },
-      {
-        "name": "Carahell",
-        "amount": 0.18,
-        "percentage": 3.3,
-        "color": 13
-      }
     ],
-    "hopsDetail": [
-      {
-        "name": "Hallertau",
-        "amount": 1,
-        "use": "Boil",
-        "time": 60,
-        "alpha": 4.5
-      },
-      {
-        "name": "Hallertau",
-        "amount": 1,
-        "use": "Boil",
-        "time": 15,
-        "alpha": 4.5
-      }
-    ],
-    "yeastDetail": {
-      "name": "Voss Kveik",
-      "lab": "Omega",
-      "attenuation": 82,
-      "minTemp": 72,
-      "maxTemp": 98
+    yeastDetail: {
+      name: 'Voss Kveik',
+      lab: 'Omega',
+      attenuation: 82,
+      minTemp: 72,
+      maxTemp: 98,
     },
-    "mashProfile": {
-      "name": "High fermentability",
-      "steps": [
+    mashProfile: {
+      name: 'High fermentability',
+      steps: [
         {
-          "name": "",
-          "type": "Temperature",
-          "stepTemp": 151,
-          "stepTime": 60
-        }
-      ]
+          name: '',
+          type: 'Temperature',
+          stepTemp: 151,
+          stepTime: 60,
+        },
+      ],
     },
-    "waterProfile": {
-      "calcium": 18,
-      "magnesium": 0,
-      "sodium": 6,
-      "chloride": 10,
-      "sulfate": 8,
-      "bicarbonate": 43
+    waterProfile: {
+      calcium: 18,
+      magnesium: 0,
+      sodium: 6,
+      chloride: 10,
+      sulfate: 8,
+      bicarbonate: 43,
     },
-    "equipmentProfile": {
-      "name": "Anvil Foundry 18 Gallon",
-      "batchSize": 5.5,
-      "boilTime": 60,
-      "efficiency": 64
-    }
-  }
+    equipmentProfile: {
+      name: 'Anvil Foundry 18 Gallon',
+      batchSize: 5.5,
+      boilTime: 60,
+      efficiency: 64,
+    },
+  },
 ]
