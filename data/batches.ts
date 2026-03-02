@@ -4581,4 +4581,86 @@ export const batches: Batch[] = [
     ],
     source: 'brewfather',
   },
+  {
+    batchNo: 103,
+    name: 'Overlord v4.0 5g',
+    style: 'American IPA',
+    category: 'IPA',
+    brewer: 'Joe',
+    status: 'Fermenting',
+    brewDate: '2026-02-27',
+    bottlingDate: '2026-03-13',
+    og: 1.067,
+    fg: 1.013,
+    abv: 7.1,
+    ibu: 67,
+    color: 6.9,
+    efficiency: 64.6,
+    mashEfficiency: 84.2,
+    batchSize: 5.7,
+    fermentables: [
+      {
+        name: 'Pale Ale Malt 2-Row',
+        amount: 6.8,
+      },
+      {
+        name: 'Munich Malt - Light',
+        amount: 0.34,
+      },
+      {
+        name: 'Flaked Barley',
+        amount: 0.23,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Simcoe',
+        amount: 1,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Nelson Sauvin',
+        amount: 0.5,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Simcoe',
+        amount: 1,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Nelson Sauvin',
+        amount: 0.5,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'West Coast IV',
+        laboratory: 'Omega',
+        productId: 'OYL-050',
+      },
+    ],
+    source: 'brewfather',
+  },
 ]
