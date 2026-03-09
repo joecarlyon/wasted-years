@@ -4225,7 +4225,7 @@ export const recipes: Recipe[] = [
     id: 75,
     uuid: '768a22ab-768a-468a-768a-768a22ab768a',
     name: 'Spicy Sprinkles',
-    style: 'Belgian Rye Ale',
+    style: 'Alternative Grain Beer',
     category: 'ale',
     description: '',
     og: 1.069,
