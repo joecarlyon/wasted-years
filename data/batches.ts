@@ -4587,7 +4587,7 @@ export const batches: Batch[] = [
     style: 'American IPA',
     category: 'IPA',
     brewer: 'Joe',
-    status: 'Fermenting',
+    status: 'Completed',
     brewDate: '2026-02-27',
     bottlingDate: '2026-03-13',
     og: 1.067,
