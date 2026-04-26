@@ -187,6 +187,52 @@ export const competitions: CompetitionEntry[] = [
       },
     ],
   },
+
+  // National Homebrew Competition: First Round
+  // Batch 103 "Overlord v4.0 5g" entered as "Overlord 4"
+  {
+    batchNo: 103,
+    competition: 'National Homebrew Competition: First Round',
+    entryName: 'Overlord 4',
+    style: '21A - American IPA',
+    score: 38.5,
+    scoreDescription: 'Excellent',
+    categoryAverage: 33.7,
+    placement: 'Mini B.O.S. (Silver)',
+    judges: [
+      {
+        name: 'Kyle Nordquist',
+        location: 'Brookfield, USA',
+        bjcpRank: 'National',
+        score: 40,
+        scores: {
+          aroma: [9, 12],
+          appearance: [3, 3],
+          flavor: [15, 20],
+          mouthfeel: [5, 5],
+          overall: [8, 10],
+        },
+        feedback:
+          'Excellent beer - extraordinary balance between malt, hops, and the fermentation profile as well as the overall finish of the beer. Resinous hop character is very pleasant and adds a nice complexity to the beer. Would maybe just dial back malt character and sweeter finish to really elevate this to exceptional.',
+      },
+      {
+        name: 'David Traugott',
+        location: 'Bloomington, USA',
+        bjcpRank: 'Certified',
+        certifications: 'Previous NHC Judge',
+        score: 37,
+        scores: {
+          aroma: [9, 12],
+          appearance: [3, 3],
+          flavor: [17, 20],
+          mouthfeel: [2, 5],
+          overall: [6, 10],
+        },
+        feedback:
+          'Solid IPA! Wonderful aroma of what seems like citra hops. Same for flavor which transforms from citrus/pine to a bitter grapefruit rind finish. Changing mix of aroma hops might benefit this beer and make it seem more unique. Also altering the water profile might help take the edge off the bitter finish. Overall an excellent beer.',
+      },
+    ],
+  },
 ]
 
 // Recipe names that have won competition awards (for recipe card badges)
@@ -213,6 +259,13 @@ export const awardWinningRecipes: Record<
   Joeoverlord: [
     {
       competition: 'NHC 2025',
+      placement: '2nd Place',
+      medal: 'silver',
+    },
+  ],
+  'Overlord v4.0 5g': [
+    {
+      competition: 'NHC 2026',
       placement: '2nd Place',
       medal: 'silver',
     },
