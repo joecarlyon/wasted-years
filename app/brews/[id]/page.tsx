@@ -44,7 +44,9 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
     // Prefix match: batch name starts with recipe name or vice versa
     return recipes.find((r) => {
       const recipeLower = r.name.toLowerCase()
-      return batchLower.startsWith(recipeLower) || recipeLower.startsWith(batchLower)
+      return (
+        batchLower.startsWith(recipeLower) || recipeLower.startsWith(batchLower)
+      )
     })
   })()
 
@@ -98,15 +100,15 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
               </Link>
             )}
             {medal && placedEntry && (
-              <div className="mt-3 inline-flex items-center gap-2">
+              <div className="mt-3 flex w-fit items-center gap-2">
                 <div
-                  className="rounded-full p-1.5"
+                  className="rounded-full p-1.5 leading-none"
                   style={{ backgroundColor: medalColors[medal].bg }}
                 >
                   <svg
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="h-5 w-5"
+                    className="block h-5 w-5"
                     style={{ color: medalColors[medal].color }}
                   >
                     <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
