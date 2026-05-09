@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RECIPES>
+  <RECIPE>
+    <NAME>Overlord v4.0</NAME>
+    <VERSION>1</VERSION>
+    <TYPE>All Grain</TYPE>
+    <BREWER>Joe Carlyon</BREWER>
+    <BATCH_SIZE>41.63953</BATCH_SIZE>
+    <BOIL_SIZE>49.13</BOIL_SIZE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <EFFICIENCY>67.0</EFFICIENCY>
+    <OG>1.069</OG>
+    <FG>1.016</FG>
+    <ABV>6.9</ABV>
+    <IBU>60.6</IBU>
+    <IBU_METHOD>Tinseth</IBU_METHOD>
+    <EST_COLOR>7.9</EST_COLOR>
+    <COLOR_METHOD>Morey</COLOR_METHOD>
+    <NOTES>American IPA for 2026 NHC. Evolved from Overlord v3.1 — simplified grain bill (removed crystal, carapils, rye), diversified hop aroma (added Simcoe + Nelson Sauvin), switched to RO water with targeted mineral additions. BJCP 21A.</NOTES>
+    <TASTE_NOTES/>
+    <DATE>2026-02-24</DATE>
+    <STYLE>
+      <NAME>American IPA</NAME>
+      <VERSION>1</VERSION>
+      <CATEGORY>IPA</CATEGORY>
+      <CATEGORY_NUMBER>21</CATEGORY_NUMBER>
+      <STYLE_LETTER>A</STYLE_LETTER>
+      <STYLE_GUIDE>BJCP 2021</STYLE_GUIDE>
+      <TYPE>Ale</TYPE>
+      <OG_MIN>1.056</OG_MIN>
+      <OG_MAX>1.070</OG_MAX>
+      <FG_MIN>1.008</FG_MIN>
+      <FG_MAX>1.014</FG_MAX>
+      <IBU_MIN>40</IBU_MIN>
+      <IBU_MAX>70</IBU_MAX>
+      <COLOR_MIN>6</COLOR_MIN>
+      <COLOR_MAX>14</COLOR_MAX>
+      <ABV_MIN>5.5</ABV_MIN>
+      <ABV_MAX>7.5</ABV_MAX>
+    </STYLE>
+    <FERMENTABLES>
+      <FERMENTABLE>
+        <NAME>Pale Ale Malt 2-Row</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>12.985787</AMOUNT>
+        <YIELD>80.1</YIELD>
+        <COLOR>4</COLOR>
+        <ORIGIN>US</ORIGIN>
+        <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
+        <NOTES>Base malt</NOTES>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Light Munich Malt</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.698161</AMOUNT>
+        <YIELD>75.7</YIELD>
+        <COLOR>6</COLOR>
+        <ORIGIN>DE</ORIGIN>
+        <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
+        <NOTES>Base malt</NOTES>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Flaked Barley</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>Grain</TYPE>
+        <AMOUNT>0.279264</AMOUNT>
+        <YIELD>69.2</YIELD>
+        <COLOR>1.5</COLOR>
+        <ORIGIN>US</ORIGIN>
+        <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
+        <NOTES>Adjunct malt</NOTES>
+      </FERMENTABLE>
+    </FERMENTABLES>
+    <HOPS>
+      <HOP>
+        <NAME>Citra</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>12.0</ALPHA>
+        <AMOUNT>0.056699</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>45</TIME>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Citra</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>12.0</ALPHA>
+        <AMOUNT>0.028349</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>15</TIME>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Citra</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>12.0</ALPHA>
+        <AMOUNT>0.028349</AMOUNT>
+        <USE>Boil</USE>
+        <TIME>10</TIME>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Citra</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>12.0</ALPHA>
+        <AMOUNT>0.085048</AMOUNT>
+        <USE>Aroma</USE>
+        <TIME>10</TIME>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Simcoe</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>13.0</ALPHA>
+        <AMOUNT>0.056699</AMOUNT>
+        <USE>Aroma</USE>
+        <TIME>10</TIME>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Nelson Sauvin</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>12.0</ALPHA>
+        <AMOUNT>0.028349</AMOUNT>
+        <USE>Aroma</USE>
+        <TIME>10</TIME>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Citra</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>12.0</ALPHA>
+        <AMOUNT>0.085048</AMOUNT>
+        <USE>Dry Hop</USE>
+        <TIME>0</TIME>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Simcoe</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>13.0</ALPHA>
+        <AMOUNT>0.056699</AMOUNT>
+        <USE>Dry Hop</USE>
+        <TIME>0</TIME>
+        <FORM>Pellet</FORM>
+      </HOP>
+      <HOP>
+        <NAME>Nelson Sauvin</NAME>
+        <VERSION>1</VERSION>
+        <ALPHA>12.0</ALPHA>
+        <AMOUNT>0.028349</AMOUNT>
+        <USE>Dry Hop</USE>
+        <TIME>0</TIME>
+        <FORM>Pellet</FORM>
+      </HOP>
+    </HOPS>
+    <YEASTS>
+      <YEAST>
+        <NAME>West Coast IV</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>Ale</TYPE>
+        <FORM>Liquid</FORM>
+        <AMOUNT>0.175</AMOUNT>
+        <LABORATORY>Omega Yeast</LABORATORY>
+        <PRODUCT_ID>OYL-050</PRODUCT_ID>
+        <MIN_TEMPERATURE>18.3</MIN_TEMPERATURE>
+        <MAX_TEMPERATURE>22.2</MAX_TEMPERATURE>
+        <ATTENUATION>76.5</ATTENUATION>
+        <FLOCCULATION>Medium-High</FLOCCULATION>
+      </YEAST>
+    </YEASTS>
+    <MISCS>
+      <MISC>
+        <NAME>Gypsum (CaSO4)</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>Water Agent</TYPE>
+        <USE>Mash</USE>
+        <AMOUNT>19.4496</AMOUNT>
+        <AMOUNT_IS_WEIGHT>TRUE</AMOUNT_IS_WEIGHT>
+        <NOTES>Water chemistry adjustment, RO water base</NOTES>
+      </MISC>
+      <MISC>
+        <NAME>Calcium Chloride (CaCl2)</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>Water Agent</TYPE>
+        <USE>Mash</USE>
+        <AMOUNT>6.5435</AMOUNT>
+        <AMOUNT_IS_WEIGHT>TRUE</AMOUNT_IS_WEIGHT>
+        <NOTES>Water chemistry adjustment, RO water base</NOTES>
+      </MISC>
+      <MISC>
+        <NAME>Epsom Salt (MgSO4)</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>Water Agent</TYPE>
+        <USE>Mash</USE>
+        <AMOUNT>3.2063</AMOUNT>
+        <AMOUNT_IS_WEIGHT>TRUE</AMOUNT_IS_WEIGHT>
+        <NOTES>Water chemistry adjustment, RO water base</NOTES>
+      </MISC>
+      <MISC>
+        <NAME>Lactic Acid 88%</NAME>
+        <VERSION>1</VERSION>
+        <TYPE>Water Agent</TYPE>
+        <USE>Mash</USE>
+        <AMOUNT>4.0000</AMOUNT>
+        <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+        <NOTES>Water chemistry adjustment, RO water base</NOTES>
+      </MISC>
+    </MISCS>
+    <WATERS>
+      <WATER>
+        <NAME>RO Water + Minerals</NAME>
+        <VERSION>1</VERSION>
+        <AMOUNT>63.11</AMOUNT>
+        <CALCIUM>100</CALCIUM>
+        <MAGNESIUM>5</MAGNESIUM>
+        <SODIUM>0</SODIUM>
+        <SULFATE>192</SULFATE>
+        <CHLORIDE>50</CHLORIDE>
+        <BICARBONATE>0</BICARBONATE>
+        <PH>5.2</PH>
+        <NOTES>Built from RO water with gypsum, CaCl2, and epsom salt additions</NOTES>
+      </WATER>
+    </WATERS>
+    <MASH>
+      <NAME>High fermentability plus mash out</NAME>
+      <VERSION>1</VERSION>
+      <GRAIN_TEMP>22.0</GRAIN_TEMP>
+      <MASH_STEPS>
+        <MASH_STEP>
+          <NAME>Saccharification</NAME>
+          <VERSION>1</VERSION>
+          <TYPE>Temperature</TYPE>
+          <STEP_TEMP>65.0</STEP_TEMP>
+          <STEP_TIME>60</STEP_TIME>
+        </MASH_STEP>
+        <MASH_STEP>
+          <NAME>Mash Out</NAME>
+          <VERSION>1</VERSION>
+          <TYPE>Temperature</TYPE>
+          <STEP_TEMP>75.0</STEP_TEMP>
+          <STEP_TIME>10</STEP_TIME>
+        </MASH_STEP>
+      </MASH_STEPS>
+    </MASH>
+    <EQUIPMENT>
+      <NAME>Anvil Foundry 18 Gallon</NAME>
+      <VERSION>1</VERSION>
+      <BATCH_SIZE>41.63953</BATCH_SIZE>
+      <BOIL_SIZE>49.13</BOIL_SIZE>
+      <BOIL_TIME>60</BOIL_TIME>
+    </EQUIPMENT>
+  </RECIPE>
+</RECIPES>

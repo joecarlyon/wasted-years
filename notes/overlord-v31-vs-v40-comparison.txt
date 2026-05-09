@@ -1,0 +1,149 @@
+OVERLORD v3.1 vs v4.0 — RECIPE COMPARISON
+==========================================
+Prepared for 2026 National Homebrew Competition
+BJCP 2021 Category 21A: American IPA
+Date: 2026-02-24
+
+CALCULATED STATS
+================
+Stat               v3.1       v4.0       BJCP 21A
+------------ ---------- ---------- --------------
+OG                1.060      1.069    1.056-1.070
+FG                1.014      1.016*   1.008-1.014
+ABV                6.0%       6.9%       5.5-7.5%
+IBU (Tinseth)      61.4       60.6          40-70
+SRM (Morey)         7.6        7.9           6-14
+BU:GU              1.02       0.88       0.85-1.0
+Grain (lb)        27.00      30.78
+Hops (oz)            16         16
+
+* FG 1.016 is based on 76.5% attenuation (OYL-050 spec sheet).
+  With the simplified grain bill (no crystal/carapils), actual
+  attenuation will likely be 78-80%, landing FG at 1.013-1.015.
+  149°F sacch rest maximizes fermentability. Not a concern.
+
+
+GRAIN BILL
+==========
+v3.1                              v4.0
+---------------------------------  ---------------------------------
+81.5%  22.00 lb  Pale Ale 2-Row   93.0%  28.63 lb  Pale Ale 2-Row
+ 7.4%   2.00 lb  Crystal 20L       5.0%   1.54 lb  Light Munich (6L)
+ 7.4%   2.00 lb  Carapils          2.0%   0.62 lb  Flaked Barley
+ 3.7%   1.00 lb  Flaked Rye
+---------------------------------  ---------------------------------
+       27.00 lb  total                    30.78 lb  total
+
+Changes:
+- Removed Crystal 20L, Carapils, and Flaked Rye entirely
+- Added Light Munich for subtle malt complexity without sweetness
+- Added Flaked Barley for body/head retention (replaces Carapils role)
+- Base malt increased to 93% for clean fermentability
+- Total weight increased to hit OG 1.069 (up from 1.060)
+
+
+HOP SCHEDULE (16 oz total, unchanged weight)
+=============================================
+v3.1                              v4.0
+---------------------------------  ---------------------------------
+BITTERING:                         BITTERING (unchanged):
+2 oz Citra @ 45 min boil          2 oz Citra @ 45 min boil
+1 oz Citra @ 15 min boil          1 oz Citra @ 15 min boil
+1 oz Citra @ 10 min boil          1 oz Citra @ 10 min boil
+
+WHIRLPOOL:                         WHIRLPOOL (diversified):
+6 oz Citra @ 10 min WP            3 oz Citra @ 10 min WP
+                                   2 oz Simcoe @ 10 min WP
+                                   1 oz Nelson Sauvin @ 10 min WP
+
+DRY HOP:                           DRY HOP (diversified):
+6 oz Citra @ Dry Hop              3 oz Citra @ Dry Hop
+                                   2 oz Simcoe @ Dry Hop
+                                   1 oz Nelson Sauvin @ Dry Hop
+
+Changes:
+- Bittering additions identical
+- Whirlpool: split 6 oz Citra into 3/2/1 Citra/Simcoe/Nelson
+- Dry Hop: split 6 oz Citra into 3/2/1 Citra/Simcoe/Nelson
+- Citra remains dominant, Simcoe adds pine/dank, Nelson adds gooseberry/wine
+
+
+YEAST (unchanged)
+=================
+West Coast IV (Omega OYL-050) — 76.5% attenuation
+Medium-High flocculation, clean/neutral profile
+
+
+MASH PROFILE (unchanged)
+=========================
+Saccharification: 149°F (65°C) for 60 min
+Mash Out: 167°F (75°C) for 10 min
+
+
+WATER PROFILE
+=============
+                    v3.1                    v4.0
+                    Chicago tap → Hoppy     RO → Custom
+-----------------   -------------------     -------------------
+Source:             Chicago (March 2024)    RO water (0 ppm all)
+Ca (ppm):           107                     100
+Mg (ppm):           18                      5
+Na (ppm):           11                      0
+Cl (ppm):           49                      50
+SO4 (ppm):          157                     192
+HCO3 (ppm):        123                     0
+SO4:Cl:             3.2:1                   3.8:1
+
+Mineral additions (full batch):
+  Gypsum (CaSO4·2H2O):       12.9 g  →  19.4 g
+  Calcium Chloride (CaCl2):    4.1 g  →   6.5 g
+  Epsom Salt (MgSO4):          3.4 g  →   3.2 g
+  Acid (pH 5.2):              n/a     →  3-5 mL 88% lactic
+
+Changes:
+- Switched from Chicago tap to RO base (eliminates HCO3/Na)
+- Cleaner mineral foundation, no residual alkalinity
+- SO4 slightly above 150 target due to gypsum needed for Ca
+- Target mash pH 5.2 via small lactic acid addition
+
+
+WATER CHEMISTRY DETAIL
+======================
+Total water volume: ~16.7 gal (mash + sparge)
+
+Per gallon of total water:
+  Gypsum (CaSO4·2H2O):        1.167 g/gal
+  Calcium Chloride (CaCl2):   0.393 g/gal
+  Epsom Salt (MgSO4·7H2O):   0.192 g/gal
+
+Total additions:
+  Gypsum:   19.4 g
+  CaCl2:     6.5 g
+  Epsom:     3.2 g
+
+Achieved profile:
+  Ca: 100 ppm | Mg: 5 ppm | Na: 0 ppm
+  Cl: 50 ppm | SO4: 192 ppm | HCO3: 0 ppm
+  Cl:SO4 = 1:3.8
+
+Acid for mash pH 5.2:
+  ~3-5 mL of 88% lactic acid (start with 2 mL, measure, adjust)
+  OR ~1-2 mL of 10% phosphoric acid
+  Note: RO water has negligible buffering capacity.
+  Grain acidity does most of the work. Measure pH and adjust.
+
+
+EQUIPMENT (unchanged)
+=====================
+Anvil Foundry 18 Gallon
+Batch Size: 11.0 gal (41.6 L)
+Boil Size: 13.0 gal (49.1 L)
+Boil Time: 60 min
+Brewhouse Efficiency: 67%
+Mash Efficiency: 70%
+
+
+FILES GENERATED
+===============
+overlord-v4.0.xml   — BeerXML import (works with Brewfather, BeerSmith, etc.)
+overlord-v4.0.json  — Brewfather JSON format
