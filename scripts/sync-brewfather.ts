@@ -516,10 +516,12 @@ function deriveTextNotes(b: BrewfatherBatch): {
       brewingPieces.push(v.trim())
     }
   }
-  for (const note of b.notes ?? []) {
-    if (note.type !== 'statusChanged' && note.note && note.note.trim()) {
-      brewingPieces.push(note.note.trim())
-    }
+  // Sort timestamped notes ascending so the story reads chronologically
+  const timestamped = (b.notes ?? [])
+    .filter((n) => n.type !== 'statusChanged' && n.note && n.note.trim())
+    .sort((a, b) => (a.timestamp ?? 0) - (b.timestamp ?? 0))
+  for (const note of timestamped) {
+    brewingPieces.push(note.note!.trim())
   }
   return {
     brewingNotes:

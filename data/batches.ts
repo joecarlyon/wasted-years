@@ -3163,7 +3163,7 @@ export const batches: Batch[] = [
       },
     ],
     brewingNotes:
-      'Hop stand was at 140, not 170. | Decided to use a pump and a filter to filter out the grain | Spilled some grain into the kettle when I started the mash. The bucket was too full',
+      'Spilled some grain into the kettle when I started the mash. The bucket was too full | Decided to use a pump and a filter to filter out the grain | Hop stand was at 140, not 170.',
     tastingNotes:
       "It's very smooth. It doesn't have the bitter hop flavor that it normally does. I'd undo those hop timing changes. Too balanced.",
     source: 'brewfather',
@@ -3406,7 +3406,7 @@ export const batches: Batch[] = [
       },
     ],
     brewingNotes:
-      "Added 16oz of corn sugar to the boil | What's up with this mash efficiency?? Ughhh | Recirculation was at 167 not 176",
+      "Recirculation was at 167 not 176 | What's up with this mash efficiency?? Ughhh | Added 16oz of corn sugar to the boil",
     source: 'brewfather',
   },
   {
@@ -3882,7 +3882,7 @@ export const batches: Batch[] = [
       },
     ],
     brewingNotes:
-      "I couldn't get the last half gallon out of the fermenter. Idk why. Possibly bad seal on top of the lid now? So the pressure isn't pushing downward. \n\nSo I'm missing a half gallon of beer in the keg. | Added dry hops on day 7 | I think it fermented in like 2 days. | I added the lactic acid 30 minutes into the mash. Whoops",
+      "I added the lactic acid 30 minutes into the mash. Whoops | I think it fermented in like 2 days. | Added dry hops on day 7 | I couldn't get the last half gallon out of the fermenter. Idk why. Possibly bad seal on top of the lid now? So the pressure isn't pushing downward. \n\nSo I'm missing a half gallon of beer in the keg.",
     source: 'brewfather',
   },
   {
@@ -3949,7 +3949,7 @@ export const batches: Batch[] = [
     hops: [],
     yeast: [],
     brewingNotes:
-      "I added an ice pack on top of the fermenter in attempt to lower the fermenter temperature. | Started the whirlpool at 180. Temp dropped to about 170 by the end. | When I mashed in, there were actually some doughballs. Maybe the double crush did have an effect. | I double crushed the grain, probably don't need to do that",
+      "I double crushed the grain, probably don't need to do that | When I mashed in, there were actually some doughballs. Maybe the double crush did have an effect. | Started the whirlpool at 180. Temp dropped to about 170 by the end. | I added an ice pack on top of the fermenter in attempt to lower the fermenter temperature.",
     tiltReadings: [
       {
         timestamp: 1777514985628,
