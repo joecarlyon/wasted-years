@@ -71,6 +71,7 @@ types/
 └── index.ts                # Recipe, Batch, BrewingSetup, CompetitionEntry, JudgeScore interfaces
 
 public/images/recipes/      # Recipe artwork (JPG)
+public/images/batches/<batchNo>/  # Per-batch photo galleries (JPG)
 ```
 
 ### Key Files
@@ -84,6 +85,19 @@ public/images/recipes/      # Recipe artwork (JPG)
 ### Recipe Categories
 
 Recipes are filtered by category: `ale`, `lager`, `spirit`. Filter buttons on the recipes page toggle between categories.
+
+### Batch Photos
+
+Batches can carry an optional `images?: string[]` (paths under `public/`). The brew detail page renders them as a "Photos" gallery via `ImageLightbox`. To add a photo:
+
+1. Drop the source image and optimize it for web — target max 1600px on the long edge, ~80% JPEG quality, **and strip EXIF** (phone photos carry GPS coordinates):
+   ```bash
+   sips -Z 1600 -s format jpeg -s formatOptions 80 input.jpg --out /tmp/resized.jpg
+   ffmpeg -y -i /tmp/resized.jpg -map_metadata -1 -q:v 3 public/images/batches/<batchNo>/<n>.jpg
+   ```
+2. Add the path to the batch's `images` array in `data/batches.ts`.
+
+`mergeBatch` in `scripts/sync-brewfather.ts` preserves `existing.images` since Brewfather payloads don't include this field — don't remove that preservation or sync will clobber manual photo additions.
 
 ## Data Flow
 

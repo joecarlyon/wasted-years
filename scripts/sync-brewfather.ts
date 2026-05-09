@@ -351,6 +351,8 @@ function mergeBatch(
       (newBatch.yeast as unknown[]).length > 0
         ? newBatch.yeast
         : existing.yeast,
+    // Manually-curated fields not present in Brewfather payloads — preserve from existing
+    images: existing.images,
   }
 }
 

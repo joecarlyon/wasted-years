@@ -13,6 +13,7 @@ import {
 import StatusBadge from '@/components/StatusBadge'
 import LinkifyText from '@/components/LinkifyText'
 import FermentationChart from '@/components/FermentationChart'
+import ImageLightbox from '@/components/ImageLightbox'
 import { JudgeScore } from '@/types'
 
 export function generateStaticParams() {
@@ -165,6 +166,27 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
           </div>
         </div>
       </div>
+
+      {/* Photos */}
+      {batch.images && batch.images.length > 0 && (
+        <div className="mb-8 border-b border-border pb-8">
+          <h3 className="mb-4 text-xs uppercase tracking-widest text-lavender">
+            Photos
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {batch.images.map((src, idx) => (
+              <ImageLightbox
+                key={src}
+                src={src}
+                alt={`${batch.name} photo ${idx + 1}`}
+                thumbnailWidth={240}
+                thumbnailHeight={320}
+                thumbnailClassName="h-auto w-auto max-h-80 object-cover"
+              />
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Stats bar */}
       <div className="mb-8 grid grid-cols-3 gap-4 border-b border-border pb-8 sm:grid-cols-7">
