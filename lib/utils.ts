@@ -1,9 +1,26 @@
+import { Batch, Recipe } from '@/types'
+
 export function formatDate(dateString: string): string {
   const date = new Date(dateString)
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
+  })
+}
+
+export function findMatchingRecipe(
+  batch: Pick<Batch, 'name'>,
+  recipes: Recipe[]
+): Recipe | undefined {
+  const batchLower = batch.name.toLowerCase()
+  const exact = recipes.find((r) => r.name.toLowerCase() === batchLower)
+  if (exact) return exact
+  return recipes.find((r) => {
+    const recipeLower = r.name.toLowerCase()
+    return (
+      batchLower.startsWith(recipeLower) || recipeLower.startsWith(batchLower)
+    )
   })
 }
 

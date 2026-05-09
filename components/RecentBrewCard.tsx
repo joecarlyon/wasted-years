@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { Batch } from '@/types'
 import { competitions } from '@/data/competitions'
-import { formatDate } from '@/lib/utils'
+import { recipes } from '@/data/recipes'
+import { formatDate, findMatchingRecipe } from '@/lib/utils'
 
 interface RecentBrewCardProps {
   batch: Batch
@@ -14,6 +15,11 @@ const medalColors = {
 } as const
 
 export default function RecentBrewCard({ batch }: RecentBrewCardProps) {
+  const matchingRecipe = findMatchingRecipe(batch, recipes)
+  const styleDisplay =
+    batch.style && batch.style !== 'Unknown'
+      ? batch.style
+      : (matchingRecipe?.style ?? batch.style)
   const placedEntry = competitions
     .filter((c) => c.batchNo === batch.batchNo)
     .find((c) => c.placement)
@@ -49,7 +55,7 @@ export default function RecentBrewCard({ batch }: RecentBrewCardProps) {
           )}
         </div>
         <p className="mb-3 text-sm uppercase tracking-wide text-accent">
-          {batch.style}
+          {styleDisplay}
         </p>
         <p className="mb-3 text-sm text-lavender">
           {formatDate(batch.brewDate)}

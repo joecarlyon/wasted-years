@@ -4,7 +4,7 @@ import { batches } from '@/data/batches'
 import { recipes } from '@/data/recipes'
 import { competitions } from '@/data/competitions'
 import { brewingSetups } from '@/data/equipment'
-import { formatDate } from '@/lib/utils'
+import { formatDate, findMatchingRecipe } from '@/lib/utils'
 import StatusBadge from '@/components/StatusBadge'
 import LinkifyText from '@/components/LinkifyText'
 import FermentationChart from '@/components/FermentationChart'
@@ -37,19 +37,11 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
     batch.yeast.length > 0 ||
     batch.og > 0
 
-  const matchingRecipe = (() => {
-    const batchLower = batch.name.toLowerCase()
-    // Exact match
-    const exact = recipes.find((r) => r.name.toLowerCase() === batchLower)
-    if (exact) return exact
-    // Prefix match: batch name starts with recipe name or vice versa
-    return recipes.find((r) => {
-      const recipeLower = r.name.toLowerCase()
-      return (
-        batchLower.startsWith(recipeLower) || recipeLower.startsWith(batchLower)
-      )
-    })
-  })()
+  const matchingRecipe = findMatchingRecipe(batch, recipes)
+  const styleDisplay =
+    batch.style && batch.style !== 'Unknown'
+      ? batch.style
+      : (matchingRecipe?.style ?? batch.style)
 
   const compEntries = competitions.filter((c) => c.batchNo === batch.batchNo)
   const placedEntry = compEntries.find((c) => c.placement)
@@ -89,7 +81,7 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
             </div>
             <h1 className="mt-3 text-3xl text-text-primary">{batch.name}</h1>
             <p className="text-lg uppercase tracking-wide text-accent">
-              {batch.style}
+              {styleDisplay}
             </p>
             {matchingRecipe && (
               <Link
@@ -277,6 +269,20 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
                 </div>
               ))}
             </div>
+          ) : matchingRecipe?.yeastDetail ? (
+            <div className="text-sm">
+              <p className="text-text-primary">
+                {matchingRecipe.yeastDetail.name}
+              </p>
+              {matchingRecipe.yeastDetail.lab && (
+                <p className="text-text-secondary">
+                  {matchingRecipe.yeastDetail.lab}
+                </p>
+              )}
+            </div>
+          ) : matchingRecipe?.yeast &&
+            matchingRecipe.yeast !== 'Not specified' ? (
+            <p className="text-sm text-text-primary">{matchingRecipe.yeast}</p>
           ) : (
             <p className="text-sm italic text-text-secondary">Not specified</p>
           )}

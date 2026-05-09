@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { Batch } from '@/types'
-import { formatDate } from '@/lib/utils'
+import { formatDate, findMatchingRecipe } from '@/lib/utils'
 import { competitions } from '@/data/competitions'
+import { recipes } from '@/data/recipes'
 import StatusBadge from './StatusBadge'
 
 interface BrewEntryProps {
@@ -9,10 +10,22 @@ interface BrewEntryProps {
 }
 
 export default function BrewEntry({ batch }: BrewEntryProps) {
-  const yeastDisplay =
-    batch.yeast.length > 0
-      ? batch.yeast.map((y) => `${y.name} (${y.laboratory})`).join(', ')
-      : 'Not specified'
+  const matchingRecipe = findMatchingRecipe(batch, recipes)
+
+  const styleDisplay =
+    batch.style && batch.style !== 'Unknown'
+      ? batch.style
+      : (matchingRecipe?.style ?? batch.style)
+
+  const yeastDisplay = (() => {
+    if (batch.yeast.length > 0) {
+      return batch.yeast.map((y) => `${y.name} (${y.laboratory})`).join(', ')
+    }
+    if (matchingRecipe?.yeast && matchingRecipe.yeast !== 'Not specified') {
+      return matchingRecipe.yeast
+    }
+    return 'Not specified'
+  })()
 
   const compEntry = competitions.find(
     (c) => c.batchNo === batch.batchNo && c.placement
@@ -38,7 +51,7 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
           <div>
             <h4 className="text-xl">{batch.name}</h4>
             <p className="text-sm uppercase tracking-wide text-accent">
-              {batch.style}
+              {styleDisplay}
             </p>
           </div>
           <div className="flex items-center gap-2">
@@ -105,12 +118,14 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
           <span className="text-text-secondary">{yeastDisplay}</span>
         </div>
 
-        <div className="mt-2 text-sm">
-          <span className="mr-2 text-lavender-dark">Bottled:</span>
-          <span className="text-text-secondary">
-            {formatDate(batch.bottlingDate)}
-          </span>
-        </div>
+        {batch.bottlingDate && (
+          <div className="mt-2 text-sm">
+            <span className="mr-2 text-lavender-dark">Bottled:</span>
+            <span className="text-text-secondary">
+              {formatDate(batch.bottlingDate)}
+            </span>
+          </div>
+        )}
       </div>
     </Link>
   )
