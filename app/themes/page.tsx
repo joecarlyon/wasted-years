@@ -433,7 +433,7 @@ export default function ThemesPage() {
                 May 18, 2024
               </div>
               <div>
-                <span className="mr-2 text-lavender-dark">Bottled:</span>
+                <span className="mr-2 text-lavender-dark">Kegged on:</span>
                 Jun 2, 2024
               </div>
               <div>

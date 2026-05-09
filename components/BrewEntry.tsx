@@ -120,7 +120,7 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
 
         {batch.bottlingDate && (
           <div className="mt-2 text-sm">
-            <span className="mr-2 text-lavender-dark">Bottled:</span>
+            <span className="mr-2 text-lavender-dark">Kegged on:</span>
             <span className="text-text-secondary">
               {formatDate(batch.bottlingDate)}
             </span>

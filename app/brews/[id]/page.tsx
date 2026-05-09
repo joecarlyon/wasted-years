@@ -147,7 +147,7 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
           )}
           {batch.bottlingDate && (
             <div>
-              <span className="mr-2 text-lavender-dark">Bottled:</span>
+              <span className="mr-2 text-lavender-dark">Kegged on:</span>
               {formatDate(batch.bottlingDate)}
             </div>
           )}
