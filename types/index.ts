@@ -150,6 +150,17 @@ export interface CompetitionEntry {
   judges: JudgeScore[]
 }
 
+export interface TiltReading {
+  timestamp: number // epoch millis
+  gravity: number // SG, e.g. 1.018
+  temperature: number // °F (already converted during sync)
+}
+
+export interface FermentationEvent {
+  timestamp: number // epoch millis
+  label: string // e.g. 'Pitched', 'Fermenting', 'Conditioning', 'Packaged'
+}
+
 export interface Batch {
   batchNo: number
   name: string
@@ -173,4 +184,6 @@ export interface Batch {
   brewingNotes?: string
   tastingNotes?: string
   source?: 'brewfather' | 'beersmith'
+  tiltReadings?: TiltReading[]
+  fermentationEvents?: FermentationEvent[]
 }

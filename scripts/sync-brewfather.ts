@@ -13,6 +13,7 @@
 
 import * as fs from 'fs'
 import * as path from 'path'
+import type { FermentationEvent, TiltReading } from '../types'
 
 const BREWFATHER_API = 'https://api.brewfather.app/v2'
 
@@ -101,6 +102,22 @@ interface BrewfatherEquipment {
   efficiency?: number
 }
 
+interface BrewfatherNote {
+  note?: string
+  type?: string
+  status?: string
+  timestamp?: number
+}
+
+interface BrewfatherReading {
+  id?: string
+  type?: string
+  sg?: number
+  temp?: number
+  comment?: string
+  time?: number
+}
+
 interface BrewfatherBatch {
   _id: string
   batchNo: number
@@ -120,6 +137,7 @@ interface BrewfatherBatch {
   measuredBatchSize: number
   measuredPreBoilGravity?: number
   measuredBoilSize?: number
+  notes?: BrewfatherNote[]
   recipe: {
     name?: string
     style?: { name: string; category?: string }
@@ -152,15 +170,17 @@ interface BrewfatherRecipe {
   notes?: string
 }
 
-async function fetchAll<T>(endpoint: string): Promise<T[]> {
+async function fetchAll<T>(
+  endpoint: string,
+  extraParams = ''
+): Promise<T[]> {
   const results: T[] = []
   let offset = 0
   const limit = 50
 
   while (true) {
-    const url = `${BREWFATHER_API}/${endpoint}?complete=true&limit=${limit}&start_after=${offset > 0 ? results[results.length - 1] : ''}`
     const response = await fetch(
-      `${BREWFATHER_API}/${endpoint}?complete=true&limit=${limit}&offset=${offset}`,
+      `${BREWFATHER_API}/${endpoint}?complete=true&limit=${limit}&offset=${offset}${extraParams}`,
       {
         headers: {
           Authorization: `Basic ${AUTH}`,
@@ -443,9 +463,85 @@ function categorizeRecipe(
   return 'ale'
 }
 
+async function fetchReadings(batchId: string): Promise<TiltReading[]> {
+  const response = await fetch(
+    `${BREWFATHER_API}/batches/${batchId}/readings`,
+    {
+      headers: { Authorization: `Basic ${AUTH}` },
+    }
+  )
+
+  if (response.status === 404) {
+    return []
+  }
+  if (response.status === 429) {
+    console.log('Rate limited fetching readings, waiting 60 seconds...')
+    await new Promise((r) => setTimeout(r, 60000))
+    return fetchReadings(batchId)
+  }
+  if (!response.ok) {
+    console.warn(
+      `Could not fetch readings for ${batchId}: ${response.status} ${response.statusText}`
+    )
+    return []
+  }
+
+  const data = (await response.json()) as BrewfatherReading[]
+
+  return data
+    .filter(
+      (r): r is BrewfatherReading & { sg: number; temp: number; time: number } =>
+        typeof r.sg === 'number' &&
+        typeof r.temp === 'number' &&
+        typeof r.time === 'number'
+    )
+    .sort((a, b) => a.time - b.time)
+    .map((r) => ({
+      timestamp: r.time,
+      gravity: roundTo(r.sg, 4),
+      temperature: roundTo((r.temp * 9) / 5 + 32, 1),
+    }))
+}
+
+function deriveEvents(b: BrewfatherBatch): FermentationEvent[] {
+  const events: FermentationEvent[] = []
+
+  if (b.brewDate) {
+    events.push({ timestamp: b.brewDate, label: 'Pitched' })
+  }
+
+  for (const note of b.notes ?? []) {
+    if (
+      note.type === 'statusChanged' &&
+      typeof note.timestamp === 'number' &&
+      note.status &&
+      // 'Brewing' status = day-of brew, redundant with brewDate event
+      note.status !== 'Brewing' &&
+      // 'Completed' is bottling/done, packaged event below covers it
+      note.status !== 'Completed'
+    ) {
+      events.push({ timestamp: note.timestamp, label: note.status })
+    }
+  }
+
+  if (b.bottlingDate) {
+    events.push({ timestamp: b.bottlingDate, label: 'Packaged' })
+  }
+
+  events.sort((a, b) => a.timestamp - b.timestamp)
+  const deduped: FermentationEvent[] = []
+  for (const e of events) {
+    const prev = deduped[deduped.length - 1]
+    if (!prev || e.timestamp - prev.timestamp >= 12 * 60 * 60 * 1000) {
+      deduped.push(e)
+    }
+  }
+  return deduped
+}
+
 async function syncBatches() {
   console.log('Fetching batches from Brewfather...')
-  const batches = await fetchAll<BrewfatherBatch>('batches')
+  const batches = await fetchAll<BrewfatherBatch>('batches', '&include=notes')
   console.log(`Found ${batches.length} batches`)
 
   const existingBatches = await loadExistingBatches()
@@ -453,7 +549,8 @@ async function syncBatches() {
     `Loaded ${existingBatches.byBatchNo.size} existing batches (${existingBatches.beersmith.length} Beersmith)`
   )
 
-  const transformed = batches.map((b) => {
+  const transformed: Record<string, unknown>[] = []
+  for (const b of batches) {
     // Use recipe name if batch name is just "Batch"
     const name =
       b.name && b.name !== 'Batch'
@@ -476,7 +573,14 @@ async function syncBatches() {
       bottlingDate: b.bottlingDate
         ? new Date(b.bottlingDate).toISOString().split('T')[0]
         : '',
-      og: roundTo(b.measuredOg || b.measuredPostBoilGravity || b.estimatedOg || b.recipe?.og || 0, 3),
+      og: roundTo(
+        b.measuredOg ||
+          b.measuredPostBoilGravity ||
+          b.estimatedOg ||
+          b.recipe?.og ||
+          0,
+        3
+      ),
       fg: roundTo(b.measuredFg || b.estimatedFg || b.recipe?.fg || 0, 3),
       abv: roundTo(b.measuredAbv || 0, 1),
       ibu: b.estimatedIbu ? roundTo(b.estimatedIbu, 0) : null,
@@ -511,9 +615,21 @@ async function syncBatches() {
       })),
     }
 
+    // Fetch Tilt fermentation readings and derive events
+    console.log(`Fetching readings for batch ${b._id}...`)
+    const readings = await fetchReadings(b._id)
+    if (readings.length > 0) {
+      ;(newBatch as Record<string, unknown>).tiltReadings = readings
+      ;(newBatch as Record<string, unknown>).fermentationEvents = deriveEvents(b)
+    }
+    // Be nice to the API
+    await new Promise((r) => setTimeout(r, 500))
+
     // Merge with existing data to preserve manual edits
-    return mergeBatch(newBatch, existingBatches.byBatchNo.get(b.batchNo))
-  })
+    transformed.push(
+      mergeBatch(newBatch, existingBatches.byBatchNo.get(b.batchNo))
+    )
+  }
 
   // Combine Beersmith batches (first) with Brewfather batches (after)
   // Beersmith batches keep their existing batch numbers, Brewfather get renumbered

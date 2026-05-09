@@ -7,6 +7,7 @@ import { brewingSetups } from '@/data/equipment'
 import { formatDate } from '@/lib/utils'
 import StatusBadge from '@/components/StatusBadge'
 import LinkifyText from '@/components/LinkifyText'
+import FermentationChart from '@/components/FermentationChart'
 import { JudgeScore } from '@/types'
 
 export function generateStaticParams() {
@@ -193,6 +194,38 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
         />
         <StatBox label="Batch" value={`${batch.batchSize} gal`} />
       </div>
+
+      {/* Fermentation Progress (Tilt readings) */}
+      {batch.tiltReadings && batch.tiltReadings.length >= 2 && (
+        <div className="mb-8 border-b border-border pb-8">
+          <h3 className="mb-4 text-xs uppercase tracking-widest text-lavender">
+            Fermentation Progress
+          </h3>
+          <FermentationChart
+            readings={batch.tiltReadings}
+            events={batch.fermentationEvents}
+            summary={{
+              days: Math.max(
+                1,
+                Math.round(
+                  (batch.tiltReadings[batch.tiltReadings.length - 1].timestamp -
+                    batch.tiltReadings[0].timestamp) /
+                    86_400_000
+                )
+              ),
+              og: batch.og,
+              fg: batch.fg,
+              attenuation:
+                batch.og > 1
+                  ? Math.round(
+                      ((batch.og - batch.fg) / (batch.og - 1)) * 100
+                    )
+                  : 0,
+              abv: batch.abv,
+            }}
+          />
+        </div>
+      )}
 
       {/* Ingredients */}
       <div className="mb-8 grid gap-8 border-b border-border pb-8 lg:grid-cols-2">
