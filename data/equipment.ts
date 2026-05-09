@@ -95,6 +95,13 @@ export const brewingSetups: BrewingSetup[] = [
           'Wireless floating hydrometer that logs gravity and temperature throughout fermentation',
         url: 'https://tilthydrometer.com/',
       },
+      {
+        name: 'Raspberry Pi 3',
+        role: 'Tilt Pi Gateway',
+        side: 'cold',
+        description:
+          'Runs Tilt Pi to capture the Tilt Hydrometer Bluetooth readings and log them',
+      },
     ],
     specs: {
       batchSize: '5 - 10 gal',
