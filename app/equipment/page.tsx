@@ -38,7 +38,7 @@ function SetupCard({ setup }: { setup: BrewingSetup }) {
   return (
     <div
       id={setup.id}
-      className={`scroll-mt-24 border border-border bg-bg-card p-4 md:p-8${setup.retired ? ' opacity-70' : ''}`}
+      className={`scroll-mt-24 border border-border bg-bg-card p-4 md:p-8 ${setup.retired ? 'opacity-70' : ''}`}
     >
       {/* Header */}
       <div className="mb-6 border-b border-border pb-6">
@@ -90,7 +90,12 @@ function SetupCard({ setup }: { setup: BrewingSetup }) {
             <div key={idx} className="border border-border p-4">
               <p className="font-medium text-text-primary">
                 {item.url ? (
-                  <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-text-primary hover:text-accent transition-colors">
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-text-primary transition-colors hover:text-accent"
+                  >
                     {item.name} &rarr;
                   </a>
                 ) : (

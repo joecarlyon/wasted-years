@@ -170,10 +170,7 @@ interface BrewfatherRecipe {
   notes?: string
 }
 
-async function fetchAll<T>(
-  endpoint: string,
-  extraParams = ''
-): Promise<T[]> {
+async function fetchAll<T>(endpoint: string, extraParams = ''): Promise<T[]> {
   const results: T[] = []
   let offset = 0
   const limit = 50
@@ -490,7 +487,9 @@ async function fetchReadings(batchId: string): Promise<TiltReading[]> {
 
   return data
     .filter(
-      (r): r is BrewfatherReading & { sg: number; temp: number; time: number } =>
+      (
+        r
+      ): r is BrewfatherReading & { sg: number; temp: number; time: number } =>
         typeof r.sg === 'number' &&
         typeof r.temp === 'number' &&
         typeof r.time === 'number'
@@ -620,7 +619,8 @@ async function syncBatches() {
     const readings = await fetchReadings(b._id)
     if (readings.length > 0) {
       ;(newBatch as Record<string, unknown>).tiltReadings = readings
-      ;(newBatch as Record<string, unknown>).fermentationEvents = deriveEvents(b)
+      ;(newBatch as Record<string, unknown>).fermentationEvents =
+        deriveEvents(b)
     }
     // Be nice to the API
     await new Promise((r) => setTimeout(r, 500))

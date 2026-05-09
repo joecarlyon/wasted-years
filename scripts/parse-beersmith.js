@@ -188,7 +188,9 @@ function parseBsmx(filePath) {
   let fg = parseFloat(getTag(recipeXml, 'F_R_FG_MEASURED')) || 0
 
   // Batch size - BeerSmith stores volumes in fluid ounces, convert to gallons (128 oz/gal)
-  const equipmentMatch = content.match(/<F_R_EQUIPMENT>([\s\S]*?)<\/F_R_EQUIPMENT>/i)
+  const equipmentMatch = content.match(
+    /<F_R_EQUIPMENT>([\s\S]*?)<\/F_R_EQUIPMENT>/i
+  )
   let batchSizeOz = 0
   if (equipmentMatch) {
     batchSizeOz = parseFloat(getTag(equipmentMatch[1], 'F_E_BATCH_VOL')) || 0

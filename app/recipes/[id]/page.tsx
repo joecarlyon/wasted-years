@@ -33,7 +33,11 @@ export default function RecipePage({ params }: { params: { id: string } }) {
   const matchingBatches = batches
     .filter((b) => {
       const batchLower = b.name.toLowerCase()
-      return batchLower === recipeLower || batchLower.startsWith(recipeLower) || recipeLower.startsWith(batchLower)
+      return (
+        batchLower === recipeLower ||
+        batchLower.startsWith(recipeLower) ||
+        recipeLower.startsWith(batchLower)
+      )
     })
     .sort((a, b) => a.batchNo - b.batchNo)
 

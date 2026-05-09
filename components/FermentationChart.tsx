@@ -217,9 +217,7 @@ function ChartTooltip({
       {temperature !== undefined && (
         <div>
           <span className="text-lavender">Temp</span>{' '}
-          <span className="text-text-primary">
-            {temperature.toFixed(1)}°F
-          </span>
+          <span className="text-text-primary">{temperature.toFixed(1)}°F</span>
         </div>
       )}
       {nearbyEvent && (

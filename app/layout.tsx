@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased leading-relaxed">
+      <body className="font-sans leading-relaxed antialiased">
         <Navbar />
         {children}
         <Footer />

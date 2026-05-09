@@ -334,15 +334,18 @@ export default function ThemesPage() {
           >
             {/* Color swatches */}
             <div className="mb-2 flex gap-1">
-              {[t.colors.bgDark, t.colors.bgCard, t.colors.bgHover, t.colors.border].map(
-                (c, i) => (
-                  <div
-                    key={i}
-                    className="h-4 w-4 rounded-sm"
-                    style={{ backgroundColor: c }}
-                  />
-                )
-              )}
+              {[
+                t.colors.bgDark,
+                t.colors.bgCard,
+                t.colors.bgHover,
+                t.colors.border,
+              ].map((c, i) => (
+                <div
+                  key={i}
+                  className="h-4 w-4 rounded-sm"
+                  style={{ backgroundColor: c }}
+                />
+              ))}
               <div
                 className="h-4 w-4 rounded-sm"
                 style={{ backgroundColor: t.colors.accent }}
@@ -354,9 +357,7 @@ export default function ThemesPage() {
             </div>
             <p className="text-sm font-medium text-text-primary">
               {t.name}
-              {t.favorite && (
-                <span className="ml-1 text-accent"> *</span>
-              )}
+              {t.favorite && <span className="ml-1 text-accent"> *</span>}
             </p>
             <p className="text-xs text-text-secondary">{t.description}</p>
           </button>
@@ -529,12 +530,8 @@ export default function ThemesPage() {
                   <p className="font-medium text-text-primary">
                     Gregory Roskopf
                   </p>
-                  <p className="text-xs text-text-secondary">
-                    Brownsburg, USA
-                  </p>
-                  <p className="text-xs text-lavender-dark">
-                    BJCP Certified
-                  </p>
+                  <p className="text-xs text-text-secondary">Brownsburg, USA</p>
+                  <p className="text-xs text-lavender-dark">BJCP Certified</p>
                 </div>
                 <div className="text-xl font-bold text-accent">
                   37
@@ -568,9 +565,9 @@ export default function ThemesPage() {
                 Flaws: Diacetyl (L)
               </p>
               <p className="text-sm italic text-text-secondary">
-                &ldquo;Overall a well crafted IPA. A touch light on IBUs,
-                clean fermentation profile. Traditional American hop profile
-                of pine, resin, lemon citrus. I enjoyed this beer!&rdquo;
+                &ldquo;Overall a well crafted IPA. A touch light on IBUs, clean
+                fermentation profile. Traditional American hop profile of pine,
+                resin, lemon citrus. I enjoyed this beer!&rdquo;
               </p>
             </div>
           </div>
@@ -638,16 +635,18 @@ export default function ThemesPage() {
                   Grains
                 </h5>
                 <ul className="text-sm text-text-secondary">
-                  {['Pale Malt 2-Row', 'Caramel/Crystal 40L', 'Munich Malt'].map(
-                    (g) => (
-                      <li
-                        key={g}
-                        className="relative py-1 pl-4 before:absolute before:left-0 before:text-xs before:text-accent before:content-['//']"
-                      >
-                        {g}
-                      </li>
-                    )
-                  )}
+                  {[
+                    'Pale Malt 2-Row',
+                    'Caramel/Crystal 40L',
+                    'Munich Malt',
+                  ].map((g) => (
+                    <li
+                      key={g}
+                      className="relative py-1 pl-4 before:absolute before:left-0 before:text-xs before:text-accent before:content-['//']"
+                    >
+                      {g}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

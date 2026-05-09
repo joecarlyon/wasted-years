@@ -67,28 +67,54 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block h-0.5 w-6 bg-text-primary transition-all duration-300 ${menuOpen ? 'translate-y-2 rotate-45' : ''}`} />
-          <span className={`block h-0.5 w-6 bg-text-primary transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block h-0.5 w-6 bg-text-primary transition-all duration-300 ${menuOpen ? '-translate-y-2 -rotate-45' : ''}`} />
+          <span
+            className={`block h-0.5 w-6 bg-text-primary transition-all duration-300 ${menuOpen ? 'translate-y-2 rotate-45' : ''}`}
+          />
+          <span
+            className={`block h-0.5 w-6 bg-text-primary transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}
+          />
+          <span
+            className={`block h-0.5 w-6 bg-text-primary transition-all duration-300 ${menuOpen ? '-translate-y-2 -rotate-45' : ''}`}
+          />
         </button>
       </nav>
 
       {/* Mobile menu */}
       {menuOpen && (
         <div className="border-t border-border px-4 pb-4 md:hidden">
-          <Link href="/" className={mobileLinkClasses('/')} onClick={() => setMenuOpen(false)}>
+          <Link
+            href="/"
+            className={mobileLinkClasses('/')}
+            onClick={() => setMenuOpen(false)}
+          >
             Home
           </Link>
-          <Link href="/recipes" className={mobileLinkClasses('/recipes')} onClick={() => setMenuOpen(false)}>
+          <Link
+            href="/recipes"
+            className={mobileLinkClasses('/recipes')}
+            onClick={() => setMenuOpen(false)}
+          >
             Recipes
           </Link>
-          <Link href="/equipment" className={mobileLinkClasses('/equipment')} onClick={() => setMenuOpen(false)}>
+          <Link
+            href="/equipment"
+            className={mobileLinkClasses('/equipment')}
+            onClick={() => setMenuOpen(false)}
+          >
             Equipment
           </Link>
-          <Link href="/brews" className={mobileLinkClasses('/brews')} onClick={() => setMenuOpen(false)}>
+          <Link
+            href="/brews"
+            className={mobileLinkClasses('/brews')}
+            onClick={() => setMenuOpen(false)}
+          >
             Brew Log
           </Link>
-          <Link href="/about" className={mobileLinkClasses('/about')} onClick={() => setMenuOpen(false)}>
+          <Link
+            href="/about"
+            className={mobileLinkClasses('/about')}
+            onClick={() => setMenuOpen(false)}
+          >
             About
           </Link>
         </div>

@@ -48,9 +48,16 @@ function generateUUID(name) {
 
 function getCategory(style) {
   const s = (style || '').toLowerCase()
-  if (s.includes('lager') || s.includes('pilsner') || s.includes('schwarzbier') ||
-      s.includes('oktoberfest') || s.includes('marzen') || s.includes('bock') ||
-      s.includes('helles') || s.includes('vienna')) {
+  if (
+    s.includes('lager') ||
+    s.includes('pilsner') ||
+    s.includes('schwarzbier') ||
+    s.includes('oktoberfest') ||
+    s.includes('marzen') ||
+    s.includes('bock') ||
+    s.includes('helles') ||
+    s.includes('vienna')
+  ) {
     return 'lager'
   }
   return 'ale'
@@ -65,14 +72,18 @@ function parseBsmx(filePath) {
 
   const name = decodeHtml(getTag(recipeXml, 'F_R_NAME'))
   const date = getTag(recipeXml, 'F_R_DATE')
-  const desiredOg = parseFloat(getTag(recipeXml, 'F_R_DESIRED_OG')) || 1.050
+  const desiredOg = parseFloat(getTag(recipeXml, 'F_R_DESIRED_OG')) || 1.05
 
   // Style
   const styleSection = content.match(/<F_R_STYLE>([\s\S]*?)<\/F_R_STYLE>/i)
-  const style = decodeHtml(styleSection ? getTag(styleSection[1], 'F_S_NAME') : '')
+  const style = decodeHtml(
+    styleSection ? getTag(styleSection[1], 'F_S_NAME') : ''
+  )
 
   // Equipment batch volume (fluid ounces -> gallons)
-  const equipMatch = content.match(/<F_R_EQUIPMENT>([\s\S]*?)<\/F_R_EQUIPMENT>/i)
+  const equipMatch = content.match(
+    /<F_R_EQUIPMENT>([\s\S]*?)<\/F_R_EQUIPMENT>/i
+  )
   let batchGal = 5
   if (equipMatch) {
     const batchOz = parseFloat(getTag(equipMatch[1], 'F_E_BATCH_VOL')) || 0
@@ -83,11 +94,14 @@ function parseBsmx(filePath) {
   const scale = 5 / batchGal
 
   // Ingredients
-  const ingredientsMatch = content.match(/<Ingredients>([\s\S]*?)<\/Ingredients>/i)
+  const ingredientsMatch = content.match(
+    /<Ingredients>([\s\S]*?)<\/Ingredients>/i
+  )
   const ingredientsXml = ingredientsMatch ? ingredientsMatch[1] : ''
 
   // Grains
-  const grainMatches = ingredientsXml.match(/<Grain>([\s\S]*?)<\/Grain>/gi) || []
+  const grainMatches =
+    ingredientsXml.match(/<Grain>([\s\S]*?)<\/Grain>/gi) || []
   const grains = []
   const fermentablesDetail = []
   for (const g of grainMatches) {
@@ -96,7 +110,10 @@ function parseBsmx(filePath) {
     const amountOz = parseFloat(getTag(g, 'F_G_AMOUNT')) || 0
     const amountLb = (amountOz / 16) * scale
     grains.push(`${amountLb.toFixed(2)} lb ${gName}`)
-    fermentablesDetail.push({ name: gName, amount: Math.round(amountLb * 100) / 100 })
+    fermentablesDetail.push({
+      name: gName,
+      amount: Math.round(amountLb * 100) / 100,
+    })
   }
   // Sort by amount descending
   fermentablesDetail.sort((a, b) => b.amount - a.amount)
@@ -138,7 +155,8 @@ function parseBsmx(filePath) {
   }
 
   // Yeast
-  const yeastMatches = ingredientsXml.match(/<Yeast>([\s\S]*?)<\/Yeast>/gi) || []
+  const yeastMatches =
+    ingredientsXml.match(/<Yeast>([\s\S]*?)<\/Yeast>/gi) || []
   let yeast = 'Not specified'
   for (const y of yeastMatches) {
     if (getTag(y, 'F_Y_IN_RECIPE') !== '1') continue
@@ -179,9 +197,10 @@ function main() {
   console.log('Importing BingenBrew recipes...\n')
 
   // Parse all .bsmx files
-  const files = fs.readdirSync(BINGENBREW_DIR)
-    .filter(f => f.endsWith('.bsmx'))
-    .map(f => path.join(BINGENBREW_DIR, f))
+  const files = fs
+    .readdirSync(BINGENBREW_DIR)
+    .filter((f) => f.endsWith('.bsmx'))
+    .map((f) => path.join(BINGENBREW_DIR, f))
 
   console.log(`Found ${files.length} .bsmx files\n`)
 
@@ -191,7 +210,9 @@ function main() {
       const recipe = parseBsmx(file)
       if (recipe) {
         parsed.push(recipe)
-        console.log(`  ${recipe.name} (${recipe.style}) - OG ${recipe.og}, ${recipe.ibu} IBU, ${recipe.grains.length} grains, ${recipe.hops.length} hops`)
+        console.log(
+          `  ${recipe.name} (${recipe.style}) - OG ${recipe.og}, ${recipe.ibu} IBU, ${recipe.grains.length} grains, ${recipe.hops.length} hops`
+        )
       }
     } catch (err) {
       console.error(`Error parsing ${file}: ${err.message}`)
@@ -217,16 +238,24 @@ function main() {
 
   console.log(`\nExisting recipes: ${existingRecipes.length}`)
 
-  const beersmithRecipes = existingRecipes.filter(r => r.source === 'beersmith')
-  const brewfatherRecipes = existingRecipes.filter(r => r.source === 'brewfather')
+  const beersmithRecipes = existingRecipes.filter(
+    (r) => r.source === 'beersmith'
+  )
+  const brewfatherRecipes = existingRecipes.filter(
+    (r) => r.source === 'brewfather'
+  )
   console.log(`  BeerSmith: ${beersmithRecipes.length}`)
   console.log(`  Brewfather: ${brewfatherRecipes.length}`)
 
   // Check for name duplicates
-  const existingNames = new Set(existingRecipes.map(r => r.name.toLowerCase()))
+  const existingNames = new Set(
+    existingRecipes.map((r) => r.name.toLowerCase())
+  )
   for (const r of parsed) {
     if (existingNames.has(r.name.toLowerCase())) {
-      console.log(`\n  ⚠ "${r.name}" already exists - importing as "${r.name} (BingenBrew)"`)
+      console.log(
+        `\n  ⚠ "${r.name}" already exists - importing as "${r.name} (BingenBrew)"`
+      )
       r.name = `${r.name} (BingenBrew)`
     }
   }
@@ -262,10 +291,16 @@ function main() {
     id: newBrewfatherStart + i,
   }))
 
-  console.log(`Brewfather recipes renumbered: ${beersmithRecipes.length + 1}-${beersmithRecipes.length + brewfatherRecipes.length} → ${newBrewfatherStart}-${newBrewfatherStart + brewfatherRecipes.length - 1}`)
+  console.log(
+    `Brewfather recipes renumbered: ${beersmithRecipes.length + 1}-${beersmithRecipes.length + brewfatherRecipes.length} → ${newBrewfatherStart}-${newBrewfatherStart + brewfatherRecipes.length - 1}`
+  )
 
   // Combine: existing beersmith + new bingenbrew + renumbered brewfather
-  const allRecipes = [...beersmithRecipes, ...newRecipes, ...renumberedBrewfather]
+  const allRecipes = [
+    ...beersmithRecipes,
+    ...newRecipes,
+    ...renumberedBrewfather,
+  ]
   console.log(`\nTotal recipes: ${allRecipes.length}`)
 
   // Write output

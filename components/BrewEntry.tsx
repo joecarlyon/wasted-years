@@ -111,7 +111,6 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
             {formatDate(batch.bottlingDate)}
           </span>
         </div>
-
       </div>
     </Link>
   )

@@ -7,15 +7,19 @@ function labelFromUrl(url: string): string {
     const pathname = new URL(url).pathname.replace(/\/+$/, '')
     const slug = pathname.split('/').pop() || ''
     if (!slug) return url
-    return slug
-      .replace(/-/g, ' ')
-      .replace(/\b\w/g, (c) => c.toUpperCase())
+    return slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
   } catch {
     return url
   }
 }
 
-export default function LinkifyText({ text, linkPrefix }: { text: string; linkPrefix?: React.ReactNode }) {
+export default function LinkifyText({
+  text,
+  linkPrefix,
+}: {
+  text: string
+  linkPrefix?: React.ReactNode
+}) {
   const parts = text.split(URL_REGEX)
   return (
     <>

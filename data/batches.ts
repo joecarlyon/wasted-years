@@ -2,6858 +2,6901 @@ import { Batch } from '@/types'
 
 export const batches: Batch[] = [
   {
-    "batchNo": 1,
-    "name": "Oatmeal Stout",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Nothing Special"
-  },
-  {
-    "batchNo": 2,
-    "name": "Hefe Blueberries",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Blueberry flavor, where did it go?",
-    "brewingNotes": "Estimated OG from Lemon Lime Hefe recipe"
-  },
-  {
-    "batchNo": 3,
-    "name": "Hefe Grapefruit",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Very Tart",
-    "brewingNotes": "Estimated OG from Lemon Lime Hefe recipe"
-  },
-  {
-    "batchNo": 4,
-    "name": "Belgian White",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Sucked, added apricot and was better",
-    "brewingNotes": "Estimated OG from White Knight Wit recipe"
-  },
-  {
-    "batchNo": 5,
-    "name": "Black IIPA",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Good"
-  },
-  {
-    "batchNo": 6,
-    "name": "Black IPA (session)",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Very Good"
-  },
-  {
-    "batchNo": 7,
-    "name": "Vanilla RIS",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Infected :/"
-  },
-  {
-    "batchNo": 8,
-    "name": "CarPA",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "2015-03-19",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Very meh"
-  },
-  {
-    "batchNo": 9,
-    "name": "Shandy",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Delicious, madelyn says more lemon next time"
-  },
-  {
-    "batchNo": 10,
-    "name": "Gumballhead",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Delicious"
-  },
-  {
-    "batchNo": 11,
-    "name": "Wanna be blonde",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "First batch was better",
-    "brewingNotes": "Estimated OG from Basic Blonde recipe"
-  },
-  {
-    "batchNo": 12,
-    "name": "Brown Ale",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 13,
-    "name": "Hefe 1/2 Lemon",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Estimated OG from Lemon Lime Hefe recipe"
-  },
-  {
-    "batchNo": 14,
-    "name": "Gumballhead",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 15,
-    "name": "Elara",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith"
-  },
-  {
-    "batchNo": 16,
-    "name": "BA Withered 2",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Estimated OG from Withered Imperial Stout recipe"
-  },
-  {
-    "batchNo": 17,
-    "name": "Smoked porter",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-02-15",
-    "bottlingDate": "2015-03-19",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Smokey, better with age"
-  },
-  {
-    "batchNo": 18,
-    "name": "Blonde",
-    "style": "Belgian Blond Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-02-26",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 29,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15
-      },
-      {
-        "name": "Wheat Malt, Bel",
-        "amount": 8
-      },
-      {
-        "name": "Wheat, Flaked",
-        "amount": 1.5
-      },
-      {
-        "name": "Honey Malt",
-        "amount": 1.5
-      },
-      {
-        "name": "Carafoam",
-        "amount": 1
-      },
-      {
-        "name": "Candi Sugar, Clear",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Hallertauer",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "East Kent Goldings (EKG)",
-        "amount": 2,
-        "usage": "Bittering"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "Irish Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1084"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Delicious"
-  },
-  {
-    "batchNo": 19,
-    "name": "Zombie Dust London",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-16",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Was okay"
-  },
-  {
-    "batchNo": 20,
-    "name": "Zombie Dust British",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-16",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Was okay"
-  },
-  {
-    "batchNo": 21,
-    "name": "Zombie Dust",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-16",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Was okay"
-  },
-  {
-    "batchNo": 22,
-    "name": "Zombie Dust",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-16",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Was okay"
-  },
-  {
-    "batchNo": 23,
-    "name": "Zombie Dust (Omega)",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-21",
-    "bottlingDate": "",
-    "og": 1.055,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Okay, too dark.. too much cara 45 | Was okay"
-  },
-  {
-    "batchNo": 24,
-    "name": "Moo Moo Canoe",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-25",
-    "bottlingDate": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 17,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15.46
+    batchNo: 1,
+    name: 'Oatmeal Stout',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Nothing Special',
+  },
+  {
+    batchNo: 2,
+    name: 'Hefe Blueberries',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Blueberry flavor, where did it go?',
+    brewingNotes: 'Estimated OG from Lemon Lime Hefe recipe',
+  },
+  {
+    batchNo: 3,
+    name: 'Hefe Grapefruit',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Very Tart',
+    brewingNotes: 'Estimated OG from Lemon Lime Hefe recipe',
+  },
+  {
+    batchNo: 4,
+    name: 'Belgian White',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Sucked, added apricot and was better',
+    brewingNotes: 'Estimated OG from White Knight Wit recipe',
+  },
+  {
+    batchNo: 5,
+    name: 'Black IIPA',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Good',
+  },
+  {
+    batchNo: 6,
+    name: 'Black IPA (session)',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Very Good',
+  },
+  {
+    batchNo: 7,
+    name: 'Vanilla RIS',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Infected :/',
+  },
+  {
+    batchNo: 8,
+    name: 'CarPA',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '2015-03-19',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Very meh',
+  },
+  {
+    batchNo: 9,
+    name: 'Shandy',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Delicious, madelyn says more lemon next time',
+  },
+  {
+    batchNo: 10,
+    name: 'Gumballhead',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Delicious',
+  },
+  {
+    batchNo: 11,
+    name: 'Wanna be blonde',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'First batch was better',
+    brewingNotes: 'Estimated OG from Basic Blonde recipe',
+  },
+  {
+    batchNo: 12,
+    name: 'Brown Ale',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+  },
+  {
+    batchNo: 13,
+    name: 'Hefe 1/2 Lemon',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes: 'Estimated OG from Lemon Lime Hefe recipe',
+  },
+  {
+    batchNo: 14,
+    name: 'Gumballhead',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+  },
+  {
+    batchNo: 15,
+    name: 'Elara',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+  },
+  {
+    batchNo: 16,
+    name: 'BA Withered 2',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes: 'Estimated OG from Withered Imperial Stout recipe',
+  },
+  {
+    batchNo: 17,
+    name: 'Smoked porter',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-02-15',
+    bottlingDate: '2015-03-19',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Smokey, better with age',
+  },
+  {
+    batchNo: 18,
+    name: 'Blonde',
+    style: 'Belgian Blond Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-02-26',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 29,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 15,
+      },
+      {
+        name: 'Wheat Malt, Bel',
+        amount: 8,
+      },
+      {
+        name: 'Wheat, Flaked',
+        amount: 1.5,
+      },
+      {
+        name: 'Honey Malt',
+        amount: 1.5,
+      },
+      {
+        name: 'Carafoam',
+        amount: 1,
+      },
+      {
+        name: 'Candi Sugar, Clear',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Hallertauer',
+        amount: 2,
+        usage: 'Bittering',
+      },
+      {
+        name: 'East Kent Goldings (EKG)',
+        amount: 2,
+        usage: 'Bittering',
+      },
+    ],
+    yeast: [
+      {
+        name: 'Irish Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1084',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Delicious',
+  },
+  {
+    batchNo: 19,
+    name: 'Zombie Dust London',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-16',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Was okay',
+  },
+  {
+    batchNo: 20,
+    name: 'Zombie Dust British',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-16',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Was okay',
+  },
+  {
+    batchNo: 21,
+    name: 'Zombie Dust',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-16',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Was okay',
+  },
+  {
+    batchNo: 22,
+    name: 'Zombie Dust',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-16',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Was okay',
+  },
+  {
+    batchNo: 23,
+    name: 'Zombie Dust (Omega)',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-21',
+    bottlingDate: '',
+    og: 1.055,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
       },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Okay, too dark.. too much cara 45 | Was okay',
+  },
+  {
+    batchNo: 24,
+    name: 'Moo Moo Canoe',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-25',
+    bottlingDate: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 0,
+    ibu: 17,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 15.46,
+      },
       {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 2.21
+        name: 'Milk Sugar (Lactose)',
+        amount: 2.21,
       },
       {
-        "name": "Roasted Barley",
-        "amount": 2.15
+        name: 'Roasted Barley',
+        amount: 2.15,
       },
       {
-        "name": "Munich 10L (Briess)",
-        "amount": 1.66
+        name: 'Munich 10L (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "Barley, Flaked (Briess)",
-        "amount": 1.66
+        name: 'Barley, Flaked (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "Caramel Malt - 60L (Briess)",
-        "amount": 1.62
+        name: 'Caramel Malt - 60L (Briess)',
+        amount: 1.62,
       },
       {
-        "name": "Chocolate Malt",
-        "amount": 1.62
+        name: 'Chocolate Malt',
+        amount: 1.62,
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 1.1
-      }
+        name: 'Oats, Flaked',
+        amount: 1.1,
+      },
     ],
-    "hops": [
+    hops: [
+      {
+        name: 'Magnum',
+        amount: 0.8,
+        usage: 'Bittering',
+      },
       {
-        "name": "Magnum",
-        "amount": 0.8,
-        "usage": "Bittering"
+        name: 'Goldings, East Kent',
+        amount: 2.2,
+        usage: 'Both',
       },
+    ],
+    yeast: [
       {
-        "name": "Goldings, East Kent",
-        "amount": 2.2,
-        "usage": "Both"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "US-05 Safale American",
-        "laboratory": "Fermentis",
-        "productId": ""
-      }
+        name: 'US-05 Safale American',
+        laboratory: 'Fermentis',
+        productId: '',
+      },
     ],
-    "source": "beersmith",
-    "tastingNotes": "Delicious! FUCKING DELICIOUS",
-    "brewingNotes": "Estimated OG from Moo Moo Canoe recipe"
+    source: 'beersmith',
+    tastingNotes: 'Delicious! FUCKING DELICIOUS',
+    brewingNotes: 'Estimated OG from Moo Moo Canoe recipe',
   },
   {
-    "batchNo": 25,
-    "name": "Moo Moo Canoe",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-03-25",
-    "bottlingDate": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 17,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 25,
+    name: 'Moo Moo Canoe',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-03-25',
+    bottlingDate: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 0,
+    ibu: 17,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15.46
+        name: 'Pale Malt (2 Row) US',
+        amount: 15.46,
       },
       {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 2.21
+        name: 'Milk Sugar (Lactose)',
+        amount: 2.21,
       },
       {
-        "name": "Roasted Barley",
-        "amount": 2.15
+        name: 'Roasted Barley',
+        amount: 2.15,
       },
       {
-        "name": "Munich 10L (Briess)",
-        "amount": 1.66
+        name: 'Munich 10L (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "Barley, Flaked (Briess)",
-        "amount": 1.66
+        name: 'Barley, Flaked (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "Caramel Malt - 60L (Briess)",
-        "amount": 1.62
+        name: 'Caramel Malt - 60L (Briess)',
+        amount: 1.62,
       },
       {
-        "name": "Chocolate Malt",
-        "amount": 1.62
+        name: 'Chocolate Malt',
+        amount: 1.62,
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 1.1
-      }
+        name: 'Oats, Flaked',
+        amount: 1.1,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Magnum",
-        "amount": 0.8,
-        "usage": "Bittering"
+        name: 'Magnum',
+        amount: 0.8,
+        usage: 'Bittering',
       },
       {
-        "name": "Goldings, East Kent",
-        "amount": 2.2,
-        "usage": "Both"
-      }
+        name: 'Goldings, East Kent',
+        amount: 2.2,
+        usage: 'Both',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "US-05 Safale American",
-        "laboratory": "Fermentis",
-        "productId": ""
-      }
+        name: 'US-05 Safale American',
+        laboratory: 'Fermentis',
+        productId: '',
+      },
     ],
-    "source": "beersmith",
-    "tastingNotes": "Delicious! FUCKING DELICIOUS",
-    "brewingNotes": "Estimated OG from Moo Moo Canoe recipe"
+    source: 'beersmith',
+    tastingNotes: 'Delicious! FUCKING DELICIOUS',
+    brewingNotes: 'Estimated OG from Moo Moo Canoe recipe',
   },
   {
-    "batchNo": 26,
-    "name": "Raging Redhead",
-    "style": "Irish Red Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-04-09",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 23,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 26,
+    name: 'Raging Redhead',
+    style: 'Irish Red Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-04-09',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 23,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 18
+        name: 'Pale Malt (2 Row) US',
+        amount: 18,
       },
       {
-        "name": "Special B Malt",
-        "amount": 1
+        name: 'Special B Malt',
+        amount: 1,
       },
       {
-        "name": "Aromatic Malt",
-        "amount": 1
+        name: 'Aromatic Malt',
+        amount: 1,
       },
       {
-        "name": "Munich Malt",
-        "amount": 1
+        name: 'Munich Malt',
+        amount: 1,
       },
       {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      }
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Crystal",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Crystal',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Cascade",
-        "amount": 2,
-        "usage": "Bittering"
-      }
+        name: 'Cascade',
+        amount: 2,
+        usage: 'Bittering',
+      },
     ],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.049. Pre-boil volume 14g. Post-boil gravity 1.062 (target 1.059). Post-boil volume 12g. Notes: Mash temp dropped from 152 to 140. Thermometers give very different readings. Added 15min to the boil. Therminator is CLEAN!",
-    "tastingNotes": "Good, faded after time"
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.049. Pre-boil volume 14g. Post-boil gravity 1.062 (target 1.059). Post-boil volume 12g. Notes: Mash temp dropped from 152 to 140. Thermometers give very different readings. Added 15min to the boil. Therminator is CLEAN!',
+    tastingNotes: 'Good, faded after time',
   },
   {
-    "batchNo": 27,
-    "name": "Strawberrysaurus Rex",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-04-18",
-    "bottlingDate": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 39,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 27,
+    name: 'Strawberrysaurus Rex',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-04-18',
+    bottlingDate: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 0,
+    ibu: 39,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 16,
+      },
+      {
+        name: 'Carafoam',
+        amount: 2,
+      },
+      {
+        name: 'Caramel Malt - 20L (Briess)',
+        amount: 2,
+      },
+      {
+        name: 'Vienna Malt',
+        amount: 2,
+      },
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 16
+        name: 'Wheat Malt, Bel',
+        amount: 2,
       },
       {
-        "name": "Carafoam",
-        "amount": 2
+        name: 'Caramel Malt - 40L (Briess)',
+        amount: 1,
       },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Both',
+      },
+    ],
+    yeast: [
       {
-        "name": "Caramel Malt - 20L (Briess)",
-        "amount": 2
+        name: 'American Ale II',
+        laboratory: 'Wyeast Labs',
+        productId: '1272',
       },
+    ],
+    source: 'beersmith',
+    tastingNotes: 'Delicious',
+    brewingNotes: 'Estimated OG from Strawberry Saurus-Rex recipe',
+  },
+  {
+    batchNo: 28,
+    name: 'Oberon Clone',
+    style: 'American Wheat or Rye Beer',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-04-26',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 15,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Vienna Malt",
-        "amount": 2
+        name: 'Pale Malt (2 Row) US',
+        amount: 13,
       },
       {
-        "name": "Wheat Malt, Bel",
-        "amount": 2
+        name: 'White Wheat Malt',
+        amount: 9,
       },
       {
-        "name": "Caramel Malt - 40L (Briess)",
-        "amount": 1
-      }
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Saaz',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Saaz',
+        amount: 2,
+        usage: 'Both',
       },
       {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Both"
-      }
+        name: 'Cascade',
+        amount: 2,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Saaz',
+        amount: 1,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "American Ale II",
-        "laboratory": "Wyeast Labs",
-        "productId": "1272"
-      }
+        name: 'American Wheat Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1010',
+      },
     ],
-    "source": "beersmith",
-    "tastingNotes": "Delicious",
-    "brewingNotes": "Estimated OG from Strawberry Saurus-Rex recipe"
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.052. Pre-boil volume 13.75g. Notes: Mash in at 155, dropped to 150, heated to 154 at 30 mins.',
+    tastingNotes: 'This was okay',
   },
   {
-    "batchNo": 28,
-    "name": "Oberon Clone",
-    "style": "American Wheat or Rye Beer",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-04-26",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 15,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 29,
+    name: 'Mosaic Dust',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-05-04',
+    bottlingDate: '',
+    og: 1.065,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.055. Pre-boil volume 13.75g. Post-boil gravity 1.062. Post-boil volume 12g. Notes: Mash temp dropped to 140. Raised to 151 and added more time (20m?). So MANY HOPS OMG. Recirc for 10 min. Whirlpool.',
+    tastingNotes: 'Delicious! Too dark',
+  },
+  {
+    batchNo: 30,
+    name: 'Invade Canada',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-05-31',
+    bottlingDate: '',
+    og: 1.052,
+    fg: 1.01,
+    abv: 5.5,
+    ibu: 36,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 13
+        name: 'Pale Malt (2 Row) US',
+        amount: 19,
       },
       {
-        "name": "White Wheat Malt",
-        "amount": 9
+        name: 'Caramel/Crystal Malt - 40L',
+        amount: 2,
       },
       {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      }
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
     ],
-    "hops": [
+    hops: [
+      {
+        name: 'Cascade',
+        amount: 2,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Cascade',
+        amount: 1,
+        usage: 'Bittering',
+      },
       {
-        "name": "Saaz",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Simcoe',
+        amount: 1,
+        usage: 'Both',
       },
       {
-        "name": "Saaz",
-        "amount": 2,
-        "usage": "Both"
+        name: 'Nelson Sauvin',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Cascade",
-        "amount": 2,
-        "usage": "Aroma"
+        name: 'Amarillo',
+        amount: 4,
+        usage: 'Aroma',
       },
       {
-        "name": "Saaz",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Galaxy',
+        amount: 2,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "American Wheat Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1010"
-      }
+        name: 'American Ale II',
+        laboratory: 'Wyeast Labs',
+        productId: '1272',
+      },
     ],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.052. Pre-boil volume 13.75g. Notes: Mash in at 155, dropped to 150, heated to 154 at 30 mins.",
-    "tastingNotes": "This was okay"
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.046 (1.046 est). Pre-boil volume 13.75g. Post-boil gravity 1.052 (1.054 est). Post-boil volume 12g. Fermenter volume 11g. Notes: First time hitting target pre-boil. Very smooth start. 3.5h Brew Day!!!',
+    tastingNotes: 'DUMPED',
+  },
+  {
+    batchNo: 31,
+    name: 'Withered Stout',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-06-07',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'All measurements N/A on whiteboard. Notes: Starting Drunk. | Estimated OG from Withered Imperial Stout recipe',
+    tastingNotes: 'GOOD',
+  },
+  {
+    batchNo: 32,
+    name: 'Withered Stout Partygle',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-06-07',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      "Partigyle Notes: There's no party like a Tony party cause a Tony party don't stop!!! | Estimated OG from Withered Imperial Stout recipe",
+    tastingNotes: 'Dumped',
+  },
+  {
+    batchNo: 33,
+    name: 'Cider',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-06-07',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Very sweet',
   },
   {
-    "batchNo": 29,
-    "name": "Mosaic Dust",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-05-04",
-    "bottlingDate": "",
-    "og": 1.065,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.055. Pre-boil volume 13.75g. Post-boil gravity 1.062. Post-boil volume 12g. Notes: Mash temp dropped to 140. Raised to 151 and added more time (20m?). So MANY HOPS OMG. Recirc for 10 min. Whirlpool.",
-    "tastingNotes": "Delicious! Too dark"
+    batchNo: 34,
+    name: 'Little Heffer',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-06-14',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Very good, bananay',
+    brewingNotes: 'Estimated OG from Little Heffer recipe',
   },
   {
-    "batchNo": 30,
-    "name": "Invade Canada",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-05-31",
-    "bottlingDate": "",
-    "og": 1.052,
-    "fg": 1.01,
-    "abv": 5.5,
-    "ibu": 36,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 35,
+    name: 'Usurper Rye IPA',
+    style: 'American Wheat or Rye Beer',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-06-28',
+    bottlingDate: '',
+    og: 1.05,
+    fg: 0,
+    abv: 0,
+    ibu: 76,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 17,
+      },
+      {
+        name: 'Rye Malt',
+        amount: 6,
+      },
+      {
+        name: 'Aromatic Malt',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 20L',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 40L',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 80L',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt -120L',
+        amount: 1,
+      },
+      {
+        name: 'Carapils (Briess)',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Summit',
+        amount: 2,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Bittering',
+      },
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 19
+        name: 'Amarillo',
+        amount: 2,
+        usage: 'Both',
       },
       {
-        "name": "Caramel/Crystal Malt - 40L",
-        "amount": 2
+        name: 'Amarillo Gold',
+        amount: 1,
+        usage: 'Aroma',
       },
       {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      }
+        name: 'Amarillo',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'American Ale II',
+        laboratory: 'Wyeast Labs',
+        productId: '1272',
+      },
     ],
-    "hops": [
+    source: 'beersmith',
+    tastingNotes: 'Very good!',
+    brewingNotes: 'Estimated OG from Usurper recipe',
+  },
+  {
+    batchNo: 36,
+    name: 'Blue Moon Clone',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-07-03',
+    bottlingDate: '',
+    og: 1.044,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Ph too low. Pre-boil gravity 1.040 (est 1.042). Pre-boil volume 17.75g. Post-boil gravity 1.044. Post-boil volume 12.5g. Notes: .030 crush. pH stabilizer. 10 minute protein rest at 122. Our thermometers and hydrometer suck.',
+    tastingNotes: 'Good, needs more orange',
+  },
+  {
+    batchNo: 37,
+    name: 'GarabaldiHead 2',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-07-12',
+    bottlingDate: '',
+    og: 1.05,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Ph too low. Pre-boil gravity 1.050 (est 1.055). Pre-boil volume 13.75g. Post-boil gravity 1.050 (est 1.062). Post-boil volume 12g. Fermenter volume 10.50g. Notes: Peter showed up on time! Mashtun w/thermal wrap holds heat well. Added 3 tsp of Supercharge Mash. Our thermometers suck. Vigorous boil. Something off w/ hydrometer.',
+    tastingNotes: 'First Batch was better',
+  },
+  {
+    batchNo: 38,
+    name: 'Worlds Best OktoberFest',
+    style: 'Oktoberfest/Marzen',
+    category: 'lager',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-07-26',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 27,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Vienna Malt',
+        amount: 10,
+      },
       {
-        "name": "Cascade",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Munich Malt',
+        amount: 6,
       },
       {
-        "name": "Cascade",
-        "amount": 1,
-        "usage": "Bittering"
-      },
+        name: 'Pale Malt (2 Row) US',
+        amount: 6,
+      },
+    ],
+    hops: [
+      {
+        name: 'Hallertauer Hersbrucker',
+        amount: 4,
+        usage: 'Bittering',
+      },
+    ],
+    yeast: [
       {
-        "name": "Simcoe",
-        "amount": 1,
-        "usage": "Both"
+        name: 'Bohemian Lager',
+        laboratory: 'Wyeast Labs',
+        productId: '2124',
       },
-      {
-        "name": "Nelson Sauvin",
-        "amount": 2,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Galaxy",
-        "amount": 2,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Ale II",
-        "laboratory": "Wyeast Labs",
-        "productId": "1272"
-      }
-    ],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.046 (1.046 est). Pre-boil volume 13.75g. Post-boil gravity 1.052 (1.054 est). Post-boil volume 12g. Fermenter volume 11g. Notes: First time hitting target pre-boil. Very smooth start. 3.5h Brew Day!!!",
-    "tastingNotes": "DUMPED"
-  },
-  {
-    "batchNo": 31,
-    "name": "Withered Stout",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-06-07",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "All measurements N/A on whiteboard. Notes: Starting Drunk. | Estimated OG from Withered Imperial Stout recipe",
-    "tastingNotes": "GOOD"
-  },
-  {
-    "batchNo": 32,
-    "name": "Withered Stout Partygle",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-06-07",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Partigyle Notes: There's no party like a Tony party cause a Tony party don't stop!!! | Estimated OG from Withered Imperial Stout recipe",
-    "tastingNotes": "Dumped"
+    ],
+    source: 'beersmith',
+    brewingNotes:
+      'Ph 5.31. Pre-boil gravity 1.047 (est 1.044). Pre-boil volume 14g (est 14.5g). Post-boil gravity 1.052 (est 1.054). Post-boil volume 12.5g (est 12.25g). Fermenter volume 10.75g (est 11g). Notes: Our first lager! New pH meter!',
+    tastingNotes: 'Very good for first Lager',
+  },
+  {
+    batchNo: 39,
+    name: 'Hop Tarted',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-08-02',
+    bottlingDate: '',
+    og: 1.082,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.055/1.062 (est 1.070). Pre-boil volume 8.5g (est 8.40g). Post-boil gravity 1.082 (est 1.094). Post-boil volume 6.5g. Fermenter volume est 5.5g. Notes: Very low gravity, added 1.5lb DME. So hot out. Very close to many boilovers!',
+    tastingNotes: "Delicious! | Paul didn't show up :(",
   },
   {
-    "batchNo": 33,
-    "name": "Cider",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-06-07",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Very sweet"
+    batchNo: 40,
+    name: 'Withered Stout',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-08-23',
+    bottlingDate: '',
+    og: 1.12,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.090 (est 1.092). Pre-boil volume 8g. Post-boil gravity 1.120 (est 1.117). Post-boil volume 6g (est 6.5g). Fermenter volume 5g (est 5.5g). Notes: Waited 10min after vorlauf before transferring to boil. Slightly tilted the mashtun while draining. Changed to 90 min boil. Killed ALL of the propane tanks - stopped boil 3 times. Added 2.5lb DME during boil. Marshmallow Fluff @ 10 min.',
   },
   {
-    "batchNo": 34,
-    "name": "Little Heffer",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-06-14",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Very good, bananay",
-    "brewingNotes": "Estimated OG from Little Heffer recipe"
+    batchNo: 41,
+    name: 'Smore Punkin',
+    style: 'American Amber Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-08-30',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 31,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 18,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 3,
+      },
+      {
+        name: 'Oats, Flaked',
+        amount: 2.6,
+      },
+      {
+        name: 'Victory Malt',
+        amount: 2,
+      },
+      {
+        name: 'Vienna Malt',
+        amount: 2,
+      },
+    ],
+    hops: [
+      {
+        name: 'Cluster',
+        amount: 2,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Goldings, East Kent',
+        amount: 2,
+        usage: 'Bittering',
+      },
+    ],
+    yeast: [
+      {
+        name: 'Ringwood Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1187',
+      },
+    ],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.061 (est 1.060). Pre-boil volume 13.75g. Post-boil gravity 1.066 (est 1.069). Post-boil volume 12.5g (est 12.74g). Fermenter volume 11g. Notes: 2 hour mash bc we went to go get food. 2.5lb pumpkin in mash w/cinnamon. 3.5lb pumpkin in boil. Stuck mash (surprise, surprise). Adding pumpkin killed the boil. Yay! Drunk bike rides!',
+    tastingNotes: 'Very good',
   },
   {
-    "batchNo": 35,
-    "name": "Usurper Rye IPA",
-    "style": "American Wheat or Rye Beer",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-06-28",
-    "bottlingDate": "",
-    "og": 1.05,
-    "fg": 0,
-    "abv": 0,
-    "ibu": 76,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 42,
+    name: 'Devils Wheat',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-09-06',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 59,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 10,
+      },
+      {
+        name: 'Wheat Malt, Ger',
+        amount: 10,
+      },
+      {
+        name: 'Chocolate Rye Malt',
+        amount: 1,
+      },
+      {
+        name: 'Vienna Malt',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 20L',
+        amount: 1,
+      },
+      {
+        name: 'Roasted Barley',
+        amount: 0.25,
+      },
+    ],
+    hops: [
+      {
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Columbus (Tomahawk)',
+        amount: 2,
+        usage: 'Both',
+      },
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 17
+        name: 'Amarillo Gold',
+        amount: 2,
+        usage: 'Both',
       },
       {
-        "name": "Rye Malt",
-        "amount": 6
+        name: 'Amarillo Gold',
+        amount: 3,
+        usage: 'Aroma',
       },
       {
-        "name": "Aromatic Malt",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 20L",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 40L",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 80L",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt -120L",
-        "amount": 1
-      },
-      {
-        "name": "Carapils (Briess)",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Summit",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Ale II",
-        "laboratory": "Wyeast Labs",
-        "productId": "1272"
-      }
-    ],
-    "source": "beersmith",
-    "tastingNotes": "Very good!",
-    "brewingNotes": "Estimated OG from Usurper recipe"
-  },
-  {
-    "batchNo": 36,
-    "name": "Blue Moon Clone",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-07-03",
-    "bottlingDate": "",
-    "og": 1.044,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Ph too low. Pre-boil gravity 1.040 (est 1.042). Pre-boil volume 17.75g. Post-boil gravity 1.044. Post-boil volume 12.5g. Notes: .030 crush. pH stabilizer. 10 minute protein rest at 122. Our thermometers and hydrometer suck.",
-    "tastingNotes": "Good, needs more orange"
-  },
-  {
-    "batchNo": 37,
-    "name": "GarabaldiHead 2",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-07-12",
-    "bottlingDate": "",
-    "og": 1.05,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Ph too low. Pre-boil gravity 1.050 (est 1.055). Pre-boil volume 13.75g. Post-boil gravity 1.050 (est 1.062). Post-boil volume 12g. Fermenter volume 10.50g. Notes: Peter showed up on time! Mashtun w/thermal wrap holds heat well. Added 3 tsp of Supercharge Mash. Our thermometers suck. Vigorous boil. Something off w/ hydrometer.",
-    "tastingNotes": "First Batch was better"
-  },
-  {
-    "batchNo": 38,
-    "name": "Worlds Best OktoberFest",
-    "style": "Oktoberfest/Marzen",
-    "category": "lager",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-07-26",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 27,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Vienna Malt",
-        "amount": 10
-      },
-      {
-        "name": "Munich Malt",
-        "amount": 6
-      },
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 6
-      }
-    ],
-    "hops": [
-      {
-        "name": "Hallertauer Hersbrucker",
-        "amount": 4,
-        "usage": "Bittering"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "Bohemian Lager",
-        "laboratory": "Wyeast Labs",
-        "productId": "2124"
-      }
-    ],
-    "source": "beersmith",
-    "brewingNotes": "Ph 5.31. Pre-boil gravity 1.047 (est 1.044). Pre-boil volume 14g (est 14.5g). Post-boil gravity 1.052 (est 1.054). Post-boil volume 12.5g (est 12.25g). Fermenter volume 10.75g (est 11g). Notes: Our first lager! New pH meter!",
-    "tastingNotes": "Very good for first Lager"
-  },
-  {
-    "batchNo": 39,
-    "name": "Hop Tarted",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-08-02",
-    "bottlingDate": "",
-    "og": 1.082,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.055/1.062 (est 1.070). Pre-boil volume 8.5g (est 8.40g). Post-boil gravity 1.082 (est 1.094). Post-boil volume 6.5g. Fermenter volume est 5.5g. Notes: Very low gravity, added 1.5lb DME. So hot out. Very close to many boilovers!",
-    "tastingNotes": "Delicious! | Paul didn't show up :("
-  },
-  {
-    "batchNo": 40,
-    "name": "Withered Stout",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-08-23",
-    "bottlingDate": "",
-    "og": 1.12,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.090 (est 1.092). Pre-boil volume 8g. Post-boil gravity 1.120 (est 1.117). Post-boil volume 6g (est 6.5g). Fermenter volume 5g (est 5.5g). Notes: Waited 10min after vorlauf before transferring to boil. Slightly tilted the mashtun while draining. Changed to 90 min boil. Killed ALL of the propane tanks - stopped boil 3 times. Added 2.5lb DME during boil. Marshmallow Fluff @ 10 min."
-  },
-  {
-    "batchNo": 41,
-    "name": "Smore Punkin",
-    "style": "American Amber Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-08-30",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 31,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 18
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 3
-      },
-      {
-        "name": "Oats, Flaked",
-        "amount": 2.6
-      },
-      {
-        "name": "Victory Malt",
-        "amount": 2
-      },
-      {
-        "name": "Vienna Malt",
-        "amount": 2
-      }
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'American Wheat Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1010',
+      },
     ],
-    "hops": [
-      {
-        "name": "Cluster",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2,
-        "usage": "Bittering"
-      }
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.060 (est 1.058). Pre-boil volume 14g. Post-boil gravity 1.064 (est 1.067). Post-boil volume 12.25g (est 12.75g). Notes: Fixed the fly sparge by using a longer hose. Boilovers!! Added 5 min to boil bc it stopped boiling several times. Flameout hops were added 7min before flame out. Paul is an awesome DJ.',
+    tastingNotes: 'Pretty good, more hops next time',
+  },
+  {
+    batchNo: 43,
+    name: 'Devils Wheat',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-09-06',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 59,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 10,
+      },
+      {
+        name: 'Wheat Malt, Ger',
+        amount: 10,
+      },
+      {
+        name: 'Chocolate Rye Malt',
+        amount: 1,
+      },
+      {
+        name: 'Vienna Malt',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 20L',
+        amount: 1,
+      },
+      {
+        name: 'Roasted Barley',
+        amount: 0.25,
+      },
     ],
-    "yeast": [
-      {
-        "name": "Ringwood Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1187"
-      }
-    ],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.061 (est 1.060). Pre-boil volume 13.75g. Post-boil gravity 1.066 (est 1.069). Post-boil volume 12.5g (est 12.74g). Fermenter volume 11g. Notes: 2 hour mash bc we went to go get food. 2.5lb pumpkin in mash w/cinnamon. 3.5lb pumpkin in boil. Stuck mash (surprise, surprise). Adding pumpkin killed the boil. Yay! Drunk bike rides!",
-    "tastingNotes": "Very good"
-  },
-  {
-    "batchNo": 42,
-    "name": "Devils Wheat",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-09-06",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 59,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 10
+    hops: [
+      {
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Wheat Malt, Ger",
-        "amount": 10
+        name: 'Columbus (Tomahawk)',
+        amount: 2,
+        usage: 'Both',
       },
       {
-        "name": "Chocolate Rye Malt",
-        "amount": 1
+        name: 'Amarillo Gold',
+        amount: 2,
+        usage: 'Both',
       },
       {
-        "name": "Vienna Malt",
-        "amount": 1
+        name: 'Amarillo Gold',
+        amount: 3,
+        usage: 'Aroma',
       },
       {
-        "name": "Caramel/Crystal Malt - 20L",
-        "amount": 1
+        name: 'Columbus (Tomahawk)',
+        amount: 1,
+        usage: 'Aroma',
       },
+    ],
+    yeast: [
       {
-        "name": "Roasted Barley",
-        "amount": 0.25
-      }
+        name: 'American Wheat Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1010',
+      },
     ],
-    "hops": [
+    source: 'beersmith',
+    tastingNotes: 'Pretty good, more hops next time',
+  },
+  {
+    batchNo: 44,
+    name: 'Moo Moo Canoe',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-09-20',
+    bottlingDate: '',
+    og: 1.073,
+    fg: 1.01,
+    abv: 0,
+    ibu: 17,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 15.46,
+      },
+      {
+        name: 'Milk Sugar (Lactose)',
+        amount: 2.21,
+      },
+      {
+        name: 'Roasted Barley',
+        amount: 2.15,
+      },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Munich 10L (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Barley, Flaked (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 2,
-        "usage": "Both"
+        name: 'Caramel Malt - 60L (Briess)',
+        amount: 1.62,
       },
       {
-        "name": "Amarillo Gold",
-        "amount": 2,
-        "usage": "Both"
+        name: 'Chocolate Malt',
+        amount: 1.62,
       },
       {
-        "name": "Amarillo Gold",
-        "amount": 3,
-        "usage": "Aroma"
+        name: 'Oats, Flaked',
+        amount: 1.1,
       },
+    ],
+    hops: [
+      {
+        name: 'Magnum',
+        amount: 0.8,
+        usage: 'Bittering',
+      },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'Goldings, East Kent',
+        amount: 2.2,
+        usage: 'Both',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "American Wheat Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1010"
-      }
+        name: 'US-05 Safale American',
+        laboratory: 'Fermentis',
+        productId: '',
+      },
     ],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.060 (est 1.058). Pre-boil volume 14g. Post-boil gravity 1.064 (est 1.067). Post-boil volume 12.25g (est 12.75g). Notes: Fixed the fly sparge by using a longer hose. Boilovers!! Added 5 min to boil bc it stopped boiling several times. Flameout hops were added 7min before flame out. Paul is an awesome DJ.",
-    "tastingNotes": "Pretty good, more hops next time"
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.053 (est 1.052). Pre-boil volume 13.5g. Post-boil gravity 1.073 (est 1.074). Post-boil volume 12.25g. Fermenter volume 11.5g (est 11g). Notes: Brewing w/ Kyle! Added 15min to boil bc tank emptied.',
+    tastingNotes: 'Delicious! FUCKING DELICIOUS',
+  },
+  {
+    batchNo: 45,
+    name: "Vince's Hef",
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-10-04',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'Good, maybe ferment at higher temp',
+    brewingNotes: 'Estimated OG from Lemon Lime Hefe recipe',
+  },
+  {
+    batchNo: 46,
+    name: "Vince's Hoppy Wheat",
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-10-04',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    tastingNotes: 'very good',
+  },
+  {
+    batchNo: 47,
+    name: 'All The Grain',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-10-04',
+    bottlingDate: '',
+    og: 1.12,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      "Pre-boil gravity 1.090 (est ??). Pre-boil volume 6.75g (est 7.5g). Post-boil gravity 1.120 (est ??). Post-boil volume 5.75g (est 6.2g). Fermenter volume 4.5g (est 5g). Notes: WHAT WERE WE THINKING. We're drunk. What are we doing. Scott & Amy actually showed up. Adrian brought tin foil!",
   },
   {
-    "batchNo": 43,
-    "name": "Devils Wheat",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-09-06",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 59,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 48,
+    name: 'Saison',
+    style: 'Saison',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-10-11',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 38,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 17,
+      },
+      {
+        name: 'White Wheat Malt',
+        amount: 3,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 1,
+      },
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 10
+        name: 'Oats, Flaked',
+        amount: 1,
       },
+    ],
+    hops: [
       {
-        "name": "Wheat Malt, Ger",
-        "amount": 10
+        name: 'Fuggles',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Chocolate Rye Malt",
-        "amount": 1
+        name: 'Sorachi Ace',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Vienna Malt",
-        "amount": 1
+        name: 'Fuggles',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Caramel/Crystal Malt - 20L",
-        "amount": 1
+        name: 'Fuggles',
+        amount: 2,
+        usage: 'Both',
       },
+    ],
+    yeast: [
       {
-        "name": "Roasted Barley",
-        "amount": 0.25
-      }
+        name: 'French Saison',
+        laboratory: 'Wyeast Labs',
+        productId: '3711',
+      },
     ],
-    "hops": [
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.044 (est 1.048). Pre-boil volume 13.75g (est 14g). Notes: Nathaniel is here! With Das Boot! Tony keeps messing everything up.',
+    tastingNotes: 'Good',
+  },
+  {
+    batchNo: 49,
+    name: 'Blonde',
+    style: 'Belgian Blond Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-11-01',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 29,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 15,
+      },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Wheat Malt, Bel',
+        amount: 8,
       },
       {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Wheat, Flaked',
+        amount: 1.5,
       },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 2,
-        "usage": "Both"
+        name: 'Honey Malt',
+        amount: 1.5,
       },
       {
-        "name": "Amarillo Gold",
-        "amount": 2,
-        "usage": "Both"
+        name: 'Carafoam',
+        amount: 1,
       },
       {
-        "name": "Amarillo Gold",
-        "amount": 3,
-        "usage": "Aroma"
+        name: 'Candi Sugar, Clear',
+        amount: 1,
       },
+    ],
+    hops: [
+      {
+        name: 'Hallertauer',
+        amount: 2,
+        usage: 'Bittering',
+      },
       {
-        "name": "Columbus (Tomahawk)",
-        "amount": 1,
-        "usage": "Aroma"
-      }
+        name: 'East Kent Goldings (EKG)',
+        amount: 2,
+        usage: 'Bittering',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "American Wheat Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1010"
-      }
+        name: 'Irish Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1084',
+      },
     ],
-    "source": "beersmith",
-    "tastingNotes": "Pretty good, more hops next time"
+    source: 'beersmith',
+    brewingNotes:
+      "Pre-boil gravity 1.063 (est 1.063). Pre-boil volume 13.75g. Mash temp est 152F. Notes: Earliest we've ever started. Boil started before noon! Little bit of boil over.",
+    tastingNotes: 'Tastes like a hef, but thats okay | Delicious',
   },
   {
-    "batchNo": 44,
-    "name": "Moo Moo Canoe",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-09-20",
-    "bottlingDate": "",
-    "og": 1.073,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 17,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 50,
+    name: 'Rye Usurper',
+    style: 'American Wheat or Rye Beer',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-12-20',
+    bottlingDate: '',
+    og: 1.064,
+    fg: 0,
+    abv: 0,
+    ibu: 76,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15.46
+        name: 'Pale Malt (2 Row) US',
+        amount: 17,
       },
       {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 2.21
+        name: 'Rye Malt',
+        amount: 6,
       },
       {
-        "name": "Roasted Barley",
-        "amount": 2.15
+        name: 'Aromatic Malt',
+        amount: 1,
       },
       {
-        "name": "Munich 10L (Briess)",
-        "amount": 1.66
+        name: 'Caramel/Crystal Malt - 20L',
+        amount: 1,
       },
       {
-        "name": "Barley, Flaked (Briess)",
-        "amount": 1.66
+        name: 'Caramel/Crystal Malt - 40L',
+        amount: 1,
       },
       {
-        "name": "Caramel Malt - 60L (Briess)",
-        "amount": 1.62
+        name: 'Caramel/Crystal Malt - 80L',
+        amount: 1,
       },
       {
-        "name": "Chocolate Malt",
-        "amount": 1.62
+        name: 'Caramel/Crystal Malt -120L',
+        amount: 1,
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 1.1
-      }
+        name: 'Carapils (Briess)',
+        amount: 1,
+      },
     ],
-    "hops": [
+    hops: [
+      {
+        name: 'Summit',
+        amount: 2,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Amarillo',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Amarillo Gold',
+        amount: 1,
+        usage: 'Aroma',
+      },
       {
-        "name": "Magnum",
-        "amount": 0.8,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2.2,
-        "usage": "Both"
-      }
-    ],
-    "yeast": [
+        name: 'Amarillo',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
       {
-        "name": "US-05 Safale American",
-        "laboratory": "Fermentis",
-        "productId": ""
-      }
+        name: 'American Ale II',
+        laboratory: 'Wyeast Labs',
+        productId: '1272',
+      },
     ],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.053 (est 1.052). Pre-boil volume 13.5g. Post-boil gravity 1.073 (est 1.074). Post-boil volume 12.25g. Fermenter volume 11.5g (est 11g). Notes: Brewing w/ Kyle! Added 15min to boil bc tank emptied.",
-    "tastingNotes": "Delicious! FUCKING DELICIOUS"
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.059 (est 1.060). Pre-boil volume 13.75g. Post-boil gravity 1.064 (est 1.068). Post-boil volume 12g (est 12.75g). Fermenter volume 11g. Mash temp 154F. Notes: 75min mash. 4 drops defoamer. Extra 1oz hops @ 10. Extra 1oz hops @ flameout. Extra 1lb rye.',
+    tastingNotes: 'Very good!',
+  },
+  {
+    batchNo: 51,
+    name: 'BA Porter',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-12-27',
+    bottlingDate: '',
+    og: 1.086,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.077 (1.085 corrected @ 156F) (est 1.081). Pre-boil volume 7.25g (est 7.75g). Post-boil gravity 1.086 (est 1.1). Post-boil volume 5.25g (est 6.5g). Fermenter volume 5.1g (est 5.5g). Mash temp 150F. Notes: Back2Back Brew Days 1/2. Mash dropped 5F - Reheated. Hour and half boil.',
+  },
+  {
+    batchNo: 52,
+    name: 'BA Withered',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2015-12-28',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes: 'Estimated OG from Withered Imperial Stout recipe',
+  },
+  {
+    batchNo: 53,
+    name: 'Withered Stout 3',
+    style: 'Russian Imperial Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-01-03',
+    bottlingDate: '',
+    og: 1.143,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.080 (1.090 first runnings, est 1.094). Pre-boil volume 8+2g (est 9.5g). Post-boil gravity est 1.143. Post-boil volume 6.75g (est 6.5g). Fermenter volume 5.5g. Mash temp 158F (est 160F). Notes: Ice Storm today. Started mash at 162 - dropped to 158 - target 160ish. Layered boil - Taking 1g to boil on stovetop & dump in boiling wort. DME is flammable. Boilover while left unattended. 1.070 Before DME, 1.080 After DME. 1090 in first runnings. 2h7m long boil. Added Lager at 20.',
+  },
+  {
+    batchNo: 54,
+    name: 'Wandering Whisp',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-01-17',
+    bottlingDate: '',
+    og: 1.066,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.057 (est 1.057). Pre-boil volume 13.75g (est 13.75g). Post-boil gravity est 1.066. Fermenter volume est 11g. Mash temp 151F (est 152F). Notes: Mash dropped to 145 - heated it up. New mash bag! First Brew of the year. Using 1056 when we wanted 1272.',
+  },
+  {
+    batchNo: 55,
+    name: 'Saison',
+    style: 'Saison',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-02-21',
+    bottlingDate: '',
+    og: 1.06,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      "Pre-boil gravity 1.047 (1.054 after sugar, est 1.053). Pre-boil volume 13.75g. Post-boil gravity 1.060 (est 1.058). Fermenter volume 11.5g (est 11g). Mash temp 148F. Notes: It's Cold Out! Really cold. Lost the last 5-10 min boil. 5/5 out of propane.",
+  },
+  {
+    batchNo: 56,
+    name: 'Little Heffer',
+    style: 'Hefeweizen',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-02-27',
+    bottlingDate: '',
+    og: 1.057,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.048 (est 1.049). Pre-boil volume 13.75g. Post-boil gravity est 1.057. Mash temp est 154F. Notes: Mistakingly added hops at 60 instead of 45.',
+  },
+  {
+    batchNo: 57,
+    name: "Devil's Wheat 2",
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-03-13',
+    bottlingDate: '',
+    og: 1.054,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.054 (est 1.051). Pre-boil volume 14g. Post-boil gravity 1.054 (est 1.058). Post-boil volume 12.75g. Fermenter volume 11g. Mash temp 157F (est 152F).',
+  },
+  {
+    batchNo: 58,
+    name: 'Zombie Dust',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-03-13',
+    bottlingDate: '',
+    og: 1.061,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.059 (est 1.057). Pre-boil volume 14g. Post-boil gravity 1.061 (est 1.066). Post-boil volume 12.5g. Fermenter volume 10.5g. Mash temp 152F. Notes: Out of 2-Row. Used Maris Otter. Whirlpooled starting at 55. Do we need to temp correct during pre-boil readings?',
   },
   {
-    "batchNo": 45,
-    "name": "Vince's Hef",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-10-04",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "Good, maybe ferment at higher temp",
-    "brewingNotes": "Estimated OG from Lemon Lime Hefe recipe"
+    batchNo: 59,
+    name: 'Moo Moo Canoe',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-03-13',
+    bottlingDate: '',
+    og: 1.065,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.050 (est 1.053). Pre-boil volume 14g (est 13.75g). Post-boil gravity 1.065 (est 1.074). Post-boil volume 13g (est 12.75g). Fermenter volume 12.5g (est 11g). Mash temp 155F (est 153F). Notes: Swapped 2 Row to Maris Otter. Magnum added at 45, not 60.',
   },
   {
-    "batchNo": 46,
-    "name": "Vince's Hoppy Wheat",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-10-04",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "tastingNotes": "very good"
+    batchNo: 60,
+    name: "Garabaldi's Head",
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-04-03',
+    bottlingDate: '',
+    og: 1.062,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.047 (est 1.055). Pre-boil volume 13.75g. Post-boil gravity est 1.062. Post-boil volume 12.5g (est 12.75g). Fermenter volume 9g (est 11g). Mash temp 153F. Notes: Swapped 2 ROW to Maris Otter. Yeast was frozen!!',
   },
   {
-    "batchNo": 47,
-    "name": "All The Grain",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-10-04",
-    "bottlingDate": "",
-    "og": 1.12,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.090 (est ??). Pre-boil volume 6.75g (est 7.5g). Post-boil gravity 1.120 (est ??). Post-boil volume 5.75g (est 6.2g). Fermenter volume 4.5g (est 5g). Notes: WHAT WERE WE THINKING. We're drunk. What are we doing. Scott & Amy actually showed up. Adrian brought tin foil!"
+    batchNo: 61,
+    name: 'Overlord',
+    style: 'IPA',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-05-14',
+    bottlingDate: '',
+    og: 1.066,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.054 (est 1.057). Pre-boil volume 13.75g. Post-boil gravity est 1.066. Post-boil volume 12.75g. Fermenter volume 10.75g (est 11g). Mash temp 152F. Notes: Whirlpool the entire boil!',
   },
   {
-    "batchNo": 48,
-    "name": "Saison",
-    "style": "Saison",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-10-11",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 38,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 62,
+    name: 'Lemon EF',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-06-19',
+    bottlingDate: '',
+    og: 1.062,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.045 (est 1.052). Pre-boil volume 12.50g (est 12.75). Post-boil gravity est 1.062. Mash temp est 154F. Notes: #MakeBrewingGreatAgain. Gravity sucks.',
+  },
+  {
+    batchNo: 63,
+    name: 'Invade Canada Redux',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-07-24',
+    bottlingDate: '',
+    og: 1.048,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.048 (est 1.050). Pre-boil volume 13.75g. Post-boil gravity 1.048 (est 1.058). Fermenter volume est 11g. Mash temp est 152F. Notes: SO FUCKING HOT OUT. Extra 5min on boil.',
+  },
+  {
+    batchNo: 64,
+    name: 'Strawberrysaurus Rex',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-07-31',
+    bottlingDate: '',
+    og: 1.053,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.044 (est 1.048). Pre-boil volume 13.75g. Post-boil gravity 1.053 (est 1.055). Post-boil volume 12.8g (est 12.25g). Mash temp 154F (est 156F). Notes: SO FUCKING HOT OUT.',
+  },
+  {
+    batchNo: 65,
+    name: 'Basic Blonde',
+    style: 'Belgian Blond Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-09-05',
+    bottlingDate: '',
+    og: 1.06,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      "Pre-boil gravity 1.053 (est 1.060). Pre-boil volume 13.75g. Post-boil gravity 1.060? (est 1.070). Post-boil volume 12.25g. Fermenter volume 10.75g (est 11g). Mash temp 154F. Notes: SO FUCKING HOT OUT. Doesn't account for the Belgian Candy sugar added post-mash. Why is the hydrometer a liar?",
+  },
+  {
+    batchNo: 66,
+    name: 'Smore Pumpkin',
+    style: 'American Amber Ale',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-09-25',
+    bottlingDate: '',
+    og: 1.061,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.057 (est 1.059). Pre-boil volume 14g (est 13.75g). Post-boil gravity 1.061 (est 1.068). Post-boil volume 12g (est 12.25g). Fermenter volume 11g. Mash temp 156F. Notes: SO FUCKING HOT OUT.',
+  },
+  {
+    batchNo: 67,
+    name: 'Barleywine',
+    style: 'Barleywine',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-10-16',
+    bottlingDate: '',
+    og: 1.138,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.070/1.085/1.015 (est 1.091). Pre-boil volume 9.5g. Post-boil gravity est 1.138. Post-boil volume 7.5g (est 6.5g). Fermenter volume 5.5g. Mash temp 155F (est 158F). Notes: #tonycanthang. New regulator is GREAT. 160 for first 15min of mash. Added 2lb DME bc pre-boil sucked.',
+  },
+  {
+    batchNo: 68,
+    name: 'Moo Moo Canoe',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2016-11-20',
+    bottlingDate: '',
+    og: 1.064,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.050 (est 1.053). Pre-boil volume 13.75g. Post-boil gravity 1.064 (est 1.074). Mash temp 155F. Notes: Forgot to add flaked oats/barley. Added them halfway through mash. Added 15min to mash. Fire makes things hot (Tony).',
+  },
+  {
+    batchNo: 69,
+    name: 'Killing Spree',
+    style: 'IPA',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2017-01-14',
+    bottlingDate: '',
+    og: 1.063,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.057 (est 1.057). Pre-boil volume 13.75g. Post-boil gravity 1.063 (est 1.067). Post-boil volume 12.25g. Fermenter volume 10.5g (est 11g). Mash temp 152F. Notes: Cold.',
+  },
+  {
+    batchNo: 70,
+    name: 'Riggity Wrecked',
+    style: 'Russian Imperial Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2017-01-14',
+    bottlingDate: '',
+    og: 1.15,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.072 before DME (est 1.093). Pre-boil volume 9g (est 8.75g). Post-boil gravity 1.150 (est 1.130). Post-boil volume 6.5g. Fermenter volume 5.5g. Mash temp 150F (est 149F). Notes: Double Milled. FIRE! Propane connection not tightened. Need a less thick hose for the HLT. Changed to 2hr boil. Added DME - 3lb. 1.072 Before DME. Finished wort shot on the ground.',
+  },
+  {
+    batchNo: 71,
+    name: 'GFYS IPA',
+    style: 'IPA',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2017-07-21',
+    bottlingDate: '',
+    og: 1.06,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.046 (1.065 corrected @ 160F, est 1.059). Pre-boil volume 13.75g. Post-boil gravity 1.060 (est 1.069). Post-boil volume 12.25g. Fermenter volume 11g. Mash temp 153F.',
+  },
+  {
+    batchNo: 72,
+    name: 'Saison',
+    style: 'Saison',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2017-07-29',
+    bottlingDate: '',
+    og: 1.05,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity est 1.048. Pre-boil volume 14g (est 13.75g). Post-boil gravity 1.050 (est 1.055). Post-boil volume 12.5g (est 12.25g). Fermenter volume 16g(?) (est 11g). Mash temp 156F.',
+  },
+  {
+    batchNo: 73,
+    name: 'Moo Moo Canoe',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2017-09-20',
+    bottlingDate: '',
+    og: 1.071,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.054 (est 1.053). Pre-boil volume 13.75g. Post-boil gravity est 1.071. Mash temp 155F (est 156F). Notes: Tank died. Need Beer.',
+  },
+  {
+    batchNo: 74,
+    name: 'Overlord',
+    style: 'IPA',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2017-09-20',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Est pre-boil gravity 1.057. Est pre-boil volume 13.75g. Est post-boil gravity 1.066. Est post-boil volume 12.25g. Est fermenter volume 11g. Est mash temp 156F. No actual measurements recorded. | Estimated OG from Overlord recipe',
+  },
+  {
+    batchNo: 75,
+    name: 'Make It Go Away NEIPA',
+    style: 'New England IPA',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2017-11-26',
+    bottlingDate: '',
+    og: 1.062,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.050 (est 1.062). Pre-boil volume 13.75g. Post-boil gravity 1.062 (est 1.072). Post-boil volume 11.5g (est 12.25g). Fermenter volume est 11g. Mash temp 155F (est 156F). Notes: Forgot to add the flaked malt.',
+  },
+  {
+    batchNo: 76,
+    name: 'Wheat',
+    style: 'American Wheat Beer',
+    category: 'ale',
+    brewer: 'Joe & Tony',
+    status: 'Completed',
+    brewDate: '2019-04-07',
+    bottlingDate: '',
+    og: 1.053,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'beersmith',
+    brewingNotes:
+      'Pre-boil gravity 1.044 (est 1.047). Pre-boil volume 13.75g. Post-boil gravity 1.053 (est 1.053). Post-boil volume 10g. Mash volume 11g (est 11.5g). Mash temp 157F (est 155F). Changes: Lemon Peel at 10 min. 5oz Citra. 5 Mosaic.',
+  },
+  {
+    batchNo: 77,
+    name: 'Bavarian hefeweizen',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2022-03-15',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 78,
+    name: 'Bavarian hefeweizen',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2022-03-20',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 79,
+    name: 'Wry Smile Rye IPA',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2022-07-24',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 80,
+    name: 'Star Maker Imperial Stout',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2022-09-21',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 81,
+    name: 'Twin Pines Piney IPA',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2022-11-09',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 82,
+    name: 'Spicy Sprinkles',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-03-18',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 83,
+    name: 'Beginning Bourbon',
+    style: 'Whiskey',
+    category: 'spirit',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-04-29',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 84,
+    name: 'Hellez Yeah',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-04-29',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 85,
+    name: "The Devil's Wheat 3",
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-06-23',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 86,
+    name: 'Czech It Out',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-08-08',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 87,
+    name: 'Wheat vodka',
+    style: 'Vodka',
+    category: 'spirit',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-08-19',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 88,
+    name: 'Imperial Hefe',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-09-17',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 89,
+    name: 'Moo Moo Canoe',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2023-11-22',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 90,
+    name: 'Second City Session IPA',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-03-10',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 91,
+    name: 'Overlord v3',
+    style: 'Belgian Blond Ale',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-04-28',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 29,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 15,
+      },
+      {
+        name: 'Wheat Malt, Bel',
+        amount: 8,
+      },
+      {
+        name: 'Wheat, Flaked',
+        amount: 1.5,
+      },
+      {
+        name: 'Honey Malt',
+        amount: 1.5,
+      },
+      {
+        name: 'Carafoam',
+        amount: 1,
+      },
+      {
+        name: 'Candi Sugar, Clear',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Hallertauer',
+        amount: 2,
+        usage: 'Bittering',
+      },
+      {
+        name: 'East Kent Goldings (EKG)',
+        amount: 2,
+        usage: 'Bittering',
+      },
+    ],
+    yeast: [
+      {
+        name: 'Irish Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1084',
+      },
+    ],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 92,
+    name: 'Bavarian hefeweizen',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-05-24',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 93,
+    name: "The Devil's Narwhal",
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-05-24',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 94,
+    name: 'Overlord v3.1',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-06-30',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 95,
+    name: '4PyRyeO Pale Ale',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-09-30',
+    bottlingDate: '',
+    og: 1.055,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 60,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 22,
+      },
+      {
+        name: 'Caramunich Malt',
+        amount: 2.5,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+      {
+        name: 'Caramel/Crystal Malt - 60L',
+        amount: 1,
+      },
+      {
+        name: 'Melanoiden Malt',
+        amount: 1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 2,
+        usage: 'Both',
+      },
+      {
+        name: 'Citra',
+        amount: 3,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+      {
+        name: 'Citra',
+        amount: 4,
+        usage: 'Aroma',
+      },
+    ],
+    yeast: [
+      {
+        name: 'English Ale',
+        laboratory: 'White Labs',
+        productId: 'WLP002',
+      },
+    ],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 96,
+    name: 'Moo Moo Canoe',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-12-27',
+    bottlingDate: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 0,
+    ibu: 17,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 15.46,
+      },
+      {
+        name: 'Milk Sugar (Lactose)',
+        amount: 2.21,
+      },
+      {
+        name: 'Roasted Barley',
+        amount: 2.15,
+      },
+      {
+        name: 'Munich 10L (Briess)',
+        amount: 1.66,
+      },
+      {
+        name: 'Barley, Flaked (Briess)',
+        amount: 1.66,
+      },
+      {
+        name: 'Caramel Malt - 60L (Briess)',
+        amount: 1.62,
+      },
+      {
+        name: 'Chocolate Malt',
+        amount: 1.62,
+      },
+      {
+        name: 'Oats, Flaked',
+        amount: 1.1,
+      },
+    ],
+    hops: [
+      {
+        name: 'Magnum',
+        amount: 0.8,
+        usage: 'Bittering',
+      },
+      {
+        name: 'Goldings, East Kent',
+        amount: 2.2,
+        usage: 'Both',
+      },
+    ],
+    yeast: [
+      {
+        name: 'US-05 Safale American',
+        laboratory: 'Fermentis',
+        productId: '',
+      },
+    ],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 97,
+    name: 'Joeoverlord',
+    style: 'Sweet Stout',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2024-12-30',
+    bottlingDate: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 0,
+    ibu: 17,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 15.46,
+      },
+      {
+        name: 'Milk Sugar (Lactose)',
+        amount: 2.21,
+      },
+      {
+        name: 'Roasted Barley',
+        amount: 2.15,
+      },
+      {
+        name: 'Munich 10L (Briess)',
+        amount: 1.66,
+      },
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 17
+        name: 'Barley, Flaked (Briess)',
+        amount: 1.66,
       },
       {
-        "name": "White Wheat Malt",
-        "amount": 3
+        name: 'Caramel Malt - 60L (Briess)',
+        amount: 1.62,
       },
       {
-        "name": "Caramunich Malt",
-        "amount": 1
+        name: 'Chocolate Malt',
+        amount: 1.62,
       },
       {
-        "name": "Oats, Flaked",
-        "amount": 1
-      }
+        name: 'Oats, Flaked',
+        amount: 1.1,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Fuggles",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Magnum',
+        amount: 0.8,
+        usage: 'Bittering',
       },
       {
-        "name": "Sorachi Ace",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Goldings, East Kent',
+        amount: 2.2,
+        usage: 'Both',
       },
+    ],
+    yeast: [
       {
-        "name": "Fuggles",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'US-05 Safale American',
+        laboratory: 'Fermentis',
+        productId: '',
       },
+    ],
+    tiltReadings: [
       {
-        "name": "Fuggles",
-        "amount": 2,
-        "usage": "Both"
-      }
+        timestamp: 1737084730328,
+        gravity: 1.01,
+        temperature: 40,
+      },
     ],
-    "yeast": [
+    fermentationEvents: [
+      {
+        timestamp: 1735538400000,
+        label: 'Pitched',
+      },
+      {
+        timestamp: 1735586133208,
+        label: 'Fermenting',
+      },
+      {
+        timestamp: 1737084746459,
+        label: 'Conditioning',
+      },
       {
-        "name": "French Saison",
-        "laboratory": "Wyeast Labs",
-        "productId": "3711"
-      }
+        timestamp: 1737407214565,
+        label: 'Fermenting',
+      },
     ],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.044 (est 1.048). Pre-boil volume 13.75g (est 14g). Notes: Nathaniel is here! With Das Boot! Tony keeps messing everything up.",
-    "tastingNotes": "Good"
+    source: 'brewfather',
   },
   {
-    "batchNo": 49,
-    "name": "Blonde",
-    "style": "Belgian Blond Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-11-01",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 29,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 98,
+    name: 'The Vienna',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2025-01-05',
+    bottlingDate: '',
+    og: 1.05,
+    fg: 1.01,
+    abv: 0,
+    ibu: 39,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15
+        name: 'Pale Malt (2 Row) US',
+        amount: 16,
       },
       {
-        "name": "Wheat Malt, Bel",
-        "amount": 8
+        name: 'Carafoam',
+        amount: 2,
       },
       {
-        "name": "Wheat, Flaked",
-        "amount": 1.5
+        name: 'Caramel Malt - 20L (Briess)',
+        amount: 2,
       },
       {
-        "name": "Honey Malt",
-        "amount": 1.5
+        name: 'Vienna Malt',
+        amount: 2,
       },
       {
-        "name": "Carafoam",
-        "amount": 1
+        name: 'Wheat Malt, Bel',
+        amount: 2,
       },
       {
-        "name": "Candi Sugar, Clear",
-        "amount": 1
-      }
+        name: 'Caramel Malt - 40L (Briess)',
+        amount: 1,
+      },
     ],
-    "hops": [
+    hops: [
+      {
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
+      },
       {
-        "name": "Hallertauer",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Citra',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "East Kent Goldings (EKG)",
-        "amount": 2,
-        "usage": "Bittering"
-      }
+        name: 'Amarillo',
+        amount: 1,
+        usage: 'Both',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "Irish Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1084"
-      }
+        name: 'American Ale II',
+        laboratory: 'Wyeast Labs',
+        productId: '1272',
+      },
     ],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.063 (est 1.063). Pre-boil volume 13.75g. Mash temp est 152F. Notes: Earliest we've ever started. Boil started before noon! Little bit of boil over.",
-    "tastingNotes": "Tastes like a hef, but thats okay | Delicious"
+    source: 'brewfather',
   },
   {
-    "batchNo": 50,
-    "name": "Rye Usurper",
-    "style": "American Wheat or Rye Beer",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-12-20",
-    "bottlingDate": "",
-    "og": 1.064,
-    "fg": 0,
-    "abv": 0,
-    "ibu": 76,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
+    batchNo: 99,
+    name: 'Overlord 3.1 5g',
+    style: 'American Wheat or Rye Beer',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2025-02-23',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 1.01,
+    abv: 4.7,
+    ibu: 15,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
+      {
+        name: 'Pale Malt (2 Row) US',
+        amount: 13,
+      },
+      {
+        name: 'White Wheat Malt',
+        amount: 9,
+      },
+      {
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
+    ],
+    hops: [
       {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 17
+        name: 'Saaz',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Rye Malt",
-        "amount": 6
+        name: 'Saaz',
+        amount: 2,
+        usage: 'Both',
       },
       {
-        "name": "Aromatic Malt",
-        "amount": 1
+        name: 'Cascade',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Caramel/Crystal Malt - 20L",
-        "amount": 1
+        name: 'Saaz',
+        amount: 1,
+        usage: 'Aroma',
       },
+    ],
+    yeast: [
       {
-        "name": "Caramel/Crystal Malt - 40L",
-        "amount": 1
+        name: 'American Wheat Ale',
+        laboratory: 'Wyeast Labs',
+        productId: '1010',
       },
+    ],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 100,
+    name: 'Overlord 3.1 5g',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2025-05-11',
+    bottlingDate: '',
+    og: 1.065,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 101,
+    name: 'Anklebiter',
+    style: 'American Pale Ale',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2025-06-20',
+    bottlingDate: '',
+    og: 1.052,
+    fg: 1.01,
+    abv: 5.5,
+    ibu: 36,
+    color: 0,
+    efficiency: 0,
+    batchSize: 10,
+    fermentables: [
       {
-        "name": "Caramel/Crystal Malt - 80L",
-        "amount": 1
+        name: 'Pale Malt (2 Row) US',
+        amount: 19,
       },
       {
-        "name": "Caramel/Crystal Malt -120L",
-        "amount": 1
+        name: 'Caramel/Crystal Malt - 40L',
+        amount: 2,
       },
       {
-        "name": "Carapils (Briess)",
-        "amount": 1
-      }
+        name: 'Cara-Pils/Dextrine',
+        amount: 1,
+      },
     ],
-    "hops": [
+    hops: [
       {
-        "name": "Summit",
-        "amount": 2,
-        "usage": "Bittering"
+        name: 'Cascade',
+        amount: 2,
+        usage: 'Bittering',
       },
       {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Cascade',
+        amount: 1,
+        usage: 'Bittering',
       },
       {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Bittering"
+        name: 'Simcoe',
+        amount: 1,
+        usage: 'Both',
       },
       {
-        "name": "Amarillo",
-        "amount": 2,
-        "usage": "Both"
+        name: 'Nelson Sauvin',
+        amount: 2,
+        usage: 'Aroma',
       },
       {
-        "name": "Amarillo Gold",
-        "amount": 1,
-        "usage": "Aroma"
+        name: 'Amarillo',
+        amount: 4,
+        usage: 'Aroma',
       },
       {
-        "name": "Amarillo",
-        "amount": 4,
-        "usage": "Aroma"
-      }
+        name: 'Galaxy',
+        amount: 2,
+        usage: 'Aroma',
+      },
     ],
-    "yeast": [
+    yeast: [
       {
-        "name": "American Ale II",
-        "laboratory": "Wyeast Labs",
-        "productId": "1272"
-      }
+        name: 'American Ale II',
+        laboratory: 'Wyeast Labs',
+        productId: '1272',
+      },
     ],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.059 (est 1.060). Pre-boil volume 13.75g. Post-boil gravity 1.064 (est 1.068). Post-boil volume 12g (est 12.75g). Fermenter volume 11g. Mash temp 154F. Notes: 75min mash. 4 drops defoamer. Extra 1oz hops @ 10. Extra 1oz hops @ flameout. Extra 1lb rye.",
-    "tastingNotes": "Very good!"
+    source: 'brewfather',
+  },
+  {
+    batchNo: 102,
+    name: 'Rum Wash',
+    style: 'Rum',
+    category: 'spirit',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2025-07-29',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
   },
   {
-    "batchNo": 51,
-    "name": "BA Porter",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-12-27",
-    "bottlingDate": "",
-    "og": 1.086,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.077 (1.085 corrected @ 156F) (est 1.081). Pre-boil volume 7.25g (est 7.75g). Post-boil gravity 1.086 (est 1.1). Post-boil volume 5.25g (est 6.5g). Fermenter volume 5.1g (est 5.5g). Mash temp 150F. Notes: Back2Back Brew Days 1/2. Mash dropped 5F - Reheated. Hour and half boil."
-  },
-  {
-    "batchNo": 52,
-    "name": "BA Withered",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2015-12-28",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Estimated OG from Withered Imperial Stout recipe"
-  },
-  {
-    "batchNo": 53,
-    "name": "Withered Stout 3",
-    "style": "Russian Imperial Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-01-03",
-    "bottlingDate": "",
-    "og": 1.143,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.080 (1.090 first runnings, est 1.094). Pre-boil volume 8+2g (est 9.5g). Post-boil gravity est 1.143. Post-boil volume 6.75g (est 6.5g). Fermenter volume 5.5g. Mash temp 158F (est 160F). Notes: Ice Storm today. Started mash at 162 - dropped to 158 - target 160ish. Layered boil - Taking 1g to boil on stovetop & dump in boiling wort. DME is flammable. Boilover while left unattended. 1.070 Before DME, 1.080 After DME. 1090 in first runnings. 2h7m long boil. Added Lager at 20."
-  },
-  {
-    "batchNo": 54,
-    "name": "Wandering Whisp",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-01-17",
-    "bottlingDate": "",
-    "og": 1.066,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.057 (est 1.057). Pre-boil volume 13.75g (est 13.75g). Post-boil gravity est 1.066. Fermenter volume est 11g. Mash temp 151F (est 152F). Notes: Mash dropped to 145 - heated it up. New mash bag! First Brew of the year. Using 1056 when we wanted 1272."
-  },
-  {
-    "batchNo": 55,
-    "name": "Saison",
-    "style": "Saison",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-02-21",
-    "bottlingDate": "",
-    "og": 1.06,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.047 (1.054 after sugar, est 1.053). Pre-boil volume 13.75g. Post-boil gravity 1.060 (est 1.058). Fermenter volume 11.5g (est 11g). Mash temp 148F. Notes: It's Cold Out! Really cold. Lost the last 5-10 min boil. 5/5 out of propane."
-  },
-  {
-    "batchNo": 56,
-    "name": "Little Heffer",
-    "style": "Hefeweizen",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-02-27",
-    "bottlingDate": "",
-    "og": 1.057,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.048 (est 1.049). Pre-boil volume 13.75g. Post-boil gravity est 1.057. Mash temp est 154F. Notes: Mistakingly added hops at 60 instead of 45."
-  },
-  {
-    "batchNo": 57,
-    "name": "Devil's Wheat 2",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-03-13",
-    "bottlingDate": "",
-    "og": 1.054,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.054 (est 1.051). Pre-boil volume 14g. Post-boil gravity 1.054 (est 1.058). Post-boil volume 12.75g. Fermenter volume 11g. Mash temp 157F (est 152F)."
-  },
-  {
-    "batchNo": 58,
-    "name": "Zombie Dust",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-03-13",
-    "bottlingDate": "",
-    "og": 1.061,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.059 (est 1.057). Pre-boil volume 14g. Post-boil gravity 1.061 (est 1.066). Post-boil volume 12.5g. Fermenter volume 10.5g. Mash temp 152F. Notes: Out of 2-Row. Used Maris Otter. Whirlpooled starting at 55. Do we need to temp correct during pre-boil readings?"
-  },
-  {
-    "batchNo": 59,
-    "name": "Moo Moo Canoe",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-03-13",
-    "bottlingDate": "",
-    "og": 1.065,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.050 (est 1.053). Pre-boil volume 14g (est 13.75g). Post-boil gravity 1.065 (est 1.074). Post-boil volume 13g (est 12.75g). Fermenter volume 12.5g (est 11g). Mash temp 155F (est 153F). Notes: Swapped 2 Row to Maris Otter. Magnum added at 45, not 60."
-  },
-  {
-    "batchNo": 60,
-    "name": "Garabaldi's Head",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-04-03",
-    "bottlingDate": "",
-    "og": 1.062,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.047 (est 1.055). Pre-boil volume 13.75g. Post-boil gravity est 1.062. Post-boil volume 12.5g (est 12.75g). Fermenter volume 9g (est 11g). Mash temp 153F. Notes: Swapped 2 ROW to Maris Otter. Yeast was frozen!!"
-  },
-  {
-    "batchNo": 61,
-    "name": "Overlord",
-    "style": "IPA",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-05-14",
-    "bottlingDate": "",
-    "og": 1.066,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.054 (est 1.057). Pre-boil volume 13.75g. Post-boil gravity est 1.066. Post-boil volume 12.75g. Fermenter volume 10.75g (est 11g). Mash temp 152F. Notes: Whirlpool the entire boil!"
-  },
-  {
-    "batchNo": 62,
-    "name": "Lemon EF",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-06-19",
-    "bottlingDate": "",
-    "og": 1.062,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.045 (est 1.052). Pre-boil volume 12.50g (est 12.75). Post-boil gravity est 1.062. Mash temp est 154F. Notes: #MakeBrewingGreatAgain. Gravity sucks."
-  },
-  {
-    "batchNo": 63,
-    "name": "Invade Canada Redux",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-07-24",
-    "bottlingDate": "",
-    "og": 1.048,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.048 (est 1.050). Pre-boil volume 13.75g. Post-boil gravity 1.048 (est 1.058). Fermenter volume est 11g. Mash temp est 152F. Notes: SO FUCKING HOT OUT. Extra 5min on boil."
-  },
-  {
-    "batchNo": 64,
-    "name": "Strawberrysaurus Rex",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-07-31",
-    "bottlingDate": "",
-    "og": 1.053,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.044 (est 1.048). Pre-boil volume 13.75g. Post-boil gravity 1.053 (est 1.055). Post-boil volume 12.8g (est 12.25g). Mash temp 154F (est 156F). Notes: SO FUCKING HOT OUT."
-  },
-  {
-    "batchNo": 65,
-    "name": "Basic Blonde",
-    "style": "Belgian Blond Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-09-05",
-    "bottlingDate": "",
-    "og": 1.06,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.053 (est 1.060). Pre-boil volume 13.75g. Post-boil gravity 1.060? (est 1.070). Post-boil volume 12.25g. Fermenter volume 10.75g (est 11g). Mash temp 154F. Notes: SO FUCKING HOT OUT. Doesn't account for the Belgian Candy sugar added post-mash. Why is the hydrometer a liar?"
-  },
-  {
-    "batchNo": 66,
-    "name": "Smore Pumpkin",
-    "style": "American Amber Ale",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-09-25",
-    "bottlingDate": "",
-    "og": 1.061,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.057 (est 1.059). Pre-boil volume 14g (est 13.75g). Post-boil gravity 1.061 (est 1.068). Post-boil volume 12g (est 12.25g). Fermenter volume 11g. Mash temp 156F. Notes: SO FUCKING HOT OUT."
-  },
-  {
-    "batchNo": 67,
-    "name": "Barleywine",
-    "style": "Barleywine",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-10-16",
-    "bottlingDate": "",
-    "og": 1.138,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.070/1.085/1.015 (est 1.091). Pre-boil volume 9.5g. Post-boil gravity est 1.138. Post-boil volume 7.5g (est 6.5g). Fermenter volume 5.5g. Mash temp 155F (est 158F). Notes: #tonycanthang. New regulator is GREAT. 160 for first 15min of mash. Added 2lb DME bc pre-boil sucked."
-  },
-  {
-    "batchNo": 68,
-    "name": "Moo Moo Canoe",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2016-11-20",
-    "bottlingDate": "",
-    "og": 1.064,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.050 (est 1.053). Pre-boil volume 13.75g. Post-boil gravity 1.064 (est 1.074). Mash temp 155F. Notes: Forgot to add flaked oats/barley. Added them halfway through mash. Added 15min to mash. Fire makes things hot (Tony)."
-  },
-  {
-    "batchNo": 69,
-    "name": "Killing Spree",
-    "style": "IPA",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2017-01-14",
-    "bottlingDate": "",
-    "og": 1.063,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.057 (est 1.057). Pre-boil volume 13.75g. Post-boil gravity 1.063 (est 1.067). Post-boil volume 12.25g. Fermenter volume 10.5g (est 11g). Mash temp 152F. Notes: Cold."
-  },
-  {
-    "batchNo": 70,
-    "name": "Riggity Wrecked",
-    "style": "Russian Imperial Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2017-01-14",
-    "bottlingDate": "",
-    "og": 1.15,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.072 before DME (est 1.093). Pre-boil volume 9g (est 8.75g). Post-boil gravity 1.150 (est 1.130). Post-boil volume 6.5g. Fermenter volume 5.5g. Mash temp 150F (est 149F). Notes: Double Milled. FIRE! Propane connection not tightened. Need a less thick hose for the HLT. Changed to 2hr boil. Added DME - 3lb. 1.072 Before DME. Finished wort shot on the ground."
-  },
-  {
-    "batchNo": 71,
-    "name": "GFYS IPA",
-    "style": "IPA",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2017-07-21",
-    "bottlingDate": "",
-    "og": 1.06,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.046 (1.065 corrected @ 160F, est 1.059). Pre-boil volume 13.75g. Post-boil gravity 1.060 (est 1.069). Post-boil volume 12.25g. Fermenter volume 11g. Mash temp 153F."
-  },
-  {
-    "batchNo": 72,
-    "name": "Saison",
-    "style": "Saison",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2017-07-29",
-    "bottlingDate": "",
-    "og": 1.05,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity est 1.048. Pre-boil volume 14g (est 13.75g). Post-boil gravity 1.050 (est 1.055). Post-boil volume 12.5g (est 12.25g). Fermenter volume 16g(?) (est 11g). Mash temp 156F."
-  },
-  {
-    "batchNo": 73,
-    "name": "Moo Moo Canoe",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2017-09-20",
-    "bottlingDate": "",
-    "og": 1.071,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.054 (est 1.053). Pre-boil volume 13.75g. Post-boil gravity est 1.071. Mash temp 155F (est 156F). Notes: Tank died. Need Beer."
-  },
-  {
-    "batchNo": 74,
-    "name": "Overlord",
-    "style": "IPA",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2017-09-20",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Est pre-boil gravity 1.057. Est pre-boil volume 13.75g. Est post-boil gravity 1.066. Est post-boil volume 12.25g. Est fermenter volume 11g. Est mash temp 156F. No actual measurements recorded. | Estimated OG from Overlord recipe"
-  },
-  {
-    "batchNo": 75,
-    "name": "Make It Go Away NEIPA",
-    "style": "New England IPA",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2017-11-26",
-    "bottlingDate": "",
-    "og": 1.062,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.050 (est 1.062). Pre-boil volume 13.75g. Post-boil gravity 1.062 (est 1.072). Post-boil volume 11.5g (est 12.25g). Fermenter volume est 11g. Mash temp 155F (est 156F). Notes: Forgot to add the flaked malt."
-  },
-  {
-    "batchNo": 76,
-    "name": "Wheat",
-    "style": "American Wheat Beer",
-    "category": "ale",
-    "brewer": "Joe & Tony",
-    "status": "Completed",
-    "brewDate": "2019-04-07",
-    "bottlingDate": "",
-    "og": 1.053,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "beersmith",
-    "brewingNotes": "Pre-boil gravity 1.044 (est 1.047). Pre-boil volume 13.75g. Post-boil gravity 1.053 (est 1.053). Post-boil volume 10g. Mash volume 11g (est 11.5g). Mash temp 157F (est 155F). Changes: Lemon Peel at 10 min. 5oz Citra. 5 Mosaic."
-  },
-  {
-    "batchNo": 77,
-    "name": "Bavarian hefeweizen",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2022-03-15",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 78,
-    "name": "Bavarian hefeweizen",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2022-03-20",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 79,
-    "name": "Wry Smile Rye IPA",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2022-07-24",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 80,
-    "name": "Star Maker Imperial Stout",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2022-09-21",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 81,
-    "name": "Twin Pines Piney IPA",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2022-11-09",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 82,
-    "name": "Spicy Sprinkles",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-03-18",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 83,
-    "name": "Beginning Bourbon",
-    "style": "Whiskey",
-    "category": "spirit",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-04-29",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 84,
-    "name": "Hellez Yeah",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-04-29",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 85,
-    "name": "The Devil's Wheat 3",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-06-23",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 86,
-    "name": "Czech It Out",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-08-08",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 87,
-    "name": "Wheat vodka",
-    "style": "Vodka",
-    "category": "spirit",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-08-19",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 88,
-    "name": "Imperial Hefe",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-09-17",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 89,
-    "name": "Moo Moo Canoe",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2023-11-22",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 90,
-    "name": "Second City Session IPA",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-03-10",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 91,
-    "name": "Overlord v3",
-    "style": "Belgian Blond Ale",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-04-28",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 29,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15
-      },
-      {
-        "name": "Wheat Malt, Bel",
-        "amount": 8
-      },
-      {
-        "name": "Wheat, Flaked",
-        "amount": 1.5
-      },
-      {
-        "name": "Honey Malt",
-        "amount": 1.5
-      },
-      {
-        "name": "Carafoam",
-        "amount": 1
-      },
-      {
-        "name": "Candi Sugar, Clear",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Hallertauer",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "East Kent Goldings (EKG)",
-        "amount": 2,
-        "usage": "Bittering"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "Irish Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1084"
-      }
-    ],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 92,
-    "name": "Bavarian hefeweizen",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-05-24",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 93,
-    "name": "The Devil's Narwhal",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-05-24",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 94,
-    "name": "Overlord v3.1",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-06-30",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 95,
-    "name": "4PyRyeO Pale Ale",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-09-30",
-    "bottlingDate": "",
-    "og": 1.055,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 60,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 22
-      },
-      {
-        "name": "Caramunich Malt",
-        "amount": 2.5
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      },
-      {
-        "name": "Caramel/Crystal Malt - 60L",
-        "amount": 1
-      },
-      {
-        "name": "Melanoiden Malt",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Citra",
-        "amount": 3,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Citra",
-        "amount": 4,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "English Ale",
-        "laboratory": "White Labs",
-        "productId": "WLP002"
-      }
-    ],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 96,
-    "name": "Moo Moo Canoe",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-12-27",
-    "bottlingDate": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 17,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15.46
-      },
-      {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 2.21
-      },
-      {
-        "name": "Roasted Barley",
-        "amount": 2.15
-      },
-      {
-        "name": "Munich 10L (Briess)",
-        "amount": 1.66
-      },
-      {
-        "name": "Barley, Flaked (Briess)",
-        "amount": 1.66
-      },
-      {
-        "name": "Caramel Malt - 60L (Briess)",
-        "amount": 1.62
-      },
-      {
-        "name": "Chocolate Malt",
-        "amount": 1.62
-      },
-      {
-        "name": "Oats, Flaked",
-        "amount": 1.1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Magnum",
-        "amount": 0.8,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2.2,
-        "usage": "Both"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "US-05 Safale American",
-        "laboratory": "Fermentis",
-        "productId": ""
-      }
-    ],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 97,
-    "name": "Joeoverlord",
-    "style": "Sweet Stout",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2024-12-30",
-    "bottlingDate": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 17,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 15.46
-      },
-      {
-        "name": "Milk Sugar (Lactose)",
-        "amount": 2.21
-      },
-      {
-        "name": "Roasted Barley",
-        "amount": 2.15
-      },
-      {
-        "name": "Munich 10L (Briess)",
-        "amount": 1.66
-      },
-      {
-        "name": "Barley, Flaked (Briess)",
-        "amount": 1.66
-      },
-      {
-        "name": "Caramel Malt - 60L (Briess)",
-        "amount": 1.62
-      },
-      {
-        "name": "Chocolate Malt",
-        "amount": 1.62
-      },
-      {
-        "name": "Oats, Flaked",
-        "amount": 1.1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Magnum",
-        "amount": 0.8,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Goldings, East Kent",
-        "amount": 2.2,
-        "usage": "Both"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "US-05 Safale American",
-        "laboratory": "Fermentis",
-        "productId": ""
-      }
-    ],
-    "tiltReadings": [
-      {
-        "timestamp": 1737084730328,
-        "gravity": 1.01,
-        "temperature": 40
-      }
-    ],
-    "fermentationEvents": [
-      {
-        "timestamp": 1735538400000,
-        "label": "Pitched"
-      },
-      {
-        "timestamp": 1735586133208,
-        "label": "Fermenting"
-      },
-      {
-        "timestamp": 1737084746459,
-        "label": "Conditioning"
-      },
-      {
-        "timestamp": 1737407214565,
-        "label": "Fermenting"
-      }
-    ],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 98,
-    "name": "The Vienna",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2025-01-05",
-    "bottlingDate": "",
-    "og": 1.05,
-    "fg": 1.01,
-    "abv": 0,
-    "ibu": 39,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 16
-      },
-      {
-        "name": "Carafoam",
-        "amount": 2
-      },
-      {
-        "name": "Caramel Malt - 20L (Briess)",
-        "amount": 2
-      },
-      {
-        "name": "Vienna Malt",
-        "amount": 2
-      },
-      {
-        "name": "Wheat Malt, Bel",
-        "amount": 2
-      },
-      {
-        "name": "Caramel Malt - 40L (Briess)",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Citra",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 1,
-        "usage": "Both"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Ale II",
-        "laboratory": "Wyeast Labs",
-        "productId": "1272"
-      }
-    ],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 99,
-    "name": "Overlord 3.1 5g",
-    "style": "American Wheat or Rye Beer",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2025-02-23",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 1.01,
-    "abv": 4.7,
-    "ibu": 15,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 13
-      },
-      {
-        "name": "White Wheat Malt",
-        "amount": 9
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Saaz",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Saaz",
-        "amount": 2,
-        "usage": "Both"
-      },
-      {
-        "name": "Cascade",
-        "amount": 2,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Saaz",
-        "amount": 1,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Wheat Ale",
-        "laboratory": "Wyeast Labs",
-        "productId": "1010"
-      }
-    ],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 100,
-    "name": "Overlord 3.1 5g",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2025-05-11",
-    "bottlingDate": "",
-    "og": 1.065,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 101,
-    "name": "Anklebiter",
-    "style": "American Pale Ale",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2025-06-20",
-    "bottlingDate": "",
-    "og": 1.052,
-    "fg": 1.01,
-    "abv": 5.5,
-    "ibu": 36,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 10,
-    "fermentables": [
-      {
-        "name": "Pale Malt (2 Row) US",
-        "amount": 19
-      },
-      {
-        "name": "Caramel/Crystal Malt - 40L",
-        "amount": 2
-      },
-      {
-        "name": "Cara-Pils/Dextrine",
-        "amount": 1
-      }
-    ],
-    "hops": [
-      {
-        "name": "Cascade",
-        "amount": 2,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Cascade",
-        "amount": 1,
-        "usage": "Bittering"
-      },
-      {
-        "name": "Simcoe",
-        "amount": 1,
-        "usage": "Both"
-      },
-      {
-        "name": "Nelson Sauvin",
-        "amount": 2,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Amarillo",
-        "amount": 4,
-        "usage": "Aroma"
-      },
-      {
-        "name": "Galaxy",
-        "amount": 2,
-        "usage": "Aroma"
-      }
-    ],
-    "yeast": [
-      {
-        "name": "American Ale II",
-        "laboratory": "Wyeast Labs",
-        "productId": "1272"
-      }
-    ],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 102,
-    "name": "Rum Wash",
-    "style": "Rum",
-    "category": "spirit",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2025-07-29",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 103,
-    "name": "Overlord v4.0 5g",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Completed",
-    "brewDate": "2026-02-27",
-    "bottlingDate": "",
-    "og": 1.046,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "source": "brewfather"
-  },
-  {
-    "batchNo": 104,
-    "name": "Overlord v4.0 5g",
-    "style": "Unknown",
-    "category": "ale",
-    "brewer": "Joe",
-    "status": "Fermenting",
-    "brewDate": "2026-04-29",
-    "bottlingDate": "",
-    "og": 0,
-    "fg": 0,
-    "abv": 0,
-    "ibu": null,
-    "color": 0,
-    "efficiency": 0,
-    "batchSize": 5,
-    "fermentables": [],
-    "hops": [],
-    "yeast": [],
-    "tiltReadings": [
-      {
-        "timestamp": 1777514985628,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777515885929,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777516797505,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777517701045,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777518600609,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777519501837,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777520407868,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777521308558,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777522221293,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777523120562,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777524022359,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777524922741,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777525823341,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777526725889,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777527627658,
-        "gravity": 1.07,
-        "temperature": 66
-      },
-      {
-        "timestamp": 1777528535108,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777529437821,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777530339406,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777531246020,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777532146413,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777533047077,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777533953435,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777534855260,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777535756964,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777536656480,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777537559170,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777538459547,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777539361232,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777540263770,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777541164409,
-        "gravity": 1.07,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777542064987,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777542966707,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777543867050,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777544767898,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777545668309,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777546568905,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777547469291,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777548371785,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777549272564,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777550172248,
-        "gravity": 1.069,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777551072595,
-        "gravity": 1.068,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777551974490,
-        "gravity": 1.068,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777552875052,
-        "gravity": 1.066,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777553777536,
-        "gravity": 1.066,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777554679019,
-        "gravity": 1.065,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777555578831,
-        "gravity": 1.065,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777556479593,
-        "gravity": 1.065,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777557379899,
-        "gravity": 1.065,
-        "temperature": 66.9
-      },
-      {
-        "timestamp": 1777558280746,
-        "gravity": 1.064,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777559180745,
-        "gravity": 1.064,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777560081960,
-        "gravity": 1.064,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777560983696,
-        "gravity": 1.064,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777561883069,
-        "gravity": 1.064,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777562782804,
-        "gravity": 1.064,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777563683402,
-        "gravity": 1.064,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777564585110,
-        "gravity": 1.062,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777565491531,
-        "gravity": 1.065,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777566442055,
-        "gravity": 1.064,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777567357820,
-        "gravity": 1.063,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777568277755,
-        "gravity": 1.061,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777569245507,
-        "gravity": 1.059,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777570222238,
-        "gravity": 1.059,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777571131028,
-        "gravity": 1.057,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777572072632,
-        "gravity": 1.057,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777572979632,
-        "gravity": 1.058,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777573895282,
-        "gravity": 1.059,
-        "temperature": 68
-      },
-      {
-        "timestamp": 1777574806131,
-        "gravity": 1.058,
-        "temperature": 69.1
-      },
-      {
-        "timestamp": 1777575731711,
-        "gravity": 1.056,
-        "temperature": 69.1
-      },
-      {
-        "timestamp": 1777576633454,
-        "gravity": 1.056,
-        "temperature": 69.1
-      },
-      {
-        "timestamp": 1777577534383,
-        "gravity": 1.056,
-        "temperature": 69.1
-      },
-      {
-        "timestamp": 1777578477741,
-        "gravity": 1.056,
-        "temperature": 69.1
-      },
-      {
-        "timestamp": 1777579395690,
-        "gravity": 1.054,
-        "temperature": 69.1
-      },
-      {
-        "timestamp": 1777580522804,
-        "gravity": 1.055,
-        "temperature": 69.1
-      },
-      {
-        "timestamp": 1777581436700,
-        "gravity": 1.053,
-        "temperature": 69.1
-      },
-      {
-        "timestamp": 1777582341288,
-        "gravity": 1.056,
-        "temperature": 69.1
-      },
-      {
-        "timestamp": 1777583250499,
-        "gravity": 1.054,
-        "temperature": 69.1
-      },
-      {
-        "timestamp": 1777584179887,
-        "gravity": 1.056,
-        "temperature": 70
-      },
-      {
-        "timestamp": 1777585164289,
-        "gravity": 1.055,
-        "temperature": 70
-      },
-      {
-        "timestamp": 1777586066137,
-        "gravity": 1.05,
-        "temperature": 70
-      },
-      {
-        "timestamp": 1777586970851,
-        "gravity": 1.053,
-        "temperature": 70
-      },
-      {
-        "timestamp": 1777587870184,
-        "gravity": 1.057,
-        "temperature": 70
-      },
+    batchNo: 103,
+    name: 'Overlord v4.0 5g',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Completed',
+    brewDate: '2026-02-27',
+    bottlingDate: '',
+    og: 1.046,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    source: 'brewfather',
+  },
+  {
+    batchNo: 104,
+    name: 'Overlord v4.0 5g',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Fermenting',
+    brewDate: '2026-04-29',
+    bottlingDate: '',
+    og: 0,
+    fg: 0,
+    abv: 0,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 5,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    tiltReadings: [
+      {
+        timestamp: 1777514985628,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777515885929,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777516797505,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777517701045,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777518600609,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777519501837,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777520407868,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777521308558,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777522221293,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777523120562,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777524022359,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777524922741,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777525823341,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777526725889,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777527627658,
+        gravity: 1.07,
+        temperature: 66,
+      },
+      {
+        timestamp: 1777528535108,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777529437821,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777530339406,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777531246020,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777532146413,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777533047077,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777533953435,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777534855260,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777535756964,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777536656480,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777537559170,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777538459547,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777539361232,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777540263770,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777541164409,
+        gravity: 1.07,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777542064987,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777542966707,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777543867050,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777544767898,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777545668309,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777546568905,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777547469291,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777548371785,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777549272564,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777550172248,
+        gravity: 1.069,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777551072595,
+        gravity: 1.068,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777551974490,
+        gravity: 1.068,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777552875052,
+        gravity: 1.066,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777553777536,
+        gravity: 1.066,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777554679019,
+        gravity: 1.065,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777555578831,
+        gravity: 1.065,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777556479593,
+        gravity: 1.065,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777557379899,
+        gravity: 1.065,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1777558280746,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777559180745,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777560081960,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777560983696,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777561883069,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777562782804,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777563683402,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777564585110,
+        gravity: 1.062,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777565491531,
+        gravity: 1.065,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777566442055,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777567357820,
+        gravity: 1.063,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777568277755,
+        gravity: 1.061,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777569245507,
+        gravity: 1.059,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777570222238,
+        gravity: 1.059,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777571131028,
+        gravity: 1.057,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777572072632,
+        gravity: 1.057,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777572979632,
+        gravity: 1.058,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777573895282,
+        gravity: 1.059,
+        temperature: 68,
+      },
+      {
+        timestamp: 1777574806131,
+        gravity: 1.058,
+        temperature: 69.1,
+      },
       {
-        "timestamp": 1777588783715,
-        "gravity": 1.054,
-        "temperature": 70
+        timestamp: 1777575731711,
+        gravity: 1.056,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777589689308,
-        "gravity": 1.048,
-        "temperature": 70
+        timestamp: 1777576633454,
+        gravity: 1.056,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777590594855,
-        "gravity": 1.053,
-        "temperature": 70
+        timestamp: 1777577534383,
+        gravity: 1.056,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777591497294,
-        "gravity": 1.051,
-        "temperature": 70
+        timestamp: 1777578477741,
+        gravity: 1.056,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777592410505,
-        "gravity": 1.052,
-        "temperature": 71.1
+        timestamp: 1777579395690,
+        gravity: 1.054,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777593388259,
-        "gravity": 1.05,
-        "temperature": 71.1
+        timestamp: 1777580522804,
+        gravity: 1.055,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777594333210,
-        "gravity": 1.052,
-        "temperature": 71.1
+        timestamp: 1777581436700,
+        gravity: 1.053,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777595247925,
-        "gravity": 1.055,
-        "temperature": 71.1
+        timestamp: 1777582341288,
+        gravity: 1.056,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777596236470,
-        "gravity": 1.046,
-        "temperature": 71.1
+        timestamp: 1777583250499,
+        gravity: 1.054,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777597171605,
-        "gravity": 1.05,
-        "temperature": 72
+        timestamp: 1777584179887,
+        gravity: 1.056,
+        temperature: 70,
       },
       {
-        "timestamp": 1777598071523,
-        "gravity": 1.042,
-        "temperature": 72
+        timestamp: 1777585164289,
+        gravity: 1.055,
+        temperature: 70,
       },
       {
-        "timestamp": 1777598972567,
-        "gravity": 1.047,
-        "temperature": 72
+        timestamp: 1777586066137,
+        gravity: 1.05,
+        temperature: 70,
       },
       {
-        "timestamp": 1777599922478,
-        "gravity": 1.05,
-        "temperature": 72
+        timestamp: 1777586970851,
+        gravity: 1.053,
+        temperature: 70,
       },
       {
-        "timestamp": 1777600922231,
-        "gravity": 1.046,
-        "temperature": 73
+        timestamp: 1777587870184,
+        gravity: 1.057,
+        temperature: 70,
       },
       {
-        "timestamp": 1777601821986,
-        "gravity": 1.047,
-        "temperature": 73
+        timestamp: 1777588783715,
+        gravity: 1.054,
+        temperature: 70,
       },
       {
-        "timestamp": 1777602891112,
-        "gravity": 1.047,
-        "temperature": 73
+        timestamp: 1777589689308,
+        gravity: 1.048,
+        temperature: 70,
       },
       {
-        "timestamp": 1777603819648,
-        "gravity": 1.048,
-        "temperature": 73
+        timestamp: 1777590594855,
+        gravity: 1.053,
+        temperature: 70,
       },
       {
-        "timestamp": 1777604728483,
-        "gravity": 1.048,
-        "temperature": 73
+        timestamp: 1777591497294,
+        gravity: 1.051,
+        temperature: 70,
       },
       {
-        "timestamp": 1777605629899,
-        "gravity": 1.041,
-        "temperature": 73.9
+        timestamp: 1777592410505,
+        gravity: 1.052,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777606533472,
-        "gravity": 1.044,
-        "temperature": 73.9
+        timestamp: 1777593388259,
+        gravity: 1.05,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777607449508,
-        "gravity": 1.046,
-        "temperature": 73.9
+        timestamp: 1777594333210,
+        gravity: 1.052,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777608348311,
-        "gravity": 1.045,
-        "temperature": 73.9
+        timestamp: 1777595247925,
+        gravity: 1.055,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777609249498,
-        "gravity": 1.048,
-        "temperature": 75
+        timestamp: 1777596236470,
+        gravity: 1.046,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777610159628,
-        "gravity": 1.044,
-        "temperature": 75
+        timestamp: 1777597171605,
+        gravity: 1.05,
+        temperature: 72,
       },
       {
-        "timestamp": 1777611075385,
-        "gravity": 1.036,
-        "temperature": 75
+        timestamp: 1777598071523,
+        gravity: 1.042,
+        temperature: 72,
       },
       {
-        "timestamp": 1777611977210,
-        "gravity": 1.042,
-        "temperature": 75
+        timestamp: 1777598972567,
+        gravity: 1.047,
+        temperature: 72,
       },
       {
-        "timestamp": 1777612895136,
-        "gravity": 1.042,
-        "temperature": 75.9
+        timestamp: 1777599922478,
+        gravity: 1.05,
+        temperature: 72,
       },
       {
-        "timestamp": 1777613793581,
-        "gravity": 1.039,
-        "temperature": 75.9
+        timestamp: 1777600922231,
+        gravity: 1.046,
+        temperature: 73,
       },
       {
-        "timestamp": 1777614695317,
-        "gravity": 1.04,
-        "temperature": 75.9
+        timestamp: 1777601821986,
+        gravity: 1.047,
+        temperature: 73,
       },
       {
-        "timestamp": 1777615620214,
-        "gravity": 1.041,
-        "temperature": 77
+        timestamp: 1777602891112,
+        gravity: 1.047,
+        temperature: 73,
       },
       {
-        "timestamp": 1777616519954,
-        "gravity": 1.04,
-        "temperature": 77
+        timestamp: 1777603819648,
+        gravity: 1.048,
+        temperature: 73,
       },
       {
-        "timestamp": 1777617423753,
-        "gravity": 1.038,
-        "temperature": 77
+        timestamp: 1777604728483,
+        gravity: 1.048,
+        temperature: 73,
       },
       {
-        "timestamp": 1777618326176,
-        "gravity": 1.041,
-        "temperature": 77
+        timestamp: 1777605629899,
+        gravity: 1.041,
+        temperature: 73.9,
       },
       {
-        "timestamp": 1777619233956,
-        "gravity": 1.041,
-        "temperature": 78.1
+        timestamp: 1777606533472,
+        gravity: 1.044,
+        temperature: 73.9,
       },
       {
-        "timestamp": 1777620144948,
-        "gravity": 1.04,
-        "temperature": 78.1
+        timestamp: 1777607449508,
+        gravity: 1.046,
+        temperature: 73.9,
       },
       {
-        "timestamp": 1777621049805,
-        "gravity": 1.04,
-        "temperature": 78.1
+        timestamp: 1777608348311,
+        gravity: 1.045,
+        temperature: 73.9,
       },
       {
-        "timestamp": 1777621957185,
-        "gravity": 1.035,
-        "temperature": 78.1
+        timestamp: 1777609249498,
+        gravity: 1.048,
+        temperature: 75,
       },
       {
-        "timestamp": 1777623368687,
-        "gravity": 1.038,
-        "temperature": 79
+        timestamp: 1777610159628,
+        gravity: 1.044,
+        temperature: 75,
       },
       {
-        "timestamp": 1777624281559,
-        "gravity": 1.034,
-        "temperature": 79
+        timestamp: 1777611075385,
+        gravity: 1.036,
+        temperature: 75,
       },
       {
-        "timestamp": 1777625195080,
-        "gravity": 1.036,
-        "temperature": 79
+        timestamp: 1777611977210,
+        gravity: 1.042,
+        temperature: 75,
       },
       {
-        "timestamp": 1777626094879,
-        "gravity": 1.033,
-        "temperature": 79
+        timestamp: 1777612895136,
+        gravity: 1.042,
+        temperature: 75.9,
       },
       {
-        "timestamp": 1777626996568,
-        "gravity": 1.027,
-        "temperature": 79
+        timestamp: 1777613793581,
+        gravity: 1.039,
+        temperature: 75.9,
       },
       {
-        "timestamp": 1777627901244,
-        "gravity": 1.033,
-        "temperature": 79
+        timestamp: 1777614695317,
+        gravity: 1.04,
+        temperature: 75.9,
       },
       {
-        "timestamp": 1777628809863,
-        "gravity": 1.033,
-        "temperature": 79
+        timestamp: 1777615620214,
+        gravity: 1.041,
+        temperature: 77,
       },
       {
-        "timestamp": 1777629710926,
-        "gravity": 1.03,
-        "temperature": 80.1
+        timestamp: 1777616519954,
+        gravity: 1.04,
+        temperature: 77,
       },
       {
-        "timestamp": 1777630750602,
-        "gravity": 1.035,
-        "temperature": 80.1
+        timestamp: 1777617423753,
+        gravity: 1.038,
+        temperature: 77,
       },
       {
-        "timestamp": 1777632311972,
-        "gravity": 1.032,
-        "temperature": 80.1
+        timestamp: 1777618326176,
+        gravity: 1.041,
+        temperature: 77,
       },
       {
-        "timestamp": 1777633265746,
-        "gravity": 1.021,
-        "temperature": 80.1
+        timestamp: 1777619233956,
+        gravity: 1.041,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777634308587,
-        "gravity": 1.032,
-        "temperature": 80.1
+        timestamp: 1777620144948,
+        gravity: 1.04,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777635212281,
-        "gravity": 1.029,
-        "temperature": 80.1
+        timestamp: 1777621049805,
+        gravity: 1.04,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777636134515,
-        "gravity": 1.027,
-        "temperature": 80.1
+        timestamp: 1777621957185,
+        gravity: 1.035,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777637049689,
-        "gravity": 1.021,
-        "temperature": 80.1
+        timestamp: 1777623368687,
+        gravity: 1.038,
+        temperature: 79,
       },
       {
-        "timestamp": 1777637960510,
-        "gravity": 1.021,
-        "temperature": 80.1
+        timestamp: 1777624281559,
+        gravity: 1.034,
+        temperature: 79,
       },
       {
-        "timestamp": 1777638871163,
-        "gravity": 1.026,
-        "temperature": 80.1
+        timestamp: 1777625195080,
+        gravity: 1.036,
+        temperature: 79,
       },
       {
-        "timestamp": 1777639794746,
-        "gravity": 1.023,
-        "temperature": 80.1
+        timestamp: 1777626094879,
+        gravity: 1.033,
+        temperature: 79,
       },
       {
-        "timestamp": 1777640694227,
-        "gravity": 1.026,
-        "temperature": 81
+        timestamp: 1777626996568,
+        gravity: 1.027,
+        temperature: 79,
       },
       {
-        "timestamp": 1777641594735,
-        "gravity": 1.027,
-        "temperature": 81
+        timestamp: 1777627901244,
+        gravity: 1.033,
+        temperature: 79,
       },
       {
-        "timestamp": 1777642578464,
-        "gravity": 1.026,
-        "temperature": 81
+        timestamp: 1777628809863,
+        gravity: 1.033,
+        temperature: 79,
       },
       {
-        "timestamp": 1777643538033,
-        "gravity": 1.025,
-        "temperature": 81
+        timestamp: 1777629710926,
+        gravity: 1.03,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777644505874,
-        "gravity": 1.025,
-        "temperature": 81
+        timestamp: 1777630750602,
+        gravity: 1.035,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777645422687,
-        "gravity": 1.02,
-        "temperature": 81
+        timestamp: 1777632311972,
+        gravity: 1.032,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777646435589,
-        "gravity": 1.024,
-        "temperature": 81
+        timestamp: 1777633265746,
+        gravity: 1.021,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777649171836,
-        "gravity": 1.025,
-        "temperature": 80.1
+        timestamp: 1777634308587,
+        gravity: 1.032,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777672242179,
-        "gravity": 1.017,
-        "temperature": 79
+        timestamp: 1777635212281,
+        gravity: 1.029,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777675970680,
-        "gravity": 1.016,
-        "temperature": 79
+        timestamp: 1777636134515,
+        gravity: 1.027,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777676892460,
-        "gravity": 1.017,
-        "temperature": 79
+        timestamp: 1777637049689,
+        gravity: 1.021,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777677790998,
-        "gravity": 1.015,
-        "temperature": 78.1
+        timestamp: 1777637960510,
+        gravity: 1.021,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777678707199,
-        "gravity": 1.015,
-        "temperature": 78.1
+        timestamp: 1777638871163,
+        gravity: 1.026,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777679615618,
-        "gravity": 1.016,
-        "temperature": 78.1
+        timestamp: 1777639794746,
+        gravity: 1.023,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777680548389,
-        "gravity": 1.015,
-        "temperature": 78.1
+        timestamp: 1777640694227,
+        gravity: 1.026,
+        temperature: 81,
       },
       {
-        "timestamp": 1777681467023,
-        "gravity": 1.015,
-        "temperature": 78.1
+        timestamp: 1777641594735,
+        gravity: 1.027,
+        temperature: 81,
       },
       {
-        "timestamp": 1777682748047,
-        "gravity": 1.016,
-        "temperature": 78.1
+        timestamp: 1777642578464,
+        gravity: 1.026,
+        temperature: 81,
       },
       {
-        "timestamp": 1777683872133,
-        "gravity": 1.015,
-        "temperature": 78.1
+        timestamp: 1777643538033,
+        gravity: 1.025,
+        temperature: 81,
       },
       {
-        "timestamp": 1777686247380,
-        "gravity": 1.014,
-        "temperature": 77
+        timestamp: 1777644505874,
+        gravity: 1.025,
+        temperature: 81,
       },
       {
-        "timestamp": 1777687233582,
-        "gravity": 1.015,
-        "temperature": 77
+        timestamp: 1777645422687,
+        gravity: 1.02,
+        temperature: 81,
       },
       {
-        "timestamp": 1777688133386,
-        "gravity": 1.014,
-        "temperature": 77
+        timestamp: 1777646435589,
+        gravity: 1.024,
+        temperature: 81,
       },
       {
-        "timestamp": 1777689056371,
-        "gravity": 1.013,
-        "temperature": 77
+        timestamp: 1777649171836,
+        gravity: 1.025,
+        temperature: 80.1,
       },
       {
-        "timestamp": 1777690826794,
-        "gravity": 1.014,
-        "temperature": 75.9
+        timestamp: 1777672242179,
+        gravity: 1.017,
+        temperature: 79,
       },
       {
-        "timestamp": 1777692358127,
-        "gravity": 1.013,
-        "temperature": 75.9
+        timestamp: 1777675970680,
+        gravity: 1.016,
+        temperature: 79,
       },
       {
-        "timestamp": 1777735025864,
-        "gravity": 1.01,
-        "temperature": 71.1
+        timestamp: 1777676892460,
+        gravity: 1.017,
+        temperature: 79,
       },
       {
-        "timestamp": 1777740111804,
-        "gravity": 1.01,
-        "temperature": 71.1
+        timestamp: 1777677790998,
+        gravity: 1.015,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777741022605,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777678707199,
+        gravity: 1.015,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777741923262,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777679615618,
+        gravity: 1.016,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777742825055,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777680548389,
+        gravity: 1.015,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777743726967,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777681467023,
+        gravity: 1.015,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777744628495,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777682748047,
+        gravity: 1.016,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777745528515,
-        "gravity": 1.01,
-        "temperature": 71.1
+        timestamp: 1777683872133,
+        gravity: 1.015,
+        temperature: 78.1,
       },
       {
-        "timestamp": 1777746448946,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777686247380,
+        gravity: 1.014,
+        temperature: 77,
       },
       {
-        "timestamp": 1777747360765,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777687233582,
+        gravity: 1.015,
+        temperature: 77,
       },
       {
-        "timestamp": 1777748261409,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777688133386,
+        gravity: 1.014,
+        temperature: 77,
       },
       {
-        "timestamp": 1777749167421,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777689056371,
+        gravity: 1.013,
+        temperature: 77,
       },
       {
-        "timestamp": 1777750077902,
-        "gravity": 1.01,
-        "temperature": 71.1
+        timestamp: 1777690826794,
+        gravity: 1.014,
+        temperature: 75.9,
       },
       {
-        "timestamp": 1777750999902,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777692358127,
+        gravity: 1.013,
+        temperature: 75.9,
       },
       {
-        "timestamp": 1777751908400,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777735025864,
+        gravity: 1.01,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777752822294,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777740111804,
+        gravity: 1.01,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777753737880,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777741022605,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777754653768,
-        "gravity": 1.009,
-        "temperature": 71.1
+        timestamp: 1777741923262,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777755568273,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777742825055,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777756478151,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777743726967,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777757391909,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777744628495,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777758291327,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777745528515,
+        gravity: 1.01,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777759198875,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777746448946,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777760105835,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777747360765,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777761013242,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777748261409,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777761918352,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777749167421,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777762826857,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777750077902,
+        gravity: 1.01,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777763727897,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777750999902,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777764640426,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777751908400,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777765551571,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777752822294,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777766452820,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777753737880,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777767370649,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777754653768,
+        gravity: 1.009,
+        temperature: 71.1,
       },
       {
-        "timestamp": 1777768282523,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777755568273,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777769183986,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777756478151,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777770089010,
-        "gravity": 1.01,
-        "temperature": 70
+        timestamp: 1777757391909,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777771032422,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777758291327,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777771946172,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777759198875,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777772865094,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777760105835,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777773777790,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777761013242,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777774678372,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777761918352,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777775590128,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777762826857,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777776491423,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777763727897,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777777401490,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777764640426,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777778310314,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777765551571,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777779212025,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777766452820,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777780112807,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777767370649,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777781035830,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777768282523,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777781936240,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777769183986,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777782859095,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777770089010,
+        gravity: 1.01,
+        temperature: 70,
       },
       {
-        "timestamp": 1777783766105,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777771032422,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777784670713,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777771946172,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777785571535,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777772865094,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777786471167,
-        "gravity": 1.009,
-        "temperature": 70
+        timestamp: 1777773777790,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777787386812,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777774678372,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777788294484,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777775590128,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777789259777,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777776491423,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777790182160,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777777401490,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777791104831,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777778310314,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777792017629,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777779212025,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777792922385,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777780112807,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777793824190,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777781035830,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777794728762,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777781936240,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777795671456,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777782859095,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777796573200,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777783766105,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777797477855,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777784670713,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777798384528,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777785571535,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777799297197,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777786471167,
+        gravity: 1.009,
+        temperature: 70,
       },
       {
-        "timestamp": 1777800197933,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777787386812,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777801104654,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777788294484,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777802043404,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777789259777,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777803006336,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777790182160,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777803916918,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777791104831,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777804817697,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777792017629,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777805724469,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777792922385,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777806660067,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777793824190,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777807562451,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777794728762,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777808478213,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777795671456,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777809378807,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777796573200,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777810321160,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777797477855,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777811233425,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777798384528,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777812135545,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777799297197,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777813042486,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777800197933,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777813943178,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777801104654,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777814865864,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777802043404,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777815805707,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777803006336,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777816721506,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777803916918,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777817623520,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777804817697,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777818530892,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777805724469,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777819442395,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777806660067,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777820355412,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777807562451,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777821258083,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777808478213,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777822177985,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777809378807,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777823078787,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777810321160,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777823996426,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777811233425,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777824907033,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777812135545,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777825811829,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777813042486,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777826712586,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777813943178,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777827613840,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777814865864,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777828517027,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777815805707,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777829422961,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777816721506,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777830323506,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777817623520,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777831238311,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777818530892,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777832139883,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777819442395,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777833044212,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777820355412,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777833971505,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777821258083,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777834908110,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777822177985,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777835808695,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777823078787,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777836721449,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777823996426,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777837656394,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777824907033,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777838560051,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777825811829,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777839462668,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777826712586,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777840375744,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777827613840,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777841276449,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777828517027,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1777842186074,
-        "gravity": 1.009,
-        "temperature": 69.1
+        timestamp: 1777829422961,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778003993332,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777830323506,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778004895373,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777831238311,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778005794026,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777832139883,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778006696720,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777833044212,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778007606509,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777833971505,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778008511195,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777834908110,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778009422995,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777835808695,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778010364699,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777836721449,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778011294566,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777837656394,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778012212304,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777838560051,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778013125989,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777839462668,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778014029846,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777840375744,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778014934552,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777841276449,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778015839980,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1777842186074,
+        gravity: 1.009,
+        temperature: 69.1,
       },
       {
-        "timestamp": 1778016750036,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778003993332,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778017654674,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778004895373,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778018557297,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778005794026,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778019471283,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778006696720,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778020373080,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778007606509,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778021274649,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778008511195,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778022175894,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778009422995,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778023112044,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778010364699,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778024017683,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778011294566,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778024917845,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778012212304,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778025823421,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778013125989,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778026730955,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778014029846,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778027645815,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778014934552,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778028564723,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778015839980,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778029468371,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778016750036,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778030380983,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778017654674,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778031281727,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778018557297,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778032195441,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778019471283,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778033099163,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778020373080,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778034005908,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778021274649,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778034907708,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778022175894,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778035809649,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778023112044,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778036717256,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778024017683,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778037617733,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778024917845,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778038529764,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778025823421,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778039463330,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778026730955,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778040365023,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778027645815,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778041287614,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778028564723,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778042188520,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778029468371,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778043088609,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778030380983,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778044007180,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778031281727,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778044912709,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778032195441,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778045813391,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778033099163,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778046722286,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778034005908,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778047629909,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778034907708,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778048540280,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778035809649,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778049441381,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778036717256,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778050350323,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778037617733,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778051293861,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778038529764,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778052221689,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778039463330,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778054035110,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778040365023,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778054940302,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778041287614,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778055841845,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778042188520,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778056759501,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778043088609,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778057685821,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778044007180,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778058615976,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778044912709,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778059551443,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778045813391,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778060453193,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778046722286,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778061367342,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778047629909,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778062273650,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778048540280,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778063191487,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778049441381,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778064096225,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778050350323,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778064998173,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778051293861,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778065905723,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778052221689,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778066836540,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778054035110,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778067738153,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778054940302,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778068639074,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778055841845,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778069543500,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778056759501,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778070451342,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778057685821,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778071360198,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778058615976,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778072262124,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778059551443,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778073173505,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778060453193,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778074083258,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778061367342,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778074983271,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778062273650,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778075887092,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778063191487,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778076786577,
-        "gravity": 1.008,
-        "temperature": 68
+        timestamp: 1778064096225,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778077691293,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778064998173,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778078592959,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778065905723,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778079498967,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778066836540,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778080407202,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778067738153,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778081325386,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778068639074,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778082234774,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778069543500,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778083159660,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778070451342,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778084091289,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778071360198,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778084993161,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778072262124,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778085893702,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778073173505,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778086798712,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778074083258,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778087703193,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778074983271,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778088604064,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778075887092,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778089506286,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778076786577,
+        gravity: 1.008,
+        temperature: 68,
       },
       {
-        "timestamp": 1778090408640,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778077691293,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778091310143,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778078592959,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778092223010,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778079498967,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778093123669,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778080407202,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778094025572,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778081325386,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778094929271,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778082234774,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778095889240,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778083159660,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778096790079,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778084091289,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778097699829,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778084993161,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778098604291,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778085893702,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778099547068,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778086798712,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778100452681,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778087703193,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778101364530,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778088604064,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778102265200,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778089506286,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778103168345,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778090408640,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778104075347,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778091310143,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778104989162,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778092223010,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778105941288,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778093123669,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778106840946,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778094025572,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778107748041,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778094929271,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778108650272,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778095889240,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778109552331,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778096790079,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778110461077,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778097699829,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778111371708,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778098604291,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778112275506,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778099547068,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778113180036,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778100452681,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778114091886,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778101364530,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778115009681,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778102265200,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778115933313,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778103168345,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778116844990,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778104075347,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778117747969,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778104989162,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778118653976,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778105941288,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778119556188,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778106840946,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778120458815,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778107748041,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778121359557,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778108650272,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778122270686,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778109552331,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778123172790,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778110461077,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778124073865,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778111371708,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778124979706,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778112275506,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778125889274,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778113180036,
+        gravity: 1.009,
+        temperature: 68,
       },
       {
-        "timestamp": 1778126789998,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778114091886,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778127692892,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778115009681,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778128624522,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778115933313,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778129541827,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778116844990,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778130442150,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778117747969,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778131379824,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778118653976,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778132291421,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778119556188,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778133207293,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778120458815,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778134115790,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778121359557,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778135015496,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778122270686,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778135917416,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778123172790,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778136825029,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778124073865,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778137730880,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778124979706,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778138631272,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778125889274,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778139537390,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778126789998,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778140451324,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778127692892,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778141395847,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778128624522,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778142329528,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778129541827,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778143232385,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778130442150,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778144142995,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778131379824,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778145054731,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778132291421,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778145960457,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778133207293,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778146865141,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778134115790,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778147779118,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778135015496,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778148694605,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778135917416,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778149613637,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778136825029,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778150520023,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778137730880,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778151433905,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778138631272,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778152341214,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778139537390,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778153275878,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778140451324,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778154175338,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778141395847,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778155085749,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778142329528,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778155997652,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778143232385,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778156898084,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778144142995,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778157804818,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778145054731,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778158712650,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778145960457,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778159612205,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778146865141,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778160514132,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778147779118,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778161438942,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778148694605,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778162348538,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778149613637,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778163259394,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778150520023,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778164166324,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778151433905,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778165065874,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778152341214,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778165973476,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778153275878,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778166879152,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778154175338,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778167780869,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778155085749,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778168682768,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778155997652,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778169591303,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778156898084,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778170512360,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778157804818,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778171427490,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778158712650,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778172329627,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778159612205,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778173233309,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778160514132,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778174136224,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778161438942,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778175040881,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778162348538,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778175952599,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778163259394,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778176852480,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778164166324,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778177761173,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778165065874,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778178668068,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778165973476,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778179580694,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778166879152,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778180488697,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778167780869,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778181389212,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778168682768,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778182302935,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778169591303,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778183222377,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778170512360,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778184123165,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778171427490,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778185068341,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778172329627,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778185975378,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778173233309,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778186885810,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778174136224,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778187795485,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778175040881,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778188729289,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778175952599,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778189632294,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778176852480,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778190560582,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778177761173,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778191468673,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778178668068,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778192393141,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778179580694,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778193293043,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778180488697,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778194200289,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778181389212,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778195135213,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778182302935,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778196042097,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778183222377,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778196973006,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778184123165,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778197882088,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778185068341,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778198782804,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778185975378,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778199693119,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778186885810,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778200596736,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778187795485,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778201499065,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778188729289,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778202398529,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778189632294,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778203300559,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778190560582,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778204209743,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778191468673,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778205121264,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778192393141,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778206030285,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778193293043,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778206932916,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778194200289,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778207833637,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778195135213,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778208741402,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778196042097,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778209650375,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778196973006,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778210566940,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778197882088,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778211474019,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778198782804,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778212374246,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778199693119,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778213275997,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778200596736,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778214177977,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778201499065,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778215091050,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778202398529,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778216006076,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778203300559,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778216906016,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778204209743,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778217810174,
-        "gravity": 1.004,
-        "temperature": 66.9
+        timestamp: 1778205121264,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778218711730,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778206030285,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778219612326,
-        "gravity": 1.004,
-        "temperature": 66.9
+        timestamp: 1778206932916,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778220514915,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778207833637,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778221418530,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778208741402,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778222320384,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778209650375,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778223229964,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778210566940,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778224130700,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778211474019,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778225031338,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778212374246,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778225936331,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778213275997,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778226839721,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778214177977,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778227745529,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778215091050,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778228648640,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778216006076,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778229550180,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778216906016,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778230456481,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778217810174,
+        gravity: 1.004,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778231374526,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778218711730,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778232274224,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778219612326,
+        gravity: 1.004,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778233181043,
-        "gravity": 1.004,
-        "temperature": 66.9
+        timestamp: 1778220514915,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778234089522,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778221418530,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778234990379,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778222320384,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778235900036,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778223229964,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778236811805,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778224130700,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778237768429,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778225031338,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778238684363,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778225936331,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778239585918,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778226839721,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778240492767,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778227745529,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778241394239,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778228648640,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778242293946,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778229550180,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778243195747,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778230456481,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778244109593,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778231374526,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778245023398,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778232274224,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778245940144,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778233181043,
+        gravity: 1.004,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778246845740,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778234089522,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778247753409,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778234990379,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778248654075,
-        "gravity": 1.005,
-        "temperature": 66.9
+        timestamp: 1778235900036,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778249589285,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778236811805,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778250488419,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778237768429,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778251389397,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778238684363,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778252307938,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778239585918,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778253211188,
-        "gravity": 1.006,
-        "temperature": 66.9
+        timestamp: 1778240492767,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778254112802,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778241394239,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778255025132,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778242293946,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778255930811,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778243195747,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778256832816,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778244109593,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778257737736,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778245023398,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778258672122,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778245940144,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778259585265,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778246845740,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778260497866,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778247753409,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778261412918,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778248654075,
+        gravity: 1.005,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778262313083,
-        "gravity": 1.007,
-        "temperature": 66.9
+        timestamp: 1778249589285,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778263224952,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778250488419,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778264131552,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778251389397,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778265076619,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778252307938,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778265989916,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778253211188,
+        gravity: 1.006,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778266891347,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778254112802,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778267791511,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778255025132,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778268722351,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778255930811,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778269627975,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778256832816,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778270537472,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778257737736,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778271455545,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778258672122,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778272357048,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778259585265,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778273259213,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778260497866,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778274161134,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778261412918,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778275084144,
-        "gravity": 1.008,
-        "temperature": 66.9
+        timestamp: 1778262313083,
+        gravity: 1.007,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778276028840,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778263224952,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778276933939,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778264131552,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778277836692,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778265076619,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778278743292,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778265989916,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778279660210,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778266891347,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778280557056,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778267791511,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778281463255,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778268722351,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778282367623,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778269627975,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778283274292,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778270537472,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778284173982,
-        "gravity": 1.009,
-        "temperature": 66.9
+        timestamp: 1778271455545,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778285087665,
-        "gravity": 1.009,
-        "temperature": 68
+        timestamp: 1778272357048,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778286113620,
-        "gravity": 1.01,
-        "temperature": 68
+        timestamp: 1778273259213,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778287013152,
-        "gravity": 1.01,
-        "temperature": 66.9
+        timestamp: 1778274161134,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778287916999,
-        "gravity": 1.011,
-        "temperature": 66.9
+        timestamp: 1778275084144,
+        gravity: 1.008,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778288812282,
-        "gravity": 1.01,
-        "temperature": 66
+        timestamp: 1778276028840,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778289713708,
-        "gravity": 1.011,
-        "temperature": 66
+        timestamp: 1778276933939,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778290615150,
-        "gravity": 1.01,
-        "temperature": 66
+        timestamp: 1778277836692,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778291514814,
-        "gravity": 1.011,
-        "temperature": 66
+        timestamp: 1778278743292,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778292431332,
-        "gravity": 1.01,
-        "temperature": 64.9
+        timestamp: 1778279660210,
+        gravity: 1.009,
+        temperature: 66.9,
       },
       {
-        "timestamp": 1778293319003,
-        "gravity": 1.01,
-        "temperature": 64.9
-      }
+        timestamp: 1778280557056,
+        gravity: 1.009,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1778281463255,
+        gravity: 1.009,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1778282367623,
+        gravity: 1.009,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1778283274292,
+        gravity: 1.009,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1778284173982,
+        gravity: 1.009,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1778285087665,
+        gravity: 1.009,
+        temperature: 68,
+      },
+      {
+        timestamp: 1778286113620,
+        gravity: 1.01,
+        temperature: 68,
+      },
+      {
+        timestamp: 1778287013152,
+        gravity: 1.01,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1778287916999,
+        gravity: 1.011,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1778288812282,
+        gravity: 1.01,
+        temperature: 66,
+      },
+      {
+        timestamp: 1778289713708,
+        gravity: 1.011,
+        temperature: 66,
+      },
+      {
+        timestamp: 1778290615150,
+        gravity: 1.01,
+        temperature: 66,
+      },
+      {
+        timestamp: 1778291514814,
+        gravity: 1.011,
+        temperature: 66,
+      },
+      {
+        timestamp: 1778292431332,
+        gravity: 1.01,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1778293319003,
+        gravity: 1.01,
+        temperature: 64.9,
+      },
     ],
-    "fermentationEvents": [
+    fermentationEvents: [
       {
-        "timestamp": 1777438800000,
-        "label": "Pitched"
+        timestamp: 1777438800000,
+        label: 'Pitched',
       },
       {
-        "timestamp": 1777504961540,
-        "label": "Fermenting"
-      }
+        timestamp: 1777504961540,
+        label: 'Fermenting',
+      },
     ],
-    "source": "brewfather"
-  }
+    source: 'brewfather',
+  },
 ]

@@ -217,9 +217,7 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
               fg: batch.fg,
               attenuation:
                 batch.og > 1
-                  ? Math.round(
-                      ((batch.og - batch.fg) / (batch.og - 1)) * 100
-                    )
+                  ? Math.round(((batch.og - batch.fg) / (batch.og - 1)) * 100)
                   : 0,
               abv: batch.abv,
             }}

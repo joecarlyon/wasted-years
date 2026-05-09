@@ -20,7 +20,8 @@ export default function BatchSearch({ batches }: BatchSearchProps) {
 
   const filteredBatches = batches.filter((batch) => {
     if (sourceFilter && batch.source !== sourceFilter) return false
-    if (competitionFilter && !competitionBatchNos.has(batch.batchNo)) return false
+    if (competitionFilter && !competitionBatchNos.has(batch.batchNo))
+      return false
 
     if (!searchQuery) return true
 
