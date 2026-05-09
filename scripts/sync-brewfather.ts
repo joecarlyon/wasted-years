@@ -138,6 +138,10 @@ interface BrewfatherBatch {
   measuredPreBoilGravity?: number
   measuredBoilSize?: number
   notes?: BrewfatherNote[]
+  batchNotes?: string
+  brewNotes?: string
+  tasteNotes?: string
+  fermentationNotes?: string
   recipe: {
     name?: string
     style?: { name: string; category?: string }
@@ -502,6 +506,31 @@ async function fetchReadings(batchId: string): Promise<TiltReading[]> {
     }))
 }
 
+function deriveTextNotes(b: BrewfatherBatch): {
+  brewingNotes?: string
+  tastingNotes?: string
+} {
+  const brewingPieces: string[] = []
+  for (const v of [b.batchNotes, b.brewNotes, b.fermentationNotes]) {
+    if (typeof v === 'string' && v.trim()) {
+      brewingPieces.push(v.trim())
+    }
+  }
+  for (const note of b.notes ?? []) {
+    if (note.type !== 'statusChanged' && note.note && note.note.trim()) {
+      brewingPieces.push(note.note.trim())
+    }
+  }
+  return {
+    brewingNotes:
+      brewingPieces.length > 0 ? brewingPieces.join(' | ') : undefined,
+    tastingNotes:
+      typeof b.tasteNotes === 'string' && b.tasteNotes.trim()
+        ? b.tasteNotes.trim()
+        : undefined,
+  }
+}
+
 function deriveEvents(b: BrewfatherBatch): FermentationEvent[] {
   const events: FermentationEvent[] = []
 
@@ -540,7 +569,10 @@ function deriveEvents(b: BrewfatherBatch): FermentationEvent[] {
 
 async function syncBatches() {
   console.log('Fetching batches from Brewfather...')
-  const batches = await fetchAll<BrewfatherBatch>('batches', '&include=notes')
+  const batches = await fetchAll<BrewfatherBatch>(
+    'batches',
+    '&include=notes,batchNotes,brewNotes,tasteNotes,fermentationNotes'
+  )
   console.log(`Found ${batches.length} batches`)
 
   const existingBatches = await loadExistingBatches()
@@ -559,7 +591,38 @@ async function syncBatches() {
     const category =
       b.recipe?.style?.category || categorizeRecipe(styleName, name)
 
-    const newBatch = {
+    // Fetch Tilt fermentation readings up-front so we can use them as
+    // gravity fallbacks when measured/estimated values aren't set
+    console.log(`Fetching readings for batch ${b._id}...`)
+    const readings = await fetchReadings(b._id)
+    const firstTiltGravity =
+      readings.length > 0 ? readings[0].gravity : undefined
+    const lastTiltGravity =
+      readings.length > 0 ? readings[readings.length - 1].gravity : undefined
+
+    const og = roundTo(
+      b.measuredOg ||
+        b.measuredPostBoilGravity ||
+        b.estimatedOg ||
+        firstTiltGravity ||
+        b.recipe?.og ||
+        0,
+      3
+    )
+    const fg = roundTo(
+      b.measuredFg || b.estimatedFg || lastTiltGravity || b.recipe?.fg || 0,
+      3
+    )
+    const abv =
+      b.measuredAbv > 0
+        ? roundTo(b.measuredAbv, 1)
+        : og > 0 && fg > 0
+          ? roundTo((og - fg) * 131.25, 1)
+          : 0
+
+    const textNotes = deriveTextNotes(b)
+
+    const newBatch: Record<string, unknown> = {
       batchNo: b.batchNo,
       name,
       style: styleName,
@@ -572,16 +635,9 @@ async function syncBatches() {
       bottlingDate: b.bottlingDate
         ? new Date(b.bottlingDate).toISOString().split('T')[0]
         : '',
-      og: roundTo(
-        b.measuredOg ||
-          b.measuredPostBoilGravity ||
-          b.estimatedOg ||
-          b.recipe?.og ||
-          0,
-        3
-      ),
-      fg: roundTo(b.measuredFg || b.estimatedFg || b.recipe?.fg || 0, 3),
-      abv: roundTo(b.measuredAbv || 0, 1),
+      og,
+      fg,
+      abv,
       ibu: b.estimatedIbu ? roundTo(b.estimatedIbu, 0) : null,
       color: roundTo(b.estimatedColor || 0, 1),
       efficiency: roundTo(b.measuredEfficiency || 0, 1),
@@ -614,13 +670,16 @@ async function syncBatches() {
       })),
     }
 
-    // Fetch Tilt fermentation readings and derive events
-    console.log(`Fetching readings for batch ${b._id}...`)
-    const readings = await fetchReadings(b._id)
+    if (textNotes.brewingNotes) {
+      newBatch.brewingNotes = textNotes.brewingNotes
+    }
+    if (textNotes.tastingNotes) {
+      newBatch.tastingNotes = textNotes.tastingNotes
+    }
+
     if (readings.length > 0) {
-      ;(newBatch as Record<string, unknown>).tiltReadings = readings
-      ;(newBatch as Record<string, unknown>).fermentationEvents =
-        deriveEvents(b)
+      newBatch.tiltReadings = readings
+      newBatch.fermentationEvents = deriveEvents(b)
     }
     // Be nice to the API
     await new Promise((r) => setTimeout(r, 500))

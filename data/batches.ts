@@ -2927,6 +2927,8 @@ export const batches: Batch[] = [
     fermentables: [],
     hops: [],
     yeast: [],
+    brewingNotes:
+      "I screwed up and put 8.3g in the kettle to start - basically included the sparge water.\nI forgot to turn down the temp, so the first 20 minutes of mash were close to 160 instead of 153. Hopefully it's not totally unfermentable🤞 I will try to compensate by adding an extra 30 minutes onto the boil.",
     source: 'brewfather',
   },
   {
@@ -3095,6 +3097,8 @@ export const batches: Batch[] = [
     fermentables: [],
     hops: [],
     yeast: [],
+    brewingNotes:
+      "I somehow wildly missed the volume target and ended up with too much wort before the boil. | I completely forgot to mash out. I just yanked the grains out and then raised temp. D'oh!",
     source: 'brewfather',
   },
   {
@@ -3158,6 +3162,10 @@ export const batches: Batch[] = [
         productId: '1084',
       },
     ],
+    brewingNotes:
+      'Hop stand was at 140, not 170. | Decided to use a pump and a filter to filter out the grain | Spilled some grain into the kettle when I started the mash. The bucket was too full',
+    tastingNotes:
+      "It's very smooth. It doesn't have the bitter hop flavor that it normally does. I'd undo those hop timing changes. Too balanced.",
     source: 'brewfather',
   },
   {
@@ -3237,6 +3245,8 @@ export const batches: Batch[] = [
         productId: 'WLP002',
       },
     ],
+    brewingNotes:
+      'I forgot to pull the grain basket up to the 2nd set of hooks before adding sparge water, kinda undoing some of the value it adds.',
     source: 'brewfather',
   },
   {
@@ -3395,6 +3405,8 @@ export const batches: Batch[] = [
         productId: 'WLP002',
       },
     ],
+    brewingNotes:
+      "Added 16oz of corn sugar to the boil | What's up with this mash efficiency?? Ughhh | Recirculation was at 167 not 176",
     source: 'brewfather',
   },
   {
@@ -3474,6 +3486,8 @@ export const batches: Batch[] = [
         productId: 'WLP002',
       },
     ],
+    brewingNotes:
+      "Didn't have enough Columbus. Subbing half ounce for Cascade.",
     source: 'brewfather',
   },
   {
@@ -3545,6 +3559,9 @@ export const batches: Batch[] = [
         productId: '',
       },
     ],
+    brewingNotes: 'Ewelina said the uncarbonated beer "had girth"',
+    tastingNotes:
+      "It's a little bit thinner than I remember. The added roasted malt came through pretty strong - keep that.",
     source: 'brewfather',
   },
   {
@@ -3556,7 +3573,7 @@ export const batches: Batch[] = [
     status: 'Completed',
     brewDate: '2024-12-30',
     bottlingDate: '',
-    og: 1.05,
+    og: 1.01,
     fg: 1.01,
     abv: 0,
     ibu: 17,
@@ -3770,6 +3787,8 @@ export const batches: Batch[] = [
         productId: '1010',
       },
     ],
+    brewingNotes:
+      "Probably need a more rigorous boil bc I'm not hitting my boil off rate",
     source: 'brewfather',
   },
   {
@@ -3862,6 +3881,8 @@ export const batches: Batch[] = [
         productId: '1272',
       },
     ],
+    brewingNotes:
+      "I couldn't get the last half gallon out of the fermenter. Idk why. Possibly bad seal on top of the lid now? So the pressure isn't pushing downward. \n\nSo I'm missing a half gallon of beer in the keg. | Added dry hops on day 7 | I think it fermented in like 2 days. | I added the lactic acid 30 minutes into the mash. Whoops",
     source: 'brewfather',
   },
   {
@@ -3904,6 +3925,8 @@ export const batches: Batch[] = [
     fermentables: [],
     hops: [],
     yeast: [],
+    brewingNotes:
+      'Actual mash temp was 152 once I started the recirc 10 minutes in',
     source: 'brewfather',
   },
   {
@@ -3915,9 +3938,9 @@ export const batches: Batch[] = [
     status: 'Fermenting',
     brewDate: '2026-04-29',
     bottlingDate: '',
-    og: 0,
-    fg: 0,
-    abv: 0,
+    og: 1.07,
+    fg: 1.01,
+    abv: 7.9,
     ibu: null,
     color: 0,
     efficiency: 0,
@@ -3925,6 +3948,8 @@ export const batches: Batch[] = [
     fermentables: [],
     hops: [],
     yeast: [],
+    brewingNotes:
+      "I added an ice pack on top of the fermenter in attempt to lower the fermenter temperature. | Started the whirlpool at 180. Temp dropped to about 170 by the end. | When I mashed in, there were actually some doughballs. Maybe the double crush did have an effect. | I double crushed the grain, probably don't need to do that",
     tiltReadings: [
       {
         timestamp: 1777514985628,
@@ -6885,6 +6910,16 @@ export const batches: Batch[] = [
         timestamp: 1778293319003,
         gravity: 1.01,
         temperature: 64.9,
+      },
+      {
+        timestamp: 1778294219961,
+        gravity: 1.01,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1778295120185,
+        gravity: 1.01,
+        temperature: 64,
       },
     ],
     fermentationEvents: [

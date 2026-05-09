@@ -4,7 +4,12 @@ import { batches } from '@/data/batches'
 import { recipes } from '@/data/recipes'
 import { competitions } from '@/data/competitions'
 import { brewingSetups } from '@/data/equipment'
-import { formatDate, findMatchingRecipe } from '@/lib/utils'
+import {
+  formatDate,
+  findMatchingRecipe,
+  deriveBatchVitals,
+  deriveBatchIngredients,
+} from '@/lib/utils'
 import StatusBadge from '@/components/StatusBadge'
 import LinkifyText from '@/components/LinkifyText'
 import FermentationChart from '@/components/FermentationChart'
@@ -38,6 +43,8 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
     batch.og > 0
 
   const matchingRecipe = findMatchingRecipe(batch, recipes)
+  const vitals = deriveBatchVitals(batch, matchingRecipe)
+  const ingredients = deriveBatchIngredients(batch, matchingRecipe)
   const styleDisplay =
     batch.style && batch.style !== 'Unknown'
       ? batch.style
@@ -162,15 +169,15 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
       <div className="mb-8 grid grid-cols-3 gap-4 border-b border-border pb-8 sm:grid-cols-7">
         <StatBox
           label="OG"
-          value={batch.og > 0 ? batch.og.toFixed(3) : 'N/A'}
+          value={vitals.og > 0 ? vitals.og.toFixed(3) : 'N/A'}
         />
         <StatBox
           label="FG"
-          value={batch.fg > 0 ? batch.fg.toFixed(3) : 'N/A'}
+          value={vitals.fg > 0 ? vitals.fg.toFixed(3) : 'N/A'}
         />
         <StatBox
           label="ABV"
-          value={batch.abv > 0 ? `${batch.abv}%` : 'N/A'}
+          value={vitals.abv > 0 ? `${vitals.abv}%` : 'N/A'}
           highlight
         />
         {batch.ibu !== null && (
@@ -205,13 +212,15 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
                     86_400_000
                 )
               ),
-              og: batch.og,
-              fg: batch.fg,
+              og: vitals.og,
+              fg: vitals.fg,
               attenuation:
-                batch.og > 1
-                  ? Math.round(((batch.og - batch.fg) / (batch.og - 1)) * 100)
+                vitals.og > 1
+                  ? Math.round(
+                      ((vitals.og - vitals.fg) / (vitals.og - 1)) * 100
+                    )
                   : 0,
-              abv: batch.abv,
+              abv: vitals.abv,
             }}
           />
         </div>
@@ -221,9 +230,9 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
       <div className="mb-8 grid gap-8 border-b border-border pb-8 lg:grid-cols-2">
         {/* Fermentables */}
         <Section title="Fermentables">
-          {batch.fermentables.length > 0 ? (
+          {ingredients.fermentables.length > 0 ? (
             <ul className="space-y-2">
-              {batch.fermentables.map((f, idx) => (
+              {ingredients.fermentables.map((f, idx) => (
                 <li key={idx} className="flex justify-between text-sm">
                   <span className="text-text-secondary">{f.name}</span>
                   <span className="text-text-primary">
@@ -239,9 +248,9 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
 
         {/* Hops */}
         <Section title="Hops">
-          {batch.hops.length > 0 ? (
+          {ingredients.hops.length > 0 ? (
             <ul className="space-y-2">
-              {batch.hops.map((h, idx) => (
+              {ingredients.hops.map((h, idx) => (
                 <li key={idx} className="flex justify-between text-sm">
                   <span className="text-text-secondary">{h.name}</span>
                   <span className="text-text-primary">

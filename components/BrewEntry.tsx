@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Batch } from '@/types'
-import { formatDate, findMatchingRecipe } from '@/lib/utils'
+import { formatDate, findMatchingRecipe, deriveBatchVitals } from '@/lib/utils'
 import { competitions } from '@/data/competitions'
 import { recipes } from '@/data/recipes'
 import StatusBadge from './StatusBadge'
@@ -11,6 +11,7 @@ interface BrewEntryProps {
 
 export default function BrewEntry({ batch }: BrewEntryProps) {
   const matchingRecipe = findMatchingRecipe(batch, recipes)
+  const vitals = deriveBatchVitals(batch, matchingRecipe)
 
   const styleDisplay =
     batch.style && batch.style !== 'Unknown'
@@ -95,15 +96,15 @@ export default function BrewEntry({ batch }: BrewEntryProps) {
         <div className="mt-4 flex flex-wrap gap-6 text-sm">
           <div>
             <span className="mr-2 text-lavender-dark">OG:</span>
-            <span className="text-lavender">{batch.og.toFixed(3)}</span>
+            <span className="text-lavender">{vitals.og.toFixed(3)}</span>
           </div>
           <div>
             <span className="mr-2 text-lavender-dark">FG:</span>
-            <span className="text-lavender">{batch.fg.toFixed(3)}</span>
+            <span className="text-lavender">{vitals.fg.toFixed(3)}</span>
           </div>
           <div>
             <span className="mr-2 text-lavender-dark">ABV:</span>
-            <span className="font-semibold text-accent">{batch.abv}%</span>
+            <span className="font-semibold text-accent">{vitals.abv}%</span>
           </div>
           {batch.ibu !== null && (
             <div>

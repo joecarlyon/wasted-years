@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Batch } from '@/types'
 import { competitions } from '@/data/competitions'
 import { recipes } from '@/data/recipes'
-import { formatDate, findMatchingRecipe } from '@/lib/utils'
+import { formatDate, findMatchingRecipe, deriveBatchVitals } from '@/lib/utils'
 
 interface RecentBrewCardProps {
   batch: Batch
@@ -16,6 +16,7 @@ const medalColors = {
 
 export default function RecentBrewCard({ batch }: RecentBrewCardProps) {
   const matchingRecipe = findMatchingRecipe(batch, recipes)
+  const vitals = deriveBatchVitals(batch, matchingRecipe)
   const styleDisplay =
     batch.style && batch.style !== 'Unknown'
       ? batch.style
@@ -66,7 +67,7 @@ export default function RecentBrewCard({ batch }: RecentBrewCardProps) {
             <span className="text-xs uppercase tracking-wide text-lavender-dark">
               ABV
             </span>
-            <span className="font-semibold text-accent">{batch.abv}%</span>
+            <span className="font-semibold text-accent">{vitals.abv}%</span>
           </div>
           {batch.ibu !== null && (
             <div className="flex flex-col">

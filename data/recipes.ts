@@ -4363,8 +4363,8 @@ export const recipes: Recipe[] = [
     description:
       'American IPA for 2026 NHC. Evolved from Overlord v3.1. Simplified grain bill (removed crystal, carapils, rye). Diversified hop aroma (added Simcoe + Nelson Sauvin). Switched to RO water with targeted mineral additions.\n\nNOTE: I need to probably collect an extra ~0.75g of water due to how much the hops are going to soak up in the boil, so I should get 3g of sparge, not 2.',
     og: 1.07,
-    fg: 1.014,
-    abv: 7.4,
+    fg: 1.016,
+    abv: 7.1,
     ibu: 71,
     grains: [
       '6.8 lb Pale Ale Malt 2-Row',
@@ -4381,7 +4381,7 @@ export const recipes: Recipe[] = [
       '1 oz Simcoe (Dry Hop)',
       '0.5 oz Nelson Sauvin (Dry Hop)',
     ],
-    yeast: 'West Coast IV (OYL-050)',
+    yeast: 'West Coast Ale I (OYL-004)',
     source: 'brewfather',
     brewDate: '2026-02-25',
     artwork: '/images/recipes/overlord.jpg',
@@ -4467,11 +4467,11 @@ export const recipes: Recipe[] = [
       },
     ],
     yeastDetail: {
-      name: 'West Coast IV',
+      name: 'West Coast Ale I',
       lab: 'Omega',
-      attenuation: 80,
-      minTemp: 62,
-      maxTemp: 74,
+      attenuation: 77,
+      minTemp: 60,
+      maxTemp: 73,
     },
     mashProfile: {
       name: 'High fermentability plus mash out',
