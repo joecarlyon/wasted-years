@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { brewingSetups } from '@/data/equipment'
 import { batches } from '@/data/batches'
-import { BrewingSetup } from '@/types'
+import { BrewingSetup, EquipmentItem } from '@/types'
 
 export const metadata = {
   title: 'Equipment | Wasted Years',
@@ -81,38 +81,15 @@ function SetupCard({ setup }: { setup: BrewingSetup }) {
       </div>
 
       {/* Equipment list */}
-      <div className="mb-6">
-        <h4 className="mb-4 text-xs uppercase tracking-widest text-lavender">
-          Equipment
-        </h4>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {setup.equipment.map((item, idx) => (
-            <div key={idx} className="border border-border p-4">
-              <p className="font-medium text-text-primary">
-                {item.url ? (
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-text-primary transition-colors hover:text-accent"
-                  >
-                    {item.name} &rarr;
-                  </a>
-                ) : (
-                  item.name
-                )}
-              </p>
-              <p className="text-xs uppercase tracking-wide text-accent">
-                {item.role}
-              </p>
-              {item.description && (
-                <p className="mt-1 text-sm text-text-secondary">
-                  {item.description}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
+      <div className="mb-6 space-y-6">
+        <EquipmentGroup
+          label="Hot Side"
+          items={setup.equipment.filter((item) => item.side === 'hot')}
+        />
+        <EquipmentGroup
+          label="Cold Side"
+          items={setup.equipment.filter((item) => item.side === 'cold')}
+        />
       </div>
 
       {/* Batch count */}
@@ -126,6 +103,51 @@ function SetupCard({ setup }: { setup: BrewingSetup }) {
         >
           View Brew Log &rarr;
         </Link>
+      </div>
+    </div>
+  )
+}
+
+function EquipmentGroup({
+  label,
+  items,
+}: {
+  label: string
+  items: EquipmentItem[]
+}) {
+  if (items.length === 0) return null
+  return (
+    <div>
+      <h4 className="mb-4 text-xs uppercase tracking-widest text-lavender">
+        {label}
+      </h4>
+      <div className="grid gap-4 sm:grid-cols-2">
+        {items.map((item, idx) => (
+          <div key={idx} className="border border-border p-4">
+            <p className="font-medium text-text-primary">
+              {item.url ? (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-text-primary transition-colors hover:text-accent"
+                >
+                  {item.name} &rarr;
+                </a>
+              ) : (
+                item.name
+              )}
+            </p>
+            <p className="text-xs uppercase tracking-wide text-accent">
+              {item.role}
+            </p>
+            {item.description && (
+              <p className="mt-1 text-sm text-text-secondary">
+                {item.description}
+              </p>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   )

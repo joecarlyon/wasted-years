@@ -40,6 +40,7 @@ export interface EquipmentProfile {
 export interface EquipmentItem {
   name: string
   role: string
+  side: 'hot' | 'cold'
   description?: string
   url?: string
 }

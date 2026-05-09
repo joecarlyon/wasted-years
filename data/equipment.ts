@@ -14,6 +14,7 @@ export const brewingSetups: BrewingSetup[] = [
       {
         name: 'Anvil Foundry 18 Gallon',
         role: 'All-In-One Brew System',
+        side: 'hot',
         description:
           '1600W electric element with built-in controller and grain basket',
         url: 'https://anvilbrewing.com/product/anvil-foundry-18-gallon/',
@@ -21,6 +22,7 @@ export const brewingSetups: BrewingSetup[] = [
       {
         name: 'Blichmann RipTide Pump',
         role: 'Mash Recirculation',
+        side: 'hot',
         description:
           'Magnetic drive brewing pump for continuous wort recirculation',
         url: 'https://www.blichmannengineering.com/product/riptide-brewing-pump/',
@@ -28,18 +30,21 @@ export const brewingSetups: BrewingSetup[] = [
       {
         name: 'The Brew Bag',
         role: 'Grain Containment',
+        side: 'hot',
         description: 'Fine mesh bag inside grain basket for BIAB brewing',
         url: 'https://www.brewinabag.com/',
       },
       {
         name: 'Big Mouth Bubbler EVO 2',
         role: 'Fermentation',
+        side: 'cold',
         description: '6.5 gallon wide-mouth plastic fermenter',
         url: 'https://www.northernbrewer.com/collections/big-mouth-bubbler/products/big-mouth-bubbler-evo-2-6-5-gallon',
       },
       {
         name: 'SS Brewtech Brew Bucket 2.0',
         role: 'Fermentation',
+        side: 'cold',
         description:
           'Stainless steel conical fermenter with rotating racking arm',
         url: 'https://www.ssbrewtech.com/products/brew-bucket-2-0',
@@ -47,8 +52,33 @@ export const brewingSetups: BrewingSetup[] = [
       {
         name: 'Chapman UniVessel 14 Gallon',
         role: 'Fermentation',
+        side: 'cold',
         description: '14 gallon stainless steel fermenter for large batches',
         url: 'https://www.amazon.com/dp/B018J82JOY',
+      },
+      {
+        name: 'Frigidaire EFRF7003 7 cu ft Chest Freezer',
+        role: 'Fermentation Chamber',
+        side: 'cold',
+        description:
+          'Converted chest freezer for temperature-controlled fermentation and cold crashing',
+        url: 'https://www.frigidaire.com/Home-Comfort/Freezers/Chest-Freezers/EFRF7003/',
+      },
+      {
+        name: 'Inkbird ITC-308',
+        role: 'Temperature Controller',
+        side: 'cold',
+        description:
+          'Dual-stage digital temperature controller that switches the chest freezer for precise fermentation temps',
+        url: 'https://inkbird.com/products/temp-controller-itc-308',
+      },
+      {
+        name: 'Tilt Hydrometer (Green)',
+        role: 'Fermentation Monitoring',
+        side: 'cold',
+        description:
+          'Wireless floating hydrometer that logs gravity and temperature throughout fermentation',
+        url: 'https://tilthydrometer.com/',
       },
     ],
     specs: {
@@ -74,21 +104,25 @@ export const brewingSetups: BrewingSetup[] = [
       {
         name: '15 Gallon Keggle',
         role: 'Brew Kettle',
+        side: 'hot',
         description: 'Converted Sankey keg with ball valve and thermometer',
       },
       {
         name: '15 Gallon Keggle',
         role: 'Hot Liquor Tank',
+        side: 'hot',
         description: 'Second converted Sankey keg for sparge water',
       },
       {
         name: 'Cooler Mash Tun',
         role: 'Mash Tun',
+        side: 'hot',
         description: 'Insulated cooler with false bottom for mashing',
       },
       {
         name: 'Propane Burners (x2)',
         role: 'Heat Source',
+        side: 'hot',
         description: 'Two high-output propane burners for kettle and HLT',
       },
     ],
