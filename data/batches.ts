@@ -3950,7 +3950,13 @@ export const batches: Batch[] = [
     yeast: [],
     brewingNotes:
       "I double crushed the grain, probably don't need to do that | When I mashed in, there were actually some doughballs. Maybe the double crush did have an effect. | Started the whirlpool at 180. Temp dropped to about 170 by the end. | I added an ice pack on top of the fermenter in attempt to lower the fermenter temperature. | I moved this to a chest freezer that I just bought. I changed the sanitizer also. Hopefully, this goes OK. I knocked the temp down to 36 to cold crash.",
-    images: ['/images/batches/104/01.jpg'],
+    images: [
+      {
+        src: '/images/batches/104/01.jpg',
+        caption:
+          'First time cold crashing AND I hooked up the raspberry pi',
+      },
+    ],
     tiltReadings: [
       {
         timestamp: 1777514985628,

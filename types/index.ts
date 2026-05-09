@@ -191,5 +191,10 @@ export interface Batch {
   source?: 'brewfather' | 'beersmith'
   tiltReadings?: TiltReading[]
   fermentationEvents?: FermentationEvent[]
-  images?: string[]
+  images?: BatchImage[]
+}
+
+export interface BatchImage {
+  src: string
+  caption?: string
 }

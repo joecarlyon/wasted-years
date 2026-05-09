@@ -335,16 +335,25 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
           <h3 className="mb-4 text-xs uppercase tracking-widest text-lavender">
             Photos
           </h3>
-          <div className="flex flex-wrap gap-3">
-            {batch.images.map((src, idx) => (
-              <ImageLightbox
-                key={src}
-                src={src}
-                alt={`${batch.name} photo ${idx + 1}`}
-                thumbnailWidth={240}
-                thumbnailHeight={320}
-                thumbnailClassName="h-auto w-auto max-h-80"
-              />
+          <div className="flex flex-wrap gap-6">
+            {batch.images.map((img, idx) => (
+              <figure
+                key={img.src}
+                className="flex max-w-[240px] flex-col gap-2"
+              >
+                <ImageLightbox
+                  src={img.src}
+                  alt={img.caption ?? `${batch.name} photo ${idx + 1}`}
+                  thumbnailWidth={240}
+                  thumbnailHeight={320}
+                  thumbnailClassName="h-auto w-auto max-h-80"
+                />
+                {img.caption && (
+                  <figcaption className="text-xs italic text-text-secondary">
+                    {img.caption}
+                  </figcaption>
+                )}
+              </figure>
             ))}
           </div>
         </div>
