@@ -145,20 +145,6 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
                   {batch.source}
                 </span>
               ))}
-            {batch.images && batch.images.length > 0 && (
-              <div className="mt-3 flex flex-col items-end gap-2">
-                {batch.images.map((src, idx) => (
-                  <ImageLightbox
-                    key={src}
-                    src={src}
-                    alt={`${batch.name} photo ${idx + 1}`}
-                    thumbnailWidth={200}
-                    thumbnailHeight={267}
-                    thumbnailClassName="h-auto w-auto max-h-72"
-                  />
-                ))}
-              </div>
-            )}
           </div>
         </div>
         <div className="mt-4 flex flex-wrap gap-6 text-sm text-text-secondary">
@@ -340,6 +326,27 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
               </p>
             </Section>
           )}
+        </div>
+      )}
+
+      {/* Photos */}
+      {batch.images && batch.images.length > 0 && (
+        <div className="mb-8 border-b border-border pb-8">
+          <h3 className="mb-4 text-xs uppercase tracking-widest text-lavender">
+            Photos
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {batch.images.map((src, idx) => (
+              <ImageLightbox
+                key={src}
+                src={src}
+                alt={`${batch.name} photo ${idx + 1}`}
+                thumbnailWidth={240}
+                thumbnailHeight={320}
+                thumbnailClassName="h-auto w-auto max-h-80"
+              />
+            ))}
+          </div>
         </div>
       )}
 
