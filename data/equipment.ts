@@ -12,6 +12,21 @@ export const brewingSetups: BrewingSetup[] = [
     batchSource: 'brewfather',
     equipment: [
       {
+        name: 'Monster Mill MM3',
+        role: 'Grain Mill',
+        side: 'hot',
+        description:
+          'Three-roller homebrew grain mill for crushing malt before the mash',
+        url: 'https://monsterbrewinghardware.com/products/3-roller-homebrew-grain-mill',
+      },
+      {
+        name: 'Skil Corded Drill',
+        role: 'Mill Drive',
+        side: 'hot',
+        description:
+          'Cheap corded drill that spins the Monster Mill rollers — on its last legs',
+      },
+      {
         name: 'Anvil Foundry 18 Gallon',
         role: 'All-In-One Brew System',
         side: 'hot',
