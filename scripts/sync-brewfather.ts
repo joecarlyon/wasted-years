@@ -219,6 +219,13 @@ function gramsToOz(grams: number): number {
   return Math.round((grams / GRAMS_PER_OZ) * 100) / 100
 }
 
+// Brewfather stores fermentable amounts in kilograms
+const LB_PER_KG = 2.20462
+
+function kgToLb(kg: number): number {
+  return Math.round(kg * LB_PER_KG * 100) / 100
+}
+
 function roundTo(num: number, decimals: number): number {
   const factor = Math.pow(10, decimals)
   return Math.round(num * factor) / factor
@@ -658,12 +665,13 @@ async function syncBatches() {
       batchSize: litersToGallons(b.measuredBatchSize || 0),
       fermentables: (b.recipe?.fermentables || []).map((f) => ({
         name: f.name,
-        amount: roundTo(f.amount, 2),
+        amount: kgToLb(f.amount),
       })),
       hops: (b.recipe?.hops || []).map((h) => ({
         name: h.name,
         amount: gramsToOz(h.amount),
-        usage: mapHopUsage(h.use),
+        usage: h.use || 'Boil',
+        ...(h.time !== undefined && { time: h.time }),
       })),
       yeast: (b.recipe?.yeasts || []).map((y) => ({
         name: y.name,
@@ -760,7 +768,7 @@ async function syncRecipes() {
       abv: roundTo(r.abv || 0, 1),
       ibu: roundTo(r.ibu || 0, 0),
       grains: (r.fermentables || []).map(
-        (f) => `${roundTo(f.amount, 2)} lb ${f.name}`
+        (f) => `${kgToLb(f.amount)} lb ${f.name}`
       ),
       hops: (r.hops || []).map(
         (h) => `${gramsToOz(h.amount)} oz ${h.name} (${h.use || 'Boil'})`
@@ -786,7 +794,7 @@ async function syncRecipes() {
       // Detailed fermentables
       fermentablesDetail: (r.fermentables || []).map((f) => ({
         name: f.name,
-        amount: roundTo(f.amount, 2),
+        amount: kgToLb(f.amount),
         ...(f.percentage !== undefined && {
           percentage: roundTo(f.percentage, 1),
         }),

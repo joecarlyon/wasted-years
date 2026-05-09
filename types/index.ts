@@ -111,7 +111,11 @@ export interface Fermentable {
 export interface Hop {
   name: string
   amount: number
-  usage: 'Bittering' | 'Aroma' | 'Both'
+  // Raw Brewfather "use" value: Boil | Aroma | Whirlpool | Dry Hop
+  // (legacy BeerSmith batches may still carry Bittering | Both)
+  usage: string
+  // Minutes for Boil / Aroma / Whirlpool. Often 0 for Dry Hop.
+  time?: number
 }
 
 export interface Yeast {

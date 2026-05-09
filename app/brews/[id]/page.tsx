@@ -255,6 +255,9 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
                   <span className="text-text-secondary">{h.name}</span>
                   <span className="text-text-primary">
                     {h.amount.toFixed(2)} oz &middot; {h.usage}
+                    {h.time !== undefined &&
+                      h.time > 0 &&
+                      h.usage !== 'Dry Hop' && <> &middot; {h.time} min</>}
                   </span>
                 </li>
               ))}

@@ -24,25 +24,6 @@ export function findMatchingRecipe(
   })
 }
 
-export function mapHopUsage(use: string): 'Bittering' | 'Aroma' | 'Both' {
-  const lower = (use || '').toLowerCase()
-  if (
-    lower.includes('boil') ||
-    lower === 'bittering' ||
-    lower === 'first wort'
-  ) {
-    return 'Bittering'
-  }
-  if (
-    lower.includes('dry') ||
-    lower.includes('whirlpool') ||
-    lower === 'aroma'
-  ) {
-    return 'Aroma'
-  }
-  return 'Both'
-}
-
 // Fall back to the recipe's structured ingredients when the batch's
 // own ingredient lists are empty.
 export function deriveBatchIngredients(
@@ -62,7 +43,8 @@ export function deriveBatchIngredients(
       : (recipe?.hopsDetail ?? []).map((h) => ({
           name: h.name,
           amount: h.amount,
-          usage: mapHopUsage(h.use),
+          usage: h.use || 'Boil',
+          ...(h.time !== undefined && { time: h.time }),
         }))
   return { fermentables, hops }
 }
