@@ -81,13 +81,15 @@ function SetupCard({ setup }: { setup: BrewingSetup }) {
       </div>
 
       {/* Equipment list */}
-      <div className="mb-6 space-y-6">
+      <div className="mb-6 space-y-8">
         <EquipmentGroup
-          label="Hot Side"
+          label="🔥 Hot Side"
+          tone="hot"
           items={setup.equipment.filter((item) => item.side === 'hot')}
         />
         <EquipmentGroup
-          label="Cold Side"
+          label="❄️ Cold Side"
+          tone="cold"
           items={setup.equipment.filter((item) => item.side === 'cold')}
         />
       </div>
@@ -110,15 +112,23 @@ function SetupCard({ setup }: { setup: BrewingSetup }) {
 
 function EquipmentGroup({
   label,
+  tone,
   items,
 }: {
   label: string
+  tone: 'hot' | 'cold'
   items: EquipmentItem[]
 }) {
   if (items.length === 0) return null
+  const toneClasses =
+    tone === 'hot'
+      ? 'text-red-500 [text-shadow:0_0_18px_rgba(239,68,68,0.45)]'
+      : 'text-sky-400 [text-shadow:0_0_18px_rgba(56,189,248,0.45)]'
   return (
     <div>
-      <h4 className="mb-4 text-xs uppercase tracking-widest text-lavender">
+      <h4
+        className={`mb-4 text-3xl font-black uppercase tracking-widest md:text-4xl ${toneClasses}`}
+      >
         {label}
       </h4>
       <div className="grid gap-4 sm:grid-cols-2">
