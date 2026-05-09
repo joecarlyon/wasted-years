@@ -53,7 +53,7 @@ export const brewingSetups: BrewingSetup[] = [
         name: 'Big Mouth Bubbler EVO 2',
         role: 'Fermentation',
         side: 'cold',
-        description: '6.5 gallon wide-mouth plastic fermenter',
+        description: '6.5 gallon wide-mouth glass carboy',
         url: 'https://www.northernbrewer.com/collections/big-mouth-bubbler/products/big-mouth-bubbler-evo-2-6-5-gallon',
       },
       {

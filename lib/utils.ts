@@ -52,10 +52,21 @@ export function deriveBatchIngredients(
 // Falls back to the recipe target when a batch field is unset (0).
 // ABV is computed from the resolved OG/FG when both are available so a
 // recipe-FG fallback combined with a measured OG produces a sensible number.
+// Color/efficiency fall back to the recipe; efficiency further falls back
+// to the brewing setup's default brew efficiency when supplied.
 export function deriveBatchVitals(
-  batch: Pick<Batch, 'og' | 'fg' | 'abv'>,
-  recipe: Pick<Recipe, 'og' | 'fg' | 'abv'> | undefined
-): { og: number; fg: number; abv: number } {
+  batch: Pick<Batch, 'og' | 'fg' | 'abv' | 'color' | 'efficiency'>,
+  recipe:
+    | Pick<Recipe, 'og' | 'fg' | 'abv' | 'color' | 'equipmentProfile'>
+    | undefined,
+  options?: { defaultEfficiency?: number }
+): {
+  og: number
+  fg: number
+  abv: number
+  color: number
+  efficiency: number
+} {
   const og = batch.og > 0 ? batch.og : (recipe?.og ?? 0)
   const fg = batch.fg > 0 ? batch.fg : (recipe?.fg ?? 0)
   let abv = batch.abv
@@ -65,7 +76,14 @@ export function deriveBatchVitals(
         ? Math.round((og - fg) * 131.25 * 10) / 10
         : (recipe?.abv ?? 0)
   }
-  return { og, fg, abv }
+  const color = batch.color > 0 ? batch.color : (recipe?.color ?? 0)
+  const efficiency =
+    batch.efficiency > 0
+      ? batch.efficiency
+      : (recipe?.equipmentProfile?.efficiency ??
+        options?.defaultEfficiency ??
+        0)
+  return { og, fg, abv, color, efficiency }
 }
 
 export function getStatusClasses(status: string): string {

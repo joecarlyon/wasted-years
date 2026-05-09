@@ -43,7 +43,13 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
     batch.og > 0
 
   const matchingRecipe = findMatchingRecipe(batch, recipes)
-  const vitals = deriveBatchVitals(batch, matchingRecipe)
+  const setup = brewingSetups.find((s) => s.batchSource === batch.source)
+  const setupDefaultEff = setup
+    ? parseInt(setup.specs.brewEfficiency, 10) || undefined
+    : undefined
+  const vitals = deriveBatchVitals(batch, matchingRecipe, {
+    defaultEfficiency: setupDefaultEff,
+  })
   const ingredients = deriveBatchIngredients(batch, matchingRecipe)
   const styleDisplay =
     batch.style && batch.style !== 'Unknown'
@@ -126,23 +132,18 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
           <div className="flex flex-col items-end gap-2">
             <StatusBadge status={batch.status} />
             {batch.source &&
-              (() => {
-                const setup = brewingSetups.find(
-                  (s) => s.batchSource === batch.source
-                )
-                return setup ? (
-                  <Link
-                    href={`/equipment#${setup.id}`}
-                    className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary transition-colors hover:border-accent hover:text-accent"
-                  >
-                    {setup.name}
-                  </Link>
-                ) : (
-                  <span className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary">
-                    {batch.source}
-                  </span>
-                )
-              })()}
+              (setup ? (
+                <Link
+                  href={`/equipment#${setup.id}`}
+                  className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary transition-colors hover:border-accent hover:text-accent"
+                >
+                  {setup.name}
+                </Link>
+              ) : (
+                <span className="rounded border border-border bg-bg-card px-3 py-1 text-xs uppercase tracking-wide text-text-secondary">
+                  {batch.source}
+                </span>
+              ))}
           </div>
         </div>
         <div className="mt-4 flex flex-wrap gap-6 text-sm text-text-secondary">
@@ -185,11 +186,11 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
         )}
         <StatBox
           label="SRM"
-          value={batch.color > 0 ? batch.color.toString() : 'N/A'}
+          value={vitals.color > 0 ? vitals.color.toString() : 'N/A'}
         />
         <StatBox
           label="Efficiency"
-          value={batch.efficiency > 0 ? `${batch.efficiency}%` : 'N/A'}
+          value={vitals.efficiency > 0 ? `${vitals.efficiency}%` : 'N/A'}
         />
         <StatBox label="Batch" value={`${batch.batchSize} gal`} />
       </div>
