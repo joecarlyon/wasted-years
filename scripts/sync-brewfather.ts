@@ -696,10 +696,7 @@ async function syncBatches() {
     // Be nice to the API
     await new Promise((r) => setTimeout(r, 500))
 
-    // Merge with existing data to preserve manual edits
-    transformed.push(
-      mergeBatch(newBatch, existingBatches.byBatchNo.get(b.batchNo))
-    )
+    transformed.push(newBatch)
   }
 
   // Combine Beersmith batches (first) with Brewfather batches (after)
@@ -713,11 +710,19 @@ async function syncBatches() {
     return dateA - dateB // Oldest first = lowest batch number
   })
 
-  const renumberedBrewfather = sortedBrewfather.map((b, idx) => ({
-    ...b,
-    batchNo: beersmithCount + idx + 1,
-    source: 'brewfather',
-  }))
+  // Renumber to the stable site batchNo, THEN merge with existing data —
+  // existingBatches.byBatchNo is keyed by site batchNo, not Brewfather's native one.
+  // Merging before renumbering meant the lookup never matched and manual fields
+  // like `images` were silently dropped every sync.
+  const renumberedBrewfather = sortedBrewfather.map((b, idx) => {
+    const siteBatchNo = beersmithCount + idx + 1
+    const withSiteNo = {
+      ...b,
+      batchNo: siteBatchNo,
+      source: 'brewfather',
+    }
+    return mergeBatch(withSiteNo, existingBatches.byBatchNo.get(siteBatchNo))
+  })
 
   const allBatches = [...existingBatches.beersmith, ...renumberedBrewfather]
   console.log(
