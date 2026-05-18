@@ -3950,12 +3950,6 @@ export const batches: Batch[] = [
     yeast: [],
     brewingNotes:
       "I double crushed the grain, probably don't need to do that | When I mashed in, there were actually some doughballs. Maybe the double crush did have an effect. | Started the whirlpool at 180. Temp dropped to about 170 by the end. | I added an ice pack on top of the fermenter in attempt to lower the fermenter temperature. | I moved this to a chest freezer that I just bought. I changed the sanitizer also. Hopefully, this goes OK. I knocked the temp down to 36 to cold crash. | When I cold crashed, it pulled in nearly 54oz of fresh sanitizer. It broke the sanitizer seal, so it was probably pulling in oxygen after that. RIP. I tasted the remains of the fermenter while transferring to the keg and it tasted like somebody's first homebrew. So... this might be a dump. We'll see. Burst carbing at 30psi for the evening.",
-    images: [
-      {
-        src: '/images/batches/104/01.jpg',
-        caption: 'First time cold crashing AND I hooked up the raspberry pi',
-      },
-    ],
     tiltReadings: [
       {
         timestamp: 1777514985628,
@@ -7498,5 +7492,11 @@ export const batches: Batch[] = [
       },
     ],
     source: 'brewfather',
+    images: [
+      {
+        src: '/images/batches/104/01.jpg',
+        caption: 'First time cold crashing AND I hooked up the raspberry pi',
+      },
+    ],
   },
 ]
