@@ -3935,12 +3935,12 @@ export const batches: Batch[] = [
     style: 'Unknown',
     category: 'ale',
     brewer: 'Joe',
-    status: 'Conditioning',
+    status: 'Completed',
     brewDate: '2026-04-29',
     bottlingDate: '',
     og: 1.07,
-    fg: 1.009,
-    abv: 8,
+    fg: 1.065,
+    abv: 0.7,
     ibu: null,
     color: 0,
     efficiency: 0,
@@ -7476,6 +7476,61 @@ export const batches: Batch[] = [
         gravity: 1.009,
         temperature: 44.1,
       },
+      {
+        timestamp: 1782662899030,
+        gravity: 1.651,
+        temperature: 79,
+      },
+      {
+        timestamp: 1782680550316,
+        gravity: 1.003,
+        temperature: 72,
+      },
+      {
+        timestamp: 1782681445090,
+        gravity: 1.003,
+        temperature: 71.1,
+      },
+      {
+        timestamp: 1782682360606,
+        gravity: 1.01,
+        temperature: 72,
+      },
+      {
+        timestamp: 1782683255950,
+        gravity: 1.064,
+        temperature: 72,
+      },
+      {
+        timestamp: 1782684156483,
+        gravity: 1.065,
+        temperature: 72,
+      },
+      {
+        timestamp: 1782685057014,
+        gravity: 1.065,
+        temperature: 72,
+      },
+      {
+        timestamp: 1782685957550,
+        gravity: 1.065,
+        temperature: 72,
+      },
+      {
+        timestamp: 1782686858017,
+        gravity: 1.064,
+        temperature: 72,
+      },
+      {
+        timestamp: 1782687758945,
+        gravity: 1.064,
+        temperature: 72,
+      },
+      {
+        timestamp: 1782688659259,
+        gravity: 1.065,
+        temperature: 72,
+      },
     ],
     fermentationEvents: [
       {
@@ -7498,5 +7553,270 @@ export const batches: Batch[] = [
         caption: 'First time cold crashing AND I hooked up the raspberry pi',
       },
     ],
+  },
+  {
+    batchNo: 105,
+    name: 'Get to the Space Pooper!',
+    style: 'Unknown',
+    category: 'ale',
+    brewer: 'Joe',
+    status: 'Fermenting',
+    brewDate: '2026-06-28',
+    bottlingDate: '',
+    og: 1.065,
+    fg: 1.061,
+    abv: 0.5,
+    ibu: null,
+    color: 0,
+    efficiency: 0,
+    batchSize: 0,
+    fermentables: [],
+    hops: [],
+    yeast: [],
+    brewingNotes:
+      'Accidentally had strike water at 168 instead of 158. Once I poured the grain in and realized this. I grabbed a bunch of ice and dropped that down to 142. Slowly heating back up to 148 as I begin the mash timer. | I hit 7 gallons pre-boil. I should probably dial the sparge volume back a bit for increased efficiency. | I added the 60 minute boil addition at 50 minute',
+    tiltReadings: [
+      {
+        timestamp: 1782689400000,
+        gravity: 1.065,
+        temperature: 72,
+      },
+      {
+        timestamp: 1782707883686,
+        gravity: 1.064,
+        temperature: 69.1,
+      },
+      {
+        timestamp: 1782707945051,
+        gravity: 1.064,
+        temperature: 69,
+      },
+      {
+        timestamp: 1782708778420,
+        gravity: 1.064,
+        temperature: 69.1,
+      },
+      {
+        timestamp: 1782709673466,
+        gravity: 1.064,
+        temperature: 69.1,
+      },
+      {
+        timestamp: 1782710573918,
+        gravity: 1.064,
+        temperature: 69.1,
+      },
+      {
+        timestamp: 1782711479704,
+        gravity: 1.064,
+        temperature: 69.1,
+      },
+      {
+        timestamp: 1782712376000,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782713277331,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782714177929,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782715078386,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782715978260,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782716878360,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782717779116,
+        gravity: 1.064,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782718681398,
+        gravity: 1.063,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782719581839,
+        gravity: 1.064,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782720482595,
+        gravity: 1.064,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782721383219,
+        gravity: 1.064,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782722283595,
+        gravity: 1.064,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782723184139,
+        gravity: 1.064,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782724085507,
+        gravity: 1.064,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782724985953,
+        gravity: 1.064,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782725885463,
+        gravity: 1.063,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782726786043,
+        gravity: 1.063,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782727686489,
+        gravity: 1.063,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782728587218,
+        gravity: 1.063,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782729487692,
+        gravity: 1.063,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782730387038,
+        gravity: 1.063,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782731287430,
+        gravity: 1.063,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782732188014,
+        gravity: 1.063,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782733088536,
+        gravity: 1.063,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782733991704,
+        gravity: 1.063,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782734891980,
+        gravity: 1.063,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782735791498,
+        gravity: 1.063,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782736691788,
+        gravity: 1.063,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782737592523,
+        gravity: 1.063,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782738492853,
+        gravity: 1.062,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782739395619,
+        gravity: 1.063,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782740296369,
+        gravity: 1.062,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782741195709,
+        gravity: 1.062,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782742096105,
+        gravity: 1.062,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782742996781,
+        gravity: 1.062,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782743897419,
+        gravity: 1.062,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782744798134,
+        gravity: 1.061,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782745698742,
+        gravity: 1.062,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782746598195,
+        gravity: 1.061,
+        temperature: 64.9,
+      },
+    ],
+    fermentationEvents: [
+      {
+        timestamp: 1782622800000,
+        label: 'Pitched',
+      },
+      {
+        timestamp: 1782682060747,
+        label: 'Fermenting',
+      },
+    ],
+    source: 'brewfather',
   },
 ]
