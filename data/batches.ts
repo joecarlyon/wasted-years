@@ -7564,8 +7564,8 @@ export const batches: Batch[] = [
     brewDate: '2026-06-28',
     bottlingDate: '',
     og: 1.065,
-    fg: 1.061,
-    abv: 0.5,
+    fg: 1.004,
+    abv: 8,
     ibu: null,
     color: 0,
     efficiency: 0,
@@ -7574,7 +7574,7 @@ export const batches: Batch[] = [
     hops: [],
     yeast: [],
     brewingNotes:
-      'Accidentally had strike water at 168 instead of 158. Once I poured the grain in and realized this. I grabbed a bunch of ice and dropped that down to 142. Slowly heating back up to 148 as I begin the mash timer. | I hit 7 gallons pre-boil. I should probably dial the sparge volume back a bit for increased efficiency. | I added the 60 minute boil addition at 50 minute',
+      "Accidentally had strike water at 168 instead of 158. Once I poured the grain in and realized this. I grabbed a bunch of ice and dropped that down to 142. Slowly heating back up to 148 as I begin the mash timer. | I hit 7 gallons pre-boil. I should probably dial the sparge volume back a bit for increased efficiency. | I added the 60 minute boil addition at 50 minute | I dry hopped and there was still a pretty high krausen and lots of activity. It looks like it's 1 day away from FG though. Hopefully that wasn't a mistake. I added ALDC so hopefully that helps",
     tiltReadings: [
       {
         timestamp: 1782689400000,
@@ -7805,6 +7805,1401 @@ export const batches: Batch[] = [
         timestamp: 1782746598195,
         gravity: 1.061,
         temperature: 64.9,
+      },
+      {
+        timestamp: 1782747499897,
+        gravity: 1.061,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782748400399,
+        gravity: 1.061,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782749301298,
+        gravity: 1.061,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782750200736,
+        gravity: 1.061,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782751101677,
+        gravity: 1.06,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782752002235,
+        gravity: 1.061,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782752903437,
+        gravity: 1.061,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782753804055,
+        gravity: 1.06,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782754704628,
+        gravity: 1.059,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782755604611,
+        gravity: 1.058,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782756504741,
+        gravity: 1.058,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782757405799,
+        gravity: 1.059,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782758306201,
+        gravity: 1.058,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782759208651,
+        gravity: 1.057,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782760108971,
+        gravity: 1.059,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782761009550,
+        gravity: 1.058,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782761910452,
+        gravity: 1.058,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782762810309,
+        gravity: 1.057,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782763712708,
+        gravity: 1.056,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782764613049,
+        gravity: 1.055,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782765512590,
+        gravity: 1.054,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782766413329,
+        gravity: 1.053,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782767314918,
+        gravity: 1.053,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782768215276,
+        gravity: 1.053,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782769115791,
+        gravity: 1.052,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782770016463,
+        gravity: 1.055,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782770915911,
+        gravity: 1.054,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782771816370,
+        gravity: 1.055,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782772717353,
+        gravity: 1.056,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782773617761,
+        gravity: 1.055,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782774518569,
+        gravity: 1.053,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782775419334,
+        gravity: 1.054,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782776318524,
+        gravity: 1.053,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782777219138,
+        gravity: 1.053,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782778119564,
+        gravity: 1.056,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782779020404,
+        gravity: 1.054,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782779921203,
+        gravity: 1.052,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782780822308,
+        gravity: 1.054,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782781722906,
+        gravity: 1.053,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782782628564,
+        gravity: 1.052,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782783523209,
+        gravity: 1.052,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782784423733,
+        gravity: 1.052,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782785324642,
+        gravity: 1.051,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782786225320,
+        gravity: 1.049,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782787124534,
+        gravity: 1.049,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782788025249,
+        gravity: 1.051,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782789414439,
+        gravity: 1.053,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782790315341,
+        gravity: 1.05,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782791220858,
+        gravity: 1.05,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782792116277,
+        gravity: 1.05,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782793016953,
+        gravity: 1.049,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782793917433,
+        gravity: 1.05,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782794817902,
+        gravity: 1.048,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782795717609,
+        gravity: 1.045,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782796618045,
+        gravity: 1.045,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782797518797,
+        gravity: 1.048,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782798419085,
+        gravity: 1.049,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782799318664,
+        gravity: 1.046,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782800220594,
+        gravity: 1.048,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782801122968,
+        gravity: 1.049,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782802023549,
+        gravity: 1.044,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782802925401,
+        gravity: 1.048,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782803824721,
+        gravity: 1.044,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782804725304,
+        gravity: 1.048,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782805626929,
+        gravity: 1.048,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782806528429,
+        gravity: 1.042,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782807427867,
+        gravity: 1.048,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782808328540,
+        gravity: 1.048,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782809229186,
+        gravity: 1.042,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782810130387,
+        gravity: 1.043,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782811029997,
+        gravity: 1.041,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782811931445,
+        gravity: 1.038,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782812831322,
+        gravity: 1.043,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782813732017,
+        gravity: 1.042,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782814631532,
+        gravity: 1.039,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782815531941,
+        gravity: 1.034,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782816433447,
+        gravity: 1.042,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782817334185,
+        gravity: 1.043,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782818234781,
+        gravity: 1.038,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782819135488,
+        gravity: 1.04,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782820036174,
+        gravity: 1.037,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782820936564,
+        gravity: 1.043,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782821836828,
+        gravity: 1.038,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782822738453,
+        gravity: 1.032,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782823639099,
+        gravity: 1.036,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782824540807,
+        gravity: 1.035,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782825440469,
+        gravity: 1.039,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782826341158,
+        gravity: 1.041,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782827241825,
+        gravity: 1.042,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782828148319,
+        gravity: 1.035,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782829048844,
+        gravity: 1.032,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782829949201,
+        gravity: 1.029,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782830849951,
+        gravity: 1.038,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782831749449,
+        gravity: 1.037,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782832650984,
+        gravity: 1.029,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782833550876,
+        gravity: 1.031,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782834450996,
+        gravity: 1.034,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782835351816,
+        gravity: 1.031,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782836252418,
+        gravity: 1.033,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782837152705,
+        gravity: 1.034,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782838053705,
+        gravity: 1.034,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782838953933,
+        gravity: 1.037,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782839854793,
+        gravity: 1.037,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782840755099,
+        gravity: 1.038,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782841655810,
+        gravity: 1.031,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782842555143,
+        gravity: 1.033,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782843457532,
+        gravity: 1.024,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782844357329,
+        gravity: 1.02,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782845258385,
+        gravity: 1.021,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782846158479,
+        gravity: 1.034,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782847059224,
+        gravity: 1.03,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782847958411,
+        gravity: 1.027,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782848860503,
+        gravity: 1.032,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782849760930,
+        gravity: 1.029,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782850661558,
+        gravity: 1.023,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782851562840,
+        gravity: 1.026,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782852463930,
+        gravity: 1.025,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782853363122,
+        gravity: 1.027,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782854263795,
+        gravity: 1.027,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782855166021,
+        gravity: 1.033,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782856066908,
+        gravity: 1.028,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782856968227,
+        gravity: 1.028,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782857869917,
+        gravity: 1.029,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782858770647,
+        gravity: 1.028,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782859670392,
+        gravity: 1.029,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782860571392,
+        gravity: 1.025,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782861474072,
+        gravity: 1.026,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782862375023,
+        gravity: 1.023,
+        temperature: 68,
+      },
+      {
+        timestamp: 1782863275093,
+        gravity: 1.026,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782864176071,
+        gravity: 1.025,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782865076251,
+        gravity: 1.023,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782865978949,
+        gravity: 1.025,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782866880829,
+        gravity: 1.023,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782867780346,
+        gravity: 1.02,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782868680655,
+        gravity: 1.022,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782869581302,
+        gravity: 1.027,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782870481999,
+        gravity: 1.027,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782871387651,
+        gravity: 1.023,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782872288438,
+        gravity: 1.02,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782873188879,
+        gravity: 1.022,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782874088288,
+        gravity: 1.02,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782874988886,
+        gravity: 1.022,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782875889979,
+        gravity: 1.023,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782876790632,
+        gravity: 1.019,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782877689625,
+        gravity: 1.021,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782878590122,
+        gravity: 1.025,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782879490610,
+        gravity: 1.023,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782880391395,
+        gravity: 1.021,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782881291715,
+        gravity: 1.02,
+        temperature: 66.9,
+      },
+      {
+        timestamp: 1782882192284,
+        gravity: 1.019,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782883093149,
+        gravity: 1.022,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782883992547,
+        gravity: 1.02,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782884893034,
+        gravity: 1.022,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782885793638,
+        gravity: 1.018,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782886695440,
+        gravity: 1.019,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782887594826,
+        gravity: 1.022,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782888495525,
+        gravity: 1.019,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782889395965,
+        gravity: 1.019,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782890296655,
+        gravity: 1.019,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782891197418,
+        gravity: 1.019,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782892096820,
+        gravity: 1.019,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782892997430,
+        gravity: 1.017,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782893898148,
+        gravity: 1.02,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782894798674,
+        gravity: 1.02,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782895699637,
+        gravity: 1.021,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782896598884,
+        gravity: 1.019,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782897501327,
+        gravity: 1.021,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782898402851,
+        gravity: 1.019,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782899303586,
+        gravity: 1.019,
+        temperature: 66,
+      },
+      {
+        timestamp: 1782900203117,
+        gravity: 1.021,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782901103958,
+        gravity: 1.019,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782902004514,
+        gravity: 1.019,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782902906177,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782903806705,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782904707297,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782905617931,
+        gravity: 1.02,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782906518226,
+        gravity: 1.019,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782907417814,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782908318518,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782909220110,
+        gravity: 1.02,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782910121812,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782911022563,
+        gravity: 1.019,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782911921738,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782912822426,
+        gravity: 1.017,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782913722863,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782914623458,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782915523196,
+        gravity: 1.017,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782916423942,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782917324310,
+        gravity: 1.017,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782918224862,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782919125448,
+        gravity: 1.017,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782920025981,
+        gravity: 1.018,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782920925785,
+        gravity: 1.019,
+        temperature: 64.9,
+      },
+      {
+        timestamp: 1782921827373,
+        gravity: 1.018,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782922730066,
+        gravity: 1.017,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782923630419,
+        gravity: 1.018,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782924530977,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782925430521,
+        gravity: 1.018,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782926336303,
+        gravity: 1.017,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782927231736,
+        gravity: 1.017,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782928137785,
+        gravity: 1.017,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782929033159,
+        gravity: 1.017,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782929932579,
+        gravity: 1.017,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782930833046,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782931733784,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782932633822,
+        gravity: 1.015,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782933534716,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782934435536,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782935334824,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782936244848,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782937143999,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782938044725,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782938950494,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782939845609,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782940751720,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782941645907,
+        gravity: 1.017,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782942546447,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782943447013,
+        gravity: 1.017,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782944347680,
+        gravity: 1.016,
+        temperature: 64,
+      },
+      {
+        timestamp: 1782945249386,
+        gravity: 1.018,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782946156123,
+        gravity: 1.016,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782947055392,
+        gravity: 1.009,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782947952172,
+        gravity: 1.005,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782948853875,
+        gravity: 1.003,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782949754184,
+        gravity: 1.002,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782950657033,
+        gravity: 1.001,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782951556667,
+        gravity: 1.002,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782952459011,
+        gravity: 1.003,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782953363584,
+        gravity: 1.003,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782954259375,
+        gravity: 1.005,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782955167891,
+        gravity: 1.005,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782956063451,
+        gravity: 1.005,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782956964064,
+        gravity: 1.007,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782957872482,
+        gravity: 1.006,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782958768544,
+        gravity: 1.006,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782959669914,
+        gravity: 1.005,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782960570546,
+        gravity: 1.005,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782961471482,
+        gravity: 1.005,
+        temperature: 63,
+      },
+      {
+        timestamp: 1782962371785,
+        gravity: 1.006,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782963272419,
+        gravity: 1.005,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782964172801,
+        gravity: 1.003,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782965073624,
+        gravity: 1.006,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782965974045,
+        gravity: 1.006,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782966875013,
+        gravity: 1.006,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782967777728,
+        gravity: 1.005,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782968677874,
+        gravity: 1.004,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782969578630,
+        gravity: 1.004,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782970479036,
+        gravity: 1.002,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782971379926,
+        gravity: 1.003,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782972279156,
+        gravity: 1.005,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782973180262,
+        gravity: 1.004,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782974080573,
+        gravity: 1.002,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782974982998,
+        gravity: 1.003,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782975882784,
+        gravity: 1.003,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782976783289,
+        gravity: 1.001,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782977683697,
+        gravity: 1.002,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782978590441,
+        gravity: 1.001,
+        temperature: 62.1,
+      },
+      {
+        timestamp: 1782979491507,
+        gravity: 1.003,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782980390831,
+        gravity: 1.005,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782981292227,
+        gravity: 1.005,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782982193482,
+        gravity: 1.005,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782983093385,
+        gravity: 1.004,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782983995063,
+        gravity: 1.003,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782984904608,
+        gravity: 1.003,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782985805320,
+        gravity: 1.004,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782986705686,
+        gravity: 1.004,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782987607211,
+        gravity: 1.003,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782988507782,
+        gravity: 1.003,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782989409788,
+        gravity: 1.003,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782990309122,
+        gravity: 1.002,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782991209579,
+        gravity: 1.004,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782992115497,
+        gravity: 1.005,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782993016086,
+        gravity: 1.004,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782993915928,
+        gravity: 1.005,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782994816164,
+        gravity: 1.006,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782995716945,
+        gravity: 1.005,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782996618460,
+        gravity: 1.002,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782997518751,
+        gravity: 1.003,
+        temperature: 61,
+      },
+      {
+        timestamp: 1782998419670,
+        gravity: 1.004,
+        temperature: 61,
       },
     ],
     fermentationEvents: [
