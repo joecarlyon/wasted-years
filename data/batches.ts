@@ -7560,11 +7560,11 @@ export const batches: Batch[] = [
     style: 'Unknown',
     category: 'ale',
     brewer: 'Joe',
-    status: 'Fermenting',
+    status: 'Conditioning',
     brewDate: '2026-06-28',
     bottlingDate: '',
     og: 1.065,
-    fg: 1.011,
+    fg: 1.806,
     abv: 7.1,
     ibu: null,
     color: 0,
@@ -11101,6 +11101,146 @@ export const batches: Batch[] = [
         gravity: 1.011,
         temperature: 28,
       },
+      {
+        timestamp: 1783349832634,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783350737955,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783351635856,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783352558713,
+        gravity: 1.011,
+        temperature: 28.9,
+      },
+      {
+        timestamp: 1783353452044,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783354337668,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783355251190,
+        gravity: 1.011,
+        temperature: 28.9,
+      },
+      {
+        timestamp: 1783356137863,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783357043098,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783357938110,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783358837780,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783359744455,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783360639348,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783361544767,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783362454265,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783363359460,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783364258189,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783365203844,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783366059132,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783367859261,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783368761612,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783369687580,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783370561026,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783371467796,
+        gravity: 1.011,
+        temperature: 28,
+      },
+      {
+        timestamp: 1783373311653,
+        gravity: 1.011,
+        temperature: 30,
+      },
+      {
+        timestamp: 1783374250109,
+        gravity: 1.011,
+        temperature: 33.1,
+      },
+      {
+        timestamp: 1783375132606,
+        gravity: 1.086,
+        temperature: 36,
+      },
+      {
+        timestamp: 1783376034611,
+        gravity: 1.806,
+        temperature: 43,
+      },
     ],
     fermentationEvents: [
       {
@@ -11110,6 +11250,10 @@ export const batches: Batch[] = [
       {
         timestamp: 1782682060747,
         label: 'Fermenting',
+      },
+      {
+        timestamp: 1783374207632,
+        label: 'Conditioning',
       },
     ],
     source: 'brewfather',
