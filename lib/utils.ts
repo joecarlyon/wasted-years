@@ -1,4 +1,27 @@
-import { Batch, Fermentable, Hop, Recipe } from '@/types'
+import { Batch, Fermentable, Hop, Recipe, TiltReading } from '@/types'
+
+// A Tilt hydrometer can spike wildly when the sensor ends up sitting in a pile
+// of yeast — e.g. while draining the fermenter — reporting gravities far above
+// the original gravity, which is physically impossible for fermenting beer.
+// Anything above OG (plus a little sensor-noise slack) is such an artifact.
+const GRAVITY_SPIKE_TOLERANCE = 0.01
+
+/**
+ * Drop Tilt readings whose gravity spikes above the original gravity. Beer
+ * gravity only ever falls during and after fermentation, so a reading above OG
+ * is a sensor artifact (yeast pile, jostling) and should be ignored entirely.
+ * When `og` is unknown, the first reading is used as the baseline.
+ */
+export function sanitizeTiltReadings(
+  readings: TiltReading[],
+  og?: number
+): TiltReading[] {
+  const baseline =
+    og && og > 0 ? og : readings.length > 0 ? readings[0].gravity : 0
+  if (!(baseline > 0)) return readings
+  const ceiling = baseline + GRAVITY_SPIKE_TOLERANCE
+  return readings.filter((r) => r.gravity <= ceiling)
+}
 
 export function formatDate(dateString: string): string {
   const date = new Date(dateString)
@@ -55,7 +78,9 @@ export function deriveBatchIngredients(
 // Color/efficiency fall back to the recipe; efficiency further falls back
 // to the brewing setup's default brew efficiency when supplied.
 export function deriveBatchVitals(
-  batch: Pick<Batch, 'og' | 'fg' | 'abv' | 'color' | 'efficiency'>,
+  batch: Pick<Batch, 'og' | 'fg' | 'abv' | 'color' | 'efficiency'> & {
+    tiltReadings?: TiltReading[]
+  },
   recipe:
     | Pick<Recipe, 'og' | 'fg' | 'abv' | 'color' | 'equipmentProfile'>
     | undefined,
@@ -68,7 +93,14 @@ export function deriveBatchVitals(
   efficiency: number
 } {
   const og = batch.og > 0 ? batch.og : (recipe?.og ?? 0)
-  const fg = batch.fg > 0 ? batch.fg : (recipe?.fg ?? 0)
+  let fg = batch.fg > 0 ? batch.fg : (recipe?.fg ?? 0)
+  // A stored FG above OG is physically impossible — it means the Tilt spiked
+  // (sensor sitting in yeast). Prefer the plateau of the de-spiked readings,
+  // then fall back to the recipe estimate.
+  if (og > 0 && fg > og) {
+    const clean = sanitizeTiltReadings(batch.tiltReadings ?? [], og)
+    fg = clean.length > 0 ? clean[clean.length - 1].gravity : (recipe?.fg ?? 0)
+  }
   let abv = batch.abv
   if (!(abv > 0)) {
     abv =

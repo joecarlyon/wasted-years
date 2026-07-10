@@ -12,6 +12,7 @@ import {
   YAxis,
 } from 'recharts'
 import { FermentationEvent, TiltReading } from '@/types'
+import { sanitizeTiltReadings } from '@/lib/utils'
 
 interface FermentationChartProps {
   readings: TiltReading[]
@@ -49,27 +50,33 @@ export default function FermentationChart({
   events,
   summary,
 }: FermentationChartProps) {
+  // Drop yeast-pile spikes so they don't distort the line or the axis scale.
+  const cleanReadings = useMemo(
+    () => sanitizeTiltReadings(readings, summary.og),
+    [readings, summary.og]
+  )
+
   const gravityDomain = useMemo<[number, number]>(() => {
-    const gs = readings.map((r) => r.gravity)
+    const gs = cleanReadings.map((r) => r.gravity)
     const min = Math.min(...gs)
     const max = Math.max(...gs)
     return [
       Math.floor((min - 0.005) * 1000) / 1000,
       Math.ceil((max + 0.005) * 1000) / 1000,
     ]
-  }, [readings])
+  }, [cleanReadings])
 
   const tempDomain = useMemo<[number, number]>(() => {
-    const ts = readings.map((r) => r.temperature)
+    const ts = cleanReadings.map((r) => r.temperature)
     return [Math.floor(Math.min(...ts) - 2), Math.ceil(Math.max(...ts) + 2)]
-  }, [readings])
+  }, [cleanReadings])
 
   return (
     <div>
       <div className="h-72 w-full">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
-            data={readings}
+            data={cleanReadings}
             margin={{ top: 24, right: 16, bottom: 8, left: 0 }}
           >
             <CartesianGrid

@@ -7477,11 +7477,6 @@ export const batches: Batch[] = [
         temperature: 44.1,
       },
       {
-        timestamp: 1782662899030,
-        gravity: 1.651,
-        temperature: 79,
-      },
-      {
         timestamp: 1782680550316,
         gravity: 1.003,
         temperature: 72,
@@ -7564,7 +7559,7 @@ export const batches: Batch[] = [
     brewDate: '2026-06-28',
     bottlingDate: '',
     og: 1.065,
-    fg: 1.806,
+    fg: 1.011,
     abv: 7.1,
     ibu: null,
     color: 0,
@@ -11230,16 +11225,6 @@ export const batches: Batch[] = [
         timestamp: 1783374250109,
         gravity: 1.011,
         temperature: 33.1,
-      },
-      {
-        timestamp: 1783375132606,
-        gravity: 1.086,
-        temperature: 36,
-      },
-      {
-        timestamp: 1783376034611,
-        gravity: 1.806,
-        temperature: 43,
       },
     ],
     fermentationEvents: [

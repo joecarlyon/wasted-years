@@ -473,6 +473,18 @@ function categorizeRecipe(
   return 'ale'
 }
 
+// A Tilt hydrometer can spike far above OG when the sensor sits in a pile of
+// yeast (e.g. while draining the fermenter). Beer gravity only ever falls, so
+// any reading above the starting gravity is an artifact — drop it so it doesn't
+// pollute the stored fg fallback or the fermentation chart. Kept in sync with
+// sanitizeTiltReadings in lib/utils.ts (this script avoids the @/ alias).
+function sanitizeReadings(readings: TiltReading[]): TiltReading[] {
+  const baseline = readings.length > 0 ? readings[0].gravity : 0
+  if (!(baseline > 0)) return readings
+  const ceiling = baseline + 0.01
+  return readings.filter((r) => r.gravity <= ceiling)
+}
+
 async function fetchReadings(batchId: string): Promise<TiltReading[]> {
   const response = await fetch(
     `${BREWFATHER_API}/batches/${batchId}/readings`,
@@ -605,7 +617,7 @@ async function syncBatches() {
     // Fetch Tilt fermentation readings up-front so we can use them as
     // gravity fallbacks when measured/estimated values aren't set
     console.log(`Fetching readings for batch ${b._id}...`)
-    const readings = await fetchReadings(b._id)
+    const readings = sanitizeReadings(await fetchReadings(b._id))
     const firstTiltGravity =
       readings.length > 0 ? readings[0].gravity : undefined
     const lastTiltGravity =
