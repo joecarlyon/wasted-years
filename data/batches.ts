@@ -7555,7 +7555,7 @@ export const batches: Batch[] = [
     style: 'Unknown',
     category: 'ale',
     brewer: 'Joe',
-    status: 'Conditioning',
+    status: 'Completed',
     brewDate: '2026-06-28',
     bottlingDate: '',
     og: 1.065,
