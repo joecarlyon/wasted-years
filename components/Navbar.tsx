@@ -4,6 +4,15 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+const NAV_LINKS = [
+  { href: '/', label: 'Home' },
+  { href: '/recipes', label: 'Recipes' },
+  { href: '/equipment', label: 'Equipment' },
+  { href: '/brews', label: 'Brew Log' },
+  { href: '/competitions', label: 'Competitions' },
+  { href: '/about', label: 'About' },
+]
+
 export default function Navbar() {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
@@ -33,32 +42,14 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <ul className="hidden gap-8 md:flex">
-          <li>
-            <Link href="/" className={linkClasses('/')}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/recipes" className={linkClasses('/recipes')}>
-              Recipes
-            </Link>
-          </li>
-          <li>
-            <Link href="/equipment" className={linkClasses('/equipment')}>
-              Equipment
-            </Link>
-          </li>
-          <li>
-            <Link href="/brews" className={linkClasses('/brews')}>
-              Brew Log
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className={linkClasses('/about')}>
-              About
-            </Link>
-          </li>
+        <ul className="hidden gap-6 md:flex lg:gap-8">
+          {NAV_LINKS.map(({ href, label }) => (
+            <li key={href}>
+              <Link href={href} className={linkClasses(href)}>
+                {label}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Hamburger button */}
@@ -82,41 +73,16 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="border-t border-border px-4 pb-4 md:hidden">
-          <Link
-            href="/"
-            className={mobileLinkClasses('/')}
-            onClick={() => setMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            href="/recipes"
-            className={mobileLinkClasses('/recipes')}
-            onClick={() => setMenuOpen(false)}
-          >
-            Recipes
-          </Link>
-          <Link
-            href="/equipment"
-            className={mobileLinkClasses('/equipment')}
-            onClick={() => setMenuOpen(false)}
-          >
-            Equipment
-          </Link>
-          <Link
-            href="/brews"
-            className={mobileLinkClasses('/brews')}
-            onClick={() => setMenuOpen(false)}
-          >
-            Brew Log
-          </Link>
-          <Link
-            href="/about"
-            className={mobileLinkClasses('/about')}
-            onClick={() => setMenuOpen(false)}
-          >
-            About
-          </Link>
+          {NAV_LINKS.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className={mobileLinkClasses(href)}
+              onClick={() => setMenuOpen(false)}
+            >
+              {label}
+            </Link>
+          ))}
         </div>
       )}
     </header>

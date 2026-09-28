@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { batches } from '@/data/batches'
 import RecentBrewCard from '@/components/RecentBrewCard'
+import OnTap from '@/components/OnTap'
 
 export default function Home() {
   const recentBrews = [...batches]
@@ -9,7 +10,7 @@ export default function Home() {
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-8 md:px-8">
-      <section className="mb-12 border-b border-border py-16 text-center">
+      <section className="mb-4 py-16 text-center">
         <h2 className="mb-4 text-4xl font-bold tracking-wide">
           <span className="text-accent">Craft Beer.</span>{' '}
           <span className="text-lavender">Heavy Metal.</span>
@@ -18,6 +19,13 @@ export default function Home() {
           Wasted Years Brewing. Recipes born in fire, beers consumed with
           passion, and I occasionally find new ways to screw it up.
         </p>
+      </section>
+
+      <section className="mb-12">
+        <h3 className="mb-6 border-b border-border pb-2 text-xl uppercase tracking-widest text-accent">
+          On Tap
+        </h3>
+        <OnTap />
       </section>
 
       <section className="mb-12">

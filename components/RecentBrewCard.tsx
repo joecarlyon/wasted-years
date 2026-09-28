@@ -3,16 +3,11 @@ import { Batch } from '@/types'
 import { competitions } from '@/data/competitions'
 import { recipes } from '@/data/recipes'
 import { formatDate, findMatchingRecipe, deriveBatchVitals } from '@/lib/utils'
+import { MEDAL_COLORS, STAR_PATH, medalFor } from '@/lib/competitions'
 
 interface RecentBrewCardProps {
   batch: Batch
 }
-
-const medalColors = {
-  gold: { color: '#FFD700', bg: 'rgba(255,215,0,0.15)' },
-  silver: { color: '#C0C0C0', bg: 'rgba(192,192,192,0.15)' },
-  bronze: { color: '#CD7F32', bg: 'rgba(205,127,50,0.15)' },
-} as const
 
 export default function RecentBrewCard({ batch }: RecentBrewCardProps) {
   const matchingRecipe = findMatchingRecipe(batch, recipes)
@@ -24,14 +19,7 @@ export default function RecentBrewCard({ batch }: RecentBrewCardProps) {
   const placedEntry = competitions
     .filter((c) => c.batchNo === batch.batchNo)
     .find((c) => c.placement)
-  const placement = placedEntry?.placement?.toLowerCase() ?? ''
-  const medal: keyof typeof medalColors | null = placement.includes('gold')
-    ? 'gold'
-    : placement.includes('silver')
-      ? 'silver'
-      : placement.includes('bronze')
-        ? 'bronze'
-        : null
+  const medal = medalFor(placedEntry?.placement)
 
   return (
     <Link href={`/brews/${batch.batchNo}`}>
@@ -41,16 +29,16 @@ export default function RecentBrewCard({ batch }: RecentBrewCardProps) {
           {medal && placedEntry && (
             <div
               className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
-              style={{ backgroundColor: medalColors[medal].bg }}
+              style={{ backgroundColor: MEDAL_COLORS[medal].bg }}
               title={placedEntry.placement}
             >
               <svg
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 className="h-5 w-5"
-                style={{ color: medalColors[medal].color }}
+                style={{ color: MEDAL_COLORS[medal].color }}
               >
-                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                <path d={STAR_PATH} />
               </svg>
             </div>
           )}

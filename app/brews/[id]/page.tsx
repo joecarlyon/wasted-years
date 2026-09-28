@@ -14,7 +14,9 @@ import StatusBadge from '@/components/StatusBadge'
 import LinkifyText from '@/components/LinkifyText'
 import FermentationChart from '@/components/FermentationChart'
 import ImageLightbox from '@/components/ImageLightbox'
-import { JudgeScore } from '@/types'
+import JudgeCard from '@/components/JudgeCard'
+import { MEDAL_COLORS, STAR_PATH, medalFor } from '@/lib/competitions'
+import { openGraph } from '@/lib/site'
 
 export function generateStaticParams() {
   return batches.map((b) => ({ id: b.batchNo.toString() }))
@@ -23,9 +25,21 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { id: string } }) {
   const batch = batches.find((b) => b.batchNo.toString() === params.id)
   if (!batch) return { title: 'Batch Not Found' }
+  const recipe = findMatchingRecipe(batch, recipes)
+  const { abv } = deriveBatchVitals(batch, recipe)
+  const style =
+    batch.style && batch.style !== 'Unknown' ? batch.style : recipe?.style
+  const description = [
+    style,
+    abv > 0 && `${abv.toFixed(1)}% ABV`,
+    batch.brewDate && `Brewed ${formatDate(batch.brewDate)}`,
+  ]
+    .filter(Boolean)
+    .join(' · ')
   return {
     title: `Batch #${batch.batchNo}: ${batch.name} | Wasted Years`,
-    description: `${batch.style} - ${batch.abv}% ABV`,
+    description,
+    openGraph: openGraph(`Batch #${batch.batchNo}: ${batch.name}`, description),
   }
 }
 
@@ -59,19 +73,7 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
 
   const compEntries = competitions.filter((c) => c.batchNo === batch.batchNo)
   const placedEntry = compEntries.find((c) => c.placement)
-  const medal = placedEntry?.placement?.toLowerCase().includes('gold')
-    ? 'gold'
-    : placedEntry?.placement?.toLowerCase().includes('silver')
-      ? 'silver'
-      : placedEntry?.placement?.toLowerCase().includes('bronze')
-        ? 'bronze'
-        : null
-
-  const medalColors = {
-    gold: { color: '#FFD700', bg: 'rgba(255,215,0,0.15)' },
-    silver: { color: '#C0C0C0', bg: 'rgba(192,192,192,0.15)' },
-    bronze: { color: '#CD7F32', bg: 'rgba(205,127,50,0.15)' },
-  }
+  const medal = medalFor(placedEntry?.placement)
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8 md:px-8">
@@ -110,20 +112,20 @@ export default function BrewDetailPage({ params }: { params: { id: string } }) {
               <div className="mt-3 flex w-fit items-center gap-2">
                 <div
                   className="rounded-full p-1.5 leading-none"
-                  style={{ backgroundColor: medalColors[medal].bg }}
+                  style={{ backgroundColor: MEDAL_COLORS[medal].bg }}
                 >
                   <svg
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     className="block h-5 w-5"
-                    style={{ color: medalColors[medal].color }}
+                    style={{ color: MEDAL_COLORS[medal].color }}
                   >
-                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    <path d={STAR_PATH} />
                   </svg>
                 </div>
                 <span
                   className="text-xs font-bold uppercase tracking-wider"
-                  style={{ color: medalColors[medal].color }}
+                  style={{ color: MEDAL_COLORS[medal].color }}
                 >
                   {placedEntry.placement}
                 </span>
@@ -467,61 +469,6 @@ function Section({
         {title}
       </h3>
       {children}
-    </div>
-  )
-}
-
-function JudgeCard({ judge }: { judge: JudgeScore }) {
-  return (
-    <div className="border border-border bg-bg-card p-5">
-      {/* Judge header */}
-      <div className="mb-4 flex items-start justify-between">
-        <div>
-          <p className="font-medium text-text-primary">{judge.name}</p>
-          <p className="text-xs text-text-secondary">{judge.location}</p>
-          <p className="text-xs text-lavender-dark">
-            BJCP {judge.bjcpRank}
-            {judge.certifications && ` · ${judge.certifications}`}
-          </p>
-        </div>
-        <div className="text-xl font-bold text-accent">
-          {judge.score}
-          <span className="text-xs font-normal text-text-secondary">/50</span>
-        </div>
-      </div>
-
-      {/* Sub-scores */}
-      <div className="mb-4 grid grid-cols-3 gap-2 sm:grid-cols-5">
-        {(
-          ['aroma', 'appearance', 'flavor', 'mouthfeel', 'overall'] as const
-        ).map((category) => (
-          <div key={category} className="text-center">
-            <div className="text-sm font-semibold text-lavender">
-              {judge.scores[category][0]}
-              <span className="text-xs font-normal text-text-secondary">
-                /{judge.scores[category][1]}
-              </span>
-            </div>
-            <div className="text-[10px] uppercase tracking-wide text-text-secondary">
-              {category === 'appearance'
-                ? 'App'
-                : category === 'mouthfeel'
-                  ? 'MF'
-                  : category.charAt(0).toUpperCase() + category.slice(1)}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Flaws */}
-      {judge.flaws && (
-        <p className="mb-3 text-xs text-status-error">Flaws: {judge.flaws}</p>
-      )}
-
-      {/* Feedback */}
-      <p className="text-sm italic text-text-secondary">
-        &ldquo;{judge.feedback}&rdquo;
-      </p>
     </div>
   )
 }

@@ -145,6 +145,7 @@ export interface JudgeScore {
 
 export interface CompetitionEntry {
   batchNo: number
+  year: number
   competition: string
   entryName: string
   style: string
@@ -197,4 +198,11 @@ export interface Batch {
 export interface BatchImage {
   src: string
   caption?: string
+}
+
+// A keg on the kegerator. It's pouring until `kicked` is set.
+export interface TapEntry {
+  batchNo: number
+  tapped?: string // YYYY-MM-DD
+  kicked?: string // YYYY-MM-DD — the day the keg ran dry
 }

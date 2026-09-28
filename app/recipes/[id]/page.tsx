@@ -4,6 +4,10 @@ import { recipes } from '@/data/recipes'
 import { batches } from '@/data/batches'
 import ImageLightbox from '@/components/ImageLightbox'
 import LinkifyText from '@/components/LinkifyText'
+import RecipeIngredients from '@/components/RecipeIngredients'
+import { brewingSetups } from '@/data/equipment'
+import { findMatchingRecipe, formatDate } from '@/lib/utils'
+import { SITE_URL, openGraph } from '@/lib/site'
 
 export function generateStaticParams() {
   return recipes.map((r) => ({ id: r.uuid }))
@@ -12,9 +16,12 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { id: string } }) {
   const recipe = recipes.find((r) => r.uuid === params.id)
   if (!recipe) return { title: 'Recipe Not Found' }
+  const description =
+    recipe.description || `${recipe.style} · ${recipe.abv.toFixed(1)}% ABV`
   return {
     title: `${recipe.name} | Wasted Years`,
-    description: recipe.description || `${recipe.style} - ${recipe.abv}% ABV`,
+    description,
+    openGraph: openGraph(recipe.name, description),
   }
 }
 
@@ -26,19 +33,20 @@ export default function RecipePage({ params }: { params: { id: string } }) {
   }
 
   const isLegacy = recipe.source === 'beersmith'
+  const setup = brewingSetups.find((s) => s.batchSource === recipe.source)
+  const boilTime =
+    recipe.boilTime ?? (parseInt(setup?.specs.boilTime ?? '', 10) || 60)
+  const setupEfficiency = parseInt(setup?.specs.brewEfficiency ?? '', 10)
+  const efficiency =
+    recipe.equipmentProfile?.efficiency ??
+    (Number.isNaN(setupEfficiency) ? undefined : setupEfficiency)
   const hasDetailedData =
     recipe.mashProfile || recipe.waterProfile || recipe.equipmentProfile
 
-  const recipeLower = recipe.name.toLowerCase()
+  // Resolve from the batch side so each batch lands on exactly one recipe —
+  // the same one its own page links back to
   const matchingBatches = batches
-    .filter((b) => {
-      const batchLower = b.name.toLowerCase()
-      return (
-        batchLower === recipeLower ||
-        batchLower.startsWith(recipeLower) ||
-        recipeLower.startsWith(batchLower)
-      )
-    })
+    .filter((b) => findMatchingRecipe(b, recipes)?.uuid === recipe.uuid)
     .sort((a, b) => a.batchNo - b.batchNo)
 
   return (
@@ -67,12 +75,7 @@ export default function RecipePage({ params }: { params: { id: string } }) {
                 </p>
                 {recipe.brewDate && (
                   <p className="mt-1 text-sm text-text-secondary">
-                    Created{' '}
-                    {new Date(recipe.brewDate).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                    })}
+                    Created {formatDate(recipe.brewDate, 'long')}
                   </p>
                 )}
               </div>
@@ -118,75 +121,13 @@ export default function RecipePage({ params }: { params: { id: string } }) {
           <div
             className={`grid gap-8 ${recipe.artwork ? '' : 'lg:grid-cols-2'}`}
           >
-            {/* Fermentables */}
-            <Section title="Fermentables">
-              {recipe.fermentablesDetail &&
-              recipe.fermentablesDetail.length > 0 ? (
-                <ul className="space-y-2">
-                  {recipe.fermentablesDetail.map((f, idx) => (
-                    <li key={idx} className="flex justify-between text-sm">
-                      <span className="text-text-secondary">{f.name}</span>
-                      <span className="text-text-primary">
-                        {f.amount.toFixed(2)} lb
-                        {f.percentage !== undefined && (
-                          <span className="ml-2 text-lavender-dark">
-                            ({f.percentage.toFixed(1)}%)
-                          </span>
-                        )}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <ul className="space-y-1">
-                  {recipe.grains.map((grain, idx) => (
-                    <li
-                      key={idx}
-                      className="relative py-1 pl-4 text-sm text-text-secondary before:absolute before:left-0 before:text-xs before:text-accent before:content-['//']"
-                    >
-                      {grain}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </Section>
-
-            {/* Hops */}
-            <Section title="Hops">
-              {recipe.hopsDetail && recipe.hopsDetail.length > 0 ? (
-                <ul className="space-y-2">
-                  {recipe.hopsDetail.map((h, idx) => (
-                    <li key={idx} className="flex justify-between text-sm">
-                      <span className="text-text-secondary">
-                        {h.name}
-                        {h.alpha !== undefined && (
-                          <span className="ml-1 text-lavender-dark">
-                            ({h.alpha}% AA)
-                          </span>
-                        )}
-                      </span>
-                      <span className="text-text-primary">
-                        {h.amount.toFixed(2)} oz @ {h.use}
-                        {h.time !== undefined && h.time > 0 && ` ${h.time} min`}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              ) : recipe.hops.length > 0 ? (
-                <ul className="space-y-1">
-                  {recipe.hops.map((hop, idx) => (
-                    <li
-                      key={idx}
-                      className="relative py-1 pl-4 text-sm text-text-secondary before:absolute before:left-0 before:text-xs before:text-accent before:content-['//']"
-                    >
-                      {hop}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-sm italic text-text-secondary">No hops</p>
-              )}
-            </Section>
+            <RecipeIngredients
+              recipe={recipe}
+              baseBatchSize={recipe.batchSize ?? 5}
+              boilTime={boilTime}
+              efficiency={efficiency}
+              sourceUrl={`${SITE_URL}/recipes/${recipe.uuid}`}
+            />
 
             {/* Yeast */}
             <Section title="Yeast">
@@ -367,11 +308,7 @@ export default function RecipePage({ params }: { params: { id: string } }) {
                       className="text-sm text-text-secondary transition-colors hover:text-accent"
                     >
                       {batch.brewDate
-                        ? new Date(batch.brewDate).toLocaleDateString('en-US', {
-                            year: 'numeric',
-                            month: 'short',
-                            day: 'numeric',
-                          })
+                        ? formatDate(batch.brewDate)
                         : 'Unknown date'}
                       {' — '}
                       <span className="text-text-primary">

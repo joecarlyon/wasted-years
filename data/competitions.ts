@@ -5,6 +5,7 @@ export const competitions: CompetitionEntry[] = [
   // Batch 91 "Overlord v3" entered as "Overlord"
   {
     batchNo: 91,
+    year: 2024,
     competition: 'NHC 2024 First Round - Chicago, IL',
     entryName: 'Overlord',
     style: '21A - American IPA',
@@ -54,6 +55,7 @@ export const competitions: CompetitionEntry[] = [
   // Batch 94 "Overlord v3.1" entered as "Overlord"
   {
     batchNo: 94,
+    year: 2025,
     competition: 'NHC 2025 First Round',
     entryName: 'Overlord',
     style: '21A - American IPA',
@@ -101,6 +103,7 @@ export const competitions: CompetitionEntry[] = [
   // Batch 97 "Joeoverlord" entered as "Joeverlord"
   {
     batchNo: 97,
+    year: 2025,
     competition: 'NHC 2025 First Round - Chicago, IL',
     entryName: 'Joeverlord',
     style: '21A - American IPA',
@@ -147,6 +150,7 @@ export const competitions: CompetitionEntry[] = [
   // Batch 96 "Moo Moo Canoe"
   {
     batchNo: 96,
+    year: 2025,
     competition: 'NHC 2025 First Round - Chicago, IL',
     entryName: 'Moo Moo Canoe',
     style: '16A - Sweet Stout',
@@ -192,6 +196,7 @@ export const competitions: CompetitionEntry[] = [
   // Batch 103 "Overlord v4.0 5g" entered as "Overlord 4"
   {
     batchNo: 103,
+    year: 2026,
     competition: 'National Homebrew Competition: First Round',
     entryName: 'Overlord 4',
     style: '21A - American IPA',

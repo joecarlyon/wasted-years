@@ -23,28 +23,50 @@ export function sanitizeTiltReadings(
   return readings.filter((r) => r.gravity <= ceiling)
 }
 
-export function formatDate(dateString: string): string {
+// Dates are stored as bare 'YYYY-MM-DD' strings, which `new Date()` parses as
+// UTC midnight. Formatting in the viewer's local zone would then roll US
+// visitors back a day (a Jun 28 brew day rendered as "Jun 27"), so pin the
+// formatter to UTC.
+export function formatDate(
+  dateString: string,
+  month: 'short' | 'long' = 'short'
+): string {
   const date = new Date(dateString)
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
-    month: 'short',
+    month,
     day: 'numeric',
+    timeZone: 'UTC',
   })
 }
 
+// Batches link to recipes by name. A batch either carries its recipe's exact
+// name or extends it with a suffix ("Zombie Dust London" → "Zombie Dust"),
+// never the reverse — a "Wheat" batch is not the "Wheat vodka" recipe. Among
+// candidates the most specific (longest) name wins, then the recipe from the
+// same software the batch was logged in (there's a BeerSmith and a Brewfather
+// "Moo Moo Canoe").
 export function findMatchingRecipe(
-  batch: Pick<Batch, 'name'>,
+  batch: Pick<Batch, 'name' | 'source'>,
   recipes: Recipe[]
 ): Recipe | undefined {
-  const batchLower = batch.name.toLowerCase()
-  const exact = recipes.find((r) => r.name.toLowerCase() === batchLower)
-  if (exact) return exact
-  return recipes.find((r) => {
-    const recipeLower = r.name.toLowerCase()
-    return (
-      batchLower.startsWith(recipeLower) || recipeLower.startsWith(batchLower)
-    )
-  })
+  const batchLower = batch.name.trim().toLowerCase()
+  let best: Recipe | undefined
+  let bestScore = -1
+  for (const r of recipes) {
+    const recipeLower = r.name.trim().toLowerCase()
+    if (!recipeLower || !batchLower.startsWith(recipeLower)) continue
+    // A prefix only counts at a word boundary: "Overlord v3" extends
+    // "Overlord", but "Overlords" doesn't
+    const next = batchLower.charAt(recipeLower.length)
+    if (next && /[a-z0-9]/.test(next)) continue
+    const score = recipeLower.length * 2 + (r.source === batch.source ? 1 : 0)
+    if (score > bestScore) {
+      best = r
+      bestScore = score
+    }
+  }
+  return best
 }
 
 // Fall back to the recipe's structured ingredients when the batch's
