@@ -30,8 +30,8 @@ app/
 ├── page.tsx                # Home page (hero + On Tap + recent brews)
 ├── globals.css             # Tailwind imports + base styles
 ├── not-found.tsx           # Custom 404 (exported as 404.html)
-├── icon.svg                # Favicon
-├── apple-icon.tsx          # Apple touch icon (rendered at build)
+├── icon.svg                # Favicon (horned pint)
+├── apple-icon.tsx          # Apple touch icon (rendered at build from icon.svg)
 ├── opengraph-image.tsx     # Default social preview card
 ├── sitemap.ts / robots.ts  # sitemap.xml + robots.txt
 ├── recipes/
