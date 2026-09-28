@@ -9,7 +9,8 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "sync": "tsx scripts/sync-brewfather.ts && npm run format"
+    "sync": "tsx scripts/sync-brewfather.ts && npm run format",
+    "add-photo": "tsx scripts/add-batch-photo.ts"
   },
   "dependencies": {
     "next": "^14.2.0",
