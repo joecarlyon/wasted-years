@@ -485,6 +485,37 @@ function sanitizeReadings(readings: TiltReading[]): TiltReading[] {
   return readings.filter((r) => r.gravity <= ceiling)
 }
 
+// There's one Tilt, and it moves from batch to batch. Brewfather keeps logging
+// to whichever batch the device is still assigned to, so after the next batch
+// is brewed, readings landing on this one are really the new wort — batch 104
+// picked up 105's 1.065 OG as its "final gravity". Drop anything at or after
+// the next batch's brew day.
+function capReadingsAt(
+  readings: TiltReading[],
+  cutoff: number | undefined
+): TiltReading[] {
+  if (cutoff === undefined) return readings
+  return readings.filter((r) => r.timestamp < cutoff)
+}
+
+// For each batch, the brew date of the next batch that was actually brewed
+// (a batch still in Planning may carry a placeholder brew date).
+function nextBrewCutoffs(batches: BrewfatherBatch[]): Map<string, number> {
+  const brewed = batches
+    .filter((b) => b.brewDate && b.status !== 'Planning')
+    .sort((a, b) => a.brewDate - b.brewDate)
+  const cutoffs = new Map<string, number>()
+  for (let i = 0; i < brewed.length - 1; i++) {
+    cutoffs.set(brewed[i]._id, brewed[i + 1].brewDate)
+  }
+  return cutoffs
+}
+
+// The first Tilt reading is only the OG if the Tilt went in on brew day.
+// Batch 97's lone reading was taken 18 days in, at conditioning, and was being
+// passed off as a 1.010 OG.
+const TILT_OG_WINDOW_MS = 2 * 24 * 60 * 60 * 1000
+
 async function fetchReadings(batchId: string): Promise<TiltReading[]> {
   const response = await fetch(
     `${BREWFATHER_API}/batches/${batchId}/readings`,
@@ -592,10 +623,11 @@ function deriveEvents(b: BrewfatherBatch): FermentationEvent[] {
 
 async function syncBatches() {
   console.log('Fetching batches from Brewfather...')
-  const batches = await fetchAll<BrewfatherBatch>(
-    'batches',
-    '&include=notes,batchNotes,brewNotes,tasteNotes,fermentationNotes'
-  )
+  // complete=true (added by fetchAll) already returns every field, notes
+  // included. Don't add an `include=` list: Brewfather treats it as a field
+  // whitelist and silently drops everything else — measured gravities, style,
+  // and the recipe's ingredients all came back undefined.
+  const batches = await fetchAll<BrewfatherBatch>('batches')
   console.log(`Found ${batches.length} batches`)
 
   const existingBatches = await loadExistingBatches()
@@ -603,6 +635,7 @@ async function syncBatches() {
     `Loaded ${existingBatches.byBatchNo.size} existing batches (${existingBatches.beersmith.length} Beersmith)`
   )
 
+  const cutoffs = nextBrewCutoffs(batches)
   const transformed: Record<string, unknown>[] = []
   for (const b of batches) {
     // Use recipe name if batch name is just "Batch"
@@ -617,9 +650,15 @@ async function syncBatches() {
     // Fetch Tilt fermentation readings up-front so we can use them as
     // gravity fallbacks when measured/estimated values aren't set
     console.log(`Fetching readings for batch ${b._id}...`)
-    const readings = sanitizeReadings(await fetchReadings(b._id))
+    const readings = sanitizeReadings(
+      capReadingsAt(await fetchReadings(b._id), cutoffs.get(b._id))
+    )
     const firstTiltGravity =
-      readings.length > 0 ? readings[0].gravity : undefined
+      readings.length > 0 &&
+      b.brewDate &&
+      readings[0].timestamp - b.brewDate <= TILT_OG_WINDOW_MS
+        ? readings[0].gravity
+        : undefined
     const lastTiltGravity =
       readings.length > 0 ? readings[readings.length - 1].gravity : undefined
 
