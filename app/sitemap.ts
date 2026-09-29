@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/recipes',
     '/brews',
     '/competitions',
+    '/stats',
     '/equipment',
     '/about',
   ]

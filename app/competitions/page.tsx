@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { competitions } from '@/data/competitions'
 import { batches } from '@/data/batches'
 import JudgeCard from '@/components/JudgeCard'
+import SectionTitle from '@/components/SectionTitle'
+import StatTile from '@/components/StatTile'
 import {
   MEDAL_COLORS,
   STAR_PATH,
@@ -241,38 +243,6 @@ export default function CompetitionsPage() {
         </div>
       </section>
     </main>
-  )
-}
-
-function SectionTitle({ children }: { children: React.ReactNode }) {
-  return (
-    <h3 className="mb-6 border-b border-border pb-2 text-xs uppercase tracking-widest text-lavender">
-      {children}
-    </h3>
-  )
-}
-
-function StatTile({
-  label,
-  value,
-  unit,
-}: {
-  label: string
-  value: string
-  unit?: string
-}) {
-  return (
-    <div className="border border-border bg-bg-card p-4">
-      <div className="text-xs text-text-secondary">{label}</div>
-      <div className="mt-1 text-3xl font-semibold text-text-primary">
-        {value}
-        {unit && (
-          <span className="ml-1 text-sm font-normal text-text-secondary">
-            {unit}
-          </span>
-        )}
-      </div>
-    </div>
   )
 }
 

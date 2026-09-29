@@ -48,13 +48,16 @@ app/
 ├── competitions/
 │   ├── page.tsx            # Medal wall, score vs category average, flaws, all scoresheets
 │   └── opengraph-image.tsx
+├── stats/
+│   ├── page.tsx            # "By the Numbers": brews/year, efficiency trend, most brewed, pantry, records
+│   └── opengraph-image.tsx
 ├── equipment/
 │   └── page.tsx            # Equipment setups with specs and gear
 └── about/
     └── page.tsx            # Origin story
 
 components/
-├── Navbar.tsx              # Navigation with active state (links in NAV_LINKS)
+├── Navbar.tsx              # Navigation with active state (links in NAV_LINKS; hamburger below lg — 7 links don't fit at md)
 ├── Footer.tsx              # Site footer
 ├── RecipeCard.tsx          # Recipe card (shows competition award badges)
 ├── BrewEntry.tsx           # Brew log entry row
@@ -70,6 +73,9 @@ components/
 ├── SpilledPint.tsx         # Animated knocked-over pint (404 page)
 ├── DaysSince.tsx           # Client-side "for N days" counter (static pages go stale)
 ├── JudgeCard.tsx           # One BJCP scoresheet
+├── StatTile.tsx            # Headline number tile (competitions, stats)
+├── SectionTitle.tsx        # Uppercase section heading with rule
+├── EfficiencyChart.tsx     # Mash/brewhouse efficiency by batch (recharts)
 ├── RecipeIngredients.tsx   # Client: fermentables/hops with batch-size scaling + BeerXML export
 └── RecipeLineage.tsx       # Recipe family timeline with scores + "what changed" diff
 
@@ -98,6 +104,7 @@ lib/
 ├── competitions.ts         # medalFor, MEDAL_COLORS, recipeAwards, score/flaw aggregation
 ├── recipe.ts               # recipeIngredients (detailed or parsed legacy strings), scaling, ingredientKey
 ├── lineage.ts              # recipeFamily, diffRecipes (version-to-version changes)
+├── stats.ts                # /stats aggregates (brews by year/month, efficiency, top ingredients, records)
 ├── beerxml.ts              # BeerXML 1.0 export
 ├── og.tsx                  # Shared social preview card renderer (next/og)
 └── site.ts                 # SITE_URL, openGraph() metadata helper
@@ -144,6 +151,10 @@ ffmpeg -y -i /tmp/resized.jpg -map_metadata -1 -q:v 3 output.jpg
 ### Recipe Lineage
 
 `data/lineage.ts` maps a recipe's UUID to the UUID of the version it evolved from. Recipe pages in a family get a "Lineage" section: every version (parents before children, siblings by date) with ABV/IBU, brew count, and competition scores, plus "What changed from <parent>" — vitals, grain bill as % of grist, hops in oz compared at the newer batch size (so a 10→5 gal rescale isn't a change), yeast, and water. Diffs match ingredients by `ingredientKey` in `lib/recipe.ts`, which treats BeerSmith and Brewfather names for the same thing as equal ("Pale Malt (2 Row) US" = "Pale Ale Malt 2-Row"); add to `INGREDIENT_ALIASES` when a rename shows up as a remove + add.
+
+### By the Numbers (`/stats`)
+
+Everything is computed at build time by `lib/stats.ts` from the data files. Spirit washes (batch or recipe `category: 'spirit'`) are left out of the efficiency trend and beer records — a sugar wash logs >100% efficiency. "Most brewed" counts a whole lineage family together. Ingredient and yeast counts fall back to the linked recipe's list for batches without their own, matching names via `ingredientKey` and `yeastLabel`. The efficiency chart's two colors were checked as a pair against the card surface; keep that pair if you restyle it.
 
 ### On Tap
 

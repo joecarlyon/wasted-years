@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: '/equipment', label: 'Equipment' },
   { href: '/brews', label: 'Brew Log' },
   { href: '/competitions', label: 'Competitions' },
+  { href: '/stats', label: 'Stats' },
   { href: '/about', label: 'About' },
 ]
 
@@ -42,7 +43,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <ul className="hidden gap-6 md:flex lg:gap-8">
+        <ul className="hidden gap-8 whitespace-nowrap lg:flex">
           {NAV_LINKS.map(({ href, label }) => (
             <li key={href}>
               <Link href={href} className={linkClasses(href)}>
@@ -54,7 +55,7 @@ export default function Navbar() {
 
         {/* Hamburger button */}
         <button
-          className="flex flex-col gap-1.5 md:hidden"
+          className="flex flex-col gap-1.5 lg:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -72,7 +73,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="border-t border-border px-4 pb-4 md:hidden">
+        <div className="border-t border-border px-4 pb-4 lg:hidden">
           {NAV_LINKS.map(({ href, label }) => (
             <Link
               key={href}
