@@ -18,6 +18,7 @@ Wasted Years is a static homebrewing recipe and brew log website built with Next
 ```bash
 npm run dev        # Run locally
 npm run build      # Build for production (static export to out/)
+npm test           # Node test runner via tsx ({lib,data}/**/*.test.ts)
 npm run sync       # Pull recipes/batches from Brewfather (needs .env.local)
 npm run add-photo -- <batchNo> <image...> [--caption "text"]  # Add batch photos
 ```
@@ -74,8 +75,9 @@ components/
 data/
 ├── recipes.ts              # Recipe data (Brewfather + BeerSmith)
 ├── batches.ts              # Batch data with brew dates/measurements (includes mashEfficiency)
-├── competitions.ts         # Competition entries, judge scores, awards
+├── competitions.ts         # Competition entries, judge scores, placements
 ├── taps.ts                 # What's on the kegerator (hand-maintained)
+├── recipe-links.ts         # Explicit batchNo → recipe UUID links (hand-maintained)
 ├── equipment.ts            # Brewing setup profiles (BrewingSetup[]) with specs and gear
 ├── beersmith-recipes.json  # Raw BeerSmith export
 └── brewfather-notes.json   # Brewfather brewing/tasting notes
@@ -91,7 +93,7 @@ scripts/
 
 lib/
 ├── utils.ts                # formatDate, findMatchingRecipe, deriveBatchVitals, getStatusClasses
-├── competitions.ts         # medalFor, MEDAL_COLORS, score/flaw aggregation
+├── competitions.ts         # medalFor, MEDAL_COLORS, recipeAwards, score/flaw aggregation
 ├── recipe.ts               # recipeIngredients (detailed or parsed legacy strings), scaling
 ├── beerxml.ts              # BeerXML 1.0 export
 ├── og.tsx                  # Shared social preview card renderer (next/og)
@@ -157,7 +159,7 @@ Recipe, batch, and competition data are stored as typed TypeScript arrays in the
 
 ### Linking
 
-- **Recipe ↔ Batch**: Linked by name via `findMatchingRecipe` (no foreign key — Brewfather's batch payload has no source-recipe ID). A batch matches a recipe with the same name, or one its name _extends_ at a word boundary ("Zombie Dust London" → "Zombie Dust"); the longest match wins, then same `source`. The recipe page's "Brew History" lists batches that resolve to it, so it always agrees with each batch page's recipe link.
+- **Recipe ↔ Batch**: Linked via `findMatchingRecipe` (no foreign key — Brewfather's batch payload has no source-recipe ID). An entry in `data/recipe-links.ts` (batchNo → recipe UUID) wins; add one when a batch's name doesn't match its recipe's (typos, renames). `data/data.test.ts` fails if a link points at a UUID that no longer exists. Otherwise a batch matches a recipe with the same name, or one its name _extends_ at a word boundary ("Zombie Dust London" → "Zombie Dust"); the longest match wins, then same `source`. The recipe page's "Brew History" lists batches that resolve to it, so it always agrees with each batch page's recipe link.
 - **Batch ↔ Competition**: Linked by `batchNo` field in competition entries (each also has a `year`). Batch detail pages and `/competitions` show medals and judge scoresheets.
-- **Recipe ↔ Awards**: `awardWinningRecipes` in `competitions.ts` maps recipe names to award badges shown on `RecipeCard`.
+- **Recipe ↔ Awards**: Derived, not hand-maintained — `recipeAwards` in `lib/competitions.ts` follows each placing entry's batch to its recipe. The recipes page computes it server-side and passes it to `RecipeCard` (inside the client `FilterButtons`) so the brew log isn't shipped to the browser.
 - **Batch ↔ Equipment**: Linked by `source` field (`brewfather` → Electric Brewing, `beersmith` → Caveman Fire). Equipment page links to `/brews?source=` for filtered brew log views.

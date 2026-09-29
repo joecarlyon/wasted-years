@@ -1,4 +1,5 @@
-import { CompetitionEntry, JudgeScore } from '@/types'
+import { Batch, CompetitionEntry, JudgeScore, Recipe } from '@/types'
+import { findMatchingRecipe } from '@/lib/utils'
 
 export type Medal = 'gold' | 'silver' | 'bronze'
 
@@ -20,6 +21,62 @@ export function medalFor(placement: string | undefined): Medal | null {
   if (p.includes('silver')) return 'silver'
   if (p.includes('bronze')) return 'bronze'
   return null
+}
+
+// Entries link to batches by batchNo, and batches to recipes via
+// findMatchingRecipe — so a recipe's results follow its batches.
+export function entriesByRecipe(
+  entries: CompetitionEntry[],
+  batches: Batch[],
+  recipes: Recipe[]
+): Map<string, CompetitionEntry[]> {
+  const byRecipe = new Map<string, CompetitionEntry[]>()
+  for (const entry of entries) {
+    const batch = batches.find((b) => b.batchNo === entry.batchNo)
+    const recipe = batch && findMatchingRecipe(batch, recipes)
+    if (!recipe) continue
+    byRecipe.set(recipe.uuid, [...(byRecipe.get(recipe.uuid) ?? []), entry])
+  }
+  return byRecipe
+}
+
+export interface RecipeAward {
+  competition: string
+  medal: Medal
+  placement: string
+}
+
+const PLACE_FOR_MEDAL: Record<Medal, string> = {
+  gold: '1st Place',
+  silver: '2nd Place',
+  bronze: '3rd Place',
+}
+
+// Medal badges for recipe cards, keyed by recipe UUID, newest first
+export function recipeAwards(
+  entries: CompetitionEntry[],
+  batches: Batch[],
+  recipes: Recipe[]
+): Record<string, RecipeAward[]> {
+  const awards: Record<string, RecipeAward[]> = {}
+  entriesByRecipe(entries, batches, recipes).forEach((recipeEntries, uuid) => {
+    const medals = [...recipeEntries]
+      .sort((a, b) => b.year - a.year)
+      .flatMap((e) => {
+        const medal = medalFor(e.placement)
+        return medal
+          ? [
+              {
+                competition: e.competition,
+                medal,
+                placement: PLACE_FOR_MEDAL[medal],
+              },
+            ]
+          : []
+      })
+    if (medals.length > 0) awards[uuid] = medals
+  })
+  return awards
 }
 
 export const SCORE_CATEGORIES = [

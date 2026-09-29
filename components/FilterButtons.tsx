@@ -2,15 +2,17 @@
 
 import { useState } from 'react'
 import { Recipe } from '@/types'
+import type { RecipeAward } from '@/lib/competitions'
 import RecipeCard from './RecipeCard'
 
 interface FilterButtonsProps {
   recipes: Recipe[]
+  awards: Record<string, RecipeAward[]>
 }
 
 type FilterType = 'all' | 'ale' | 'lager' | 'spirit'
 
-export default function FilterButtons({ recipes }: FilterButtonsProps) {
+export default function FilterButtons({ recipes, awards }: FilterButtonsProps) {
   const [activeFilter, setActiveFilter] = useState<FilterType>('all')
   const [searchQuery, setSearchQuery] = useState('')
 
@@ -79,7 +81,11 @@ export default function FilterButtons({ recipes }: FilterButtonsProps) {
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         {filteredRecipes.map((recipe) => (
-          <RecipeCard key={recipe.id} recipe={recipe} />
+          <RecipeCard
+            key={recipe.id}
+            recipe={recipe}
+            awards={awards[recipe.uuid]}
+          />
         ))}
       </div>
 

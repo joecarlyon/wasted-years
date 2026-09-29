@@ -1,4 +1,5 @@
 import { Batch, Fermentable, Hop, Recipe, TiltReading } from '@/types'
+import { batchRecipeLinks } from '@/data/recipe-links'
 
 // A Tilt hydrometer can spike wildly when the sensor ends up sitting in a pile
 // of yeast — e.g. while draining the fermenter — reporting gravities far above
@@ -40,16 +41,22 @@ export function formatDate(
   })
 }
 
-// Batches link to recipes by name. A batch either carries its recipe's exact
-// name or extends it with a suffix ("Zombie Dust London" → "Zombie Dust"),
-// never the reverse — a "Wheat" batch is not the "Wheat vodka" recipe. Among
-// candidates the most specific (longest) name wins, then the recipe from the
-// same software the batch was logged in (there's a BeerSmith and a Brewfather
-// "Moo Moo Canoe").
+// An explicit entry in `data/recipe-links.ts` wins. Otherwise batches link to
+// recipes by name: a batch either carries its recipe's exact name or extends
+// it with a suffix ("Zombie Dust London" → "Zombie Dust"), never the reverse —
+// a "Wheat" batch is not the "Wheat vodka" recipe. Among candidates the most
+// specific (longest) name wins, then the recipe from the same software the
+// batch was logged in (there's a BeerSmith and a Brewfather "Moo Moo Canoe").
 export function findMatchingRecipe(
-  batch: Pick<Batch, 'name' | 'source'>,
-  recipes: Recipe[]
+  batch: Pick<Batch, 'batchNo' | 'name' | 'source'>,
+  recipes: Recipe[],
+  links: Record<number, string> = batchRecipeLinks
 ): Recipe | undefined {
+  const linked = links[batch.batchNo]
+  if (linked) {
+    const recipe = recipes.find((r) => r.uuid === linked)
+    if (recipe) return recipe
+  }
   const batchLower = batch.name.trim().toLowerCase()
   let best: Recipe | undefined
   let bestScore = -1

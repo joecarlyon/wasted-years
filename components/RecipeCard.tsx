@@ -1,14 +1,13 @@
 import Link from 'next/link'
 import { Recipe } from '@/types'
-import { awardWinningRecipes } from '@/data/competitions'
+import { MEDAL_COLORS, STAR_PATH, type RecipeAward } from '@/lib/competitions'
 
 interface RecipeCardProps {
   recipe: Recipe
+  awards?: RecipeAward[]
 }
 
-export default function RecipeCard({ recipe }: RecipeCardProps) {
-  const awards = awardWinningRecipes[recipe.name]
-
+export default function RecipeCard({ recipe, awards }: RecipeCardProps) {
   return (
     <Link
       href={`/recipes/${recipe.uuid}`}
@@ -24,32 +23,27 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
         {awards && (
           <div className="flex gap-3">
             {awards.map((award, idx) => (
-              <div key={idx} className="flex flex-col items-center gap-1">
+              <div
+                key={idx}
+                className="flex flex-col items-center gap-1"
+                title={award.competition}
+              >
                 <div
                   className="rounded-full p-2"
-                  style={{
-                    backgroundColor:
-                      award.medal === 'silver'
-                        ? 'rgba(192,192,192,0.15)'
-                        : 'rgba(205,127,50,0.15)',
-                  }}
+                  style={{ backgroundColor: MEDAL_COLORS[award.medal].bg }}
                 >
                   <svg
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     className="h-6 w-6"
-                    style={{
-                      color: award.medal === 'silver' ? '#C0C0C0' : '#CD7F32',
-                    }}
+                    style={{ color: MEDAL_COLORS[award.medal].color }}
                   >
-                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    <path d={STAR_PATH} />
                   </svg>
                 </div>
                 <span
                   className="text-[10px] font-bold uppercase tracking-wider"
-                  style={{
-                    color: award.medal === 'silver' ? '#C0C0C0' : '#CD7F32',
-                  }}
+                  style={{ color: MEDAL_COLORS[award.medal].color }}
                 >
                   {award.placement}
                 </span>
