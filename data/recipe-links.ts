@@ -3,6 +3,9 @@
 // `findMatchingRecipe`. Keyed by batchNo; values are recipe UUIDs.
 // Hand-maintained — the Brewfather sync never touches this file.
 export const batchRecipeLinks: Record<number, string> = {
+  // GaribaldiHead is the Gumballhead clone (scripts/parse-beersmith.js pairs them)
+  10: '3689a985-3689-4689-3689-3689a9853689', // Gumballhead → GaribaldiHead
+  14: '3689a985-3689-4689-3689-3689a9853689', // Gumballhead → GaribaldiHead
   18: '20ee907b-20ee-40ee-20ee-20ee907b20ee', // Blonde → Basic Blonde
   26: '04d0983f-04d0-44d0-04d0-04d0983f04d0', // Raging Redhead → Raging Red Head (updated malt)
   27: '1bf95e4c-1bf9-4bf9-1bf9-1bf95e4c1bf9', // Strawberrysaurus Rex → Strawberry Saurus-Rex
