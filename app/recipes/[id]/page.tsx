@@ -5,8 +5,10 @@ import { batches } from '@/data/batches'
 import ImageLightbox from '@/components/ImageLightbox'
 import LinkifyText from '@/components/LinkifyText'
 import RecipeIngredients from '@/components/RecipeIngredients'
+import RecipeLineage from '@/components/RecipeLineage'
 import { brewingSetups } from '@/data/equipment'
 import { findMatchingRecipe, formatDate } from '@/lib/utils'
+import { recipeFamily } from '@/lib/lineage'
 import { SITE_URL, openGraph } from '@/lib/site'
 
 export function generateStaticParams() {
@@ -49,6 +51,9 @@ export default function RecipePage({ params }: { params: { id: string } }) {
     .filter((b) => findMatchingRecipe(b, recipes)?.uuid === recipe.uuid)
     .sort((a, b) => a.batchNo - b.batchNo)
 
+  const family = recipeFamily(recipe.uuid, recipes)
+  const version = family.findIndex((m) => m.recipe.uuid === recipe.uuid) + 1
+
   return (
     <main className="mx-auto max-w-4xl px-4 py-8 md:px-8">
       {/* Back link */}
@@ -77,6 +82,14 @@ export default function RecipePage({ params }: { params: { id: string } }) {
                   <p className="mt-1 text-sm text-text-secondary">
                     Created {formatDate(recipe.brewDate, 'long')}
                   </p>
+                )}
+                {family.length > 0 && (
+                  <a
+                    href="#lineage"
+                    className="mt-1 inline-block text-sm text-lavender transition-colors hover:text-accent"
+                  >
+                    Version {version} of {family.length} &darr;
+                  </a>
                 )}
               </div>
               {recipe.source && (
@@ -293,6 +306,8 @@ export default function RecipePage({ params }: { params: { id: string } }) {
               </p>
             </div>
           )}
+
+          <RecipeLineage recipe={recipe} />
 
           {/* Brew History */}
           {matchingBatches.length > 0 && (

@@ -56,6 +56,53 @@ export function scaleIngredients(
   }
 }
 
+// BeerSmith and Brewfather name the same ingredient differently ("Pale Malt
+// (2 Row) US" vs "Pale Ale Malt 2-Row", "Amarillo Gold" vs "Amarillo").
+// Normalizing strips supplier tags, the word "malt", and punctuation; these
+// cover what's left. Genuinely different ingredients (German wheat vs US
+// white wheat, Munich I vs II) keep separate keys.
+const INGREDIENT_ALIASES: Record<string, string> = {
+  'pale 2 row us': 'pale 2 row',
+  'pale ale 2 row': 'pale 2 row',
+  'brewers 2 row': 'pale 2 row',
+  'organic 2row pale': 'pale 2 row',
+  'cara pils dextrine': 'carapils',
+  'carapils dextrine us': 'carapils',
+  'flaked barley': 'barley flaked',
+  'white wheat': 'wheat white',
+  melanoiden: 'melanoidin',
+  'victory biscuit': 'victory',
+  acid: 'acidulated',
+  'pilsner 2 row': 'pilsner',
+  pilsen: 'pilsner',
+  'pilsen 2 row': 'pilsner',
+  'finest maris otter ale': 'maris otter',
+  'pale ale finest maris otter': 'maris otter',
+  'pale maris otter': 'maris otter',
+  'amarillo gold': 'amarillo',
+  'goldings east kent': 'east kent goldings',
+  hallertauer: 'hallertau',
+  fuggles: 'fuggle',
+  'german hull melon': 'huell melon',
+}
+
+const SUPPLIER_TAG =
+  /\((briess|cargill|weyermann|rahr|simpsons|crisp|proximity|ekg|tomahawk)\)/g
+
+// A key that's equal for every name of the same fermentable or hop
+export function ingredientKey(name: string): string {
+  const normalized = name
+    .toLowerCase()
+    .replace(/[®™]/g, '')
+    .replace(SUPPLIER_TAG, '')
+    .replace('caramel/crystal', 'caramel')
+    .replace(/\bmalt\b/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+    .replace(/^crystal (\d+l)$/, 'caramel $1')
+  return INGREDIENT_ALIASES[normalized] ?? normalized
+}
+
 export function slugify(name: string): string {
   return (
     name

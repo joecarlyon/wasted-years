@@ -70,7 +70,8 @@ components/
 ├── SpilledPint.tsx         # Animated knocked-over pint (404 page)
 ├── DaysSince.tsx           # Client-side "for N days" counter (static pages go stale)
 ├── JudgeCard.tsx           # One BJCP scoresheet
-└── RecipeIngredients.tsx   # Client: fermentables/hops with batch-size scaling + BeerXML export
+├── RecipeIngredients.tsx   # Client: fermentables/hops with batch-size scaling + BeerXML export
+└── RecipeLineage.tsx       # Recipe family timeline with scores + "what changed" diff
 
 data/
 ├── recipes.ts              # Recipe data (Brewfather + BeerSmith)
@@ -78,6 +79,7 @@ data/
 ├── competitions.ts         # Competition entries, judge scores, placements
 ├── taps.ts                 # What's on the kegerator (hand-maintained)
 ├── recipe-links.ts         # Explicit batchNo → recipe UUID links (hand-maintained)
+├── lineage.ts              # Recipe UUID → parent recipe UUID (hand-maintained)
 ├── equipment.ts            # Brewing setup profiles (BrewingSetup[]) with specs and gear
 ├── beersmith-recipes.json  # Raw BeerSmith export
 └── brewfather-notes.json   # Brewfather brewing/tasting notes
@@ -94,7 +96,8 @@ scripts/
 lib/
 ├── utils.ts                # formatDate, findMatchingRecipe, deriveBatchVitals, getStatusClasses
 ├── competitions.ts         # medalFor, MEDAL_COLORS, recipeAwards, score/flaw aggregation
-├── recipe.ts               # recipeIngredients (detailed or parsed legacy strings), scaling
+├── recipe.ts               # recipeIngredients (detailed or parsed legacy strings), scaling, ingredientKey
+├── lineage.ts              # recipeFamily, diffRecipes (version-to-version changes)
 ├── beerxml.ts              # BeerXML 1.0 export
 ├── og.tsx                  # Shared social preview card renderer (next/og)
 └── site.ts                 # SITE_URL, openGraph() metadata helper
@@ -137,6 +140,10 @@ ffmpeg -y -i /tmp/resized.jpg -map_metadata -1 -q:v 3 output.jpg
 ```
 
 `mergeBatch` in `scripts/sync-brewfather.ts` preserves `existing.images` since Brewfather payloads don't include this field — don't remove that preservation or sync will clobber manual photo additions.
+
+### Recipe Lineage
+
+`data/lineage.ts` maps a recipe's UUID to the UUID of the version it evolved from. Recipe pages in a family get a "Lineage" section: every version (parents before children, siblings by date) with ABV/IBU, brew count, and competition scores, plus "What changed from <parent>" — vitals, grain bill as % of grist, hops in oz compared at the newer batch size (so a 10→5 gal rescale isn't a change), yeast, and water. Diffs match ingredients by `ingredientKey` in `lib/recipe.ts`, which treats BeerSmith and Brewfather names for the same thing as equal ("Pale Malt (2 Row) US" = "Pale Ale Malt 2-Row"); add to `INGREDIENT_ALIASES` when a rename shows up as a remove + add.
 
 ### On Tap
 
